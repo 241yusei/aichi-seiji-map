@@ -49,6 +49,7 @@ const legislators = [
   ...load<Legislator>("legislators.aichi.json", legislatorsSchema),
   ...load<Legislator>("legislators.aichi-pref.json", legislatorsSchema),
   ...load<Legislator>("legislators.nagoya.json", legislatorsSchema),
+  ...load<Legislator>("legislators.toyota.json", legislatorsSchema),
 ];
 const speeches = [
   ...load<SpeechRecord>("speeches.national.json", speechRecordsSchema),

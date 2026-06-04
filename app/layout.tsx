@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   description:
     "愛知県の有権者が、国会(愛知選出)・愛知県議会・名古屋市会の代表者の発言・採決・政治資金を、一次ソース付きで横断的に確認できる中立的な情報サイト。",
-  metadataBase: new URL("https://aichi-seiji.example.jp"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://aichi-seiji.example.jp"),
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

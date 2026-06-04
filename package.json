@@ -17,6 +17,7 @@
     "fetch:kokkai": "tsx scripts/fetch-kokkai.ts",
     "fetch:nagoya": "tsx scripts/fetch-nagoya.ts",
     "fetch:kengikai": "tsx scripts/fetch-kengikai-linkout.ts",
+    "fetch:toyota": "tsx scripts/fetch-toyota.ts",
     "fetch:votes": "tsx scripts/fetch-votes.ts",
     "fetch:funding": "tsx scripts/fetch-funding.ts",
     "summarize": "tsx scripts/summarize.ts",

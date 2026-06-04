@@ -7,12 +7,11 @@ import {
   getSpeechesByLegislator,
   getVotes,
 } from "@/lib/data";
-import { LevelBadge } from "@/components/LevelBadge";
 import { SpeechCard } from "@/components/SpeechCard";
 import { SourceLink } from "@/components/SourceLink";
 import { VoteTable } from "@/components/VoteTable";
 import { FundingPanel } from "@/components/FundingPanel";
-import { MINUTES_SEARCH } from "@/lib/sources/linkout";
+import { minutesFor } from "@/lib/sources/linkout";
 
 export function generateStaticParams() {
   return getLegislators().map((l) => ({ id: l.id }));
@@ -44,15 +43,25 @@ export default async function LegislatorDetailPage({
   const speeches = getSpeechesByLegislator(id);
   const votes = getVotes(id);
   const funding = getFunding(id);
-  const minutesSearch = MINUTES_SEARCH[legislator.level];
+  const minutesSearch = minutesFor(legislator);
   const house: "衆議院" | "参議院" = legislator.district.includes("選挙区") ? "参議院" : "衆議院";
+  const layerLabel =
+    legislator.level === "national"
+      ? "国会（愛知選出）"
+      : legislator.level === "prefectural"
+        ? "愛知県議会"
+        : legislator.govCode === "23211"
+          ? "豊田市議会"
+          : "名古屋市会";
 
   return (
     <div className="space-y-8">
       {/* プロフィール */}
       <header className="rounded-xl border border-line bg-surface p-5">
         <div className="flex flex-wrap items-center gap-2">
-          <LevelBadge level={legislator.level} full />
+          <span className="inline-flex items-center rounded bg-accent-weak px-2 py-0.5 text-xs font-medium text-accent">
+            {layerLabel}
+          </span>
           <h1 className="text-2xl font-bold">{legislator.name}</h1>
           <span className="text-sm text-muted">{legislator.kana}</span>
         </div>
@@ -85,7 +94,7 @@ export default async function LegislatorDetailPage({
           <div className="mt-3 rounded-xl border border-line bg-surface p-4 text-sm text-muted">
             <p>
               本サイトは各サイトの利用規約・robots.txt に配慮し、
-              {legislator.level === "prefectural" ? "愛知県議会" : "名古屋市会"}の発言本文は転載していません。
+              {layerLabel}の発言本文は転載していません。
               この議員の発言は、公式の会議録検索システムでご確認いただけます。
             </p>
             <p className="mt-2">

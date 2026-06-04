@@ -4,7 +4,7 @@ import { getIssues, getLegislators } from "@/lib/data";
 // 静的エクスポート（output: export）で sitemap.xml を生成するために必要。
 export const dynamic = "force-static";
 
-const BASE = "https://aichi-seiji.example.jp";
+const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://aichi-seiji.example.jp";
 
 // 静的サイトマップ。地域名・議員名での検索流入を意識して全ページを列挙する。
 export default function sitemap(): MetadataRoute.Sitemap {
