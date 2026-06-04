@@ -39,7 +39,7 @@ export const MUNICIPALITIES: Municipality[] = [
     city: "豊橋市",
     council: "豊橋市議会",
     minutesLabel: "豊橋市議会 会議録検索システム",
-    minutesUrl: "",
+    minutesUrl: "https://ssp.kaigiroku.net/tenant/toyohashi/SpTop.html",
   },
   {
     govCode: "23202",
@@ -47,7 +47,7 @@ export const MUNICIPALITIES: Municipality[] = [
     city: "岡崎市",
     council: "岡崎市議会",
     minutesLabel: "岡崎市議会 会議録検索システム",
-    minutesUrl: "",
+    minutesUrl: "https://ssp.kaigiroku.net/tenant/okazaki/SpTop.html",
   },
   {
     govCode: "23203",
@@ -55,7 +55,7 @@ export const MUNICIPALITIES: Municipality[] = [
     city: "一宮市",
     council: "一宮市議会",
     minutesLabel: "一宮市議会 会議録検索システム",
-    minutesUrl: "",
+    minutesUrl: "https://ssp.kaigiroku.net/tenant/ichinomiya/SpTop.html",
   },
   {
     govCode: "23206",
@@ -63,7 +63,7 @@ export const MUNICIPALITIES: Municipality[] = [
     city: "春日井市",
     council: "春日井市議会",
     minutesLabel: "春日井市議会 会議録検索システム",
-    minutesUrl: "",
+    minutesUrl: "https://ssp.kaigiroku.net/tenant/kasugai/SpTop.html",
   },
 ];
 
