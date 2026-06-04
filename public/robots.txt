@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aichi-seiji.example.jp/sitemap.xml
