@@ -79,6 +79,8 @@ export interface Issue {
   description: string;
   /** 国・県・市の発言を横串で結ぶ SpeechRecord.id の配列。 */
   relatedSpeechIds: string[];
+  /** 横串検索・県市の会議録検索リンクに使うキーワード。 */
+  keywords?: string[];
 }
 
 /** 収集の対象期間。 */

@@ -10,6 +10,11 @@ const eslintConfig = [
     rules: {
       // CLAUDE.md の規約: CommonJS（require）は使わない。
       "@typescript-eslint/no-require-imports": "error",
+      // 先頭が _ の引数・変数は「意図的に未使用」として許可（IF準拠のスタブ等）。
+      "@typescript-eslint/no-unused-vars": [
+        "warn",
+        { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
+      ],
     },
   },
   {

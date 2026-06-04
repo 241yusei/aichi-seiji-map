@@ -73,6 +73,7 @@ export const issueSchema = z.object({
   title: z.string().min(1),
   description: z.string(),
   relatedSpeechIds: z.array(z.string()),
+  keywords: z.array(z.string()).optional(),
 });
 
 export const legislatorsSchema = z.array(legislatorSchema);
