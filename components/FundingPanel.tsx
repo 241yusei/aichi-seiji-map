@@ -35,6 +35,11 @@ export function FundingPanel({ funding }: { funding: Funding[] }) {
           政治資金収支報告書の主要項目（収入・支出の総額）は順次掲載します。価値判断はせず、金額と出典のみを示します。
         </p>
       )}
+      {funding.length > 0 && (
+        <p className="mt-2 text-xs">
+          ※ 金額は収支報告書PDF（出典）からの転記です。正確な数値は各行の出典PDFでご確認ください。本サイトは金額と出典のみを示し、価値判断はしていません。
+        </p>
+      )}
       <p className="mt-2">
         <SourceLink href={FUNDING_SOURCE.url}>{FUNDING_SOURCE.label} ↗</SourceLink>
       </p>
