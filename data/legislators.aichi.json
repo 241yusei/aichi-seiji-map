@@ -238,5 +238,85 @@
     "district": "愛知県選挙区",
     "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県選挙区",
     "vendor": "kokkai"
+  },
+  {
+    "id": "nat-f262cdfb",
+    "name": "熊田裕通",
+    "kana": "くまだひろみち",
+    "level": "national",
+    "party": "自由民主党",
+    "district": "比例東海",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第1区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-5285f99b",
+    "name": "辻秀樹",
+    "kana": "つじひでき",
+    "level": "national",
+    "party": "自由民主党",
+    "district": "比例東海",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第2区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-02bba622",
+    "name": "渡辺藍理",
+    "kana": "わたなべあいり",
+    "level": "national",
+    "party": "参政党",
+    "district": "比例東海",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第5区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-58226ce4",
+    "name": "鈴木淳司",
+    "kana": "すずきじゅんじ",
+    "level": "national",
+    "party": "自由民主党",
+    "district": "比例東海",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第7区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-4327864b",
+    "name": "藤澤忠盛",
+    "kana": "ふじさわただもり",
+    "level": "national",
+    "party": "自由民主党",
+    "district": "比例東海",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第11区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-8b419420",
+    "name": "重徳和彦",
+    "kana": "しげとくかずひこ",
+    "level": "national",
+    "party": "中道改革連合",
+    "district": "比例東海",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第12区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-17babd14",
+    "name": "関健一郎",
+    "kana": "せきけんいちろう",
+    "level": "national",
+    "party": "日本維新の会",
+    "district": "比例東海",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第15区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-078fe50d",
+    "name": "福田徹",
+    "kana": "ふくたとおる",
+    "level": "national",
+    "party": "国民民主党",
+    "district": "比例東海",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第16区",
+    "vendor": "kokkai"
   }
 ]

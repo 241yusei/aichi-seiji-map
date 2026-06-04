@@ -10,6 +10,7 @@ import {
 import { LevelBadge } from "@/components/LevelBadge";
 import { SpeechCard } from "@/components/SpeechCard";
 import { SourceLink } from "@/components/SourceLink";
+import { MINUTES_SEARCH } from "@/lib/sources/linkout";
 
 export function generateStaticParams() {
   return getLegislators().map((l) => ({ id: l.id }));
@@ -41,6 +42,7 @@ export default async function LegislatorDetailPage({
   const speeches = getSpeechesByLegislator(id);
   const votes = getVotes(id);
   const funding = getFunding(id);
+  const minutesSearch = MINUTES_SEARCH[legislator.level];
 
   return (
     <div className="space-y-8">
@@ -65,17 +67,30 @@ export default async function LegislatorDetailPage({
         <h2 className="text-lg font-bold">
           発言 <span className="text-sm font-normal text-muted">（{speeches.length} 件）</span>
         </h2>
-        <p className="mt-1 text-xs text-muted">
-          出典は国会会議録。AI要約は補助情報で、必ず原文リンクを併記しています。
-        </p>
-        {speeches.length === 0 ? (
-          <p className="mt-4 text-sm text-muted">発言データは準備中です。</p>
-        ) : (
-          <div className="mt-4 space-y-3">
-            {speeches.map((s) => (
-              <SpeechCard key={s.id} speech={s} />
-            ))}
+        {speeches.length > 0 ? (
+          <>
+            <p className="mt-1 text-xs text-muted">
+              出典は国会会議録。AI要約は補助情報で、必ず原文リンクを併記しています。
+            </p>
+            <div className="mt-4 space-y-3">
+              {speeches.map((s) => (
+                <SpeechCard key={s.id} speech={s} />
+              ))}
+            </div>
+          </>
+        ) : minutesSearch ? (
+          <div className="mt-3 rounded-xl border border-line bg-surface p-4 text-sm text-muted">
+            <p>
+              本サイトは各サイトの利用規約・robots.txt に配慮し、
+              {legislator.level === "prefectural" ? "愛知県議会" : "名古屋市会"}の発言本文は転載していません。
+              この議員の発言は、公式の会議録検索システムでご確認いただけます。
+            </p>
+            <p className="mt-2">
+              <SourceLink href={minutesSearch.url}>{minutesSearch.label} ↗</SourceLink>
+            </p>
           </div>
+        ) : (
+          <p className="mt-4 text-sm text-muted">発言データは準備中です。</p>
         )}
       </section>
 
