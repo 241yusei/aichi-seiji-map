@@ -1,1 +1,242 @@
-[]
+[
+  {
+    "id": "nat-bfcafee4",
+    "name": "河村たかし",
+    "kana": "かわむらたかし",
+    "level": "national",
+    "party": "減税日本・ゆうこく連合",
+    "district": "愛知1区",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第1区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-a1b17fc6",
+    "name": "古川元久",
+    "kana": "ふるかわもとひさ",
+    "level": "national",
+    "party": "国民民主党",
+    "district": "愛知2区",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第2区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-a34da432",
+    "name": "水野良彦",
+    "kana": "みずのよしひこ",
+    "level": "national",
+    "party": "自由民主党",
+    "district": "愛知3区",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第3区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-e7917464",
+    "name": "工藤彰三",
+    "kana": "くどうしょうぞう",
+    "level": "national",
+    "party": "自由民主党",
+    "district": "愛知4区",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第4区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-0f518982",
+    "name": "岡本康宏",
+    "kana": "おかもとやすひろ",
+    "level": "national",
+    "party": "自由民主党",
+    "district": "愛知5区",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第5区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-6fa6066e",
+    "name": "丹羽秀樹",
+    "kana": "にわひでき",
+    "level": "national",
+    "party": "自由民主党",
+    "district": "愛知6区",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第6区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-81cb6e51",
+    "name": "日野紗里亜",
+    "kana": "ひのさりあ",
+    "level": "national",
+    "party": "国民民主党",
+    "district": "愛知7区",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第7区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-e993491d",
+    "name": "伊藤忠彦",
+    "kana": "いとうただひこ",
+    "level": "national",
+    "party": "自由民主党",
+    "district": "愛知8区",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第8区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-bac9a65b",
+    "name": "長坂康正",
+    "kana": "ながさかやすまさ",
+    "level": "national",
+    "party": "自由民主党",
+    "district": "愛知9区",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第9区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-6ab3d9a1",
+    "name": "若山慎司",
+    "kana": "わかやましんじ",
+    "level": "national",
+    "party": "自由民主党",
+    "district": "愛知10区",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第10区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-cedb39cc",
+    "name": "丹野みどり",
+    "kana": "たんのみどり",
+    "level": "national",
+    "party": "国民民主党",
+    "district": "愛知11区",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第11区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-dd6216b1",
+    "name": "青山周平",
+    "kana": "あおやましゅうへい",
+    "level": "national",
+    "party": "自由民主党",
+    "district": "愛知12区",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第12区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-b9534cd2",
+    "name": "石井拓",
+    "kana": "いしいたく",
+    "level": "national",
+    "party": "自由民主党",
+    "district": "愛知13区",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第13区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-b4ef86ed",
+    "name": "今枝宗一郎",
+    "kana": "いまえだそういちろう",
+    "level": "national",
+    "party": "自由民主党",
+    "district": "愛知14区",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第14区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-4b065d48",
+    "name": "根本幸典",
+    "kana": "ねもとゆきのり",
+    "level": "national",
+    "party": "自由民主党",
+    "district": "愛知15区",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第15区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-44385aca",
+    "name": "山下史守朗",
+    "kana": "やましたしずお",
+    "level": "national",
+    "party": "自由民主党",
+    "district": "愛知16区",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第16区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-4dd7b521",
+    "name": "藤川政人",
+    "kana": "ふじかわまさと",
+    "level": "national",
+    "party": "自由民主党",
+    "district": "愛知県選挙区",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県選挙区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-2b393eda",
+    "name": "里見隆治",
+    "kana": "さとみりゅうじ",
+    "level": "national",
+    "party": "公明党",
+    "district": "愛知県選挙区",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県選挙区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-40de2cf3",
+    "name": "斎藤嘉隆",
+    "kana": "さいとうよしたか",
+    "level": "national",
+    "party": "立憲民主党",
+    "district": "愛知県選挙区",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県選挙区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-301067c0",
+    "name": "伊藤孝恵",
+    "kana": "いとうたかえ",
+    "level": "national",
+    "party": "国民民主党",
+    "district": "愛知県選挙区",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県選挙区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-b0189eb4",
+    "name": "酒井庸行",
+    "kana": "さかいつねゆき",
+    "level": "national",
+    "party": "自由民主党",
+    "district": "愛知県選挙区",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県選挙区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-5c52b577",
+    "name": "田島麻衣子",
+    "kana": "たじままいこ",
+    "level": "national",
+    "party": "立憲民主党",
+    "district": "愛知県選挙区",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県選挙区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-fe2d66ba",
+    "name": "水野孝一",
+    "kana": "みずのこういち",
+    "level": "national",
+    "party": "国民民主党",
+    "district": "愛知県選挙区",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県選挙区",
+    "vendor": "kokkai"
+  },
+  {
+    "id": "nat-942cc447",
+    "name": "杉本純子",
+    "kana": "すぎもとじゅんこ",
+    "level": "national",
+    "party": "参政党",
+    "district": "愛知県選挙区",
+    "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県選挙区",
+    "vendor": "kokkai"
+  }
+]
