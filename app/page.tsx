@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ZipSearch } from "@/components/ZipSearch";
+import { getIssues, getLegislators, getSpeeches } from "@/lib/data";
 
 const LAYERS = [
   {
@@ -20,6 +21,9 @@ const LAYERS = [
 ];
 
 export default function HomePage() {
+  const legCount = getLegislators().length;
+  const speechCount = getSpeeches().length;
+  const issueCount = getIssues().length;
   return (
     <div className="space-y-10">
       <section className="rounded-xl border border-line bg-surface p-6 sm:p-8">
@@ -30,6 +34,12 @@ export default function HomePage() {
         <p className="mt-4 max-w-2xl text-muted">
           国会（愛知選出）・愛知県議会・名古屋市会の三層を横断して、発言・採決・政治資金を
           公的な一次ソース付きで確認できます。専門用語を避け、5分で全体像をつかめる導線をめざします。
+        </p>
+        <p className="mt-3 text-xs text-muted">
+          現在 国・県・市の代表者{" "}
+          <span className="font-medium text-ink">{legCount}名</span> ／ 国会発言{" "}
+          <span className="font-medium text-ink">{speechCount}件</span> ／ 争点{" "}
+          <span className="font-medium text-ink">{issueCount}テーマ</span>を一次ソース付きで収録。
         </p>
         <div className="mt-6">
           <p className="mb-2 text-sm font-medium">郵便番号で、あなたの地域の代表者を調べる</p>
