@@ -4,7 +4,7 @@
 //
 // 注意: fs を使うためサーバーコンポーネント（"use client" でない）からのみ呼ぶこと。
 
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import type { Funding, Issue, Legislator, SpeechRecord, Vote } from "./types";
 import {
@@ -43,8 +43,48 @@ export function getLegislator(id: string): Legislator | undefined {
 // --- 発言 ---
 const SPEECH_FILES = ["speeches.national.json", "speeches.municipal.json"];
 
+// AI要約は data/summaries/<speechId>.json にキャッシュし、読込時にマージする。
+// （収集の再実行で要約が消えないよう、発言データとは分離して保持する）
+interface CachedSummary {
+  id: string;
+  aiSummary: string;
+  summaryModel?: string;
+  summaryGeneratedAt?: string;
+}
+let summaryCache: Map<string, CachedSummary> | null = null;
+
+function loadSummaries(): Map<string, CachedSummary> {
+  if (summaryCache) return summaryCache;
+  const map = new Map<string, CachedSummary>();
+  const dir = join(DATA_DIR, "summaries");
+  if (existsSync(dir)) {
+    for (const f of readdirSync(dir)) {
+      if (!f.endsWith(".json")) continue;
+      try {
+        const obj = JSON.parse(readFileSync(join(dir, f), "utf-8")) as CachedSummary;
+        if (obj?.id && obj.aiSummary) map.set(obj.id, obj);
+      } catch {
+        // 壊れた要約ファイルは無視（本文表示は継続）
+      }
+    }
+  }
+  summaryCache = map;
+  return map;
+}
+
 export function getSpeeches(): SpeechRecord[] {
-  return SPEECH_FILES.flatMap((f) => readArray<SpeechRecord>(f, speechRecordsSchema));
+  const summaries = loadSummaries();
+  return SPEECH_FILES.flatMap((f) => readArray<SpeechRecord>(f, speechRecordsSchema)).map((s) => {
+    const sum = summaries.get(s.id);
+    return sum
+      ? {
+          ...s,
+          aiSummary: sum.aiSummary,
+          summaryModel: sum.summaryModel,
+          summaryGeneratedAt: sum.summaryGeneratedAt,
+        }
+      : s;
+  });
 }
 
 export function getSpeechesByLegislator(legislatorId: string): SpeechRecord[] {

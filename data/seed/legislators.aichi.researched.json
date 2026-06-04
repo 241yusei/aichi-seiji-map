@@ -1,0 +1,40 @@
+{
+  "_note": "背景エージェントによる調査結果（2026-06-04）。サイトには未公開（*.seed.json ではないため seed:legislators は読まない）。重大な前提更新あり：直近の衆院選は2026年2月8日の第51回（自民大勝・自維連立）。2026年1月に立憲＋公明（衆院のみ）が『中道改革連合』結成、参院・地方議員は当面未合流。採用前にユーザー確認と一次ソースでの裏取りを要する。confidence と note を参照。",
+  "_verification_status": "pending_user_confirmation",
+  "legislators": [
+    { "name": "河村たかし", "kana": "かわむらたかし", "house": "衆議院", "district": "愛知1区", "party": "減税日本（ゆうこく連合）", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第1区", "electedYear": 2026, "confidence": "medium", "note": "第51回(2026/2/8)当選。日本保守党を離れ減税日本系で出馬。会派正式名が流動的" },
+    { "name": "古川元久", "kana": "ふるかわもとひさ", "house": "衆議院", "district": "愛知2区", "party": "国民民主党", "sourceUrl": "https://www.motohisa.net/", "electedYear": 2026, "confidence": "high", "note": "第51回当選。辻秀樹(自民)が比例復活" },
+    { "name": "水野良彦", "kana": "みずのよしひこ", "house": "衆議院", "district": "愛知3区", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第3区", "electedYear": 2026, "confidence": "high", "note": "第51回で初当選。前職近藤昭一(中道改革連合)を破る" },
+    { "name": "工藤彰三", "kana": "くどうしょうぞう", "house": "衆議院", "district": "愛知4区", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第4区", "electedYear": 2026, "confidence": "high", "note": "第50回は比例復活、第51回は小選挙区で当選" },
+    { "name": "岡本康宏", "kana": "おかもとやすひろ", "house": "衆議院", "district": "愛知5区", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第5区", "electedYear": 2026, "confidence": "high", "note": "第51回で新人初当選" },
+    { "name": "丹羽秀樹", "kana": "にわひでき", "house": "衆議院", "district": "愛知6区", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第6区", "electedYear": 2026, "confidence": "high", "note": "継続当選" },
+    { "name": "日野紗里亜", "kana": "ひのさりあ", "house": "衆議院", "district": "愛知7区", "party": "国民民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第7区", "electedYear": 2026, "confidence": "high", "note": "第51回当選。鈴木淳司(自民)が比例復活" },
+    { "name": "伊藤忠彦", "kana": "いとうただひこ", "house": "衆議院", "district": "愛知8区", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第8区", "electedYear": 2026, "confidence": "high", "note": "第51回は小選挙区で当選" },
+    { "name": "長坂康正", "kana": "ながさかやすまさ", "house": "衆議院", "district": "愛知9区", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第9区", "electedYear": 2026, "confidence": "high", "note": "第51回は小選挙区で当選" },
+    { "name": "若山慎司", "kana": "わかやましんじ", "house": "衆議院", "district": "愛知10区", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第10区", "electedYear": 2026, "confidence": "high", "note": "第51回は小選挙区で当選" },
+    { "name": "丹野みどり", "kana": "たんのみどり", "house": "衆議院", "district": "愛知11区", "party": "国民民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第11区", "electedYear": 2026, "confidence": "high", "note": "第51回当選。藤澤忠盛(自民)が比例復活" },
+    { "name": "青山周平", "kana": "あおやましゅうへい", "house": "衆議院", "district": "愛知12区", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第12区", "electedYear": 2026, "confidence": "high", "note": "第51回で奪取。前職重徳和彦(中道改革連合)は比例復活" },
+    { "name": "石井拓", "kana": "いしいたく", "house": "衆議院", "district": "愛知13区", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第13区", "electedYear": 2026, "confidence": "high", "note": "第51回で奪取" },
+    { "name": "今枝宗一郎", "kana": "いまえだそういちろう", "house": "衆議院", "district": "愛知14区", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第14区", "electedYear": 2026, "confidence": "high", "note": "継続当選" },
+    { "name": "根本幸典", "kana": "ねもとゆきのり", "house": "衆議院", "district": "愛知15区", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第15区", "electedYear": 2026, "confidence": "high", "note": "第51回当選。関健一郎(維新)が比例復活" },
+    { "name": "山下史守朗", "kana": "やましたしずお", "house": "衆議院", "district": "愛知16区", "party": "自由民主党", "sourceUrl": "https://www.jimin.jp/member/212426.html", "electedYear": 2026, "confidence": "high", "note": "第51回で初当選(元小牧市長)。前職福田徹(国民)は比例復活" },
+
+    { "name": "熊田裕通", "kana": "くまだひろみち", "house": "衆議院", "district": "比例東海", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/比例東海ブロック", "electedYear": 2026, "confidence": "high", "note": "愛知1区から重複立候補し比例復活" },
+    { "name": "辻秀樹", "kana": "つじひでき", "house": "衆議院", "district": "比例東海", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/比例東海ブロック", "electedYear": 2026, "confidence": "high", "note": "愛知2区から重複立候補し比例復活" },
+    { "name": "渡辺藍理", "kana": "わたなべあいり", "house": "衆議院", "district": "比例東海", "party": "参政党", "sourceUrl": "https://ja.wikipedia.org/wiki/比例東海ブロック", "electedYear": 2026, "confidence": "medium", "note": "愛知5区から比例復活。氏名読み要再確認" },
+    { "name": "鈴木淳司", "kana": "すずきじゅんじ", "house": "衆議院", "district": "比例東海", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/比例東海ブロック", "electedYear": 2026, "confidence": "high", "note": "愛知7区から比例復活" },
+    { "name": "藤澤忠盛", "kana": "ふじさわただもり", "house": "衆議院", "district": "比例東海", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/比例東海ブロック", "electedYear": 2026, "confidence": "medium", "note": "愛知11区から比例復活。藤澤/藤沢の表記揺れ" },
+    { "name": "重徳和彦", "kana": "しげとくかずひこ", "house": "衆議院", "district": "比例東海", "party": "中道改革連合", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第12区", "electedYear": 2026, "confidence": "high", "note": "愛知12区から比例復活。旧立憲、現中道改革連合" },
+    { "name": "関健一郎", "kana": "せきけんいちろう", "house": "衆議院", "district": "比例東海", "party": "日本維新の会", "sourceUrl": "https://ja.wikipedia.org/wiki/比例東海ブロック", "electedYear": 2026, "confidence": "medium", "note": "愛知15区から比例復活" },
+    { "name": "福田徹", "kana": "ふくたとおる", "house": "衆議院", "district": "比例東海", "party": "国民民主党", "sourceUrl": "https://new-kokumin.jp/member/fukuta-toru", "electedYear": 2026, "confidence": "high", "note": "愛知16区から比例復活。第50回は16区小選挙区当選" },
+
+    { "name": "藤川政人", "kana": "ふじかわまさひと", "house": "参議院", "district": "愛知県選挙区", "party": "自由民主党", "sourceUrl": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7010046.htm", "electedYear": 2022, "confidence": "high", "note": "2022改選。任期2028" },
+    { "name": "里見隆治", "kana": "さとみりゅうじ", "house": "参議院", "district": "愛知県選挙区", "party": "公明党", "sourceUrl": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7016020.htm", "electedYear": 2022, "confidence": "high", "note": "2022改選。参院公明は中道改革連合に未合流" },
+    { "name": "斎藤嘉隆", "kana": "さいとうよしたか", "house": "参議院", "district": "愛知県選挙区", "party": "立憲民主党", "sourceUrl": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7010027.htm", "electedYear": 2022, "confidence": "high", "note": "2022改選。参院立憲は中道改革連合に未合流" },
+    { "name": "伊藤孝恵", "kana": "いとうたかえ", "house": "参議院", "district": "愛知県選挙区", "party": "国民民主党", "sourceUrl": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7016006.htm", "electedYear": 2022, "confidence": "high", "note": "2022改選。任期2028" },
+    { "name": "酒井庸行", "kana": "さかいやすゆき", "house": "参議院", "district": "愛知県選挙区", "party": "自由民主党", "sourceUrl": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7013024.htm", "electedYear": 2025, "confidence": "high", "note": "2025改選。任期2031" },
+    { "name": "田島麻衣子", "kana": "たじままいこ", "house": "参議院", "district": "愛知県選挙区", "party": "立憲民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/田島麻衣子", "electedYear": 2025, "confidence": "high", "note": "2025改選で再選" },
+    { "name": "水野孝一", "kana": "みずのこういち", "house": "参議院", "district": "愛知県選挙区", "party": "国民民主党", "sourceUrl": "https://mizuno.ne.jp/", "electedYear": 2025, "confidence": "high", "note": "2025改選で初当選" },
+    { "name": "杉本純子", "kana": "すぎもとじゅんこ", "house": "参議院", "district": "愛知県選挙区", "party": "参政党", "sourceUrl": "https://www.tokai-tv.com/tokainews/article_20250720_41433", "electedYear": 2025, "confidence": "high", "note": "2025改選で初当選" }
+  ]
+}
