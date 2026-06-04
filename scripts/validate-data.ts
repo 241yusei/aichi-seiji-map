@@ -13,6 +13,7 @@ import {
   votesSchema,
 } from "../lib/zod-schemas";
 import type { Funding, Issue, Legislator, SpeechRecord, Vote } from "../lib/types";
+import { MUNICIPALITIES } from "../lib/municipalities";
 
 const DATA_DIR = join(process.cwd(), "data");
 let errorCount = 0;
@@ -45,16 +46,12 @@ function load<T>(file: string, schema: { parse: (d: unknown) => unknown }): T[] 
 
 console.log("データ検証を開始します…\n");
 
-const legislators = [
-  ...load<Legislator>("legislators.aichi.json", legislatorsSchema),
-  ...load<Legislator>("legislators.aichi-pref.json", legislatorsSchema),
-  ...load<Legislator>("legislators.nagoya.json", legislatorsSchema),
-  ...load<Legislator>("legislators.toyota.json", legislatorsSchema),
-  ...load<Legislator>("legislators.toyohashi.json", legislatorsSchema),
-  ...load<Legislator>("legislators.okazaki.json", legislatorsSchema),
-  ...load<Legislator>("legislators.ichinomiya.json", legislatorsSchema),
-  ...load<Legislator>("legislators.kasugai.json", legislatorsSchema),
+const legislatorFiles = [
+  "legislators.aichi.json",
+  "legislators.aichi-pref.json",
+  ...MUNICIPALITIES.map((m) => `legislators.${m.slug}.json`),
 ];
+const legislators = legislatorFiles.flatMap((f) => load<Legislator>(f, legislatorsSchema));
 const speeches = [
   ...load<SpeechRecord>("speeches.national.json", speechRecordsSchema),
   ...load<SpeechRecord>("speeches.municipal.json", speechRecordsSchema),

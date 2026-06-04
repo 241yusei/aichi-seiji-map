@@ -65,6 +65,13 @@ export const MUNICIPALITIES: Municipality[] = [
     minutesLabel: "春日井市議会 会議録検索システム",
     minutesUrl: "https://ssp.kaigiroku.net/tenant/kasugai/SpTop.html",
   },
+  // Phase3（第2陣・名簿/会議録URLは取得後に充填）
+  { govCode: "23207", slug: "toyokawa", city: "豊川市", council: "豊川市議会", minutesLabel: "豊川市議会 会議録検索システム", minutesUrl: "https://ssp.kaigiroku.net/tenant/toyokawa/SpTop.html" },
+  { govCode: "23210", slug: "kariya", city: "刈谷市", council: "刈谷市議会", minutesLabel: "刈谷市議会 会議録検索システム", minutesUrl: "https://ssp.kaigiroku.net/tenant/kariya/SpTop.html" },
+  { govCode: "23212", slug: "anjo", city: "安城市", council: "安城市議会", minutesLabel: "安城市議会 会議録検索システム", minutesUrl: "https://ssp.kaigiroku.net/tenant/anjo/SpTop.html" },
+  { govCode: "23213", slug: "nishio", city: "西尾市", council: "西尾市議会", minutesLabel: "西尾市議会 会議録検索システム", minutesUrl: "https://www.city.nishio.aichi.dbsr.jp/" },
+  { govCode: "23219", slug: "komaki", city: "小牧市", council: "小牧市議会", minutesLabel: "小牧市議会 会議録検索システム", minutesUrl: "https://komaki.gijiroku.com/" },
+  { govCode: "23220", slug: "inazawa", city: "稲沢市", council: "稲沢市議会", minutesLabel: "稲沢市議会 会議録検索システム", minutesUrl: "https://inazawa.gijiroku.com/" },
 ];
 
 export function municipalityByGov(govCode?: string): Municipality | undefined {

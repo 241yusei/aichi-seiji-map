@@ -14,6 +14,7 @@ import {
   speechRecordsSchema,
   votesSchema,
 } from "./zod-schemas";
+import { MUNICIPALITIES } from "./municipalities";
 
 const DATA_DIR = join(process.cwd(), "data");
 
@@ -26,15 +27,12 @@ function readArray<T>(file: string, schema: { parse: (data: unknown) => unknown 
 }
 
 // --- 議員 ---
+// 国会・県議会＋市は自治体レジストリ（lib/municipalities）から自動導出する。
+// → 市を増やすときは municipalities.ts に1行足すだけ（ここは編集不要）。
 const LEGISLATOR_FILES = [
   "legislators.aichi.json", // 国会（愛知選出）
   "legislators.aichi-pref.json", // 愛知県議会
-  "legislators.nagoya.json", // 名古屋市会
-  "legislators.toyota.json", // 豊田市議会（Phase2）
-  "legislators.toyohashi.json", // 豊橋市議会（Phase3）
-  "legislators.okazaki.json", // 岡崎市議会（Phase3）
-  "legislators.ichinomiya.json", // 一宮市議会（Phase3）
-  "legislators.kasugai.json", // 春日井市議会（Phase3）
+  ...MUNICIPALITIES.map((m) => `legislators.${m.slug}.json`),
 ];
 
 export function getLegislators(): Legislator[] {
