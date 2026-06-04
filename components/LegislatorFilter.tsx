@@ -1,6 +1,9 @@
 "use client";
 
-import { useMemo, useState } from "react";
+// URL（/legislators?level=）からの初期化のため、マウント時 effect で state を設定する（意図的）。
+/* eslint-disable react-hooks/set-state-in-effect */
+
+import { useEffect, useMemo, useState } from "react";
 import type { Legislator, Level } from "@/lib/types";
 import { LegislatorCard } from "./LegislatorCard";
 
@@ -15,6 +18,11 @@ export function LegislatorFilter({ legislators }: { legislators: Legislator[] })
   const [level, setLevel] = useState<Level | "all">("all");
   const [party, setParty] = useState("all");
   const [q, setQ] = useState("");
+
+  useEffect(() => {
+    const lv = new URLSearchParams(window.location.search).get("level");
+    if (lv === "national" || lv === "prefectural" || lv === "municipal") setLevel(lv);
+  }, []);
 
   const parties = useMemo(
     () =>

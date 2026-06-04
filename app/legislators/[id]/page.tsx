@@ -54,8 +54,22 @@ export default async function LegislatorDetailPage({
           ? "豊田市議会"
           : "名古屋市会";
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: legislator.name,
+    jobTitle: layerLabel,
+    ...(legislator.party ? { affiliation: legislator.party } : {}),
+    homeLocation: { "@type": "AdministrativeArea", name: legislator.district },
+    url: legislator.sourceUrl,
+  };
+
   return (
     <div className="space-y-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* プロフィール */}
       <header className="rounded-xl border border-line bg-surface p-5">
         <div className="flex flex-wrap items-center gap-2">

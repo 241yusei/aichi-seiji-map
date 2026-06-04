@@ -20,6 +20,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="ja">
       <body className="min-h-dvh">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded focus:bg-accent focus:px-3 focus:py-2 focus:text-sm focus:text-white"
+        >
+          本文へスキップ
+        </a>
         {election && <ElectionPeriodBanner name={election.name} />}
         <header className="border-b border-line bg-surface">
           <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-3">
@@ -40,7 +46,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </div>
         </header>
 
-        <main className="mx-auto max-w-5xl px-4 py-8">{children}</main>
+        <main id="main" className="mx-auto max-w-5xl px-4 py-8">
+          {children}
+        </main>
 
         <footer className="mt-16 border-t border-line bg-surface">
           <div className="mx-auto max-w-5xl px-4 py-6 text-xs text-muted">
