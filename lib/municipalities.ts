@@ -72,6 +72,15 @@ export const MUNICIPALITIES: Municipality[] = [
   { govCode: "23213", slug: "nishio", city: "西尾市", council: "西尾市議会", minutesLabel: "西尾市議会 会議録検索システム", minutesUrl: "https://www.city.nishio.aichi.dbsr.jp/" },
   { govCode: "23219", slug: "komaki", city: "小牧市", council: "小牧市議会", minutesLabel: "小牧市議会 会議録検索システム", minutesUrl: "https://komaki.gijiroku.com/" },
   { govCode: "23220", slug: "inazawa", city: "稲沢市", council: "稲沢市議会", minutesLabel: "稲沢市議会 会議録検索システム", minutesUrl: "https://inazawa.gijiroku.com/" },
+  // Phase3（第3陣・名簿/会議録URLは取得後に充填）
+  { govCode: "23204", slug: "seto", city: "瀬戸市", council: "瀬戸市議会", minutesLabel: "瀬戸市議会 会議録検索システム", minutesUrl: "https://ssp.kaigiroku.net/tenant/seto/SpTop.html" },
+  { govCode: "23205", slug: "handa", city: "半田市", council: "半田市議会", minutesLabel: "半田市議会 会議録検索システム", minutesUrl: "https://ssp.kaigiroku.net/tenant/handa/SpTop.html" },
+  { govCode: "23217", slug: "konan", city: "江南市", council: "江南市議会", minutesLabel: "江南市議会 会議録検索システム", minutesUrl: "https://ssp.kaigiroku.net/tenant/kounan/SpTop.html" },
+  { govCode: "23222", slug: "tokai", city: "東海市", council: "東海市議会", minutesLabel: "東海市議会 会議録検索システム", minutesUrl: "https://www.kensakusystem.jp/tokai/" },
+  { govCode: "23223", slug: "obu", city: "大府市", council: "大府市議会", minutesLabel: "大府市議会 会議録検索システム", minutesUrl: "https://obu.gijiroku.com/" },
+  { govCode: "23224", slug: "chita", city: "知多市", council: "知多市議会", minutesLabel: "知多市議会 会議録検索システム", minutesUrl: "https://ssp.kaigiroku.net/tenant/chita/SpTop.html" },
+  { govCode: "23226", slug: "owariasahi", city: "尾張旭市", council: "尾張旭市議会", minutesLabel: "尾張旭市議会 会議録検索システム", minutesUrl: "https://ssp.kaigiroku.net/tenant/owariasahi/SpTop.html" },
+  { govCode: "23230", slug: "nisshin", city: "日進市", council: "日進市議会", minutesLabel: "日進市議会 会議録検索システム", minutesUrl: "https://ssp.kaigiroku.net/tenant/nisshin/SpTop.html" },
 ];
 
 export function municipalityByGov(govCode?: string): Municipality | undefined {

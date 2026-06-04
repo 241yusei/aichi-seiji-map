@@ -1,0 +1,222 @@
+[
+  {
+    "id": "owariasahi-f3944d28",
+    "name": "秋田さとし",
+    "kana": "あきたさとし",
+    "level": "municipal",
+    "party": "令和あさひ",
+    "district": "尾張旭市",
+    "sourceUrl": "https://www.city.owariasahi.lg.jp/site/gikai/3477.html",
+    "govCode": "23226",
+    "vendor": "linkout"
+  },
+  {
+    "id": "owariasahi-de8cc309",
+    "name": "芦原美佳子",
+    "kana": "あしはらみかこ",
+    "level": "municipal",
+    "party": "公明党尾張旭市議団",
+    "district": "尾張旭市",
+    "sourceUrl": "https://www.city.owariasahi.lg.jp/site/gikai/3477.html",
+    "govCode": "23226",
+    "vendor": "linkout"
+  },
+  {
+    "id": "owariasahi-20f869e5",
+    "name": "市原誠二",
+    "kana": "いちはらせいじ",
+    "level": "municipal",
+    "party": "市民クラブ",
+    "district": "尾張旭市",
+    "sourceUrl": "https://www.city.owariasahi.lg.jp/site/gikai/3477.html",
+    "govCode": "23226",
+    "vendor": "linkout"
+  },
+  {
+    "id": "owariasahi-cbf18463",
+    "name": "いとう伸一",
+    "kana": "いとうしんいち",
+    "level": "municipal",
+    "party": "市民クラブ",
+    "district": "尾張旭市",
+    "sourceUrl": "https://www.city.owariasahi.lg.jp/site/gikai/3477.html",
+    "govCode": "23226",
+    "vendor": "linkout"
+  },
+  {
+    "id": "owariasahi-675f26f4",
+    "name": "大島もえ",
+    "kana": "おおしまもえ",
+    "level": "municipal",
+    "party": "市民クラブ",
+    "district": "尾張旭市",
+    "sourceUrl": "https://www.city.owariasahi.lg.jp/site/gikai/3477.html",
+    "govCode": "23226",
+    "vendor": "linkout"
+  },
+  {
+    "id": "owariasahi-d3d1f84f",
+    "name": "片渕卓三",
+    "kana": "かたぶちたくみ",
+    "level": "municipal",
+    "party": "公明党尾張旭市議団",
+    "district": "尾張旭市",
+    "sourceUrl": "https://www.city.owariasahi.lg.jp/site/gikai/3477.html",
+    "govCode": "23226",
+    "vendor": "linkout"
+  },
+  {
+    "id": "owariasahi-eb58ea12",
+    "name": "勝股修二",
+    "kana": "かつまたしゅうじ",
+    "level": "municipal",
+    "party": "愛知維新の会尾張旭市議団",
+    "district": "尾張旭市",
+    "sourceUrl": "https://www.city.owariasahi.lg.jp/site/gikai/3477.html",
+    "govCode": "23226",
+    "vendor": "linkout"
+  },
+  {
+    "id": "owariasahi-b071afb7",
+    "name": "川村つよし",
+    "kana": "かわむらつよし",
+    "level": "municipal",
+    "party": "日本共産党尾張旭市議団",
+    "district": "尾張旭市",
+    "sourceUrl": "https://www.city.owariasahi.lg.jp/site/gikai/3477.html",
+    "govCode": "23226",
+    "vendor": "linkout"
+  },
+  {
+    "id": "owariasahi-cc4a17d0",
+    "name": "さかえ章演",
+    "kana": "さかえあきひろ",
+    "level": "municipal",
+    "party": "令和あさひ",
+    "district": "尾張旭市",
+    "sourceUrl": "https://www.city.owariasahi.lg.jp/site/gikai/3477.html",
+    "govCode": "23226",
+    "vendor": "linkout"
+  },
+  {
+    "id": "owariasahi-59769ef4",
+    "name": "榊原利宏",
+    "kana": "さかきばらとしひろ",
+    "level": "municipal",
+    "party": "日本共産党尾張旭市議団",
+    "district": "尾張旭市",
+    "sourceUrl": "https://www.city.owariasahi.lg.jp/site/gikai/3477.html",
+    "govCode": "23226",
+    "vendor": "linkout"
+  },
+  {
+    "id": "owariasahi-f461f51d",
+    "name": "櫻井直樹",
+    "kana": "さくらいなおき",
+    "level": "municipal",
+    "party": "市民クラブ",
+    "district": "尾張旭市",
+    "sourceUrl": "https://www.city.owariasahi.lg.jp/site/gikai/3477.html",
+    "govCode": "23226",
+    "vendor": "linkout"
+  },
+  {
+    "id": "owariasahi-9fc3054d",
+    "name": "陣矢幸司",
+    "kana": "じんやこうじ",
+    "level": "municipal",
+    "party": "令和あさひ",
+    "district": "尾張旭市",
+    "sourceUrl": "https://www.city.owariasahi.lg.jp/site/gikai/3477.html",
+    "govCode": "23226",
+    "vendor": "linkout"
+  },
+  {
+    "id": "owariasahi-b542b79f",
+    "name": "谷口武司",
+    "kana": "たにぐちたけし",
+    "level": "municipal",
+    "party": "令和あさひ",
+    "district": "尾張旭市",
+    "sourceUrl": "https://www.city.owariasahi.lg.jp/site/gikai/3477.html",
+    "govCode": "23226",
+    "vendor": "linkout"
+  },
+  {
+    "id": "owariasahi-d96492fb",
+    "name": "早川八郎",
+    "kana": "はやかわはちろう",
+    "level": "municipal",
+    "party": "市民クラブ",
+    "district": "尾張旭市",
+    "sourceUrl": "https://www.city.owariasahi.lg.jp/site/gikai/3477.html",
+    "govCode": "23226",
+    "vendor": "linkout"
+  },
+  {
+    "id": "owariasahi-ceb77e5c",
+    "name": "日比野和雄",
+    "kana": "ひびのかずお",
+    "level": "municipal",
+    "party": "令和あさひ",
+    "district": "尾張旭市",
+    "sourceUrl": "https://www.city.owariasahi.lg.jp/site/gikai/3477.html",
+    "govCode": "23226",
+    "vendor": "linkout"
+  },
+  {
+    "id": "owariasahi-8d05643c",
+    "name": "松原たかし",
+    "kana": "まつばらたかし",
+    "level": "municipal",
+    "party": "令和あさひ",
+    "district": "尾張旭市",
+    "sourceUrl": "https://www.city.owariasahi.lg.jp/site/gikai/3477.html",
+    "govCode": "23226",
+    "vendor": "linkout"
+  },
+  {
+    "id": "owariasahi-f04dd479",
+    "name": "丸山幸子",
+    "kana": "まるやまさちこ",
+    "level": "municipal",
+    "party": "公明党尾張旭市議団",
+    "district": "尾張旭市",
+    "sourceUrl": "https://www.city.owariasahi.lg.jp/site/gikai/3477.html",
+    "govCode": "23226",
+    "vendor": "linkout"
+  },
+  {
+    "id": "owariasahi-ec6ba008",
+    "name": "安田吉宏",
+    "kana": "やすだよしひろ",
+    "level": "municipal",
+    "party": "令和あさひ",
+    "district": "尾張旭市",
+    "sourceUrl": "https://www.city.owariasahi.lg.jp/site/gikai/3477.html",
+    "govCode": "23226",
+    "vendor": "linkout"
+  },
+  {
+    "id": "owariasahi-848e78ab",
+    "name": "山下幹雄",
+    "kana": "やましたみきお",
+    "level": "municipal",
+    "party": "愛知維新の会尾張旭市議団",
+    "district": "尾張旭市",
+    "sourceUrl": "https://www.city.owariasahi.lg.jp/site/gikai/3477.html",
+    "govCode": "23226",
+    "vendor": "linkout"
+  },
+  {
+    "id": "owariasahi-7e33a4d6",
+    "name": "若杉たかし",
+    "kana": "わかすぎたかし",
+    "level": "municipal",
+    "party": "令和あさひ",
+    "district": "尾張旭市",
+    "sourceUrl": "https://www.city.owariasahi.lg.jp/site/gikai/3477.html",
+    "govCode": "23226",
+    "vendor": "linkout"
+  }
+]

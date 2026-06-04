@@ -1,0 +1,222 @@
+[
+  {
+    "id": "nisshin-55eca8cf",
+    "name": "武田治敏",
+    "kana": "たけだはるとし",
+    "level": "municipal",
+    "party": "新政ひまわり",
+    "district": "日進市",
+    "sourceUrl": "https://www.city.nisshin.lg.jp/department/gikai/giji/4/3/5554.html",
+    "govCode": "23230",
+    "vendor": "linkout"
+  },
+  {
+    "id": "nisshin-83a337c2",
+    "name": "大橋ゆうすけ",
+    "kana": "おおはしゆうすけ",
+    "level": "municipal",
+    "party": "新政ひまわり",
+    "district": "日進市",
+    "sourceUrl": "https://www.city.nisshin.lg.jp/department/gikai/giji/4/3/5554.html",
+    "govCode": "23230",
+    "vendor": "linkout"
+  },
+  {
+    "id": "nisshin-6cf7e923",
+    "name": "大屋よしお",
+    "kana": "おおやよしお",
+    "level": "municipal",
+    "party": "新政ひまわり",
+    "district": "日進市",
+    "sourceUrl": "https://www.city.nisshin.lg.jp/department/gikai/giji/4/3/5554.html",
+    "govCode": "23230",
+    "vendor": "linkout"
+  },
+  {
+    "id": "nisshin-80194330",
+    "name": "小出あさこ",
+    "kana": "こいであさこ",
+    "level": "municipal",
+    "party": "新政ひまわり",
+    "district": "日進市",
+    "sourceUrl": "https://www.city.nisshin.lg.jp/department/gikai/giji/4/3/5554.html",
+    "govCode": "23230",
+    "vendor": "linkout"
+  },
+  {
+    "id": "nisshin-b1d307c9",
+    "name": "福安淳也",
+    "kana": "ふくやすじゅんや",
+    "level": "municipal",
+    "party": "新政ひまわり",
+    "district": "日進市",
+    "sourceUrl": "https://www.city.nisshin.lg.jp/department/gikai/giji/4/3/5554.html",
+    "govCode": "23230",
+    "vendor": "linkout"
+  },
+  {
+    "id": "nisshin-bc4b53eb",
+    "name": "吉野ゆうと",
+    "kana": "よしのゆうと",
+    "level": "municipal",
+    "party": "新政ひまわり",
+    "district": "日進市",
+    "sourceUrl": "https://www.city.nisshin.lg.jp/department/gikai/giji/4/3/5554.html",
+    "govCode": "23230",
+    "vendor": "linkout"
+  },
+  {
+    "id": "nisshin-faeeb085",
+    "name": "小野田利信",
+    "kana": "おのだとしのぶ",
+    "level": "municipal",
+    "party": "新政クラブ",
+    "district": "日進市",
+    "sourceUrl": "https://www.city.nisshin.lg.jp/department/gikai/giji/4/3/5554.html",
+    "govCode": "23230",
+    "vendor": "linkout"
+  },
+  {
+    "id": "nisshin-a0f53685",
+    "name": "加納やすこ",
+    "kana": "かのうやすこ",
+    "level": "municipal",
+    "party": "新政クラブ",
+    "district": "日進市",
+    "sourceUrl": "https://www.city.nisshin.lg.jp/department/gikai/giji/4/3/5554.html",
+    "govCode": "23230",
+    "vendor": "linkout"
+  },
+  {
+    "id": "nisshin-d2821df2",
+    "name": "水野たかはる",
+    "kana": "みずのたかはる",
+    "level": "municipal",
+    "party": "新政クラブ",
+    "district": "日進市",
+    "sourceUrl": "https://www.city.nisshin.lg.jp/department/gikai/giji/4/3/5554.html",
+    "govCode": "23230",
+    "vendor": "linkout"
+  },
+  {
+    "id": "nisshin-c1688e4c",
+    "name": "舟橋よしえ",
+    "kana": "ふなはしよしえ",
+    "level": "municipal",
+    "party": "政策研究グループ「未来ネット」",
+    "district": "日進市",
+    "sourceUrl": "https://www.city.nisshin.lg.jp/department/gikai/giji/4/3/5554.html",
+    "govCode": "23230",
+    "vendor": "linkout"
+  },
+  {
+    "id": "nisshin-74aa2a4c",
+    "name": "白井えり子",
+    "kana": "しらいえりこ",
+    "level": "municipal",
+    "party": "政策研究グループ「未来ネット」",
+    "district": "日進市",
+    "sourceUrl": "https://www.city.nisshin.lg.jp/department/gikai/giji/4/3/5554.html",
+    "govCode": "23230",
+    "vendor": "linkout"
+  },
+  {
+    "id": "nisshin-694ab63b",
+    "name": "山田久美",
+    "kana": "やまだくみ",
+    "level": "municipal",
+    "party": "政策研究グループ「未来ネット」",
+    "district": "日進市",
+    "sourceUrl": "https://www.city.nisshin.lg.jp/department/gikai/giji/4/3/5554.html",
+    "govCode": "23230",
+    "vendor": "linkout"
+  },
+  {
+    "id": "nisshin-85af24ed",
+    "name": "島村きよみ",
+    "kana": "しまむらきよみ",
+    "level": "municipal",
+    "party": "政策研究会「あした」",
+    "district": "日進市",
+    "sourceUrl": "https://www.city.nisshin.lg.jp/department/gikai/giji/4/3/5554.html",
+    "govCode": "23230",
+    "vendor": "linkout"
+  },
+  {
+    "id": "nisshin-a2529814",
+    "name": "田中とおる",
+    "kana": "たなかとおる",
+    "level": "municipal",
+    "party": "政策研究会「あした」",
+    "district": "日進市",
+    "sourceUrl": "https://www.city.nisshin.lg.jp/department/gikai/giji/4/3/5554.html",
+    "govCode": "23230",
+    "vendor": "linkout"
+  },
+  {
+    "id": "nisshin-e55ebe23",
+    "name": "ゆきむらともこ",
+    "kana": "ゆきむらともこ",
+    "level": "municipal",
+    "party": "政策研究会「あした」",
+    "district": "日進市",
+    "sourceUrl": "https://www.city.nisshin.lg.jp/department/gikai/giji/4/3/5554.html",
+    "govCode": "23230",
+    "vendor": "linkout"
+  },
+  {
+    "id": "nisshin-549d9ee4",
+    "name": "中島まなみ",
+    "kana": "なかしままなみ",
+    "level": "municipal",
+    "party": "公明党",
+    "district": "日進市",
+    "sourceUrl": "https://www.city.nisshin.lg.jp/department/gikai/giji/4/3/5554.html",
+    "govCode": "23230",
+    "vendor": "linkout"
+  },
+  {
+    "id": "nisshin-51fbc86e",
+    "name": "川嶋恵美",
+    "kana": "かわしまえみ",
+    "level": "municipal",
+    "party": "公明党",
+    "district": "日進市",
+    "sourceUrl": "https://www.city.nisshin.lg.jp/department/gikai/giji/4/3/5554.html",
+    "govCode": "23230",
+    "vendor": "linkout"
+  },
+  {
+    "id": "nisshin-de939091",
+    "name": "坂林たくみ",
+    "kana": "さかばやしたくみ",
+    "level": "municipal",
+    "party": "日本共産党日進市議団",
+    "district": "日進市",
+    "sourceUrl": "https://www.city.nisshin.lg.jp/department/gikai/giji/4/3/5554.html",
+    "govCode": "23230",
+    "vendor": "linkout"
+  },
+  {
+    "id": "nisshin-114d3317",
+    "name": "ごとうみき",
+    "kana": "ごとうみき",
+    "level": "municipal",
+    "party": "日本共産党日進市議団",
+    "district": "日進市",
+    "sourceUrl": "https://www.city.nisshin.lg.jp/department/gikai/giji/4/3/5554.html",
+    "govCode": "23230",
+    "vendor": "linkout"
+  },
+  {
+    "id": "nisshin-a40dd64a",
+    "name": "岩渕晃久",
+    "kana": "いわぶちあきひさ",
+    "level": "municipal",
+    "party": "無会派",
+    "district": "日進市",
+    "sourceUrl": "https://www.city.nisshin.lg.jp/department/gikai/giji/4/3/5554.html",
+    "govCode": "23230",
+    "vendor": "linkout"
+  }
+]
