@@ -1,1 +1,37 @@
-[]
+[
+  {
+    "legislatorId": "nat-a1b17fc6",
+    "year": 2024,
+    "totalIncome": 40373491,
+    "totalExpense": 28006477,
+    "sourceUrl": "https://www.pref.aichi.jp/senkyo/071128/x/c06x0027.pdf"
+  },
+  {
+    "legislatorId": "nat-bfcafee4",
+    "year": 2024,
+    "totalIncome": 34261860,
+    "totalExpense": 24771559,
+    "sourceUrl": "https://www.pref.aichi.jp/senkyo/071128/z/c06z0635.pdf"
+  },
+  {
+    "legislatorId": "nat-8b419420",
+    "year": 2024,
+    "totalIncome": 28919496,
+    "totalExpense": 24232821,
+    "sourceUrl": "https://www.pref.aichi.jp/senkyo/071128/x/c06x0244.pdf"
+  },
+  {
+    "legislatorId": "nat-e993491d",
+    "year": 2024,
+    "totalIncome": 50632471,
+    "totalExpense": 35662162,
+    "sourceUrl": "https://www.pref.aichi.jp/senkyo/071128/x/c06x0087.pdf"
+  },
+  {
+    "legislatorId": "nat-6fa6066e",
+    "year": 2024,
+    "totalIncome": 75578828,
+    "totalExpense": 40803788,
+    "sourceUrl": "https://www.pref.aichi.jp/senkyo/071128/x/c06x0089.pdf"
+  }
+]
