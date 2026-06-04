@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ZipSearch } from "@/components/ZipSearch";
 
 const LAYERS = [
   {
@@ -30,10 +31,20 @@ export default function HomePage() {
           国会（愛知選出）・愛知県議会・名古屋市会の三層を横断して、発言・採決・政治資金を
           公的な一次ソース付きで確認できます。専門用語を避け、5分で全体像をつかめる導線をめざします。
         </p>
-        <div className="mt-6 flex flex-wrap gap-3">
+        <div className="mt-6">
+          <p className="mb-2 text-sm font-medium">郵便番号で、あなたの地域の代表者を調べる</p>
+          <ZipSearch />
+        </div>
+        <div className="mt-4 flex flex-wrap gap-3">
+          <Link
+            href="/area"
+            className="rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white hover:opacity-90"
+          >
+            地域から探す
+          </Link>
           <Link
             href="/legislators"
-            className="rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white hover:opacity-90"
+            className="rounded-lg border border-line px-4 py-2 text-sm font-medium hover:bg-accent-weak"
           >
             議員を見る
           </Link>
@@ -44,9 +55,6 @@ export default function HomePage() {
             争点から見る
           </Link>
         </div>
-        <p className="mt-4 text-xs text-muted">
-          ※ 郵便番号・地図からの地域ナビゲーションは準備中です。
-        </p>
       </section>
 
       <section>
