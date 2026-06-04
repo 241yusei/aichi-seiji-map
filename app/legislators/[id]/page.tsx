@@ -10,6 +10,8 @@ import {
 import { LevelBadge } from "@/components/LevelBadge";
 import { SpeechCard } from "@/components/SpeechCard";
 import { SourceLink } from "@/components/SourceLink";
+import { VoteTable } from "@/components/VoteTable";
+import { FundingPanel } from "@/components/FundingPanel";
 import { MINUTES_SEARCH } from "@/lib/sources/linkout";
 
 export function generateStaticParams() {
@@ -43,6 +45,7 @@ export default async function LegislatorDetailPage({
   const votes = getVotes(id);
   const funding = getFunding(id);
   const minutesSearch = MINUTES_SEARCH[legislator.level];
+  const house: "衆議院" | "参議院" = legislator.district.includes("選挙区") ? "参議院" : "衆議院";
 
   return (
     <div className="space-y-8">
@@ -94,41 +97,24 @@ export default async function LegislatorDetailPage({
         )}
       </section>
 
-      {/* 採決（M4 で本実装） */}
-      <section>
-        <h2 className="text-lg font-bold">採決</h2>
-        {votes.length === 0 ? (
-          <p className="mt-2 text-sm text-muted">
-            採決データは順次追加します。記名投票でない採決は「個人の賛否は非公開」と明示します。
-          </p>
-        ) : (
-          <ul className="mt-2 space-y-1 text-sm">
-            {votes.map((v, i) => (
-              <li key={i}>
-                {v.billTitle}：{v.result}
-              </li>
-            ))}
-          </ul>
-        )}
-      </section>
+      {/* 採決・政治資金（国会議員のみ） */}
+      {legislator.level === "national" && (
+        <>
+          <section>
+            <h2 className="text-lg font-bold">採決</h2>
+            <div className="mt-2">
+              <VoteTable votes={votes} house={house} />
+            </div>
+          </section>
 
-      {/* 政治資金（M4 で本実装） */}
-      <section>
-        <h2 className="text-lg font-bold">政治資金</h2>
-        {funding.length === 0 ? (
-          <p className="mt-2 text-sm text-muted">
-            政治資金は総務省の収支報告書を出典に、主要項目のみを順次追加します。
-          </p>
-        ) : (
-          <ul className="mt-2 space-y-1 text-sm">
-            {funding.map((f, i) => (
-              <li key={i}>
-                {f.year}年 <SourceLink href={f.sourceUrl}>出典</SourceLink>
-              </li>
-            ))}
-          </ul>
-        )}
-      </section>
+          <section>
+            <h2 className="text-lg font-bold">政治資金</h2>
+            <div className="mt-2">
+              <FundingPanel funding={funding} />
+            </div>
+          </section>
+        </>
+      )}
     </div>
   );
 }

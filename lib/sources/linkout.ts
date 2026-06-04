@@ -18,6 +18,24 @@ export const MINUTES_SEARCH: Partial<Record<Level, { label: string; url: string 
   },
 };
 
+/** 国会の採決（投票結果）の公式出典。記名でない採決は個人賛否が非公開。 */
+export const VOTE_RESULT_SOURCE: Record<"衆議院" | "参議院", { label: string; url: string }> = {
+  衆議院: {
+    label: "衆議院 議案・本会議の議決結果",
+    url: "https://www.shugiin.go.jp/internet/itdb_gian.nsf/html/gian/menu.htm",
+  },
+  参議院: {
+    label: "参議院 本会議投票結果",
+    url: "https://www.sangiin.go.jp/japanese/touhyoulist/touhyoulist.html",
+  },
+};
+
+/** 政治資金の公式出典（総務省）。Phase1は出典リンク＋主要項目のみ。 */
+export const FUNDING_SOURCE = {
+  label: "総務省 政治資金収支報告書",
+  url: "https://www.soumu.go.jp/senkyo/seiji_s/seijishikin/",
+};
+
 /** レジストリ用の linkout ソース（本文を持たないため speeches=false）。 */
 export function makeLinkoutSource(args: {
   id: string;
