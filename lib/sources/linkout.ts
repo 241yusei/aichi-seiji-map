@@ -5,6 +5,7 @@
 
 import type { DateRange, Legislator, Level, Speech } from "../types";
 import type { SpeechSource } from "./types";
+import { municipalityByGov } from "../municipalities";
 
 /** 県・市の公式会議録検索システム（争点横串ビュー用。Phase1は県＝愛知県議会・市＝名古屋市会）。 */
 export const MINUTES_SEARCH: Partial<Record<Level, { label: string; url: string }>> = {
@@ -18,27 +19,18 @@ export const MINUTES_SEARCH: Partial<Record<Level, { label: string; url: string 
   },
 };
 
-/** 自治体コード単位の会議録検索リンク（Phase2 で市が増えても拡張できる）。 */
-export const MINUTES_BY_GOV: Record<string, { label: string; url: string }> = {
-  "23000": { label: "愛知県議会 会議録検索システム", url: "https://www.pref.aichi.dbsr.jp/" },
-  "23100": {
-    label: "名古屋市会 会議録・委員会記録検索システム",
-    url: "https://ssp.kaigiroku.net/tenant/nagoya/SpTop.html",
-  },
-  "23211": { label: "豊田市議会 会議録検索システム", url: "https://www.kensakusystem.jp/toyota-c/" },
-};
-
-/** 議員の層・自治体コードから、本人の発言を探せる公式会議録検索を返す（国会は undefined）。 */
+/** 議員の層・自治体コードから、本人の発言を探せる公式会議録検索を返す（国会は undefined）。
+ *  市は自治体レジストリ（lib/municipalities）から引く。会議録URL未確認の市は undefined。 */
 export function minutesFor(legislator: { level: Level; govCode?: string }): {
   label: string;
   url: string;
 } | undefined {
   if (legislator.level === "national") return undefined;
-  if (legislator.govCode && MINUTES_BY_GOV[legislator.govCode]) {
-    return MINUTES_BY_GOV[legislator.govCode];
+  if (legislator.level === "prefectural") {
+    return { label: "愛知県議会 会議録検索システム", url: "https://www.pref.aichi.dbsr.jp/" };
   }
-  if (legislator.level === "prefectural") return MINUTES_BY_GOV["23000"];
-  return MINUTES_SEARCH.municipal;
+  const m = municipalityByGov(legislator.govCode);
+  return m && m.minutesUrl ? { label: m.minutesLabel, url: m.minutesUrl } : undefined;
 }
 
 /** 国会の採決（投票結果）の公式出典。記名でない採決は個人賛否が非公開。 */

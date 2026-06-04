@@ -50,6 +50,10 @@ const legislators = [
   ...load<Legislator>("legislators.aichi-pref.json", legislatorsSchema),
   ...load<Legislator>("legislators.nagoya.json", legislatorsSchema),
   ...load<Legislator>("legislators.toyota.json", legislatorsSchema),
+  ...load<Legislator>("legislators.toyohashi.json", legislatorsSchema),
+  ...load<Legislator>("legislators.okazaki.json", legislatorsSchema),
+  ...load<Legislator>("legislators.ichinomiya.json", legislatorsSchema),
+  ...load<Legislator>("legislators.kasugai.json", legislatorsSchema),
 ];
 const speeches = [
   ...load<SpeechRecord>("speeches.national.json", speechRecordsSchema),

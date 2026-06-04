@@ -11,7 +11,7 @@ const LEVELS: { key: Level | "all"; label: string }[] = [
   { key: "all", label: "すべて" },
   { key: "national", label: "国会（愛知選出）" },
   { key: "prefectural", label: "愛知県議会" },
-  { key: "municipal", label: "市議会（名古屋・豊田）" },
+  { key: "municipal", label: "市議会（名古屋・豊田ほか）" },
 ];
 
 export function LegislatorFilter({ legislators }: { legislators: Legislator[] }) {

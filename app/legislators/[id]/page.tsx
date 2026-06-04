@@ -12,6 +12,7 @@ import { SourceLink } from "@/components/SourceLink";
 import { VoteTable } from "@/components/VoteTable";
 import { FundingPanel } from "@/components/FundingPanel";
 import { minutesFor } from "@/lib/sources/linkout";
+import { municipalityByGov } from "@/lib/municipalities";
 
 export function generateStaticParams() {
   return getLegislators().map((l) => ({ id: l.id }));
@@ -50,9 +51,7 @@ export default async function LegislatorDetailPage({
       ? "国会（愛知選出）"
       : legislator.level === "prefectural"
         ? "愛知県議会"
-        : legislator.govCode === "23211"
-          ? "豊田市議会"
-          : "名古屋市会";
+        : (municipalityByGov(legislator.govCode)?.council ?? "市議会");
 
   const jsonLd = {
     "@context": "https://schema.org",

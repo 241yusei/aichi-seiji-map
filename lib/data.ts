@@ -31,6 +31,10 @@ const LEGISLATOR_FILES = [
   "legislators.aichi-pref.json", // 愛知県議会
   "legislators.nagoya.json", // 名古屋市会
   "legislators.toyota.json", // 豊田市議会（Phase2）
+  "legislators.toyohashi.json", // 豊橋市議会（Phase3）
+  "legislators.okazaki.json", // 岡崎市議会（Phase3）
+  "legislators.ichinomiya.json", // 一宮市議会（Phase3）
+  "legislators.kasugai.json", // 春日井市議会（Phase3）
 ];
 
 export function getLegislators(): Legislator[] {
