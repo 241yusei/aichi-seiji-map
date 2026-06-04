@@ -1,0 +1,20 @@
+// Next.js 16 の eslint-config-next はネイティブ Flat Config（Linter.Config[]）を提供する。
+// サブパスを直接スプレッドする（FlatCompat は使わない）。
+import coreWebVitals from "eslint-config-next/core-web-vitals";
+import typescript from "eslint-config-next/typescript";
+
+const eslintConfig = [
+  ...coreWebVitals,
+  ...typescript,
+  {
+    rules: {
+      // CLAUDE.md の規約: CommonJS（require）は使わない。
+      "@typescript-eslint/no-require-imports": "error",
+    },
+  },
+  {
+    ignores: [".next/**", "out/**", "node_modules/**", "data/**", "next-env.d.ts"],
+  },
+];
+
+export default eslintConfig;

@@ -1,0 +1,43 @@
+{
+  "name": "aichi-seiji-map",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "愛知政治マップ — 国会(愛知選出)・愛知県議会・名古屋市会の発言/採決/政治資金を一次ソース付きで横断把握する中立的な情報サイト",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "validate": "tsx scripts/validate-data.ts",
+    "seed:legislators": "tsx scripts/seed-legislators-aichi.ts",
+    "fetch:kokkai": "tsx scripts/fetch-kokkai.ts",
+    "fetch:nagoya": "tsx scripts/fetch-nagoya.ts",
+    "fetch:kengikai": "tsx scripts/fetch-kengikai-linkout.ts",
+    "fetch:votes": "tsx scripts/fetch-votes.ts",
+    "fetch:funding": "tsx scripts/fetch-funding.ts",
+    "summarize": "tsx scripts/summarize.ts",
+    "build:issues": "tsx scripts/build-issues.ts"
+  },
+  "dependencies": {
+    "next": "^16.2.7",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^0.100.1",
+    "@eslint/eslintrc": "^3.3.1",
+    "@tailwindcss/postcss": "^4.3.0",
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "cheerio": "^1.2.0",
+    "eslint": "^9.18.0",
+    "eslint-config-next": "^16.2.7",
+    "tailwindcss": "^4.3.0",
+    "tsx": "^4.22.4",
+    "typescript": "^5.7.0"
+  }
+}

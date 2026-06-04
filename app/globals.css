@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* 中立配色: 特定政党を想起させない、青みのあるグレー基調。 */
+@theme {
+  --color-ink: #1a1d23;
+  --color-muted: #5b6471;
+  --color-line: #e2e6ec;
+  --color-surface: #ffffff;
+  --color-canvas: #f6f8fb;
+  --color-accent: #2f5c8f;
+  --color-accent-weak: #eef3f9;
+  --font-sans: ui-sans-serif, system-ui, "Hiragino Kaku Gothic ProN",
+    "Noto Sans JP", "Yu Gothic", sans-serif;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  line-height: 1.75;
+}
+
+a {
+  text-underline-offset: 2px;
+}
