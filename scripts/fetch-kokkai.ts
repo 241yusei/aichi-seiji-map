@@ -13,6 +13,7 @@ import type { DateRange, SpeechRecord } from "../lib/types";
 const FROM = process.env.KOKKAI_FROM ?? "2024-01-01";
 const UNTIL = process.env.KOKKAI_UNTIL ?? new Date().toISOString().slice(0, 10);
 const KEEP = Number(process.env.KOKKAI_KEEP ?? "20");
+const PAGES = Number(process.env.KOKKAI_PAGES ?? "2"); // 1ページ=最大100件。会期を遡るほど増やす。
 
 const range: DateRange = { from: FROM, until: UNTIL };
 const nationals = getLegislators().filter((l) => l.level === "national");
@@ -30,7 +31,7 @@ const flagged: string[] = [];
 for (const l of nationals) {
   process.stdout.write(`  ${l.name}（${l.district}） … `);
   try {
-    const speeches = await fetchKokkaiSpeeches(l, range, { keep: KEEP });
+    const speeches = await fetchKokkaiSpeeches(l, range, { keep: KEEP, maxPages: PAGES });
     all.push(...speeches);
     console.log(`${speeches.length} 件`);
     if (speeches.length < 3) flagged.push(`${l.name}（${l.district}）: ${speeches.length} 件`);
