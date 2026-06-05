@@ -1,0 +1,167 @@
+[
+  {
+    "id": "togo-d8670d11",
+    "name": "石原えりか",
+    "kana": "いしはらえりか",
+    "level": "municipal",
+    "party": "明風会",
+    "district": "東郷町",
+    "sourceUrl": "https://www.town.aichi-togo.lg.jp/soshikikarasagasu/gikaijimukyoku/gyomuannai/2/4/2909.html",
+    "govCode": "23302",
+    "vendor": "linkout"
+  },
+  {
+    "id": "togo-c7638acd",
+    "name": "加藤のぶひさ",
+    "kana": "かとうのぶひさ",
+    "level": "municipal",
+    "party": "国民民主党",
+    "district": "東郷町",
+    "sourceUrl": "https://www.town.aichi-togo.lg.jp/soshikikarasagasu/gikaijimukyoku/gyomuannai/2/4/2909.html",
+    "govCode": "23302",
+    "vendor": "linkout"
+  },
+  {
+    "id": "togo-01042dfd",
+    "name": "高橋道則",
+    "kana": "たかはしみちのり",
+    "level": "municipal",
+    "party": "東郷維新の会",
+    "district": "東郷町",
+    "sourceUrl": "https://www.town.aichi-togo.lg.jp/soshikikarasagasu/gikaijimukyoku/gyomuannai/2/4/2909.html",
+    "govCode": "23302",
+    "vendor": "linkout"
+  },
+  {
+    "id": "togo-4c82e9bb",
+    "name": "高木佳子",
+    "kana": "たかぎけいこ",
+    "level": "municipal",
+    "party": "公明党",
+    "district": "東郷町",
+    "sourceUrl": "https://www.town.aichi-togo.lg.jp/soshikikarasagasu/gikaijimukyoku/gyomuannai/2/4/2909.html",
+    "govCode": "23302",
+    "vendor": "linkout"
+  },
+  {
+    "id": "togo-81f7264e",
+    "name": "中野まさひろ",
+    "kana": "なかのまさひろ",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "東郷町",
+    "sourceUrl": "https://www.town.aichi-togo.lg.jp/soshikikarasagasu/gikaijimukyoku/gyomuannai/2/4/2909.html",
+    "govCode": "23302",
+    "vendor": "linkout"
+  },
+  {
+    "id": "togo-20d7d7d6",
+    "name": "山下茂",
+    "kana": "やましたしげる",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "東郷町",
+    "sourceUrl": "https://www.town.aichi-togo.lg.jp/soshikikarasagasu/gikaijimukyoku/gyomuannai/2/4/2909.html",
+    "govCode": "23302",
+    "vendor": "linkout"
+  },
+  {
+    "id": "togo-e736c752",
+    "name": "熊田彰夫",
+    "kana": "くまだあきお",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "東郷町",
+    "sourceUrl": "https://www.town.aichi-togo.lg.jp/soshikikarasagasu/gikaijimukyoku/gyomuannai/2/4/2909.html",
+    "govCode": "23302",
+    "vendor": "linkout"
+  },
+  {
+    "id": "togo-b2419035",
+    "name": "こう田さとみ",
+    "kana": "こうださとみ",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "東郷町",
+    "sourceUrl": "https://www.town.aichi-togo.lg.jp/soshikikarasagasu/gikaijimukyoku/gyomuannai/2/4/2909.html",
+    "govCode": "23302",
+    "vendor": "linkout"
+  },
+  {
+    "id": "togo-62392d89",
+    "name": "山田達郎",
+    "kana": "やまだたつろう",
+    "level": "municipal",
+    "party": "無所属の会",
+    "district": "東郷町",
+    "sourceUrl": "https://www.town.aichi-togo.lg.jp/soshikikarasagasu/gikaijimukyoku/gyomuannai/2/4/2909.html",
+    "govCode": "23302",
+    "vendor": "linkout"
+  },
+  {
+    "id": "togo-7ba0838c",
+    "name": "加藤宏明",
+    "kana": "かとうひろあき",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "東郷町",
+    "sourceUrl": "https://www.town.aichi-togo.lg.jp/soshikikarasagasu/gikaijimukyoku/gyomuannai/2/4/2909.html",
+    "govCode": "23302",
+    "vendor": "linkout"
+  },
+  {
+    "id": "togo-8b89701f",
+    "name": "水川淳",
+    "kana": "みずかわあつし",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "東郷町",
+    "sourceUrl": "https://www.town.aichi-togo.lg.jp/soshikikarasagasu/gikaijimukyoku/gyomuannai/2/4/2909.html",
+    "govCode": "23302",
+    "vendor": "linkout"
+  },
+  {
+    "id": "togo-1efe8ff7",
+    "name": "加藤啓二",
+    "kana": "かとうけいじ",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "東郷町",
+    "sourceUrl": "https://www.town.aichi-togo.lg.jp/soshikikarasagasu/gikaijimukyoku/gyomuannai/2/4/2909.html",
+    "govCode": "23302",
+    "vendor": "linkout"
+  },
+  {
+    "id": "togo-f26aaafd",
+    "name": "若園ひでこ",
+    "kana": "わかぞのひでこ",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "東郷町",
+    "sourceUrl": "https://www.town.aichi-togo.lg.jp/soshikikarasagasu/gikaijimukyoku/gyomuannai/2/4/2909.html",
+    "govCode": "23302",
+    "vendor": "linkout"
+  },
+  {
+    "id": "togo-6a61096c",
+    "name": "門原武志",
+    "kana": "かどはらたけし",
+    "level": "municipal",
+    "party": "日本共産党",
+    "district": "東郷町",
+    "sourceUrl": "https://www.town.aichi-togo.lg.jp/soshikikarasagasu/gikaijimukyoku/gyomuannai/2/4/2909.html",
+    "govCode": "23302",
+    "vendor": "linkout"
+  },
+  {
+    "id": "togo-a2d5fe32",
+    "name": "菱川和英",
+    "kana": "ひしかわかずひで",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "東郷町",
+    "sourceUrl": "https://www.town.aichi-togo.lg.jp/soshikikarasagasu/gikaijimukyoku/gyomuannai/2/4/2909.html",
+    "govCode": "23302",
+    "vendor": "linkout"
+  }
+]

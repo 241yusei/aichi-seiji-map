@@ -101,6 +101,23 @@ export const MUNICIPALITIES: Municipality[] = [
   { govCode: "23236", slug: "miyoshi", city: "みよし市", council: "みよし市議会", minutesLabel: "みよし市議会 会議録検索システム", minutesUrl: "https://www.kensakusystem.jp/miyoshi-c/index.html" },
   { govCode: "23237", slug: "ama", city: "あま市", council: "あま市議会", minutesLabel: "あま市議会 会議録検索システム", minutesUrl: "https://www.city.ama.aichi.dbsr.jp/" },
   { govCode: "23238", slug: "nagakute", city: "長久手市", council: "長久手市議会", minutesLabel: "長久手市議会 会議録検索システム", minutesUrl: "http://www.kensakusystem.jp/nagakute/" },
+  // Phase3（第6陣＝町村。これで愛知54市町村すべて収録）。会議録ベンダー不在の町村は minutesUrl="" でリンク非表示。
+  { govCode: "23302", slug: "togo", city: "東郷町", council: "東郷町議会", minutesLabel: "東郷町議会 会議録検索システム", minutesUrl: "https://www.town.togo.aichi.dbsr.jp/" },
+  { govCode: "23342", slug: "toyoyama", city: "豊山町", council: "豊山町議会", minutesLabel: "豊山町議会 会議録検索システム", minutesUrl: "https://ssp.kaigiroku.net/tenant/toyoyama/SpTop.html" },
+  { govCode: "23361", slug: "oguchi", city: "大口町", council: "大口町議会", minutesLabel: "大口町議会 会議録検索システム", minutesUrl: "https://ssp.kaigiroku.net/tenant/oguchi/SpTop.html" },
+  { govCode: "23362", slug: "fuso", city: "扶桑町", council: "扶桑町議会", minutesLabel: "扶桑町議会 会議録検索システム", minutesUrl: "https://www.kensakusystem.jp/fuso/index.html" },
+  { govCode: "23424", slug: "oharu", city: "大治町", council: "大治町議会", minutesLabel: "大治町議会 会議録（町公式PDF）", minutesUrl: "" },
+  { govCode: "23425", slug: "kanie", city: "蟹江町", council: "蟹江町議会", minutesLabel: "蟹江町議会 会議録（町公式PDF）", minutesUrl: "" },
+  { govCode: "23427", slug: "tobishima", city: "飛島村", council: "飛島村議会", minutesLabel: "飛島村議会 会議録検索システム", minutesUrl: "https://ssp.kaigiroku.net/tenant/tobishima2/SpTop.html" },
+  { govCode: "23441", slug: "agui", city: "阿久比町", council: "阿久比町議会", minutesLabel: "阿久比町議会 会議録検索システム", minutesUrl: "https://ssp.kaigiroku.net/tenant/agui/SpTop.html" },
+  { govCode: "23442", slug: "higashiura", city: "東浦町", council: "東浦町議会", minutesLabel: "東浦町議会 会議録検索システム", minutesUrl: "https://ssp.kaigiroku.net/tenant/higashiura/SpTop.html" },
+  { govCode: "23445", slug: "minamichita", city: "南知多町", council: "南知多町議会", minutesLabel: "南知多町議会 会議録（町公式PDF）", minutesUrl: "" },
+  { govCode: "23446", slug: "mihama", city: "美浜町", council: "美浜町議会", minutesLabel: "美浜町議会 会議録（町公式PDF）", minutesUrl: "" },
+  { govCode: "23447", slug: "taketoyo", city: "武豊町", council: "武豊町議会", minutesLabel: "武豊町議会 会議録検索システム", minutesUrl: "https://ssp.kaigiroku.net/tenant/taketoyo/SpTop.html" },
+  { govCode: "23501", slug: "kota", city: "幸田町", council: "幸田町議会", minutesLabel: "幸田町議会 会議録（町公式PDF）", minutesUrl: "" },
+  { govCode: "23561", slug: "shitara", city: "設楽町", council: "設楽町議会", minutesLabel: "設楽町議会 会議録（町公式PDF）", minutesUrl: "" },
+  { govCode: "23562", slug: "toei", city: "東栄町", council: "東栄町議会", minutesLabel: "東栄町議会 会議録（町公式PDF）", minutesUrl: "" },
+  { govCode: "23563", slug: "toyone", city: "豊根村", council: "豊根村議会", minutesLabel: "豊根村議会 会議録（村公式PDF）", minutesUrl: "" },
 ];
 
 export function municipalityByGov(govCode?: string): Municipality | undefined {

@@ -1,0 +1,178 @@
+[
+  {
+    "id": "kota-f069c96b",
+    "name": "藤本和美",
+    "kana": "ふじもとかずみ",
+    "level": "municipal",
+    "party": "参政党",
+    "district": "幸田町",
+    "sourceUrl": "https://www.town.kota.lg.jp/site/gikai/1138.html",
+    "govCode": "23501",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kota-d02e5560",
+    "name": "吉本智明",
+    "kana": "よしもとちあき",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "幸田町",
+    "sourceUrl": "https://www.town.kota.lg.jp/site/gikai/1138.html",
+    "govCode": "23501",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kota-4160bc64",
+    "name": "野坂純子",
+    "kana": "のさかじゅんこ",
+    "level": "municipal",
+    "party": "公明党",
+    "district": "幸田町",
+    "sourceUrl": "https://www.town.kota.lg.jp/site/gikai/1138.html",
+    "govCode": "23501",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kota-1077e2ee",
+    "name": "松本忠明",
+    "kana": "まつもとただあき",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "幸田町",
+    "sourceUrl": "https://www.town.kota.lg.jp/site/gikai/1138.html",
+    "govCode": "23501",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kota-c326fe96",
+    "name": "長谷川進",
+    "kana": "はせがわすすむ",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "幸田町",
+    "sourceUrl": "https://www.town.kota.lg.jp/site/gikai/1138.html",
+    "govCode": "23501",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kota-44dd62e5",
+    "name": "岩本知帆",
+    "kana": "いわもとちほ",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "幸田町",
+    "sourceUrl": "https://www.town.kota.lg.jp/site/gikai/1138.html",
+    "govCode": "23501",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kota-515eab8d",
+    "name": "田境毅",
+    "kana": "たきょうつよし",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "幸田町",
+    "sourceUrl": "https://www.town.kota.lg.jp/site/gikai/1138.html",
+    "govCode": "23501",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kota-18b4bb50",
+    "name": "石原昇",
+    "kana": "いしはらのぼる",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "幸田町",
+    "sourceUrl": "https://www.town.kota.lg.jp/site/gikai/1138.html",
+    "govCode": "23501",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kota-088a826e",
+    "name": "鈴木久夫",
+    "kana": "すずきひさお",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "幸田町",
+    "sourceUrl": "https://www.town.kota.lg.jp/site/gikai/1138.html",
+    "govCode": "23501",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kota-186eaa42",
+    "name": "黒木一",
+    "kana": "くろきはじめ",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "幸田町",
+    "sourceUrl": "https://www.town.kota.lg.jp/site/gikai/1138.html",
+    "govCode": "23501",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kota-467a8e3a",
+    "name": "藤江徹",
+    "kana": "ふじえとおる",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "幸田町",
+    "sourceUrl": "https://www.town.kota.lg.jp/site/gikai/1138.html",
+    "govCode": "23501",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kota-cb98263a",
+    "name": "稲吉照夫",
+    "kana": "いなよしてるお",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "幸田町",
+    "sourceUrl": "https://www.town.kota.lg.jp/site/gikai/1138.html",
+    "govCode": "23501",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kota-51aafe67",
+    "name": "笹野康男",
+    "kana": "ささのやすお",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "幸田町",
+    "sourceUrl": "https://www.town.kota.lg.jp/site/gikai/1138.html",
+    "govCode": "23501",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kota-fb5f7ef1",
+    "name": "丸山千代子",
+    "kana": "まるやまちよこ",
+    "level": "municipal",
+    "party": "日本共産党",
+    "district": "幸田町",
+    "sourceUrl": "https://www.town.kota.lg.jp/site/gikai/1138.html",
+    "govCode": "23501",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kota-575a4c62",
+    "name": "都築幸夫",
+    "kana": "つづきゆきお",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "幸田町",
+    "sourceUrl": "https://www.town.kota.lg.jp/site/gikai/1138.html",
+    "govCode": "23501",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kota-2f71354b",
+    "name": "廣野房男",
+    "kana": "ひろのふさお",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "幸田町",
+    "sourceUrl": "https://www.town.kota.lg.jp/site/gikai/1138.html",
+    "govCode": "23501",
+    "vendor": "linkout"
+  }
+]

@@ -1,0 +1,156 @@
+[
+  {
+    "id": "kanie-03f61ca4",
+    "name": "武藤くるみ",
+    "kana": "むとうくるみ",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "蟹江町",
+    "sourceUrl": "https://www.town.kanie.aichi.jp/site/gikai/gikai-giin.html",
+    "govCode": "23425",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kanie-00a97914",
+    "name": "多田陽子",
+    "kana": "ただようこ",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "蟹江町",
+    "sourceUrl": "https://www.town.kanie.aichi.jp/site/gikai/gikai-giin.html",
+    "govCode": "23425",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kanie-787b8d86",
+    "name": "志治市義",
+    "kana": "しじいちよし",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "蟹江町",
+    "sourceUrl": "https://www.town.kanie.aichi.jp/site/gikai/gikai-giin.html",
+    "govCode": "23425",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kanie-a48b7728",
+    "name": "石原裕介",
+    "kana": "いしはらゆうすけ",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "蟹江町",
+    "sourceUrl": "https://www.town.kanie.aichi.jp/site/gikai/gikai-giin.html",
+    "govCode": "23425",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kanie-d239b27d",
+    "name": "山岸美登利",
+    "kana": "やまぎしみどり",
+    "level": "municipal",
+    "party": "公明党",
+    "district": "蟹江町",
+    "sourceUrl": "https://www.town.kanie.aichi.jp/site/gikai/gikai-giin.html",
+    "govCode": "23425",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kanie-0b6e5b5d",
+    "name": "飯田雅広",
+    "kana": "いいだまさひろ",
+    "level": "municipal",
+    "party": "立憲民主党",
+    "district": "蟹江町",
+    "sourceUrl": "https://www.town.kanie.aichi.jp/site/gikai/gikai-giin.html",
+    "govCode": "23425",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kanie-43ed835e",
+    "name": "板倉浩幸",
+    "kana": "いたくらひろゆき",
+    "level": "municipal",
+    "party": "日本共産党",
+    "district": "蟹江町",
+    "sourceUrl": "https://www.town.kanie.aichi.jp/site/gikai/gikai-giin.html",
+    "govCode": "23425",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kanie-ea474e06",
+    "name": "水野智見",
+    "kana": "みずのとしみ",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "蟹江町",
+    "sourceUrl": "https://www.town.kanie.aichi.jp/site/gikai/gikai-giin.html",
+    "govCode": "23425",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kanie-89d88cca",
+    "name": "三浦知将",
+    "kana": "みうらともゆき",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "蟹江町",
+    "sourceUrl": "https://www.town.kanie.aichi.jp/site/gikai/gikai-giin.html",
+    "govCode": "23425",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kanie-b01ce8e2",
+    "name": "吉田正昭",
+    "kana": "よしだまさあき",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "蟹江町",
+    "sourceUrl": "https://www.town.kanie.aichi.jp/site/gikai/gikai-giin.html",
+    "govCode": "23425",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kanie-9ed9a216",
+    "name": "冨田さとみ",
+    "kana": "とみたさとみ",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "蟹江町",
+    "sourceUrl": "https://www.town.kanie.aichi.jp/site/gikai/gikai-giin.html",
+    "govCode": "23425",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kanie-0fb82779",
+    "name": "伊藤俊一",
+    "kana": "いとうしゅんいち",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "蟹江町",
+    "sourceUrl": "https://www.town.kanie.aichi.jp/site/gikai/gikai-giin.html",
+    "govCode": "23425",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kanie-2abf39b4",
+    "name": "安藤洋一",
+    "kana": "あんどうよういち",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "蟹江町",
+    "sourceUrl": "https://www.town.kanie.aichi.jp/site/gikai/gikai-giin.html",
+    "govCode": "23425",
+    "vendor": "linkout"
+  },
+  {
+    "id": "kanie-dc4a3a96",
+    "name": "佐藤茂",
+    "kana": "さとうしげる",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "蟹江町",
+    "sourceUrl": "https://www.town.kanie.aichi.jp/site/gikai/gikai-giin.html",
+    "govCode": "23425",
+    "vendor": "linkout"
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "toei-db9882b2",
+    "name": "加藤彰男",
+    "kana": "かとうあきお",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "東栄町",
+    "sourceUrl": "https://www.town.toei.aichi.jp/1168.htm",
+    "govCode": "23562",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toei-86dfe184",
+    "name": "村本敏美",
+    "kana": "むらもととしみ",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "東栄町",
+    "sourceUrl": "https://www.town.toei.aichi.jp/1168.htm",
+    "govCode": "23562",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toei-1d8ce66f",
+    "name": "岡田浩二",
+    "kana": "おかだこうじ",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "東栄町",
+    "sourceUrl": "https://www.town.toei.aichi.jp/1168.htm",
+    "govCode": "23562",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toei-d006f203",
+    "name": "佐々木一也",
+    "kana": "ささきかずや",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "東栄町",
+    "sourceUrl": "https://www.town.toei.aichi.jp/1168.htm",
+    "govCode": "23562",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toei-6c7d31a9",
+    "name": "浅尾もと子",
+    "kana": "あさおもとこ",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "東栄町",
+    "sourceUrl": "https://www.town.toei.aichi.jp/1168.htm",
+    "govCode": "23562",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toei-9628e591",
+    "name": "櫻井孝憲",
+    "kana": "さくらいたかのり",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "東栄町",
+    "sourceUrl": "https://www.town.toei.aichi.jp/1168.htm",
+    "govCode": "23562",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toei-e2155c1a",
+    "name": "伊藤真千子",
+    "kana": "いとうまちこ",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "東栄町",
+    "sourceUrl": "https://www.town.toei.aichi.jp/1168.htm",
+    "govCode": "23562",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toei-26e7875a",
+    "name": "西谷賢治",
+    "kana": "にしたにけんじ",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "東栄町",
+    "sourceUrl": "https://www.town.toei.aichi.jp/1168.htm",
+    "govCode": "23562",
+    "vendor": "linkout"
+  }
+]
