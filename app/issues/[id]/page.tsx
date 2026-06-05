@@ -15,9 +15,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { id } = await params;
   const issue = getIssue(id);
-  return issue
-    ? { title: issue.title, description: issue.description }
-    : { title: "争点" };
+  return issue ? { title: issue.title, description: issue.description } : { title: "争点" };
 }
 
 export default async function IssueDetailPage({
@@ -39,21 +37,24 @@ export default async function IssueDetailPage({
   }));
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       <p className="text-sm">
-        <Link href="/issues" className="text-accent hover:underline">
+        <Link href="/issues" className="link-ink">
           ← 争点一覧
         </Link>
       </p>
 
-      <header className="rounded-xl border border-line bg-surface p-5">
-        <h1 className="text-2xl font-bold">{issue.title}</h1>
-        <p className="mt-2 text-sm text-muted">{issue.description}</p>
+      <header className="border-b-2 border-ink pb-6">
+        <p className="eyebrow text-faint">Issue · 三層横串</p>
+        <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-[1.05]">
+          {issue.title}
+        </h1>
+        <p className="measure mt-3 text-muted">{issue.description}</p>
       </header>
 
-      <p className="text-xs text-muted">
+      <p className="text-xs text-faint">
         同じ争点について、国・県・市の発言や動きを並べています。国会の発言は会議録から取得した一次ソース付き、
-        県・市は公式の会議録検索への導線です。
+        県・市は公式の会議録検索への導線です。賛否は等量・等デザインで提示します。
       </p>
 
       <CrossLayerView items={items} keywords={issue.keywords ?? []} />

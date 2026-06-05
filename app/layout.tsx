@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { Archivo, Inter, Noto_Sans_JP } from "next/font/google";
+import { Anton, Inter, Noto_Sans_JP, Space_Mono } from "next/font/google";
 import { getActiveElectionWindow } from "@/lib/election-window";
 import { ElectionPeriodBanner } from "@/components/ElectionPeriodBanner";
 import "./globals.css";
 
-// 大胆グロテスクのディスプレイ書体（見出し・ワードマーク）。
-const archivo = Archivo({
+// 超极太グロテスクのディスプレイ書体（特大見出し・032c 風）。
+const anton = Anton({
   subsets: ["latin"],
-  weight: ["600", "700", "800"],
-  variable: "--font-archivo",
+  weight: "400",
+  variable: "--font-anton",
   display: "swap",
 });
-// UI・本文の欧文/数字（Helvetica 的な中立グロテスク）。
+// UI・本文の欧文/数字（中立グロテスク）。
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -24,6 +24,13 @@ const notoJP = Noto_Sans_JP({
   subsets: ["latin"],
   weight: ["400", "500", "700", "900"],
   variable: "--font-noto",
+  display: "swap",
+});
+// メタ・ラベル・番号（モノスペース＝編集的）。
+const spaceMono = Space_Mono({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-spacemono",
   display: "swap",
 });
 
@@ -47,7 +54,10 @@ const NAV = [
 export default function RootLayout({ children }: { children: ReactNode }) {
   const election = getActiveElectionWindow();
   return (
-    <html lang="ja" className={`${archivo.variable} ${inter.variable} ${notoJP.variable}`}>
+    <html
+      lang="ja"
+      className={`${anton.variable} ${inter.variable} ${notoJP.variable} ${spaceMono.variable}`}
+    >
       <body className="min-h-dvh">
         <a
           href="#main"

@@ -9,6 +9,17 @@ export interface CrossLayerItem {
   legislator?: Legislator;
 }
 
+function LayerHead({ label, full }: { label: string; full: string }) {
+  return (
+    <h3 className="mb-3 flex items-baseline gap-2 border-b-2 border-ink pb-2">
+      <span className="inline-flex items-center border border-ink px-1.5 text-[0.7rem] font-bold leading-5 text-ink">
+        {label}
+      </span>
+      <span className="font-display text-lg">{full}</span>
+    </h3>
+  );
+}
+
 function MinutesColumn({
   level,
   keywords,
@@ -18,25 +29,24 @@ function MinutesColumn({
 }) {
   const m = MINUTES_SEARCH[level];
   if (!m) return null;
-  const body =
-    level === "prefectural" ? "愛知県議会" : "名古屋市会";
+  const body = level === "prefectural" ? "愛知県議会" : "市町村議会";
   return (
-    <div className="rounded-xl border border-line bg-surface p-4 text-sm text-muted">
+    <div className="border-l-2 border-line bg-subtle px-4 py-3 text-sm text-muted">
       <p>
         {body}の発言本文は、各サイトの規約・robots.txt に配慮し本サイトでは扱っていません。
         公式の会議録検索システムで、次のキーワードからご確認いただけます。
       </p>
       {keywords.length > 0 && (
-        <div className="mt-2 flex flex-wrap gap-1">
+        <div className="mt-2 flex flex-wrap gap-1.5">
           {keywords.map((k) => (
-            <span key={k} className="rounded bg-accent-weak px-2 py-0.5 text-xs text-accent">
+            <span key={k} className="border border-line bg-surface px-2 py-0.5 text-xs text-ink">
               {k}
             </span>
           ))}
         </div>
       )}
       <p className="mt-3">
-        <SourceLink href={m.url}>{m.label} ↗</SourceLink>
+        <SourceLink href={m.url}>{m.label}</SourceLink>
       </p>
     </div>
   );
@@ -51,14 +61,11 @@ export function CrossLayerView({
   keywords: string[];
 }) {
   return (
-    <div className="grid gap-5 lg:grid-cols-3">
+    <div className="grid gap-8 lg:grid-cols-3">
       <section>
-        <h3 className="mb-2 flex items-center gap-2 text-sm font-bold">
-          <span className="rounded bg-accent-weak px-1.5 py-0.5 text-xs text-accent">国</span>
-          国会（愛知選出）
-        </h3>
+        <LayerHead label="国" full="国会（愛知選出）" />
         {items.length === 0 ? (
-          <p className="rounded-xl border border-line bg-surface p-4 text-sm text-muted">
+          <p className="border-l-2 border-line bg-subtle px-4 py-3 text-sm text-muted">
             取得済みの発言からは、この争点の関連発言は見つかりませんでした。
           </p>
         ) : (
@@ -68,7 +75,7 @@ export function CrossLayerView({
                 {legislator && (
                   <Link
                     href={`/legislators/${legislator.id}/`}
-                    className="mb-1 inline-block text-xs font-medium text-accent hover:underline"
+                    className="link-ink mb-1 inline-block text-xs"
                   >
                     {legislator.name}（{legislator.district}
                     {legislator.party ? `・${legislator.party}` : ""}）
@@ -82,18 +89,12 @@ export function CrossLayerView({
       </section>
 
       <section>
-        <h3 className="mb-2 flex items-center gap-2 text-sm font-bold">
-          <span className="rounded bg-accent-weak px-1.5 py-0.5 text-xs text-accent">県</span>
-          愛知県議会
-        </h3>
+        <LayerHead label="県" full="愛知県議会" />
         <MinutesColumn level="prefectural" keywords={keywords} />
       </section>
 
       <section>
-        <h3 className="mb-2 flex items-center gap-2 text-sm font-bold">
-          <span className="rounded bg-accent-weak px-1.5 py-0.5 text-xs text-accent">市</span>
-          名古屋市会
-        </h3>
+        <LayerHead label="市" full="市町村議会" />
         <MinutesColumn level="municipal" keywords={keywords} />
       </section>
     </div>

@@ -31,12 +31,15 @@ export default function AreaPage() {
 
   return (
     <div>
-      <h1 className="text-xl font-bold">地域から探す</h1>
-      <p className="mt-1 text-sm text-muted">
-        郵便番号、または名古屋市の区から、あなたの地域の代表者（国・県・市）をまとめて表示します。
-        ※ Phase 1 は名古屋市内に対応。対象範囲は順次拡大します。
-      </p>
-      <div className="mt-5">
+      <header className="border-b-2 border-ink pb-6">
+        <p className="eyebrow text-faint">Area</p>
+        <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">地域から探す</h1>
+        <p className="measure mt-3 text-muted">
+          郵便番号、または名古屋市の区から、あなたの地域の代表者（国・県・市）をまとめて表示します。
+          ※ 現在は名古屋市内に対応。対象範囲は順次拡大します。
+        </p>
+      </header>
+      <div className="mt-6">
         <AreaExplorer wardData={wardData} />
       </div>
     </div>

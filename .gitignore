@@ -16,6 +16,7 @@ next-env.d.ts
 
 # Claude Code のローカル個人設定
 .claude/settings.local.json
+.claude/launch.json
 
 # misc
 .DS_Store

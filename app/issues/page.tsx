@@ -13,26 +13,35 @@ export default function IssuesPage() {
 
   return (
     <div>
-      <h1 className="text-xl font-bold">争点（ローカルテーマ）</h1>
-      <p className="mt-1 text-sm text-muted">
-        愛知のローカル争点を、国会・愛知県議会・名古屋市会の三層を横串にして見ます。
-      </p>
+      <header className="border-b-2 border-ink pb-6">
+        <p className="eyebrow text-faint">Issues</p>
+        <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">争点</h1>
+        <p className="measure mt-3 text-muted">
+          愛知のローカル争点を、国会・愛知県議会・市町村議会の三層を横串にして見ます。
+        </p>
+      </header>
 
       {issues.length === 0 ? (
         <p className="mt-6 text-sm text-muted">争点データは準備中です。</p>
       ) : (
-        <div className="mt-5 grid gap-4 sm:grid-cols-2">
-          {issues.map((issue) => (
+        <div className="mt-4">
+          {issues.map((issue, i) => (
             <Link
               key={issue.id}
               href={`/issues/${issue.id}/`}
-              className="block rounded-xl border border-line bg-surface p-5 transition hover:border-accent"
+              className="group grid grid-cols-[2.5rem_1fr_auto] items-baseline gap-4 border-t border-line py-6 transition-colors last:border-b hover:bg-subtle"
             >
-              <h2 className="font-bold">{issue.title}</h2>
-              <p className="mt-2 line-clamp-3 text-sm text-muted">{issue.description}</p>
-              <p className="mt-3 text-xs text-accent">
-                国会の関連発言 {issue.relatedSpeechIds.length} 件 ・ 三層で見る →
-              </p>
+              <span className="font-display tnum text-faint">{String(i + 1).padStart(2, "0")}</span>
+              <div>
+                <h2 className="font-display text-xl sm:text-2xl">{issue.title}</h2>
+                <p className="measure mt-1 line-clamp-2 text-sm text-muted">{issue.description}</p>
+                <p className="eyebrow mt-2 text-accent-deep">
+                  国会の関連発言 {issue.relatedSpeechIds.length}件 · 三層で見る
+                </p>
+              </div>
+              <span aria-hidden className="text-faint transition-colors group-hover:text-accent">
+                →
+              </span>
             </Link>
           ))}
         </div>

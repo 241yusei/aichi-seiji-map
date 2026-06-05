@@ -10,20 +10,23 @@ export const metadata: Metadata = {
 
 function Section({ title, children }: { title: string; children: ReactNode }) {
   return (
-    <section className="rounded-xl border border-line bg-surface p-5">
-      <h2 className="text-lg font-bold">{title}</h2>
-      <div className="mt-2 space-y-2 text-sm text-muted">{children}</div>
+    <section className="border-t-2 border-ink pt-5">
+      <h2 className="font-display text-xl">{title}</h2>
+      <div className="measure mt-2 space-y-2 text-sm text-muted">{children}</div>
     </section>
   );
 }
 
 export default function AboutPage() {
   return (
-    <div className="space-y-5">
-      <header>
-        <h1 className="text-2xl font-bold">このサイトについて</h1>
-        <p className="mt-2 text-sm text-muted">
-          愛知政治マップは、愛知県の有権者が国会（愛知選出）・愛知県議会・名古屋市会の代表者の発言・採決・政治資金を、
+    <div className="space-y-8">
+      <header className="border-b-2 border-ink pb-6">
+        <p className="eyebrow text-faint">About</p>
+        <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">
+          このサイトについて
+        </h1>
+        <p className="measure mt-3 text-muted">
+          愛知政治マップは、愛知県の有権者が国会（愛知選出）・愛知県議会・全54市町村の代表者の発言・採決・政治資金を、
           一次ソースに基づいて横断的に確認するための中立的な情報サイトです。
         </p>
       </header>
@@ -36,17 +39,15 @@ export default function AboutPage() {
       </Section>
 
       <Section title="データの出典">
-        <ul className="list-disc pl-5">
+        <ul className="list-disc space-y-1 pl-5">
           <li>
             国会の発言：
             <SourceLink href="https://kokkai.ndl.go.jp/">国会会議録検索システム</SourceLink>
             （国立国会図書館）のAPIから取得し、各発言に原文へのリンクを併記しています。
           </li>
+          <li>議員一覧：衆参の選挙結果・各議会の公式議員名簿に基づきます（各議員ページに出典リンク）。</li>
           <li>
-            議員一覧：衆参の選挙結果・各議会の公式議員名簿に基づきます（各議員ページに出典リンク）。
-          </li>
-          <li>
-            愛知県議会・名古屋市会の発言：各サイトの規約・robots.txt に配慮し、本文は転載せず、
+            愛知県議会・市町村議会の発言：各サイトの規約・robots.txt に配慮し、本文は転載せず、
             公式の会議録検索システムへの出典リンクで案内しています。
           </li>
           <li>
@@ -80,12 +81,7 @@ export default function AboutPage() {
       </Section>
 
       <Section title="運営">
-        <p>
-          運営：愛知政治マップ編集部（ナゴヤ人間）。お問い合わせ先は準備中です。
-        </p>
-        <p className="text-xs">
-          ※ 本ページは Phase 1（国会・愛知県議会・名古屋市会）の内容です。対象範囲は順次拡大します。
-        </p>
+        <p>運営：愛知政治マップ編集部（ナゴヤ人間）。お問い合わせ先は準備中です。</p>
       </Section>
     </div>
   );

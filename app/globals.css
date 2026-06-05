@@ -1,37 +1,39 @@
 @import "tailwindcss";
 
 /* ============================================================
-   愛知政治マップ デザインシステム
-   オフホワイト × インク × 差し色（朱）／ Swiss・032c エディトリアル
+   愛知政治マップ デザインシステム ── 案B「032c 編集誌」
+   オフホワイト × インク × くすんだ朱（差し色1色）／ 超极太グロテスク見出し
    中立は色でなくサイズ・記号・濃淡・罫線・ラベルで階層化する。
    ============================================================ */
 @theme {
   /* 面・文字 */
-  --color-paper: #faf9f6; /* ページ地（温かいオフホワイト） */
-  --color-surface: #ffffff; /* カード等の面 */
-  --color-ink: #14140f; /* 本文・見出し（ほぼ黒・わずかに温色） */
-  --color-muted: #57564f; /* 二次テキスト */
-  --color-faint: #8a897f; /* 三次テキスト・キャプション */
-  --color-line: #e4e2d9; /* 罫線・境界（温かいグレー） */
-  --color-subtle: #f1efe7; /* 微妙な塗り */
+  --color-paper: #f6f2ea; /* ページ地（温かいオフホワイト） */
+  --color-surface: #fffdf8; /* カード等の面 */
+  --color-ink: #14140f; /* 本文・見出し（インク） */
+  --color-muted: #55524a; /* 二次テキスト */
+  --color-faint: #8b897c; /* 三次テキスト・キャプション */
+  --color-line: #ddd6c7; /* 罫線・境界 */
+  --color-subtle: #efe9dc; /* 微妙な塗り */
 
-  /* 差し色（朱・非政党色）。グラフィック／下線／アクティブ／マークに限定使用 */
-  --color-accent: #ff4d1a;
-  --color-accent-deep: #d23409; /* テキストリンク等の高コントラスト用 */
+  /* 差し色（くすんだ朱・非政党色）。ベタ面／下線／アクティブ／マークに限定使用 */
+  --color-accent: #c8351b;
+  --color-accent-deep: #9e2814; /* テキスト用の高コントラスト朱 */
+  --color-on-accent: #ffffff; /* 差し色ベタ面の上の文字色 */
 
   /* 採決などのセマンティック（必ず記号＋ラベルと併用） */
   --color-yea: #1f7a4d;
   --color-nay: #b23b2e;
-  --color-abstain: #8a897f;
+  --color-abstain: #8b897c;
 
-  /* 旧トークンの後方互換（段階移行・最終的に新名へ置換） */
-  --color-canvas: #faf9f6;
-  --color-accent-weak: #f1ece6;
+  /* 旧トークンの後方互換 */
+  --color-canvas: #f6f2ea;
+  --color-accent-weak: #efe1da;
 
   /* フォント（next/font の CSS 変数を参照） */
   --font-sans: var(--font-inter), var(--font-noto), ui-sans-serif, system-ui,
     "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
-  --font-display: var(--font-archivo), var(--font-noto), var(--font-inter), sans-serif;
+  --font-display: var(--font-anton), var(--font-noto), var(--font-inter), sans-serif;
+  --font-mono: var(--font-spacemono), ui-monospace, "SFMono-Regular", monospace;
 }
 
 html {
@@ -48,12 +50,12 @@ body {
   font-feature-settings: "palt" 1; /* 和欧混植の詰め */
 }
 
-/* 大胆グロテスクの見出し（Archivo + 和文 900）。タイトなトラッキング。 */
+/* 超极太グロテスクの見出し（Anton + 和文 900）。タイトなトラッキング。 */
 .font-display {
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: -0.02em;
-  line-height: 1.05;
+  line-height: 1.02;
 }
 
 /* 数字は等幅（表・統計） */
@@ -66,21 +68,21 @@ body {
   max-width: 42em;
 }
 
-/* 大文字ラベル（セクション番号・小見出し・メタ） */
+/* 大文字ラベル（モノスペース・セクション小見出し・メタ） */
 .eyebrow {
-  font-family: var(--font-display);
+  font-family: var(--font-mono);
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   font-size: 0.72rem;
 }
 
-/* 出典・本文中リンク：インク文字＋差し色の下線。ホバーで差し色へ。 */
+/* 出典・本文中リンク：インク文字＋差し色の太い下線。ホバーで差し色へ。 */
 .link-ink {
   color: var(--color-ink);
   text-decoration: underline;
   text-decoration-color: var(--color-accent);
-  text-decoration-thickness: 1.5px;
+  text-decoration-thickness: 2px;
   text-underline-offset: 3px;
   transition: color 0.12s ease;
 }

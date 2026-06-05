@@ -9,18 +9,18 @@ import { NAGOYA_WARDS, resolveZipToWard, type LegBrief, type WardData } from "@/
 
 function Group({ title, items }: { title: string; items: LegBrief[] }) {
   return (
-    <div className="rounded-lg border border-line p-3">
-      <h3 className="text-sm font-bold">{title}</h3>
+    <div className="border border-line bg-surface p-4">
+      <p className="eyebrow text-faint">{title}</p>
       {items.length === 0 ? (
-        <p className="mt-1 text-xs text-muted">該当なし（欠員など）</p>
+        <p className="mt-2 text-xs text-muted">該当なし（欠員など）</p>
       ) : (
-        <ul className="mt-1 space-y-1">
+        <ul className="mt-2 space-y-1.5">
           {items.map((l) => (
             <li key={l.id} className="text-sm">
-              <Link href={`/legislators/${l.id}/`} className="font-medium text-accent hover:underline">
+              <Link href={`/legislators/${l.id}/`} className="link-ink font-medium">
                 {l.name}
               </Link>
-              <span className="ml-1 text-xs text-muted">
+              <span className="ml-1 text-xs text-faint">
                 {l.district}
                 {l.party ? `・${l.party}` : ""}
               </span>
@@ -37,7 +37,6 @@ export function AreaExplorer({ wardData }: { wardData: WardData[] }) {
   const [zip, setZip] = useState("");
   const [zipMsg, setZipMsg] = useState("");
 
-  // 郵便番号付きで遷移してきた場合（/area/?zip=...）に解決する。
   useEffect(() => {
     const q = new URLSearchParams(window.location.search).get("zip");
     if (q) {
@@ -73,11 +72,11 @@ export function AreaExplorer({ wardData }: { wardData: WardData[] }) {
           inputMode="numeric"
           placeholder="郵便番号（例: 460-0008）"
           aria-label="郵便番号"
-          className="grow rounded-lg border border-line bg-surface px-3 py-2 text-sm"
+          className="tnum grow border border-ink bg-surface px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
         />
         <button
           type="submit"
-          className="rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white hover:opacity-90"
+          className="bg-ink px-5 py-2.5 text-sm font-bold text-paper transition-colors hover:bg-accent"
         >
           調べる
         </button>
@@ -85,17 +84,17 @@ export function AreaExplorer({ wardData }: { wardData: WardData[] }) {
       {zipMsg && <p className="text-xs text-muted">{zipMsg}</p>}
 
       <div>
-        <p className="mb-2 text-sm font-medium">名古屋市の区から選ぶ</p>
+        <p className="eyebrow mb-2 text-ink">名古屋市の区から選ぶ</p>
         <div className="flex flex-wrap gap-2">
           {NAGOYA_WARDS.map((w) => (
             <button
               key={w.ward}
               type="button"
               onClick={() => setSelected(w.ward)}
-              className={`rounded-full border px-3 py-1 text-sm transition ${
+              className={`border px-3 py-1.5 text-sm font-medium transition-colors ${
                 selected === w.ward
-                  ? "border-accent bg-accent text-white"
-                  : "border-line bg-surface hover:border-accent"
+                  ? "border-ink bg-ink text-paper"
+                  : "border-line bg-surface hover:border-ink"
               }`}
             >
               {w.ward}
@@ -105,9 +104,9 @@ export function AreaExplorer({ wardData }: { wardData: WardData[] }) {
       </div>
 
       {data ? (
-        <section className="rounded-xl border border-line bg-surface p-5">
-          <h2 className="text-lg font-bold">名古屋市{data.ward} の代表者</h2>
-          <p className="mt-1 text-xs text-muted">
+        <section className="border-t-2 border-ink pt-5">
+          <h2 className="font-display text-2xl">名古屋市{data.ward} の代表者</h2>
+          <p className="mt-1 text-xs text-faint">
             あなたの地域を代表する、国・県・市の議員です。各氏名から詳細（発言・出典など）に進めます。
           </p>
           <div className="mt-4 grid gap-3 sm:grid-cols-2">
