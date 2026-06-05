@@ -5,7 +5,7 @@ import { LegislatorFilter } from "@/components/LegislatorFilter";
 export const metadata: Metadata = {
   title: "議員一覧",
   description:
-    "国会（愛知選出）・愛知県議会・名古屋市会の議員一覧。level・会派・地域で絞り込めます。",
+    "国会（愛知選出）・愛知県議会・愛知の全54市町村の議員一覧。層・会派・地域で絞り込めます。",
 };
 
 export default function LegislatorsPage() {
@@ -13,11 +13,14 @@ export default function LegislatorsPage() {
 
   return (
     <div>
-      <h1 className="text-xl font-bold">議員一覧</h1>
-      <p className="mt-1 text-sm text-muted">
-        国会（愛知選出）・愛知県議会・名古屋市会。level・会派・地域で絞り込めます。
-      </p>
-      <div className="mt-5">
+      <header className="border-b-2 border-ink pb-6">
+        <p className="eyebrow text-faint">Legislators</p>
+        <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">議員一覧</h1>
+        <p className="measure mt-3 text-muted">
+          国会（愛知選出）・愛知県議会・愛知の全54市町村。層・会派・地域で絞り込めます。
+        </p>
+      </header>
+      <div className="mt-6">
         {legislators.length === 0 ? (
           <p className="text-sm text-muted">議員データは準備中です。</p>
         ) : (

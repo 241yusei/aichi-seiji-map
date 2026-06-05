@@ -11,7 +11,7 @@ const LEVELS: { key: Level | "all"; label: string }[] = [
   { key: "all", label: "すべて" },
   { key: "national", label: "国会（愛知選出）" },
   { key: "prefectural", label: "愛知県議会" },
-  { key: "municipal", label: "市議会（名古屋・豊田ほか）" },
+  { key: "municipal", label: "市町村議会（全54市町村）" },
 ];
 
 export function LegislatorFilter({ legislators }: { legislators: Legislator[] }) {
@@ -51,10 +51,10 @@ export function LegislatorFilter({ legislators }: { legislators: Legislator[] })
             key={lv.key}
             type="button"
             onClick={() => setLevel(lv.key)}
-            className={`rounded-full border px-3 py-1 text-sm transition ${
+            className={`border px-3 py-1.5 text-sm font-medium transition-colors ${
               level === lv.key
-                ? "border-accent bg-accent text-white"
-                : "border-line bg-surface hover:border-accent"
+                ? "border-ink bg-ink text-paper"
+                : "border-line bg-surface hover:border-ink"
             }`}
           >
             {lv.label}
@@ -62,19 +62,19 @@ export function LegislatorFilter({ legislators }: { legislators: Legislator[] })
         ))}
       </div>
 
-      <div className="mt-3 flex flex-wrap gap-3">
+      <div className="mt-3 flex flex-wrap gap-2">
         <input
           type="search"
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder="氏名・地域で検索"
-          className="grow rounded-lg border border-line bg-surface px-3 py-1.5 text-sm"
+          className="grow border border-line bg-surface px-3 py-2 text-sm focus:border-ink focus:outline-none focus:ring-2 focus:ring-accent"
           aria-label="氏名・地域で検索"
         />
         <select
           value={party}
           onChange={(e) => setParty(e.target.value)}
-          className="rounded-lg border border-line bg-surface px-3 py-1.5 text-sm"
+          className="border border-line bg-surface px-3 py-2 text-sm focus:border-ink focus:outline-none"
           aria-label="会派・政党で絞り込み"
         >
           <option value="all">会派・政党（すべて）</option>
@@ -86,12 +86,14 @@ export function LegislatorFilter({ legislators }: { legislators: Legislator[] })
         </select>
       </div>
 
-      <p className="mt-3 text-xs text-muted">{filtered.length} 名</p>
+      <p className="eyebrow mt-4 text-faint">
+        <span className="tnum text-ink">{filtered.length.toLocaleString()}</span> 名
+      </p>
 
       {filtered.length === 0 ? (
         <p className="mt-6 text-sm text-muted">該当する議員がいません。</p>
       ) : (
-        <div className="mt-3 grid gap-3 sm:grid-cols-2">
+        <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((l) => (
             <LegislatorCard key={l.id} legislator={l} />
           ))}

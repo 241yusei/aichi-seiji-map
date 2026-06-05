@@ -22,11 +22,11 @@ export function ZipSearch() {
         inputMode="numeric"
         placeholder="郵便番号（例: 460-0008）"
         aria-label="郵便番号"
-        className="grow rounded-lg border border-line bg-surface px-3 py-2 text-sm"
+        className="tnum grow border border-ink bg-surface px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
       />
       <button
         type="submit"
-        className="rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white hover:opacity-90"
+        className="bg-ink px-5 py-2.5 text-sm font-bold text-paper transition-colors hover:bg-accent"
       >
         地域の代表者を見る
       </button>

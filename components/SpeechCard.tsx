@@ -6,10 +6,10 @@ import { SourceLink } from "./SourceLink";
 // 発言カード。一次ソース（原文）を主役にし、出典リンクを前面に置く。
 export function SpeechCard({ speech }: { speech: SpeechRecord }) {
   return (
-    <article className="rounded-xl border border-line bg-surface p-4">
+    <article className="border border-line bg-surface p-4 transition-colors hover:border-ink">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <h3 className="text-sm font-bold">{speech.body}</h3>
-        <time dateTime={speech.date} className="shrink-0 text-xs text-muted">
+        <h3 className="text-sm font-bold text-ink">{speech.body}</h3>
+        <time dateTime={speech.date} className="tnum shrink-0 text-xs text-faint">
           {formatDate(speech.date)}
         </time>
       </div>
@@ -18,9 +18,9 @@ export function SpeechCard({ speech }: { speech: SpeechRecord }) {
         {speech.text}
       </p>
 
-      <p className="mt-2 text-xs">
-        <SourceLink href={speech.sourceUrl}>発言の原文（会議録）↗</SourceLink>
-        {speech.isExcerpt && <span className="ml-2 text-muted">（抜粋）</span>}
+      <p className="mt-3 text-xs">
+        <SourceLink href={speech.sourceUrl}>発言の原文（会議録）</SourceLink>
+        {speech.isExcerpt && <span className="ml-2 text-faint">（抜粋）</span>}
       </p>
 
       <AiSummary summary={speech.aiSummary} sourceUrl={speech.sourceUrl} />

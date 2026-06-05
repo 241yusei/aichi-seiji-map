@@ -6,16 +6,19 @@ export function LegislatorCard({ legislator }: { legislator: Legislator }) {
   return (
     <Link
       href={`/legislators/${legislator.id}/`}
-      className="block rounded-xl border border-line bg-surface p-4 transition hover:border-accent"
+      className="group flex flex-col border border-line bg-surface p-4 transition-colors hover:border-ink hover:bg-subtle"
     >
-      <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+      <div className="flex items-center justify-between gap-2">
         <LevelBadge level={legislator.level} />
-        <span className="font-bold">{legislator.name}</span>
-        <span className="text-xs text-muted">{legislator.kana}</span>
+        <span aria-hidden className="text-faint transition-colors group-hover:text-accent">
+          →
+        </span>
       </div>
-      <p className="mt-1 text-sm text-muted">
+      <span className="font-display mt-2 text-lg leading-tight">{legislator.name}</span>
+      {legislator.kana && <span className="mt-0.5 text-xs text-faint">{legislator.kana}</span>}
+      <p className="mt-2 text-sm text-muted">
         {legislator.district}
-        {legislator.party ? ` ・ ${legislator.party}` : ""}
+        {legislator.party ? <span className="text-faint"> ・ {legislator.party}</span> : null}
       </p>
     </Link>
   );
