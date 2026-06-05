@@ -46,7 +46,9 @@ export const metadata: Metadata = {
 
 const NAV = [
   { href: "/legislators", label: "議員" },
+  { href: "/executives", label: "首長" },
   { href: "/issues", label: "争点" },
+  { href: "/facts", label: "事実カード" },
   { href: "/area", label: "郵便番号で探す" },
   { href: "/about", label: "このサイトについて" },
 ];
@@ -94,19 +96,30 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <footer className="mt-20 border-t-2 border-ink bg-paper">
           <div className="mx-auto max-w-6xl px-5 py-10">
             <p className="font-display text-lg tracking-tight">愛知政治マップ</p>
-            <p className="measure mt-3 text-sm text-muted">
-              特定の政党・候補者への投票／不投票を呼びかけるものではありません。
-              すべてのデータは公的な一次ソースに基づき、出典リンクを併記しています。
-            </p>
+            {/* 中立宣言（常設）。中立を「掲げる」だけでなく仕組みで示す。 */}
+            <ul className="measure mt-3 space-y-1 text-sm text-muted">
+              <li>・特定の政党・候補者・団体と関係を持ちません。</li>
+              <li>・投票／不投票を呼びかけません。比較はすべて事実に基づきます。</li>
+              <li>・全データに一次ソースを併記。AI要約には必ず元発言リンクを付けます。</li>
+            </ul>
             <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm text-muted">
               <Link href="/about" className="link-ink">
-                中立性・出典・免責
+                中立性・運営・財源
+              </Link>
+              <Link href="/facts" className="hover:text-accent-deep">
+                事実カード
               </Link>
               <Link href="/legislators" className="hover:text-accent-deep">
                 議員一覧
               </Link>
+              <Link href="/executives" className="hover:text-accent-deep">
+                首長
+              </Link>
               <Link href="/issues" className="hover:text-accent-deep">
                 争点
+              </Link>
+              <Link href="/support" className="hover:text-accent-deep">
+                支援・寄付
               </Link>
             </div>
           </div>

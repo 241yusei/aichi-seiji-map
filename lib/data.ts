@@ -6,8 +6,10 @@
 
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
-import type { Funding, Issue, Legislator, SpeechRecord, Vote } from "./types";
+import type { Executive, FactCard, Funding, Issue, Legislator, SpeechRecord, Vote } from "./types";
 import {
+  executivesSchema,
+  factCardsSchema,
   fundingsSchema,
   issuesSchema,
   legislatorsSchema,
@@ -122,4 +124,36 @@ export function getIssues(): Issue[] {
 
 export function getIssue(id: string): Issue | undefined {
   return getIssues().find((i) => i.id === id);
+}
+
+// --- 事実カード（矛盾・ギャップ型・一次ソース付き） ---
+export function getFactCards(): FactCard[] {
+  return readArray<FactCard>("fact-cards.json", factCardsSchema).sort((a, b) =>
+    b.publishedAt.localeCompare(a.publishedAt),
+  );
+}
+
+export function getFactCard(id: string): FactCard | undefined {
+  return getFactCards().find((f) => f.id === id);
+}
+
+export function getFactCardsByIssue(issueId: string): FactCard[] {
+  return getFactCards().filter((f) => f.relatedIssueIds?.includes(issueId));
+}
+
+export function getFactCardsByLegislator(legislatorId: string): FactCard[] {
+  return getFactCards().filter((f) => f.relatedLegislatorIds?.includes(legislatorId));
+}
+
+// --- 首長（知事・市町村長） ---
+export function getExecutives(): Executive[] {
+  return readArray<Executive>("executives.json", executivesSchema);
+}
+
+export function getExecutive(id: string): Executive | undefined {
+  return getExecutives().find((e) => e.id === id);
+}
+
+export function getExecutiveByGov(govCode: string): Executive | undefined {
+  return getExecutives().find((e) => e.govCode === govCode);
 }

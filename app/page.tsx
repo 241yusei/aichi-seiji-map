@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ZipSearch } from "@/components/ZipSearch";
-import { getIssues, getLegislators, getSpeeches } from "@/lib/data";
+import { getFactCards, getIssues, getLegislators, getSpeeches } from "@/lib/data";
+import { FactCardType } from "@/components/FactCardView";
 
 const LAYERS = [
   {
@@ -27,6 +28,7 @@ export default function HomePage() {
   const legCount = getLegislators().length;
   const speechCount = getSpeeches().length;
   const issueCount = getIssues().length;
+  const facts = getFactCards().slice(0, 3);
   const stats = [
     { v: legCount.toLocaleString(), l: "代表者（国・県・市町村）" },
     { v: speechCount.toLocaleString(), l: "国会発言（出典つき）" },
@@ -85,6 +87,37 @@ export default function HomePage() {
           </div>
         ))}
       </section>
+
+      {/* 事実カード（記録から見えるギャップ） */}
+      {facts.length > 0 && (
+        <section className="border-t-2 border-ink py-10">
+          <div className="flex items-baseline justify-between gap-4">
+            <h2 className="eyebrow text-accent-deep">事実カード｜記録から見えるギャップ</h2>
+            <Link href="/facts" className="link-ink text-sm">
+              一覧へ
+            </Link>
+          </div>
+          <div className="mt-4 grid gap-px border border-line bg-line sm:grid-cols-3">
+            {facts.map((card) => (
+              <Link
+                key={card.id}
+                href={`/facts/${card.id}/`}
+                className="group flex flex-col bg-surface p-5 transition-colors hover:bg-subtle"
+              >
+                <FactCardType type={card.cardType} />
+                <h3 className="font-display mt-3 text-lg leading-snug">{card.title}</h3>
+                <p className="mt-2 line-clamp-3 text-sm text-muted">{card.hook}</p>
+                <span
+                  aria-hidden
+                  className="mt-4 text-faint transition-colors group-hover:text-accent"
+                >
+                  記録を見る →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* 三層 */}
       <section className="border-t-2 border-ink py-10">
