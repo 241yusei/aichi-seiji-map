@@ -6,8 +6,9 @@
 
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
-import type { FactCard, Funding, Issue, Legislator, SpeechRecord, Vote } from "./types";
+import type { Executive, FactCard, Funding, Issue, Legislator, SpeechRecord, Vote } from "./types";
 import {
+  executivesSchema,
   factCardsSchema,
   fundingsSchema,
   issuesSchema,
@@ -142,4 +143,17 @@ export function getFactCardsByIssue(issueId: string): FactCard[] {
 
 export function getFactCardsByLegislator(legislatorId: string): FactCard[] {
   return getFactCards().filter((f) => f.relatedLegislatorIds?.includes(legislatorId));
+}
+
+// --- 首長（知事・市町村長） ---
+export function getExecutives(): Executive[] {
+  return readArray<Executive>("executives.json", executivesSchema);
+}
+
+export function getExecutive(id: string): Executive | undefined {
+  return getExecutives().find((e) => e.id === id);
+}
+
+export function getExecutiveByGov(govCode: string): Executive | undefined {
+  return getExecutives().find((e) => e.govCode === govCode);
 }

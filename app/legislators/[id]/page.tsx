@@ -56,6 +56,13 @@ export default async function LegislatorDetailPage({
   const speeches = getSpeechesByLegislator(id);
   const votes = getVotes(id);
   const funding = getFunding(id);
+  const voteTally = votes.reduce(
+    (acc, v) => {
+      acc[v.result] = (acc[v.result] ?? 0) + 1;
+      return acc;
+    },
+    {} as Record<string, number>,
+  );
   const minutesSearch = minutesFor(legislator);
   const house: "衆議院" | "参議院" = legislator.district.includes("選挙区") ? "参議院" : "衆議院";
   const layerLabel =
@@ -99,6 +106,34 @@ export default async function LegislatorDetailPage({
           <SourceLink href={legislator.sourceUrl}>公式プロフィール・出典</SourceLink>
         </p>
       </header>
+
+      {/* 言×行（言ったこと＝発言／やったこと＝採決）の並置。国会議員で両方の記録があるとき。 */}
+      {legislator.level === "national" && (
+        <section className="grid gap-px border border-line bg-line sm:grid-cols-2">
+          <div className="bg-surface p-5">
+            <p className="eyebrow text-faint">言ったこと（発言）</p>
+            <p className="font-display tnum mt-2 text-3xl">
+              {speeches.length}
+              <span className="ml-1 text-base font-normal text-muted">件</span>
+            </p>
+            <p className="mt-1 text-xs text-muted">国会会議録より（各発言に出典）</p>
+          </div>
+          <div className="bg-surface p-5">
+            <p className="eyebrow text-faint">やったこと（採決）</p>
+            <p className="font-display tnum mt-2 text-3xl">
+              {votes.length}
+              <span className="ml-1 text-base font-normal text-muted">件</span>
+            </p>
+            <p className="mt-1 text-xs text-muted">
+              {votes.length > 0
+                ? `●賛成${voteTally.yea ?? 0}・✕反対${voteTally.nay ?? 0}${
+                    (voteTally.absent ?? 0) > 0 ? `・—欠席${voteTally.absent}` : ""
+                  }（記名投票のみ個別公開）`
+                : "記名投票の個別賛否は順次整備中"}
+            </p>
+          </div>
+        </section>
+      )}
 
       {/* 01 発言 */}
       <section>

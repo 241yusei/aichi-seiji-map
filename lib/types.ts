@@ -122,3 +122,18 @@ export interface FactCard {
   publishedAt: string; // 公開日（ISO 8601）
   updatedAt?: string; // 更新日（ISO 8601）
 }
+
+/** 首長（知事・市町村長）。議員とは別レイヤー。一次ソース（公式サイト）必須。 */
+export interface Executive {
+  id: string; // 例: "exec-23100"（govCode 由来）
+  name: string;
+  kana?: string;
+  title: string; // 知事 / 市長 / 町長 / 村長
+  level: "prefectural" | "municipal";
+  govCode: string; // 23000（県）または市町村コード
+  area: string; // "愛知県" "名古屋市" など
+  party?: string;
+  termStart?: string; // 就任日（ISO・任意）
+  homepage?: string;
+  sourceUrl: string; // 首長名を確認できた公式ページ（必須）
+}

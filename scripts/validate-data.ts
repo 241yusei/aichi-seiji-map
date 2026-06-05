@@ -6,6 +6,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import {
+  executivesSchema,
   factCardsSchema,
   fundingsSchema,
   issuesSchema,
@@ -13,7 +14,15 @@ import {
   speechRecordsSchema,
   votesSchema,
 } from "../lib/zod-schemas";
-import type { FactCard, Funding, Issue, Legislator, SpeechRecord, Vote } from "../lib/types";
+import type {
+  Executive,
+  FactCard,
+  Funding,
+  Issue,
+  Legislator,
+  SpeechRecord,
+  Vote,
+} from "../lib/types";
 import { MUNICIPALITIES } from "../lib/municipalities";
 
 const DATA_DIR = join(process.cwd(), "data");
@@ -61,6 +70,7 @@ const votes = load<Vote>("votes.json", votesSchema);
 const funding = load<Funding>("funding.json", fundingsSchema);
 const issues = load<Issue>("issues.json", issuesSchema);
 const factCards = load<FactCard>("fact-cards.json", factCardsSchema);
+const executives = load<Executive>("executives.json", executivesSchema);
 
 console.log("\n相互参照を検査します…");
 
@@ -109,11 +119,20 @@ for (const fc of factCards) {
   }
 }
 
+// 首長の相互参照（govCode は県=23000 か登録済み市町村）・ID重複を検査
+const validGov = new Set<string>(["23000", ...MUNICIPALITIES.map((m) => m.govCode)]);
+const seenExec = new Set<string>();
+for (const e of executives) {
+  if (seenExec.has(e.id)) fail(`首長ID重複: ${e.id}`);
+  seenExec.add(e.id);
+  if (!validGov.has(e.govCode)) fail(`首長 ${e.id} の govCode が不明: ${e.govCode}`);
+}
+
 console.log("");
 if (errorCount > 0) {
   console.error(`検証失敗: ${errorCount} 件のエラー`);
   process.exit(1);
 }
 console.log(
-  `検証成功: 議員 ${legislators.length} / 発言 ${speeches.length} / 採決 ${votes.length} / 資金 ${funding.length} / 争点 ${issues.length} / 事実カード ${factCards.length}`,
+  `検証成功: 議員 ${legislators.length} / 発言 ${speeches.length} / 採決 ${votes.length} / 資金 ${funding.length} / 争点 ${issues.length} / 事実カード ${factCards.length} / 首長 ${executives.length}`,
 );

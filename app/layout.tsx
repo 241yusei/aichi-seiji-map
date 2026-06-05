@@ -46,6 +46,7 @@ export const metadata: Metadata = {
 
 const NAV = [
   { href: "/legislators", label: "議員" },
+  { href: "/executives", label: "首長" },
   { href: "/issues", label: "争点" },
   { href: "/facts", label: "事実カード" },
   { href: "/area", label: "郵便番号で探す" },
@@ -110,6 +111,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               </Link>
               <Link href="/legislators" className="hover:text-accent-deep">
                 議員一覧
+              </Link>
+              <Link href="/executives" className="hover:text-accent-deep">
+                首長
               </Link>
               <Link href="/issues" className="hover:text-accent-deep">
                 争点

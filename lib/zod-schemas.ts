@@ -95,9 +95,25 @@ export const factCardSchema = z.object({
   updatedAt: isoDate.optional(),
 });
 
+// 首長（知事・市町村長）。一次ソース（公式サイト）必須。
+export const executiveSchema = z.object({
+  id: z.string().min(1),
+  name: z.string().min(1),
+  kana: z.string().optional(),
+  title: z.string().min(1),
+  level: z.enum(["prefectural", "municipal"]),
+  govCode: z.string().min(1),
+  area: z.string().min(1),
+  party: z.string().optional(),
+  termStart: isoDate.optional(),
+  homepage: httpUrl.optional(),
+  sourceUrl: httpUrl,
+});
+
 export const legislatorsSchema = z.array(legislatorSchema);
 export const speechRecordsSchema = z.array(speechRecordSchema);
 export const votesSchema = z.array(voteSchema);
 export const fundingsSchema = z.array(fundingSchema);
 export const issuesSchema = z.array(issueSchema);
 export const factCardsSchema = z.array(factCardSchema);
+export const executivesSchema = z.array(executiveSchema);

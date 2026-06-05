@@ -8,7 +8,16 @@ const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://aichi-seiji.example.jp
 
 // 静的サイトマップ。地域名・議員名での検索流入を意識して全ページを列挙する。
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ["", "/area", "/legislators", "/issues", "/facts", "/about", "/support"].map(
+  const staticRoutes = [
+    "",
+    "/area",
+    "/legislators",
+    "/executives",
+    "/issues",
+    "/facts",
+    "/about",
+    "/support",
+  ].map(
     (p) => ({
       url: `${BASE}${p}/`,
       changeFrequency: "weekly" as const,
