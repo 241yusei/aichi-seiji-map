@@ -1,0 +1,211 @@
+[
+  {
+    "id": "chiryu-09df5823",
+    "name": "嶋田義雄",
+    "kana": "しまだよしお",
+    "level": "municipal",
+    "party": "池鯉鮒クラブ",
+    "district": "知立市",
+    "sourceUrl": "https://www.city.chiryu.aichi.jp/gikai/about/16724.html",
+    "govCode": "23225",
+    "vendor": "linkout"
+  },
+  {
+    "id": "chiryu-ea4d4677",
+    "name": "柴田勝",
+    "kana": "しばたまさる",
+    "level": "municipal",
+    "party": "池鯉鮒クラブ",
+    "district": "知立市",
+    "sourceUrl": "https://www.city.chiryu.aichi.jp/gikai/about/16724.html",
+    "govCode": "23225",
+    "vendor": "linkout"
+  },
+  {
+    "id": "chiryu-7dbb9e65",
+    "name": "久世泰男",
+    "kana": "くぜやすお",
+    "level": "municipal",
+    "party": "池鯉鮒クラブ",
+    "district": "知立市",
+    "sourceUrl": "https://www.city.chiryu.aichi.jp/gikai/about/16724.html",
+    "govCode": "23225",
+    "vendor": "linkout"
+  },
+  {
+    "id": "chiryu-b09841c6",
+    "name": "岩城道雄",
+    "kana": "いわきみちお",
+    "level": "municipal",
+    "party": "篤心会",
+    "district": "知立市",
+    "sourceUrl": "https://www.city.chiryu.aichi.jp/gikai/about/16724.html",
+    "govCode": "23225",
+    "vendor": "linkout"
+  },
+  {
+    "id": "chiryu-b1738279",
+    "name": "中島清志",
+    "kana": "なかしまきよし",
+    "level": "municipal",
+    "party": "篤心会",
+    "district": "知立市",
+    "sourceUrl": "https://www.city.chiryu.aichi.jp/gikai/about/16724.html",
+    "govCode": "23225",
+    "vendor": "linkout"
+  },
+  {
+    "id": "chiryu-ac382ab9",
+    "name": "三浦美香",
+    "kana": "みうらみか",
+    "level": "municipal",
+    "party": "篤心会",
+    "district": "知立市",
+    "sourceUrl": "https://www.city.chiryu.aichi.jp/gikai/about/16724.html",
+    "govCode": "23225",
+    "vendor": "linkout"
+  },
+  {
+    "id": "chiryu-abdba756",
+    "name": "大崎あつし",
+    "kana": "おおさきあつし",
+    "level": "municipal",
+    "party": "無会派",
+    "district": "知立市",
+    "sourceUrl": "https://www.city.chiryu.aichi.jp/gikai/about/16724.html",
+    "govCode": "23225",
+    "vendor": "linkout"
+  },
+  {
+    "id": "chiryu-6b24409a",
+    "name": "杉浦弘一",
+    "kana": "すぎうらこういち",
+    "level": "municipal",
+    "party": "民友クラブ",
+    "district": "知立市",
+    "sourceUrl": "https://www.city.chiryu.aichi.jp/gikai/about/16724.html",
+    "govCode": "23225",
+    "vendor": "linkout"
+  },
+  {
+    "id": "chiryu-fd2bc9e6",
+    "name": "川合正彦",
+    "kana": "かわいまさひこ",
+    "level": "municipal",
+    "party": "正和会",
+    "district": "知立市",
+    "sourceUrl": "https://www.city.chiryu.aichi.jp/gikai/about/16724.html",
+    "govCode": "23225",
+    "vendor": "linkout"
+  },
+  {
+    "id": "chiryu-6ef9b58b",
+    "name": "兼子義信",
+    "kana": "かねこよしのぶ",
+    "level": "municipal",
+    "party": "公明党",
+    "district": "知立市",
+    "sourceUrl": "https://www.city.chiryu.aichi.jp/gikai/about/16724.html",
+    "govCode": "23225",
+    "vendor": "linkout"
+  },
+  {
+    "id": "chiryu-e6cd6a23",
+    "name": "那須幸子",
+    "kana": "なすゆきこ",
+    "level": "municipal",
+    "party": "公明党",
+    "district": "知立市",
+    "sourceUrl": "https://www.city.chiryu.aichi.jp/gikai/about/16724.html",
+    "govCode": "23225",
+    "vendor": "linkout"
+  },
+  {
+    "id": "chiryu-9fbf9044",
+    "name": "神谷定雄",
+    "kana": "かみやさだお",
+    "level": "municipal",
+    "party": "篤心会",
+    "district": "知立市",
+    "sourceUrl": "https://www.city.chiryu.aichi.jp/gikai/about/16724.html",
+    "govCode": "23225",
+    "vendor": "linkout"
+  },
+  {
+    "id": "chiryu-e49bb7b7",
+    "name": "山崎りょうじ",
+    "kana": "やまざきりょうじ",
+    "level": "municipal",
+    "party": "篤心会",
+    "district": "知立市",
+    "sourceUrl": "https://www.city.chiryu.aichi.jp/gikai/about/16724.html",
+    "govCode": "23225",
+    "vendor": "linkout"
+  },
+  {
+    "id": "chiryu-56b0b81a",
+    "name": "中野智基",
+    "kana": "なかのともき",
+    "level": "municipal",
+    "party": "篤心会",
+    "district": "知立市",
+    "sourceUrl": "https://www.city.chiryu.aichi.jp/gikai/about/16724.html",
+    "govCode": "23225",
+    "vendor": "linkout"
+  },
+  {
+    "id": "chiryu-7b070851",
+    "name": "神谷文明",
+    "kana": "かみやふみあき",
+    "level": "municipal",
+    "party": "民友クラブ",
+    "district": "知立市",
+    "sourceUrl": "https://www.city.chiryu.aichi.jp/gikai/about/16724.html",
+    "govCode": "23225",
+    "vendor": "linkout"
+  },
+  {
+    "id": "chiryu-adb8b13c",
+    "name": "中島孝之",
+    "kana": "なかじまたかし",
+    "level": "municipal",
+    "party": "日本共産党知立市議団",
+    "district": "知立市",
+    "sourceUrl": "https://www.city.chiryu.aichi.jp/gikai/about/16724.html",
+    "govCode": "23225",
+    "vendor": "linkout"
+  },
+  {
+    "id": "chiryu-f11b0afc",
+    "name": "佐藤修",
+    "kana": "さとうおさむ",
+    "level": "municipal",
+    "party": "日本共産党知立市議団",
+    "district": "知立市",
+    "sourceUrl": "https://www.city.chiryu.aichi.jp/gikai/about/16724.html",
+    "govCode": "23225",
+    "vendor": "linkout"
+  },
+  {
+    "id": "chiryu-fb851e78",
+    "name": "小林昭弌",
+    "kana": "こばやししょういち",
+    "level": "municipal",
+    "party": "篤心会",
+    "district": "知立市",
+    "sourceUrl": "https://www.city.chiryu.aichi.jp/gikai/about/16724.html",
+    "govCode": "23225",
+    "vendor": "linkout"
+  },
+  {
+    "id": "chiryu-561e3025",
+    "name": "永田起也",
+    "kana": "ながたたつや",
+    "level": "municipal",
+    "party": "篤心会",
+    "district": "知立市",
+    "sourceUrl": "https://www.city.chiryu.aichi.jp/gikai/about/16724.html",
+    "govCode": "23225",
+    "vendor": "linkout"
+  }
+]

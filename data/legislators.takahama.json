@@ -1,0 +1,145 @@
+[
+  {
+    "id": "takahama-5bb16e02",
+    "name": "橋本友樹",
+    "kana": "はしもとともき",
+    "level": "municipal",
+    "party": "市政クラブ",
+    "district": "高浜市",
+    "sourceUrl": "https://www.city.takahama.lg.jp/site/gikai/26376.html",
+    "govCode": "23227",
+    "vendor": "linkout"
+  },
+  {
+    "id": "takahama-be4b248a",
+    "name": "荒川義孝",
+    "kana": "あらかわよしたか",
+    "level": "municipal",
+    "party": "市政クラブ",
+    "district": "高浜市",
+    "sourceUrl": "https://www.city.takahama.lg.jp/site/gikai/26376.html",
+    "govCode": "23227",
+    "vendor": "linkout"
+  },
+  {
+    "id": "takahama-892ca89f",
+    "name": "神谷直子",
+    "kana": "かみやなおこ",
+    "level": "municipal",
+    "party": "市政クラブ",
+    "district": "高浜市",
+    "sourceUrl": "https://www.city.takahama.lg.jp/site/gikai/26376.html",
+    "govCode": "23227",
+    "vendor": "linkout"
+  },
+  {
+    "id": "takahama-83e96b03",
+    "name": "野々山啓",
+    "kana": "ののやまひろむ",
+    "level": "municipal",
+    "party": "高浜市議会公明党",
+    "district": "高浜市",
+    "sourceUrl": "https://www.city.takahama.lg.jp/site/gikai/26376.html",
+    "govCode": "23227",
+    "vendor": "linkout"
+  },
+  {
+    "id": "takahama-bc1631a9",
+    "name": "今原ゆかり",
+    "kana": "いまはらゆかり",
+    "level": "municipal",
+    "party": "高浜市議会公明党",
+    "district": "高浜市",
+    "sourceUrl": "https://www.city.takahama.lg.jp/site/gikai/26376.html",
+    "govCode": "23227",
+    "vendor": "linkout"
+  },
+  {
+    "id": "takahama-f970d574",
+    "name": "福岡里香",
+    "kana": "ふくおかりか",
+    "level": "municipal",
+    "party": "凛々会",
+    "district": "高浜市",
+    "sourceUrl": "https://www.city.takahama.lg.jp/site/gikai/26376.html",
+    "govCode": "23227",
+    "vendor": "linkout"
+  },
+  {
+    "id": "takahama-0052bad3",
+    "name": "岡田公作",
+    "kana": "おかだこうさく",
+    "level": "municipal",
+    "party": "高志クラブ",
+    "district": "高浜市",
+    "sourceUrl": "https://www.city.takahama.lg.jp/site/gikai/26376.html",
+    "govCode": "23227",
+    "vendor": "linkout"
+  },
+  {
+    "id": "takahama-351ae269",
+    "name": "長谷川広昌",
+    "kana": "はせがわひろまさ",
+    "level": "municipal",
+    "party": "市政クラブ",
+    "district": "高浜市",
+    "sourceUrl": "https://www.city.takahama.lg.jp/site/gikai/26376.html",
+    "govCode": "23227",
+    "vendor": "linkout"
+  },
+  {
+    "id": "takahama-63099446",
+    "name": "北川広人",
+    "kana": "きたがわひろと",
+    "level": "municipal",
+    "party": "市政クラブ",
+    "district": "高浜市",
+    "sourceUrl": "https://www.city.takahama.lg.jp/site/gikai/26376.html",
+    "govCode": "23227",
+    "vendor": "linkout"
+  },
+  {
+    "id": "takahama-9b7fa706",
+    "name": "鈴木勝彦",
+    "kana": "すずきかつひこ",
+    "level": "municipal",
+    "party": "市政クラブ",
+    "district": "高浜市",
+    "sourceUrl": "https://www.city.takahama.lg.jp/site/gikai/26376.html",
+    "govCode": "23227",
+    "vendor": "linkout"
+  },
+  {
+    "id": "takahama-e2aeade7",
+    "name": "柴口征寛",
+    "kana": "しばぐちまさひろ",
+    "level": "municipal",
+    "party": "日本共産党",
+    "district": "高浜市",
+    "sourceUrl": "https://www.city.takahama.lg.jp/site/gikai/26376.html",
+    "govCode": "23227",
+    "vendor": "linkout"
+  },
+  {
+    "id": "takahama-de27bb4b",
+    "name": "倉田利奈",
+    "kana": "くらたりな",
+    "level": "municipal",
+    "party": "高浜市民の会",
+    "district": "高浜市",
+    "sourceUrl": "https://www.city.takahama.lg.jp/site/gikai/26376.html",
+    "govCode": "23227",
+    "vendor": "linkout"
+  },
+  {
+    "id": "takahama-651ca27d",
+    "name": "黒川美克",
+    "kana": "くろかわよしかつ",
+    "level": "municipal",
+    "party": "凛々会",
+    "district": "高浜市",
+    "sourceUrl": "https://www.city.takahama.lg.jp/site/gikai/26376.html",
+    "govCode": "23227",
+    "vendor": "linkout"
+  }
+]

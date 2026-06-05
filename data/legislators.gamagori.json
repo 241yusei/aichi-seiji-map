@@ -1,0 +1,222 @@
+[
+  {
+    "id": "gamagori-fb036126",
+    "name": "来本健作",
+    "kana": "くるもとけんさく",
+    "level": "municipal",
+    "party": "蒲郡市政クラブ",
+    "district": "蒲郡市",
+    "sourceUrl": "https://www.city.gamagori.lg.jp/site/gikai/meibo.html",
+    "govCode": "23214",
+    "vendor": "linkout"
+  },
+  {
+    "id": "gamagori-5364f9e2",
+    "name": "大場康議",
+    "kana": "おおばやすのり",
+    "level": "municipal",
+    "party": "自由民主党・無所属の会",
+    "district": "蒲郡市",
+    "sourceUrl": "https://www.city.gamagori.lg.jp/site/gikai/meibo.html",
+    "govCode": "23214",
+    "vendor": "linkout"
+  },
+  {
+    "id": "gamagori-b81c1f9d",
+    "name": "牧野泰広",
+    "kana": "まきのやすひろ",
+    "level": "municipal",
+    "party": "蒲郡自由クラブ",
+    "district": "蒲郡市",
+    "sourceUrl": "https://www.city.gamagori.lg.jp/site/gikai/meibo.html",
+    "govCode": "23214",
+    "vendor": "linkout"
+  },
+  {
+    "id": "gamagori-bcd65b1f",
+    "name": "鈴木基夫",
+    "kana": "すずきもとお",
+    "level": "municipal",
+    "party": "蒲郡自由クラブ",
+    "district": "蒲郡市",
+    "sourceUrl": "https://www.city.gamagori.lg.jp/site/gikai/meibo.html",
+    "govCode": "23214",
+    "vendor": "linkout"
+  },
+  {
+    "id": "gamagori-dba43d06",
+    "name": "千賀充能",
+    "kana": "せんがみつよし",
+    "level": "municipal",
+    "party": "自由民主党・無所属の会",
+    "district": "蒲郡市",
+    "sourceUrl": "https://www.city.gamagori.lg.jp/site/gikai/meibo.html",
+    "govCode": "23214",
+    "vendor": "linkout"
+  },
+  {
+    "id": "gamagori-c8d674b0",
+    "name": "新実祥悟",
+    "kana": "にいみしょうご",
+    "level": "municipal",
+    "party": "蒲郡市政クラブ",
+    "district": "蒲郡市",
+    "sourceUrl": "https://www.city.gamagori.lg.jp/site/gikai/meibo.html",
+    "govCode": "23214",
+    "vendor": "linkout"
+  },
+  {
+    "id": "gamagori-7e7d0fd6",
+    "name": "芦刈純奈",
+    "kana": "あしかりじゅんな",
+    "level": "municipal",
+    "party": "自由民主党・無所属の会",
+    "district": "蒲郡市",
+    "sourceUrl": "https://www.city.gamagori.lg.jp/site/gikai/meibo.html",
+    "govCode": "23214",
+    "vendor": "linkout"
+  },
+  {
+    "id": "gamagori-fe76892f",
+    "name": "中野香余",
+    "kana": "なかのかよ",
+    "level": "municipal",
+    "party": "自由民主党・無所属の会",
+    "district": "蒲郡市",
+    "sourceUrl": "https://www.city.gamagori.lg.jp/site/gikai/meibo.html",
+    "govCode": "23214",
+    "vendor": "linkout"
+  },
+  {
+    "id": "gamagori-22259ce5",
+    "name": "太田哲也",
+    "kana": "おおたてつや",
+    "level": "municipal",
+    "party": "公明党",
+    "district": "蒲郡市",
+    "sourceUrl": "https://www.city.gamagori.lg.jp/site/gikai/meibo.html",
+    "govCode": "23214",
+    "vendor": "linkout"
+  },
+  {
+    "id": "gamagori-618e98f1",
+    "name": "藤田裕喜",
+    "kana": "ふじたひろき",
+    "level": "municipal",
+    "party": "自由民主党・無所属の会",
+    "district": "蒲郡市",
+    "sourceUrl": "https://www.city.gamagori.lg.jp/site/gikai/meibo.html",
+    "govCode": "23214",
+    "vendor": "linkout"
+  },
+  {
+    "id": "gamagori-7c5a902d",
+    "name": "鈴木将浩",
+    "kana": "すずきまさひろ",
+    "level": "municipal",
+    "party": "自由民主党・無所属の会",
+    "district": "蒲郡市",
+    "sourceUrl": "https://www.city.gamagori.lg.jp/site/gikai/meibo.html",
+    "govCode": "23214",
+    "vendor": "linkout"
+  },
+  {
+    "id": "gamagori-cf846950",
+    "name": "青山義明",
+    "kana": "あおやまよしあき",
+    "level": "municipal",
+    "party": "自由民主党・無所属の会",
+    "district": "蒲郡市",
+    "sourceUrl": "https://www.city.gamagori.lg.jp/site/gikai/meibo.html",
+    "govCode": "23214",
+    "vendor": "linkout"
+  },
+  {
+    "id": "gamagori-85f4ae67",
+    "name": "伊藤享佑",
+    "kana": "いとうきょうすけ",
+    "level": "municipal",
+    "party": "蒲郡市政クラブ",
+    "district": "蒲郡市",
+    "sourceUrl": "https://www.city.gamagori.lg.jp/site/gikai/meibo.html",
+    "govCode": "23214",
+    "vendor": "linkout"
+  },
+  {
+    "id": "gamagori-599b43b0",
+    "name": "鈴木貴晶",
+    "kana": "すずきたかまさ",
+    "level": "municipal",
+    "party": "蒲郡自由クラブ",
+    "district": "蒲郡市",
+    "sourceUrl": "https://www.city.gamagori.lg.jp/site/gikai/meibo.html",
+    "govCode": "23214",
+    "vendor": "linkout"
+  },
+  {
+    "id": "gamagori-2a181428",
+    "name": "松本昌成",
+    "kana": "まつもとまさなり",
+    "level": "municipal",
+    "party": "公明党",
+    "district": "蒲郡市",
+    "sourceUrl": "https://www.city.gamagori.lg.jp/site/gikai/meibo.html",
+    "govCode": "23214",
+    "vendor": "linkout"
+  },
+  {
+    "id": "gamagori-4fe5811f",
+    "name": "大須賀林",
+    "kana": "おおすかはやし",
+    "level": "municipal",
+    "party": "自由民主党・無所属の会",
+    "district": "蒲郡市",
+    "sourceUrl": "https://www.city.gamagori.lg.jp/site/gikai/meibo.html",
+    "govCode": "23214",
+    "vendor": "linkout"
+  },
+  {
+    "id": "gamagori-bcbba0df",
+    "name": "日恵野佳代",
+    "kana": "ひえのかよ",
+    "level": "municipal",
+    "party": "無会派・日本共産党",
+    "district": "蒲郡市",
+    "sourceUrl": "https://www.city.gamagori.lg.jp/site/gikai/meibo.html",
+    "govCode": "23214",
+    "vendor": "linkout"
+  },
+  {
+    "id": "gamagori-1d114ad8",
+    "name": "竹内滋泰",
+    "kana": "たけうちしげやす",
+    "level": "municipal",
+    "party": "蒲郡市政クラブ",
+    "district": "蒲郡市",
+    "sourceUrl": "https://www.city.gamagori.lg.jp/site/gikai/meibo.html",
+    "govCode": "23214",
+    "vendor": "linkout"
+  },
+  {
+    "id": "gamagori-5c38b42c",
+    "name": "八田寿人",
+    "kana": "はったひさと",
+    "level": "municipal",
+    "party": "自由民主党・無所属の会",
+    "district": "蒲郡市",
+    "sourceUrl": "https://www.city.gamagori.lg.jp/site/gikai/meibo.html",
+    "govCode": "23214",
+    "vendor": "linkout"
+  },
+  {
+    "id": "gamagori-26fafc3e",
+    "name": "尾崎広道",
+    "kana": "おざきひろみち",
+    "level": "municipal",
+    "party": "蒲郡自由クラブ",
+    "district": "蒲郡市",
+    "sourceUrl": "https://www.city.gamagori.lg.jp/site/gikai/meibo.html",
+    "govCode": "23214",
+    "vendor": "linkout"
+  }
+]

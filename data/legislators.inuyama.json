@@ -1,0 +1,200 @@
+[
+  {
+    "id": "inuyama-53f06d4f",
+    "name": "岡村千里",
+    "kana": "おかむらちさと",
+    "level": "municipal",
+    "party": "日本共産党犬山市議団",
+    "district": "犬山市",
+    "sourceUrl": "https://www.city.inuyama.aichi.jp/shisei/gikai/1000340/1000362.html",
+    "govCode": "23215",
+    "vendor": "linkout"
+  },
+  {
+    "id": "inuyama-9796205a",
+    "name": "岡覚",
+    "kana": "おかさとる",
+    "level": "municipal",
+    "party": "日本共産党犬山市議団",
+    "district": "犬山市",
+    "sourceUrl": "https://www.city.inuyama.aichi.jp/shisei/gikai/1000340/1000362.html",
+    "govCode": "23215",
+    "vendor": "linkout"
+  },
+  {
+    "id": "inuyama-7189e006",
+    "name": "小川隆広",
+    "kana": "おがわたかひろ",
+    "level": "municipal",
+    "party": "日本共産党犬山市議団",
+    "district": "犬山市",
+    "sourceUrl": "https://www.city.inuyama.aichi.jp/shisei/gikai/1000340/1000362.html",
+    "govCode": "23215",
+    "vendor": "linkout"
+  },
+  {
+    "id": "inuyama-68e7ed3e",
+    "name": "諏訪毅",
+    "kana": "すわたけし",
+    "level": "municipal",
+    "party": "公明クラブ",
+    "district": "犬山市",
+    "sourceUrl": "https://www.city.inuyama.aichi.jp/shisei/gikai/1000340/1000362.html",
+    "govCode": "23215",
+    "vendor": "linkout"
+  },
+  {
+    "id": "inuyama-3892f128",
+    "name": "島田亜紀",
+    "kana": "しまだあき",
+    "level": "municipal",
+    "party": "公明クラブ",
+    "district": "犬山市",
+    "sourceUrl": "https://www.city.inuyama.aichi.jp/shisei/gikai/1000340/1000362.html",
+    "govCode": "23215",
+    "vendor": "linkout"
+  },
+  {
+    "id": "inuyama-44cd93de",
+    "name": "柴田浩行",
+    "kana": "しばたひろゆき",
+    "level": "municipal",
+    "party": "創犬会",
+    "district": "犬山市",
+    "sourceUrl": "https://www.city.inuyama.aichi.jp/shisei/gikai/1000340/1000362.html",
+    "govCode": "23215",
+    "vendor": "linkout"
+  },
+  {
+    "id": "inuyama-d429b7ec",
+    "name": "畑竜介",
+    "kana": "はたりゅうすけ",
+    "level": "municipal",
+    "party": "創犬会",
+    "district": "犬山市",
+    "sourceUrl": "https://www.city.inuyama.aichi.jp/shisei/gikai/1000340/1000362.html",
+    "govCode": "23215",
+    "vendor": "linkout"
+  },
+  {
+    "id": "inuyama-f8cc1c91",
+    "name": "増田修治",
+    "kana": "ますだしゅうじ",
+    "level": "municipal",
+    "party": "創犬会",
+    "district": "犬山市",
+    "sourceUrl": "https://www.city.inuyama.aichi.jp/shisei/gikai/1000340/1000362.html",
+    "govCode": "23215",
+    "vendor": "linkout"
+  },
+  {
+    "id": "inuyama-c022ed16",
+    "name": "大沢秀教",
+    "kana": "おおさわひでのり",
+    "level": "municipal",
+    "party": "創犬会",
+    "district": "犬山市",
+    "sourceUrl": "https://www.city.inuyama.aichi.jp/shisei/gikai/1000340/1000362.html",
+    "govCode": "23215",
+    "vendor": "linkout"
+  },
+  {
+    "id": "inuyama-08e03eb8",
+    "name": "玉置幸哉",
+    "kana": "たまおきゆきや",
+    "level": "municipal",
+    "party": "創犬会",
+    "district": "犬山市",
+    "sourceUrl": "https://www.city.inuyama.aichi.jp/shisei/gikai/1000340/1000362.html",
+    "govCode": "23215",
+    "vendor": "linkout"
+  },
+  {
+    "id": "inuyama-fae983e6",
+    "name": "小川清美",
+    "kana": "おがわきよみ",
+    "level": "municipal",
+    "party": "創犬会",
+    "district": "犬山市",
+    "sourceUrl": "https://www.city.inuyama.aichi.jp/shisei/gikai/1000340/1000362.html",
+    "govCode": "23215",
+    "vendor": "linkout"
+  },
+  {
+    "id": "inuyama-f9ad9f32",
+    "name": "光清毅",
+    "kana": "みつきよつよし",
+    "level": "municipal",
+    "party": "創犬会",
+    "district": "犬山市",
+    "sourceUrl": "https://www.city.inuyama.aichi.jp/shisei/gikai/1000340/1000362.html",
+    "govCode": "23215",
+    "vendor": "linkout"
+  },
+  {
+    "id": "inuyama-09cd33f1",
+    "name": "久世高裕",
+    "kana": "くぜたかひろ",
+    "level": "municipal",
+    "party": "清風会",
+    "district": "犬山市",
+    "sourceUrl": "https://www.city.inuyama.aichi.jp/shisei/gikai/1000340/1000362.html",
+    "govCode": "23215",
+    "vendor": "linkout"
+  },
+  {
+    "id": "inuyama-2142823e",
+    "name": "柴山一生",
+    "kana": "しばやまいっせい",
+    "level": "municipal",
+    "party": "清風会",
+    "district": "犬山市",
+    "sourceUrl": "https://www.city.inuyama.aichi.jp/shisei/gikai/1000340/1000362.html",
+    "govCode": "23215",
+    "vendor": "linkout"
+  },
+  {
+    "id": "inuyama-cb048b13",
+    "name": "鈴木伸太郎",
+    "kana": "すずきしんたろう",
+    "level": "municipal",
+    "party": "清風会",
+    "district": "犬山市",
+    "sourceUrl": "https://www.city.inuyama.aichi.jp/shisei/gikai/1000340/1000362.html",
+    "govCode": "23215",
+    "vendor": "linkout"
+  },
+  {
+    "id": "inuyama-6b4f023b",
+    "name": "沼靖子",
+    "kana": "ぬまやすこ",
+    "level": "municipal",
+    "party": "清風会",
+    "district": "犬山市",
+    "sourceUrl": "https://www.city.inuyama.aichi.jp/shisei/gikai/1000340/1000362.html",
+    "govCode": "23215",
+    "vendor": "linkout"
+  },
+  {
+    "id": "inuyama-38277ce3",
+    "name": "ビアンキ恵子",
+    "kana": "びあんきけいこ",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "犬山市",
+    "sourceUrl": "https://www.city.inuyama.aichi.jp/shisei/gikai/1000340/1000362.html",
+    "govCode": "23215",
+    "vendor": "linkout"
+  },
+  {
+    "id": "inuyama-63e5e364",
+    "name": "丸山幸治",
+    "kana": "まるやまこうじ",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "犬山市",
+    "sourceUrl": "https://www.city.inuyama.aichi.jp/shisei/gikai/1000340/1000362.html",
+    "govCode": "23215",
+    "vendor": "linkout"
+  }
+]

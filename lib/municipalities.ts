@@ -81,6 +81,15 @@ export const MUNICIPALITIES: Municipality[] = [
   { govCode: "23224", slug: "chita", city: "知多市", council: "知多市議会", minutesLabel: "知多市議会 会議録検索システム", minutesUrl: "https://ssp.kaigiroku.net/tenant/chita/SpTop.html" },
   { govCode: "23226", slug: "owariasahi", city: "尾張旭市", council: "尾張旭市議会", minutesLabel: "尾張旭市議会 会議録検索システム", minutesUrl: "https://ssp.kaigiroku.net/tenant/owariasahi/SpTop.html" },
   { govCode: "23230", slug: "nisshin", city: "日進市", council: "日進市議会", minutesLabel: "日進市議会 会議録検索システム", minutesUrl: "https://ssp.kaigiroku.net/tenant/nisshin/SpTop.html" },
+  // Phase3（第4陣・名簿/会議録URLは取得後に充填）
+  { govCode: "23208", slug: "tsushima", city: "津島市", council: "津島市議会", minutesLabel: "津島市議会 会議録検索システム", minutesUrl: "https://www.city.tsushima.aichi.dbsr.jp/" },
+  { govCode: "23214", slug: "gamagori", city: "蒲郡市", council: "蒲郡市議会", minutesLabel: "蒲郡市議会 会議録検索システム", minutesUrl: "https://ssp.kaigiroku.net/tenant/gamagori/SpTop.html" },
+  { govCode: "23215", slug: "inuyama", city: "犬山市", council: "犬山市議会", minutesLabel: "犬山市議会 会議録検索システム", minutesUrl: "https://www.kensakusystem.jp/inuyama/" },
+  { govCode: "23216", slug: "tokoname", city: "常滑市", council: "常滑市議会", minutesLabel: "常滑市議会 会議録検索システム", minutesUrl: "https://ssp.kaigiroku.net/tenant/tokoname/SpTop.html" },
+  { govCode: "23221", slug: "shinshiro", city: "新城市", council: "新城市議会", minutesLabel: "新城市議会 会議録検索システム", minutesUrl: "https://www.city.shinshiro.aichi.dbsr.jp/" },
+  { govCode: "23225", slug: "chiryu", city: "知立市", council: "知立市議会", minutesLabel: "知立市議会 会議録検索システム", minutesUrl: "http://www.kensakusystem.jp/chiryu/index.html" },
+  { govCode: "23227", slug: "takahama", city: "高浜市", council: "高浜市議会", minutesLabel: "高浜市議会 議会中継（発言検索）", minutesUrl: "https://smart.discussvision.net/smart/tenant/takahama/WebView/rd/council.html" },
+  { govCode: "23228", slug: "iwakura", city: "岩倉市", council: "岩倉市議会", minutesLabel: "岩倉市議会 会議録検索システム", minutesUrl: "https://www.kensakusystem.jp/iwakura/" },
 ];
 
 export function municipalityByGov(govCode?: string): Municipality | undefined {
