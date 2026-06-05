@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import Link from "next/link";
 import { SourceLink } from "@/components/SourceLink";
 
 export const metadata: Metadata = {
@@ -38,6 +39,21 @@ export default function AboutPage() {
         </p>
       </Section>
 
+      <Section title="編集方針・データの選定基準">
+        <p>中立を「掲げる」だけでなく、仕組みとして示すための運用ルールです。</p>
+        <ul className="list-disc space-y-1 pl-5">
+          <li>すべての発言・採決・政治資金・事実カードに、一次ソースURLを必ず併記します。</li>
+          <li>評価語（良い／悪い等）を使わず、「記録」をそのまま並べます。</li>
+          <li>
+            事実カードの題材は争点を起点に選び、特定の政党・議員を狙い撃ちしないよう複数の会派を横断して扱います。
+          </li>
+          <li>
+            数値が誤解を生みうる場合（団体種別で規模が変わる等）は、必ず「読み方の注意」を併記します。
+          </li>
+          <li>掲載しなかった事項がある場合は、その理由を可能な範囲で示します。</li>
+        </ul>
+      </Section>
+
       <Section title="データの出典">
         <ul className="list-disc space-y-1 pl-5">
           <li>
@@ -57,12 +73,19 @@ export default function AboutPage() {
         </ul>
       </Section>
 
-      <Section title="AI要約について">
+      <Section title="AI要約について（検証手順）">
         <p>
           国会発言には、生成AIによる中立・多視点の要約を補助情報として併記する場合があります。
           AI要約は自動生成のため原文と異なる場合があり、判断の際は必ず併記の原文（会議録）をご確認ください。
           要約は意見の評価や投票の誘導を目的としません。
         </p>
+        <p>透明性のため、要約は次の手順で扱います。</p>
+        <ul className="list-disc space-y-1 pl-5">
+          <li>入力は会議録の原文のみ。要約には必ず元発言へのリンクを併記します。</li>
+          <li>中立・多視点・低温度のプロンプトで生成し、用いたモデル名と生成日時を記録します。</li>
+          <li>要約は本文の「補助」であり、一次ソース（原文）が常に優先されます。</li>
+          <li>誤要約の指摘を受け付け、確認のうえ訂正します。</li>
+        </ul>
       </Section>
 
       <Section title="公職選挙法への配慮">
@@ -80,8 +103,28 @@ export default function AboutPage() {
         </p>
       </Section>
 
-      <Section title="運営">
-        <p>運営：愛知政治マップ編集部（ナゴヤ人間）。お問い合わせ先は準備中です。</p>
+      <Section title="財源・寄付の方針">
+        <p>
+          本サイトはサーバー代・ドメイン代・データ取得の実費でほぼ自費運営しています。運営を続けるための
+          <Link href="/support" className="link-ink">支援・寄付</Link>
+          を受け付けますが、中立性を守るため次のガードレールを設けます。
+        </p>
+        <ul className="list-disc space-y-1 pl-5">
+          <li>
+            <span className="font-bold text-ink">政党・政治家・政治団体からの寄付は受け取りません。</span>
+          </li>
+          <li>支援は「サイト運営」への支援であり、特定の政治活動への支援ではありません。</li>
+          <li>誰が支援しても、掲載する内容・順序・表示は一切変わりません（編集の独立）。</li>
+          <li>支援の使途（サーバー・ドメイン・データ取得）は、可能な範囲で公開します。</li>
+        </ul>
+      </Section>
+
+      <Section title="運営・編集の独立性">
+        <p>
+          運営：愛知政治マップ編集部（個人運営）。運営者は他のメディアも運営していますが、
+          本サイトの編集は独立して行い、特定の政党・候補者・団体との利害関係はありません。
+          お問い合わせ先は準備中です。
+        </p>
       </Section>
     </div>
   );

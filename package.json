@@ -26,7 +26,8 @@
     "fetch:votes": "tsx scripts/fetch-votes.ts",
     "fetch:funding": "tsx scripts/fetch-funding.ts",
     "summarize": "tsx scripts/summarize.ts",
-    "build:issues": "tsx scripts/build-issues.ts"
+    "build:issues": "tsx scripts/build-issues.ts",
+    "og:font": "tsx scripts/build-og-font.ts"
   },
   "dependencies": {
     "next": "^16.2.7",

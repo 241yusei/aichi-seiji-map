@@ -6,13 +6,14 @@
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import {
+  factCardsSchema,
   fundingsSchema,
   issuesSchema,
   legislatorsSchema,
   speechRecordsSchema,
   votesSchema,
 } from "../lib/zod-schemas";
-import type { Funding, Issue, Legislator, SpeechRecord, Vote } from "../lib/types";
+import type { FactCard, Funding, Issue, Legislator, SpeechRecord, Vote } from "../lib/types";
 import { MUNICIPALITIES } from "../lib/municipalities";
 
 const DATA_DIR = join(process.cwd(), "data");
@@ -59,6 +60,7 @@ const speeches = [
 const votes = load<Vote>("votes.json", votesSchema);
 const funding = load<Funding>("funding.json", fundingsSchema);
 const issues = load<Issue>("issues.json", issuesSchema);
+const factCards = load<FactCard>("fact-cards.json", factCardsSchema);
 
 console.log("\n相互参照を検査します…");
 
@@ -93,11 +95,25 @@ for (const issue of issues) {
   }
 }
 
+// 事実カードの相互参照・ID重複を検査
+const issueIds = new Set(issues.map((i) => i.id));
+const seenFact = new Set<string>();
+for (const fc of factCards) {
+  if (seenFact.has(fc.id)) fail(`事実カードID重複: ${fc.id}`);
+  seenFact.add(fc.id);
+  for (const iid of fc.relatedIssueIds ?? []) {
+    if (!issueIds.has(iid)) fail(`事実カード ${fc.id} の参照争点が不明: ${iid}`);
+  }
+  for (const lid of fc.relatedLegislatorIds ?? []) {
+    if (!legislatorIds.has(lid)) fail(`事実カード ${fc.id} の参照議員が不明: ${lid}`);
+  }
+}
+
 console.log("");
 if (errorCount > 0) {
   console.error(`検証失敗: ${errorCount} 件のエラー`);
   process.exit(1);
 }
 console.log(
-  `検証成功: 議員 ${legislators.length} / 発言 ${speeches.length} / 採決 ${votes.length} / 資金 ${funding.length} / 争点 ${issues.length}`,
+  `検証成功: 議員 ${legislators.length} / 発言 ${speeches.length} / 採決 ${votes.length} / 資金 ${funding.length} / 争点 ${issues.length} / 事実カード ${factCards.length}`,
 );

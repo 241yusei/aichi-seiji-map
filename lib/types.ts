@@ -90,3 +90,35 @@ export interface DateRange {
   from: string; // ISO (YYYY-MM-DD)
   until: string; // ISO (YYYY-MM-DD)
 }
+
+/** 事実カードの数値・対比の1項目（カード表面に並べる）。 */
+export interface FactCardPoint {
+  label: string; // 例: "今枝宗一郎（自民・選挙区支部）" "リニア"
+  value: string; // 例: "約1億547万円" "0件"
+}
+
+/** 事実カードの一次ソース（複数のPDF・公式ページを引けるよう配列で持つ）。 */
+export interface FactCardSource {
+  label: string;
+  url: string;
+}
+
+/**
+ * 矛盾・ギャップ型の一次事実カード（拡散の主砲）。
+ * 中立を仕組みで担保するため caveat（誤解を避ける注記）と sources（一次ソース1件以上）を必須にする。
+ * 評価語を使わず「記録」を見せるのが原則。
+ */
+export interface FactCard {
+  id: string; // 例: "gap-funding-scale-2024"
+  title: string; // 見出し（客観・評価語なし）
+  hook: string; // ギャップの核を1行で
+  cardType: "gap" | "contradiction" | "comparison";
+  body: string; // 事実の説明（複数視点を含めてよい）
+  caveat: string; // 中立注記（必須・誤解回避）
+  points?: FactCardPoint[]; // カード表面に並べる数値・対比
+  sources: FactCardSource[]; // 一次ソース（1件以上必須）
+  relatedIssueIds?: string[]; // 関連する争点ID（Issue.id）
+  relatedLegislatorIds?: string[]; // 関連する議員ID（Legislator.id）
+  publishedAt: string; // 公開日（ISO 8601）
+  updatedAt?: string; // 更新日（ISO 8601）
+}
