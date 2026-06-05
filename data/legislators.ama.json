@@ -1,0 +1,233 @@
+[
+  {
+    "id": "ama-562b4008",
+    "name": "江波圭一",
+    "kana": "えなみけいいち",
+    "level": "municipal",
+    "party": "志政会",
+    "district": "あま市",
+    "sourceUrl": "https://www.city.ama.aichi.jp/gikai/1003923.html",
+    "govCode": "23237",
+    "vendor": "linkout"
+  },
+  {
+    "id": "ama-b1713fed",
+    "name": "宮崎環",
+    "kana": "みやざきたまき",
+    "level": "municipal",
+    "party": "志政会",
+    "district": "あま市",
+    "sourceUrl": "https://www.city.ama.aichi.jp/gikai/1003923.html",
+    "govCode": "23237",
+    "vendor": "linkout"
+  },
+  {
+    "id": "ama-2ed7c4df",
+    "name": "近藤みどり",
+    "kana": "こんどうみどり",
+    "level": "municipal",
+    "party": "公明党あま市議団",
+    "district": "あま市",
+    "sourceUrl": "https://www.city.ama.aichi.jp/gikai/1003923.html",
+    "govCode": "23237",
+    "vendor": "linkout"
+  },
+  {
+    "id": "ama-603cb0ab",
+    "name": "足立詔子",
+    "kana": "あだちしょうこ",
+    "level": "municipal",
+    "party": "公明党あま市議団",
+    "district": "あま市",
+    "sourceUrl": "https://www.city.ama.aichi.jp/gikai/1003923.html",
+    "govCode": "23237",
+    "vendor": "linkout"
+  },
+  {
+    "id": "ama-0370cec9",
+    "name": "柏原功",
+    "kana": "かしはらいさお",
+    "level": "municipal",
+    "party": "公明党あま市議団",
+    "district": "あま市",
+    "sourceUrl": "https://www.city.ama.aichi.jp/gikai/1003923.html",
+    "govCode": "23237",
+    "vendor": "linkout"
+  },
+  {
+    "id": "ama-5e43a997",
+    "name": "野中幸夫",
+    "kana": "のなかゆきお",
+    "level": "municipal",
+    "party": "日本共産党あま市議団",
+    "district": "あま市",
+    "sourceUrl": "https://www.city.ama.aichi.jp/gikai/1003923.html",
+    "govCode": "23237",
+    "vendor": "linkout"
+  },
+  {
+    "id": "ama-5a3be30b",
+    "name": "山本雄一",
+    "kana": "やまもとゆういち",
+    "level": "municipal",
+    "party": "新政会",
+    "district": "あま市",
+    "sourceUrl": "https://www.city.ama.aichi.jp/gikai/1003923.html",
+    "govCode": "23237",
+    "vendor": "linkout"
+  },
+  {
+    "id": "ama-fb0f9f97",
+    "name": "新見尚美",
+    "kana": "にいみなおみ",
+    "level": "municipal",
+    "party": "新政会",
+    "district": "あま市",
+    "sourceUrl": "https://www.city.ama.aichi.jp/gikai/1003923.html",
+    "govCode": "23237",
+    "vendor": "linkout"
+  },
+  {
+    "id": "ama-85c96d57",
+    "name": "後藤哲哉",
+    "kana": "ごとうてつや",
+    "level": "municipal",
+    "party": "志政会",
+    "district": "あま市",
+    "sourceUrl": "https://www.city.ama.aichi.jp/gikai/1003923.html",
+    "govCode": "23237",
+    "vendor": "linkout"
+  },
+  {
+    "id": "ama-c7fd1e46",
+    "name": "森耕治",
+    "kana": "もりこうじ",
+    "level": "municipal",
+    "party": "志政会",
+    "district": "あま市",
+    "sourceUrl": "https://www.city.ama.aichi.jp/gikai/1003923.html",
+    "govCode": "23237",
+    "vendor": "linkout"
+  },
+  {
+    "id": "ama-d2bceb77",
+    "name": "山内隆久",
+    "kana": "やまうちたかひさ",
+    "level": "municipal",
+    "party": "無会派",
+    "district": "あま市",
+    "sourceUrl": "https://www.city.ama.aichi.jp/gikai/1003923.html",
+    "govCode": "23237",
+    "vendor": "linkout"
+  },
+  {
+    "id": "ama-6331aa2c",
+    "name": "奥田哲弘",
+    "kana": "おくだあきひろ",
+    "level": "municipal",
+    "party": "健政会",
+    "district": "あま市",
+    "sourceUrl": "https://www.city.ama.aichi.jp/gikai/1003923.html",
+    "govCode": "23237",
+    "vendor": "linkout"
+  },
+  {
+    "id": "ama-9eb70315",
+    "name": "毛利尚義",
+    "kana": "もうりひさよし",
+    "level": "municipal",
+    "party": "維新の会あま市議団",
+    "district": "あま市",
+    "sourceUrl": "https://www.city.ama.aichi.jp/gikai/1003923.html",
+    "govCode": "23237",
+    "vendor": "linkout"
+  },
+  {
+    "id": "ama-e3c3c0c1",
+    "name": "美濃島絢太",
+    "kana": "みのしまけんた",
+    "level": "municipal",
+    "party": "無会派",
+    "district": "あま市",
+    "sourceUrl": "https://www.city.ama.aichi.jp/gikai/1003923.html",
+    "govCode": "23237",
+    "vendor": "linkout"
+  },
+  {
+    "id": "ama-f1fdbd5b",
+    "name": "石田良雄",
+    "kana": "いしだよしお",
+    "level": "municipal",
+    "party": "新政会",
+    "district": "あま市",
+    "sourceUrl": "https://www.city.ama.aichi.jp/gikai/1003923.html",
+    "govCode": "23237",
+    "vendor": "linkout"
+  },
+  {
+    "id": "ama-746e6583",
+    "name": "前田豊光",
+    "kana": "まえだとよみつ",
+    "level": "municipal",
+    "party": "新政会",
+    "district": "あま市",
+    "sourceUrl": "https://www.city.ama.aichi.jp/gikai/1003923.html",
+    "govCode": "23237",
+    "vendor": "linkout"
+  },
+  {
+    "id": "ama-caa1321c",
+    "name": "伊藤嘉規",
+    "kana": "いとうよしのり",
+    "level": "municipal",
+    "party": "志政会",
+    "district": "あま市",
+    "sourceUrl": "https://www.city.ama.aichi.jp/gikai/1003923.html",
+    "govCode": "23237",
+    "vendor": "linkout"
+  },
+  {
+    "id": "ama-877c4f99",
+    "name": "横井敏夫",
+    "kana": "よこいとしお",
+    "level": "municipal",
+    "party": "志政会",
+    "district": "あま市",
+    "sourceUrl": "https://www.city.ama.aichi.jp/gikai/1003923.html",
+    "govCode": "23237",
+    "vendor": "linkout"
+  },
+  {
+    "id": "ama-98c2a6c6",
+    "name": "後藤幸正",
+    "kana": "ごとうゆきまさ",
+    "level": "municipal",
+    "party": "健政会",
+    "district": "あま市",
+    "sourceUrl": "https://www.city.ama.aichi.jp/gikai/1003923.html",
+    "govCode": "23237",
+    "vendor": "linkout"
+  },
+  {
+    "id": "ama-9af603c7",
+    "name": "林正彦",
+    "kana": "はやしまさひこ",
+    "level": "municipal",
+    "party": "健政会",
+    "district": "あま市",
+    "sourceUrl": "https://www.city.ama.aichi.jp/gikai/1003923.html",
+    "govCode": "23237",
+    "vendor": "linkout"
+  },
+  {
+    "id": "ama-c6d078b6",
+    "name": "松下昭憲",
+    "kana": "まつしたあきのり",
+    "level": "municipal",
+    "party": "市民改革クラブ",
+    "district": "あま市",
+    "sourceUrl": "https://www.city.ama.aichi.jp/gikai/1003923.html",
+    "govCode": "23237",
+    "vendor": "linkout"
+  }
+]

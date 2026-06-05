@@ -1,0 +1,222 @@
+[
+  {
+    "id": "toyoake-c27ac8bf",
+    "name": "青木けんじ",
+    "kana": "あおきけんじ",
+    "level": "municipal",
+    "party": "清和",
+    "district": "豊明市",
+    "sourceUrl": "https://www.city.toyoake.lg.jp/3510.htm",
+    "govCode": "23229",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toyoake-73e84e72",
+    "name": "毛受明宏",
+    "kana": "めんじょうあきひろ",
+    "level": "municipal",
+    "party": "清和",
+    "district": "豊明市",
+    "sourceUrl": "https://www.city.toyoake.lg.jp/3510.htm",
+    "govCode": "23229",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toyoake-b1ff9adc",
+    "name": "近藤ひろひで",
+    "kana": "こんどうひろひで",
+    "level": "municipal",
+    "party": "清和",
+    "district": "豊明市",
+    "sourceUrl": "https://www.city.toyoake.lg.jp/3510.htm",
+    "govCode": "23229",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toyoake-f7f3a205",
+    "name": "鵜飼貞雄",
+    "kana": "うかいさだお",
+    "level": "municipal",
+    "party": "清和",
+    "district": "豊明市",
+    "sourceUrl": "https://www.city.toyoake.lg.jp/3510.htm",
+    "govCode": "23229",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toyoake-854a0c70",
+    "name": "いとうひろし",
+    "kana": "いとうひろし",
+    "level": "municipal",
+    "party": "清和",
+    "district": "豊明市",
+    "sourceUrl": "https://www.city.toyoake.lg.jp/3510.htm",
+    "govCode": "23229",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toyoake-4e5f8317",
+    "name": "服部龍一",
+    "kana": "はっとりりゅういち",
+    "level": "municipal",
+    "party": "清和",
+    "district": "豊明市",
+    "sourceUrl": "https://www.city.toyoake.lg.jp/3510.htm",
+    "govCode": "23229",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toyoake-82a6518e",
+    "name": "岡島ゆみこ",
+    "kana": "おかじまゆみこ",
+    "level": "municipal",
+    "party": "清和",
+    "district": "豊明市",
+    "sourceUrl": "https://www.city.toyoake.lg.jp/3510.htm",
+    "govCode": "23229",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toyoake-96156b67",
+    "name": "林ゆきひろ",
+    "kana": "はやしゆきひろ",
+    "level": "municipal",
+    "party": "市民派の会",
+    "district": "豊明市",
+    "sourceUrl": "https://www.city.toyoake.lg.jp/3510.htm",
+    "govCode": "23229",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toyoake-9b898f23",
+    "name": "こんどうのぶお",
+    "kana": "こんどうのぶお",
+    "level": "municipal",
+    "party": "市民派の会",
+    "district": "豊明市",
+    "sourceUrl": "https://www.city.toyoake.lg.jp/3510.htm",
+    "govCode": "23229",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toyoake-aa845961",
+    "name": "浅井たかお",
+    "kana": "あさいたかお",
+    "level": "municipal",
+    "party": "市民派の会",
+    "district": "豊明市",
+    "sourceUrl": "https://www.city.toyoake.lg.jp/3510.htm",
+    "govCode": "23229",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toyoake-f462771a",
+    "name": "武谷としお",
+    "kana": "たけたにとしお",
+    "level": "municipal",
+    "party": "未来クラブ",
+    "district": "豊明市",
+    "sourceUrl": "https://www.city.toyoake.lg.jp/3510.htm",
+    "govCode": "23229",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toyoake-c003c12e",
+    "name": "中堀りゅういち",
+    "kana": "なかほりりゅういち",
+    "level": "municipal",
+    "party": "未来クラブ",
+    "district": "豊明市",
+    "sourceUrl": "https://www.city.toyoake.lg.jp/3510.htm",
+    "govCode": "23229",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toyoake-92052c1f",
+    "name": "一色美智子",
+    "kana": "いっしきみちこ",
+    "level": "municipal",
+    "party": "公明党",
+    "district": "豊明市",
+    "sourceUrl": "https://www.city.toyoake.lg.jp/3510.htm",
+    "govCode": "23229",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toyoake-183e0d40",
+    "name": "鈴木智和",
+    "kana": "すずきともかず",
+    "level": "municipal",
+    "party": "公明党",
+    "district": "豊明市",
+    "sourceUrl": "https://www.city.toyoake.lg.jp/3510.htm",
+    "govCode": "23229",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toyoake-6678f7c0",
+    "name": "郷右近修",
+    "kana": "ごううこんおさむ",
+    "level": "municipal",
+    "party": "日本共産党",
+    "district": "豊明市",
+    "sourceUrl": "https://www.city.toyoake.lg.jp/3510.htm",
+    "govCode": "23229",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toyoake-603ceded",
+    "name": "ふじえ真理子",
+    "kana": "ふじえまりこ",
+    "level": "municipal",
+    "party": "たんぽぽ",
+    "district": "豊明市",
+    "sourceUrl": "https://www.city.toyoake.lg.jp/3510.htm",
+    "govCode": "23229",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toyoake-1c3ed1ee",
+    "name": "清水義昭",
+    "kana": "しみずよしあき",
+    "level": "municipal",
+    "party": "清澄",
+    "district": "豊明市",
+    "sourceUrl": "https://www.city.toyoake.lg.jp/3510.htm",
+    "govCode": "23229",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toyoake-4a7e9b33",
+    "name": "堀内ちほ",
+    "kana": "ほりうちちほ",
+    "level": "municipal",
+    "party": "ひまわり",
+    "district": "豊明市",
+    "sourceUrl": "https://www.city.toyoake.lg.jp/3510.htm",
+    "govCode": "23229",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toyoake-46fe28b8",
+    "name": "三浦桂司",
+    "kana": "みうらけいじ",
+    "level": "municipal",
+    "party": "市政クラブ",
+    "district": "豊明市",
+    "sourceUrl": "https://www.city.toyoake.lg.jp/3510.htm",
+    "govCode": "23229",
+    "vendor": "linkout"
+  },
+  {
+    "id": "toyoake-3867e751",
+    "name": "月岡修一",
+    "kana": "つきおかしゅういち",
+    "level": "municipal",
+    "party": "青巒",
+    "district": "豊明市",
+    "sourceUrl": "https://www.city.toyoake.lg.jp/3510.htm",
+    "govCode": "23229",
+    "vendor": "linkout"
+  }
+]

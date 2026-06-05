@@ -1,0 +1,222 @@
+[
+  {
+    "id": "miyoshi-d886840a",
+    "name": "阿部憲明",
+    "kana": "あべのりあき",
+    "level": "municipal",
+    "party": "公明党",
+    "district": "みよし市",
+    "sourceUrl": "https://www.city.aichi-miyoshi.lg.jp/soshiki/gikai/1/3/725.html",
+    "govCode": "23236",
+    "vendor": "linkout"
+  },
+  {
+    "id": "miyoshi-159fddba",
+    "name": "伊地田妙子",
+    "kana": "いちだたえこ",
+    "level": "municipal",
+    "party": "公明党",
+    "district": "みよし市",
+    "sourceUrl": "https://www.city.aichi-miyoshi.lg.jp/soshiki/gikai/1/3/725.html",
+    "govCode": "23236",
+    "vendor": "linkout"
+  },
+  {
+    "id": "miyoshi-e10c6fb4",
+    "name": "奥村祐右",
+    "kana": "おくむらゆうすけ",
+    "level": "municipal",
+    "party": "新世紀の会",
+    "district": "みよし市",
+    "sourceUrl": "https://www.city.aichi-miyoshi.lg.jp/soshiki/gikai/1/3/725.html",
+    "govCode": "23236",
+    "vendor": "linkout"
+  },
+  {
+    "id": "miyoshi-248df625",
+    "name": "小嶋立夫",
+    "kana": "こじまたつお",
+    "level": "municipal",
+    "party": "新世紀の会",
+    "district": "みよし市",
+    "sourceUrl": "https://www.city.aichi-miyoshi.lg.jp/soshiki/gikai/1/3/725.html",
+    "govCode": "23236",
+    "vendor": "linkout"
+  },
+  {
+    "id": "miyoshi-ea33cbe8",
+    "name": "竹谷明永",
+    "kana": "たけやあきひさ",
+    "level": "municipal",
+    "party": "新世紀の会",
+    "district": "みよし市",
+    "sourceUrl": "https://www.city.aichi-miyoshi.lg.jp/soshiki/gikai/1/3/725.html",
+    "govCode": "23236",
+    "vendor": "linkout"
+  },
+  {
+    "id": "miyoshi-35f74539",
+    "name": "田中祐二",
+    "kana": "たなかゆうじ",
+    "level": "municipal",
+    "party": "市民フォーラム",
+    "district": "みよし市",
+    "sourceUrl": "https://www.city.aichi-miyoshi.lg.jp/soshiki/gikai/1/3/725.html",
+    "govCode": "23236",
+    "vendor": "linkout"
+  },
+  {
+    "id": "miyoshi-62fd033a",
+    "name": "塚本克彦",
+    "kana": "つかもとかつひこ",
+    "level": "municipal",
+    "party": "新世紀の会",
+    "district": "みよし市",
+    "sourceUrl": "https://www.city.aichi-miyoshi.lg.jp/soshiki/gikai/1/3/725.html",
+    "govCode": "23236",
+    "vendor": "linkout"
+  },
+  {
+    "id": "miyoshi-5635eb96",
+    "name": "塚本直樹",
+    "kana": "つかもとなおき",
+    "level": "municipal",
+    "party": "新世紀の会",
+    "district": "みよし市",
+    "sourceUrl": "https://www.city.aichi-miyoshi.lg.jp/soshiki/gikai/1/3/725.html",
+    "govCode": "23236",
+    "vendor": "linkout"
+  },
+  {
+    "id": "miyoshi-300217fb",
+    "name": "寺本弘子",
+    "kana": "てらもとひろこ",
+    "level": "municipal",
+    "party": "希望の風",
+    "district": "みよし市",
+    "sourceUrl": "https://www.city.aichi-miyoshi.lg.jp/soshiki/gikai/1/3/725.html",
+    "govCode": "23236",
+    "vendor": "linkout"
+  },
+  {
+    "id": "miyoshi-081a0f2a",
+    "name": "鳥羽富士夫",
+    "kana": "とばふじお",
+    "level": "municipal",
+    "party": "新世紀の会",
+    "district": "みよし市",
+    "sourceUrl": "https://www.city.aichi-miyoshi.lg.jp/soshiki/gikai/1/3/725.html",
+    "govCode": "23236",
+    "vendor": "linkout"
+  },
+  {
+    "id": "miyoshi-4ed49a71",
+    "name": "林久子",
+    "kana": "はやしひさこ",
+    "level": "municipal",
+    "party": "希望の風",
+    "district": "みよし市",
+    "sourceUrl": "https://www.city.aichi-miyoshi.lg.jp/soshiki/gikai/1/3/725.html",
+    "govCode": "23236",
+    "vendor": "linkout"
+  },
+  {
+    "id": "miyoshi-c53744a1",
+    "name": "原口百合子",
+    "kana": "はらぐちゆりこ",
+    "level": "municipal",
+    "party": "希望の風",
+    "district": "みよし市",
+    "sourceUrl": "https://www.city.aichi-miyoshi.lg.jp/soshiki/gikai/1/3/725.html",
+    "govCode": "23236",
+    "vendor": "linkout"
+  },
+  {
+    "id": "miyoshi-31337d8d",
+    "name": "福安金之助",
+    "kana": "ふくやすきんのすけ",
+    "level": "municipal",
+    "party": "新世紀の会",
+    "district": "みよし市",
+    "sourceUrl": "https://www.city.aichi-miyoshi.lg.jp/soshiki/gikai/1/3/725.html",
+    "govCode": "23236",
+    "vendor": "linkout"
+  },
+  {
+    "id": "miyoshi-e71307f6",
+    "name": "藤川仁司",
+    "kana": "ふじかわひとし",
+    "level": "municipal",
+    "party": "新世紀の会",
+    "district": "みよし市",
+    "sourceUrl": "https://www.city.aichi-miyoshi.lg.jp/soshiki/gikai/1/3/725.html",
+    "govCode": "23236",
+    "vendor": "linkout"
+  },
+  {
+    "id": "miyoshi-6d496872",
+    "name": "牧田充生",
+    "kana": "まきたみつお",
+    "level": "municipal",
+    "party": "日本共産党",
+    "district": "みよし市",
+    "sourceUrl": "https://www.city.aichi-miyoshi.lg.jp/soshiki/gikai/1/3/725.html",
+    "govCode": "23236",
+    "vendor": "linkout"
+  },
+  {
+    "id": "miyoshi-fd94bcf0",
+    "name": "増岡義弘",
+    "kana": "ますおかよしひろ",
+    "level": "municipal",
+    "party": "新世紀の会",
+    "district": "みよし市",
+    "sourceUrl": "https://www.city.aichi-miyoshi.lg.jp/soshiki/gikai/1/3/725.html",
+    "govCode": "23236",
+    "vendor": "linkout"
+  },
+  {
+    "id": "miyoshi-a99a901c",
+    "name": "御国しおん",
+    "kana": "みくにしおん",
+    "level": "municipal",
+    "party": "日本維新の会",
+    "district": "みよし市",
+    "sourceUrl": "https://www.city.aichi-miyoshi.lg.jp/soshiki/gikai/1/3/725.html",
+    "govCode": "23236",
+    "vendor": "linkout"
+  },
+  {
+    "id": "miyoshi-75965c08",
+    "name": "水谷正邦",
+    "kana": "みずたにまさくに",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "みよし市",
+    "sourceUrl": "https://www.city.aichi-miyoshi.lg.jp/soshiki/gikai/1/3/725.html",
+    "govCode": "23236",
+    "vendor": "linkout"
+  },
+  {
+    "id": "miyoshi-9234136d",
+    "name": "水野隆市",
+    "kana": "みずのりゅういち",
+    "level": "municipal",
+    "party": "無所属",
+    "district": "みよし市",
+    "sourceUrl": "https://www.city.aichi-miyoshi.lg.jp/soshiki/gikai/1/3/725.html",
+    "govCode": "23236",
+    "vendor": "linkout"
+  },
+  {
+    "id": "miyoshi-20295400",
+    "name": "渡邊郁夫",
+    "kana": "わたなべいくお",
+    "level": "municipal",
+    "party": "市民フォーラム",
+    "district": "みよし市",
+    "sourceUrl": "https://www.city.aichi-miyoshi.lg.jp/soshiki/gikai/1/3/725.html",
+    "govCode": "23236",
+    "vendor": "linkout"
+  }
+]

@@ -91,6 +91,16 @@ export const MUNICIPALITIES: Municipality[] = [
   { govCode: "23225", slug: "chiryu", city: "知立市", council: "知立市議会", minutesLabel: "知立市議会 会議録検索システム", minutesUrl: "http://www.kensakusystem.jp/chiryu/index.html" },
   { govCode: "23227", slug: "takahama", city: "高浜市", council: "高浜市議会", minutesLabel: "高浜市議会 議会中継（発言検索）", minutesUrl: "https://smart.discussvision.net/smart/tenant/takahama/WebView/rd/council.html" },
   { govCode: "23228", slug: "iwakura", city: "岩倉市", council: "岩倉市議会", minutesLabel: "岩倉市議会 会議録検索システム", minutesUrl: "https://www.kensakusystem.jp/iwakura/" },
+  // Phase3（第5陣＝最終陣・これで愛知38市すべて収録）
+  { govCode: "23229", slug: "toyoake", city: "豊明市", council: "豊明市議会", minutesLabel: "豊明市議会 会議録検索システム", minutesUrl: "https://www.city.toyoake.aichi.dbsr.jp/" },
+  { govCode: "23231", slug: "tahara", city: "田原市", council: "田原市議会", minutesLabel: "田原市議会 会議録検索システム", minutesUrl: "https://ssp.kaigiroku.net/tenant/tahara/SpTop.html" },
+  { govCode: "23232", slug: "aisai", city: "愛西市", council: "愛西市議会", minutesLabel: "愛西市議会 会議録（市公式PDF）", minutesUrl: "" },
+  { govCode: "23233", slug: "kiyosu", city: "清須市", council: "清須市議会", minutesLabel: "清須市議会 会議録検索システム", minutesUrl: "https://www.kensakusystem.jp/kiyosu/" },
+  { govCode: "23234", slug: "kitanagoya", city: "北名古屋市", council: "北名古屋市議会", minutesLabel: "北名古屋市議会 会議録検索システム", minutesUrl: "https://ssp.kaigiroku.net/tenant/kitanagoya/SpTop.html" },
+  { govCode: "23235", slug: "yatomi", city: "弥富市", council: "弥富市議会", minutesLabel: "弥富市議会 会議録（市公式PDF）", minutesUrl: "" },
+  { govCode: "23236", slug: "miyoshi", city: "みよし市", council: "みよし市議会", minutesLabel: "みよし市議会 会議録検索システム", minutesUrl: "https://www.kensakusystem.jp/miyoshi-c/index.html" },
+  { govCode: "23237", slug: "ama", city: "あま市", council: "あま市議会", minutesLabel: "あま市議会 会議録検索システム", minutesUrl: "https://www.city.ama.aichi.dbsr.jp/" },
+  { govCode: "23238", slug: "nagakute", city: "長久手市", council: "長久手市議会", minutesLabel: "長久手市議会 会議録検索システム", minutesUrl: "http://www.kensakusystem.jp/nagakute/" },
 ];
 
 export function municipalityByGov(govCode?: string): Municipality | undefined {
