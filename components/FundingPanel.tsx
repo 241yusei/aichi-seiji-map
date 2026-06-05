@@ -12,6 +12,7 @@ export function FundingPanel({ funding }: { funding: Funding[] }) {
           <thead>
             <tr className="border-b border-line text-left text-xs">
               <th className="py-1 font-medium">年</th>
+              <th className="py-1 font-medium">団体</th>
               <th className="py-1 font-medium">収入</th>
               <th className="py-1 font-medium">支出</th>
               <th className="py-1 font-medium">出典</th>
@@ -20,9 +21,14 @@ export function FundingPanel({ funding }: { funding: Funding[] }) {
           <tbody>
             {funding.map((f, i) => (
               <tr key={i} className="border-b border-line last:border-0">
-                <td className="py-1 text-ink">{f.year}年</td>
-                <td className="py-1">{f.totalIncome != null ? formatYen(f.totalIncome) : "—"}</td>
-                <td className="py-1">{f.totalExpense != null ? formatYen(f.totalExpense) : "—"}</td>
+                <td className="py-1 text-ink whitespace-nowrap">{f.year}年</td>
+                <td className="py-1 text-ink">{f.teamName ?? "—"}</td>
+                <td className="py-1 whitespace-nowrap">
+                  {f.totalIncome != null ? formatYen(f.totalIncome) : "—"}
+                </td>
+                <td className="py-1 whitespace-nowrap">
+                  {f.totalExpense != null ? formatYen(f.totalExpense) : "—"}
+                </td>
                 <td className="py-1">
                   <SourceLink href={f.sourceUrl}>報告書 ↗</SourceLink>
                 </td>

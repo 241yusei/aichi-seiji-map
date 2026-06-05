@@ -68,9 +68,11 @@ export interface Vote {
 export interface Funding {
   legislatorId: string;
   year: number;
+  /** 報告した政治団体名（資金管理団体／後援会／政党支部など）。団体種別で金額規模が変わるため明示する。 */
+  teamName?: string;
   totalIncome?: number;
   totalExpense?: number;
-  sourceUrl: string; // 総務省 収支報告書へのリンク（必須）
+  sourceUrl: string; // 総務省・都道府県選管 収支報告書へのリンク（必須）
 }
 
 export interface Issue {

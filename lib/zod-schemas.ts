@@ -63,6 +63,7 @@ export const voteSchema = z.object({
 export const fundingSchema = z.object({
   legislatorId: z.string().min(1),
   year: z.number().int(),
+  teamName: z.string().optional(),
   totalIncome: z.number().optional(),
   totalExpense: z.number().optional(),
   sourceUrl: httpUrl,

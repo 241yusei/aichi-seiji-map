@@ -33,5 +33,125 @@
     "totalIncome": 75578828,
     "totalExpense": 40803788,
     "sourceUrl": "https://www.pref.aichi.jp/senkyo/071128/x/c06x0089.pdf"
+  },
+  {
+    "legislatorId": "nat-e7917464",
+    "year": 2024,
+    "teamName": "彰三会",
+    "totalIncome": 30987144,
+    "totalExpense": 8839102,
+    "sourceUrl": "https://www.soumu.go.jp/senkyo/seiji_s/seijishikin/contents/SS20251128/102340_0024.pdf"
+  },
+  {
+    "legislatorId": "nat-bac9a65b",
+    "year": 2024,
+    "teamName": "長坂会",
+    "totalIncome": 7910124,
+    "totalExpense": 6541278,
+    "sourceUrl": "https://www.pref.aichi.jp/senkyo/071128/z/c06z1376.pdf"
+  },
+  {
+    "legislatorId": "nat-dd6216b1",
+    "year": 2024,
+    "teamName": "周平懇和会",
+    "totalIncome": 22243422,
+    "totalExpense": 5739939,
+    "sourceUrl": "https://www.pref.aichi.jp/senkyo/071128/z/c06z0944.pdf"
+  },
+  {
+    "legislatorId": "nat-b9534cd2",
+    "year": 2024,
+    "teamName": "石井拓後援会",
+    "totalIncome": 555622,
+    "totalExpense": 555622,
+    "sourceUrl": "https://www.pref.aichi.jp/senkyo/071128/z/c06z0210.pdf"
+  },
+  {
+    "legislatorId": "nat-b4ef86ed",
+    "year": 2024,
+    "teamName": "自由民主党愛知県第十四選挙区支部",
+    "totalIncome": 105476626,
+    "totalExpense": 83492395,
+    "sourceUrl": "https://www.pref.aichi.jp/senkyo/071128/x/c06x0083.pdf"
+  },
+  {
+    "legislatorId": "nat-f262cdfb",
+    "year": 2024,
+    "teamName": "熊田裕通後援会",
+    "totalIncome": 8714415,
+    "totalExpense": 8680728,
+    "sourceUrl": "https://www.pref.aichi.jp/senkyo/071128/z/c06z0706.pdf"
+  },
+  {
+    "legislatorId": "nat-58226ce4",
+    "year": 2024,
+    "teamName": "鈴木淳司後援会",
+    "totalIncome": 20497,
+    "totalExpense": 0,
+    "sourceUrl": "https://www.pref.aichi.jp/senkyo/071128/z/c06z1025.pdf"
+  },
+  {
+    "legislatorId": "nat-17babd14",
+    "year": 2024,
+    "teamName": "桜花会",
+    "totalIncome": 6246605,
+    "totalExpense": 3790899,
+    "sourceUrl": "https://www.soumu.go.jp/senkyo/seiji_s/seijishikin/contents/SS20251128/101950_0020.pdf"
+  },
+  {
+    "legislatorId": "nat-4dd7b521",
+    "year": 2024,
+    "teamName": "明日の愛知を創る会",
+    "totalIncome": 5875910,
+    "totalExpense": 1300483,
+    "sourceUrl": "https://www.pref.aichi.jp/senkyo/071128/z/c06z0149.pdf"
+  },
+  {
+    "legislatorId": "nat-b0189eb4",
+    "year": 2024,
+    "teamName": "酒井庸行後援会",
+    "totalIncome": 21712072,
+    "totalExpense": 1481102,
+    "sourceUrl": "https://www.pref.aichi.jp/senkyo/071128/z/c06z0840.pdf"
+  },
+  {
+    "legislatorId": "nat-2b393eda",
+    "year": 2024,
+    "teamName": "里見りゅうじ後援会",
+    "totalIncome": 2845978,
+    "totalExpense": 1900508,
+    "sourceUrl": "https://www.pref.aichi.jp/senkyo/071128/z/c06z0878.pdf"
+  },
+  {
+    "legislatorId": "nat-40de2cf3",
+    "year": 2024,
+    "teamName": "政治経済教育研究会",
+    "totalIncome": 53601297,
+    "totalExpense": 15710403,
+    "sourceUrl": "https://www.pref.aichi.jp/senkyo/071128/z/c06z1076.pdf"
+  },
+  {
+    "legislatorId": "nat-301067c0",
+    "year": 2024,
+    "teamName": "伊藤孝恵後援会",
+    "totalIncome": 30597917,
+    "totalExpense": 7790220,
+    "sourceUrl": "https://www.pref.aichi.jp/senkyo/071128/z/c06z0280.pdf"
+  },
+  {
+    "legislatorId": "nat-5c52b577",
+    "year": 2024,
+    "teamName": "田島まいこ後援会",
+    "totalIncome": 1572137,
+    "totalExpense": 1548524,
+    "sourceUrl": "https://www.pref.aichi.jp/senkyo/071128/z/c06z1187.pdf"
+  },
+  {
+    "legislatorId": "nat-078fe50d",
+    "year": 2024,
+    "teamName": "福田とおる後援会",
+    "totalIncome": 56444,
+    "totalExpense": 0,
+    "sourceUrl": "https://www.pref.aichi.jp/senkyo/071128/z/c06z1686.pdf"
   }
 ]
