@@ -83,6 +83,7 @@ export const MUNICIPALITIES: Municipality[] = [
   { govCode: "23230", slug: "nisshin", city: "日進市", council: "日進市議会", minutesLabel: "日進市議会 会議録検索システム", minutesUrl: "https://ssp.kaigiroku.net/tenant/nisshin/SpTop.html" },
   // Phase3（第4陣・名簿/会議録URLは取得後に充填）
   { govCode: "23208", slug: "tsushima", city: "津島市", council: "津島市議会", minutesLabel: "津島市議会 会議録検索システム", minutesUrl: "https://www.city.tsushima.aichi.dbsr.jp/" },
+  { govCode: "23209", slug: "hekinan", city: "碧南市", council: "碧南市議会", minutesLabel: "碧南市議会 会議録検索システム", minutesUrl: "https://city.hekinan.aichi.dbsr.jp/" },
   { govCode: "23214", slug: "gamagori", city: "蒲郡市", council: "蒲郡市議会", minutesLabel: "蒲郡市議会 会議録検索システム", minutesUrl: "https://ssp.kaigiroku.net/tenant/gamagori/SpTop.html" },
   { govCode: "23215", slug: "inuyama", city: "犬山市", council: "犬山市議会", minutesLabel: "犬山市議会 会議録検索システム", minutesUrl: "https://www.kensakusystem.jp/inuyama/" },
   { govCode: "23216", slug: "tokoname", city: "常滑市", council: "常滑市議会", minutesLabel: "常滑市議会 会議録検索システム", minutesUrl: "https://ssp.kaigiroku.net/tenant/tokoname/SpTop.html" },
