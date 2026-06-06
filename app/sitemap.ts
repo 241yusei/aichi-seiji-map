@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/executives",
     "/issues",
     "/facts",
+    "/search",
     "/about",
     "/support",
   ].map(
