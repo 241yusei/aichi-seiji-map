@@ -49,6 +49,7 @@ const NAV = [
   { href: "/executives", label: "首長" },
   { href: "/issues", label: "争点" },
   { href: "/facts", label: "事実カード" },
+  { href: "/search", label: "検索" },
   { href: "/area", label: "郵便番号で探す" },
   { href: "/about", label: "このサイトについて" },
 ];
