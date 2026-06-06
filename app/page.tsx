@@ -18,9 +18,9 @@ const LAYERS = [
   },
   {
     n: "03",
-    href: "/legislators?level=municipal",
+    href: "/municipalities",
     label: "市町村議会（全54市町村）",
-    body: "名古屋市会から町村まで、愛知の全自治体の代表者を収録しています。",
+    body: "名古屋市会から町村まで、愛知の全自治体を地域別に。議会・議員・首長へ。",
   },
 ];
 

@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getFactCards, getIssues, getLegislators } from "@/lib/data";
+import { MUNICIPALITIES } from "@/lib/municipalities";
 
 // 静的エクスポート（output: export）で sitemap.xml を生成するために必要。
 export const dynamic = "force-static";
@@ -16,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/issues",
     "/facts",
     "/search",
+    "/municipalities",
     "/about",
     "/support",
   ].map(
@@ -44,5 +46,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...legislatorRoutes, ...issueRoutes, ...factRoutes];
+  const municipalityRoutes = MUNICIPALITIES.map((m) => ({
+    url: `${BASE}/municipalities/${m.slug}/`,
+    changeFrequency: "weekly" as const,
+    priority: 0.6,
+  }));
+
+  return [
+    ...staticRoutes,
+    ...legislatorRoutes,
+    ...issueRoutes,
+    ...factRoutes,
+    ...municipalityRoutes,
+  ];
 }
