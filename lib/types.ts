@@ -123,6 +123,15 @@ export interface FactCard {
   updatedAt?: string; // 更新日（ISO 8601）
 }
 
+/** 議員の補足プロフィール（当選回数・役職・委員会）。出典つき。議員IDで結合する。 */
+export interface LegislatorProfile {
+  id: string; // Legislator.id
+  electionCount: number; // 当該院での当選回数（0=未確認）
+  positions: string[]; // 主な役職（大臣/副大臣/委員長/党役職など）
+  committees: string[]; // 直近の所属委員会
+  sourceUrl: string; // 公式プロフィール等の出典
+}
+
 /** 首長（知事・市町村長）。議員とは別レイヤー。一次ソース（公式サイト）必須。 */
 export interface Executive {
   id: string; // 例: "exec-23100"（govCode 由来）

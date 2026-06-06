@@ -10,6 +10,7 @@ import {
   factCardsSchema,
   fundingsSchema,
   issuesSchema,
+  legislatorProfilesSchema,
   legislatorsSchema,
   speechRecordsSchema,
   votesSchema,
@@ -20,6 +21,7 @@ import type {
   Funding,
   Issue,
   Legislator,
+  LegislatorProfile,
   SpeechRecord,
   Vote,
 } from "../lib/types";
@@ -71,6 +73,7 @@ const funding = load<Funding>("funding.json", fundingsSchema);
 const issues = load<Issue>("issues.json", issuesSchema);
 const factCards = load<FactCard>("fact-cards.json", factCardsSchema);
 const executives = load<Executive>("executives.json", executivesSchema);
+const profiles = load<LegislatorProfile>("profiles.national.json", legislatorProfilesSchema);
 
 console.log("\n相互参照を検査します…");
 
@@ -128,11 +131,19 @@ for (const e of executives) {
   if (!validGov.has(e.govCode)) fail(`首長 ${e.id} の govCode が不明: ${e.govCode}`);
 }
 
+// 議員プロフィールの参照整合・ID重複
+const seenProf = new Set<string>();
+for (const p of profiles) {
+  if (seenProf.has(p.id)) fail(`プロフィールID重複: ${p.id}`);
+  seenProf.add(p.id);
+  if (!legislatorIds.has(p.id)) fail(`プロフィールの参照先議員が不明: ${p.id}`);
+}
+
 console.log("");
 if (errorCount > 0) {
   console.error(`検証失敗: ${errorCount} 件のエラー`);
   process.exit(1);
 }
 console.log(
-  `検証成功: 議員 ${legislators.length} / 発言 ${speeches.length} / 採決 ${votes.length} / 資金 ${funding.length} / 争点 ${issues.length} / 事実カード ${factCards.length} / 首長 ${executives.length}`,
+  `検証成功: 議員 ${legislators.length} / 発言 ${speeches.length} / 採決 ${votes.length} / 資金 ${funding.length} / 争点 ${issues.length} / 事実カード ${factCards.length} / 首長 ${executives.length} / プロフィール ${profiles.length}`,
 );

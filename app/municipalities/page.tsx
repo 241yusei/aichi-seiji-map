@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getExecutives, getLegislators } from "@/lib/data";
 import { MUNICIPALITIES } from "@/lib/municipalities";
 import { REGIONS } from "@/lib/regions";
+import { AichiMap } from "@/components/AichiMap";
 
 export const metadata: Metadata = {
   title: "市町村から探す（地域別）",
@@ -34,6 +35,13 @@ export default function MunicipalitiesPage() {
           愛知の全54市町村を地域別に。各市町村の議会・議員・首長・会議録へ、一次ソース付きでたどれます。
         </p>
       </header>
+
+      <section>
+        <h2 className="eyebrow text-faint">地図から探す</h2>
+        <div className="mt-3 max-w-3xl">
+          <AichiMap />
+        </div>
+      </section>
 
       {REGIONS.map((region) => {
         const munis = region.govCodes

@@ -6,12 +6,22 @@
 
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
-import type { Executive, FactCard, Funding, Issue, Legislator, SpeechRecord, Vote } from "./types";
+import type {
+  Executive,
+  FactCard,
+  Funding,
+  Issue,
+  Legislator,
+  LegislatorProfile,
+  SpeechRecord,
+  Vote,
+} from "./types";
 import {
   executivesSchema,
   factCardsSchema,
   fundingsSchema,
   issuesSchema,
+  legislatorProfilesSchema,
   legislatorsSchema,
   speechRecordsSchema,
   votesSchema,
@@ -43,6 +53,13 @@ export function getLegislators(): Legislator[] {
 
 export function getLegislator(id: string): Legislator | undefined {
   return getLegislators().find((l) => l.id === id);
+}
+
+// 議員の補足プロフィール（当選回数・役職・委員会）。詳細ページでのみ使用。
+export function getLegislatorProfile(id: string): LegislatorProfile | undefined {
+  return readArray<LegislatorProfile>("profiles.national.json", legislatorProfilesSchema).find(
+    (p) => p.id === id,
+  );
 }
 
 // --- 発言 ---
