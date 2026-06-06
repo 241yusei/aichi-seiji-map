@@ -95,6 +95,15 @@ export const factCardSchema = z.object({
   updatedAt: isoDate.optional(),
 });
 
+// 議員の補足プロフィール（当選回数・役職・委員会）。出典必須。
+export const legislatorProfileSchema = z.object({
+  id: z.string().min(1),
+  electionCount: z.number().int().min(0),
+  positions: z.array(z.string()),
+  committees: z.array(z.string()),
+  sourceUrl: httpUrl,
+});
+
 // 首長（知事・市町村長）。一次ソース（公式サイト）必須。
 export const executiveSchema = z.object({
   id: z.string().min(1),
@@ -117,3 +126,4 @@ export const fundingsSchema = z.array(fundingSchema);
 export const issuesSchema = z.array(issueSchema);
 export const factCardsSchema = z.array(factCardSchema);
 export const executivesSchema = z.array(executiveSchema);
+export const legislatorProfilesSchema = z.array(legislatorProfileSchema);

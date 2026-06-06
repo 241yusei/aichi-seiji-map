@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import {
   getFunding,
   getLegislator,
+  getLegislatorProfile,
   getLegislators,
   getSpeechesByLegislator,
   getVotes,
@@ -56,6 +57,7 @@ export default async function LegislatorDetailPage({
   const speeches = getSpeechesByLegislator(id);
   const votes = getVotes(id);
   const funding = getFunding(id);
+  const profile = getLegislatorProfile(id);
   const voteTally = votes.reduce(
     (acc, v) => {
       acc[v.result] = (acc[v.result] ?? 0) + 1;
@@ -106,6 +108,38 @@ export default async function LegislatorDetailPage({
           <SourceLink href={legislator.sourceUrl}>公式プロフィール・出典</SourceLink>
         </p>
       </header>
+
+      {/* プロフィール（当選回数・役職・委員会）。出典つき・公開情報。 */}
+      {profile &&
+        (profile.electionCount > 0 ||
+          profile.positions.length > 0 ||
+          profile.committees.length > 0) && (
+          <section className="border-l-2 border-line bg-subtle px-4 py-4">
+            <div className="space-y-2 text-sm">
+              {profile.electionCount > 0 && (
+                <p>
+                  <span className="eyebrow text-faint">当選</span>{" "}
+                  <span className="font-display tnum text-lg">{profile.electionCount}</span> 回
+                </p>
+              )}
+              {profile.positions.length > 0 && (
+                <p className="measure">
+                  <span className="eyebrow text-faint">主な役職</span>{" "}
+                  {profile.positions.join("・")}
+                </p>
+              )}
+              {profile.committees.length > 0 && (
+                <p className="measure">
+                  <span className="eyebrow text-faint">所属委員会</span>{" "}
+                  {profile.committees.join("・")}
+                </p>
+              )}
+            </div>
+            <p className="mt-3 text-xs">
+              <SourceLink href={profile.sourceUrl}>プロフィール出典</SourceLink>
+            </p>
+          </section>
+        )}
 
       {/* 言×行（言ったこと＝発言／やったこと＝採決）の並置。国会議員で両方の記録があるとき。 */}
       {legislator.level === "national" && (

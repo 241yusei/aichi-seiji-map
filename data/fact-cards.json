@@ -77,5 +77,62 @@
       }
     ],
     "publishedAt": "2026-06-06"
+  },
+  {
+    "id": "comparison-vote-unity-2026",
+    "title": "同じ国会でも、賛否が割れる議案と全会一致の議案がある",
+    "hook": "「与野党対立」だけが国会ではない。",
+    "cardType": "comparison",
+    "body": "2026年の参議院の採決を愛知関係の参院議員で見ると、健康保険法等の改正は賛成5・反対3、入管法の改正は賛成6・反対2と割れた。一方で、産業競争力強化等の法案は賛成8・反対0の全会一致だった。",
+    "caveat": "賛否のどちらが正しいという評価はしない。議案によって対立する・しないが分かれるという「記録」を示すだけ。個別の賛否が分かるのは参議院の記名投票のため（衆議院の起立採決は非公開）。",
+    "points": [
+      { "label": "健康保険法 改正", "value": "賛5・反3" },
+      { "label": "入管法 改正", "value": "賛6・反2" },
+      { "label": "地域公共交通 活性化", "value": "賛7・反1" },
+      { "label": "産業競争力強化 等", "value": "賛8・反0" }
+    ],
+    "sources": [
+      { "label": "参議院 投票結果（健康保険法等改正）", "url": "https://www.sangiin.go.jp/japanese/touhyoulist/221/221-0529-v005.htm" },
+      { "label": "参議院 投票結果（入管法改正）", "url": "https://www.sangiin.go.jp/japanese/touhyoulist/221/221-0529-v007.htm" },
+      { "label": "参議院 投票結果（産業競争力強化等）", "url": "https://www.sangiin.go.jp/japanese/touhyoulist/221/221-0529-v009.htm" }
+    ],
+    "publishedAt": "2026-06-06"
+  },
+  {
+    "id": "gap-women-mayors-2026",
+    "title": "愛知の市町村長54人のうち、女性は3人",
+    "hook": "「率いる人」の顔ぶれには、まだ大きな偏りがある。",
+    "cardType": "gap",
+    "body": "愛知県内の54市町村長のうち、女性は碧南市・知立市・長久手市の3人。県知事を含む55首長で見ても3人にとどまる。",
+    "caveat": "数の多寡だけで良し悪しを論じるものではない。誰が地域を率いているかという「事実」を示す。氏名・肩書は各自治体公式サイトの記載に基づく。",
+    "points": [
+      { "label": "碧南市長", "value": "小池友妃子" },
+      { "label": "知立市長", "value": "石川智子" },
+      { "label": "長久手市長", "value": "佐藤有美" },
+      { "label": "女性首長", "value": "54人中3人" }
+    ],
+    "sources": [
+      { "label": "碧南市 市長の部屋", "url": "https://www.city.hekinan.lg.jp/city_info/shichonoheya/index.html" },
+      { "label": "知立市 市長プロフィール", "url": "https://www.city.chiryu.aichi.jp/mayor/1451813514083.html" },
+      { "label": "長久手市（市長名義の公式公告）", "url": "https://www.city.nagakute.lg.jp/material/files/group/5/koukoku6-090.pdf" }
+    ],
+    "publishedAt": "2026-06-06"
+  },
+  {
+    "id": "gap-newcomer-speeches-2026",
+    "title": "2026年に初当選した愛知の新人議員4人は、国会発言の記録が0件",
+    "hook": "ベテランと新人で、国会の「登壇」には差がある。",
+    "cardType": "gap",
+    "body": "国会会議録（2017年〜の収録分）で愛知選出議員の発言を数えると、ベテラン勢が数十件を記録する一方、2026年2月の総選挙で初当選した水野良彦・岡本康宏・山下史守朗・藤澤忠盛の4氏は0件だった。",
+    "caveat": "0件は「仕事をしていない」という意味ではなく、当選から日が浅く、本会議・委員会の発言が会議録にまだ現れていないことを示す。件数は当サイトの収録範囲（議員名一致での抽出）に基づく。",
+    "points": [
+      { "label": "ベテラン勢", "value": "数十件" },
+      { "label": "2026年初当選の4人", "value": "0件" }
+    ],
+    "sources": [
+      { "label": "国会会議録検索システム", "url": "https://kokkai.ndl.go.jp/" },
+      { "label": "新人議員の経歴（自民党愛知県連・例）", "url": "https://www.jimin-aichi.or.jp/archives/member/407-2" }
+    ],
+    "publishedAt": "2026-06-06"
   }
 ]

@@ -28,6 +28,7 @@
     "summarize": "tsx scripts/summarize.ts",
     "build:issues": "tsx scripts/build-issues.ts",
     "og:font": "tsx scripts/build-og-font.ts",
+    "build:map": "tsx scripts/build-aichi-map.ts",
     "build:search": "tsx scripts/build-search-index.ts"
   },
   "dependencies": {
