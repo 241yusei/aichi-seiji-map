@@ -23,6 +23,18 @@ export default function GlossaryPage() {
         </p>
       </header>
 
+      <nav aria-label="用語索引" className="flex flex-wrap gap-2 border-b border-line pb-5">
+        {terms.map((t) => (
+          <a
+            key={t.id}
+            href={`#${t.id}`}
+            className="eyebrow border border-line px-2 py-1 text-ink transition-colors hover:border-ink hover:bg-subtle"
+          >
+            {t.term}
+          </a>
+        ))}
+      </nav>
+
       <dl className="space-y-0">
         {terms.map((t) => (
           <div key={t.id} id={t.id} className="scroll-mt-24 border-t border-line py-5">

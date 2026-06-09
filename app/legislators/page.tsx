@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getLegislators } from "@/lib/data";
 import { LegislatorFilter } from "@/components/LegislatorFilter";
+import { ZipSearch } from "@/components/ZipSearch";
 
 export const metadata: Metadata = {
   title: "議員一覧",
@@ -20,6 +21,12 @@ export default function LegislatorsPage() {
           国会（愛知選出）・愛知県議会・愛知の全54市町村。層・会派・地域で絞り込めます。
         </p>
       </header>
+
+      <div className="mt-6 border border-line bg-surface p-4">
+        <p className="eyebrow mb-2 text-ink">郵便番号で、あなたの地域の代表者だけを見る</p>
+        <ZipSearch />
+      </div>
+
       <div className="mt-6">
         {legislators.length === 0 ? (
           <p className="text-sm text-muted">議員データは準備中です。</p>

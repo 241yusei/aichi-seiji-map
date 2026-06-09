@@ -153,5 +153,24 @@
       { "label": "丹羽秀樹 収支報告書（県選管PDF）", "url": "https://www.pref.aichi.jp/senkyo/071128/x/c06x0089.pdf" }
     ],
     "publishedAt": "2026-06-08"
+  },
+  {
+    "id": "gap-teisu-ware-2026",
+    "title": "なり手不足？ 愛知の町村議会に「定数割れ」",
+    "hook": "議員のなり手が足りず、定数に届かない議会がある。",
+    "cardType": "gap",
+    "body": "愛知の町村では、選挙で定数に候補が足りない「無投票・定数割れ」が起きている議会がある。東郷町は定数16に対し現員15、大治町は12に対し11、美浜町は14に対し12、設楽町は10に対し9。",
+    "caveat": "定数割れ＝悪い議会という意味ではなく、地方議会の「なり手不足」という全国的な課題の表れ。人数は各議会の公式名簿（現員）に基づく。",
+    "points": [
+      { "label": "東郷町", "value": "15 / 16" },
+      { "label": "大治町", "value": "11 / 12" },
+      { "label": "美浜町", "value": "12 / 14" },
+      { "label": "設楽町", "value": "9 / 10" }
+    ],
+    "sources": [
+      { "label": "東郷町議会 議員名簿", "url": "https://www.town.aichi-togo.lg.jp/soshikikarasagasu/gikaijimukyoku/gyomuannai/2/4/2909.html" },
+      { "label": "設楽町議会 議員名簿", "url": "https://www.town.shitara.lg.jp/soshiki/9/1228.html" }
+    ],
+    "publishedAt": "2026-06-08"
   }
 ]
