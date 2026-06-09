@@ -15,6 +15,7 @@
   --color-line: #e4e6e9; /* 罫線・境界 */
   --color-subtle: #eef3f3; /* 微妙な塗り */
   --color-calm: #eef6f5; /* はじめてゾーンの地（teal薄・やさしさの面） */
+  --color-sand: #f3f1ec; /* “間”を分節する第2のニュートラル（無彩・微温の紙色）。章替わり・運営の声の地に限定。calm=やさしさ/sand=章替わり、で役割を分ける */
 
   /* 差し色（中立な青緑 teal・党派非連想）。案内／リンク／アクティブ／はじめてゾーンに限定 */
   --color-accent: #0f7d86;
@@ -135,6 +136,13 @@ a {
 .tap {
   min-height: 44px;
   min-width: 44px;
+}
+
+/* ページ遷移のクロスフェード（対応ブラウザのみ・“1つの原理”＝面の入れ替えに限定）。 */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
 }
 
 /* 動きの抑制（前庭障害配慮・最上位で尊重） */
