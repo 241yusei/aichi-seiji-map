@@ -116,6 +116,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <Link href="/learn" className="hover:text-accent-deep">
                 まなぶ
               </Link>
+              <Link href="/vote-guide" className="hover:text-accent-deep">
+                投票ガイド
+              </Link>
               <Link href="/facts" className="hover:text-accent-deep">
                 事実カード
               </Link>
