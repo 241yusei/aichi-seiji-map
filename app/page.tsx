@@ -8,7 +8,7 @@ const LAYERS = [
     n: "01",
     href: "/legislators?level=national",
     label: "国会（愛知選出）",
-    body: "衆院 愛知1〜16区・比例東海・参院 愛知県選挙区。発言は国会会議録から取得。",
+    body: "衆院（下院）愛知1〜16区・比例東海と、参院（上院）愛知県選挙区。国全体のルールを決める層。",
   },
   {
     n: "02",
@@ -40,41 +40,35 @@ export default function HomePage() {
     <div>
       {/* ヒーロー */}
       <section className="border-b-2 border-ink pb-12">
-        <p className="eyebrow text-accent-deep">Aichi Politics Map ／ 愛知の政治を、一次ソースで</p>
+        <p className="eyebrow text-accent-deep">政治のトリセツ あいち・なごや ／ 知ってから、選ぶ。</p>
         <h1 className="font-display mt-5 text-[clamp(2.2rem,7vw,5rem)] leading-[1.02]">
-          あなたの地域の代表者が、
+          政治、よくわからなくても
           <br className="hidden sm:block" />
-          何を言い、どう動いたか。
+          大丈夫。
         </h1>
         <p className="measure mt-6 text-base text-muted sm:text-lg">
-          国会（愛知選出）・愛知県議会・全54市町村を横断して、発言・採決・政治資金を
-          公的な一次ソース付きで。専門用語を避け、5分で全体像をつかめる導線をめざします。
+          愛知・名古屋の政治を、やさしい解説と公的な一次ソースで。国会（愛知選出）・愛知県議会・全54市町村を横断し、
+          だれが何を言い・どう動いたかを確認できます。むずかしい言葉は、ふれれば意味が出ます。
         </p>
+
+        <div className="mt-8 flex flex-wrap gap-3">
+          <Link
+            href="/start"
+            className="bg-accent px-5 py-3 text-sm font-bold text-on-accent transition-colors hover:bg-accent-deep"
+          >
+            はじめての方はこちら（どこから見る？）
+          </Link>
+          <Link
+            href="/learn"
+            className="border border-ink px-5 py-3 text-sm font-bold transition-colors hover:bg-subtle"
+          >
+            基礎からまなぶ
+          </Link>
+        </div>
 
         <div className="mt-9 max-w-xl">
           <p className="eyebrow mb-2 text-ink">郵便番号で、あなたの地域の代表者を調べる</p>
           <ZipSearch />
-        </div>
-
-        <div className="mt-6 flex flex-wrap gap-3">
-          <Link
-            href="/area"
-            className="bg-ink px-5 py-2.5 text-sm font-bold text-paper transition-colors hover:bg-accent"
-          >
-            地域から探す
-          </Link>
-          <Link
-            href="/legislators"
-            className="border border-ink px-5 py-2.5 text-sm font-bold transition-colors hover:bg-subtle"
-          >
-            議員を見る
-          </Link>
-          <Link
-            href="/issues"
-            className="border border-ink px-5 py-2.5 text-sm font-bold transition-colors hover:bg-subtle"
-          >
-            争点から見る
-          </Link>
         </div>
       </section>
 
@@ -121,7 +115,13 @@ export default function HomePage() {
 
       {/* 三層 */}
       <section className="border-t-2 border-ink py-10">
-        <h2 className="eyebrow text-faint">三層でたどる</h2>
+        <h2 className="eyebrow text-faint">三層でたどる（国・県・市で役割がちがう）</h2>
+        <p className="measure mt-2 text-sm text-muted">
+          全国の話は国会、県全体は県議会、自分の街は市町村議会。
+          <Link href="/learn/kokkai-to-chiho" className="link-ink">
+            ちがいをまなぶ
+          </Link>
+        </p>
         <div className="mt-4">
           {LAYERS.map((l) => (
             <Link

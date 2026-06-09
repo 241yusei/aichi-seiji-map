@@ -36,21 +36,23 @@ const spaceMono = Space_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "愛知政治マップ｜国・県・市の代表者を一次ソースで",
-    template: "%s｜愛知政治マップ",
+    default: "政治のトリセツ あいち・なごや｜知ってから、選ぶ。",
+    template: "%s｜政治のトリセツ あいち・なごや",
   },
   description:
-    "愛知県の有権者が、国会(愛知選出)・愛知県議会・全54市町村の代表者の発言・採決・政治資金を、一次ソース付きで横断的に確認できる中立的な情報サイト。",
+    "政治をはじめて知る人のための、愛知・名古屋の政治の入口。国会(愛知選出)・愛知県議会・全54市町村の代表者の発言・採決・政治資金を、やさしい解説と一次ソースで。中立・非投票誘導。",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://aichi-seiji.example.jp"),
 };
 
 const NAV = [
+  { href: "/start", label: "はじめに" },
+  { href: "/learn", label: "まなぶ" },
   { href: "/legislators", label: "議員" },
   { href: "/executives", label: "首長" },
   { href: "/issues", label: "争点" },
   { href: "/facts", label: "事実カード" },
+  { href: "/municipalities", label: "地域" },
   { href: "/search", label: "検索" },
-  { href: "/area", label: "郵便番号で探す" },
   { href: "/about", label: "このサイトについて" },
 ];
 
@@ -73,8 +75,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <header className="border-b-2 border-ink bg-paper">
           <div className="mx-auto flex max-w-6xl items-baseline justify-between gap-4 px-5 py-4">
             <Link href="/" className="group inline-flex items-baseline gap-2">
-              <span className="font-display text-xl tracking-tight sm:text-2xl">愛知政治マップ</span>
-              <span className="eyebrow hidden text-faint sm:inline">Aichi Politics Map</span>
+              <span className="font-display text-xl tracking-tight sm:text-2xl">政治のトリセツ</span>
+              <span className="eyebrow hidden text-faint sm:inline">あいち・なごや</span>
             </Link>
             <nav className="flex flex-wrap items-baseline gap-x-5 gap-y-1 text-sm text-muted">
               {NAV.map((n) => (
@@ -96,7 +98,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
         <footer className="mt-20 border-t-2 border-ink bg-paper">
           <div className="mx-auto max-w-6xl px-5 py-10">
-            <p className="font-display text-lg tracking-tight">愛知政治マップ</p>
+            <p className="font-display text-lg tracking-tight">政治のトリセツ あいち・なごや</p>
+            <p className="eyebrow mt-1 text-faint">知ってから、選ぶ。— 愛知・名古屋の政治を一次ソースで</p>
             {/* 中立宣言（常設）。中立を「掲げる」だけでなく仕組みで示す。 */}
             <ul className="measure mt-3 space-y-1 text-sm text-muted">
               <li>・特定の政党・候補者・団体と関係を持ちません。</li>
@@ -106,6 +109,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm text-muted">
               <Link href="/about" className="link-ink">
                 中立性・運営・財源
+              </Link>
+              <Link href="/start" className="hover:text-accent-deep">
+                はじめに
+              </Link>
+              <Link href="/learn" className="hover:text-accent-deep">
+                まなぶ
               </Link>
               <Link href="/facts" className="hover:text-accent-deep">
                 事実カード
