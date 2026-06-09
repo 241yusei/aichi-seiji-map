@@ -40,7 +40,7 @@ export default function LearnPage() {
                   href={`/learn/${c.slug}/`}
                   className="group grid grid-cols-[3rem_1fr_auto] items-baseline gap-4 border-t border-line py-5 transition-colors last:border-b hover:bg-subtle"
                 >
-                  <span className="font-display tnum text-faint">{c.n}</span>
+                  <span className="num-display tnum text-faint">{c.n}</span>
                   <div>
                     <h3 className="font-display text-lg sm:text-xl">{c.title}</h3>
                     <p className="measure mt-1 text-sm text-muted">{c.lead}</p>

@@ -34,10 +34,13 @@
   --radius-soft: 10px;
   --shadow-soft: 0 1px 2px rgba(26, 28, 30, 0.05), 0 1px 1px rgba(26, 28, 30, 0.04);
 
-  /* フォント（next/font の CSS 変数を参照） */
-  --font-sans: var(--font-inter), var(--font-noto), ui-sans-serif, system-ui,
-    "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
-  --font-display: var(--font-anton), var(--font-noto), var(--font-inter), sans-serif;
+  /* フォント（next/font の CSS 変数を参照）。和文主役＝IBM Plex Sans JP。 */
+  --font-sans: var(--font-plex), ui-sans-serif, system-ui, "Hiragino Kaku Gothic ProN",
+    "Yu Gothic", sans-serif;
+  /* 見出しの主役＝Plex JP（.font-display で 700 を当てる）。Antonは数字専用に分離。 */
+  --font-display: var(--font-plex), ui-sans-serif, system-ui, sans-serif;
+  /* 数字・章番号・特大カウンタ専用（“見せ場”だけ） */
+  --font-num: var(--font-anton), var(--font-plex), sans-serif;
   --font-mono: var(--font-spacemono), ui-monospace, "SFMono-Regular", monospace;
 }
 
@@ -55,12 +58,20 @@ body {
   font-feature-settings: "palt" 1; /* 和欧混植の詰め */
 }
 
-/* 超极太グロテスクの見出し（Anton + 和文 900）。タイトなトラッキング。 */
+/* 見出し＝Plex JP 700（“声”を持つ和文・エディトリアル）。硬すぎない密度。 */
 .font-display {
   font-family: var(--font-display);
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.18;
+}
+
+/* 数字・章番号・特大カウンタ専用（Anton）。見出し本体には使わない＝声を下げる。 */
+.num-display {
+  font-family: var(--font-num);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1;
 }
 
 /* 数字は等幅（表・統計） */

@@ -41,7 +41,7 @@ export async function generateMetadata({
 function SectionHead({ n, title, meta }: { n: string; title: string; meta?: ReactNode }) {
   return (
     <div className="flex items-baseline gap-3 border-b-2 border-ink pb-2">
-      <span className="font-display tnum text-sm text-faint">{n}</span>
+      <span className="num-display tnum text-sm text-faint">{n}</span>
       <h2 className="font-display text-2xl">{title}</h2>
       {meta != null && <span className="tnum text-sm text-muted">{meta}</span>}
     </div>
@@ -162,7 +162,7 @@ export default async function LegislatorDetailPage({
               {profile.electionCount > 0 && (
                 <p>
                   <span className="eyebrow text-faint">当選</span>{" "}
-                  <span className="font-display tnum text-lg">{profile.electionCount}</span> 回
+                  <span className="num-display tnum text-lg">{profile.electionCount}</span> 回
                 </p>
               )}
               {profile.positions.length > 0 && (
@@ -191,7 +191,7 @@ export default async function LegislatorDetailPage({
         <section className="grid gap-px border border-line bg-line sm:grid-cols-2">
           <div className="bg-surface p-5">
             <p className="eyebrow text-faint">言ったこと（発言）</p>
-            <p className="font-display tnum mt-2 text-3xl">
+            <p className="num-display tnum mt-2 text-3xl">
               {speeches.length}
               <span className="ml-1 text-base font-normal text-muted">件</span>
             </p>
@@ -199,7 +199,7 @@ export default async function LegislatorDetailPage({
           </div>
           <div className="bg-surface p-5">
             <p className="eyebrow text-faint">やったこと（採決）</p>
-            <p className="font-display tnum mt-2 text-3xl">
+            <p className="num-display tnum mt-2 text-3xl">
               {votes.length}
               <span className="ml-1 text-base font-normal text-muted">件</span>
             </p>
