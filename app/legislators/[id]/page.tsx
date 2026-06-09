@@ -15,6 +15,7 @@ import { VoteTable } from "@/components/VoteTable";
 import { FundingPanel } from "@/components/FundingPanel";
 import { minutesFor } from "@/lib/sources/linkout";
 import { municipalityByGov } from "@/lib/municipalities";
+import { LAST_UPDATED } from "@/lib/site-meta";
 
 export function generateStaticParams() {
   return getLegislators().map((l) => ({ id: l.id }));
@@ -106,6 +107,9 @@ export default async function LegislatorDetailPage({
         </p>
         <p className="mt-3 text-xs">
           <SourceLink href={legislator.sourceUrl}>公式プロフィール・出典</SourceLink>
+        </p>
+        <p className="mt-1 text-xs text-faint">
+          情報の基準日：{LAST_UPDATED}（所属・役職は改選や異動で変わります）
         </p>
       </header>
 

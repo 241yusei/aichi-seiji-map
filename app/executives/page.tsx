@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getExecutives } from "@/lib/data";
 import { SourceLink } from "@/components/SourceLink";
+import { LAST_UPDATED } from "@/lib/site-meta";
 
 export const metadata: Metadata = {
   title: "首長（知事・市町村長）",
@@ -99,7 +100,7 @@ export default function ExecutivesPage() {
       </section>
 
       <p className="measure border-t border-line pt-5 text-xs text-faint">
-        氏名・肩書はすべて各自治体公式サイトの記載に基づきます（各行の「公式プロフィール」リンクが出典）。
+        情報の基準日：{LAST_UPDATED}。氏名・肩書はすべて各自治体公式サイトの記載に基づきます（各行の「公式プロフィール」リンクが出典）。
         改選などで交代した場合は順次更新します。誤りにお気づきの場合は出典とあわせてご指摘ください。
       </p>
     </div>
