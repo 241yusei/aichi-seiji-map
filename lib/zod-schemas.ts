@@ -127,6 +127,9 @@ export const issueExplainerSchema = z.object({
   whyImportant: z.string().min(1),
   now: z.string().min(1),
   stances: z.array(z.object({ label: z.string().min(1), text: z.string().min(1) })),
+  timeline: z
+    .array(z.object({ date: z.string().min(1), event: z.string().min(1), sourceUrl: httpUrl.optional() }))
+    .optional(),
   sources: z.array(z.object({ label: z.string().min(1), url: httpUrl })).optional(),
 });
 export const issueExplainersSchema = z.array(issueExplainerSchema);

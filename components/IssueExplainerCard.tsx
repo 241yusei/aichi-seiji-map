@@ -31,6 +31,27 @@ export function IssueExplainerCard({ ex }: { ex: IssueExplainer }) {
         </ul>
         <p className="mt-4 text-xs text-faint">主語（だれの権限の話か）：{ex.subject}</p>
       </div>
+      {ex.timeline && ex.timeline.length > 0 && (
+        <div className="border-t border-line p-5">
+          <p className="eyebrow text-faint">これまでの流れ（3分まとめ）</p>
+          <ol className="mt-3 space-y-3">
+            {ex.timeline.map((t, i) => (
+              <li key={i} className="grid grid-cols-[7rem_1fr] gap-3 border-l-2 border-line pl-3">
+                <span className="tnum text-xs font-bold text-accent-deep">{t.date}</span>
+                <span className="text-sm text-muted">
+                  {t.event}
+                  {t.sourceUrl && (
+                    <>
+                      {" "}
+                      <SourceLink href={t.sourceUrl}>出典</SourceLink>
+                    </>
+                  )}
+                </span>
+              </li>
+            ))}
+          </ol>
+        </div>
+      )}
       {ex.sources && ex.sources.length > 0 && (
         <div className="border-t border-line px-5 py-3">
           <p className="eyebrow text-faint">出典</p>

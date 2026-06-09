@@ -5,6 +5,8 @@ import { getLearnChapter, getLearnChapters, LEARN } from "@/lib/learn";
 import { Blocks } from "@/components/LearnContent";
 import { DifficultyToggle } from "@/components/DifficultyToggle";
 import { Figure } from "@/components/Figure";
+import { KenshiQuiz } from "@/components/KenshiQuiz";
+import { ChapterRead } from "@/components/ChapterRead";
 import { SourceLink } from "@/components/SourceLink";
 
 export function generateStaticParams() {
@@ -51,6 +53,13 @@ export default async function LearnChapterPage({
 
       <DifficultyToggle easy={<Blocks blocks={c.easy} />} detail={<Blocks blocks={c.detail} />} />
 
+      {c.quiz && (
+        <div>
+          <p className="eyebrow mb-3 text-accent-deep">やってみる：県？市？クイズ</p>
+          <KenshiQuiz />
+        </div>
+      )}
+
       {c.sources && c.sources.length > 0 && (
         <div className="border-t border-line pt-4">
           <p className="eyebrow text-faint">参考</p>
@@ -72,6 +81,11 @@ export default async function LearnChapterPage({
             <li key={i}>✓ {ch}</li>
           ))}
         </ul>
+      </div>
+
+      <div className="flex items-center gap-3">
+        <ChapterRead slug={c.slug} />
+        <span className="text-xs text-faint">読んだ章は「まなぶ」一覧で進捗になります</span>
       </div>
 
       {/* 橋渡し */}

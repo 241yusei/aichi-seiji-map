@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getLearnChapters } from "@/lib/learn";
+import { LearnProgress } from "@/components/LearnProgress";
 
 export const metadata: Metadata = {
   title: "まなぶ｜政治を、ゼロからすこしずつ",
@@ -24,6 +25,8 @@ export default function LearnPage() {
           にふれると意味が出ます。「やさしい／くわしい」も切り替えられます。
         </p>
       </header>
+
+      <LearnProgress slugs={chapters.map((c) => c.slug)} />
 
       {parts.map((part) => (
         <section key={part}>
