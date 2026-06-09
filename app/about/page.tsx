@@ -130,15 +130,32 @@ export default function AboutPage() {
         </ul>
       </Section>
 
-      <Section title="運営・編集の独立性">
+      <Section title="運営者と編集の独立性">
         <p>
-          運営：「政治のトリセツ あいち・なごや」編集部（個人運営）。運営者は他のメディアも運営していますが、
-          本サイトの編集は独立して行い、特定の政党・候補者・団体との利害関係はありません。
-          ご連絡・ご指摘は
+          運営：「政治のトリセツ あいち・なごや」編集部（個人運営）。
+          本サイトは、<span className="font-bold text-ink">地域メディアの運営・取材編集の経験がある個人</span>
+          が、中立を方針として運営しています。中立性を保つため、本サイトの編集は、運営者が関わる他の媒体からは
+          <span className="font-bold text-ink">独立して</span>行います。
+        </p>
+        <p className="mt-3 font-bold text-ink">利益相反についての方針</p>
+        <ul className="mt-1 list-disc space-y-1 pl-5">
+          <li>特定の政党・候補者・政治団体と、組織的な関係や利害関係を持ちません。</li>
+          <li>
+            <span className="font-bold text-ink">政党・政治家・政治団体からの寄付・広告は受け取りません。</span>
+          </li>
+          <li>支援者・寄付者によって、掲載する内容・順序・評価は一切変わりません（編集の独立）。</li>
+          <li>掲載は争点を起点に複数の会派を横断して選び、評価語を使わず、必ず一次ソースを併記します。</li>
+        </ul>
+        <p className="mt-3">
+          ご連絡・誤りのご指摘は
           <SourceLink href="https://github.com/241yusei/aichi-seiji-map/issues">
             GitHub Issues
           </SourceLink>
-          へ。
+          へ。訂正の履歴は
+          <Link href="/corrections" className="link-ink">
+            訂正・更新ログ
+          </Link>
+          で公開します。
         </p>
       </Section>
     </div>
