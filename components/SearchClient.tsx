@@ -55,7 +55,7 @@ export function SearchClient() {
         ))}
       </div>
 
-      <p className="eyebrow mt-4 text-faint">
+      <p className="eyebrow mt-4 text-faint" role="status" aria-live="polite">
         {index === null
           ? "読み込み中…"
           : query.trim() === "" && kind === ""

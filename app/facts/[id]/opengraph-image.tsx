@@ -33,32 +33,32 @@ export default async function OgImage({ params }: { params: Promise<{ id: string
           flexDirection: "column",
           width: "100%",
           height: "100%",
-          backgroundColor: "#f6f2ea",
+          backgroundColor: "#fbfbfa",
           padding: "64px",
           justifyContent: "space-between",
           fontFamily: "Noto Sans JP",
         }}
       >
-        <div style={{ display: "flex", fontSize: 26, color: "#9e2814" }}>{brand}</div>
+        <div style={{ display: "flex", fontSize: 26, color: "#0a5b62" }}>{brand}</div>
         <div
           style={{
             display: "flex",
             fontSize: 58,
             fontWeight: 700,
-            color: "#14140f",
+            color: "#1a1c1e",
             lineHeight: 1.2,
           }}
         >
           {title}
         </div>
-        <div style={{ display: "flex", fontSize: 30, color: "#55524a" }}>{hook}</div>
+        <div style={{ display: "flex", fontSize: 30, color: "#5b6066" }}>{hook}</div>
         <div
           style={{
             display: "flex",
-            borderTop: "5px solid #c8351b",
+            borderTop: "5px solid #0f7d86",
             paddingTop: 18,
             fontSize: 22,
-            color: "#8b897c",
+            color: "#7a828a",
           }}
         >
           {footer}

@@ -9,7 +9,8 @@ import {
   getSpeechesByLegislator,
   getVotes,
 } from "@/lib/data";
-import { SpeechCard } from "@/components/SpeechCard";
+import { SpeechList } from "@/components/SpeechList";
+import { Monogram } from "@/components/Monogram";
 import { SourceLink } from "@/components/SourceLink";
 import { VoteTable } from "@/components/VoteTable";
 import { FundingPanel } from "@/components/FundingPanel";
@@ -97,9 +98,12 @@ export default async function LegislatorDetailPage({
         <span className="inline-flex items-center border border-ink px-2 py-0.5 text-xs font-bold text-ink">
           {layerLabel}
         </span>
-        <h1 className="font-display mt-3 text-[clamp(2rem,6vw,3.5rem)] leading-[1.04]">
-          {legislator.name}
-        </h1>
+        <div className="mt-3 flex items-center gap-3">
+          <Monogram name={legislator.name} level={legislator.level} />
+          <h1 className="font-display text-[clamp(2rem,6vw,3.5rem)] leading-[1.04]">
+            {legislator.name}
+          </h1>
+        </div>
         <p className="mt-2 text-muted">
           {legislator.kana && <span className="text-faint">{legislator.kana}　</span>}
           {legislator.district}
@@ -190,10 +194,8 @@ export default async function LegislatorDetailPage({
               <p className="text-xs text-faint">
                 出典は国会会議録。AI要約は補助情報で、必ず原文リンクを併記しています。
               </p>
-              <div className="mt-4 space-y-3">
-                {speeches.map((s) => (
-                  <SpeechCard key={s.id} speech={s} />
-                ))}
+              <div className="mt-4">
+                <SpeechList speeches={speeches} />
               </div>
             </>
           ) : minutesSearch ? (
