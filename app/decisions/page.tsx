@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getCouncilDecisions } from "@/lib/data";
+import Link from "next/link";
 import { SourceLink } from "@/components/SourceLink";
 import { LAST_UPDATED } from "@/lib/site-meta";
 import type { CouncilDecision } from "@/lib/types";
@@ -22,7 +23,28 @@ const FACTION_SOURCES: { council: string; label: string; url: string }[] = [
     label: "愛知県議会：定例議会・臨時議会 結果概要（公式）",
     url: "https://www.pref.aichi.jp/site/gikai/kekka-gaiyo.html",
   },
+  {
+    council: "愛知県議会",
+    label: "愛知県議会：令和8年2月定例議会 議案等に対する各会派の態度（公式PDF）",
+    url: "https://www.pref.aichi.jp/uploaded/attachment/608408.pdf",
+  },
 ];
+
+// 会派の態度チップ（賛成=緑○・反対=朱✕・分裂=ink。色だけに頼らず必ず記号＋ラベル）。
+function FactionStance({ name, stance }: { name: string; stance: string }) {
+  const tone =
+    stance === "賛成" ? "text-yea" : stance === "反対" ? "text-nay" : "text-ink";
+  const mark = stance === "賛成" ? "○" : stance === "反対" ? "✕" : "";
+  return (
+    <span className="whitespace-nowrap text-xs">
+      <span className="text-faint">{name}</span>{" "}
+      <span className={`font-bold ${tone}`}>
+        {mark}
+        {stance}
+      </span>
+    </span>
+  );
+}
 
 function ResultBadge({ result }: { result: string }) {
   const tone = result.includes("否決") ? "border-nay text-nay" : "border-ink text-ink";
@@ -63,11 +85,19 @@ export default function DecisionsPage() {
           <li>各議案の議決結果（可決/否決/修正可決など）は、公式の審議結果ページに基づきます。</li>
           <li>
             <span className="font-bold text-ink">会派ごとの賛否</span>
-            は、各議会の公式資料（下記リンク）で確認できます。
+            は、公式の会派態度資料がある会期について各議案の下に表示しています（○=賛成・✕=反対。
+            会派の略称・正式名称は出典資料の凡例に基づきます）。資料が無い会期は下記の公式リンクへ。
           </li>
           <li>
             <span className="font-bold text-ink">個々の議員の賛否は原則非公開</span>
             です（多くは会派単位での公表）。本サイトは評価をせず、記録と出典のみを示します。
+          </li>
+          <li>
+            「修正可決」「附帯決議」などのことばは{" "}
+            <Link href="/glossary/" className="link-ink">
+              用語集
+            </Link>
+            でやさしく説明しています。
           </li>
         </ul>
       </div>
@@ -93,6 +123,13 @@ export default function DecisionsPage() {
                     {d.category && <span className="eyebrow text-faint">{d.category}</span>}
                     <ResultBadge result={d.result} />
                     <SourceLink href={d.sourceUrl}>出典</SourceLink>
+                    {d.factions && d.factions.length > 0 && (
+                      <span className="flex w-full flex-wrap gap-x-4 gap-y-1 pt-1">
+                        {d.factions.map((f) => (
+                          <FactionStance key={f.name} name={f.name} stance={f.stance} />
+                        ))}
+                      </span>
+                    )}
                   </li>
                 ))}
               </ul>

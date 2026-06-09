@@ -157,17 +157,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 中立性 */}
+      {/* 中立性（運営の声＝sand面で章替わりを分節） */}
       <section className="border-t-2 border-ink py-10">
-        <h2 className="eyebrow text-accent-deep">中立・非投票誘導が大原則</h2>
-        <p className="measure mt-3 text-muted">
-          本サイトは特定の政党・候補者への投票や不投票を呼びかけません。比較はすべて事実に基づき、
-          AI要約には必ず元発言へのリンクを併記します。
-          <Link href="/about" className="link-ink ml-1">
-            詳しくはこちら
-          </Link>
-          。
-        </p>
+        <div className="card-soft bg-sand p-6">
+          <h2 className="eyebrow text-accent-deep">中立・非投票誘導が大原則</h2>
+          <p className="measure mt-3 text-muted">
+            本サイトは特定の政党・候補者への投票や不投票を呼びかけません。比較はすべて事実に基づき、
+            AI要約には必ず元発言へのリンクを併記します。
+            <Link href="/about" className="link-ink ml-1">
+              詳しくはこちら
+            </Link>
+            。
+          </p>
+        </div>
       </section>
     </div>
   );

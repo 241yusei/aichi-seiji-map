@@ -167,6 +167,8 @@ export interface CouncilDecision {
   billTitle: string;
   category?: string; // 例: "予算" "条例" "意見書"
   result: string; // 例: "可決" "否決" "修正可決" "附帯決議を付して修正可決"
+  /** 会派ごとの態度（公式の会派態度資料がある場合のみ）。stance例: "賛成" "反対" "賛成8・反対1" */
+  factions?: { name: string; stance: string }[];
   note?: string;
   sourceUrl: string; // 公式の審議結果ページ（必須）
 }

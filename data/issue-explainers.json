@@ -110,6 +110,14 @@
       {
         "label": "名古屋城 木造復元 再始動（名古屋テレビ）",
         "url": "https://www.nagoyatv.com/news/?id=034205"
+      },
+      {
+        "label": "名古屋城公式ウェブサイト（名古屋市）",
+        "url": "https://www.nagoyajo.city.nagoya.jp/"
+      },
+      {
+        "label": "名古屋市会 会議録検索（公式）",
+        "url": "https://ssp.kaigiroku.net/tenant/nagoya/SpTop.html"
       }
     ]
   },

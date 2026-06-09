@@ -20,38 +20,6 @@ function LayerHead({ label, full }: { label: string; full: string }) {
   );
 }
 
-function MinutesColumn({
-  level,
-  keywords,
-}: {
-  level: "prefectural" | "municipal";
-  keywords: string[];
-}) {
-  const m = MINUTES_SEARCH[level];
-  if (!m) return null;
-  const body = level === "prefectural" ? "愛知県議会" : "市町村議会";
-  return (
-    <div className="border-l-2 border-line bg-subtle px-4 py-3 text-sm text-muted">
-      <p>
-        {body}の発言本文は、各サイトの規約・robots.txt に配慮し本サイトでは扱っていません。
-        公式の会議録検索システムで、次のキーワードからご確認いただけます。
-      </p>
-      {keywords.length > 0 && (
-        <div className="mt-2 flex flex-wrap gap-1.5">
-          {keywords.map((k) => (
-            <span key={k} className="border border-line bg-surface px-2 py-0.5 text-xs text-ink">
-              {k}
-            </span>
-          ))}
-        </div>
-      )}
-      <p className="mt-3">
-        <SourceLink href={m.url}>{m.label}</SourceLink>
-      </p>
-    </div>
-  );
-}
-
 /** 同一争点について、国・県・市の発言/動きを1画面で並置する（SPEC 受け入れ条件4）。 */
 export function CrossLayerView({
   items,
@@ -60,16 +28,20 @@ export function CrossLayerView({
   items: CrossLayerItem[];
   keywords: string[];
 }) {
+  const pref = MINUTES_SEARCH.prefectural;
+  const muni = MINUTES_SEARCH.municipal;
   return (
-    <div className="grid gap-8 lg:grid-cols-3">
+    <div className="space-y-8">
       <section>
         <LayerHead label="国" full="国会（愛知選出）" />
         {items.length === 0 ? (
-          <p className="border-l-2 border-line bg-subtle px-4 py-3 text-sm text-muted">
-            取得済みの発言からは、この争点の関連発言は見つかりませんでした。
+          // 0件時は空振りカードでなく台帳の1行に縮退（反復ノイズを避ける）。
+          <p className="tnum border-y border-line py-3 text-sm text-muted">
+            この争点の取得済み発言：<span className="font-bold text-ink">0件</span>
+            （関連発言が会議録に記録され次第、追加します）
           </p>
         ) : (
-          <div className="space-y-3">
+          <div className="grid gap-3 lg:grid-cols-2">
             {items.map(({ speech, legislator }) => (
               <div key={speech.id}>
                 {legislator && (
@@ -88,14 +60,28 @@ export function CrossLayerView({
         )}
       </section>
 
+      {/* 県・市は1つの「公式会議録で確認」モジュールに統合（同文反復＝テンプレ臭を避ける）。 */}
       <section>
-        <LayerHead label="県" full="愛知県議会" />
-        <MinutesColumn level="prefectural" keywords={keywords} />
-      </section>
-
-      <section>
-        <LayerHead label="市" full="市町村議会" />
-        <MinutesColumn level="municipal" keywords={keywords} />
+        <LayerHead label="県・市" full="愛知県議会・市町村議会" />
+        <div className="border-l-2 border-line bg-subtle px-4 py-3 text-sm text-muted">
+          <p>
+            県・市町村議会の発言本文は、各サイトの規約・robots.txt
+            に配慮し本サイトでは扱っていません。公式の会議録検索システムで、次のキーワードからご確認いただけます。
+          </p>
+          {keywords.length > 0 && (
+            <div className="mt-2 flex flex-wrap gap-1.5">
+              {keywords.map((k) => (
+                <span key={k} className="border border-line bg-surface px-2 py-0.5 text-xs text-ink">
+                  {k}
+                </span>
+              ))}
+            </div>
+          )}
+          <p className="mt-3 flex flex-wrap gap-x-5 gap-y-1">
+            {pref && <SourceLink href={pref.url}>{pref.label}</SourceLink>}
+            {muni && <SourceLink href={muni.url}>{muni.label}</SourceLink>}
+          </p>
+        </div>
       </section>
     </div>
   );

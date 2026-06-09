@@ -1,5 +1,95 @@
 [
   {
+    "id": "aichi-2026-02-1",
+    "level": "prefectural",
+    "council": "愛知県議会",
+    "session": "令和8年2月定例議会",
+    "billNumber": "第1号",
+    "billTitle": "令和8年度愛知県一般会計予算",
+    "category": "予算",
+    "result": "可決",
+    "factions": [
+      { "name": "自民", "stance": "賛成" },
+      { "name": "民主", "stance": "賛成" },
+      { "name": "公明", "stance": "賛成" },
+      { "name": "減税", "stance": "賛成" },
+      { "name": "無所属", "stance": "賛成8人・反対1人" }
+    ],
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/nittei-0802.html"
+  },
+  {
+    "id": "aichi-2026-02-18",
+    "level": "prefectural",
+    "council": "愛知県議会",
+    "session": "令和8年2月定例議会",
+    "billNumber": "第18号",
+    "billTitle": "公の施設の使用料の改定に関する条例の制定について",
+    "category": "条例",
+    "result": "可決",
+    "factions": [
+      { "name": "自民", "stance": "賛成" },
+      { "name": "民主", "stance": "賛成" },
+      { "name": "公明", "stance": "賛成" },
+      { "name": "減税", "stance": "賛成" },
+      { "name": "無所属", "stance": "賛成8人・反対1人" }
+    ],
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/nittei-0802.html"
+  },
+  {
+    "id": "aichi-2026-02-20",
+    "level": "prefectural",
+    "council": "愛知県議会",
+    "session": "令和8年2月定例議会",
+    "billNumber": "第20号",
+    "billTitle": "愛知県図書館条例の制定について",
+    "category": "条例",
+    "result": "可決",
+    "factions": [
+      { "name": "自民", "stance": "賛成" },
+      { "name": "民主", "stance": "賛成" },
+      { "name": "公明", "stance": "賛成" },
+      { "name": "減税", "stance": "賛成" },
+      { "name": "無所属", "stance": "賛成" }
+    ],
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/nittei-0802.html"
+  },
+  {
+    "id": "aichi-2026-02-21",
+    "level": "prefectural",
+    "council": "愛知県議会",
+    "session": "令和8年2月定例議会",
+    "billNumber": "第21号",
+    "billTitle": "愛知県行政手続条例の一部改正について",
+    "category": "条例",
+    "result": "可決",
+    "factions": [
+      { "name": "自民", "stance": "賛成" },
+      { "name": "民主", "stance": "賛成" },
+      { "name": "公明", "stance": "賛成" },
+      { "name": "減税", "stance": "賛成" },
+      { "name": "無所属", "stance": "賛成" }
+    ],
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/nittei-0802.html"
+  },
+  {
+    "id": "aichi-2026-02-32",
+    "level": "prefectural",
+    "council": "愛知県議会",
+    "session": "令和8年2月定例議会",
+    "billNumber": "第32号",
+    "billTitle": "愛知県環境影響評価条例の一部改正について",
+    "category": "条例",
+    "result": "可決",
+    "factions": [
+      { "name": "自民", "stance": "賛成" },
+      { "name": "民主", "stance": "賛成" },
+      { "name": "公明", "stance": "賛成" },
+      { "name": "減税", "stance": "賛成" },
+      { "name": "無所属", "stance": "賛成" }
+    ],
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/nittei-0802.html"
+  },
+  {
     "id": "nagoya-2026-02-1",
     "level": "municipal",
     "council": "名古屋市会",
