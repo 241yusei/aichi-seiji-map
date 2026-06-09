@@ -155,6 +155,9 @@ export const councilDecisionSchema = z.object({
   billTitle: z.string().min(1),
   category: z.string().optional(),
   result: z.string().min(1),
+  factions: z
+    .array(z.object({ name: z.string().min(1), stance: z.string().min(1) }))
+    .optional(),
   note: z.string().optional(),
   sourceUrl: httpUrl,
 });
