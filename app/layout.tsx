@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Anton, Inter, Noto_Sans_JP, Space_Mono } from "next/font/google";
 import { getActiveElectionWindow } from "@/lib/election-window";
 import { ElectionPeriodBanner } from "@/components/ElectionPeriodBanner";
+import { BottomNav } from "@/components/BottomNav";
 import { LAST_UPDATED, SITE_X } from "@/lib/site-meta";
 import "./globals.css";
 
@@ -100,7 +101,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           {children}
         </main>
 
-        <footer className="mt-20 border-t-2 border-ink bg-paper">
+        <footer className="mt-20 border-t-2 border-ink bg-paper pb-20 sm:pb-0">
           <div className="mx-auto max-w-6xl px-5 py-10">
             <p className="font-display text-lg tracking-tight">政治のトリセツ あいち・なごや</p>
             <p className="eyebrow mt-1 text-faint">知ってから、選ぶ。— 愛知・名古屋の政治を一次ソースで</p>
@@ -169,6 +170,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             </p>
           </div>
         </footer>
+
+        <BottomNav />
       </body>
     </html>
   );

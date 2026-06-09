@@ -54,8 +54,11 @@ export default function HomePage() {
           中立・一次ソースで、むずかしい言葉はふれれば意味が出ます。
         </p>
 
-        <div className="mt-7 max-w-xl">
-          <p className="eyebrow mb-2 text-ink">郵便番号で、あなたの地域の代表者を調べる</p>
+        <div className="zone-calm mt-7 max-w-xl p-5">
+          <p className="eyebrow text-accent-deep">はじめての人へ</p>
+          <p className="mt-1 mb-3 text-sm text-muted">
+            郵便番号を入れるだけ。まずはここから始めれば大丈夫です。
+          </p>
           <ZipSearch />
         </div>
 

@@ -54,6 +54,9 @@ export function ShareButton({ title }: { title: string }) {
       <button type="button" onClick={copy} className={btn} aria-label="URLをコピー">
         {copied ? "コピーしました" : "URLをコピー"}
       </button>
+      <span role="status" aria-live="polite" className="sr-only">
+        {copied ? "URLをコピーしました" : ""}
+      </span>
     </div>
   );
 }

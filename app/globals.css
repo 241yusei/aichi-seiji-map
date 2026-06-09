@@ -7,27 +7,32 @@
    ============================================================ */
 @theme {
   /* 面・文字 */
-  --color-paper: #f6f2ea; /* ページ地（温かいオフホワイト） */
-  --color-surface: #fffdf8; /* カード等の面 */
-  --color-ink: #14140f; /* 本文・見出し（インク） */
-  --color-muted: #55524a; /* 二次テキスト */
-  --color-faint: #8b897c; /* 三次テキスト・キャプション */
-  --color-line: #ddd6c7; /* 罫線・境界 */
-  --color-subtle: #efe9dc; /* 微妙な塗り */
+  --color-paper: #fbfbfa; /* ページ地（中立オフ白・紙を卒業） */
+  --color-surface: #ffffff; /* カード等の面 */
+  --color-ink: #1a1c1e; /* 本文・見出し（インク） */
+  --color-muted: #5b6066; /* 二次テキスト（本文可・AA） */
+  --color-faint: #7a828a; /* 装飾・UI・大きめラベル限定（本文には使わない） */
+  --color-line: #e4e6e9; /* 罫線・境界 */
+  --color-subtle: #eef3f3; /* 微妙な塗り */
+  --color-calm: #eef6f5; /* はじめてゾーンの地（teal薄・やさしさの面） */
 
-  /* 差し色（くすんだ朱・非政党色）。ベタ面／下線／アクティブ／マークに限定使用 */
-  --color-accent: #c8351b;
-  --color-accent-deep: #9e2814; /* テキスト用の高コントラスト朱 */
-  --color-on-accent: #ffffff; /* 差し色ベタ面の上の文字色 */
+  /* 差し色（中立な青緑 teal・党派非連想）。案内／リンク／アクティブ／はじめてゾーンに限定 */
+  --color-accent: #0f7d86;
+  --color-accent-deep: #0a5b62; /* 小文字・薄面・高コントラストが要る所 */
+  --color-on-accent: #ffffff; /* 差し色ベタ面の上の文字色（14px以上＋bold） */
 
   /* 採決などのセマンティック（必ず記号＋ラベルと併用） */
   --color-yea: #1f7a4d;
   --color-nay: #b23b2e;
-  --color-abstain: #8b897c;
+  --color-abstain: #7a828a;
 
   /* 旧トークンの後方互換 */
-  --color-canvas: #f6f2ea;
-  --color-accent-weak: #efe1da;
+  --color-canvas: #fbfbfa;
+  --color-accent-weak: #eef6f5;
+
+  /* ガイド層のやわらかさ（二層ルール：データ層は角丸ゼロのまま） */
+  --radius-soft: 10px;
+  --shadow-soft: 0 1px 2px rgba(26, 28, 30, 0.05), 0 1px 1px rgba(26, 28, 30, 0.04);
 
   /* フォント（next/font の CSS 変数を参照） */
   --font-sans: var(--font-inter), var(--font-noto), ui-sans-serif, system-ui,
@@ -44,7 +49,7 @@ body {
   background-color: var(--color-paper);
   color: var(--color-ink);
   font-family: var(--font-sans);
-  line-height: 1.7;
+  line-height: 1.8;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-feature-settings: "palt" 1; /* 和欧混植の詰め */
@@ -73,8 +78,8 @@ body {
   font-family: var(--font-mono);
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  font-size: 0.74rem;
 }
 
 /* 出典・本文中リンク：インク文字＋差し色の太い下線。ホバーで差し色へ。 */
@@ -92,4 +97,40 @@ body {
 
 a {
   text-underline-offset: 3px;
+}
+
+/* キーボードフォーカスの可視化（全対話要素・WCAG 2.4.7） */
+:where(a, button, select, input, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* ガイド層＝やわらか面（radius＋極薄影1段）。データ層（台帳）は角丸ゼロのまま使う。 */
+.card-soft {
+  border-radius: var(--radius-soft);
+  box-shadow: var(--shadow-soft);
+}
+
+/* はじめてゾーン＝teal薄の地＋丸み（やさしさを“面”で示す） */
+.zone-calm {
+  background-color: var(--color-calm);
+  border-radius: var(--radius-soft);
+}
+
+/* タップ領域の最小確保（モバイル） */
+.tap {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* 動きの抑制（前庭障害配慮・最上位で尊重） */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
