@@ -3,10 +3,10 @@ import type { FigureKey } from "@/lib/learn";
 // まなぶ用の簡易図解（2色・非政党色）。本文の理解を助ける。
 // SVGテキストはページのフォントで描画される。
 
-const INK = "#14140f";
-const SURFACE = "#fffdf8";
-const MUTED = "#55524a";
-const ACCENT = "#c8351b";
+const INK = "#1a1c1e";
+const SURFACE = "#ffffff";
+const MUTED = "#5b6066";
+const ACCENT = "#0f7d86";
 
 function Box({
   x,

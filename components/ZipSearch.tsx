@@ -35,11 +35,11 @@ export function ZipSearch() {
           aria-label="郵便番号"
           aria-invalid={err ? true : undefined}
           aria-describedby={err ? "zip-error" : undefined}
-          className="tnum grow border border-ink bg-surface px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+          className="tnum grow rounded-[10px] border border-ink bg-surface px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
         />
         <button
           type="submit"
-          className="tap bg-ink px-5 py-2.5 text-sm font-bold text-paper transition-colors hover:bg-accent"
+          className="tap rounded-[10px] bg-ink px-5 py-2.5 text-sm font-bold text-paper transition-colors hover:bg-accent"
         >
           地域の代表者を見る
         </button>

@@ -4,7 +4,7 @@ import { SourceLink } from "./SourceLink";
 // 争点の「一言でいうと」カード（説明報道型）。立場は中立に併記し、推薦はしない。
 export function IssueExplainerCard({ ex }: { ex: IssueExplainer }) {
   return (
-    <section className="border border-ink bg-surface">
+    <section className="card-soft overflow-hidden border border-line bg-surface">
       <div className="border-b border-line bg-subtle px-5 py-4">
         <p className="eyebrow text-accent-deep">一言でいうと</p>
         <p className="mt-1 text-base font-bold leading-relaxed">{ex.oneLine}</p>
