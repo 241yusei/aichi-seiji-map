@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Anton, Inter, Noto_Sans_JP, Space_Mono } from "next/font/google";
 import { getActiveElectionWindow } from "@/lib/election-window";
 import { ElectionPeriodBanner } from "@/components/ElectionPeriodBanner";
-import { LAST_UPDATED } from "@/lib/site-meta";
+import { LAST_UPDATED, SITE_X } from "@/lib/site-meta";
 import "./globals.css";
 
 // 超极太グロテスクのディスプレイ書体（特大見出し・032c 風）。
@@ -43,6 +43,9 @@ export const metadata: Metadata = {
   description:
     "政治をはじめて知る人のための、愛知・名古屋の政治の入口。国会(愛知選出)・愛知県議会・全54市町村の代表者の発言・採決・政治資金を、やさしい解説と一次ソースで。中立・非投票誘導。",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://aichi-seiji.example.jp"),
+  alternates: {
+    types: { "application/rss+xml": "/feed.xml" },
+  },
 };
 
 // ヘッダーは主要6項目に絞る（残りはフッターから到達可）。モバイルの過密を避ける。
@@ -143,6 +146,20 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               </Link>
             </div>
             <p className="mt-5 text-xs text-faint">
+              更新を受け取る：
+              <a href="/feed.xml" className="link-ink">
+                RSS
+              </a>
+              {SITE_X && (
+                <>
+                  {" ・ "}
+                  <a href={SITE_X} target="_blank" rel="noopener noreferrer" className="link-ink">
+                    公式X
+                  </a>
+                </>
+              )}
+            </p>
+            <p className="mt-2 text-xs text-faint">
               データ最終更新：{LAST_UPDATED}（手動更新のため、改選などで内容が変わることがあります）。
               訂正・更新は{" "}
               <Link href="/corrections" className="link-ink">

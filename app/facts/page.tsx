@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getFactCards } from "@/lib/data";
 import { FactCardType } from "@/components/FactCardView";
+import { formatDate } from "@/lib/format";
 
 export const metadata: Metadata = {
   title: "事実カード｜記録から見える愛知政治のギャップ",
@@ -37,8 +38,12 @@ export default function FactsPage() {
                 {String(i + 1).padStart(2, "0")}
               </span>
               <div>
-                <div className="mb-2">
+                <div className="mb-2 flex items-center gap-2">
                   <FactCardType type={card.cardType} />
+                  {i === 0 && (
+                    <span className="eyebrow bg-accent px-1.5 py-0.5 text-on-accent">新着</span>
+                  )}
+                  <span className="tnum text-xs text-faint">{formatDate(card.publishedAt)}</span>
                 </div>
                 <h2 className="font-display text-xl sm:text-2xl">{card.title}</h2>
                 <p className="measure mt-1 line-clamp-2 text-sm text-muted">{card.hook}</p>

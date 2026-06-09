@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ZipSearch } from "@/components/ZipSearch";
 import { getFactCards, getIssues, getLegislators, getSpeeches } from "@/lib/data";
 import { FactCardType } from "@/components/FactCardView";
+import { formatDate } from "@/lib/format";
 
 const LAYERS = [
   {
@@ -92,7 +93,11 @@ export default function HomePage() {
             href={`/facts/${featured.id}/`}
             className="group mt-4 block border border-ink bg-surface p-6 transition-colors hover:bg-subtle"
           >
-            <FactCardType type={featured.cardType} />
+            <div className="flex items-center gap-2">
+              <FactCardType type={featured.cardType} />
+              <span className="eyebrow bg-accent px-1.5 py-0.5 text-on-accent">新着</span>
+              <span className="tnum text-xs text-faint">{formatDate(featured.publishedAt)}</span>
+            </div>
             <h3 className="font-display mt-3 text-2xl leading-snug sm:text-3xl">{featured.title}</h3>
             <p className="measure mt-2 text-muted">{featured.hook}</p>
             <span
