@@ -37,6 +37,28 @@ export function IssueExplainerCard({ ex }: { ex: IssueExplainer }) {
         </ul>
         <p className="mt-4 text-xs text-faint">主語（だれの権限の話か）：{ex.subject}</p>
       </div>
+      {ex.debate && (
+        <div className="border-t border-line p-5">
+          <p className="eyebrow text-faint">論点（対立の核・中立に併記）</p>
+          <dl className="measure mt-3 space-y-3 text-sm">
+            <div className="border-l-2 border-yea pl-3">
+              <dt className="text-xs font-bold text-yea">賛成側の最も強い主張</dt>
+              <dd className="mt-0.5 text-muted">{ex.debate.pro}</dd>
+            </div>
+            <div className="border-l-2 border-nay pl-3">
+              <dt className="text-xs font-bold text-nay">反対側の最も強い主張</dt>
+              <dd className="mt-0.5 text-muted">{ex.debate.con}</dd>
+            </div>
+            <div className="border-l-2 border-accent pl-3">
+              <dt className="text-xs font-bold text-accent-deep">まだ答えの出ていない問い</dt>
+              <dd className="mt-0.5 text-muted">{ex.debate.openQuestion}</dd>
+            </div>
+          </dl>
+          <p className="mt-3 text-xs text-faint">
+            どちらかを薦めるものではありません。論点の核を中立に示します。
+          </p>
+        </div>
+      )}
       {ex.timeline && ex.timeline.length > 0 && (
         <div className="border-t border-line p-5">
           <p className="eyebrow text-faint">これまでの流れ（3分まとめ）</p>

@@ -15,13 +15,15 @@ const LEVELS: { key: Level | "all"; label: string }[] = [
 ];
 
 export function LegislatorFilter({ legislators }: { legislators: Legislator[] }) {
-  const [level, setLevel] = useState<Level | "all">("all");
+  // 初期表示は「国会（愛知選出）」起点。1,244名フラットの壁を避け、まず意味の分かる32名を見せる。
+  const [level, setLevel] = useState<Level | "all">("national");
   const [party, setParty] = useState("all");
   const [q, setQ] = useState("");
 
   useEffect(() => {
     const lv = new URLSearchParams(window.location.search).get("level");
-    if (lv === "national" || lv === "prefectural" || lv === "municipal") setLevel(lv);
+    if (lv === "national" || lv === "prefectural" || lv === "municipal" || lv === "all")
+      setLevel(lv);
   }, []);
 
   const parties = useMemo(

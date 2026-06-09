@@ -26,27 +26,34 @@ export function DifficultyToggle({ easy, detail }: { easy: ReactNode; detail: Re
 
   return (
     <div>
-      <div className="mb-5 inline-flex border border-ink text-sm" role="group" aria-label="難易度">
-        <button
-          type="button"
-          onClick={() => set("easy")}
-          aria-pressed={level === "easy"}
-          className={`px-4 py-1.5 transition-colors ${
-            level === "easy" ? "bg-ink text-paper" : "hover:bg-subtle"
-          }`}
+      {/* スクロール追従でいつでも戻れる安心を視界に（上部 sticky＝ボトムナビと干渉しない）。 */}
+      <div className="sticky top-2 z-30 mb-5">
+        <div
+          className="card-soft inline-flex overflow-hidden border border-ink bg-surface text-sm"
+          role="group"
+          aria-label="難易度"
         >
-          やさしい
-        </button>
-        <button
-          type="button"
-          onClick={() => set("detail")}
-          aria-pressed={level === "detail"}
-          className={`border-l border-ink px-4 py-1.5 transition-colors ${
-            level === "detail" ? "bg-ink text-paper" : "hover:bg-subtle"
-          }`}
-        >
-          くわしい
-        </button>
+          <button
+            type="button"
+            onClick={() => set("easy")}
+            aria-pressed={level === "easy"}
+            className={`tap px-4 py-1.5 transition-colors ${
+              level === "easy" ? "bg-ink text-paper" : "hover:bg-subtle"
+            }`}
+          >
+            やさしい
+          </button>
+          <button
+            type="button"
+            onClick={() => set("detail")}
+            aria-pressed={level === "detail"}
+            className={`tap border-l border-ink px-4 py-1.5 transition-colors ${
+              level === "detail" ? "bg-ink text-paper" : "hover:bg-subtle"
+            }`}
+          >
+            くわしい
+          </button>
+        </div>
       </div>
       <div>{level === "easy" ? easy : detail}</div>
     </div>
