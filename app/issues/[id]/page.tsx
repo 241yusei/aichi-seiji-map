@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getIssue, getIssues, getLegislators, getSpeechesByIds } from "@/lib/data";
+import {
+  getIssue,
+  getIssueExplainer,
+  getIssues,
+  getLegislators,
+  getSpeechesByIds,
+} from "@/lib/data";
 import { CrossLayerView, type CrossLayerItem } from "@/components/CrossLayerView";
+import { IssueExplainerCard } from "@/components/IssueExplainerCard";
 
 export function generateStaticParams() {
   return getIssues().map((i) => ({ id: i.id }));
@@ -26,6 +33,7 @@ export default async function IssueDetailPage({
   const { id } = await params;
   const issue = getIssue(id);
   if (!issue) notFound();
+  const explainer = getIssueExplainer(id);
 
   const speeches = getSpeechesByIds(issue.relatedSpeechIds).sort((a, b) =>
     b.date.localeCompare(a.date),
@@ -51,6 +59,8 @@ export default async function IssueDetailPage({
         </h1>
         <p className="measure mt-3 text-muted">{issue.description}</p>
       </header>
+
+      {explainer && <IssueExplainerCard ex={explainer} />}
 
       <p className="text-xs text-faint">
         同じ争点について、国・県・市の発言や動きを並べています。国会の発言は会議録から取得した一次ソース付き、

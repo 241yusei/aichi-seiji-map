@@ -9,6 +9,7 @@ import {
   executivesSchema,
   factCardsSchema,
   fundingsSchema,
+  issueExplainersSchema,
   issuesSchema,
   legislatorProfilesSchema,
   legislatorsSchema,
@@ -20,6 +21,7 @@ import type {
   FactCard,
   Funding,
   Issue,
+  IssueExplainer,
   Legislator,
   LegislatorProfile,
   SpeechRecord,
@@ -74,6 +76,7 @@ const issues = load<Issue>("issues.json", issuesSchema);
 const factCards = load<FactCard>("fact-cards.json", factCardsSchema);
 const executives = load<Executive>("executives.json", executivesSchema);
 const profiles = load<LegislatorProfile>("profiles.national.json", legislatorProfilesSchema);
+const issueExplainers = load<IssueExplainer>("issue-explainers.json", issueExplainersSchema);
 
 console.log("\n相互参照を検査します…");
 
@@ -129,6 +132,15 @@ for (const e of executives) {
   if (seenExec.has(e.id)) fail(`首長ID重複: ${e.id}`);
   seenExec.add(e.id);
   if (!validGov.has(e.govCode)) fail(`首長 ${e.id} の govCode が不明: ${e.govCode}`);
+}
+
+// 争点解説の参照整合（id が争点に存在するか）・ID重複
+const issueIdSet = new Set(issues.map((i) => i.id));
+const seenExp = new Set<string>();
+for (const e of issueExplainers) {
+  if (seenExp.has(e.id)) fail(`争点解説ID重複: ${e.id}`);
+  seenExp.add(e.id);
+  if (!issueIdSet.has(e.id)) fail(`争点解説の参照先争点が不明: ${e.id}`);
 }
 
 // 議員プロフィールの参照整合・ID重複

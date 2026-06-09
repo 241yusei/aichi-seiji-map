@@ -119,6 +119,18 @@ export const executiveSchema = z.object({
   sourceUrl: httpUrl,
 });
 
+// 争点の「一言でいうと」解説（説明報道カード）。
+export const issueExplainerSchema = z.object({
+  id: z.string().min(1),
+  subject: z.string().min(1),
+  oneLine: z.string().min(1),
+  whyImportant: z.string().min(1),
+  now: z.string().min(1),
+  stances: z.array(z.object({ label: z.string().min(1), text: z.string().min(1) })),
+  sources: z.array(z.object({ label: z.string().min(1), url: httpUrl })).optional(),
+});
+export const issueExplainersSchema = z.array(issueExplainerSchema);
+
 export const legislatorsSchema = z.array(legislatorSchema);
 export const speechRecordsSchema = z.array(speechRecordSchema);
 export const votesSchema = z.array(voteSchema);

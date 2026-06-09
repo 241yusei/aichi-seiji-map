@@ -11,6 +11,7 @@ import type {
   FactCard,
   Funding,
   Issue,
+  IssueExplainer,
   Legislator,
   LegislatorProfile,
   SpeechRecord,
@@ -20,6 +21,7 @@ import {
   executivesSchema,
   factCardsSchema,
   fundingsSchema,
+  issueExplainersSchema,
   issuesSchema,
   legislatorProfilesSchema,
   legislatorsSchema,
@@ -141,6 +143,13 @@ export function getIssues(): Issue[] {
 
 export function getIssue(id: string): Issue | undefined {
   return getIssues().find((i) => i.id === id);
+}
+
+// 争点の「一言でいうと」解説（説明報道カード）
+export function getIssueExplainer(id: string): IssueExplainer | undefined {
+  return readArray<IssueExplainer>("issue-explainers.json", issueExplainersSchema).find(
+    (e) => e.id === id,
+  );
 }
 
 // --- 事実カード（矛盾・ギャップ型・一次ソース付き） ---
