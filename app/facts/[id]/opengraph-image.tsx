@@ -20,7 +20,7 @@ const fontData = readFileSync(join(process.cwd(), "assets", "og-noto-jp-subset.w
 export default async function OgImage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const card = getFactCard(id);
-  const brand = "愛知政治マップ ／ 事実カード";
+  const brand = "政治のトリセツ ／ 事実カード";
   const title = card?.title ?? "事実カード";
   const hook = card?.hook ?? "";
   const footer = "一次ソース付き・中立 ／ aichi-seiji-map";

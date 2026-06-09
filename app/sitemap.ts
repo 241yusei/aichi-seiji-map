@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getFactCards, getIssues, getLegislators } from "@/lib/data";
 import { MUNICIPALITIES } from "@/lib/municipalities";
+import { getLearnChapters } from "@/lib/learn";
 
 // 静的エクスポート（output: export）で sitemap.xml を生成するために必要。
 export const dynamic = "force-static";
@@ -11,6 +12,9 @@ const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://aichi-seiji.example.jp
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     "",
+    "/start",
+    "/learn",
+    "/glossary",
     "/area",
     "/legislators",
     "/executives",
@@ -52,8 +56,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
+  const learnRoutes = getLearnChapters().map((c) => ({
+    url: `${BASE}/learn/${c.slug}/`,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
   return [
     ...staticRoutes,
+    ...learnRoutes,
     ...legislatorRoutes,
     ...issueRoutes,
     ...factRoutes,
