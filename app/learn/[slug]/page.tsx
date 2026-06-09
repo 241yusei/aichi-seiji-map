@@ -95,7 +95,7 @@ export default async function LearnChapterPage({
             <Link
               key={b.href}
               href={b.href}
-              className="border border-ink px-4 py-2 text-sm font-bold transition-colors hover:bg-subtle"
+              className="tap rounded-[10px] border border-ink px-4 py-2 text-sm font-bold transition-colors hover:bg-subtle"
             >
               {b.label} →
             </Link>
