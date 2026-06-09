@@ -119,8 +119,32 @@ function NigenFigure() {
   );
 }
 
+function KenshiFigure() {
+  return (
+    <svg viewBox="0 0 640 200" className="h-auto w-full" role="img" aria-label="愛知県と名古屋市の役割分担（二重構造）">
+      <Box x={20} y={40} w={250} h={80} title="愛知県" sub="県全体の仕事（県道・県立高校など）" />
+      <Box x={370} y={40} w={250} h={80} title="名古屋市" sub="市の仕事（政令市＝県並みの権限も）" />
+      <line x1={270} y1={80} x2={370} y2={80} stroke={MUTED} strokeWidth={1.5} strokeDasharray="4 4" />
+      <text x={320} y={70} textAnchor="middle" fontSize="11" fill={ACCENT} fontWeight="700">
+        一部かさなる
+      </text>
+      <text x={320} y={150} textAnchor="middle" fontSize="12" fill={MUTED}>
+        上下関係ではなく、ヨコの「役割分担」（重なる所が二重行政の議論に）
+      </text>
+    </svg>
+  );
+}
+
 export function Figure({ figure }: { figure: FigureKey }) {
   const node =
-    figure === "tax" ? <TaxFigure /> : figure === "election" ? <ElectionFigure /> : <NigenFigure />;
+    figure === "tax" ? (
+      <TaxFigure />
+    ) : figure === "election" ? (
+      <ElectionFigure />
+    ) : figure === "kenshi" ? (
+      <KenshiFigure />
+    ) : (
+      <NigenFigure />
+    );
   return <figure className="my-5 mx-auto max-w-2xl border border-line bg-paper p-4">{node}</figure>;
 }

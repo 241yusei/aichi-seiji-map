@@ -85,6 +85,21 @@ export interface Issue {
   keywords?: string[];
 }
 
+/** 争点の「一言でいうと」解説（説明報道カード）。中立・出典つき。 */
+export interface IssueStance {
+  label: string; // 例: "期待する声" "慎重な声"
+  text: string;
+}
+export interface IssueExplainer {
+  id: string; // Issue.id と一致
+  subject: string; // 主語：誰の権限の話か（例: "国・県・市"）
+  oneLine: string; // 一言でいうと
+  whyImportant: string; // なぜ重要か
+  now: string; // いま何が起きているか
+  stances: IssueStance[]; // 立場の併記（賛否を中立に）
+  sources?: { label: string; url: string }[];
+}
+
 /** 収集の対象期間。 */
 export interface DateRange {
   from: string; // ISO (YYYY-MM-DD)
