@@ -97,6 +97,7 @@ export interface IssueExplainer {
   whyImportant: string; // なぜ重要か
   now: string; // いま何が起きているか
   stances: IssueStance[]; // 立場の併記（賛否を中立に）
+  timeline?: { date: string; event: string; sourceUrl?: string }[]; // 時系列（evergreen運用）
   sources?: { label: string; url: string }[];
 }
 

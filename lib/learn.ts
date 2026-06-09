@@ -29,6 +29,7 @@ export interface LearnChapter {
   check: string[]; // 「ここまで言えること」
   bridges: { label: string; href: string }[];
   sources?: LearnSource[];
+  quiz?: boolean; // 「県？市？」クイズを差し込む
 }
 
 export const LEARN: LearnChapter[] = [
@@ -308,10 +309,35 @@ export const LEARN: LearnChapter[] = [
     ],
     check: ["二元代表制の対立が名古屋で実際に起きたと言える", "対立は仕組みの表れだと説明できる"],
     bridges: [
-      { label: "争点で実践する（第3部・準備中）", href: "/issues" },
+      { label: "次へ：争点で実践する", href: "/learn/migiwake" },
       { label: "議員・首長の記録を見る", href: "/legislators" },
     ],
     sources: [{ label: "二元代表制の解説（政経百科）", url: "https://seikeihyakka.com/article/nigendaihyosei" }],
+  },
+
+  // ───────────── 第3部 争点で実践 ─────────────
+  {
+    slug: "migiwake",
+    part: 3,
+    partLabel: "第3部 争点で実践",
+    n: "3-1",
+    title: "争点の「主語」を見分ける",
+    lead: "県の話？市の話？国の話？——まず主語を当てる。",
+    quiz: true,
+    easy: [
+      { type: "p", text: "争点を理解する第一歩は、「これは誰の権限の話か（主語）」を見分けることです。主語がわかると、どの議会・どの[[shucho|首長]]を見ればいいかが決まります。" },
+      { type: "list", items: ["国の話：法律・国全体の制度（例：リニアの事業認可）", "県の話：県全体の仕事（例：県立高校・広域防災）", "市の話：身近な暮らし（例：保育・ゴミ・名古屋城・市民税減税）"] },
+      { type: "p", text: "下のクイズで、主語を当てる練習をしてみましょう。点数より「見分けられること」が大切です。" },
+    ],
+    detail: [
+      { type: "p", text: "多くの争点は複数の層にまたがります（例：リニアは国・JR・県・市）。それでも『中心の主語はどこか』『この部分は誰の財布・誰の権限か』を分けて考えると、争点が整理できます。" },
+      { type: "note", text: "実際の争点では、各ページ冒頭の「一言でいうと」カードに“主語（だれの権限の話か）”を明記しています。" },
+    ],
+    check: ["争点の『主語（国・県・市）』を見分けられる", "複数の層にまたがる争点を分けて考えられる"],
+    bridges: [
+      { label: "争点の一覧で試す", href: "/issues" },
+      { label: "事実カードを見る", href: "/facts" },
+    ],
   },
 ];
 
