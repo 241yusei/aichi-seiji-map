@@ -6,7 +6,7 @@ import { SourceLink } from "@/components/SourceLink";
 export const metadata: Metadata = {
   title: "このサイトについて（中立性・出典・免責）",
   description:
-    "愛知政治マップの編集方針・中立性・データの出典・AI要約の扱い・公職選挙法への配慮・訂正の受付について。",
+    "「政治のトリセツ あいち・なごや」の編集方針・中立性・データの出典・AI要約の扱い・公職選挙法への配慮・訂正の受付について。",
 };
 
 function Section({ title, children }: { title: string; children: ReactNode }) {
@@ -98,8 +98,19 @@ export default function AboutPage() {
 
       <Section title="データの鮮度・訂正の受付">
         <p>
-          データは手動バッチで更新しており、リアルタイムではありません。
+          データは手動バッチで更新しており、リアルタイムではありません。各ページに「データ基準日」を表示します。
           内容の誤り（誤った要約・記載など）にお気づきの場合は、出典と併せてご指摘ください。確認のうえ訂正し、履歴を残します。
+        </p>
+        <p>
+          ご指摘の窓口：
+          <SourceLink href="https://github.com/241yusei/aichi-seiji-map/issues">
+            GitHub Issues（公開）
+          </SourceLink>
+          。訂正・更新の履歴は
+          <Link href="/corrections" className="link-ink">
+            訂正・更新ログ
+          </Link>
+          で公開します。
         </p>
       </Section>
 
@@ -121,9 +132,13 @@ export default function AboutPage() {
 
       <Section title="運営・編集の独立性">
         <p>
-          運営：愛知政治マップ編集部（個人運営）。運営者は他のメディアも運営していますが、
+          運営：「政治のトリセツ あいち・なごや」編集部（個人運営）。運営者は他のメディアも運営していますが、
           本サイトの編集は独立して行い、特定の政党・候補者・団体との利害関係はありません。
-          お問い合わせ先は準備中です。
+          ご連絡・ご指摘は
+          <SourceLink href="https://github.com/241yusei/aichi-seiji-map/issues">
+            GitHub Issues
+          </SourceLink>
+          へ。
         </p>
       </Section>
     </div>

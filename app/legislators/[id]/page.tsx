@@ -163,7 +163,9 @@ export default async function LegislatorDetailPage({
                 ? `●賛成${voteTally.yea ?? 0}・✕反対${voteTally.nay ?? 0}${
                     (voteTally.absent ?? 0) > 0 ? `・—欠席${voteTally.absent}` : ""
                   }（記名投票のみ個別公開）`
-                : "記名投票の個別賛否は順次整備中"}
+                : house === "衆議院"
+                  ? "衆院は起立採決が多く、個別の賛否は原則非公開（記名投票のときのみ公開）"
+                  : "記名投票の個別賛否はデータ整備中"}
             </p>
           </div>
         </section>

@@ -94,6 +94,7 @@ export interface IssueExplainer {
   id: string; // Issue.id と一致
   subject: string; // 主語：誰の権限の話か（例: "国・県・市"）
   oneLine: string; // 一言でいうと
+  youEffect?: string; // あなたに効くポイント（暮らし・財布への接続）
   whyImportant: string; // なぜ重要か
   now: string; // いま何が起きているか
   stances: IssueStance[]; // 立場の併記（賛否を中立に）

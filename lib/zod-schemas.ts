@@ -124,6 +124,7 @@ export const issueExplainerSchema = z.object({
   id: z.string().min(1),
   subject: z.string().min(1),
   oneLine: z.string().min(1),
+  youEffect: z.string().optional(),
   whyImportant: z.string().min(1),
   now: z.string().min(1),
   stances: z.array(z.object({ label: z.string().min(1), text: z.string().min(1) })),

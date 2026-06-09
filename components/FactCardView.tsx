@@ -1,6 +1,7 @@
 import type { FactCard } from "@/lib/types";
 import { formatDate } from "@/lib/format";
 import { SourceLink } from "./SourceLink";
+import { ShareButton } from "./ShareButton";
 
 const TYPE_LABEL: Record<FactCard["cardType"], string> = {
   gap: "ギャップ",
@@ -70,6 +71,10 @@ export function FactCardView({ card }: { card: FactCard }) {
             </li>
           ))}
         </ul>
+      </div>
+
+      <div className="border-t border-line pt-5">
+        <ShareButton title={card.title} />
       </div>
     </article>
   );
