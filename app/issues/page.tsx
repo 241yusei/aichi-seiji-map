@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getIssues } from "@/lib/data";
+import { getIssues, getIssueExplainer } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "争点（ローカルテーマ）",
@@ -25,7 +25,9 @@ export default function IssuesPage() {
         <p className="mt-6 text-sm text-muted">争点データは準備中です。</p>
       ) : (
         <div className="mt-4">
-          {issues.map((issue, i) => (
+          {issues.map((issue, i) => {
+            const ex = getIssueExplainer(issue.id);
+            return (
             <Link
               key={issue.id}
               href={`/issues/${issue.id}/`}
@@ -35,7 +37,13 @@ export default function IssuesPage() {
               <div>
                 <h2 className="font-display text-xl sm:text-2xl">{issue.title}</h2>
                 <p className="measure mt-1 line-clamp-2 text-sm text-muted">{issue.description}</p>
-                <p className="eyebrow mt-2 text-accent-deep">
+                {ex?.youEffect && (
+                  <p className="measure mt-2 text-sm">
+                    <span className="eyebrow text-accent-deep">あなたに効く</span>{" "}
+                    {ex.youEffect}
+                  </p>
+                )}
+                <p className="eyebrow mt-2 text-faint">
                   国会の関連発言 {issue.relatedSpeechIds.length}件 · 三層で見る
                 </p>
               </div>
@@ -43,7 +51,8 @@ export default function IssuesPage() {
                 →
               </span>
             </Link>
-          ))}
+            );
+          })}
         </div>
       )}
     </div>

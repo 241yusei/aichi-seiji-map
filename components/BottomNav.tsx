@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import type { ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 
 // モバイル(<sm)の固定ボトムナビ。主要5導線・単線アイコン＋和文ラベル・teal アクティブ・タップ48px。
 // 写真/塗りアイコンは使わず currentColor の単線SVG（依存ゼロ・中立）。
@@ -34,6 +34,23 @@ const ITEMS: { href: string; label: string; icon: ReactNode }[] = [
 
 export function BottomNav() {
   const path = usePathname() ?? "";
+  // まなぶの読了数を localStorage（read:*）から集計し、ドットで前進感を集約表示。
+  const [readCount, setReadCount] = useState(0);
+  useEffect(() => {
+    try {
+      let c = 0;
+      for (let i = 0; i < localStorage.length; i++) {
+        const k = localStorage.key(i);
+        if (k && k.startsWith("read:") && localStorage.getItem(k) === "1") c++;
+      }
+      // localStorage からの集計（マウント後・意図的）
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setReadCount(c);
+    } catch {
+      /* localStorage 不可でも無視 */
+    }
+  }, [path]);
+
   return (
     <nav
       aria-label="メイン"
@@ -53,7 +70,17 @@ export function BottomNav() {
                   active ? "font-bold text-accent-deep" : "text-muted"
                 }`}
               >
-                <span className={active ? "text-accent" : "text-faint"}>{it.icon}</span>
+                <span className={`relative ${active ? "text-accent" : "text-faint"}`}>
+                  {it.icon}
+                  {it.href === "/learn" && readCount > 0 && (
+                    <span
+                      aria-hidden
+                      className="absolute -right-2 -top-1 min-w-[14px] rounded-full bg-accent px-1 text-center text-[9px] font-bold leading-[14px] text-on-accent"
+                    >
+                      {readCount}
+                    </span>
+                  )}
+                </span>
                 {it.label}
               </Link>
             </li>

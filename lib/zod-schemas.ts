@@ -131,6 +131,13 @@ export const issueExplainerSchema = z.object({
   whyImportant: z.string().min(1),
   now: z.string().min(1),
   stances: z.array(z.object({ label: z.string().min(1), text: z.string().min(1) })),
+  debate: z
+    .object({
+      pro: z.string().min(1),
+      con: z.string().min(1),
+      openQuestion: z.string().min(1),
+    })
+    .optional(),
   timeline: z
     .array(z.object({ date: z.string().min(1), event: z.string().min(1), sourceUrl: httpUrl.optional() }))
     .optional(),

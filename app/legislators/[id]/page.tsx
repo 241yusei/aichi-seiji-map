@@ -17,6 +17,7 @@ import { FundingPanel } from "@/components/FundingPanel";
 import { minutesFor } from "@/lib/sources/linkout";
 import { municipalityByGov } from "@/lib/municipalities";
 import { LAST_UPDATED } from "@/lib/site-meta";
+import { formatYen } from "@/lib/format";
 
 export function generateStaticParams() {
   return getLegislators().map((l) => ({ id: l.id }));
@@ -116,6 +117,36 @@ export default async function LegislatorDetailPage({
           情報の基準日：{LAST_UPDATED}（所属・役職は改選や異動で変わります）
         </p>
       </header>
+
+      {/* 30秒サマリー（既存データから・中立。詳細は下の各セクション） */}
+      {legislator.level === "national" && (
+        <section className="card-soft border border-line bg-surface p-5">
+          <p className="eyebrow text-accent-deep">30秒サマリー</p>
+          <ul className="measure mt-2 space-y-1.5 text-sm">
+            <li>
+              <span className="font-bold">発言：</span>
+              {speeches.length > 0
+                ? `${speeches.length}件（国会会議録・各発言に出典）`
+                : "本サイトでは未収録（会議録でご確認いただけます）"}
+            </li>
+            <li>
+              <span className="font-bold">政治資金：</span>
+              {funding.length > 0
+                ? `約${formatYen(funding.reduce((s, f) => s + (f.totalIncome ?? 0), 0))}規模（${funding.length}団体・${funding[0].year}年・出典つき）`
+                : "本サイトでは未収録"}
+            </li>
+            <li>
+              <span className="font-bold">採決：</span>
+              {votes.length > 0
+                ? `参院の記名投票 ${votes.length}件（●賛成${voteTally.yea ?? 0}・✕反対${voteTally.nay ?? 0}）`
+                : "衆院は起立採決が中心で、個別の賛否は原則非公開（記名投票のときのみ公開）"}
+            </li>
+          </ul>
+          <p className="mt-2 text-xs text-faint">
+            数字の多少は良し悪しを示しません。すべて下の各セクションに一次ソースを併記しています。
+          </p>
+        </section>
+      )}
 
       {/* プロフィール（当選回数・役職・委員会）。出典つき・公開情報。 */}
       {profile &&
