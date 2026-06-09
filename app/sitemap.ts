@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/legislators",
     "/executives",
     "/issues",
+    "/decisions",
     "/facts",
     "/search",
     "/municipalities",

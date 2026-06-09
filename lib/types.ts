@@ -154,6 +154,23 @@ export interface LegislatorProfile {
   x?: string; // 本人の公式X（旧Twitter）
 }
 
+/**
+ * 議会の議決（会期×主要議案）。県市の「何を可決/否決したか」を一次ソース付きで示す。
+ * 個々の議員の賛否は原則非公開（多くは会派単位）。会派別の賛否は出典資料で確認する設計。
+ */
+export interface CouncilDecision {
+  id: string;
+  level: "prefectural" | "municipal";
+  council: string; // 例: "名古屋市会" "愛知県議会"
+  session: string; // 例: "令和8年2月定例会"
+  billNumber?: string; // 例: "第1号"
+  billTitle: string;
+  category?: string; // 例: "予算" "条例" "意見書"
+  result: string; // 例: "可決" "否決" "修正可決" "附帯決議を付して修正可決"
+  note?: string;
+  sourceUrl: string; // 公式の審議結果ページ（必須）
+}
+
 /** 首長（知事・市町村長）。議員とは別レイヤー。一次ソース（公式サイト）必須。 */
 export interface Executive {
   id: string; // 例: "exec-23100"（govCode 由来）

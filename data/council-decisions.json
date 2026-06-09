@@ -1,0 +1,57 @@
+[
+  {
+    "id": "nagoya-2026-02-1",
+    "level": "municipal",
+    "council": "名古屋市会",
+    "session": "令和8年2月定例会",
+    "billNumber": "第1号",
+    "billTitle": "令和8年度名古屋市一般会計予算",
+    "category": "予算",
+    "result": "附帯決議を付して修正可決",
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/shingi/1030858/1030859/1046530.html"
+  },
+  {
+    "id": "nagoya-2026-02-18",
+    "level": "municipal",
+    "council": "名古屋市会",
+    "session": "令和8年2月定例会",
+    "billNumber": "第18号",
+    "billTitle": "名古屋市基本構想等審議会条例の制定について",
+    "category": "条例",
+    "result": "可決",
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/shingi/1030858/1030859/1046530.html"
+  },
+  {
+    "id": "nagoya-2026-02-49",
+    "level": "municipal",
+    "council": "名古屋市会",
+    "session": "令和8年2月定例会",
+    "billNumber": "第49号",
+    "billTitle": "名古屋市生涯学習センター条例の一部改正について",
+    "category": "条例",
+    "result": "修正可決",
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/shingi/1030858/1030859/1046530.html"
+  },
+  {
+    "id": "nagoya-2026-02-75",
+    "level": "municipal",
+    "council": "名古屋市会",
+    "session": "令和8年2月定例会",
+    "billNumber": "第75号",
+    "billTitle": "名古屋市総合体育館条例の一部改正について",
+    "category": "条例",
+    "result": "修正可決",
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/shingi/1030858/1030859/1046530.html"
+  },
+  {
+    "id": "nagoya-2026-02-95",
+    "level": "municipal",
+    "council": "名古屋市会",
+    "session": "令和8年2月定例会",
+    "billNumber": "第95号",
+    "billTitle": "名古屋市行政手続条例の一部改正について",
+    "category": "条例",
+    "result": "可決",
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/shingi/1030858/1030859/1046530.html"
+  }
+]

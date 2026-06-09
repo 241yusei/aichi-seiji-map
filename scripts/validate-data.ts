@@ -6,6 +6,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import {
+  councilDecisionsSchema,
   executivesSchema,
   factCardsSchema,
   fundingsSchema,
@@ -17,6 +18,7 @@ import {
   votesSchema,
 } from "../lib/zod-schemas";
 import type {
+  CouncilDecision,
   Executive,
   FactCard,
   Funding,
@@ -77,6 +79,7 @@ const factCards = load<FactCard>("fact-cards.json", factCardsSchema);
 const executives = load<Executive>("executives.json", executivesSchema);
 const profiles = load<LegislatorProfile>("profiles.national.json", legislatorProfilesSchema);
 const issueExplainers = load<IssueExplainer>("issue-explainers.json", issueExplainersSchema);
+const councilDecisions = load<CouncilDecision>("council-decisions.json", councilDecisionsSchema);
 
 console.log("\n相互参照を検査します…");
 
@@ -157,5 +160,5 @@ if (errorCount > 0) {
   process.exit(1);
 }
 console.log(
-  `検証成功: 議員 ${legislators.length} / 発言 ${speeches.length} / 採決 ${votes.length} / 資金 ${funding.length} / 争点 ${issues.length} / 事実カード ${factCards.length} / 首長 ${executives.length} / プロフィール ${profiles.length}`,
+  `検証成功: 議員 ${legislators.length} / 発言 ${speeches.length} / 採決 ${votes.length} / 資金 ${funding.length} / 争点 ${issues.length} / 事実カード ${factCards.length} / 首長 ${executives.length} / プロフィール ${profiles.length} / 議決 ${councilDecisions.length}`,
 );
