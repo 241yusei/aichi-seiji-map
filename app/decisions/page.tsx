@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getCouncilDecisions } from "@/lib/data";
+import Link from "next/link";
 import { SourceLink } from "@/components/SourceLink";
 import { LAST_UPDATED } from "@/lib/site-meta";
 import type { CouncilDecision } from "@/lib/types";
@@ -90,6 +91,13 @@ export default function DecisionsPage() {
           <li>
             <span className="font-bold text-ink">個々の議員の賛否は原則非公開</span>
             です（多くは会派単位での公表）。本サイトは評価をせず、記録と出典のみを示します。
+          </li>
+          <li>
+            「修正可決」「附帯決議」などのことばは{" "}
+            <Link href="/glossary/" className="link-ink">
+              用語集
+            </Link>
+            でやさしく説明しています。
           </li>
         </ul>
       </div>

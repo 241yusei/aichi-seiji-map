@@ -87,6 +87,7 @@ export default async function IssueDetailPage({
         <p className="mt-3 text-xs text-faint">
           同じ争点について、国・県・市の発言や動きを並べています。国会の発言は会議録から取得した一次ソース付き、
           県・市は公式の会議録検索への導線です。賛否は等量・等デザインで提示します。
+          AI要約は自動生成の補助情報のため、判断の際は各発言の原文リンクをご確認ください。
         </p>
         <div className="mt-4">
           <CrossLayerView items={items} keywords={issue.keywords ?? []} />

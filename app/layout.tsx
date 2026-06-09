@@ -51,7 +51,7 @@ const NAV = [
   { href: "/legislators", label: "議員" },
   { href: "/issues", label: "争点" },
   { href: "/facts", label: "事実カード" },
-  { href: "/municipalities", label: "地域" },
+  { href: "/municipalities", label: "市町村" },
 ];
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -78,17 +78,40 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               </span>
               <span className="eyebrow hidden text-faint sm:inline">あいち・なごや</span>
             </Link>
-            <nav className="flex flex-wrap items-baseline gap-x-5 gap-y-1 text-sm text-muted">
-              {NAV.map((n) => (
-                <Link
-                  key={n.href}
-                  href={n.href}
-                  className="transition-colors hover:text-accent-deep"
+            <div className="flex items-center gap-4">
+              {/* モバイルはボトムナビ5項目に一本化（極小タップ目標の折返しを避ける）。 */}
+              <nav className="hidden flex-wrap items-baseline gap-x-5 gap-y-1 text-sm text-muted sm:flex">
+                {NAV.map((n) => (
+                  <Link
+                    key={n.href}
+                    href={n.href}
+                    className="transition-colors hover:text-accent-deep"
+                  >
+                    {n.label}
+                  </Link>
+                ))}
+              </nav>
+              {/* 横断検索（議員・発言・争点・事実カード）への常設入口。 */}
+              <Link
+                href="/search"
+                aria-label="横断検索"
+                className="tap inline-flex items-center justify-center text-muted transition-colors hover:text-accent-deep"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  aria-hidden="true"
                 >
-                  {n.label}
-                </Link>
-              ))}
-            </nav>
+                  <circle cx="11" cy="11" r="7" />
+                  <path d="m20 20-3.8-3.8" />
+                </svg>
+              </Link>
+            </div>
           </div>
         </header>
 

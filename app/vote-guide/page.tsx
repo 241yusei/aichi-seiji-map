@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SourceLink } from "@/components/SourceLink";
+import { UPCOMING_ELECTIONS } from "@/lib/upcoming-elections";
 
 export const metadata: Metadata = {
   title: "投票ガイド｜はじめての投票",
@@ -31,6 +32,26 @@ export default function VoteGuidePage() {
           決めるのはあなたです。
         </p>
       </header>
+
+      {/* 次の選挙（予定）：日程の事実のみ。投票先には一切ふれない（公選法配慮）。 */}
+      <section className="card-soft border border-line bg-surface p-5">
+        <p className="eyebrow text-accent-deep">次にあなたが投票できる選挙（予定）</p>
+        <ul className="mt-3 divide-y divide-line border-y border-line">
+          {UPCOMING_ELECTIONS.map((e) => (
+            <li key={e.name} className="flex flex-wrap items-baseline gap-x-3 gap-y-1 py-2.5">
+              <span className="grow text-sm font-bold text-ink">{e.name}</span>
+              <span className="tnum text-sm text-ink">{e.timing}</span>
+              <span className="w-full text-xs text-muted">
+                {e.basis}（出典：
+                <SourceLink href={e.sourceUrl}>{e.sourceLabel}</SourceLink>）
+              </span>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-3 text-xs text-faint">
+          時期は任期満了日などに基づく見込みで、正式な日程は告示で確定します。最新は各選挙管理委員会の発表をご確認ください。
+        </p>
+      </section>
 
       <Section title="① まず、投票の基本">
         <ul className="list-disc space-y-1 pl-5">

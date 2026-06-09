@@ -16,7 +16,7 @@ function buildCharset(): string {
   const cards = getFactCards();
   const dynamic = cards.map((c) => `${c.title}${c.hook}`).join("");
   const fixed =
-    "政治のトリセツあいち・なごや愛知政治マップ／事実カード一次ソース付き・中立aichi-seiji-mapギャップ矛盾対比読み方の注意";
+    "政治のトリセツあいち・なごや愛知政治マップ／事実カード一次ソース付き・中立aichi-seiji-mapギャップ矛盾対比読み方の注意知ってから、選ぶ。名古屋の政をやさしい解説で国会県議会全市町村を横断";
   const ascii = Array.from({ length: 0x7e - 0x20 + 1 }, (_, i) => String.fromCharCode(0x20 + i)).join(
     "",
   );

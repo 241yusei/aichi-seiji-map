@@ -189,13 +189,31 @@ export default async function WardDashboardPage({
               </li>
             ))}
           </ul>
-          <p className="mt-2 text-sm">
+          <p className="mt-2 flex flex-wrap gap-x-5 gap-y-1 text-sm">
             <Link href="/issues/" className="link-ink">
               すべての争点を見る →
+            </Link>
+            <Link href="/decisions/" className="link-ink">
+              議会の議決（県・市の主要議案）→
             </Link>
           </p>
         </section>
       )}
+
+      {/* 次の選挙（予定）＝「知ってから、選ぶ」の“選ぶ機会”を示す。日程の事実のみ。 */}
+      <section className="zone-calm p-5">
+        <p className="eyebrow text-accent-deep">次の選挙（予定）</p>
+        <p className="measure mt-2 text-sm text-muted">
+          知事選 <span className="tnum font-bold text-ink">2027年2月ごろ</span>
+          ／県議・名古屋市議 <span className="tnum font-bold text-ink">2027年4月ごろ（統一地方選）</span>。
+          時期は任期満了に基づく見込みで、告示で確定します。
+        </p>
+        <p className="mt-2 text-sm">
+          <Link href="/vote-guide/" className="link-ink">
+            投票ガイド（日程一覧・投票の基本）→
+          </Link>
+        </p>
+      </section>
 
       {/* 注目の事実カード */}
       {cards.length > 0 && (

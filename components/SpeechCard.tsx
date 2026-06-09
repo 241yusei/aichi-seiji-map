@@ -14,7 +14,7 @@ export function SpeechCard({ speech }: { speech: SpeechRecord }) {
         </time>
       </div>
 
-      <p className="mt-2 line-clamp-6 whitespace-pre-wrap text-sm leading-relaxed text-ink">
+      <p className="measure mt-2 line-clamp-6 whitespace-pre-wrap text-sm leading-relaxed text-ink">
         {speech.text}
       </p>
 

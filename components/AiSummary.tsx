@@ -9,10 +9,9 @@ export function AiSummary({ summary, sourceUrl }: { summary?: string; sourceUrl:
       <p className="mb-1.5">
         <DataLabel kind="summary" />
       </p>
-      <p className="text-sm text-ink">{summary}</p>
-      <p className="mt-2 text-xs text-faint">
-        ※ 自動生成のため原文と異なる場合があります。判断の際は必ず{" "}
-        <SourceLink href={sourceUrl}>発言の原文（会議録）</SourceLink> をご確認ください。
+      <p className="measure text-sm text-ink">{summary}</p>
+      <p className="mt-1.5 text-xs">
+        <SourceLink href={sourceUrl}>原文（会議録）</SourceLink>
       </p>
     </div>
   );

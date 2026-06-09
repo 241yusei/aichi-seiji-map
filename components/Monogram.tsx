@@ -22,7 +22,7 @@ export function Monogram({
   return (
     <span
       aria-hidden="true"
-      className={`inline-flex shrink-0 items-center justify-center rounded border border-accent font-display leading-none text-on-accent ${LEVEL_BG[level]} ${dim}`}
+      className={`inline-flex shrink-0 items-center justify-center border border-accent font-display leading-none text-on-accent ${LEVEL_BG[level]} ${dim}`}
     >
       {chars}
     </span>

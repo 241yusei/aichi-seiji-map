@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import {
@@ -223,7 +224,8 @@ export default async function LegislatorDetailPage({
           {speeches.length > 0 ? (
             <>
               <p className="text-xs text-faint">
-                出典は国会会議録。AI要約は補助情報で、必ず原文リンクを併記しています。
+                出典は国会会議録。AI要約は自動生成の補助情報のため原文と異なる場合があります。
+                判断の際は各発言の「原文（会議録）」リンクをご確認ください。
               </p>
               <div className="mt-4">
                 <SpeechList speeches={speeches} />
@@ -253,6 +255,11 @@ export default async function LegislatorDetailPage({
             <div className="mt-5">
               <VoteTable votes={votes} house={house} />
             </div>
+            <p className="mt-3 text-sm">
+              <Link href="/decisions/" className="link-ink">
+                県・市の「議会の議決」（会期×主要議案・会派の態度）→
+              </Link>
+            </p>
           </section>
 
           <section>

@@ -12,7 +12,7 @@ const TYPE_LABEL: Record<FactCard["cardType"], string> = {
 // 事実カードの種類チップ。色で政党を連想させない（罫線＋モノラベル）。
 export function FactCardType({ type }: { type: FactCard["cardType"] }) {
   return (
-    <span className="eyebrow inline-flex items-center border border-ink px-1.5 py-0.5 text-ink">
+    <span className="eyebrow inline-flex items-center self-start border border-ink px-1.5 py-0.5 text-ink">
       {TYPE_LABEL[type]}
     </span>
   );
