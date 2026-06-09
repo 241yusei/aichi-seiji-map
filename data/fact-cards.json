@@ -172,5 +172,59 @@
       { "label": "設楽町議会 議員名簿", "url": "https://www.town.shitara.lg.jp/soshiki/9/1228.html" }
     ],
     "publishedAt": "2026-06-08"
+  },
+  {
+    "id": "comparison-parties-2026",
+    "title": "愛知選出の国会議員32人、政党は8つに分かれる",
+    "hook": "1つの地域から、多様な政党の代表が出ている。",
+    "cardType": "comparison",
+    "body": "愛知選出の国会議員32人の所属政党は、自由民主党18・国民民主党6・立憲民主党2・参政党2・公明党1・日本維新の会1・中道改革連合1・減税日本ほか1。",
+    "caveat": "数の多少で良し悪しは決まりません。所属は移動することがあり、最新は各議員ページの出典でご確認ください。",
+    "points": [
+      { "label": "自由民主党", "value": "18人" },
+      { "label": "国民民主党", "value": "6人" },
+      { "label": "立憲民主党", "value": "2人" },
+      { "label": "参政党", "value": "2人" }
+    ],
+    "sources": [
+      { "label": "衆議院 議員一覧（公式）", "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/menu_m.htm" },
+      { "label": "参議院 議員一覧（公式）", "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/giin.htm" }
+    ],
+    "publishedAt": "2026-06-08"
+  },
+  {
+    "id": "gap-women-kokkai-2026",
+    "title": "愛知選出の国会議員32人、女性は6人",
+    "hook": "「決める人」の顔ぶれは、国でもまだ偏っている。",
+    "cardType": "gap",
+    "body": "愛知選出の国会議員32人のうち、女性は日野紗里亜・丹野みどり・伊藤孝恵・田島麻衣子・杉本純子・渡辺藍理の6人（約19%）。市町村長（55人中3人）とあわせ、女性は少数にとどまる。",
+    "caveat": "数の多少で良し悪しを論じるものではありません。誰が地域を代表しているかという事実を示します。氏名・所属は公式に基づきます。",
+    "points": [
+      { "label": "女性議員", "value": "6人 / 32人" },
+      { "label": "割合", "value": "約19%" }
+    ],
+    "sources": [
+      { "label": "衆議院 議員一覧（公式）", "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/menu_m.htm" },
+      { "label": "参議院 議員一覧（公式）", "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/giin.htm" }
+    ],
+    "relatedIssueIds": [],
+    "publishedAt": "2026-06-08"
+  },
+  {
+    "id": "comparison-election-count-2026",
+    "title": "愛知選出の国会議員、最多は当選11回・新人（1回）は8人",
+    "hook": "ベテランも新人も、同じ「1票」で選ばれている。",
+    "cardType": "comparison",
+    "body": "当選回数で見ると、最多は古川元久氏の11回。一方で当選1回の新人も8人いて、経験の幅が広い。",
+    "caveat": "当選回数の多い・少ないは、良し悪しではありません。経験の長さと新しさ、それぞれに見方があります。回数は衆参公式・本人公式に基づきます。",
+    "points": [
+      { "label": "最多", "value": "古川元久 11回" },
+      { "label": "新人（1回）", "value": "8人" }
+    ],
+    "sources": [
+      { "label": "衆議院 議員一覧（公式）", "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/menu_m.htm" },
+      { "label": "参議院 議員一覧（公式）", "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/giin.htm" }
+    ],
+    "publishedAt": "2026-06-08"
   }
 ]
