@@ -145,6 +145,21 @@ export const issueExplainerSchema = z.object({
 });
 export const issueExplainersSchema = z.array(issueExplainerSchema);
 
+// 議会の議決（会期×主要議案）。出典必須。
+export const councilDecisionSchema = z.object({
+  id: z.string().min(1),
+  level: z.enum(["prefectural", "municipal"]),
+  council: z.string().min(1),
+  session: z.string().min(1),
+  billNumber: z.string().optional(),
+  billTitle: z.string().min(1),
+  category: z.string().optional(),
+  result: z.string().min(1),
+  note: z.string().optional(),
+  sourceUrl: httpUrl,
+});
+export const councilDecisionsSchema = z.array(councilDecisionSchema);
+
 export const legislatorsSchema = z.array(legislatorSchema);
 export const speechRecordsSchema = z.array(speechRecordSchema);
 export const votesSchema = z.array(voteSchema);

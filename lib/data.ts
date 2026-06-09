@@ -7,6 +7,7 @@
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import type {
+  CouncilDecision,
   Executive,
   FactCard,
   Funding,
@@ -18,6 +19,7 @@ import type {
   Vote,
 } from "./types";
 import {
+  councilDecisionsSchema,
   executivesSchema,
   factCardsSchema,
   fundingsSchema,
@@ -182,4 +184,9 @@ export function getExecutive(id: string): Executive | undefined {
 
 export function getExecutiveByGov(govCode: string): Executive | undefined {
   return getExecutives().find((e) => e.govCode === govCode);
+}
+
+// --- 議会の議決（会期×主要議案・一次ソースつき） ---
+export function getCouncilDecisions(): CouncilDecision[] {
+  return readArray<CouncilDecision>("council-decisions.json", councilDecisionsSchema);
 }
