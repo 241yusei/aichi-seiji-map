@@ -44,16 +44,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://aichi-seiji.example.jp"),
 };
 
+// ヘッダーは主要6項目に絞る（残りはフッターから到達可）。モバイルの過密を避ける。
 const NAV = [
   { href: "/start", label: "はじめに" },
   { href: "/learn", label: "まなぶ" },
   { href: "/legislators", label: "議員" },
-  { href: "/executives", label: "首長" },
   { href: "/issues", label: "争点" },
   { href: "/facts", label: "事実カード" },
   { href: "/municipalities", label: "地域" },
-  { href: "/search", label: "検索" },
-  { href: "/about", label: "このサイトについて" },
 ];
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -75,7 +73,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <header className="border-b-2 border-ink bg-paper">
           <div className="mx-auto flex max-w-6xl items-baseline justify-between gap-4 px-5 py-4">
             <Link href="/" className="group inline-flex items-baseline gap-2">
-              <span className="font-display text-xl tracking-tight sm:text-2xl">政治のトリセツ</span>
+              <span className="font-display whitespace-nowrap text-xl tracking-tight sm:text-2xl">
+                政治のトリセツ
+              </span>
               <span className="eyebrow hidden text-faint sm:inline">あいち・なごや</span>
             </Link>
             <nav className="flex flex-wrap items-baseline gap-x-5 gap-y-1 text-sm text-muted">
@@ -133,6 +133,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               </Link>
               <Link href="/issues" className="hover:text-accent-deep">
                 争点
+              </Link>
+              <Link href="/search" className="hover:text-accent-deep">
+                検索
               </Link>
               <Link href="/support" className="hover:text-accent-deep">
                 支援・寄付

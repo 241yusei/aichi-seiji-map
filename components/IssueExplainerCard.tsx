@@ -9,6 +9,12 @@ export function IssueExplainerCard({ ex }: { ex: IssueExplainer }) {
         <p className="eyebrow text-accent-deep">一言でいうと</p>
         <p className="mt-1 text-base font-bold leading-relaxed">{ex.oneLine}</p>
       </div>
+      {ex.youEffect && (
+        <div className="border-b border-line px-5 py-3">
+          <p className="eyebrow text-accent-deep">あなたに効く</p>
+          <p className="measure mt-1 text-sm">{ex.youEffect}</p>
+        </div>
+      )}
       <div className="grid gap-px bg-line sm:grid-cols-2">
         <div className="bg-surface p-5">
           <p className="eyebrow text-faint">なぜ重要か</p>
