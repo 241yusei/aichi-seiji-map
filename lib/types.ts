@@ -147,6 +147,9 @@ export interface LegislatorProfile {
   positions: string[]; // 主な役職（大臣/副大臣/委員長/党役職など）
   committees: string[]; // 直近の所属委員会
   sourceUrl: string; // 公式プロフィール等の出典
+  summary?: string; // 中立・客観の一言略歴
+  homepage?: string; // 本人の公式サイト
+  x?: string; // 本人の公式X（旧Twitter）
 }
 
 /** 首長（知事・市町村長）。議員とは別レイヤー。一次ソース（公式サイト）必須。 */

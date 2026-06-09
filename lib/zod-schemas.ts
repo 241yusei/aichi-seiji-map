@@ -102,6 +102,9 @@ export const legislatorProfileSchema = z.object({
   positions: z.array(z.string()),
   committees: z.array(z.string()),
   sourceUrl: httpUrl,
+  summary: z.string().optional(),
+  homepage: httpUrl.optional(),
+  x: httpUrl.optional(),
 });
 
 // 首長（知事・市町村長）。一次ソース（公式サイト）必須。

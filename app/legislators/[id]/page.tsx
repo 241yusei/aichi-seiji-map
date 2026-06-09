@@ -117,8 +117,12 @@ export default async function LegislatorDetailPage({
       {profile &&
         (profile.electionCount > 0 ||
           profile.positions.length > 0 ||
-          profile.committees.length > 0) && (
+          profile.committees.length > 0 ||
+          !!profile.summary ||
+          !!profile.homepage ||
+          !!profile.x) && (
           <section className="border-l-2 border-line bg-subtle px-4 py-4">
+            {profile.summary && <p className="measure mb-3 text-sm text-ink">{profile.summary}</p>}
             <div className="space-y-2 text-sm">
               {profile.electionCount > 0 && (
                 <p>
@@ -139,8 +143,10 @@ export default async function LegislatorDetailPage({
                 </p>
               )}
             </div>
-            <p className="mt-3 text-xs">
+            <p className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs">
               <SourceLink href={profile.sourceUrl}>プロフィール出典</SourceLink>
+              {profile.homepage && <SourceLink href={profile.homepage}>公式サイト</SourceLink>}
+              {profile.x && <SourceLink href={profile.x}>公式X</SourceLink>}
             </p>
           </section>
         )}
