@@ -77,7 +77,7 @@ export default function HomePage() {
       <section className="grid grid-cols-2 gap-x-6 gap-y-6 py-12 sm:grid-cols-4">
         {stats.map((s) => (
           <div key={s.l} className="border-t-2 border-ink pt-3">
-            <div className="font-display tnum text-3xl sm:text-4xl">{s.v}</div>
+            <div className="num-display tnum text-3xl sm:text-4xl">{s.v}</div>
             <div className="mt-1 text-xs text-muted">{s.l}</div>
           </div>
         ))}
@@ -144,7 +144,7 @@ export default function HomePage() {
               href={l.href}
               className="group grid grid-cols-[2.5rem_1fr_auto] items-baseline gap-4 border-t border-line py-6 transition-colors hover:bg-subtle"
             >
-              <span className="font-display tnum text-faint">{l.n}</span>
+              <span className="num-display tnum text-faint">{l.n}</span>
               <div>
                 <h3 className="font-display text-xl sm:text-2xl">{l.label}</h3>
                 <p className="mt-1 text-sm text-muted">{l.body}</p>

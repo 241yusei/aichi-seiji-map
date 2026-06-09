@@ -45,7 +45,7 @@ export function KenshiQuiz() {
     return (
       <div className="border border-ink bg-surface p-6 text-center">
         <p className="eyebrow text-accent-deep">けっか</p>
-        <p className="font-display tnum mt-2 text-4xl">
+        <p className="num-display tnum mt-2 text-4xl">
           {score} <span className="text-xl text-muted">/ {total}</span>
         </p>
         <p className="mt-3 text-sm text-muted">

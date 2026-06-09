@@ -33,7 +33,7 @@ export default function IssuesPage() {
               href={`/issues/${issue.id}/`}
               className="group grid grid-cols-[2.5rem_1fr_auto] items-baseline gap-4 border-t border-line py-6 transition-colors last:border-b hover:bg-subtle"
             >
-              <span className="font-display tnum text-faint">{String(i + 1).padStart(2, "0")}</span>
+              <span className="num-display tnum text-faint">{String(i + 1).padStart(2, "0")}</span>
               <div>
                 <h2 className="font-display text-xl sm:text-2xl">{issue.title}</h2>
                 <p className="measure mt-1 line-clamp-2 text-sm text-muted">{issue.description}</p>

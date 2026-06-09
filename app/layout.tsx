@@ -1,32 +1,27 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { Anton, Inter, Noto_Sans_JP, Space_Mono } from "next/font/google";
+import { Anton, IBM_Plex_Sans_JP, Space_Mono } from "next/font/google";
 import { getActiveElectionWindow } from "@/lib/election-window";
 import { ElectionPeriodBanner } from "@/components/ElectionPeriodBanner";
 import { BottomNav } from "@/components/BottomNav";
 import { LAST_UPDATED, SITE_X } from "@/lib/site-meta";
 import "./globals.css";
 
-// 超极太グロテスクのディスプレイ書体（特大見出し・032c 風）。
+// 数字・章番号・特大カウンタ専用（“見せ場”だけ。見出し本体には使わない＝声を下げる）。
 const anton = Anton({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-anton",
   display: "swap",
 });
-// UI・本文の欧文/数字（中立グロテスク）。
-const inter = Inter({
+// 本文・見出しの主役（和文＝“見える声”。Plex JP でエディトリアルな識別性／和欧混植も同ファミリで）。
+const plexJP = IBM_Plex_Sans_JP({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ["400", "600", "700"],
+  variable: "--font-plex",
   display: "swap",
-});
-// 和文（見出しは 900 で塊感）。
-const notoJP = Noto_Sans_JP({
-  subsets: ["latin"],
-  weight: ["400", "500", "700", "900"],
-  variable: "--font-noto",
-  display: "swap",
+  preload: false,
 });
 // メタ・ラベル・番号（モノスペース＝編集的）。
 const spaceMono = Space_Mono({
@@ -64,7 +59,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="ja"
-      className={`${anton.variable} ${inter.variable} ${notoJP.variable} ${spaceMono.variable}`}
+      className={`${anton.variable} ${plexJP.variable} ${spaceMono.variable}`}
     >
       <body className="min-h-dvh">
         <a

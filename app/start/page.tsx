@@ -68,7 +68,7 @@ export default function StartPage() {
         {LADDERS.map((l) => (
           <section key={l.n} className="bg-surface p-6">
             <div className="flex items-baseline gap-3">
-              <span className="font-display tnum text-2xl text-faint">{l.n}</span>
+              <span className="num-display tnum text-2xl text-faint">{l.n}</span>
               <h2 className="font-display text-xl leading-snug">{l.title}</h2>
             </div>
             <p className="mt-2 text-sm text-muted">{l.desc}</p>

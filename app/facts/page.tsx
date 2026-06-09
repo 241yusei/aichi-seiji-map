@@ -34,7 +34,7 @@ export default function FactsPage() {
               href={`/facts/${card.id}/`}
               className="reveal group grid grid-cols-[2.5rem_1fr_auto] items-baseline gap-4 border-t border-line py-6 transition-colors last:border-b hover:bg-subtle"
             >
-              <span className="font-display tnum text-faint">
+              <span className="num-display tnum text-faint">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <div>
