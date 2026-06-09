@@ -28,7 +28,9 @@ export default function HomePage() {
   const legCount = getLegislators().length;
   const speechCount = getSpeeches().length;
   const issueCount = getIssues().length;
-  const facts = getFactCards().slice(0, 3);
+  const facts = getFactCards();
+  const featured = facts[0];
+  const rest = facts.slice(1, 3);
   const stats = [
     { v: legCount.toLocaleString(), l: "代表者（国・県・市町村）" },
     { v: speechCount.toLocaleString(), l: "国会発言（出典つき）" },
@@ -38,37 +40,32 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* ヒーロー */}
-      <section className="border-b-2 border-ink pb-12">
+      {/* ヒーロー（便益＝自分ごと／郵便番号を主役に） */}
+      <section className="border-b-2 border-ink pb-10">
         <p className="eyebrow text-accent-deep">政治のトリセツ あいち・なごや ／ 知ってから、選ぶ。</p>
-        <h1 className="font-display mt-5 text-[clamp(2.2rem,7vw,5rem)] leading-[1.02]">
-          政治、よくわからなくても
+        <h1 className="font-display mt-5 text-[clamp(2.1rem,6.5vw,4.5rem)] leading-[1.05]">
+          あなたの暮らしを、
           <br className="hidden sm:block" />
-          大丈夫。
+          だれが決めている？
         </h1>
-        <p className="measure mt-6 text-base text-muted sm:text-lg">
-          愛知・名古屋の政治を、やさしい解説と公的な一次ソースで。国会（愛知選出）・愛知県議会・全54市町村を横断し、
-          だれが何を言い・どう動いたかを確認できます。むずかしい言葉は、ふれれば意味が出ます。
+        <p className="measure mt-5 text-base text-muted sm:text-lg">
+          郵便番号を入れるだけ。あなたの街の代表者と、その人の“記録”が30秒で見つかります。
+          中立・一次ソースで、むずかしい言葉はふれれば意味が出ます。
         </p>
 
-        <div className="mt-8 flex flex-wrap gap-3">
-          <Link
-            href="/start"
-            className="bg-accent px-5 py-3 text-sm font-bold text-on-accent transition-colors hover:bg-accent-deep"
-          >
-            はじめての方はこちら（どこから見る？）
-          </Link>
-          <Link
-            href="/learn"
-            className="border border-ink px-5 py-3 text-sm font-bold transition-colors hover:bg-subtle"
-          >
-            基礎からまなぶ
-          </Link>
-        </div>
-
-        <div className="mt-9 max-w-xl">
+        <div className="mt-7 max-w-xl">
           <p className="eyebrow mb-2 text-ink">郵便番号で、あなたの地域の代表者を調べる</p>
           <ZipSearch />
+        </div>
+
+        <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
+          <span className="text-faint">はじめての方は</span>
+          <Link href="/start" className="link-ink font-bold">
+            どこから見る？（はじめに）
+          </Link>
+          <Link href="/learn" className="link-ink">
+            基礎からまなぶ
+          </Link>
         </div>
       </section>
 
@@ -82,34 +79,44 @@ export default function HomePage() {
         ))}
       </section>
 
-      {/* 事実カード（記録から見えるギャップ） */}
-      {facts.length > 0 && (
+      {/* 注目の事実カード（0クリックで価値を見せる） */}
+      {featured && (
         <section className="border-t-2 border-ink py-10">
           <div className="flex items-baseline justify-between gap-4">
-            <h2 className="eyebrow text-accent-deep">事実カード｜記録から見えるギャップ</h2>
+            <h2 className="eyebrow text-accent-deep">注目の事実カード｜記録から見えるギャップ</h2>
             <Link href="/facts" className="link-ink text-sm">
               一覧へ
             </Link>
           </div>
-          <div className="mt-4 grid gap-px border border-line bg-line sm:grid-cols-3">
-            {facts.map((card) => (
-              <Link
-                key={card.id}
-                href={`/facts/${card.id}/`}
-                className="group flex flex-col bg-surface p-5 transition-colors hover:bg-subtle"
-              >
-                <FactCardType type={card.cardType} />
-                <h3 className="font-display mt-3 text-lg leading-snug">{card.title}</h3>
-                <p className="mt-2 line-clamp-3 text-sm text-muted">{card.hook}</p>
-                <span
-                  aria-hidden
-                  className="mt-4 text-faint transition-colors group-hover:text-accent"
+          <Link
+            href={`/facts/${featured.id}/`}
+            className="group mt-4 block border border-ink bg-surface p-6 transition-colors hover:bg-subtle"
+          >
+            <FactCardType type={featured.cardType} />
+            <h3 className="font-display mt-3 text-2xl leading-snug sm:text-3xl">{featured.title}</h3>
+            <p className="measure mt-2 text-muted">{featured.hook}</p>
+            <span
+              aria-hidden
+              className="mt-4 inline-block text-faint transition-colors group-hover:text-accent"
+            >
+              記録を見る →
+            </span>
+          </Link>
+          {rest.length > 0 && (
+            <div className="mt-4 grid gap-px border border-line bg-line sm:grid-cols-2">
+              {rest.map((card) => (
+                <Link
+                  key={card.id}
+                  href={`/facts/${card.id}/`}
+                  className="group flex flex-col bg-surface p-5 transition-colors hover:bg-subtle"
                 >
-                  記録を見る →
-                </span>
-              </Link>
-            ))}
-          </div>
+                  <FactCardType type={card.cardType} />
+                  <h3 className="font-display mt-2 text-lg leading-snug">{card.title}</h3>
+                  <p className="mt-2 line-clamp-2 text-sm text-muted">{card.hook}</p>
+                </Link>
+              ))}
+            </div>
+          )}
         </section>
       )}
 

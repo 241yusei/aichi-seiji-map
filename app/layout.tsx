@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Anton, Inter, Noto_Sans_JP, Space_Mono } from "next/font/google";
 import { getActiveElectionWindow } from "@/lib/election-window";
 import { ElectionPeriodBanner } from "@/components/ElectionPeriodBanner";
+import { LAST_UPDATED } from "@/lib/site-meta";
 import "./globals.css";
 
 // 超极太グロテスクのディスプレイ書体（特大見出し・032c 風）。
@@ -141,6 +142,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 支援・寄付
               </Link>
             </div>
+            <p className="mt-5 text-xs text-faint">
+              データ最終更新：{LAST_UPDATED}（手動更新のため、改選などで内容が変わることがあります）。
+              訂正・更新は{" "}
+              <Link href="/corrections" className="link-ink">
+                訂正・更新ログ
+              </Link>
+              。
+            </p>
           </div>
         </footer>
       </body>
