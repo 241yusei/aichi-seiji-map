@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/start",
     "/learn",
     "/glossary",
+    "/vote-guide",
     "/area",
     "/legislators",
     "/executives",

@@ -41,9 +41,9 @@ const LADDERS = [
   {
     n: "04",
     title: "次の投票にそなえたい",
-    desc: "基礎をおさえ、自分の地域の代表と争点を確認しておく。",
+    desc: "投票の流れを確認し、自分の地域の代表と争点を見ておく。",
     steps: [
-      { label: "基礎をまとめて読む（まなぶ）", href: "/learn" },
+      { label: "投票ガイドで流れを確認する", href: "/vote-guide" },
       { label: "自分の地域の代表を確認する", href: "/area" },
       { label: "争点ごとの立場を事実で見る", href: "/issues" },
     ],
