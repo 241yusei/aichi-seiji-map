@@ -41,8 +41,14 @@ export function CrossLayerView({
             （関連発言が会議録に記録され次第、追加します）
           </p>
         ) : (
-          <div className="grid gap-3 lg:grid-cols-2">
-            {items.map(({ speech, legislator }) => (
+          <>
+            <p className="tnum mb-3 border-b border-line pb-2 text-sm text-muted">
+              この争点の取得済み発言：
+              <span className="font-bold text-ink">{items.length}件</span>
+              （各発言に出典つき）
+            </p>
+            <div className="grid gap-3 lg:grid-cols-2">
+              {items.map(({ speech, legislator }) => (
               <div key={speech.id}>
                 {legislator && (
                   <Link
@@ -53,10 +59,11 @@ export function CrossLayerView({
                     {legislator.party ? `・${legislator.party}` : ""}）
                   </Link>
                 )}
-                <SpeechCard speech={speech} />
-              </div>
-            ))}
-          </div>
+                  <SpeechCard speech={speech} />
+                </div>
+              ))}
+            </div>
+          </>
         )}
       </section>
 
