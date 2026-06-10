@@ -7,10 +7,22 @@
     "body": "愛知選出の国会議員の政治資金収支報告（2024年・令和6年分）を並べると、最多は今枝宗一郎氏の約1億547万円、最少は鈴木淳司氏の約2万円。差は約5,150倍ある。",
     "caveat": "多い＝悪い、ではない。これは「選挙区支部」と「後援会」という団体の種類の違いが大きい。選挙区支部には政党からの資金が通り、後援会は個人後援が中心で性質が異なる。数字は団体の種類とセットで読む。",
     "points": [
-      { "label": "今枝宗一郎（自民・選挙区支部）", "value": "約1億547万円" },
-      { "label": "斎藤嘉隆（立憲・政治団体）", "value": "約5,360万円" },
-      { "label": "河村たかし（政治団体）", "value": "約3,426万円" },
-      { "label": "鈴木淳司（後援会）", "value": "約2万円" }
+      {
+        "label": "今枝宗一郎（自民・選挙区支部）",
+        "value": "約1億547万円"
+      },
+      {
+        "label": "斎藤嘉隆（立憲・政治団体）",
+        "value": "約5,360万円"
+      },
+      {
+        "label": "河村たかし（政治団体）",
+        "value": "約3,426万円"
+      },
+      {
+        "label": "鈴木淳司（後援会）",
+        "value": "約2万円"
+      }
     ],
     "sources": [
       {
@@ -32,12 +44,30 @@
     "body": "「愛知の争点」を国会会議録（愛知選出議員・2017年〜の収録分）で数えると、関連発言はアジア大会11件・EV転換9件・外国人労働4件・セントレア1件。一方で、リニア中央新幹線と名古屋城の木造復元は0件だった。",
     "caveat": "0件は「関心がない」という意味ではなく、「国会の発言として記録に出てこない＝愛知県議会・市町村議会で追うべきテーマ」ということ。件数は当サイトの収録範囲（2017年〜・議員名一致での抽出）に基づく目安。",
     "points": [
-      { "label": "アジア・アジアパラ大会", "value": "11件" },
-      { "label": "自動車のEV転換", "value": "9件" },
-      { "label": "製造業の外国人労働", "value": "4件" },
-      { "label": "中部国際空港（セントレア）", "value": "1件" },
-      { "label": "リニア中央新幹線", "value": "0件" },
-      { "label": "名古屋城（木造復元）", "value": "0件" }
+      {
+        "label": "アジア・アジアパラ大会",
+        "value": "11件"
+      },
+      {
+        "label": "自動車のEV転換",
+        "value": "9件"
+      },
+      {
+        "label": "製造業の外国人労働",
+        "value": "4件"
+      },
+      {
+        "label": "中部国際空港（セントレア）",
+        "value": "1件"
+      },
+      {
+        "label": "リニア中央新幹線",
+        "value": "0件"
+      },
+      {
+        "label": "名古屋城（木造復元）",
+        "value": "0件"
+      }
     ],
     "sources": [
       {
@@ -67,8 +97,14 @@
     "body": "健康保険法等の一部を改正する法律案（2026年）の参議院の採決で、愛知関係の参院議員の賛否は賛成5・反対3に分かれた。賛成は藤川政人・伊藤孝恵・酒井庸行・水野孝一・杉本純子、反対は里見隆治・斎藤嘉隆・田島麻衣子。",
     "caveat": "どちらが正しいという評価はしない。記録（誰がどう投じたか）を示すだけ。なお参議院の記名投票（押しボタン式）は個人の賛否が公開されるが、衆議院の起立採決では個人の賛否は公表されない。",
     "points": [
-      { "label": "賛成", "value": "5名" },
-      { "label": "反対", "value": "3名" }
+      {
+        "label": "賛成",
+        "value": "5名"
+      },
+      {
+        "label": "反対",
+        "value": "3名"
+      }
     ],
     "sources": [
       {
@@ -86,15 +122,36 @@
     "body": "2026年の参議院の採決を愛知関係の参院議員で見ると、健康保険法等の改正は賛成5・反対3、入管法の改正は賛成6・反対2と割れた。一方で、産業競争力強化等の法案は賛成8・反対0の全会一致だった。",
     "caveat": "賛否のどちらが正しいという評価はしない。議案によって対立する・しないが分かれるという「記録」を示すだけ。個別の賛否が分かるのは参議院の記名投票のため（衆議院の起立採決は非公開）。",
     "points": [
-      { "label": "健康保険法 改正", "value": "賛5・反3" },
-      { "label": "入管法 改正", "value": "賛6・反2" },
-      { "label": "地域公共交通 活性化", "value": "賛7・反1" },
-      { "label": "産業競争力強化 等", "value": "賛8・反0" }
+      {
+        "label": "健康保険法 改正",
+        "value": "賛5・反3"
+      },
+      {
+        "label": "入管法 改正",
+        "value": "賛6・反2"
+      },
+      {
+        "label": "地域公共交通 活性化",
+        "value": "賛7・反1"
+      },
+      {
+        "label": "産業競争力強化 等",
+        "value": "賛8・反0"
+      }
     ],
     "sources": [
-      { "label": "参議院 投票結果（健康保険法等改正）", "url": "https://www.sangiin.go.jp/japanese/touhyoulist/221/221-0529-v005.htm" },
-      { "label": "参議院 投票結果（入管法改正）", "url": "https://www.sangiin.go.jp/japanese/touhyoulist/221/221-0529-v007.htm" },
-      { "label": "参議院 投票結果（産業競争力強化等）", "url": "https://www.sangiin.go.jp/japanese/touhyoulist/221/221-0529-v009.htm" }
+      {
+        "label": "参議院 投票結果（健康保険法等改正）",
+        "url": "https://www.sangiin.go.jp/japanese/touhyoulist/221/221-0529-v005.htm"
+      },
+      {
+        "label": "参議院 投票結果（入管法改正）",
+        "url": "https://www.sangiin.go.jp/japanese/touhyoulist/221/221-0529-v007.htm"
+      },
+      {
+        "label": "参議院 投票結果（産業競争力強化等）",
+        "url": "https://www.sangiin.go.jp/japanese/touhyoulist/221/221-0529-v009.htm"
+      }
     ],
     "publishedAt": "2026-06-06"
   },
@@ -106,15 +163,36 @@
     "body": "愛知県内の54市町村長のうち、女性は碧南市・知立市・長久手市の3人。県知事を含む55首長で見ても3人にとどまる。",
     "caveat": "数の多寡だけで良し悪しを論じるものではない。誰が地域を率いているかという「事実」を示す。氏名・肩書は各自治体公式サイトの記載に基づく。",
     "points": [
-      { "label": "碧南市長", "value": "小池友妃子" },
-      { "label": "知立市長", "value": "石川智子" },
-      { "label": "長久手市長", "value": "佐藤有美" },
-      { "label": "女性首長", "value": "54人中3人" }
+      {
+        "label": "碧南市長",
+        "value": "小池友妃子"
+      },
+      {
+        "label": "知立市長",
+        "value": "石川智子"
+      },
+      {
+        "label": "長久手市長",
+        "value": "佐藤有美"
+      },
+      {
+        "label": "女性首長",
+        "value": "54人中3人"
+      }
     ],
     "sources": [
-      { "label": "碧南市 市長の部屋", "url": "https://www.city.hekinan.lg.jp/city_info/shichonoheya/index.html" },
-      { "label": "知立市 市長プロフィール", "url": "https://www.city.chiryu.aichi.jp/mayor/1451813514083.html" },
-      { "label": "長久手市（市長名義の公式公告）", "url": "https://www.city.nagakute.lg.jp/material/files/group/5/koukoku6-090.pdf" }
+      {
+        "label": "碧南市 市長の部屋",
+        "url": "https://www.city.hekinan.lg.jp/city_info/shichonoheya/index.html"
+      },
+      {
+        "label": "知立市 市長プロフィール",
+        "url": "https://www.city.chiryu.aichi.jp/mayor/1451813514083.html"
+      },
+      {
+        "label": "長久手市（市長名義の公式公告）",
+        "url": "https://www.city.nagakute.lg.jp/material/files/group/5/koukoku6-090.pdf"
+      }
     ],
     "publishedAt": "2026-06-06"
   },
@@ -126,12 +204,24 @@
     "body": "国会会議録（2017年〜の収録分）で愛知選出議員の発言を数えると、ベテラン勢が数十件を記録する一方、2026年2月の総選挙で初当選した水野良彦・岡本康宏・山下史守朗・藤澤忠盛の4氏は0件だった。",
     "caveat": "0件は「仕事をしていない」という意味ではなく、当選から日が浅く、本会議・委員会の発言が会議録にまだ現れていないことを示す。件数は当サイトの収録範囲（議員名一致での抽出）に基づく。",
     "points": [
-      { "label": "ベテラン勢", "value": "数十件" },
-      { "label": "2026年初当選の4人", "value": "0件" }
+      {
+        "label": "ベテラン勢",
+        "value": "数十件"
+      },
+      {
+        "label": "2026年初当選の4人",
+        "value": "0件"
+      }
     ],
     "sources": [
-      { "label": "国会会議録検索システム", "url": "https://kokkai.ndl.go.jp/" },
-      { "label": "新人議員の経歴（自民党愛知県連・例）", "url": "https://www.jimin-aichi.or.jp/archives/member/407-2" }
+      {
+        "label": "国会会議録検索システム",
+        "url": "https://kokkai.ndl.go.jp/"
+      },
+      {
+        "label": "新人議員の経歴（自民党愛知県連・例）",
+        "url": "https://www.jimin-aichi.or.jp/archives/member/407-2"
+      }
     ],
     "publishedAt": "2026-06-06"
   },
@@ -143,14 +233,32 @@
     "body": "当サイト収録の20名（2024年・令和6年分）で、収入が5,000万円を超えたのは今枝宗一郎・丹羽秀樹・斎藤嘉隆・伊藤忠彦の4人。残りは数百万〜数千万円台が中心です。",
     "caveat": "金額の多寡は善悪ではありません。選挙区支部か後援会かなど“団体の種類”で規模が変わります。数字は種類とセットで読みます。",
     "points": [
-      { "label": "5,000万円超", "value": "4人 / 20人" },
-      { "label": "今枝宗一郎", "value": "約1億547万円" },
-      { "label": "丹羽秀樹", "value": "約7,558万円" },
-      { "label": "斎藤嘉隆", "value": "約5,360万円" }
+      {
+        "label": "5,000万円超",
+        "value": "4人 / 20人"
+      },
+      {
+        "label": "今枝宗一郎",
+        "value": "約1億547万円"
+      },
+      {
+        "label": "丹羽秀樹",
+        "value": "約7,558万円"
+      },
+      {
+        "label": "斎藤嘉隆",
+        "value": "約5,360万円"
+      }
     ],
     "sources": [
-      { "label": "今枝宗一郎 収支報告書（県選管PDF）", "url": "https://www.pref.aichi.jp/senkyo/071128/x/c06x0083.pdf" },
-      { "label": "丹羽秀樹 収支報告書（県選管PDF）", "url": "https://www.pref.aichi.jp/senkyo/071128/x/c06x0089.pdf" }
+      {
+        "label": "今枝宗一郎 収支報告書（県選管PDF）",
+        "url": "https://www.pref.aichi.jp/senkyo/071128/x/c06x0083.pdf"
+      },
+      {
+        "label": "丹羽秀樹 収支報告書（県選管PDF）",
+        "url": "https://www.pref.aichi.jp/senkyo/071128/x/c06x0089.pdf"
+      }
     ],
     "publishedAt": "2026-06-08"
   },
@@ -162,14 +270,32 @@
     "body": "愛知の町村では、選挙で定数に候補が足りない「無投票・定数割れ」が起きている議会がある。東郷町は定数16に対し現員15、大治町は12に対し11、美浜町は14に対し12、設楽町は10に対し9。",
     "caveat": "定数割れ＝悪い議会という意味ではなく、地方議会の「なり手不足」という全国的な課題の表れ。人数は各議会の公式名簿（現員）に基づく。",
     "points": [
-      { "label": "東郷町", "value": "15 / 16" },
-      { "label": "大治町", "value": "11 / 12" },
-      { "label": "美浜町", "value": "12 / 14" },
-      { "label": "設楽町", "value": "9 / 10" }
+      {
+        "label": "東郷町",
+        "value": "15 / 16"
+      },
+      {
+        "label": "大治町",
+        "value": "11 / 12"
+      },
+      {
+        "label": "美浜町",
+        "value": "12 / 14"
+      },
+      {
+        "label": "設楽町",
+        "value": "9 / 10"
+      }
     ],
     "sources": [
-      { "label": "東郷町議会 議員名簿", "url": "https://www.town.aichi-togo.lg.jp/soshikikarasagasu/gikaijimukyoku/gyomuannai/2/4/2909.html" },
-      { "label": "設楽町議会 議員名簿", "url": "https://www.town.shitara.lg.jp/soshiki/9/1228.html" }
+      {
+        "label": "東郷町議会 議員名簿",
+        "url": "https://www.town.aichi-togo.lg.jp/soshikikarasagasu/gikaijimukyoku/gyomuannai/2/4/2909.html"
+      },
+      {
+        "label": "設楽町議会 議員名簿",
+        "url": "https://www.town.shitara.lg.jp/soshiki/9/1228.html"
+      }
     ],
     "publishedAt": "2026-06-08"
   },
@@ -181,14 +307,32 @@
     "body": "愛知選出の国会議員32人の所属政党は、自由民主党18・国民民主党6・立憲民主党2・参政党2・公明党1・日本維新の会1・中道改革連合1・減税日本ほか1。",
     "caveat": "数の多少で良し悪しは決まりません。所属は移動することがあり、最新は各議員ページの出典でご確認ください。",
     "points": [
-      { "label": "自由民主党", "value": "18人" },
-      { "label": "国民民主党", "value": "6人" },
-      { "label": "立憲民主党", "value": "2人" },
-      { "label": "参政党", "value": "2人" }
+      {
+        "label": "自由民主党",
+        "value": "18人"
+      },
+      {
+        "label": "国民民主党",
+        "value": "6人"
+      },
+      {
+        "label": "立憲民主党",
+        "value": "2人"
+      },
+      {
+        "label": "参政党",
+        "value": "2人"
+      }
     ],
     "sources": [
-      { "label": "衆議院 議員一覧（公式）", "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/menu_m.htm" },
-      { "label": "参議院 議員一覧（公式）", "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/giin.htm" }
+      {
+        "label": "衆議院 議員一覧（公式）",
+        "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/menu_m.htm"
+      },
+      {
+        "label": "参議院 議員一覧（公式）",
+        "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/giin.htm"
+      }
     ],
     "publishedAt": "2026-06-08"
   },
@@ -200,12 +344,24 @@
     "body": "愛知選出の国会議員32人のうち、女性は日野紗里亜・丹野みどり・伊藤孝恵・田島麻衣子・杉本純子・渡辺藍理の6人（約19%）。市町村長（55人中3人）とあわせ、女性は少数にとどまる。",
     "caveat": "数の多少で良し悪しを論じるものではありません。誰が地域を代表しているかという事実を示します。氏名・所属は公式に基づきます。",
     "points": [
-      { "label": "女性議員", "value": "6人 / 32人" },
-      { "label": "割合", "value": "約19%" }
+      {
+        "label": "女性議員",
+        "value": "6人 / 32人"
+      },
+      {
+        "label": "割合",
+        "value": "約19%"
+      }
     ],
     "sources": [
-      { "label": "衆議院 議員一覧（公式）", "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/menu_m.htm" },
-      { "label": "参議院 議員一覧（公式）", "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/giin.htm" }
+      {
+        "label": "衆議院 議員一覧（公式）",
+        "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/menu_m.htm"
+      },
+      {
+        "label": "参議院 議員一覧（公式）",
+        "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/giin.htm"
+      }
     ],
     "relatedIssueIds": [],
     "publishedAt": "2026-06-08"
@@ -218,12 +374,24 @@
     "body": "当選回数で見ると、最多は古川元久氏の11回。一方で当選1回の新人も8人いて、経験の幅が広い。",
     "caveat": "当選回数の多い・少ないは、良し悪しではありません。経験の長さと新しさ、それぞれに見方があります。回数は衆参公式・本人公式に基づきます。",
     "points": [
-      { "label": "最多", "value": "古川元久 11回" },
-      { "label": "新人（1回）", "value": "8人" }
+      {
+        "label": "最多",
+        "value": "古川元久 11回"
+      },
+      {
+        "label": "新人（1回）",
+        "value": "8人"
+      }
     ],
     "sources": [
-      { "label": "衆議院 議員一覧（公式）", "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/menu_m.htm" },
-      { "label": "参議院 議員一覧（公式）", "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/giin.htm" }
+      {
+        "label": "衆議院 議員一覧（公式）",
+        "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/menu_m.htm"
+      },
+      {
+        "label": "参議院 議員一覧（公式）",
+        "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/giin.htm"
+      }
     ],
     "publishedAt": "2026-06-08"
   },
@@ -235,12 +403,50 @@
     "body": "愛知選出の国会議員32人のうち、大臣・副大臣の経験を持つのは14人。元総務大臣の鈴木淳司、元復興大臣の伊藤忠彦、デジタル副大臣の今枝宗一郎、農林水産副大臣の根本幸典、元国家戦略担当大臣の古川元久など。",
     "caveat": "経験の有無＝良し悪しではありません。役職は時期で変わるため、最新は各議員ページの出典でご確認ください。",
     "points": [
-      { "label": "大臣・副大臣の経験者", "value": "14人 / 32人" }
+      {
+        "label": "大臣・副大臣の経験者",
+        "value": "14人 / 32人"
+      }
     ],
     "sources": [
-      { "label": "衆議院 議員一覧（公式）", "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/menu_m.htm" },
-      { "label": "参議院 議員一覧（公式）", "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/giin.htm" }
+      {
+        "label": "衆議院 議員一覧（公式）",
+        "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/menu_m.htm"
+      },
+      {
+        "label": "参議院 議員一覧（公式）",
+        "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/giin.htm"
+      }
     ],
     "publishedAt": "2026-06-08"
+  },
+  {
+    "id": "comparison-vote-budget-2026",
+    "title": "令和8年度予算、愛知の衆院議員は賛成17・反対7に分かれた",
+    "hook": "記名投票だから、誰がどう投じたかが分かる。",
+    "cardType": "comparison",
+    "body": "2026年3月13日の衆院本会議で、令和8年度予算3案は記名投票で可決（全体は賛成350・反対109）。愛知選出の衆院議員24人は賛成17・反対7に分かれた。反対は河村たかし・古川元久・日野紗里亜・丹野みどり・渡辺藍理・重徳和彦・福田徹の7氏。",
+    "caveat": "賛否の多少は良し悪しを示しません。予算は政府提出案件で、与党系が賛成・野党系が反対に回るのが通例です。起立採決の議案は個人の賛否が公表されません（記名投票のときのみ公開）。",
+    "points": [
+      {
+        "label": "賛成",
+        "value": "17人"
+      },
+      {
+        "label": "反対",
+        "value": "7人"
+      },
+      {
+        "label": "採決方法",
+        "value": "記名投票（個人賛否が公開）"
+      }
+    ],
+    "sources": [
+      {
+        "label": "国会会議録 衆院本会議（2026-03-13）",
+        "url": "https://kokkai.ndl.go.jp/txt/122105254X00620260313"
+      }
+    ],
+    "publishedAt": "2026-06-10"
   }
 ]
