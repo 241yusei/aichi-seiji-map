@@ -118,6 +118,8 @@ export const executiveSchema = z.object({
   area: z.string().min(1),
   party: z.string().optional(),
   termStart: isoDate.optional(),
+  termEnd: isoDate.optional(),
+  termSourceUrl: httpUrl.optional(),
   homepage: httpUrl.optional(),
   sourceUrl: httpUrl,
 });
