@@ -8,11 +8,10 @@ export interface DonationOption {
 }
 
 // 一度の寄付（金額プリセット）。空配列なら /support は「準備中」を表示する。
-export const DONATION_ONE_TIME: DonationOption[] = [
-  { amountLabel: "¥500", url: "https://buy.stripe.com/test_00w7sEaPE3E5f4HgEL5wI00" },
-  { amountLabel: "¥1,000", url: "https://buy.stripe.com/test_28E8wI7DsdeFg8LewD5wI01" },
-  { amountLabel: "¥3,000", url: "https://buy.stripe.com/test_6oU5kw1f4gqR6yb88f5wI02" },
-];
+// ※Stripeはアカウント審査中（寄付＝クラウドファンディング扱いの可能性で異議申し立て中）のため、
+//   本番リンクは未掲載。承認されたら live の Payment Link URL を下に入れる（テスト用URLは出さない）。
+//   不可となった場合は OFUSE / note メンバーシップ等の補完チャネル（app/support の定数）に切り替える。
+export const DONATION_ONE_TIME: DonationOption[] = [];
 
 // 毎月の継続支援（サブスク）。未作成なら空文字。
 export const DONATION_MONTHLY = "";
