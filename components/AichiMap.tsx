@@ -16,14 +16,14 @@ export function AichiMap() {
     <figure className="amap border border-line bg-surface p-2">
       <style>{`
         .amap svg { width: 100%; height: auto; display: block; }
-        .amap path { stroke: #1a1c1e; stroke-width: 0.6; transition: fill .15s; }
-        .amap .r-nagoya { fill: #cfe0df; }
-        .amap .r-owari { fill: #eef3f3; }
-        .amap .r-chita { fill: #e3eeec; }
-        .amap .r-nishi { fill: #e9f1f0; }
-        .amap .r-higashi { fill: #dce9e8; }
-        .amap a:hover path { fill: #0f7d86 !important; }
-        .amap a:focus path { fill: #0f7d86 !important; outline: none; }
+        .amap path { stroke: #1f1a14; stroke-width: 0.6; transition: fill .15s; }
+        .amap .r-nagoya { fill: #e0d2b8; }
+        .amap .r-owari { fill: #f2ebdb; }
+        .amap .r-chita { fill: #e9dfc8; }
+        .amap .r-nishi { fill: #ece3d0; }
+        .amap .r-higashi { fill: #dccfb4; }
+        .amap a:hover path { fill: #5c4470 !important; }
+        .amap a:focus path { fill: #5c4470 !important; outline: none; }
       `}</style>
       <svg viewBox={AICHI_MAP.viewBox} role="img" aria-label="愛知県の市町村地図（クリックで各市町村へ）">
         {AICHI_MAP.shapes.map((s) => (

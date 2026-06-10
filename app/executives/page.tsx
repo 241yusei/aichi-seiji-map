@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getExecutives } from "@/lib/data";
 import { SourceLink } from "@/components/SourceLink";
+import { CompositionDots } from "@/components/CompositionDots";
 import { LAST_UPDATED } from "@/lib/site-meta";
 
 export const metadata: Metadata = {
@@ -50,7 +51,7 @@ export default function ExecutivesPage() {
 
   return (
     <div className="space-y-10">
-      <header className="border-b-2 border-ink pb-6">
+      <header className="border-b-[3px] border-ink pb-6">
         <p className="eyebrow text-faint">Executives</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">
           首長（知事・市町村長）
@@ -59,6 +60,30 @@ export default function ExecutivesPage() {
           愛知県知事と県内市町村長を、各自治体公式サイトの一次ソース付きで。
           議会（議員）が「決める人たち」なら、首長は「率いる人」。あわせて見ると地域の政治が立体的になります。
         </p>
+        {/* 構成のドット（実データ：肩書別の人数） */}
+        <div className="mt-5">
+          <CompositionDots
+            groups={[
+              {
+                label: "知事",
+                count: executives.filter((e) => e.title === "知事").length,
+                color: "var(--color-chart-national)",
+              },
+              {
+                label: "市長",
+                count: executives.filter((e) => e.title === "市長").length,
+                color: "var(--color-chart-pref)",
+              },
+              {
+                label: "町長・村長",
+                count: executives.filter((e) => e.title === "町長" || e.title === "村長").length,
+                color: "var(--color-chart-municipal)",
+                shape: "ring",
+              },
+            ]}
+            caption={`計${executives.length}人（各自治体公式サイトより）`}
+          />
+        </div>
       </header>
 
       {governor.length > 0 && (

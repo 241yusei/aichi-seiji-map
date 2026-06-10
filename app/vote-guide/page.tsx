@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <section className="border-t-2 border-ink pt-5">
+    <section className="rule-thick pt-5">
       <h2 className="font-display text-xl">{title}</h2>
       <div className="measure mt-2 space-y-2 text-sm text-muted">{children}</div>
     </section>
@@ -21,7 +21,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 export default function VoteGuidePage() {
   return (
     <div className="space-y-8">
-      <header className="border-b-2 border-ink pb-6">
+      <header className="border-b-[3px] border-ink pb-6">
         <p className="eyebrow text-accent-deep">投票ガイド</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">
           はじめての投票

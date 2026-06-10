@@ -22,7 +22,7 @@ export default function SupportPage() {
 
   return (
     <div className="space-y-8">
-      <header className="border-b-2 border-ink pb-6">
+      <header className="border-b-[3px] border-ink pb-6">
         <p className="eyebrow text-faint">Support</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">支援・寄付</h1>
         <p className="measure mt-3 text-muted">
@@ -47,7 +47,7 @@ export default function SupportPage() {
         </ul>
       </section>
 
-      <section className="border-t-2 border-ink pt-5">
+      <section className="rule-thick pt-5">
         <h2 className="font-display text-xl">寄付で応援する</h2>
         {DONATION_ONE_TIME.length > 0 || DONATION_MONTHLY ? (
           <>
@@ -100,7 +100,7 @@ export default function SupportPage() {
       </section>
 
       {others.length > 0 && (
-        <section className="border-t-2 border-ink pt-5">
+        <section className="rule-thick pt-5">
           <h2 className="font-display text-xl">その他の応援</h2>
           <ul className="mt-3 space-y-1.5 text-sm">
             {others.map((o) => (

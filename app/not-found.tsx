@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <div className="border-t-2 border-ink pt-10">
+    <div className="rule-thick pt-10">
       <p className="eyebrow text-accent-deep">Error 404</p>
       <h1 className="font-display mt-3 text-[clamp(2rem,7vw,4.5rem)] leading-[1.02]">
         ページが見つかりません

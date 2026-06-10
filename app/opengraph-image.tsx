@@ -20,13 +20,13 @@ export default async function OgImage() {
           flexDirection: "column",
           width: "100%",
           height: "100%",
-          backgroundColor: "#fbfbfa",
+          backgroundColor: "#f7f2e9",
           padding: "64px",
           justifyContent: "space-between",
           fontFamily: "Noto Sans JP",
         }}
       >
-        <div style={{ display: "flex", fontSize: 28, color: "#0a5b62" }}>
+        <div style={{ display: "flex", fontSize: 28, color: "#463254" }}>
           政治のトリセツ あいち・なごや
         </div>
         <div
@@ -36,20 +36,20 @@ export default async function OgImage() {
             gap: 18,
           }}
         >
-          <div style={{ display: "flex", fontSize: 76, fontWeight: 700, color: "#1a1c1e" }}>
+          <div style={{ display: "flex", fontSize: 76, fontWeight: 700, color: "#1f1a14" }}>
             知ってから、選ぶ。
           </div>
-          <div style={{ display: "flex", fontSize: 32, color: "#5b6066", lineHeight: 1.5 }}>
+          <div style={{ display: "flex", fontSize: 32, color: "#5d564b", lineHeight: 1.5 }}>
             愛知・名古屋の政治を、やさしい解説と一次ソースで。
           </div>
         </div>
         <div
           style={{
             display: "flex",
-            borderTop: "5px solid #0f7d86",
+            borderTop: "5px solid #5c4470",
             paddingTop: 18,
             fontSize: 22,
-            color: "#7a828a",
+            color: "#857c6d",
           }}
         >
           国会（愛知選出）・愛知県議会・全54市町村を横断 ／ 中立・一次ソース付き

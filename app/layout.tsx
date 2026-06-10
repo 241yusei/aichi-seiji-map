@@ -1,34 +1,28 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { Anton, IBM_Plex_Sans_JP, Space_Mono } from "next/font/google";
+import { IBM_Plex_Sans_JP, Shippori_Mincho_B1 } from "next/font/google";
 import { getActiveElectionWindow } from "@/lib/election-window";
 import { ElectionPeriodBanner } from "@/components/ElectionPeriodBanner";
 import { BottomNav } from "@/components/BottomNav";
 import { LAST_UPDATED, SITE_X } from "@/lib/site-meta";
 import "./globals.css";
 
-// 数字・章番号・特大カウンタ専用（“見せ場”だけ。見出し本体には使わない＝声を下げる）。
-const anton = Anton({
+// 見出し・特大数字＝明朝（紙面の「報道の声」。B1は画面表示向けに肉付けされた明朝）。
+const mincho = Shippori_Mincho_B1({
   subsets: ["latin"],
-  weight: "400",
-  variable: "--font-anton",
+  weight: ["500", "700", "800"],
+  variable: "--font-mincho",
   display: "swap",
+  preload: false,
 });
-// 本文・見出しの主役（和文＝“見える声”。Plex JP でエディトリアルな識別性／和欧混植も同ファミリで）。
+// 本文・UI・チャート数字の主役（可読性最優先のサンセリフ）。
 const plexJP = IBM_Plex_Sans_JP({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
   variable: "--font-plex",
   display: "swap",
   preload: false,
-});
-// メタ・ラベル・番号（モノスペース＝編集的）。
-const spaceMono = Space_Mono({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-spacemono",
-  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -59,7 +53,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="ja"
-      className={`${anton.variable} ${plexJP.variable} ${spaceMono.variable}`}
+      className={`${mincho.variable} ${plexJP.variable}`}
     >
       <body className="min-h-dvh">
         <a
@@ -70,7 +64,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </a>
         {election && <ElectionPeriodBanner name={election.name} />}
 
-        <header className="border-b-2 border-ink bg-paper">
+        <header className="border-b-[3px] border-ink bg-paper">
           <div className="mx-auto flex max-w-6xl items-baseline justify-between gap-4 px-5 py-4">
             <Link href="/" className="group inline-flex items-baseline gap-2">
               <span className="font-display whitespace-nowrap text-xl tracking-tight sm:text-2xl">
@@ -119,7 +113,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           {children}
         </main>
 
-        <footer className="mt-20 border-t-2 border-ink bg-paper pb-20 sm:pb-0">
+        <footer className="rule-thick mt-20 bg-paper pb-20 sm:pb-0">
           <div className="mx-auto max-w-6xl px-5 py-10">
             <p className="font-display text-lg tracking-tight">政治のトリセツ あいち・なごや</p>
             <p className="eyebrow mt-1 text-faint">知ってから、選ぶ。— 愛知・名古屋の政治を一次ソースで</p>
