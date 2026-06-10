@@ -34,7 +34,7 @@ export function VoteTable({ votes, house }: { votes: Vote[]; house: "衆議院" 
         <div className="overflow-x-auto border border-line bg-surface">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b-2 border-ink text-left">
+              <tr className="border-b-[3px] border-ink text-left">
                 <th className="eyebrow px-3 py-2 text-faint">議案</th>
                 <th className="eyebrow px-3 py-2 text-faint">日付</th>
                 <th className="eyebrow px-3 py-2 text-faint">賛否</th>

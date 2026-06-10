@@ -42,7 +42,7 @@ export async function generateMetadata({
 // ナンバリング付きセクション見出し（エディトリアル）。
 function SectionHead({ n, title, meta }: { n: string; title: string; meta?: ReactNode }) {
   return (
-    <div className="flex items-baseline gap-3 border-b-2 border-ink pb-2">
+    <div className="flex items-baseline gap-3 border-b-[3px] border-ink pb-2">
       <span className="num-display tnum text-sm text-faint">{n}</span>
       <h2 className="font-display text-2xl">{title}</h2>
       {meta != null && <span className="tnum text-sm text-muted">{meta}</span>}
@@ -97,7 +97,7 @@ export default async function LegislatorDetailPage({
       />
 
       {/* プロフィール */}
-      <header className="border-b-2 border-ink pb-6">
+      <header className="border-b-[3px] border-ink pb-6">
         <span className="inline-flex items-center border border-ink px-2 py-0.5 text-xs font-bold text-ink">
           {layerLabel}
         </span>

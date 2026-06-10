@@ -11,7 +11,7 @@ export function FundingPanel({ funding }: { funding: Funding[] }) {
         <div className="overflow-x-auto border border-line bg-surface">
           <table className="w-full">
             <thead>
-              <tr className="border-b-2 border-ink text-left">
+              <tr className="border-b-[3px] border-ink text-left">
                 <th className="eyebrow px-3 py-2 text-faint">年</th>
                 <th className="eyebrow px-3 py-2 text-faint">団体</th>
                 <th className="eyebrow px-3 py-2 text-faint">収入</th>

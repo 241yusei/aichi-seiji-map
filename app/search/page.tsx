@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function SearchPage() {
   return (
     <div>
-      <header className="border-b-2 border-ink pb-6">
+      <header className="border-b-[3px] border-ink pb-6">
         <p className="eyebrow text-faint">Search</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">検索</h1>
         <p className="measure mt-3 text-muted">

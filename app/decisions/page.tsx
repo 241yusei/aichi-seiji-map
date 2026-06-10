@@ -69,7 +69,7 @@ export default function DecisionsPage() {
 
   return (
     <div className="space-y-8">
-      <header className="border-b-2 border-ink pb-6">
+      <header className="border-b-[3px] border-ink pb-6">
         <p className="eyebrow text-faint">Council Decisions</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">議会の議決</h1>
         <p className="measure mt-3 text-muted">
@@ -109,7 +109,7 @@ export default function DecisionsPage() {
           const [council, session] = key.split("｜");
           return (
             <section key={key}>
-              <h2 className="font-display border-b-2 border-ink pb-2 text-xl sm:text-2xl">
+              <h2 className="font-display border-b-[3px] border-ink pb-2 text-xl sm:text-2xl">
                 {council}
                 <span className="ml-2 text-sm font-normal text-muted">{session}</span>
               </h2>

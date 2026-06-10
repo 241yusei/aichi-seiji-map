@@ -22,7 +22,7 @@ export function FactCardType({ type }: { type: FactCard["cardType"] }) {
 export function FactCardView({ card }: { card: FactCard }) {
   return (
     <article className="space-y-8">
-      <header className="border-b-2 border-ink pb-6">
+      <header className="border-b-[3px] border-ink pb-6">
         <div className="flex items-center gap-3">
           <FactCardType type={card.cardType} />
           <time dateTime={card.publishedAt} className="eyebrow tnum text-faint">

@@ -11,7 +11,7 @@ export interface CrossLayerItem {
 
 function LayerHead({ label, full }: { label: string; full: string }) {
   return (
-    <h3 className="mb-3 flex items-baseline gap-2 border-b-2 border-ink pb-2">
+    <h3 className="mb-3 flex items-baseline gap-2 border-b-[3px] border-ink pb-2">
       <span className="inline-flex items-center border border-ink px-1.5 text-[0.7rem] font-bold leading-5 text-ink">
         {label}
       </span>

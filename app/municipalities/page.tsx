@@ -26,7 +26,7 @@ export default function MunicipalitiesPage() {
 
   return (
     <div className="space-y-10">
-      <header className="border-b-2 border-ink pb-6">
+      <header className="border-b-[3px] border-ink pb-6">
         <p className="eyebrow text-faint">Municipalities</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">
           市町村から探す

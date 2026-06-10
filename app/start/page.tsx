@@ -53,7 +53,7 @@ const LADDERS = [
 export default function StartPage() {
   return (
     <div className="space-y-10">
-      <header className="border-b-2 border-ink pb-6">
+      <header className="border-b-[3px] border-ink pb-6">
         <p className="eyebrow text-accent-deep">はじめに ／ Start here</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6.5vw,3.75rem)] leading-tight">
           政治、よくわからない人はここから。
@@ -92,7 +92,7 @@ export default function StartPage() {
         ))}
       </div>
 
-      <p className="measure border-t-2 border-ink pt-5 text-sm text-muted">
+      <p className="measure rule-thick pt-5 text-sm text-muted">
         言葉でつまずいたら
         <Link href="/glossary" className="link-ink">
           用語集

@@ -39,7 +39,7 @@ export default async function LearnChapterPage({
 
   return (
     <div className="space-y-8">
-      <header className="border-b-2 border-ink pb-6">
+      <header className="border-b-[3px] border-ink pb-6">
         <p className="eyebrow text-faint">
           {c.partLabel} ／ {c.n}
         </p>
@@ -103,7 +103,7 @@ export default async function LearnChapterPage({
         </div>
       )}
 
-      <nav className="flex items-center justify-between gap-4 border-t-2 border-ink pt-5 text-sm">
+      <nav className="flex items-center justify-between gap-4 rule-thick pt-5 text-sm">
         {prev ? (
           <Link href={`/learn/${prev.slug}/`} className="link-ink">
             ← {prev.title}

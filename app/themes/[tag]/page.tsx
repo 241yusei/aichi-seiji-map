@@ -43,7 +43,7 @@ export default async function ThemeDetailPage({
         </Link>
       </p>
 
-      <header className="border-b-2 border-ink pb-6">
+      <header className="border-b-[3px] border-ink pb-6">
         <p className="eyebrow text-faint">Theme</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">
           {theme.label}
@@ -77,7 +77,7 @@ export default async function ThemeDetailPage({
         </section>
       )}
 
-      <nav className="flex flex-wrap gap-x-5 gap-y-1 border-t-2 border-ink pt-5 text-sm">
+      <nav className="flex flex-wrap gap-x-5 gap-y-1 rule-thick pt-5 text-sm">
         <Link href="/issues/" className="link-ink">
           争点（三層横串）→
         </Link>

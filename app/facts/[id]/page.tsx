@@ -63,7 +63,7 @@ export default async function FactDetailPage({
         </section>
       )}
 
-      <nav className="flex flex-wrap gap-x-5 gap-y-2 border-t-2 border-ink pt-5 text-sm text-muted">
+      <nav className="flex flex-wrap gap-x-5 gap-y-2 rule-thick pt-5 text-sm text-muted">
         <Link href="/facts" className="link-ink">
           ← 事実カード一覧
         </Link>

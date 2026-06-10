@@ -15,7 +15,7 @@ export default function LearnPage() {
 
   return (
     <div className="space-y-10">
-      <header className="border-b-2 border-ink pb-6">
+      <header className="border-b-[3px] border-ink pb-6">
         <p className="eyebrow text-faint">Learn</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">まなぶ</h1>
         <p className="measure mt-3 text-muted">
@@ -54,7 +54,7 @@ export default function LearnPage() {
         </section>
       ))}
 
-      <p className="measure border-t-2 border-ink pt-5 text-sm text-muted">
+      <p className="measure rule-thick pt-5 text-sm text-muted">
         言葉の意味をまとめて見たいときは
         <Link href="/glossary" className="link-ink">
           用語集

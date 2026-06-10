@@ -113,7 +113,7 @@ export default async function WardDashboardPage({
 
   return (
     <div className="space-y-10">
-      <header className="border-b-2 border-ink pb-6">
+      <header className="border-b-[3px] border-ink pb-6">
         <p className="eyebrow text-faint">
           <Link href="/area/" className="link-ink">
             ← 地域から探す

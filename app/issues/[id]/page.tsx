@@ -52,7 +52,7 @@ export default async function IssueDetailPage({
         </Link>
       </p>
 
-      <header className="border-b-2 border-ink pb-6">
+      <header className="border-b-[3px] border-ink pb-6">
         <p className="eyebrow text-faint">Issue · 三層横串</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-[1.05]">
           {issue.title}
@@ -62,7 +62,7 @@ export default async function IssueDetailPage({
 
       {/* 01 解説（ガイド層）⇄ 02 記録（データ層）の振り子構造。往復リンクで“意味↔事実”を行き来できる。 */}
       <section id="explainer" className="scroll-mt-24">
-        <div className="flex items-baseline justify-between gap-3 border-b-2 border-ink pb-2">
+        <div className="flex items-baseline justify-between gap-3 border-b-[3px] border-ink pb-2">
           <div className="flex items-baseline gap-3">
             <span className="num-display tnum text-sm text-faint">01</span>
             <h2 className="font-display text-2xl">解説</h2>
@@ -75,7 +75,7 @@ export default async function IssueDetailPage({
       </section>
 
       <section id="records" className="scroll-mt-24">
-        <div className="flex items-baseline justify-between gap-3 border-b-2 border-ink pb-2">
+        <div className="flex items-baseline justify-between gap-3 border-b-[3px] border-ink pb-2">
           <div className="flex items-baseline gap-3">
             <span className="num-display tnum text-sm text-faint">02</span>
             <h2 className="font-display text-2xl">記録（一次ソース）</h2>
