@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { DONATION_ONE_TIME, DONATION_MONTHLY, DONATION_IS_TEST } from "@/lib/support";
 
 export const metadata: Metadata = {
   title: "支援・寄付（運営を続けるために）",
@@ -7,28 +8,10 @@ export const metadata: Metadata = {
     "愛知政治マップは中立を守るためほぼ自費で運営しています。運営費（サーバー・ドメイン・データ取得）の支援を受け付けます。政党・政治家・政治団体からの寄付は受け取りません。",
 };
 
-// Stripe Payment Links（金額選択の寄付・毎月の継続支援）。Stripeダッシュボードで作成したURLを貼る。
-// 静的サイト（output: export）でもリンクを置くだけで成立する（サーバー不要）。未設定なら「準備中」を表示。
-const STRIPE_ONE_TIME = ""; // 例: https://buy.stripe.com/xxxxxxxx （一度の寄付・金額選択）
-const STRIPE_MONTHLY = ""; // 例: https://buy.stripe.com/yyyyyyyy （毎月の継続支援）
-
 // 補完チャネル（任意。空なら非表示）。
 const GITHUB_SPONSORS = ""; // 例: https://github.com/sponsors/xxxx
 const OFUSE = ""; // 例: https://ofuse.me/xxxx
 const NOTE_MEMBERSHIP = ""; // 例: https://note.com/xxxx/membership
-
-function PrimaryLink({ href, children }: { href: string; children: React.ReactNode }) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bg-ink px-5 py-2.5 text-sm font-bold text-paper transition-colors hover:bg-accent"
-    >
-      {children}
-    </a>
-  );
-}
 
 export default function SupportPage() {
   const others = [
@@ -66,20 +49,45 @@ export default function SupportPage() {
 
       <section className="border-t-2 border-ink pt-5">
         <h2 className="font-display text-xl">寄付で応援する</h2>
-        {STRIPE_ONE_TIME || STRIPE_MONTHLY ? (
-          <div className="mt-4 flex flex-wrap gap-3">
-            {STRIPE_ONE_TIME && <PrimaryLink href={STRIPE_ONE_TIME}>一度だけ寄付する</PrimaryLink>}
-            {STRIPE_MONTHLY && (
-              <a
-                href={STRIPE_MONTHLY}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border border-ink px-5 py-2.5 text-sm font-bold transition-colors hover:bg-subtle"
-              >
-                毎月支援する
-              </a>
+        {DONATION_ONE_TIME.length > 0 || DONATION_MONTHLY ? (
+          <>
+            {DONATION_IS_TEST && (
+              <p className="mt-3 border-l-2 border-accent bg-subtle px-4 py-2 text-xs text-muted">
+                ※ 現在はテスト用の決済リンクです（実際の寄付はまだ受け付けていません）。本番受付の準備が整い次第、切り替えます。
+              </p>
             )}
-          </div>
+            {DONATION_ONE_TIME.length > 0 && (
+              <div className="mt-4">
+                <p className="eyebrow text-faint">一度の寄付（金額を選ぶ）</p>
+                <div className="mt-2 flex flex-wrap gap-3">
+                  {DONATION_ONE_TIME.map((o) => (
+                    <a
+                      key={o.amountLabel}
+                      href={o.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="tap rounded-[10px] bg-ink px-5 py-2.5 text-sm font-bold text-paper transition-colors hover:bg-accent"
+                    >
+                      {o.amountLabel} を寄付する
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
+            {DONATION_MONTHLY && (
+              <div className="mt-4">
+                <p className="eyebrow text-faint">毎月の継続支援</p>
+                <a
+                  href={DONATION_MONTHLY}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="tap mt-2 inline-block rounded-[10px] border border-ink px-5 py-2.5 text-sm font-bold transition-colors hover:bg-subtle"
+                >
+                  毎月支援する
+                </a>
+              </div>
+            )}
+          </>
         ) : (
           <p className="mt-3 text-sm text-muted">
             寄付の受付（Stripe）を準備中です。決済は Stripe Payment Links
