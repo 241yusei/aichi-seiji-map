@@ -19,6 +19,11 @@ export default function IssuesPage() {
         <p className="measure mt-3 text-muted">
           愛知のローカル争点を、国会・愛知県議会・市町村議会の三層を横串にして見ます。
         </p>
+        <p className="mt-2 text-sm">
+          <Link href="/themes/" className="link-ink">
+            「物価」「子育て」など生活の言葉から探す（テーマ別）→
+          </Link>
+        </p>
       </header>
 
       {issues.length === 0 ? (

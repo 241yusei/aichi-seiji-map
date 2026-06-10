@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { getFactCards, getIssues, getLegislators } from "@/lib/data";
 import { MUNICIPALITIES } from "@/lib/municipalities";
 import { NAGOYA_WARDS } from "@/lib/area";
+import { THEMES } from "@/lib/themes";
 import { getLearnChapters } from "@/lib/learn";
 
 // 静的エクスポート（output: export）で sitemap.xml を生成するために必要。
@@ -22,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/executives",
     "/issues",
     "/decisions",
+    "/themes",
     "/facts",
     "/search",
     "/municipalities",
@@ -60,6 +62,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
+  const themeRoutes = THEMES.map((t) => ({
+    url: `${BASE}/themes/${t.id}/`,
+    changeFrequency: "weekly" as const,
+    priority: 0.6,
+  }));
+
   const areaRoutes = NAGOYA_WARDS.map((w) => ({
     url: `${BASE}/area/${w.slug}/`,
     changeFrequency: "weekly" as const,
@@ -74,6 +82,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     ...staticRoutes,
+    ...themeRoutes,
     ...areaRoutes,
     ...learnRoutes,
     ...legislatorRoutes,
