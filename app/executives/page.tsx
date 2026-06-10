@@ -3,6 +3,7 @@ import { getExecutives } from "@/lib/data";
 import { SourceLink } from "@/components/SourceLink";
 import { CompositionDots } from "@/components/CompositionDots";
 import { LAST_UPDATED } from "@/lib/site-meta";
+import { formatDate } from "@/lib/format";
 
 export const metadata: Metadata = {
   title: "首長（知事・市町村長）",
@@ -16,12 +17,14 @@ function ExecRow({
   name,
   kana,
   sourceUrl,
+  termEnd,
 }: {
   area: string;
   title: string;
   name: string;
   kana?: string;
   sourceUrl: string;
+  termEnd?: string;
 }) {
   return (
     <div className="grid grid-cols-[8rem_1fr] items-baseline gap-4 border-t border-line py-4 last:border-b sm:grid-cols-[12rem_1fr]">
@@ -34,7 +37,12 @@ function ExecRow({
           <span className="font-bold">{name}</span>
           {kana && <span className="ml-2 text-xs text-faint">{kana}</span>}
         </p>
-        <span className="text-xs">
+        <span className="flex flex-wrap items-baseline gap-x-4 text-xs">
+          {termEnd && (
+            <span className="tnum text-muted">
+              任期満了 <span className="font-bold text-ink">{formatDate(termEnd)}</span>
+            </span>
+          )}
           <SourceLink href={sourceUrl}>公式プロフィール</SourceLink>
         </span>
       </div>
@@ -98,6 +106,7 @@ export default function ExecutivesPage() {
                 name={e.name}
                 kana={e.kana}
                 sourceUrl={e.sourceUrl}
+                termEnd={e.termEnd}
               />
             ))}
           </div>
@@ -118,6 +127,7 @@ export default function ExecutivesPage() {
                 name={e.name}
                 kana={e.kana}
                 sourceUrl={e.sourceUrl}
+                termEnd={e.termEnd}
               />
             ))}
           </div>

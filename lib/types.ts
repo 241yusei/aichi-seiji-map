@@ -184,6 +184,8 @@ export interface Executive {
   area: string; // "愛知県" "名古屋市" など
   party?: string;
   termStart?: string; // 就任日（ISO・任意）
+  termEnd?: string; // 任期満了日（ISO・任意）。次の首長選の時期の根拠
+  termSourceUrl?: string; // 任期の出典（県選管名簿・公式ページ等）
   homepage?: string;
   sourceUrl: string; // 首長名を確認できた公式ページ（必須）
 }

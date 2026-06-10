@@ -6,6 +6,7 @@ import { MUNICIPALITIES, municipalityBySlug } from "@/lib/municipalities";
 import { regionOf } from "@/lib/regions";
 import { LegislatorCard } from "@/components/LegislatorCard";
 import { SourceLink } from "@/components/SourceLink";
+import { formatDate } from "@/lib/format";
 
 export function generateStaticParams() {
   return MUNICIPALITIES.map((m) => ({ slug: m.slug }));
@@ -56,15 +57,32 @@ export default async function MunicipalityPage({
       <section>
         <h2 className="eyebrow text-accent-deep">首長</h2>
         {exec ? (
-          <div className="mt-3 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-t border-line pt-3">
-            <p className="text-base">
-              <span className="font-bold">{exec.name}</span>
-              {exec.kana && <span className="ml-2 text-xs text-faint">{exec.kana}</span>}
-              <span className="ml-2 text-sm text-muted">{exec.title}</span>
-            </p>
-            <span className="text-xs">
-              <SourceLink href={exec.sourceUrl}>公式プロフィール</SourceLink>
-            </span>
+          <div className="mt-3 border-t border-line pt-3">
+            <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+              <p className="text-base">
+                <span className="font-bold">{exec.name}</span>
+                {exec.kana && <span className="ml-2 text-xs text-faint">{exec.kana}</span>}
+                <span className="ml-2 text-sm text-muted">{exec.title}</span>
+              </p>
+              <span className="text-xs">
+                <SourceLink href={exec.sourceUrl}>公式プロフィール</SourceLink>
+              </span>
+            </div>
+            {exec.termEnd && (
+              <p className="tnum mt-2 text-sm text-muted">
+                任期満了：<span className="font-bold text-ink">{formatDate(exec.termEnd)}</span>
+                <span className="ml-2 text-xs text-faint">
+                  （次の{exec.title}選はこのころまでに行われます
+                  {exec.termSourceUrl ? "・" : "）"}
+                </span>
+                {exec.termSourceUrl && (
+                  <span className="text-xs">
+                    <SourceLink href={exec.termSourceUrl}>出典</SourceLink>
+                    <span className="text-faint">）</span>
+                  </span>
+                )}
+              </p>
+            )}
           </div>
         ) : (
           <p className="mt-3 text-sm text-muted">首長データは準備中です。</p>
