@@ -160,6 +160,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <Link href="/decisions" className="hover:text-accent-deep">
                 議会の議決
               </Link>
+              <Link href="/themes" className="hover:text-accent-deep">
+                テーマから探す
+              </Link>
               <Link href="/search" className="hover:text-accent-deep">
                 検索
               </Link>
