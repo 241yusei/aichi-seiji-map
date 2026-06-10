@@ -139,8 +139,10 @@ export default async function LegislatorDetailPage({
             <li>
               <span className="font-bold">採決：</span>
               {votes.length > 0
-                ? `参院の記名投票 ${votes.length}件（●賛成${voteTally.yea ?? 0}・✕反対${voteTally.nay ?? 0}）`
-                : "衆院は起立採決が中心で、個別の賛否は原則非公開（記名投票のときのみ公開）"}
+                ? `記名投票 ${votes.length}件（●賛成${voteTally.yea ?? 0}・✕反対${voteTally.nay ?? 0}）。${house === "衆議院" ? "起立採決は個別非公開" : "起立採決は非公開"}`
+                : house === "衆議院"
+                  ? "衆院は起立採決が中心で、個別の賛否は記名投票のときのみ公開"
+                  : "記名投票の個別賛否はデータ整備中"}
             </li>
           </ul>
           <p className="mt-2 text-xs text-faint">
