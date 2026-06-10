@@ -41,15 +41,15 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* ヒーロー（便益＝自分ごと／郵便番号を主役に） */}
-      <section className="border-b-2 border-ink pb-10">
+      {/* ヒーロー（紙面の一面：kicker→明朝見出し→スタンドファースト） */}
+      <section className="rule-thick pb-12 pt-6">
         <p className="eyebrow text-accent-deep">政治のトリセツ あいち・なごや ／ 知ってから、選ぶ。</p>
-        <h1 className="font-display mt-5 text-[clamp(2.1rem,6.5vw,4.5rem)] leading-[1.05]">
+        <h1 className="font-display mt-6 text-[clamp(2.1rem,6vw,4.2rem)] leading-[1.25]">
           あなたの暮らしを、
           <br className="hidden sm:block" />
           だれが決めている？
         </h1>
-        <p className="measure mt-5 text-base text-muted sm:text-lg">
+        <p className="standfirst mt-6 text-base sm:text-lg">
           郵便番号を入れるだけ。あなたの街の代表者と、その人の“記録”が30秒で見つかります。
           中立・一次ソースで、むずかしい言葉はふれれば意味が出ます。
         </p>
@@ -73,19 +73,22 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 統計 */}
-      <section className="grid grid-cols-2 gap-x-6 gap-y-6 py-12 sm:grid-cols-4">
-        {stats.map((s) => (
-          <div key={s.l} className="border-t-2 border-ink pt-3">
-            <div className="num-display tnum text-3xl sm:text-4xl">{s.v}</div>
-            <div className="mt-1 text-xs text-muted">{s.l}</div>
-          </div>
-        ))}
+      {/* データストリップ（太罫＋明朝大数字＝紙面の統計欄） */}
+      <section className="rule-thick mt-10">
+        <p className="eyebrow pt-3 text-faint">収録データ（すべて一次ソースつき）</p>
+        <div className="grid grid-cols-2 gap-x-6 py-6 sm:grid-cols-4">
+          {stats.map((s) => (
+            <div key={s.l} className="border-l border-line pl-4 first:border-0 first:pl-0">
+              <div className="num-display text-4xl sm:text-5xl">{s.v}</div>
+              <div className="mt-2 text-xs text-muted">{s.l}</div>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* 注目の事実カード（0クリックで価値を見せる） */}
       {featured && (
-        <section className="border-t-2 border-ink py-10">
+        <section className="rule-thick py-10">
           <div className="flex items-baseline justify-between gap-4">
             <h2 className="eyebrow text-accent-deep">注目の事実カード｜記録から見えるギャップ</h2>
             <Link href="/facts" className="link-ink text-sm">
@@ -129,7 +132,7 @@ export default function HomePage() {
       )}
 
       {/* 三層 */}
-      <section className="border-t-2 border-ink py-10">
+      <section className="rule-thick py-10">
         <h2 className="eyebrow text-faint">三層でたどる（国・県・市で役割がちがう）</h2>
         <p className="measure mt-2 text-sm text-muted">
           全国の話は国会、県全体は県議会、自分の街は市町村議会。
@@ -158,7 +161,7 @@ export default function HomePage() {
       </section>
 
       {/* 中立性（運営の声＝sand面で章替わりを分節） */}
-      <section className="border-t-2 border-ink py-10">
+      <section className="rule-thick py-10">
         <div className="card-soft bg-sand p-6">
           <h2 className="eyebrow text-accent-deep">中立・非投票誘導が大原則</h2>
           <p className="measure mt-3 text-muted">

@@ -14,6 +14,7 @@ import { SpeechList } from "@/components/SpeechList";
 import { Monogram } from "@/components/Monogram";
 import { SourceLink } from "@/components/SourceLink";
 import { VoteTable } from "@/components/VoteTable";
+import { VoteBar } from "@/components/VoteBar";
 import { FundingPanel } from "@/components/FundingPanel";
 import { minutesFor } from "@/lib/sources/linkout";
 import { municipalityByGov } from "@/lib/municipalities";
@@ -206,15 +207,22 @@ export default async function LegislatorDetailPage({
               {votes.length}
               <span className="ml-1 text-base font-normal text-muted">件</span>
             </p>
-            <p className="mt-1 text-xs text-muted">
-              {votes.length > 0
-                ? `●賛成${voteTally.yea ?? 0}・✕反対${voteTally.nay ?? 0}${
-                    (voteTally.absent ?? 0) > 0 ? `・—欠席${voteTally.absent}` : ""
-                  }（記名投票のみ個別公開）`
-                : house === "衆議院"
+            {votes.length > 0 ? (
+              <div className="mt-2">
+                <VoteBar
+                  yea={voteTally.yea ?? 0}
+                  nay={voteTally.nay ?? 0}
+                  abstain={voteTally.absent ?? 0}
+                />
+                <p className="mt-1 text-xs text-muted">記名投票のみ個別公開</p>
+              </div>
+            ) : (
+              <p className="mt-1 text-xs text-muted">
+                {house === "衆議院"
                   ? "衆院は起立採決が多く、個別の賛否は原則非公開（記名投票のときのみ公開）"
                   : "記名投票の個別賛否はデータ整備中"}
-            </p>
+              </p>
+            )}
           </div>
         </section>
       )}
