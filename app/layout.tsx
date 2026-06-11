@@ -37,6 +37,9 @@ export const metadata: Metadata = {
   alternates: {
     types: { "application/rss+xml": "/feed.xml" },
   },
+  verification: {
+    google: "Z-83tdi-pSo_e25a34c5t13JHOYtRdhBNHAivPjonZU",
+  },
 };
 
 // ヘッダーは主要6項目に絞る（残りはフッターから到達可）。モバイルの過密を避ける。
