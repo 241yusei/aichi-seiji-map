@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { IBM_Plex_Sans_JP, Shippori_Mincho_B1 } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import { getActiveElectionWindow } from "@/lib/election-window";
 import { ElectionPeriodBanner } from "@/components/ElectionPeriodBanner";
 import { BottomNav } from "@/components/BottomNav";
@@ -190,6 +191,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </footer>
 
         <BottomNav />
+        {/* Vercel Web Analytics（Cookieレス・個人を追跡しない計測）。ダッシュボードで有効化が必要。 */}
+        <Analytics />
       </body>
     </html>
   );

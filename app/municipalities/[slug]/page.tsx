@@ -20,6 +20,14 @@ export async function generateMetadata({
   const { slug } = await params;
   const m = municipalityBySlug(slug);
   if (!m) return { title: "市町村" };
+  // 「○○市 市長選 いつ」「○○市 市長 任期」系の検索クエリに任期満了データで答える。
+  const exec = getExecutiveByGov(m.govCode);
+  if (exec?.termEnd) {
+    return {
+      title: `${m.city}の議員一覧と${exec.title}｜次の${exec.title}選はいつ`,
+      description: `${m.city}の${exec.title}・${exec.name}の任期満了は${formatDate(exec.termEnd)}（次の${exec.title}選の時期の目安）。${m.council}の議員一覧と会議録への導線を、一次ソース付きで。`,
+    };
+  }
   return {
     title: `${m.city}（${m.council}・首長）`,
     description: `${m.city}の${m.council}の議員と首長を、一次ソース付きで。会議録検索への導線も。`,
