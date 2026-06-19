@@ -601,5 +601,121 @@
         "sourceUrl": "https://www.pref.aichi.jp/press-release/kankoirikomikyaku2024.html"
       }
     ]
+  },
+  {
+    "id": "agriculture",
+    "subject": "県・国・市町村",
+    "oneLine": "全国でも上位の愛知の農業。花きは全国1位の一方、担い手は急速に減っている。",
+    "youEffect": "地元の野菜や花の生産、食の供給、農地のある風景の維持に関わる。",
+    "whyImportant": "製造業の印象が強い愛知だが、農業産出額は全国上位。担い手の減少は食料生産と地域に直結する。",
+    "now": "令和3年の農業産出額は2,922億円で全国第8位、うち花きは全国1位（542億円）。一方、基幹的農業従事者は2025年に28,572人で前回（2020年）比約29%減と、担い手の減少が続く（2026年6月時点で確認できる統計）。",
+    "stances": [
+      {
+        "label": "強みを伸ばす声",
+        "text": "花きや施設園芸の強みを生かし、ブランド化や輸出で産業として伸ばす。"
+      },
+      {
+        "label": "担い手を守る声",
+        "text": "急減する担い手の確保・法人化・新規就農支援を急ぐべき。"
+      },
+      {
+        "label": "見るべき主語",
+        "text": "産地振興は県・市町村、制度や統計は国。役割が分かれる。"
+      }
+    ],
+    "debate": {
+      "pro": "花き全国1位など強い品目があり、高付加価値化・輸出の余地が大きい。",
+      "con": "基幹的農業従事者の急減と高齢化で、生産基盤の維持が難しくなっている。",
+      "openQuestion": "担い手が減るなかで、産出額と農地をどう保つか。"
+    },
+    "timeline": [
+      {
+        "date": "1962年",
+        "event": "愛知県の花きの産出額が全国1位となる（以降、連続首位）。",
+        "sourceUrl": "https://www.flower-kingdom.aichi.jp/about.html"
+      },
+      {
+        "date": "2021年",
+        "event": "愛知県の農業産出額は2,922億円で全国第8位。花きは全国1位（542億円）。",
+        "sourceUrl": "https://www.pref.aichi.jp/soshiki/toukei/0000078213.html"
+      },
+      {
+        "date": "2025年（農林業センサス概数）",
+        "event": "基幹的農業従事者は28,572人（2020年比28.9%減）、農業経営体は19,031（同29.2%減）。",
+        "sourceUrl": "https://www.pref.aichi.jp/soshiki/toukei/nouringyoucensussokuhou2025.html"
+      }
+    ],
+    "sources": [
+      {
+        "label": "愛知県統計課「愛知県の農業産出額」",
+        "url": "https://www.pref.aichi.jp/soshiki/toukei/0000078213.html"
+      },
+      {
+        "label": "愛知県統計課「産出額が多い花き」",
+        "url": "https://www.pref.aichi.jp/soshiki/toukei/kaki.html"
+      },
+      {
+        "label": "愛知県統計課「2025年農林業センサス（概数値）」",
+        "url": "https://www.pref.aichi.jp/soshiki/toukei/nouringyoucensussokuhou2025.html"
+      }
+    ]
+  },
+  {
+    "id": "startup",
+    "subject": "県・民間（運営）",
+    "oneLine": "自動車に次ぐ新産業を狙い、愛知県が主導するスタートアップ拠点づくり（STATION Ai）。",
+    "youEffect": "新しい雇用や起業の機会、地域経済の多様化に関わる。公費で整えた拠点の成果も問われる。",
+    "whyImportant": "自動車依存からの多様化を狙う県の重点政策。公費を投じた拠点が成果を出せるかが論点になる。",
+    "now": "2024年10月、名古屋市昭和区鶴舞に国内最大級のスタートアップ拠点『STATION Ai』が開業（延床約2.4万㎡）。県が2018年に策定した「Aichi-Startup戦略」に基づき、運営はソフトバンク子会社のSTATION Ai株式会社。開業時点で約500社のスタートアップが登録した。",
+    "stances": [
+      {
+        "label": "期待する声",
+        "text": "起業の集積で新産業・雇用を生み、自動車依存からの多様化につながる。"
+      },
+      {
+        "label": "慎重な声",
+        "text": "公費投入に見合う成果（定着・雇用・上場）が出るかを継続的に見極める必要がある。"
+      },
+      {
+        "label": "見るべき主語",
+        "text": "政策・拠点整備は県、運営は民間（STATION Ai株式会社）。"
+      }
+    ],
+    "debate": {
+      "pro": "国内最大級の規模で起業家・大企業・大学が集まり、新産業の起点になりうる。",
+      "con": "公費を投じた拠点の費用対効果（定着率・雇用・税収）はこれから問われる。",
+      "openQuestion": "集積を、持続的な雇用と産業にどう結びつけるか。"
+    },
+    "timeline": [
+      {
+        "date": "2018年",
+        "event": "愛知県が「Aichi-Startup戦略」を策定し、拠点整備の基盤とする。",
+        "sourceUrl": "https://www.pref.aichi.jp/press-release/stationai-kaiinboshu.html"
+      },
+      {
+        "date": "2024年10月1日",
+        "event": "名古屋市昭和区鶴舞でSTATION Aiが開業（延床約2.4万㎡・運営はソフトバンク子会社）。",
+        "sourceUrl": "https://www.softbank.jp/corp/news/press/sbkk/2024/20241001_01/"
+      },
+      {
+        "date": "2024年10月31日",
+        "event": "グランドオープン。500社超のスタートアップ、200社超の大企業・VC・大学等が登録。",
+        "sourceUrl": "https://www.jetro.go.jp/biznews/2024/11/79deee7439bf29cb.html"
+      }
+    ],
+    "sources": [
+      {
+        "label": "ソフトバンク「STATION Aiが2024年10月1日に開業」",
+        "url": "https://www.softbank.jp/corp/news/press/sbkk/2024/20241001_01/"
+      },
+      {
+        "label": "愛知県「STATION Ai 会員募集等を開始」",
+        "url": "https://www.pref.aichi.jp/press-release/stationai-kaiinboshu.html"
+      },
+      {
+        "label": "ジェトロ「国内最大のインキュベーション施設『STATION Ai』開業」",
+        "url": "https://www.jetro.go.jp/biznews/2024/11/79deee7439bf29cb.html"
+      }
+    ]
   }
 ]
