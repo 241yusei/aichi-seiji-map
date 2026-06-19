@@ -523,5 +523,65 @@
     "committees": [],
     "sourceUrl": "https://www.n-jcp.jp/profile/taguchi",
     "summary": "日本共産党名古屋市会議員団の団長。"
+  },
+  {
+    "id": "toyota-fb3551cd",
+    "electionCount": 0,
+    "positions": [
+      "豊田市議会自民クラブ議員団 団長"
+    ],
+    "committees": [],
+    "sourceUrl": "https://www.toyota-jimin.jp/greeting/",
+    "summary": "豊田市議会の最大会派・自民クラブ議員団の団長（令和8年度）。"
+  },
+  {
+    "id": "ichinomiya-1f34b038",
+    "electionCount": 0,
+    "positions": [
+      "令和会 会長"
+    ],
+    "committees": [],
+    "sourceUrl": "https://www.city.ichinomiya.aichi.jp/shigikai/1010234/1066764.html",
+    "summary": "一宮市議会の最大会派・令和会の会長。"
+  },
+  {
+    "id": "okazaki-5d581f84",
+    "electionCount": 0,
+    "positions": [
+      "自民清風会 会長"
+    ],
+    "committees": [],
+    "sourceUrl": "https://www.city.okazaki.lg.jp/shigikai/733/p042101.html",
+    "summary": "岡崎市議会の最大会派・自民清風会の会長。"
+  },
+  {
+    "id": "toyohashi-3d1e476f",
+    "electionCount": 0,
+    "positions": [
+      "自由民主党豊橋市議団 団長"
+    ],
+    "committees": [],
+    "sourceUrl": "https://www.city.toyohashi.lg.jp/8130.htm",
+    "summary": "豊橋市議会の最大会派・自由民主党豊橋市議団の団長。"
+  },
+  {
+    "id": "kasugai-a2749a37",
+    "electionCount": 0,
+    "positions": [
+      "かすがい創政会 代表者"
+    ],
+    "committees": [],
+    "sourceUrl": "https://www.city.kasugai.lg.jp/shisei/shigikai/1016752.html",
+    "summary": "春日井市議会の最大会派・かすがい創政会の代表者。"
+  },
+  {
+    "id": "anjo-2f8ca84c",
+    "electionCount": 4,
+    "positions": [
+      "安城創生会 会長"
+    ],
+    "committees": [],
+    "sourceUrl": "https://anjo-shigikai.jp/representative/pdf/r07kaiha_0331.pdf",
+    "summary": "安城市議会の最大会派・安城創生会の会長。"
   }
 ]

@@ -918,5 +918,74 @@
       "city-a71877aa"
     ],
     "publishedAt": "2026-06-19"
+  },
+  {
+    "id": "comparison-city-faction-leaders-2026",
+    "title": "主要6市の最大会派、率いるのは誰？",
+    "hook": "市が違えば、最大会派も率いる人も違う。",
+    "cardType": "comparison",
+    "body": "愛知の主要市議会で、最大会派とその代表（団長・会長など）を並べると顔ぶれは様々。豊田＝自民クラブ団長の板垣清志氏、一宮＝令和会会長の花谷昌章氏、岡崎＝自民清風会会長の野々山雄一郎氏、豊橋＝自民市議団団長の田中敏一氏、春日井＝かすがい創政会代表者の加藤貴章氏、安城＝安城創生会会長の杉山朗氏。",
+    "caveat": "会派代表（団長・会長・代表者など）の呼称は市・会派ごとに異なる。会派内の代表であり、議会全体の長（議長）とは別。会派の大きさは選挙結果の反映で優劣ではない。",
+    "points": [
+      {
+        "label": "豊田市（自民クラブ）",
+        "value": "板垣清志"
+      },
+      {
+        "label": "一宮市（令和会）",
+        "value": "花谷昌章"
+      },
+      {
+        "label": "岡崎市（自民清風会）",
+        "value": "野々山雄一郎"
+      },
+      {
+        "label": "豊橋市（自民市議団）",
+        "value": "田中敏一"
+      },
+      {
+        "label": "春日井市（かすがい創政会）",
+        "value": "加藤貴章"
+      },
+      {
+        "label": "安城市（安城創生会）",
+        "value": "杉山朗"
+      }
+    ],
+    "sources": [
+      {
+        "label": "豊田市議会自民クラブ議員団（公式）",
+        "url": "https://www.toyota-jimin.jp/greeting/"
+      },
+      {
+        "label": "一宮市議会 会派別名簿（公式）",
+        "url": "https://www.city.ichinomiya.aichi.jp/shigikai/1010234/1066764.html"
+      },
+      {
+        "label": "岡崎市議会 会派別名簿（公式）",
+        "url": "https://www.city.okazaki.lg.jp/shigikai/733/p042101.html"
+      },
+      {
+        "label": "豊橋市議会 会派別名簿（公式）",
+        "url": "https://www.city.toyohashi.lg.jp/8130.htm"
+      },
+      {
+        "label": "春日井市議会 会派名簿（公式）",
+        "url": "https://www.city.kasugai.lg.jp/shisei/shigikai/1016752.html"
+      },
+      {
+        "label": "安城市議会 会派別一覧（公式PDF）",
+        "url": "https://anjo-shigikai.jp/representative/pdf/r07kaiha_0331.pdf"
+      }
+    ],
+    "relatedLegislatorIds": [
+      "toyota-fb3551cd",
+      "ichinomiya-1f34b038",
+      "okazaki-5d581f84",
+      "toyohashi-3d1e476f",
+      "kasugai-a2749a37",
+      "anjo-2f8ca84c"
+    ],
+    "publishedAt": "2026-06-19"
   }
 ]
