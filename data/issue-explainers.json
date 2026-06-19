@@ -192,20 +192,33 @@
     },
     "timeline": [
       {
-        "date": "2020年代",
-        "event": "各国がEVシフト・脱炭素を加速"
+        "date": "2023年1月",
+        "event": "愛知県の製造品出荷額等は43兆9,880億円、うち輸送機械が23兆3,624億円（構成比53.1%）、製造業従業者は約80.8万人（令和3年経済センサス）。",
+        "sourceUrl": "https://www.pref.aichi.jp/soshiki/toukei/seizou-3.html"
       },
       {
-        "date": "近年",
-        "event": "トヨタなど県内企業がEV・電動化へ投資"
+        "date": "2021年3月",
+        "event": "愛知県が「あいち自動車産業アクションプラン 2021-2025」を策定（電動化・CASE等への対応）。",
+        "sourceUrl": "https://www.pref.aichi.jp/uploaded/attachment/386179.pdf"
       },
       {
-        "date": "課題",
-        "event": "中小サプライヤーの転換と雇用維持"
+        "date": "2026年度",
+        "event": "愛知県が「先進環境対応自動車導入促進費補助金」を案内（EV・PHEV・FCV等が対象）。",
+        "sourceUrl": "https://www.pref.aichi.jp/soshiki/ondanka/car-subsidy.html"
+      }
+    ],
+    "sources": [
+      {
+        "label": "愛知県「令和3年経済センサス‐活動調査（製造業・詳細版）」",
+        "url": "https://www.pref.aichi.jp/soshiki/toukei/seizou-3.html"
       },
       {
-        "date": "現在",
-        "event": "県の産業政策・人材育成が論点に"
+        "label": "愛知県「あいち自動車産業アクションプラン 2021-2025」",
+        "url": "https://www.pref.aichi.jp/uploaded/attachment/386179.pdf"
+      },
+      {
+        "label": "愛知県「先進環境対応自動車導入促進費補助金」",
+        "url": "https://www.pref.aichi.jp/soshiki/ondanka/car-subsidy.html"
       }
     ]
   },
@@ -230,7 +243,38 @@
       "pro": "機能強化は物流・観光・防災の拠点性を高める。",
       "con": "巨額投資の需要見通しと費用負担に不確実性がある。",
       "openQuestion": "需要の回復度合いに対し、投資の規模とタイミングをどう決めるか。"
-    }
+    },
+    "sources": [
+      {
+        "label": "国土交通省 航空局「中部国際空港滑走路増設事業 新規採択時評価」（令和5年8月）",
+        "url": "https://www.mlit.go.jp/policy/shingikai/content/001623073.pdf"
+      },
+      {
+        "label": "中日新聞「国が中部空港の新滑走路の着工を許可」",
+        "url": "https://www.chunichi.co.jp/article/1026362"
+      },
+      {
+        "label": "東海テレビNEWS「新滑走路の着工式典」（2025年2月22日）",
+        "url": "https://www.tokai-tv.com/tokainews/article_20250222_39002"
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2023年8月",
+        "event": "国土交通省航空局が、二本目（代替）滑走路の増設事業について新規採択時評価を取りまとめ。",
+        "sourceUrl": "https://www.mlit.go.jp/policy/shingikai/content/001623073.pdf"
+      },
+      {
+        "date": "2025年2月17日",
+        "event": "国が二本目（代替）滑走路の着工を許可（全長3,290m・幅45m、2028年3月末の供用開始予定）。",
+        "sourceUrl": "https://www.chunichi.co.jp/article/1026362"
+      },
+      {
+        "date": "2025年2月22日",
+        "event": "二本目（代替）滑走路の着工式典を開催。",
+        "sourceUrl": "https://www.tokai-tv.com/tokainews/article_20250222_39002"
+      }
+    ]
   },
   {
     "id": "foreign-workers",
@@ -253,7 +297,33 @@
       "pro": "人手不足のものづくりや地域経済に、外国人材は欠かせない。",
       "con": "日本語・教育・医療・住まいなど、受け入れ環境の整備が追いつかない。",
       "openQuestion": "労働力としてだけでなく生活者として、地域がどう共生するか。"
-    }
+    },
+    "sources": [
+      {
+        "label": "愛知県「県内市町村における外国人住民数（2025年12月末）」",
+        "url": "https://www.pref.aichi.jp/soshiki/tabunka/gaikokuzinjuminsu-2025-12.html"
+      },
+      {
+        "label": "厚生労働省「『外国人雇用状況』の届出状況まとめ（令和7年10月末）」",
+        "url": "https://www.mhlw.go.jp/stf/newpage_68794.html"
+      },
+      {
+        "label": "愛知県「あいち多文化共生推進プラン」",
+        "url": "https://www.pref.aichi.jp/soshiki/tabunka/0000013532.html"
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2025年12月末",
+        "event": "愛知県内の外国人住民は357,800人（県内総人口の4.80%）。国籍別はベトナム・ブラジル・フィリピンの順。",
+        "sourceUrl": "https://www.pref.aichi.jp/soshiki/tabunka/gaikokuzinjuminsu-2025-12.html"
+      },
+      {
+        "date": "2026年1月（令和7年10月末を公表）",
+        "event": "全国の外国人労働者数が2,571,037人で過去最多（前年比11.7%増）。",
+        "sourceUrl": "https://www.mhlw.go.jp/stf/newpage_68794.html"
+      }
+    ]
   },
   {
     "id": "bousai",
@@ -280,7 +350,29 @@
       "pro": "南海トラフに備えた耐震化・避難整備は、命を守る最優先の投資。",
       "con": "限られた予算で、どこまで・どの順に備えるかの優先順位が難しい。",
       "openQuestion": "平時の負担と有事の備えを、どの水準でバランスさせるか。"
-    }
+    },
+    "sources": [
+      {
+        "label": "愛知県 地域防災計画（防災危機管理課）",
+        "url": "https://www.pref.aichi.jp/soshiki/bosai/bosai-keikaku.html"
+      },
+      {
+        "label": "愛知県 東海・東南海・南海地震等被害予測調査結果",
+        "url": "https://www.pref.aichi.jp/soshiki/bosai/2014higaiyosoku.html"
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2014年5月",
+        "event": "愛知県が「東海・東南海・南海地震等被害予測調査結果」を公表（過去最大モデルと理論上最大モデルの2モデルで想定）。",
+        "sourceUrl": "https://www.pref.aichi.jp/soshiki/bosai/2014higaiyosoku.html"
+      },
+      {
+        "date": "2026年6月",
+        "event": "愛知県地域防災計画（風水害・地震津波・原子力の各対策計画）が最終修正。",
+        "sourceUrl": "https://www.pref.aichi.jp/soshiki/bosai/bosai-keikaku.html"
+      }
+    ]
   },
   {
     "id": "kosodate",
@@ -307,7 +399,33 @@
       "pro": "保育の受け皿や経済支援の拡充が、少子化対策と暮らしに直結する。",
       "con": "財源の持続性と、現金給付か保育などの現物かの選択が難しい。",
       "openQuestion": "限られた財源で最も効く支援は、現金か現物（保育等）か。"
-    }
+    },
+    "sources": [
+      {
+        "label": "こども家庭庁「保育所等関連状況取りまとめ（令和7年4月1日）」",
+        "url": "https://www.cfa.go.jp/policies/hoiku/torimatome/r7"
+      },
+      {
+        "label": "名古屋市「保育所等利用待機児童数」",
+        "url": "https://www.city.nagoya.jp/somu/page/0000135407.html"
+      },
+      {
+        "label": "愛知県 子育て支援課",
+        "url": "https://www.pref.aichi.jp/soshiki/kosodate/"
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2024年8月（令和6年4月1日時点を公表）",
+        "event": "全国の待機児童数は2,567人（前年比113人減）。",
+        "sourceUrl": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/4ddf7d00-3f9a-4435-93a4-8e6c204db16c/82ad22fe/20240829_policies_hoiku_torimatome_r6_02.pdf"
+      },
+      {
+        "date": "2025年8月（令和7年4月1日時点を公表）",
+        "event": "全国の待機児童数は2,254人（前年比313人減）。",
+        "sourceUrl": "https://www.cfa.go.jp/policies/hoiku/torimatome/r7"
+      }
+    ]
   },
   {
     "id": "kaigo",
@@ -334,7 +452,38 @@
       "pro": "高齢化に備え、担い手の待遇改善とサービス拡充を急ぐべき。",
       "con": "保険料・税の負担とのバランス、人手の確保が課題になる。",
       "openQuestion": "負担を抑えつつ、介護の担い手と質をどう確保するか。"
-    }
+    },
+    "sources": [
+      {
+        "label": "愛知県「第9期 高齢者福祉保健医療計画」",
+        "url": "https://www.pref.aichi.jp/press-release/9korei-keikaku.html"
+      },
+      {
+        "label": "厚生労働省「介護人材確保に向けた取組（必要数の推計）」",
+        "url": "https://www.mhlw.go.jp/stf/newpage_02977.html"
+      },
+      {
+        "label": "名古屋市 高齢者人口等の状況（NAGOYAかいごネット）",
+        "url": "https://www.kaigo-wel.city.nagoya.jp/view/kaigo/date/"
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2023年10月",
+        "event": "愛知県の65歳以上人口は約192万人、高齢化率25.7%（2020年比3.2ポイント増）。",
+        "sourceUrl": "https://www.pref.aichi.jp/uploaded/attachment/515648.pdf"
+      },
+      {
+        "date": "2024年3月",
+        "event": "愛知県が「第9期高齢者福祉保健医療計画」（2024〜2026年度）を策定。",
+        "sourceUrl": "https://www.pref.aichi.jp/press-release/9korei-keikaku.html"
+      },
+      {
+        "date": "2024年7月",
+        "event": "厚労省が介護職員の必要数を推計：全国で2026年度に約240万人、2040年度に約272万人。",
+        "sourceUrl": "https://www.mhlw.go.jp/stf/newpage_02977.html"
+      }
+    ]
   },
   {
     "id": "transit",
@@ -361,7 +510,38 @@
       "pro": "バス・鉄道は通院・買い物・通学の生活の足として維持すべき。",
       "con": "赤字路線を支える財源と運転手不足、需要に合った見直しの必要。",
       "openQuestion": "どこまで税で支え、どこから需要に合わせて形を変えるか。"
-    }
+    },
+    "sources": [
+      {
+        "label": "愛知県 地域公共交通計画（交通対策課）",
+        "url": "https://www.pref.aichi.jp/soshiki/kotsu/kotsukeikaku.html"
+      },
+      {
+        "label": "名古屋市 地域公共交通計画",
+        "url": "https://www.city.nagoya.jp/shisei/category/53-10-18-4-0-0-0-0-0-0.html"
+      },
+      {
+        "label": "国土交通省「『交通空白』解消に関する取組」",
+        "url": "https://www.mlit.go.jp/sogoseisaku/transport/sosei_transport_tk_000237.html"
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2024年3月",
+        "event": "名古屋市が「名古屋市地域公共交通計画」を策定。",
+        "sourceUrl": "https://www.city.nagoya.jp/shisei/category/53-10-18-4-0-0-0-0-0-0.html"
+      },
+      {
+        "date": "2024年6月",
+        "event": "愛知県が「愛知県地域公共交通計画」（2024〜2026年度）を策定。路線バスへの運行経費補助などを盛り込む。",
+        "sourceUrl": "https://www.pref.aichi.jp/press-release/kotsukeikaku.html"
+      },
+      {
+        "date": "2025年3月",
+        "event": "国が令和7年度「『交通空白』解消等リ・デザイン全面展開プロジェクト」の公募を開始。",
+        "sourceUrl": "https://www.mlit.go.jp/report/press/sogo12_hh_000415.html"
+      }
+    ]
   },
   {
     "id": "kanko",
@@ -384,6 +564,42 @@
       "pro": "ジブリパークやインバウンドは、地域経済への波及が大きい。",
       "con": "混雑・環境・住民生活との両立や、受け入れ整備の負担がある。",
       "openQuestion": "集客の効果を、住民の暮らしと両立させながらどう広げるか。"
-    }
+    },
+    "sources": [
+      {
+        "label": "ジブリパーク｜愛知県公式観光サイト Aichi Now",
+        "url": "https://aichinow.pref.aichi.jp/spots/detail/3657/"
+      },
+      {
+        "label": "愛知県「2024年 愛知県観光入込客統計」",
+        "url": "https://www.pref.aichi.jp/press-release/kankoirikomikyaku2024.html"
+      },
+      {
+        "label": "愛知県「外国人宿泊者数」（出典:観光庁宿泊旅行統計調査）",
+        "url": "https://www.pref.aichi.jp/soshiki/toukei/shukuhakusha.html"
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2022年11月",
+        "event": "ジブリパークが愛・地球博記念公園に第1期開園（大倉庫・青春の丘・どんどこ森）。",
+        "sourceUrl": "https://aichinow.pref.aichi.jp/spots/detail/3657/"
+      },
+      {
+        "date": "2023年11月",
+        "event": "第2期「もののけの里」が開園。",
+        "sourceUrl": "https://aichinow.pref.aichi.jp/spots/detail/3657/"
+      },
+      {
+        "date": "2024年3月",
+        "event": "「魔女の谷」が開園し、全5エリアが完成。",
+        "sourceUrl": "https://aichinow.pref.aichi.jp/spots/detail/3657/"
+      },
+      {
+        "date": "2024年",
+        "event": "愛知県の観光入込客数は約1億1,073万人（前年比110.6%）、観光消費額は約1兆2,131億円。",
+        "sourceUrl": "https://www.pref.aichi.jp/press-release/kankoirikomikyaku2024.html"
+      }
+    ]
   }
 ]
