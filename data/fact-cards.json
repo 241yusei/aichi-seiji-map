@@ -880,5 +880,43 @@
       "kaigo"
     ],
     "publishedAt": "2026-06-19"
+  },
+  {
+    "id": "comparison-faction-leaders-2026",
+    "title": "愛知の議会、最大会派を率いるのは誰？",
+    "hook": "会派の「数」だけでなく、「誰が率いるか」も記録に残っている。",
+    "cardType": "comparison",
+    "body": "愛知県議会の最大会派は自由民主党（54人）で、団長は高桑敏直氏。名古屋市会でも最大会派は自由民主党（23人）で、団長はふじた和秀氏。会派の代表（団長）は、その会派の意思をとりまとめる役割を担う。",
+    "caveat": "団長は会派内の代表であり、議会全体の長（議長）とは別の役職。会派の大きさは選挙結果の反映で、優劣を示すものではない。",
+    "points": [
+      {
+        "label": "愛知県議会 最大会派",
+        "value": "自民54人・団長 高桑敏直"
+      },
+      {
+        "label": "名古屋市会 最大会派",
+        "value": "自民23人・団長 ふじた和秀"
+      }
+    ],
+    "sources": [
+      {
+        "label": "愛知県議会 会派別議員（公式）",
+        "url": "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+      },
+      {
+        "label": "名古屋市会 会派別議員数（公式）",
+        "url": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+      },
+      {
+        "label": "自民党名古屋市会議員団 役員人事（公式）",
+        "url": "https://jimin-nagoya.com/news/%e4%bb%a4%e5%92%8c%ef%bc%98%e5%b9%b4%e5%ba%a6%e8%87%aa%e6%b0%91%e5%85%9a%e5%90%8d%e5%8f%a4%e5%b1%8b%e5%b8%82%e4%bc%9a%e8%ad%b0%e5%93%a1%e5%9b%a3%e4%ba%ba%e4%ba%8b%e3%82%92%e7%99%ba%e8%a1%a8%e3%81%97/"
+      }
+    ],
+    "relatedIssueIds": [],
+    "relatedLegislatorIds": [
+      "pref-60ea498b",
+      "city-a71877aa"
+    ],
+    "publishedAt": "2026-06-19"
   }
 ]
