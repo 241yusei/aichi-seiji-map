@@ -6,7 +6,13 @@ import { Analytics } from "@vercel/analytics/react";
 import { getActiveElectionWindow } from "@/lib/election-window";
 import { ElectionPeriodBanner } from "@/components/ElectionPeriodBanner";
 import { BottomNav } from "@/components/BottomNav";
-import { LAST_UPDATED, SITE_X } from "@/lib/site-meta";
+import {
+  LAST_UPDATED,
+  SITE_X,
+  SITE_X_HANDLE,
+  SITE_THREADS,
+  SITE_INSTAGRAM,
+} from "@/lib/site-meta";
 import "./globals.css";
 
 // 見出し・特大数字＝明朝（紙面の「報道の声」。B1は画面表示向けに肉付けされた明朝）。
@@ -36,6 +42,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://aichi-seiji.example.jp"),
   alternates: {
     types: { "application/rss+xml": "/feed.xml" },
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: SITE_X_HANDLE,
   },
   verification: {
     google: "Z-83tdi-pSo_e25a34c5t13JHOYtRdhBNHAivPjonZU",
@@ -177,7 +187,33 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 <>
                   {" ・ "}
                   <a href={SITE_X} target="_blank" rel="noopener noreferrer" className="link-ink">
-                    公式X
+                    X
+                  </a>
+                </>
+              )}
+              {SITE_THREADS && (
+                <>
+                  {" ・ "}
+                  <a
+                    href={SITE_THREADS}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-ink"
+                  >
+                    Threads
+                  </a>
+                </>
+              )}
+              {SITE_INSTAGRAM && (
+                <>
+                  {" ・ "}
+                  <a
+                    href={SITE_INSTAGRAM}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-ink"
+                  >
+                    Instagram
                   </a>
                 </>
               )}
