@@ -270,5 +270,30 @@
       "121704319X01820250617_125",
       "121704319X01820250617_127"
     ]
+  },
+  {
+    "id": "agriculture",
+    "title": "愛知の農業",
+    "description": "全国上位の農業産出額と花きの強み、急減する担い手。",
+    "keywords": [
+      "農業",
+      "花き",
+      "農林業センサス",
+      "担い手",
+      "施設園芸"
+    ],
+    "relatedSpeechIds": []
+  },
+  {
+    "id": "startup",
+    "title": "スタートアップ支援・新産業（STATION Ai）",
+    "description": "自動車に次ぐ新産業を狙う県主導のスタートアップ拠点づくり。",
+    "keywords": [
+      "スタートアップ",
+      "STATION Ai",
+      "新産業",
+      "Aichi-Startup戦略"
+    ],
+    "relatedSpeechIds": []
   }
 ]
