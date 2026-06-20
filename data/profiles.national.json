@@ -583,5 +583,45 @@
     "committees": [],
     "sourceUrl": "https://anjo-shigikai.jp/representative/pdf/r07kaiha_0331.pdf",
     "summary": "安城市議会の最大会派・安城創生会の会長。"
+  },
+  {
+    "id": "toyokawa-8be7b836",
+    "electionCount": 0,
+    "positions": [
+      "とよかわ未来 代表者"
+    ],
+    "committees": [],
+    "sourceUrl": "https://www.city.toyokawa.lg.jp/soshiki/gikaijimukyoku/giji/1/3/1/977.html",
+    "summary": "豊川市議会の最大会派・とよかわ未来の代表者。"
+  },
+  {
+    "id": "handa-2cd7d729",
+    "electionCount": 0,
+    "positions": [
+      "創造みらい半田 会派代表"
+    ],
+    "committees": [],
+    "sourceUrl": "https://www.city.handa.lg.jp/shisei/gikai/1004472/1004475.html",
+    "summary": "半田市議会の最大会派・創造みらい半田の会派代表。"
+  },
+  {
+    "id": "seto-c8dd87ba",
+    "electionCount": 4,
+    "positions": [
+      "自民新政クラブ 団長"
+    ],
+    "committees": [],
+    "sourceUrl": "https://www.city.seto.aichi.jp/docs/2023/04/28/00340/jiminnsinnseikurabu.html",
+    "summary": "瀬戸市議会の最大会派・自民新政クラブの団長。"
+  },
+  {
+    "id": "tokai-b16c9063",
+    "electionCount": 0,
+    "positions": [
+      "新緑水クラブ 会長"
+    ],
+    "committees": [],
+    "sourceUrl": "https://www.city.tokai.aichi.jp/council/1004396/1006626/1004399.html",
+    "summary": "東海市議会の最大会派・新緑水クラブの会長。"
   }
 ]
