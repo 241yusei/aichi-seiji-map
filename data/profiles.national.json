@@ -623,5 +623,65 @@
     "committees": [],
     "sourceUrl": "https://www.city.tokai.aichi.jp/council/1004396/1006626/1004399.html",
     "summary": "東海市議会の最大会派・新緑水クラブの会長。"
+  },
+  {
+    "id": "tokoname-b042f171",
+    "electionCount": 7,
+    "positions": [
+      "常翔会 代表者"
+    ],
+    "committees": [],
+    "sourceUrl": "https://www.city.tokoname.aichi.jp/_res/projects/default_project/_page_/001/001/562/kaihabetumeiboR8.4.1.pdf",
+    "summary": "常滑市議会の最大会派・常翔会の代表者。"
+  },
+  {
+    "id": "obu-33a548e1",
+    "electionCount": 0,
+    "positions": [
+      "親和クラブ 代表者"
+    ],
+    "committees": [],
+    "sourceUrl": "https://www.city.obu.aichi.jp/gikai/meibo/1006236.html",
+    "summary": "大府市議会の最大会派・親和クラブの代表者。"
+  },
+  {
+    "id": "tsushima-0b0b9b5f",
+    "electionCount": 0,
+    "positions": [
+      "新市民クラブ 代表者"
+    ],
+    "committees": [],
+    "sourceUrl": "https://www.city.tsushima.lg.jp/shigikai/shigikaikousei/kaihabetsumeibo.html",
+    "summary": "津島市議会の最大会派・新市民クラブの代表者。"
+  },
+  {
+    "id": "oguchi-99b8c3c8",
+    "electionCount": 3,
+    "positions": [
+      "大政クラブ 代表者"
+    ],
+    "committees": [],
+    "sourceUrl": "https://www.town.oguchi.lg.jp/2738.htm",
+    "summary": "大口町議会の最大会派・大政クラブの代表者。"
+  },
+  {
+    "id": "nishio-31fe5e84",
+    "electionCount": 4,
+    "positions": [
+      "みらい創政会 会長"
+    ],
+    "committees": [],
+    "sourceUrl": "https://www.city.nishio.aichi.jp/gikai/shokai/1004365.html",
+    "summary": "西尾市議会の最大会派・みらい創政会の会長。"
+  },
+  {
+    "id": "miyoshi-5635eb96",
+    "electionCount": 0,
+    "positions": [
+      "新世紀の会 代表者"
+    ],
+    "committees": [],
+    "sourceUrl": "https://www.city.aichi-miyoshi.lg.jp/soshiki/gikai/1/3/725.html",
+    "summary": "みよし市議会の最大会派・新世紀の会の代表者。"
   }
 ]
