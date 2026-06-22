@@ -10,8 +10,9 @@ next-env.d.ts
 # 取得した生データのキャッシュ（再取得可能・コミットしない）
 /data/raw/
 
-# ビルド時に prebuild で再生成する検索インデックス（コミットしない）
+# ビルド時に prebuild で再生成するインデックス（コミットしない）
 /public/search-index.json
+/public/compare-index.json
 
 # env（秘密情報は絶対にコミットしない）
 .env

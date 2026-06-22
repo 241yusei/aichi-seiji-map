@@ -1,0 +1,42 @@
+name: リンク切れチェック（月次）
+
+# 公式サイトはURLを変えるため、出典リンクの陳腐化を月次で自動検知する。
+# 失敗時はワークフローが赤くなり（リポジトリ所有者にメール通知）、Issueも自動作成する。
+on:
+  schedule:
+    - cron: "0 0 1 * *" # 毎月1日 00:00 UTC（日本時間 9:00）
+  workflow_dispatch: {} # 手動実行も可
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - name: リンク生存チェック
+        run: |
+          set -o pipefail
+          npm run check:links 2>&1 | tee link-report.txt
+      - name: 失敗時にIssueを作成
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require("fs");
+            let log = "";
+            try { log = fs.readFileSync("link-report.txt", "utf8").slice(-5000); } catch (e) {}
+            const today = new Date().toISOString().slice(0, 10);
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `リンク切れ検出 (${today})`,
+              body: `月次のリンク生存チェックでリンク切れを検出しました。出典URLの更新が必要です。\n\n\`\`\`\n${log}\n\`\`\`\n\n対応後はこのIssueをクローズしてください。`,
+              labels: ["link-rot"],
+            });

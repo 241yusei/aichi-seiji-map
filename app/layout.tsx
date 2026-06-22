@@ -156,6 +156,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <Link href="/legislators" className="hover:text-accent-deep">
                 議員一覧
               </Link>
+              <Link href="/compare" className="hover:text-accent-deep">
+                くらべる
+              </Link>
               <Link href="/executives" className="hover:text-accent-deep">
                 首長
               </Link>
