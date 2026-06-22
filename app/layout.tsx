@@ -171,6 +171,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <Link href="/issues" className="hover:text-accent-deep">
                 争点
               </Link>
+              <Link href="/parties" className="hover:text-accent-deep">
+                政党・会派
+              </Link>
               <Link href="/decisions" className="hover:text-accent-deep">
                 議会の議決
               </Link>
