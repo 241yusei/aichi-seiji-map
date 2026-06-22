@@ -162,6 +162,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <Link href="/executives" className="hover:text-accent-deep">
                 首長
               </Link>
+              <Link href="/elections" className="hover:text-accent-deep">
+                選挙カレンダー
+              </Link>
               <Link href="/municipalities" className="hover:text-accent-deep">
                 市町村
               </Link>
