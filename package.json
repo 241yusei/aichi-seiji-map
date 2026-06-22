@@ -6,12 +6,13 @@
   "description": "愛知政治マップ — 国会(愛知選出)・愛知県議会・名古屋市会の発言/採決/政治資金を一次ソース付きで横断把握する中立的な情報サイト",
   "scripts": {
     "dev": "next dev",
-    "prebuild": "npm run validate && npm run build:search",
+    "prebuild": "npm run validate && npm run build:search && npm run build:compare",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "validate": "tsx scripts/validate-data.ts",
+    "check:links": "tsx scripts/check-links.ts",
     "check": "npm run typecheck && npm run lint && npm run build",
     "seed:legislators": "tsx scripts/seed-legislators-aichi.ts",
     "fetch:kokkai": "tsx scripts/fetch-kokkai.ts",
@@ -29,7 +30,8 @@
     "build:issues": "tsx scripts/build-issues.ts",
     "og:font": "tsx scripts/build-og-font.ts",
     "build:map": "tsx scripts/build-aichi-map.ts",
-    "build:search": "tsx scripts/build-search-index.ts"
+    "build:search": "tsx scripts/build-search-index.ts",
+    "build:compare": "tsx scripts/build-compare-index.ts"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
