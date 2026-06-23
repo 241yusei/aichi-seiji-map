@@ -11,7 +11,7 @@ interface Entry {
   q: string;
 }
 
-const KINDS = ["議員", "首長", "争点", "事実カード"] as const;
+const KINDS = ["議員", "首長", "争点", "事実カード", "ページ"] as const;
 
 export function SearchClient() {
   const [index, setIndex] = useState<Entry[] | null>(null);
