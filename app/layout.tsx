@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   description:
     "政治をはじめて知る人のための、愛知・名古屋の政治の入口。国会(愛知選出)・愛知県議会・全54市町村の代表者の発言・採決・政治資金を、やさしい解説と一次ソースで。中立・非投票誘導。",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://aichi-seiji.example.jp"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://aichi-seiji-map.vercel.app"),
   alternates: {
     types: { "application/rss+xml": "/feed.xml" },
   },

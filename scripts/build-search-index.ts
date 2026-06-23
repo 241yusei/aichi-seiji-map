@@ -12,7 +12,7 @@ interface Entry {
   t: string; // 表示見出し
   s: string; // サブ情報（区分・地域・政党など）
   u: string; // 遷移先URL
-  k: "議員" | "首長" | "争点" | "事実カード"; // 種別
+  k: "議員" | "首長" | "争点" | "事実カード" | "ページ"; // 種別
   q: string; // 検索対象文字列（小文字化・かな含む）
 }
 
@@ -69,6 +69,29 @@ for (const f of getFactCards()) {
     q: norm([f.title, f.hook, f.body].join(" ")),
   });
 }
+
+// 主要な機能ページ（検索からも到達できるよう手動で登録）
+const PAGES: { t: string; s: string; u: string; q: string }[] = [
+  {
+    t: "議員をくらべる",
+    s: "ページ・2人の議員を並べて比較",
+    u: "/compare/",
+    q: "議員をくらべる くらべる 比較 ひかく compare 対比",
+  },
+  {
+    t: "選挙カレンダー",
+    s: "ページ・次の選挙はいつ・任期満了",
+    u: "/elections/",
+    q: "選挙カレンダー せんきょ 次の選挙 いつ 任期満了 統一地方選 知事選 市長選 elections",
+  },
+  {
+    t: "政党・会派の勢力図",
+    s: "ページ・三層の会派構成",
+    u: "/parties/",
+    q: "政党 会派 かいは 勢力図 勢力 構成 parties 自民 立憲 公明 共産 減税",
+  },
+];
+for (const p of PAGES) entries.push({ ...p, k: "ページ", q: norm(p.q) });
 
 const outDir = join(process.cwd(), "public");
 mkdirSync(outDir, { recursive: true });
