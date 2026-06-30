@@ -1,0 +1,107 @@
+{
+  "_comment": "Buffer自動投稿の生成元プール。事実カードは data/fact-cards.json から別途生成する。中立・非投票誘導・出典つきを厳守。textは本投稿、urlは自己リプ/カードに使う一次リンク。",
+  "dev_backstory": [
+    {
+      "id": "why-built",
+      "text": "【開発の裏側】「政治のトリセツ」を作った理由。\n愛知・名古屋の議員が何を言い・どう投票し・どんな資金かを、出典つき・中立で横断して見られる場所が無かったからです。評価はせず、判断材料だけをまっすぐに。",
+      "url": "https://aichi-seiji-map.vercel.app/about"
+    },
+    {
+      "id": "primary-source",
+      "text": "【開発の裏側】このサイトの背骨は「一次ソース主義」。\nすべての発言・採決・政治資金に出典URLを付け、出典のない断定はしません。AI要約にも必ず元発言へのリンクを併記しています。",
+      "url": "https://aichi-seiji-map.vercel.app/about"
+    },
+    {
+      "id": "all-54",
+      "text": "【開発の裏側】愛知の54市町村、すべての議会の議員名簿を集めました。\n名古屋市以外の市町村は会派が地域色豊か。手作業の照合が大変でしたが、ここまで縦に束ねた中立DBは他にありません。",
+      "url": "https://aichi-seiji-map.vercel.app/municipalities/"
+    },
+    {
+      "id": "vote-recorded",
+      "text": "【開発の裏側】採決を「記名投票」と「起立採決」で区別して表示しています。\n起立採決は個人の賛否が記録に残らないため、「データ整備中」と混同しないよう、非公開である旨を明示する設計にしました。",
+      "url": "https://aichi-seiji-map.vercel.app/decisions/"
+    },
+    {
+      "id": "ai-summary-link",
+      "text": "【開発の裏側】AI要約には必ず元発言リンクを併記しています。\n要約は補助。最終的な判断は原文に当たれるように——中立メディアとして「要約だけで断定させない」ことを徹底しました。",
+      "url": "https://aichi-seiji-map.vercel.app/about"
+    },
+    {
+      "id": "no-eval-words",
+      "text": "【開発の裏側】中立をどう担保するか。\n答えは「評価語を使わない」こと。良い/悪い・優劣を書かず、数字と記録だけを並べます。会派の大小も『選挙結果の反映』と書き、優劣として描きません。",
+      "url": "https://aichi-seiji-map.vercel.app/about"
+    },
+    {
+      "id": "funding-pdf",
+      "text": "【開発の裏側】いちばん手強かったのは政治資金。\n収支報告書は画像PDFが多く機械処理が難しいため、Phase1は「出典リンク＋主要項目」に絞り、数値には精度の注記を付けています。誠実さ優先です。",
+      "url": "https://aichi-seiji-map.vercel.app/about"
+    },
+    {
+      "id": "neutral-funding",
+      "text": "【開発の裏側】運営は個人。だから財源も開示します。\n政党・政治家・政治団体からの寄付は受け取りません。支援は『サイト運営』への支援であり、掲載内容・順序・評価は支援で一切変わりません。",
+      "url": "https://aichi-seiji-map.vercel.app/support"
+    },
+    {
+      "id": "beginner-design",
+      "text": "【開発の裏側】「政治、よくわからない」をなくしたい。\n衆院・参院・会派・二元代表制——専門語に最小の説明を添え、『やさしい/くわしい』を切り替えられる初心者ファースト設計にしました。",
+      "url": "https://aichi-seiji-map.vercel.app/learn/"
+    },
+    {
+      "id": "static-source",
+      "text": "【開発の裏側】仕組みが止まっても価値が残る設計に。\n本体は静的なDB＋出典リンク集。運用が途絶えても『一次ソースへの地図』として生き続けるよう、最初からそう作っています。",
+      "url": "https://aichi-seiji-map.vercel.app/"
+    }
+  ],
+  "app_feature": [
+    {
+      "id": "zip",
+      "text": "【使い方】郵便番号で「あなたの代表」がわかります。\n入力すると、国会(愛知選出)・県議会・市町村の代表者と、その記録への入口が一画面に。まずは自分の地域から。",
+      "url": "https://aichi-seiji-map.vercel.app/"
+    },
+    {
+      "id": "legislators",
+      "text": "【使い方】議員を「三層」で横断。\n国会(愛知選出)・愛知県議会・全54市町村の議員を、発言・採決・政治資金まで出典つきで引けます。",
+      "url": "https://aichi-seiji-map.vercel.app/legislators/"
+    },
+    {
+      "id": "facts",
+      "text": "【使い方】数字で一発でわかる「事実カード」。\n政治資金の桁・女性比率・採決の賛否など、愛知固有の事実を一次ソースつきで。シェアしやすい1枚にまとめています。",
+      "url": "https://aichi-seiji-map.vercel.app/facts/"
+    },
+    {
+      "id": "search",
+      "text": "【新機能】横断検索が強くなりました。\n議員・発言・争点・事実カードに加え、主要ページ（くらべる/選挙カレンダー/政党・会派）も検索でヒットします。",
+      "url": "https://aichi-seiji-map.vercel.app/search/"
+    },
+    {
+      "id": "compare",
+      "text": "【新機能】議員を「くらべる」/compare。\n2人の議員を並べて、発言数・採決・政治資金を事実ベースで対比できます。優劣ではなく、違いを淡々と。",
+      "url": "https://aichi-seiji-map.vercel.app/compare/"
+    },
+    {
+      "id": "elections",
+      "text": "【新機能】選挙カレンダー /elections。\n愛知県知事・県内市町村長の任期満了日から「次の選挙はいつごろか」を一覧に。各自治体公式の出典つきです。",
+      "url": "https://aichi-seiji-map.vercel.app/elections/"
+    },
+    {
+      "id": "parties",
+      "text": "【新機能】政党・会派の勢力図 /parties。\n国会(愛知選出)・県議会・名古屋市会の会派構成を人数順に可視化。どの会派が大きいかを公式名簿の出典つきで。",
+      "url": "https://aichi-seiji-map.vercel.app/parties/"
+    },
+    {
+      "id": "municipalities",
+      "text": "【使い方】市町村から探す /municipalities。\n愛知の54市町村それぞれの議員・首長・会議録への入口をまとめています。あなたの街のページが見つかります。",
+      "url": "https://aichi-seiji-map.vercel.app/municipalities/"
+    },
+    {
+      "id": "issues",
+      "text": "【使い方】争点を「一言でいうと」から。\nリニア・名古屋城・EV転換など、愛知の争点を『これは国・県・市のどの話か』も含めて中立に整理。賛否は両論併記です。",
+      "url": "https://aichi-seiji-map.vercel.app/issues/"
+    },
+    {
+      "id": "learn",
+      "text": "【使い方】基礎から学べる「まなぶ」＋用語集。\n二元代表制・県市の二重構造・市民税減税など、愛知でつまずきやすい仕組みを図解で。むずかしい言葉もやさしく解説します。",
+      "url": "https://aichi-seiji-map.vercel.app/learn/"
+    }
+  ]
+}
