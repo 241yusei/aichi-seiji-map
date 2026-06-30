@@ -22,6 +22,15 @@ next-env.d.ts
 .claude/settings.local.json
 .claude/launch.json
 
+# SNS自動投稿のローカル状態（コミットしない）
+/data/.sns_state.json
+/data/.buffer_state.json
+/logs/
+
+# Python キャッシュ
+__pycache__/
+*.pyc
+
 # misc
 .DS_Store
 *.log
