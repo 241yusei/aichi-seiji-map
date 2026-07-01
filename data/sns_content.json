@@ -50,6 +50,51 @@
       "id": "static-source",
       "text": "【開発の裏側】仕組みが止まっても価値が残る設計に。\n本体は静的なDB＋出典リンク集。運用が途絶えても『一次ソースへの地図』として生き続けるよう、最初からそう作っています。",
       "url": "https://aichi-seiji-map.vercel.app/"
+    },
+    {
+      "id": "election-period-guard",
+      "text": "【開発の裏側】選挙期間中は表示を自動で抑制する仕組みがあります。\n告示〜投票日を登録すると、投票誘導と取られかねない表示を控える設計に。公職選挙法への配慮を、人の判断任せにせず仕組みで担保しています。",
+      "url": "https://aichi-seiji-map.vercel.app/about"
+    },
+    {
+      "id": "corrections-log",
+      "text": "【開発の裏側】誤りは隠さず「訂正・更新ログ」に残します。\n日付・箇所・修正内容・出典をセットで公開。中立メディアにとって、誤りをどう扱うかも信頼の一部だと考えています。",
+      "url": "https://aichi-seiji-map.vercel.app/corrections"
+    },
+    {
+      "id": "no-diagnosis",
+      "text": "【開発の裏側】あえて作らなかった機能：投票マッチング診断。\n「あなたに合う候補」を提示するアルゴリズムは、設計者の価値観が入り込みやすい。判断材料だけを渡し、結論はあなたに委ねる設計を選びました。",
+      "url": "https://aichi-seiji-map.vercel.app/about"
+    },
+    {
+      "id": "link-check",
+      "text": "【開発の裏側】出典リンクは月次で自動チェックしています。\n公式サイトのリニューアルでリンク切れが起きるのはよくあること。放置しないよう、リンク切れを自動検知する仕組みを組み込みました。",
+      "url": "https://aichi-seiji-map.vercel.app/about"
+    },
+    {
+      "id": "robots-compliance",
+      "text": "【開発の裏側】データ取得はrobots.txtと利用規約を守った範囲だけ。\n県議会・市議会のサイトは取得可否がまちまちで、取れない場合は無理に取らず「公式サイトへのリンク」に留めています。",
+      "url": "https://aichi-seiji-map.vercel.app/about"
+    },
+    {
+      "id": "zod-validation",
+      "text": "【開発の裏側】全データはビルド前に型・整合性を自動検証しています。\n議員IDの参照切れや日付の不整合があればビルドが止まる仕組み。人手のチェックだけに頼らない設計です。",
+      "url": "https://aichi-seiji-map.vercel.app/about"
+    },
+    {
+      "id": "ogp-static",
+      "text": "【開発の裏側】事実カードのシェア画像は、ビルド時に静的生成しています。\nサーバー不要の静的サイトでも、SNSでちゃんとカード表示される画像を1枚ずつ作る仕組みを組みました。",
+      "url": "https://aichi-seiji-map.vercel.app/facts/"
+    },
+    {
+      "id": "why-no-ads",
+      "text": "【開発の裏側】広告は入れていません。\n広告主の意向が編集に影響する余地を最初から作らないため。運営は支援と個人負担で成り立たせています。",
+      "url": "https://aichi-seiji-map.vercel.app/support"
+    },
+    {
+      "id": "termend-not-vote",
+      "text": "【開発の裏側】「任期満了日」と「投票日」は別物として扱っています。\n投票日は選管の告示で確定するもの。確定していない日付を断定して載せない——地味ですが誠実さの核です。",
+      "url": "https://aichi-seiji-map.vercel.app/elections/"
     }
   ],
   "app_feature": [
@@ -102,6 +147,41 @@
       "id": "learn",
       "text": "【使い方】基礎から学べる「まなぶ」＋用語集。\n二元代表制・県市の二重構造・市民税減税など、愛知でつまずきやすい仕組みを図解で。むずかしい言葉もやさしく解説します。",
       "url": "https://aichi-seiji-map.vercel.app/learn/"
+    },
+    {
+      "id": "start",
+      "text": "【使い方】どこから見ればいいか迷ったら /start。\n「地域の代表を知る」「争点を理解する」「そもそも選挙から」「投票の準備」——やりたいことを選ぶと、見る順番を案内します。",
+      "url": "https://aichi-seiji-map.vercel.app/start"
+    },
+    {
+      "id": "area",
+      "text": "【使い方】地域から探す /area。\n郵便番号や名古屋市の区から、あなたの地域の衆院・参院・愛知県議会・名古屋市会の代表者と首長をまとめて確認できます。",
+      "url": "https://aichi-seiji-map.vercel.app/area"
+    },
+    {
+      "id": "executives",
+      "text": "【使い方】首長一覧 /executives。\n愛知県知事と県内市町村長55人を、任期満了日（次の首長選の時期の目安）と公式の出典つきで一覧に。議会とあわせて「誰が地域を率いているか」が分かります。",
+      "url": "https://aichi-seiji-map.vercel.app/executives"
+    },
+    {
+      "id": "decisions",
+      "text": "【使い方】議会の議決 /decisions。\n名古屋市会・愛知県議会が会期ごとに何を可決・否決したか（主要議案）を、公式の審議結果に出典リンク付きで確認できます。",
+      "url": "https://aichi-seiji-map.vercel.app/decisions"
+    },
+    {
+      "id": "glossary",
+      "text": "【使い方】用語集 /glossary。\n衆議院・記名投票・会派・二元代表制など、政治のことばを初心者向けにやさしく解説。読んでいて分からない言葉があったらここへ。",
+      "url": "https://aichi-seiji-map.vercel.app/glossary"
+    },
+    {
+      "id": "themes",
+      "text": "【使い方】生活の言葉から探す /themes。\n物価・子育て・医療・働き方・防災・交通など、暮らしのテーマから愛知選出議員の国会発言（出典つき）を逆引きできます。",
+      "url": "https://aichi-seiji-map.vercel.app/themes"
+    },
+    {
+      "id": "vote-guide",
+      "text": "【使い方】はじめての投票ガイド /vote-guide。\n投票の流れと判断材料の集め方をやさしく。だれに入れるべきとは言いません。期日前投票や持ち物などの基本もまとめています。",
+      "url": "https://aichi-seiji-map.vercel.app/vote-guide"
     }
   ]
 }
