@@ -137,6 +137,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <li>・投票／不投票を呼びかけません。比較はすべて事実に基づきます。</li>
               <li>・全データに一次ソースを併記。AI要約には必ず元発言リンクを付けます。</li>
             </ul>
+            {/* 運営者の透明化（2026-07-02方針）。批評メディアへの外部リンクは /about の相互参照に留め、フッターからの導線は作らない。 */}
+            <p className="measure mt-3 text-sm text-muted">
+              運営：批評メディア「ナゴヤ人間」と同一の運営者が制作・運営しています（編集方針は独立し、本サイトは論評を載せません。くわしくは
+              <Link href="/about" className="link-ink">
+                中立性・運営・財源
+              </Link>
+              ）。
+            </p>
             <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm text-muted">
               <Link href="/about" className="link-ink">
                 中立性・運営・財源

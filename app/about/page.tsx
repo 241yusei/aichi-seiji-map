@@ -6,7 +6,7 @@ import { SourceLink } from "@/components/SourceLink";
 export const metadata: Metadata = {
   title: "このサイトについて（中立性・出典・免責）",
   description:
-    "「政治のトリセツ あいち・なごや」の編集方針・中立性・データの出典・AI要約の扱い・公職選挙法への配慮・訂正の受付について。",
+    "「政治のトリセツ あいち・なごや」の運営者・編集方針・中立性・データの出典・AI要約の扱い・公職選挙法への配慮・訂正の受付について。",
 };
 
 function Section({ title, children }: { title: string; children: ReactNode }) {
@@ -133,9 +133,16 @@ export default function AboutPage() {
       <Section title="運営者と編集の独立性">
         <p>
           運営：「政治のトリセツ あいち・なごや」編集部（個人運営）。
-          本サイトは、<span className="font-bold text-ink">地域メディアの運営・取材編集の経験がある個人</span>
-          が、中立を方針として運営しています。中立性を保つため、本サイトの編集は、運営者が関わる他の媒体からは
-          <span className="font-bold text-ink">独立して</span>行います。
+          本サイトは、名古屋・愛知の批評メディア
+          <SourceLink href="https://note.com/citypod_nagoya">「ナゴヤ人間」</SourceLink>
+          と<span className="font-bold text-ink">同一の運営者</span>が制作・運営しています。
+          ただし<span className="font-bold text-ink">編集方針は独立</span>しており、本サイトには論評・立場を載せず、
+          議会・選挙管理委員会等の一次ソースに基づく記録のみを掲載します。
+        </p>
+        <p>
+          中立性は、運営者が誰か分からないこと（匿名性）ではなく、
+          <span className="font-bold text-ink">方法の開示</span>によって担保します。
+          具体的には、一次ソース主義・出典明記・評価語を使わないこと——つまり本ページで開示している運用ルールそのものです。
         </p>
         <p className="mt-3 font-bold text-ink">利益相反についての方針</p>
         <ul className="mt-1 list-disc space-y-1 pl-5">
