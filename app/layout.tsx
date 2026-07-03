@@ -183,6 +183,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <Link href="/search" className="hover:text-accent-deep">
                 検索
               </Link>
+              <Link href="/for-education" className="hover:text-accent-deep">
+                教育でつかう
+              </Link>
               <Link href="/support" className="hover:text-accent-deep">
                 支援・寄付
               </Link>
