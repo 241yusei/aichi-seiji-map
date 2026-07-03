@@ -18,7 +18,15 @@ const eslintConfig = [
     },
   },
   {
-    ignores: [".next/**", "out/**", "node_modules/**", "data/**", "next-env.d.ts"],
+    ignores: [
+      ".next/**",
+      "out/**",
+      "node_modules/**",
+      "data/**",
+      "next-env.d.ts",
+      // エージェントの一時worktree（自動生成・lint対象外）
+      ".claude/**",
+    ],
   },
 ];
 
