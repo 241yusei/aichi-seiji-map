@@ -207,7 +207,9 @@ def in_election_period(target: date) -> bool:
     iso = target.isoformat()
     rows = windows if isinstance(windows, list) else windows.get("windows", [])
     for w in rows:
-        start, end = w.get("start"), w.get("end")
+        # サイト側スキーマ（lib/election-window.ts）は from/until。旧 start/end も受ける。
+        start = w.get("from") or w.get("start")
+        end = w.get("until") or w.get("end")
         if start and end and start <= iso <= end:
             log.warning(f"選挙期ガード作動: {w.get('name','選挙期間')}（{start}〜{end}）。自動投稿を中止します。")
             return True
