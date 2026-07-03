@@ -90,6 +90,12 @@ const PAGES: { t: string; s: string; u: string; q: string }[] = [
     u: "/parties/",
     q: "政党 会派 かいは 勢力図 勢力 構成 parties 自民 立憲 公明 共産 減税",
   },
+  {
+    t: "教育でつかう",
+    s: "ページ・主権者教育・調べ学習・ゼミでの活用ガイド",
+    u: "/for-education/",
+    q: "教育 きょういく 主権者教育 授業 学校 高校 大学 ゼミ 調べ学習 探究 引用 education",
+  },
 ];
 for (const p of PAGES) entries.push({ ...p, k: "ページ", q: norm(p.q) });
 
