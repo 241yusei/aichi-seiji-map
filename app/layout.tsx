@@ -70,6 +70,19 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       className={`${mincho.variable} ${plexJP.variable}`}
     >
       <body className="min-h-dvh">
+        {/* サイト全体の構造化データ（検索結果でのサイト名表示用） */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "政治のトリセツ あいち・なごや",
+              alternateName: "愛知政治マップ",
+              url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://aichi-seiji-map.vercel.app",
+            }),
+          }}
+        />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:bg-ink focus:px-3 focus:py-2 focus:text-sm focus:text-paper"

@@ -18,7 +18,7 @@ import { VoteBar } from "@/components/VoteBar";
 import { FundingPanel } from "@/components/FundingPanel";
 import { minutesFor } from "@/lib/sources/linkout";
 import { municipalityByGov } from "@/lib/municipalities";
-import { LAST_UPDATED } from "@/lib/site-meta";
+import { LAST_UPDATED, SITE_URL } from "@/lib/site-meta";
 import { formatYen } from "@/lib/format";
 
 export function generateStaticParams() {
@@ -79,14 +79,52 @@ export default async function LegislatorDetailPage({
         ? "愛知県議会"
         : (municipalityByGov(legislator.govCode)?.council ?? "市議会");
 
+  // 回遊：同じ選挙区（いなければ同じ議会）の議員。順序はデータ順・評価はしない。
+  const all = getLegislators();
+  const sameDistrict = all.filter(
+    (x) => x.id !== id && x.level === legislator.level && x.district === legislator.district,
+  );
+  const sameCouncil =
+    legislator.level === "municipal"
+      ? all.filter(
+          (x) => x.id !== id && x.level === "municipal" && x.govCode === legislator.govCode,
+        )
+      : all.filter((x) => x.id !== id && x.level === legislator.level);
+  const relatedPool = sameDistrict.length > 0 ? sameDistrict : sameCouncil;
+  const related = relatedPool.slice(0, 6);
+  const relatedLabel = sameDistrict.length > 0 ? "同じ選挙区の議員" : `同じ議会の議員（${layerLabel}）`;
+  const muni = legislator.level === "municipal" ? municipalityByGov(legislator.govCode) : null;
+  const relatedMoreHref = muni
+    ? `/municipalities/${muni.slug}/`
+    : legislator.level === "prefectural"
+      ? "/legislators?level=prefectural"
+      : "/legislators?level=national";
+
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Person",
-    name: legislator.name,
-    jobTitle: layerLabel,
-    ...(legislator.party ? { affiliation: legislator.party } : {}),
-    homeLocation: { "@type": "AdministrativeArea", name: legislator.district },
-    url: legislator.sourceUrl,
+    "@graph": [
+      {
+        "@type": "Person",
+        name: legislator.name,
+        jobTitle: layerLabel,
+        ...(legislator.party ? { affiliation: legislator.party } : {}),
+        homeLocation: { "@type": "AdministrativeArea", name: legislator.district },
+        url: legislator.sourceUrl,
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "ホーム", item: `${SITE_URL}/` },
+          { "@type": "ListItem", position: 2, name: "議員一覧", item: `${SITE_URL}/legislators/` },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: legislator.name,
+            item: `${SITE_URL}/legislators/${legislator.id}/`,
+          },
+        ],
+      },
+    ],
   };
 
   return (
@@ -279,6 +317,33 @@ export default async function LegislatorDetailPage({
             </div>
           </section>
         </>
+      )}
+
+      {/* 回遊：同じ選挙区・同じ議会の議員（順序はデータ順・優劣を示さない） */}
+      {related.length > 0 && (
+        <section>
+          <div className="flex items-baseline justify-between gap-4 rule-thick pt-5">
+            <h2 className="eyebrow text-faint">{relatedLabel}</h2>
+            <Link href={relatedMoreHref} className="link-ink text-sm">
+              すべて見る
+            </Link>
+          </div>
+          <div className="mt-3 grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
+            {related.map((r) => (
+              <Link
+                key={r.id}
+                href={`/legislators/${r.id}/`}
+                className="group bg-surface p-4 transition-colors hover:bg-subtle"
+              >
+                <p className="font-display text-base leading-snug">{r.name}</p>
+                <p className="mt-1 text-xs text-muted">
+                  {r.district}
+                  {r.party ? ` ・ ${r.party}` : ""}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </section>
       )}
     </div>
   );

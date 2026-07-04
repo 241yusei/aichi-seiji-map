@@ -86,6 +86,37 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* 次の選挙（A層の最強ニーズ「いつ？」への直通） */}
+      <section className="rule-thick py-10">
+        <h2 className="eyebrow text-accent-deep">次の選挙はいつ？</h2>
+        <div className="mt-4 grid gap-px border border-line bg-line sm:grid-cols-3">
+          <Link
+            href="/elections/aichi-governor-2027/"
+            className="group bg-surface p-5 transition-colors hover:bg-subtle"
+          >
+            <p className="eyebrow text-faint">2027年2月 任期満了</p>
+            <h3 className="font-display mt-1 text-lg leading-snug">愛知県知事選挙2027</h3>
+            <p className="mt-2 text-sm text-muted">いつ・しくみ・現職の記録の調べ方。</p>
+          </Link>
+          <Link
+            href="/elections/unified-2027/"
+            className="group bg-surface p-5 transition-colors hover:bg-subtle"
+          >
+            <p className="eyebrow text-faint">2027年4月 見込み</p>
+            <h3 className="font-display mt-1 text-lg leading-snug">統一地方選挙2027</h3>
+            <p className="mt-2 text-sm text-muted">県議会・名古屋市会など、何が選ばれる？</p>
+          </Link>
+          <Link
+            href="/elections/"
+            className="group bg-surface p-5 transition-colors hover:bg-subtle"
+          >
+            <p className="eyebrow text-faint">あなたの街は？</p>
+            <h3 className="font-display mt-1 text-lg leading-snug">選挙カレンダー</h3>
+            <p className="mt-2 text-sm text-muted">54市町村の首長選の時期の目安を一覧で。</p>
+          </Link>
+        </div>
+      </section>
+
       {/* 注目の事実カード（0クリックで価値を見せる） */}
       {featured && (
         <section className="rule-thick py-10">

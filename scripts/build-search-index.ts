@@ -96,6 +96,18 @@ const PAGES: { t: string; s: string; u: string; q: string }[] = [
     u: "/for-education/",
     q: "教育 きょういく 主権者教育 授業 学校 高校 大学 ゼミ 調べ学習 探究 引用 education",
   },
+  {
+    t: "愛知県知事選挙2027はいつ？",
+    s: "ページ・任期満了日と仕組み・現職の記録",
+    u: "/elections/aichi-governor-2027/",
+    q: "知事選 ちじせん 愛知県知事選挙 2027 いつ 大村 任期 governor",
+  },
+  {
+    t: "統一地方選挙2027（愛知）",
+    s: "ページ・県議会・名古屋市会など何が選ばれるか",
+    u: "/elections/unified-2027/",
+    q: "統一地方選 とういつちほうせん 2027 愛知 県議選 市議選 改選 いつ",
+  },
 ];
 for (const p of PAGES) entries.push({ ...p, k: "ページ", q: norm(p.q) });
 
