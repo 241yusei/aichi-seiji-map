@@ -36,6 +36,7 @@ export async function generateMetadata({
   return {
     title: `${l.name}（${l.district}）`,
     description: `${l.name}（${l.district}${l.party ? `・${l.party}` : ""}）の発言・採決・政治資金を一次ソース付きで。`,
+    alternates: { canonical: `/legislators/${id}/` },
   };
 }
 

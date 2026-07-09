@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "投票ガイド｜はじめての投票",
   description:
     "投票の流れと、判断材料の集め方をやさしく。だれに入れるべきとは言いません。自分の選挙区の調べ方、候補者・現職の記録の見方、投票の基本（期日前・持ち物）まで。",
+  alternates: { canonical: "/vote-guide/" },
 };
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {

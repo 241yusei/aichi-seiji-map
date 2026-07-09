@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "統一地方選挙2027 愛知では何が選ばれる？｜県議会・名古屋市会など",
   description:
     "2027年4月に見込まれる統一地方選挙。愛知県議会（現員97人）や名古屋市会など、愛知で改選されるものと日程の決まり方を一次ソース付きで中立に解説。特定候補への投票は呼びかけません。",
+  alternates: { canonical: "/elections/unified-2027/" },
 };
 
 export default function Unified2027Page() {

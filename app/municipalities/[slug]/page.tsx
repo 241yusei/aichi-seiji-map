@@ -26,11 +26,13 @@ export async function generateMetadata({
     return {
       title: `${m.city}の議員一覧と${exec.title}｜次の${exec.title}選はいつ`,
       description: `${m.city}の${exec.title}・${exec.name}の任期満了は${formatDate(exec.termEnd)}（次の${exec.title}選の時期の目安）。${m.council}の議員一覧と会議録への導線を、一次ソース付きで。`,
+      alternates: { canonical: `/municipalities/${slug}/` },
     };
   }
   return {
     title: `${m.city}（${m.council}・首長）`,
     description: `${m.city}の${m.council}の議員と首長を、一次ソース付きで。会議録検索への導線も。`,
+    alternates: { canonical: `/municipalities/${slug}/` },
   };
 }
 

@@ -21,7 +21,11 @@ export async function generateMetadata({
   const { slug } = await params;
   const c = getLearnChapter(slug);
   if (!c) return { title: "まなぶ" };
-  return { title: `${c.title}（${c.partLabel}）`, description: c.lead };
+  return {
+    title: `${c.title}（${c.partLabel}）`,
+    description: c.lead,
+    alternates: { canonical: `/learn/${slug}/` },
+  };
 }
 
 export default async function LearnChapterPage({

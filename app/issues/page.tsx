@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "争点（ローカルテーマ）",
   description:
     "リニア・EV転換・セントレア・名古屋城・外国人労働者・アジア大会など、愛知のローカル争点を国・県・市の三層横串で見る。",
+  alternates: { canonical: "/issues/" },
 };
 
 export default function IssuesPage() {

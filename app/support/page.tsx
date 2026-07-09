@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "支援・寄付（運営を続けるために）",
   description:
     "愛知政治マップは中立を守るためほぼ自費で運営しています。運営費（サーバー・ドメイン・データ取得）の支援を受け付けます。政党・政治家・政治団体からの寄付は受け取りません。",
+  alternates: { canonical: "/support/" },
 };
 
 // 補完チャネル（任意。空なら非表示）。

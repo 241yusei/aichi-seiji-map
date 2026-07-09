@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "議員一覧",
   description:
     "国会（愛知選出）・愛知県議会・愛知の全54市町村の議員一覧。層・会派・地域で絞り込めます。",
+  alternates: { canonical: "/legislators/" },
 };
 
 export default function LegislatorsPage() {

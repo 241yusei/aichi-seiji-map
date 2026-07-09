@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "このサイトについて（中立性・出典・免責）",
   description:
     "「政治のトリセツ あいち・なごや」の編集方針・中立性・データの出典・AI要約の扱い・公職選挙法への配慮・訂正の受付について。",
+  alternates: { canonical: "/about/" },
 };
 
 function Section({ title, children }: { title: string; children: ReactNode }) {

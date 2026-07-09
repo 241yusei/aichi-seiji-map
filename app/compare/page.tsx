@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "議員をくらべる",
   description:
     "愛知の議員2人を選んで、当選回数・主な役職・発言数・採決・政治資金を並べて比較。すべて一次ソース付きの収録データから。中立・投票誘導なし。",
+  alternates: { canonical: "/compare/" },
 };
 
 export default function ComparePage() {

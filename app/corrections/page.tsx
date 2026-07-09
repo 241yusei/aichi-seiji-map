@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "訂正・更新ログ",
   description:
     "「政治のトリセツ あいち・なごや」の更新と訂正の履歴。内容の誤りが見つかった場合は、日付・箇所・修正内容・出典を記録して公開します。",
+  alternates: { canonical: "/corrections/" },
 };
 
 // 更新・訂正の履歴（手動・追記型）。訂正は kind="訂正"、機能/データ追加は kind="更新"。

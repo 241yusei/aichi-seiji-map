@@ -22,7 +22,13 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { id } = await params;
   const issue = getIssue(id);
-  return issue ? { title: issue.title, description: issue.description } : { title: "争点" };
+  return issue
+    ? {
+        title: issue.title,
+        description: issue.description,
+        alternates: { canonical: `/issues/${id}/` },
+      }
+    : { title: "争点" };
 }
 
 export default async function IssueDetailPage({

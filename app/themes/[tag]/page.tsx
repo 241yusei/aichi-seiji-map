@@ -20,6 +20,7 @@ export async function generateMetadata({
   return {
     title: `${t.label}｜テーマから探す`,
     description: `${t.blurb} 愛知選出議員の国会発言を一次ソース付きで。`,
+    alternates: { canonical: `/themes/${tag}/` },
   };
 }
 

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "愛知県知事選挙（2027年）はいつ？｜任期満了日と仕組み",
   description:
     "次の愛知県知事選はいつごろか。現職の任期満了日（2027年2月14日）・投票日の決まり方・知事の役割を、一次ソース付きで中立に解説。特定候補への投票は呼びかけません。",
+  alternates: { canonical: "/elections/aichi-governor-2027/" },
 };
 
 // FAQ（画面表示とJSON-LDで内容を一致させる）

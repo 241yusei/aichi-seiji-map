@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "はじめに｜どこから見ればいい？",
   description:
     "政治がよくわからない人のための入口。やりたいことを選ぶと、見る順番を案内します。地域の代表を知る／争点を理解する／そもそも選挙から／投票の準備。",
+  alternates: { canonical: "/start/" },
 };
 
 const LADDERS = [
