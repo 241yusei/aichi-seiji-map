@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "事実カード｜記録から見える愛知政治のギャップ",
   description:
     "政治資金・国会発言・採決の「記録」から、愛知政治の意外なギャップや対比を一次ソース付きで。評価はせず、事実だけを並べます。",
+  alternates: { canonical: "/facts/" },
 };
 
 export default function FactsPage() {

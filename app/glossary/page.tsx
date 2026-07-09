@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "用語集｜政治のことば、やさしく",
   description:
     "衆議院・参議院・比例代表・採決・記名投票・政治資金・会派・首長・政令指定都市・二元代表制など、政治のことばを初心者向けにやさしく解説。",
+  alternates: { canonical: "/glossary/" },
 };
 
 export default function GlossaryPage() {

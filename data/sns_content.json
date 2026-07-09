@@ -182,6 +182,16 @@
       "id": "vote-guide",
       "text": "【使い方】はじめての投票ガイド /vote-guide。\n投票の流れと判断材料の集め方をやさしく。だれに入れるべきとは言いません。期日前投票や持ち物などの基本もまとめています。",
       "url": "https://aichi-seiji-map.vercel.app/vote-guide"
+    },
+    {
+      "id": "governor-2027",
+      "text": "【新ページ】「次の愛知県知事選はいつ？」に答えるページを作りました。\n現職の任期満了日（2027年2月14日）・投票日の決まり方・知事のしくみを、一次ソースつきで中立に。候補予想はしません、判断材料だけを。",
+      "url": "https://aichi-seiji-map.vercel.app/elections/aichi-governor-2027/"
+    },
+    {
+      "id": "unified-2027",
+      "text": "【新ページ】統一地方選挙2027、愛知では何が選ばれる？\n県議会（現員97人）・名古屋市会など改選見込みのものと、日程が決まる仕組みを一次ソースつきで解説。いまのうちに現職の記録を下調べできます。",
+      "url": "https://aichi-seiji-map.vercel.app/elections/unified-2027/"
     }
   ]
 }

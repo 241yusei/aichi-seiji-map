@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "教育でつかう｜主権者教育・調べ学習・ゼミでの活用ガイド",
   description:
     "高校の主権者教育（公共）・大学ゼミ・図書館の調べ学習で「政治のトリセツ」を使うためのガイド。無料・申請不要。中立設計（投票誘導なし・全データ出典つき）なので、そのまま教材に使えます。引用のしかたも解説。",
+  alternates: { canonical: "/for-education/" },
 };
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {

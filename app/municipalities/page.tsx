@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "市町村から探す（地域別）",
   description:
     "愛知の全54市町村を地域（名古屋・尾張・知多・西三河・東三河）別に。各市町村の議会・議員・首長・会議録に一次ソース付きでたどれます。",
+  alternates: { canonical: "/municipalities/" },
 };
 
 export default function MunicipalitiesPage() {

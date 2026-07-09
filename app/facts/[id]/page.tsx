@@ -19,6 +19,7 @@ export async function generateMetadata({
   return {
     title: card.title,
     description: card.hook,
+    alternates: { canonical: `/facts/${id}/` },
     openGraph: {
       title: card.title,
       description: card.hook,
@@ -66,6 +67,9 @@ export default async function FactDetailPage({
       <nav className="flex flex-wrap gap-x-5 gap-y-2 rule-thick pt-5 text-sm text-muted">
         <Link href="/facts" className="link-ink">
           ← 事実カード一覧
+        </Link>
+        <Link href="/area" className="hover:text-accent-deep">
+          郵便番号で自分の代表者を探す
         </Link>
         <Link href="/legislators" className="hover:text-accent-deep">
           議員を見る

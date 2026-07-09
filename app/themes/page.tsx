@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "テーマから探す（生活の言葉で）",
   description:
     "物価・子育て・医療・働き方・防災・交通など、生活の言葉から愛知選出議員の国会発言（一次ソース付き）を逆引きできます。",
+  alternates: { canonical: "/themes/" },
 };
 
 export default function ThemesPage() {

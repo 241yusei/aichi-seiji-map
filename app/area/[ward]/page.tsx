@@ -33,6 +33,7 @@ export async function generateMetadata({
   return {
     title: `名古屋市${w.ward}の代表者`,
     description: `名古屋市${w.ward}を代表する国会・愛知県議会・名古屋市会の議員と首長を、一次ソース付きでまとめて確認できます。`,
+    alternates: { canonical: `/area/${ward}/` },
   };
 }
 

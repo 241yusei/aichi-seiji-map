@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "選挙カレンダー｜愛知の次の選挙はいつ",
   description:
     "愛知県知事・県内市町村長の任期満了日から「次の選挙はいつごろか」を一覧に。あなたの街の次の首長選の目安を、各自治体公式の一次ソース付きで。中立・投票誘導なし。",
+  alternates: { canonical: "/elections/" },
 };
 
 // 任期満了日は「次の選挙の時期の目安」。基準日（今日相当）はビルド時の最終更新日とする。
@@ -44,14 +45,27 @@ export default function ElectionsPage() {
         </p>
       </header>
 
-      {/* 統一地方選の注記（既知の大きな節目） */}
+      {/* 統一地方選・知事選の注記（既知の大きな節目） */}
       <section className="bg-calm p-5">
         <h2 className="eyebrow text-accent-deep">大きな節目</h2>
-        <p className="measure mt-2 text-sm text-ink">
-          <span className="font-bold">2027年4月：統一地方選挙</span>
-          。愛知県議会議員や多くの市町村議会議員の改選が見込まれます（首長選とは別に、議会の改選があります）。
-          日程は今後、各選挙管理委員会から告示されます。
-        </p>
+        <ul className="measure mt-2 space-y-2 text-sm text-ink">
+          <li>
+            <span className="font-bold">2027年2月：愛知県知事の任期満了</span>
+            。時期の目安と知事のしくみは{" "}
+            <Link href="/elections/aichi-governor-2027" className="link-ink">
+              愛知県知事選挙2027の解説
+            </Link>
+            へ。
+          </li>
+          <li>
+            <span className="font-bold">2027年4月：統一地方選挙</span>
+            。愛知県議会議員や多くの市町村議会議員の改選が見込まれます。何が選ばれるかは{" "}
+            <Link href="/elections/unified-2027" className="link-ink">
+              統一地方選挙2027（愛知）の解説
+            </Link>
+            へ。日程は今後、各選挙管理委員会から告示されます。
+          </li>
+        </ul>
       </section>
 
       {/* 今後の首長選（年別） */}

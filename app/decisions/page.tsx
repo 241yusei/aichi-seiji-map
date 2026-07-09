@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "議会の議決（会期×主要議案）",
   description:
     "名古屋市会・愛知県議会が会期ごとに何を可決・否決したか（主要議案）を、公式の審議結果に出典リンク付きで。会派別の賛否は出典資料で、個々の議員の賛否は原則非公開。",
+  alternates: { canonical: "/decisions/" },
 };
 
 // 会派別賛否（出典あり）への案内。県は公式の結果概要へ linkout。

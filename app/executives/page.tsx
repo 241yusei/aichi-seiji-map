@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "首長（知事・市町村長）一覧と任期満了日｜次の選挙はいつ",
   description:
     "愛知県知事と県内市町村長55人を、任期満了日（次の首長選の時期の目安）と公式サイトの一次ソース付きで一覧。議会（議員）とあわせて「誰が地域を率いているか」を確認できます。",
+  alternates: { canonical: "/executives/" },
 };
 
 function ExecRow({

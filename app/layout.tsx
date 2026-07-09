@@ -41,6 +41,7 @@ export const metadata: Metadata = {
     "政治をはじめて知る人のための、愛知・名古屋の政治の入口。国会(愛知選出)・愛知県議会・全54市町村の代表者の発言・採決・政治資金を、やさしい解説と一次ソースで。中立・非投票誘導。",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://aichi-seiji-map.vercel.app"),
   alternates: {
+    canonical: "/",
     types: { "application/rss+xml": "/feed.xml" },
   },
   twitter: {
@@ -52,9 +53,12 @@ export const metadata: Metadata = {
   },
 };
 
-// ヘッダーは主要6項目に絞る（残りはフッターから到達可）。モバイルの過密を避ける。
+// ヘッダーは主要7項目に絞る（残りはフッターから到達可）。モバイルの過密を避ける。
+// 「地域」はモバイルのボトムナビにはあるがデスクトップに無かったため追加
+// （郵便番号での自分の代表者検索は最も価値の伝わる導線のため）。
 const NAV = [
   { href: "/start", label: "はじめに" },
+  { href: "/area", label: "地域" },
   { href: "/learn", label: "まなぶ" },
   { href: "/legislators", label: "議員" },
   { href: "/issues", label: "争点" },
@@ -70,6 +74,19 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       className={`${mincho.variable} ${plexJP.variable}`}
     >
       <body className="min-h-dvh">
+        {/* サイト全体の構造化データ（検索結果でのサイト名表示用） */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "政治のトリセツ あいち・なごや",
+              alternateName: "愛知政治マップ",
+              url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://aichi-seiji-map.vercel.app",
+            }),
+          }}
+        />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:bg-ink focus:px-3 focus:py-2 focus:text-sm focus:text-paper"
@@ -137,58 +154,82 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <li>・投票／不投票を呼びかけません。比較はすべて事実に基づきます。</li>
               <li>・全データに一次ソースを併記。AI要約には必ず元発言リンクを付けます。</li>
             </ul>
-            <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm text-muted">
-              <Link href="/about" className="link-ink">
-                中立性・運営・財源
-              </Link>
-              <Link href="/start" className="hover:text-accent-deep">
-                はじめに
-              </Link>
-              <Link href="/learn" className="hover:text-accent-deep">
-                まなぶ
-              </Link>
-              <Link href="/vote-guide" className="hover:text-accent-deep">
-                投票ガイド
-              </Link>
-              <Link href="/facts" className="hover:text-accent-deep">
-                事実カード
-              </Link>
-              <Link href="/legislators" className="hover:text-accent-deep">
-                議員一覧
-              </Link>
-              <Link href="/compare" className="hover:text-accent-deep">
-                くらべる
-              </Link>
-              <Link href="/executives" className="hover:text-accent-deep">
-                首長
-              </Link>
-              <Link href="/elections" className="hover:text-accent-deep">
-                選挙カレンダー
-              </Link>
-              <Link href="/municipalities" className="hover:text-accent-deep">
-                市町村
-              </Link>
-              <Link href="/issues" className="hover:text-accent-deep">
-                争点
-              </Link>
-              <Link href="/parties" className="hover:text-accent-deep">
-                政党・会派
-              </Link>
-              <Link href="/decisions" className="hover:text-accent-deep">
-                議会の議決
-              </Link>
-              <Link href="/themes" className="hover:text-accent-deep">
-                テーマから探す
-              </Link>
-              <Link href="/search" className="hover:text-accent-deep">
-                検索
-              </Link>
-              <Link href="/for-education" className="hover:text-accent-deep">
-                教育でつかう
-              </Link>
-              <Link href="/support" className="hover:text-accent-deep">
-                支援・寄付
-              </Link>
+            {/* フッターは4カテゴリに見出し付きでグルーピング（旧・17リンク羅列を解消）。 */}
+            <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-5 text-sm text-muted sm:grid-cols-4">
+              <div>
+                <p className="eyebrow text-faint">はじめる</p>
+                <div className="mt-2 flex flex-col gap-1.5">
+                  <Link href="/start" className="hover:text-accent-deep">
+                    はじめに
+                  </Link>
+                  <Link href="/learn" className="hover:text-accent-deep">
+                    まなぶ
+                  </Link>
+                  <Link href="/vote-guide" className="hover:text-accent-deep">
+                    投票ガイド
+                  </Link>
+                  <Link href="/for-education" className="hover:text-accent-deep">
+                    教育でつかう
+                  </Link>
+                </div>
+              </div>
+              <div>
+                <p className="eyebrow text-faint">調べる</p>
+                <div className="mt-2 flex flex-col gap-1.5">
+                  <Link href="/area" className="hover:text-accent-deep">
+                    地域から探す
+                  </Link>
+                  <Link href="/legislators" className="hover:text-accent-deep">
+                    議員一覧
+                  </Link>
+                  <Link href="/compare" className="hover:text-accent-deep">
+                    くらべる
+                  </Link>
+                  <Link href="/executives" className="hover:text-accent-deep">
+                    首長
+                  </Link>
+                  <Link href="/municipalities" className="hover:text-accent-deep">
+                    市町村
+                  </Link>
+                  <Link href="/parties" className="hover:text-accent-deep">
+                    政党・会派
+                  </Link>
+                </div>
+              </div>
+              <div>
+                <p className="eyebrow text-faint">読む</p>
+                <div className="mt-2 flex flex-col gap-1.5">
+                  <Link href="/facts" className="hover:text-accent-deep">
+                    事実カード
+                  </Link>
+                  <Link href="/issues" className="hover:text-accent-deep">
+                    争点
+                  </Link>
+                  <Link href="/themes" className="hover:text-accent-deep">
+                    テーマから探す
+                  </Link>
+                  <Link href="/decisions" className="hover:text-accent-deep">
+                    議会の議決
+                  </Link>
+                  <Link href="/elections" className="hover:text-accent-deep">
+                    選挙カレンダー
+                  </Link>
+                </div>
+              </div>
+              <div>
+                <p className="eyebrow text-faint">サイトについて</p>
+                <div className="mt-2 flex flex-col gap-1.5">
+                  <Link href="/about" className="link-ink">
+                    中立性・運営・財源
+                  </Link>
+                  <Link href="/search" className="hover:text-accent-deep">
+                    検索
+                  </Link>
+                  <Link href="/support" className="hover:text-accent-deep">
+                    支援・寄付
+                  </Link>
+                </div>
+              </div>
             </div>
             <p className="mt-5 text-xs text-faint">
               更新を受け取る：

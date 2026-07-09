@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "検索（議員・首長・争点・事実カード）",
   description:
     "愛知の国会議員・県議・市町村議・首長、争点、事実カードを横断検索。氏名・地域・政党・キーワードで探せます。",
+  alternates: { canonical: "/search/" },
 };
 
 export default function SearchPage() {

@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "まなぶ｜政治を、ゼロからすこしずつ",
   description:
     "政治をまったく知らない人のための学習コース。そもそも政治とは／選挙のしくみ／二元代表制／税金の流れ／会派／政治資金を、やさしい言葉と図解で。",
+  alternates: { canonical: "/learn/" },
 };
 
 export default function LearnPage() {

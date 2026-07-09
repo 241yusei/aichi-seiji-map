@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "政党・会派の勢力図｜愛知の三層",
   description:
     "国会(愛知選出)・愛知県議会・名古屋市会の会派構成を、人数の多い順に可視化。どの会派が大きいかを一次ソース付きで。中立・投票誘導なし。",
+  alternates: { canonical: "/parties/" },
 };
 
 function tally(list: Legislator[]): { label: string; count: number }[] {

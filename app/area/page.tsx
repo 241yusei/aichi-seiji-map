@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "地域から探す（あなたの代表者）",
   description:
     "郵便番号または名古屋市の区から、あなたの地域の衆院・参院・愛知県議会・名古屋市会の代表者と首長をまとめて確認できます。",
+  alternates: { canonical: "/area/" },
 };
 
 export default function AreaPage() {
