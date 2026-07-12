@@ -94,6 +94,32 @@ export default function PartiesPage() {
         }}
       />
 
+      {/* 国政の政権枠組み（事実のみ・評価語なし）。一次ソース（首相官邸・衆議院・自民党・立憲民主党公式）で確認できた範囲に限定。
+          与野党ラベルは「政権参加の有無」という事実のみを示し、優劣は含めない。 */}
+      <div className="border-l-2 border-accent bg-subtle px-4 py-3">
+        <p className="eyebrow text-accent-deep">国会の政権枠組み（事実）</p>
+        <p className="measure mt-1 text-sm text-muted">
+          2026年2月8日の第51回衆議院議員総選挙後、2026年2月18日に第2次高市内閣（第105代・内閣総理大臣：高市早苗）が発足しました。
+          自由民主党・日本維新の会（日本維新の会は閣外協力）による連立です。
+          中道改革連合（立憲民主党・公明党出身議員により2026年1月16日結党）は衆議院で最大野党の会派です。
+          上のグラフは愛知選出議員の会派別人数で、政権参加の有無とは別の集計です。
+        </p>
+        <p className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs">
+          <SourceLink href="https://www.kantei.go.jp/jp/rekidainaikaku/105.html">
+            首相官邸「第105代 高市早苗」
+          </SourceLink>
+          <SourceLink href="https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/shiryo/kaiha_m.htm">
+            衆議院「会派名及び会派別所属議員数」
+          </SourceLink>
+          <SourceLink href="https://www.jimin.jp/news/press/211624.html">
+            自由民主党「自民党・日本維新の会共同会見」
+          </SourceLink>
+          <SourceLink href="https://cdp-japan.jp/news/20260116_0071">
+            立憲民主党「中道改革連合 結党について」
+          </SourceLink>
+        </p>
+      </div>
+
       <LayerSection
         title="愛知県議会"
         total={pref.length}

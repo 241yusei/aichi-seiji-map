@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getFactCard, getFactCards, getIssue } from "@/lib/data";
+import { getFactCard, getFactCards, getIssues } from "@/lib/data";
 import { FactCardView } from "@/components/FactCardView";
+import { getRelatedIssuesForFactCard } from "@/lib/related";
 
 export function generateStaticParams() {
   return getFactCards().map((f) => ({ id: f.id }));
@@ -43,9 +44,8 @@ export default async function FactDetailPage({
   const card = getFactCard(id);
   if (!card) notFound();
 
-  const relatedIssues = (card.relatedIssueIds ?? [])
-    .map((iid) => getIssue(iid))
-    .filter((i): i is NonNullable<typeof i> => Boolean(i));
+  // 手動キュレーション（relatedIssueIds）優先＋キーワードマッチで補完（最大3件・issues/[id] と対の実装）。
+  const relatedIssues = getRelatedIssuesForFactCard(card, getIssues());
 
   return (
     <div className="space-y-10">
