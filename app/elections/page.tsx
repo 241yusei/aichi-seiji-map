@@ -133,6 +133,9 @@ export default function ElectionsPage() {
         <Link href="/area" className="hover:text-accent-deep">
           郵便番号で探す
         </Link>
+        <Link href="/history" className="hover:text-accent-deep">
+          県政・市政の歴史
+        </Link>
       </nav>
     </div>
   );

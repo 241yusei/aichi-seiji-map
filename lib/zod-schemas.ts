@@ -173,3 +173,56 @@ export const issuesSchema = z.array(issueSchema);
 export const factCardsSchema = z.array(factCardSchema);
 export const executivesSchema = z.array(executiveSchema);
 export const legislatorProfilesSchema = z.array(legislatorProfileSchema);
+
+// ============================================================
+// 歴史の縦軸（Issue #59） — data/history.json のスキーマ
+// lib/types.ts の HistoryData と一致させること。全項目に一次ソースURLを持たせる。
+// ============================================================
+
+// イベント日付は YYYY / YYYY-MM / YYYY-MM-DD のいずれかを許容する（年しか特定できない事象がある）。
+const flexDate = z
+  .string()
+  .regex(/^\d{4}(-\d{2}(-\d{2})?)?$/, "日付は YYYY / YYYY-MM / YYYY-MM-DD 形式である必要があります");
+
+export const historyTenureSchema = z.object({
+  name: z.string().min(1),
+  kana: z.string().min(1),
+  startYear: z.number().int(),
+  endYear: z.number().int().nullable(),
+  terms: z.number().int().min(1),
+  tenureLabel: z.string().min(1),
+  note: z.string().optional(),
+  sourceUrl: httpUrl,
+});
+
+export const turnoutPointSchema = z.object({
+  date: isoDate,
+  year: z.number().int(),
+  turnout: z.number(),
+  note: z.string().optional(),
+});
+
+export const turnoutSeriesSchema = z.object({
+  scope: z.string().min(1),
+  sourceUrl: httpUrl,
+  sourceLabel: z.string().min(1),
+  points: z.array(turnoutPointSchema).min(1),
+});
+
+export const historyEventSchema = z.object({
+  date: flexDate,
+  year: z.number().int(),
+  title: z.string().min(1),
+  description: z.string().min(1),
+  category: z.string().min(1),
+  sourceUrl: httpUrl,
+  sourceLabel: z.string().min(1),
+});
+
+export const historySchema = z.object({
+  governors: z.array(historyTenureSchema).min(1),
+  mayors: z.array(historyTenureSchema).min(1),
+  governorTurnout: turnoutSeriesSchema,
+  mayorTurnout: turnoutSeriesSchema,
+  events: z.array(historyEventSchema),
+});

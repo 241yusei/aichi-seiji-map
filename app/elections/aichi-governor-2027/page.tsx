@@ -181,6 +181,9 @@ export default function GovernorElection2027Page() {
         <Link href="/vote-guide" className="hover:text-accent-deep">
           投票ガイド
         </Link>
+        <Link href="/history" className="hover:text-accent-deep">
+          歴代知事と投票率の歴史
+        </Link>
       </nav>
     </div>
   );

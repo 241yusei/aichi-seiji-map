@@ -10,6 +10,7 @@ import {
   executivesSchema,
   factCardsSchema,
   fundingsSchema,
+  historySchema,
   issueExplainersSchema,
   issuesSchema,
   legislatorProfilesSchema,
@@ -152,6 +153,30 @@ for (const p of profiles) {
   if (seenProf.has(p.id)) fail(`プロフィールID重複: ${p.id}`);
   seenProf.add(p.id);
   if (!legislatorIds.has(p.id)) fail(`プロフィールの参照先議員が不明: ${p.id}`);
+}
+
+// 歴史データ（history.json・Issue #59）を検証する。
+// 複合オブジェクト＋自己完結（他データを参照しない）ため独立ブロックで扱う。
+{
+  const path = join(DATA_DIR, "history.json");
+  if (!existsSync(path)) {
+    console.log("  - history.json: 未作成（スキップ）");
+  } else {
+    try {
+      const data = historySchema.parse(JSON.parse(readFileSync(path, "utf-8")));
+      console.log(
+        `  ✓ history.json: 知事 ${data.governors.length} / 市長 ${data.mayors.length} / 知事選投票率 ${data.governorTurnout.points.length} / 市長選投票率 ${data.mayorTurnout.points.length} / イベント ${data.events.length}`,
+      );
+      // 投票率は 0〜100% の範囲に収まること（転記ミスの検出）
+      for (const s of [data.governorTurnout, data.mayorTurnout]) {
+        for (const p of s.points) {
+          if (p.turnout < 0 || p.turnout > 100) fail(`投票率が範囲外: ${s.scope} ${p.date} → ${p.turnout}`);
+        }
+      }
+    } catch (e) {
+      fail(`history.json: スキーマ検証エラー: ${(e as Error).message}`);
+    }
+  }
 }
 
 console.log("");
