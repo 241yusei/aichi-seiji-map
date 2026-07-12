@@ -162,7 +162,10 @@ export default function AboutPage() {
         <p>
           運営：「政治のトリセツ あいち・なごや」編集部（個人運営）。
           本サイトは、<span className="font-bold text-ink">地域メディアの運営・取材編集の経験がある個人</span>
-          が、中立を方針として運営しています。中立性を保つため、本サイトの編集は、運営者が関わる他の媒体からは
+          が、中立を方針として運営しています。具体的には、名古屋の情報メディア
+          <SourceLink href="https://note.com/citypod_nagoya">「ナゴヤ人間」</SourceLink>
+          と同一の運営者です。中立性は運営者を隠すことではなく、方法の開示
+          （一次ソース主義・論評を載せない・出典明記）で担保する方針です。本サイトの編集は、運営者が関わる他の媒体からは
           <span className="font-bold text-ink">独立して</span>行います。
         </p>
         <p className="mt-3 font-bold text-ink">利益相反についての方針</p>

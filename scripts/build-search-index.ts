@@ -108,6 +108,24 @@ const PAGES: { t: string; s: string; u: string; q: string }[] = [
     u: "/elections/unified-2027/",
     q: "統一地方選 とういつちほうせん 2027 愛知 県議選 市議選 改選 いつ",
   },
+  {
+    t: "県政・市政の歴史",
+    s: "ページ・歴代知事6人・市長8人・投票率76年の推移",
+    u: "/history/",
+    q: "歴史 れきし 歴代知事 歴代市長 系譜 投票率 推移 桑原 本山 河村 大村 history",
+  },
+  {
+    t: "財政：県と名古屋市の予算",
+    s: "ページ・一般会計の歳入・歳出・税収の内訳",
+    u: "/finance/",
+    q: "財政 ざいせい 予算 よさん 決算 歳入 歳出 税収 一般会計 減税 finance",
+  },
+  {
+    t: "集計方法の開示",
+    s: "ページ・発言統計・会派多数の算出方法と限界",
+    u: "/methodology/",
+    q: "集計方法 方法論 ほうほうろん 統計 会派多数 乖離 methodology 開示",
+  },
 ];
 for (const p of PAGES) entries.push({ ...p, k: "ページ", q: norm(p.q) });
 

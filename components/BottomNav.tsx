@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState, type ReactNode } from "react";
 
-// モバイル(<sm)の固定ボトムナビ。主要6導線（5導線＋検索）・単線アイコン＋和文ラベル・teal アクティブ・タップ48px。
+// モバイル(<sm)の固定ボトムナビ。主要6導線（5導線＋検索）・単線アイコン＋和文ラベル・アクティブはaccent（深紫）・タップ48px。
 // 写真/塗りアイコンは使わず currentColor の単線SVG（依存ゼロ・中立）。
 function Icon({ d }: { d: ReactNode }) {
   return (

@@ -217,6 +217,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                   <Link href="/elections" className="hover:text-accent-deep">
                     選挙カレンダー
                   </Link>
+                  <Link href="/history" className="hover:text-accent-deep">
+                    県政・市政の歴史
+                  </Link>
                 </div>
               </div>
               <div>
@@ -224,6 +227,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 <div className="mt-2 flex flex-col gap-1.5">
                   <Link href="/about" className="link-ink">
                     中立性・運営・財源
+                  </Link>
+                  <Link href="/methodology" className="hover:text-accent-deep">
+                    集計方法の開示
                   </Link>
                   <Link href="/search" className="hover:text-accent-deep">
                     検索
