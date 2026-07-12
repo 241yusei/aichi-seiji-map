@@ -38,6 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/history",
     "/parties",
     "/for-education",
+    "/methodology",
     "/about",
     "/support",
     "/corrections",

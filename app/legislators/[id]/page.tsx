@@ -7,15 +7,19 @@ import {
   getLegislator,
   getLegislatorProfile,
   getLegislators,
+  getSpeeches,
   getSpeechesByLegislator,
   getVotes,
 } from "@/lib/data";
 import { SpeechList } from "@/components/SpeechList";
+import { SpeechStats } from "@/components/SpeechStats";
 import { Monogram } from "@/components/Monogram";
 import { SourceLink } from "@/components/SourceLink";
 import { VoteTable } from "@/components/VoteTable";
 import { VoteBar } from "@/components/VoteBar";
 import { FundingPanel } from "@/components/FundingPanel";
+import { coverageRange, speechStatsFor } from "@/lib/activity-stats";
+import { divergentBillKeysFor } from "@/lib/faction-divergence";
 import { minutesFor } from "@/lib/sources/linkout";
 import { municipalityByGov } from "@/lib/municipalities";
 import { LAST_UPDATED, SITE_URL } from "@/lib/site-meta";
@@ -64,6 +68,10 @@ export default async function LegislatorDetailPage({
   const votes = getVotes(id);
   const funding = getFunding(id);
   const profile = getLegislatorProfile(id);
+  // 発言の統計（国会議員のみ・ビルド時再集計）と会派多数と異なる投票（機械検出）。
+  const speechStats = legislator.level === "national" ? speechStatsFor(speeches) : null;
+  const speechCoverage = legislator.level === "national" ? coverageRange(getSpeeches()) : null;
+  const divergentKeys = divergentBillKeysFor(id);
   const voteTally = votes.reduce(
     (acc, v) => {
       acc[v.result] = (acc[v.result] ?? 0) + 1;
@@ -296,13 +304,25 @@ export default async function LegislatorDetailPage({
         </div>
       </section>
 
-      {/* 採決・政治資金（国会議員のみ） */}
-      {legislator.level === "national" && (
+      {/* 発言の統計・採決・政治資金（国会議員のみ） */}
+      {legislator.level === "national" && speechStats && (
         <>
           <section>
-            <SectionHead n="02" title="採決" />
+            <SectionHead n="02" title="発言の統計" meta={`${speechStats.total}件`} />
             <div className="mt-5">
-              <VoteTable votes={votes} house={house} />
+              <SpeechStats
+                stats={speechStats}
+                coverage={speechCoverage}
+                minutesHref={minutesSearch?.url}
+                minutesLabel={minutesSearch?.label}
+              />
+            </div>
+          </section>
+
+          <section>
+            <SectionHead n="03" title="採決" />
+            <div className="mt-5">
+              <VoteTable votes={votes} house={house} divergentKeys={divergentKeys} />
             </div>
             <p className="mt-3 text-sm">
               <Link href="/decisions/" className="link-ink">
@@ -312,7 +332,7 @@ export default async function LegislatorDetailPage({
           </section>
 
           <section>
-            <SectionHead n="03" title="政治資金" meta={funding.length > 0 ? `${funding.length}団体` : undefined} />
+            <SectionHead n="04" title="政治資金" meta={funding.length > 0 ? `${funding.length}団体` : undefined} />
             <div className="mt-5">
               <FundingPanel funding={funding} />
             </div>

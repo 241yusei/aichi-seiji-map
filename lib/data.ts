@@ -127,10 +127,13 @@ export function getSpeechesByIds(ids: string[]): SpeechRecord[] {
 }
 
 // --- 採決 ---
+// 全採決（会派多数の算出など、議員横断の集計に使う）。新しい順。
+export function getAllVotes(): Vote[] {
+  return readArray<Vote>("votes.json", votesSchema).sort((a, b) => b.date.localeCompare(a.date));
+}
+
 export function getVotes(legislatorId: string): Vote[] {
-  return readArray<Vote>("votes.json", votesSchema)
-    .filter((v) => v.legislatorId === legislatorId)
-    .sort((a, b) => b.date.localeCompare(a.date));
+  return getAllVotes().filter((v) => v.legislatorId === legislatorId);
 }
 
 // --- 政治資金 ---
