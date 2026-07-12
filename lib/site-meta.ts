@@ -1,6 +1,6 @@
 // サイト共通メタ。データの「基準日（最終更新）」を一元管理する。
 // データを更新したらここを更新し、各ページの「データ基準日」表示に反映する。
-export const LAST_UPDATED = "2026-07-01";
+export const LAST_UPDATED = "2026-07-12";
 
 // 本番URL（JSON-LD・OGP等の絶対URL組み立てに使う）。
 export const SITE_URL =
