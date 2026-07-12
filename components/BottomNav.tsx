@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState, type ReactNode } from "react";
 
-// モバイル(<sm)の固定ボトムナビ。主要5導線・単線アイコン＋和文ラベル・teal アクティブ・タップ48px。
+// モバイル(<sm)の固定ボトムナビ。主要6導線（5導線＋検索）・単線アイコン＋和文ラベル・teal アクティブ・タップ48px。
 // 写真/塗りアイコンは使わず currentColor の単線SVG（依存ゼロ・中立）。
 function Icon({ d }: { d: ReactNode }) {
   return (
@@ -30,6 +30,9 @@ const ITEMS: { href: string; label: string; icon: ReactNode }[] = [
   { href: "/legislators", label: "議員", icon: <Icon d={<><circle cx="9" cy="8" r="3" /><path d="M3.5 19a5.5 5.5 0 0 1 11 0" /><path d="M16 6.5a3 3 0 0 1 0 6" /><path d="M16.5 19a5.5 5.5 0 0 0-2.5-4.6" /></>} /> },
   { href: "/issues", label: "争点", icon: <Icon d={<><path d="M4 5h16v10H9l-4 4V5Z" /></>} /> },
   { href: "/learn", label: "まなぶ", icon: <Icon d={<><path d="M3 5.5A2 2 0 0 1 5 4h6v15H5a2 2 0 0 0-2 1.5V5.5Z" /><path d="M21 5.5A2 2 0 0 0 19 4h-6v15h6a2 2 0 0 1 2 1.5V5.5Z" /></>} /> },
+  // 6番目に追記（既存5導線の並び順・タップ位置は変更しない＝移動によるムスクルメモリ喪失を避ける）。
+  // 320px幅でも 320/6≈53px とタップ領域48pxを確保できるため、既存タブの削除は不要と判断。
+  { href: "/search", label: "検索", icon: <Icon d={<><circle cx="10.5" cy="10.5" r="6.5" /><path d="m20 20-4.3-4.3" /></>} /> },
 ];
 
 export function BottomNav() {
@@ -57,7 +60,7 @@ export function BottomNav() {
       className="fixed inset-x-0 bottom-0 z-40 border-t border-line bg-surface sm:hidden"
       style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
     >
-      <ul className="grid grid-cols-5">
+      <ul className="grid grid-cols-6">
         {ITEMS.map((it) => {
           const active = path === it.href || path.startsWith(`${it.href}/`);
           return (

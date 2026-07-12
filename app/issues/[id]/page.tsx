@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import {
+  getFactCards,
   getIssue,
   getIssueExplainer,
   getIssues,
@@ -10,6 +11,8 @@ import {
 } from "@/lib/data";
 import { CrossLayerView, type CrossLayerItem } from "@/components/CrossLayerView";
 import { IssueExplainerCard } from "@/components/IssueExplainerCard";
+import { FactCardType } from "@/components/FactCardView";
+import { getRelatedFactCardsForIssue } from "@/lib/related";
 
 export function generateStaticParams() {
   return getIssues().map((i) => ({ id: i.id }));
@@ -49,6 +52,8 @@ export default async function IssueDetailPage({
     speech,
     legislator: legById.get(speech.legislatorId),
   }));
+
+  const relatedFactCards = getRelatedFactCardsForIssue(issue, getFactCards());
 
   return (
     <div className="space-y-8">
@@ -99,6 +104,32 @@ export default async function IssueDetailPage({
           <CrossLayerView items={items} keywords={issue.keywords ?? []} />
         </div>
       </section>
+
+      {relatedFactCards.length > 0 && (
+        <section id="related-facts" className="scroll-mt-24 border-t border-line pt-6">
+          <p className="eyebrow text-faint">関連する事実カード</p>
+          <div className="mt-3">
+            {relatedFactCards.map((card) => (
+              <Link
+                key={card.id}
+                href={`/facts/${card.id}/`}
+                className="group grid grid-cols-[auto_1fr] items-baseline gap-3 border-t border-line py-4 transition-colors last:border-b hover:bg-subtle"
+              >
+                <FactCardType type={card.cardType} />
+                <span className="flex flex-wrap items-baseline justify-between gap-x-3">
+                  <span className="font-bold">{card.title}</span>
+                  <span
+                    aria-hidden
+                    className="text-faint transition-colors group-hover:text-accent"
+                  >
+                    →
+                  </span>
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
     </div>
   );
 }
