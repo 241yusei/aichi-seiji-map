@@ -11,6 +11,7 @@ import type {
   Executive,
   FactCard,
   Funding,
+  HistoryData,
   Issue,
   IssueExplainer,
   Legislator,
@@ -23,6 +24,7 @@ import {
   executivesSchema,
   factCardsSchema,
   fundingsSchema,
+  historySchema,
   issueExplainersSchema,
   issuesSchema,
   legislatorProfilesSchema,
@@ -189,4 +191,12 @@ export function getExecutiveByGov(govCode: string): Executive | undefined {
 // --- 議会の議決（会期×主要議案・一次ソースつき） ---
 export function getCouncilDecisions(): CouncilDecision[] {
   return readArray<CouncilDecision>("council-decisions.json", councilDecisionsSchema);
+}
+
+// --- 歴史（県政・市政の系譜＋投票率アーカイブ・Issue #59） ---
+// history.json は配列でなく複合オブジェクトなので、専用に読み込む。
+export function getHistory(): HistoryData {
+  const path = join(DATA_DIR, "history.json");
+  const raw = readFileSync(path, "utf-8");
+  return historySchema.parse(JSON.parse(raw)) as HistoryData;
 }

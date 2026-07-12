@@ -1,0 +1,285 @@
+{
+  "governors": [
+    {
+      "name": "青柳秀夫",
+      "kana": "あおやぎひでお",
+      "startYear": 1947,
+      "endYear": 1951,
+      "terms": 1,
+      "tenureLabel": "1期",
+      "sourceUrl": "https://www.nga.gr.jp/pref_info/chijifile/generations/23/"
+    },
+    {
+      "name": "桑原幹根",
+      "kana": "くわはらみきね",
+      "startYear": 1951,
+      "endYear": 1975,
+      "terms": 6,
+      "tenureLabel": "6期24年",
+      "sourceUrl": "https://www.nga.gr.jp/pref_info/chijifile/generations/23/"
+    },
+    {
+      "name": "仲谷義明",
+      "kana": "なかやよしあき",
+      "startYear": 1975,
+      "endYear": 1983,
+      "terms": 2,
+      "tenureLabel": "2期8年",
+      "sourceUrl": "https://www.nga.gr.jp/pref_info/chijifile/generations/23/"
+    },
+    {
+      "name": "鈴木礼治",
+      "kana": "すずきれいじ",
+      "startYear": 1983,
+      "endYear": 1999,
+      "terms": 4,
+      "tenureLabel": "4期16年",
+      "sourceUrl": "https://www.nga.gr.jp/pref_info/chijifile/generations/23/"
+    },
+    {
+      "name": "神田真秋",
+      "kana": "かんだまさあき",
+      "startYear": 1999,
+      "endYear": 2011,
+      "terms": 3,
+      "tenureLabel": "3期12年",
+      "sourceUrl": "https://www.nga.gr.jp/pref_info/chijifile/generations/23/"
+    },
+    {
+      "name": "大村秀章",
+      "kana": "おおむらひであき",
+      "startYear": 2011,
+      "endYear": null,
+      "terms": 4,
+      "tenureLabel": "4期目（在職中）",
+      "note": "任期満了日 2027年2月14日",
+      "sourceUrl": "https://www.nga.gr.jp/pref_info/chijifile/generations/23/"
+    }
+  ],
+  "mayors": [
+    {
+      "name": "塚本三",
+      "kana": "つかもとぞう",
+      "startYear": 1947,
+      "endYear": 1952,
+      "terms": 2,
+      "tenureLabel": "2期",
+      "note": "公選初の名古屋市長",
+      "sourceUrl": "https://ja.wikipedia.org/wiki/名古屋市長"
+    },
+    {
+      "name": "小林橘川",
+      "kana": "こばやしきっせん",
+      "startYear": 1952,
+      "endYear": 1961,
+      "terms": 3,
+      "tenureLabel": "3期",
+      "sourceUrl": "https://ja.wikipedia.org/wiki/名古屋市長"
+    },
+    {
+      "name": "杉戸清",
+      "kana": "すぎときよし",
+      "startYear": 1961,
+      "endYear": 1973,
+      "terms": 3,
+      "tenureLabel": "3期12年",
+      "sourceUrl": "https://ja.wikipedia.org/wiki/名古屋市長"
+    },
+    {
+      "name": "本山政雄",
+      "kana": "もとやままさお",
+      "startYear": 1973,
+      "endYear": 1985,
+      "terms": 3,
+      "tenureLabel": "3期12年",
+      "sourceUrl": "https://ja.wikipedia.org/wiki/名古屋市長"
+    },
+    {
+      "name": "西尾武喜",
+      "kana": "にしおたけよし",
+      "startYear": 1985,
+      "endYear": 1997,
+      "terms": 3,
+      "tenureLabel": "3期12年",
+      "sourceUrl": "https://ja.wikipedia.org/wiki/名古屋市長"
+    },
+    {
+      "name": "松原武久",
+      "kana": "まつばらたけひさ",
+      "startYear": 1997,
+      "endYear": 2009,
+      "terms": 3,
+      "tenureLabel": "3期12年",
+      "sourceUrl": "https://ja.wikipedia.org/wiki/名古屋市長"
+    },
+    {
+      "name": "河村たかし",
+      "kana": "かわむらたかし",
+      "startYear": 2009,
+      "endYear": 2024,
+      "terms": 4,
+      "tenureLabel": "4期",
+      "note": "2024年10月に辞職（衆院選 出馬のため）",
+      "sourceUrl": "https://ja.wikipedia.org/wiki/名古屋市長"
+    },
+    {
+      "name": "広沢一郎",
+      "kana": "ひろさわいちろう",
+      "startYear": 2024,
+      "endYear": null,
+      "terms": 1,
+      "tenureLabel": "1期目（在職中）",
+      "note": "任期満了日 2028年11月23日",
+      "sourceUrl": "https://www.city.nagoya.jp/mayor/category/318-0-0-0-0-0-0-0-0-0.html"
+    }
+  ],
+  "governorTurnout": {
+    "scope": "愛知県全体",
+    "sourceLabel": "名古屋市選挙管理委員会（愛知県知事選挙投票率の推移）",
+    "sourceUrl": "https://www.city.nagoya.jp/shisei/senkyo/1030152/1030187/1030193.html",
+    "points": [
+      { "date": "1947-04-05", "year": 1947, "turnout": 76.04 },
+      { "date": "1951-04-30", "year": 1951, "turnout": 82.31, "note": "4月30日の第1回投票。5月11日の決選投票の投票率は64.79%" },
+      { "date": "1955-02-15", "year": 1955, "turnout": 66.32 },
+      { "date": "1959-02-01", "year": 1959, "turnout": 63.74 },
+      { "date": "1963-02-03", "year": 1963, "turnout": 51.57 },
+      { "date": "1967-02-04", "year": 1967, "turnout": 37.29 },
+      { "date": "1971-02-07", "year": 1971, "turnout": 54.82 },
+      { "date": "1975-02-09", "year": 1975, "turnout": 65.66 },
+      { "date": "1979-02-04", "year": 1979, "turnout": 50.72 },
+      { "date": "1983-02-06", "year": 1983, "turnout": 45.06 },
+      { "date": "1987-02-01", "year": 1987, "turnout": 42.43 },
+      { "date": "1991-02-03", "year": 1991, "turnout": 36.06 },
+      { "date": "1995-02-05", "year": 1995, "turnout": 32.38 },
+      { "date": "1999-02-07", "year": 1999, "turnout": 41.92 },
+      { "date": "2003-02-02", "year": 2003, "turnout": 38.91 },
+      { "date": "2007-02-04", "year": 2007, "turnout": 52.11 },
+      { "date": "2011-02-06", "year": 2011, "turnout": 52.52, "note": "知事選・市長選・市議会解散住民投票を同日実施" },
+      { "date": "2015-02-01", "year": 2015, "turnout": 34.93 },
+      { "date": "2019-02-03", "year": 2019, "turnout": 35.51 },
+      { "date": "2023-02-05", "year": 2023, "turnout": 36.43 }
+    ]
+  },
+  "mayorTurnout": {
+    "scope": "名古屋市",
+    "sourceLabel": "名古屋市選挙管理委員会（名古屋市長選挙投票率の推移）",
+    "sourceUrl": "https://www.city.nagoya.jp/shisei/senkyo/1030152/1030187/1030190.html",
+    "points": [
+      { "date": "1947-04-05", "year": 1947, "turnout": 64.04 },
+      { "date": "1951-04-23", "year": 1951, "turnout": 78.08 },
+      { "date": "1952-09-28", "year": 1952, "turnout": 61.10 },
+      { "date": "1956-09-26", "year": 1956, "turnout": 59.64 },
+      { "date": "1960-09-18", "year": 1960, "turnout": 59.89 },
+      { "date": "1961-04-28", "year": 1961, "turnout": 52.63 },
+      { "date": "1965-04-25", "year": 1965, "turnout": 44.95 },
+      { "date": "1969-04-26", "year": 1969, "turnout": 43.65 },
+      { "date": "1973-04-22", "year": 1973, "turnout": 61.42 },
+      { "date": "1977-04-24", "year": 1977, "turnout": 61.81 },
+      { "date": "1981-04-26", "year": 1981, "turnout": 26.26 },
+      { "date": "1985-04-21", "year": 1985, "turnout": 33.39 },
+      { "date": "1989-04-23", "year": 1989, "turnout": 43.66 },
+      { "date": "1993-04-25", "year": 1993, "turnout": 31.70 },
+      { "date": "1997-04-20", "year": 1997, "turnout": 34.28 },
+      { "date": "2001-04-22", "year": 2001, "turnout": 31.41 },
+      { "date": "2005-04-24", "year": 2005, "turnout": 27.50 },
+      { "date": "2009-04-26", "year": 2009, "turnout": 50.54 },
+      { "date": "2011-02-06", "year": 2011, "turnout": 54.14, "note": "議会解散にともなう出直し市長選。知事選・住民投票と同日" },
+      { "date": "2013-04-21", "year": 2013, "turnout": 39.35 },
+      { "date": "2017-04-23", "year": 2017, "turnout": 36.90 },
+      { "date": "2021-04-25", "year": 2021, "turnout": 42.12 },
+      { "date": "2024-11-24", "year": 2024, "turnout": 39.63 }
+    ]
+  },
+  "events": [
+    {
+      "date": "1959-09-26",
+      "year": 1959,
+      "title": "伊勢湾台風",
+      "description": "台風15号（伊勢湾台風）が紀伊半島に上陸し東海地方を襲った。愛知・三重を中心に死者・行方不明者は5,098人にのぼった。",
+      "category": "災害",
+      "sourceLabel": "内閣府 防災情報のページ",
+      "sourceUrl": "https://www.bousai.go.jp/kyoiku/kyokun/kyoukunnokeishou/rep/1959_isewan_typhoon/index.html"
+    },
+    {
+      "date": "1961-09-30",
+      "year": 1961,
+      "title": "愛知用水 通水",
+      "description": "木曽川水系の水を尾張丘陵・知多半島などへ送る愛知用水の通水式が行われた。",
+      "category": "インフラ",
+      "sourceLabel": "愛知・豊川用水振興協会",
+      "sourceUrl": "https://www.aitoyo.or.jp/learning/library/history03/"
+    },
+    {
+      "date": "1981-09-30",
+      "year": 1981,
+      "title": "1988年夏季五輪 開催地決定（名古屋招致およばず）",
+      "description": "西ドイツ・バーデンバーデンのIOC総会で1988年夏季五輪の開催地が投票で決まり、ソウル52票・名古屋27票となった。",
+      "category": "国際イベント",
+      "sourceLabel": "Number Web（文藝春秋）",
+      "sourceUrl": "https://number.bunshun.jp/articles/-/850023"
+    },
+    {
+      "date": "2005-02-17",
+      "year": 2005,
+      "title": "中部国際空港（セントレア）開港",
+      "description": "常滑市沖の伊勢湾人工島に中部国際空港（セントレア）が開港した。",
+      "category": "インフラ",
+      "sourceLabel": "名古屋商工会議所のあゆみ",
+      "sourceUrl": "https://history.nagoya-cci.or.jp/heisei/h33.html"
+    },
+    {
+      "date": "2005-09-25",
+      "year": 2005,
+      "title": "愛・地球博（2005年日本国際博覧会）閉幕",
+      "description": "3月25日に開幕した愛・地球博が9月25日に閉幕した。会期185日間で、総入場者数は約2,205万人。",
+      "category": "国際イベント",
+      "sourceLabel": "名古屋商工会議所のあゆみ",
+      "sourceUrl": "https://history.nagoya-cci.or.jp/heisei/h34.html"
+    },
+    {
+      "date": "2011-02-06",
+      "year": 2011,
+      "title": "知事選・市長選・住民投票の同日実施（トリプル投票）",
+      "description": "愛知県知事選・名古屋市長選・名古屋市議会の解散を問う住民投票が同日に実施された（知事に大村秀章が初当選、市長に河村たかしが再選）。",
+      "category": "選挙・制度",
+      "sourceLabel": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com/article/DGXDASDE0500E_W1A200C1MM8002/"
+    },
+    {
+      "date": "2021-02-01",
+      "year": 2021,
+      "title": "知事リコール署名の大半を無効と判断",
+      "description": "愛知県選挙管理委員会は、大村秀章知事の解職請求（リコール）署名 約43.5万筆のうち約83.2%を無効と判断したと発表した。",
+      "category": "選挙・制度",
+      "sourceLabel": "中日新聞Web",
+      "sourceUrl": "https://www.chunichi.co.jp/article/195186"
+    },
+    {
+      "date": "2024-03",
+      "year": 2024,
+      "title": "リニア中央新幹線 2027年開業を断念",
+      "description": "JR東海はリニア中央新幹線 品川―名古屋の2027年開業を断念すると表明した。開業は最短でも2034年以降となる見通し。",
+      "category": "インフラ",
+      "sourceLabel": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com/article/DGXZQOFD27CYX0X20C24A2000000/"
+    },
+    {
+      "date": "2024-03-16",
+      "year": 2024,
+      "title": "ジブリパーク 全5エリア開園",
+      "description": "ジブリパーク（長久手市）に新エリア「魔女の谷」が開園し、全5エリアがそろった。",
+      "category": "都市・観光",
+      "sourceLabel": "ジブリパーク公式サイト",
+      "sourceUrl": "https://ghibli-park.jp/info/info20231128-3.html"
+    },
+    {
+      "date": "2024-10-31",
+      "year": 2024,
+      "title": "STATION Ai 開業",
+      "description": "名古屋市昭和区鶴舞にスタートアップ支援拠点「STATION Ai」がグランドオープンした。",
+      "category": "都市・産業",
+      "sourceLabel": "愛知県",
+      "sourceUrl": "https://www.pref.aichi.jp/press-release/stationai-open.html"
+    }
+  ]
+}

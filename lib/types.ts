@@ -191,3 +191,57 @@ export interface Executive {
   homepage?: string;
   sourceUrl: string; // 首長名を確認できた公式ページ（必須）
 }
+
+// ============================================================
+// 歴史の縦軸（Issue #59） — 県政・市政の系譜＋選挙投票率アーカイブ
+// すべて一次ソースURL付き。在任の長短・投票率の高低に評価を加えない事実表記に徹する。
+// ============================================================
+
+/** 歴代首長1人分の在任記録（知事・名古屋市長の系譜に使う）。 */
+export interface HistoryTenure {
+  name: string;
+  kana: string;
+  startYear: number; // 就任年
+  endYear: number | null; // 退任年（null = 現職）
+  terms: number; // 期数（当選回数）
+  /** 在任の事実表記（例: "6期24年"）。「多選」等の含意ある語は使わない。 */
+  tenureLabel: string;
+  note?: string;
+  sourceUrl: string; // 一次ソース（全国知事会名簿・公式ページ等）
+}
+
+/** 選挙1回分の投票率データ点。 */
+export interface TurnoutPoint {
+  date: string; // ISO 選挙執行日（YYYY-MM-DD）
+  year: number;
+  turnout: number; // 投票率（%）
+  note?: string; // 決選投票・同日実施などの注記
+}
+
+/** 投票率の時系列（知事選＝県全体／市長選＝名古屋市）。 */
+export interface TurnoutSeries {
+  scope: string; // 集計範囲（例: "愛知県全体" "名古屋市"）
+  sourceUrl: string; // 一次ソース（名古屋市選管の推移ページ等）
+  sourceLabel: string;
+  points: TurnoutPoint[];
+}
+
+/** 画期イベント1件（成功・失敗・災害・制度事件を偏りなく混在させる）。 */
+export interface HistoryEvent {
+  date: string; // ISO（YYYY / YYYY-MM / YYYY-MM-DD のいずれか）
+  year: number;
+  title: string;
+  description: string; // 客観記述（評価語なし）
+  category: string; // 中立分類（災害／インフラ／都市・産業／国際イベント／選挙・制度 等）
+  sourceUrl: string; // 一次ソース（必須）
+  sourceLabel: string;
+}
+
+/** /history ページが読む複合データ（data/history.json）。 */
+export interface HistoryData {
+  governors: HistoryTenure[]; // 歴代公選知事
+  mayors: HistoryTenure[]; // 歴代公選名古屋市長
+  governorTurnout: TurnoutSeries; // 知事選 投票率
+  mayorTurnout: TurnoutSeries; // 名古屋市長選 投票率
+  events: HistoryEvent[]; // 画期イベント年表
+}

@@ -35,6 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/elections",
     "/elections/aichi-governor-2027",
     "/elections/unified-2027",
+    "/history",
     "/parties",
     "/for-education",
     "/about",
