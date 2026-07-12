@@ -97,6 +97,8 @@ export interface IssueExplainer {
   youEffect?: string; // あなたに効くポイント（暮らし・財布への接続）
   whyImportant: string; // なぜ重要か
   now: string; // いま何が起きているか
+  /** 争点を裏付ける主要統計（中立を保つため必ず一次ソース付き）。数値のない定性テキストを補う。 */
+  keyStats?: { label: string; value: string; sourceUrl: string; note?: string }[];
   stances: IssueStance[]; // 立場の併記（賛否を中立に）
   // 論点の核（中立・等量併記）。賛成/反対の「最も強い主張」と「まだ答えの出ていない問い」。
   debate?: { pro: string; con: string; openQuestion: string };

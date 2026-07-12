@@ -132,6 +132,16 @@ export const issueExplainerSchema = z.object({
   youEffect: z.string().optional(),
   whyImportant: z.string().min(1),
   now: z.string().min(1),
+  keyStats: z
+    .array(
+      z.object({
+        label: z.string().min(1),
+        value: z.string().min(1),
+        sourceUrl: httpUrl,
+        note: z.string().optional(),
+      }),
+    )
+    .optional(),
   stances: z.array(z.object({ label: z.string().min(1), text: z.string().min(1) })),
   debate: z
     .object({
