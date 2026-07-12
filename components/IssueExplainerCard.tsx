@@ -25,6 +25,23 @@ export function IssueExplainerCard({ ex }: { ex: IssueExplainer }) {
           <p className="mt-1 text-sm text-muted">{ex.now}</p>
         </div>
       </div>
+      {ex.keyStats && ex.keyStats.length > 0 && (
+        <div className="border-t border-line p-5">
+          <p className="eyebrow text-faint">データで見る</p>
+          <dl className="mt-3 grid gap-4 sm:grid-cols-2">
+            {ex.keyStats.map((k, i) => (
+              <div key={i} className="border-l-2 border-accent pl-3">
+                <dt className="text-xs text-muted">{k.label}</dt>
+                <dd className="num-display tnum mt-1 text-xl text-ink">{k.value}</dd>
+                {k.note && <p className="mt-0.5 text-xs text-faint">{k.note}</p>}
+                <SourceLink href={k.sourceUrl} className="link-ink mt-1 inline-block text-xs">
+                  出典
+                </SourceLink>
+              </div>
+            ))}
+          </dl>
+        </div>
+      )}
       <div className="border-t border-line p-5">
         <p className="eyebrow text-faint">立場（中立に併記・推薦はしません）</p>
         <ul className="mt-2 space-y-2">

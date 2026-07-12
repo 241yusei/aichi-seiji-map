@@ -6,6 +6,19 @@
     "youEffect": "開業すれば通勤・出張が大きく変わる。建設費は最終的に運賃や税にも関わりうる。",
     "whyImportant": "通勤圏・経済・名古屋駅のまちづくりに大きく影響する、超広域のテーマ。",
     "now": "当初は2027年の品川〜名古屋開業が目標だったが断念。2026年1月にJR東海と静岡県が水資源問題で確認書を結び前進したものの、ほかの工区でも工事の遅れが広がり、開業時期は依然未確定。",
+    "keyStats": [
+      {
+        "label": "2027年開業の断念表明",
+        "value": "2024年3月",
+        "sourceUrl": "https://www.nikkei.com/article/DGXZQOFD27CYX0X20C24A2000000/",
+        "note": "JR東海が品川〜名古屋の2027年開業を断念"
+      },
+      {
+        "label": "開業時期の見通し",
+        "value": "最短でも2034年以降",
+        "sourceUrl": "https://www.nikkei.com/article/DGXZQOFD27CYX0X20C24A2000000/"
+      }
+    ],
     "stances": [
       {
         "label": "期待する声",
@@ -148,6 +161,25 @@
     "youEffect": "大会の費用は市の財源を使う。減税や他のサービスとのやりくりに影響する。",
     "whyImportant": "経済効果が期待される一方、関連予算がふくらみ、名古屋市の減税の財源を圧迫する面もある。",
     "now": "アジア競技大会は2026年9月19日〜10月4日、アジアパラ競技大会は10月18日〜24日に開催される。準備は最終段階に入り、運営費と市の財源（減税）の両立が引き続き論点になっている。",
+    "keyStats": [
+      {
+        "label": "大会の全体経費",
+        "value": "約3,700億円",
+        "sourceUrl": "https://www.pref.aichi.jp/press-release/asia202512220.html",
+        "note": "大会経費約3,000億円＋関連経費約700億円（2025年12月22日公表・当初想定から3倍超）"
+      },
+      {
+        "label": "県・市の負担",
+        "value": "県 約1,800億円／市 約900億円",
+        "sourceUrl": "https://www.pref.aichi.jp/press-release/asia202512220.html"
+      },
+      {
+        "label": "経済波及効果試算（全国）",
+        "value": "約3.6兆円",
+        "sourceUrl": "https://www.pref.aichi.jp/press-release/asia202512220.html",
+        "note": "県内への波及効果は約1.8兆円"
+      }
+    ],
     "stances": [
       {
         "label": "期待する声",
@@ -203,6 +235,14 @@
     "youEffect": "愛知の主要産業。雇用や地域経済＝あなたや家族の働く場に直結。",
     "whyImportant": "トヨタを中心とするものづくりの街・愛知では、雇用とサプライチェーンに直結する。",
     "now": "脱炭素を進める産業政策と、中小サプライヤーの転換支援が論点になっている。",
+    "keyStats": [
+      {
+        "label": "県の中小サプライヤー支援（事業化支援アドバンスコース）",
+        "value": "資金支援 上限50万円",
+        "sourceUrl": "https://www.pref.aichi.jp/site/automotive-industry/",
+        "note": "「あいち自動車サプライヤー Innovation Drive 2026」。専門家伴走支援・電動化等セミナーとあわせて実施、現在は募集終了"
+      }
+    ],
     "stances": [
       {
         "label": "推進する声",
@@ -257,6 +297,20 @@
     "youEffect": "旅行・帰省・物流の利便。空港の機能は買い物や仕事のしやすさに関わる。",
     "whyImportant": "観光・物流の玄関口として、地域経済の広がりに関わる。",
     "now": "需要回復と将来の機能強化（滑走路など）が論点になっている。",
+    "keyStats": [
+      {
+        "label": "誘導路転用による代替滑走路の規模",
+        "value": "長さ3,290m・幅45m",
+        "sourceUrl": "https://www.aviationwire.jp/archives/328311",
+        "note": "総事業費226億円"
+      },
+      {
+        "label": "供用開始予定",
+        "value": "2027年度中",
+        "sourceUrl": "https://www.aviationwire.jp/archives/328311",
+        "note": "滑走路を24時間運用しながらの隣接大工事は国内初"
+      }
+    ],
     "stances": [
       {
         "label": "期待する声",
@@ -311,6 +365,20 @@
     "youEffect": "ものづくりの人手と、学校・医療・地域の暮らしの両方に関わる。",
     "whyImportant": "ものづくりの現場の人手と、教育・医療・多文化共生という生活面の両方に関わる。",
     "now": "受け入れ制度は国が決めるが、暮らしの支援は県・市町村が担う。",
+    "keyStats": [
+      {
+        "label": "県内の外国人住民数（2025年12月末）",
+        "value": "357,800人",
+        "sourceUrl": "https://www.pref.aichi.jp/soshiki/tabunka/gaikokuzinjuminsu-2025-12.html",
+        "note": "県人口の4.80%・半年で+11,900人。国籍別最多はベトナム70,820人（ブラジル60,406人・フィリピン48,708人・中国48,650人）"
+      },
+      {
+        "label": "日本語指導が必要な児童生徒数（愛知県）",
+        "value": "15,712人",
+        "sourceUrl": "https://www.mext.go.jp/b_menu/houdou/31/09/1421569_00007.htm",
+        "note": "全国最多・前回比+12.4%（全国は84,759人、2025年5月1日時点の文科省調査）"
+      }
+    ],
     "stances": [
       {
         "label": "受け入れを進める声",
@@ -360,6 +428,25 @@
     "youEffect": "耐震化や避難の備えは、いざという時のあなたと家族の安全に直結。",
     "whyImportant": "愛知は南海トラフ地震の想定震源域に近く、命と暮らしに直結するテーマ。",
     "now": "住宅の耐震化、避難所の整備、堤防・治水、要配慮者の支援などが継続的な課題になっている。",
+    "keyStats": [
+      {
+        "label": "南海トラフ地震の想定死者数（最悪ケース）",
+        "value": "約2万7,000人",
+        "sourceUrl": "https://www.pref.aichi.jp/soshiki/bosai/r8higaiyosoku.html",
+        "note": "12年ぶりに調査を更新（2026年6月公表）"
+      },
+      {
+        "label": "早期避難を徹底した場合の想定死者数",
+        "value": "約1万8,000人",
+        "sourceUrl": "https://www.pref.aichi.jp/soshiki/bosai/r8higaiyosoku.html"
+      },
+      {
+        "label": "津波浸水による全壊建物（前回2014年調査比）",
+        "value": "ほぼ半減",
+        "sourceUrl": "https://www.pref.aichi.jp/soshiki/bosai/r8higaiyosoku.html",
+        "note": "堤防・水門整備の効果"
+      }
+    ],
     "stances": [
       {
         "label": "投資を急ぐ声",
@@ -462,6 +549,26 @@
     "youEffect": "介護の担い手や保険料は、親の介護やあなた自身の将来に関わる。",
     "whyImportant": "だれもが関わる可能性が高く、担い手・財源・サービスの質のバランスが問われる。",
     "now": "介護の人手不足、医療と介護の連携、認知症対策、地域包括ケアの整備が論点になっている。",
+    "keyStats": [
+      {
+        "label": "県の高齢化率（2023年10月時点）",
+        "value": "25.7%",
+        "sourceUrl": "https://www.pref.aichi.jp/uploaded/attachment/515648.pdf",
+        "note": "全国29.0%より約3.3ポイント低い"
+      },
+      {
+        "label": "圏域別の高齢化率格差（最高／最低）",
+        "value": "東三河北部40.1% ／ 西三河南部西22.7%",
+        "sourceUrl": "https://www.pref.aichi.jp/uploaded/attachment/515648.pdf",
+        "note": "差は17.4ポイント"
+      },
+      {
+        "label": "75歳以上人口",
+        "value": "1,078,091人",
+        "sourceUrl": "https://www.pref.aichi.jp/uploaded/attachment/515648.pdf",
+        "note": "2020年比+12.6%"
+      }
+    ],
     "stances": [
       {
         "label": "支援を厚くする声",
@@ -578,6 +685,25 @@
     "youEffect": "観光の盛り上がりは、地域の仕事や賑わい、混雑にも関わる。",
     "whyImportant": "観光は地域経済の波及効果が大きい一方、受け入れ環境の整備や混雑への対応も要る。",
     "now": "ジブリパークの集客やインバウンド回復をどう地域全体へ広げるかが論点になっている。",
+    "keyStats": [
+      {
+        "label": "ジブリパーク5エリア開園後の経済波及効果（年間）",
+        "value": "約710億円",
+        "sourceUrl": "https://www.pref.aichi.jp/press-release/ghiblipark-hakyuukouka.html",
+        "note": "2020年試算の1.48倍（2026年3月17日公表）"
+      },
+      {
+        "label": "訪日客のうち県内宿泊の割合",
+        "value": "74.2%",
+        "sourceUrl": "https://www.pref.aichi.jp/press-release/ghiblipark-hakyuukouka.html"
+      },
+      {
+        "label": "ジブリパーク目的での来県割合",
+        "value": "8割超",
+        "sourceUrl": "https://www.pref.aichi.jp/press-release/ghiblipark-hakyuukouka.html",
+        "note": "国内客・訪日客とも"
+      }
+    ],
     "stances": [
       {
         "label": "推進する声",
@@ -637,6 +763,25 @@
     "youEffect": "地元の野菜や花の生産、食の供給、農地のある風景の維持に関わる。",
     "whyImportant": "製造業の印象が強い愛知だが、農業産出額は全国上位。担い手の減少は食料生産と地域に直結する。",
     "now": "令和3年の農業産出額は2,922億円で全国第8位、うち花きは全国1位（542億円）。一方、基幹的農業従事者は2025年に28,572人で前回（2020年）比約29%減と、担い手の減少が続く（2026年6月時点で確認できる統計）。",
+    "keyStats": [
+      {
+        "label": "花きの産出額（令和6年）",
+        "value": "531億円",
+        "sourceUrl": "https://www.flower-kingdom.aichi.jp/about.html",
+        "note": "2位・千葉県の2.5倍以上、全国1位"
+      },
+      {
+        "label": "花き産出額 全国1位の連続年数",
+        "value": "63年連続",
+        "sourceUrl": "https://www.flower-kingdom.aichi.jp/about.html",
+        "note": "昭和37年から日本一"
+      },
+      {
+        "label": "花きの県内生産に占める東三河の割合",
+        "value": "約7割",
+        "sourceUrl": "https://www.flower-kingdom.aichi.jp/about.html"
+      }
+    ],
     "stances": [
       {
         "label": "強みを伸ばす声",
@@ -748,6 +893,73 @@
       {
         "label": "ジェトロ「国内最大のインキュベーション施設『STATION Ai』開業」",
         "url": "https://www.jetro.go.jp/biznews/2024/11/79deee7439bf29cb.html"
+      }
+    ]
+  },
+  {
+    "id": "population",
+    "subject": "県・市町村・国",
+    "oneLine": "愛知県の人口は6年連続で減少する一方、増える市町と減る市町村の差がはっきりしてきた。",
+    "youEffect": "人口の増減は、地域の商店・学校・公共交通の維持や、あなたの住むまちの将来像に関わる。",
+    "whyImportant": "出生が死亡を大きく下回る自然減を、転入超過の社会増で補いきれない構造が続いている。加えて増える市町と減る市町村の差が広がり、地域ごとにまちづくりの前提が変わってきている。",
+    "now": "2025年の県人口は745万3,803人で、前年より1万1,447人減り6年連続の減少。出生4万7,059人に対し死亡8万4,311人で、自然減は3万7,252人（9年連続）。転入超過による社会増2万5,805人（4年連続）では自然減を補いきれていない。市町村別では11市町のみ人口が増加し、43市町村は減少した。",
+    "keyStats": [
+      {
+        "label": "県人口（2025年）",
+        "value": "745万3,803人",
+        "sourceUrl": "https://www.pref.aichi.jp/press-release/toukei202512240000077337.html",
+        "note": "前年比1万1,447人減・6年連続の減少"
+      },
+      {
+        "label": "自然減（出生ー死亡）",
+        "value": "3万7,252人",
+        "sourceUrl": "https://www.pref.aichi.jp/press-release/toukei202512240000077337.html",
+        "note": "出生4万7,059人・死亡8万4,311人。9年連続の自然減"
+      },
+      {
+        "label": "社会増（転入ー転出）",
+        "value": "2万5,805人",
+        "sourceUrl": "https://www.pref.aichi.jp/press-release/toukei202512240000077337.html",
+        "note": "4年連続の社会増だが、自然減を補いきれていない"
+      },
+      {
+        "label": "人口が増加した市町村数",
+        "value": "11市町",
+        "sourceUrl": "https://www.pref.aichi.jp/press-release/toukei202512240000077337.html",
+        "note": "残る43市町村は人口減少（岩倉市+0.71%・日進市+0.39%・長久手市+0.37%が増加率上位）"
+      }
+    ],
+    "stances": [
+      {
+        "label": "都市集中を活かす視点",
+        "text": "人口が集まる都市部の利便性や生産性を高め、県全体の活力の核として伸ばすべき。"
+      },
+      {
+        "label": "県土の均衡を重視する視点",
+        "text": "人口が減る地域でも生活基盤や地域コミュニティを維持できるよう、県内格差を広げない対応が必要。"
+      }
+    ],
+    "debate": {
+      "pro": "人口が集まる都市部にインフラや行政サービスを集中させれば、効率的に維持しやすい。",
+      "con": "人口減少が続く地域では、商店・学校・公共交通など生活基盤の維持がいっそう難しくなる。",
+      "openQuestion": "限られた財源・人手を、都市への集中と県土の均衡のどちらにどれだけ配分するか。"
+    },
+    "timeline": [
+      {
+        "date": "2025年（2025年12月公表）",
+        "event": "県人口745万3,803人。前年比1万1,447人減で6年連続の減少。出生4万7,059人・死亡8万4,311人で自然減3万7,252人（9年連続）、転入超過による社会増2万5,805人（4年連続）では補いきれず。",
+        "sourceUrl": "https://www.pref.aichi.jp/press-release/toukei202512240000077337.html"
+      },
+      {
+        "date": "2025年",
+        "event": "人口が増加したのは11市町（増加率上位は岩倉市+0.71%・日進市+0.39%・長久手市+0.37%）。43市町村は減少し、減少率が大きいのは東栄町△4.12%・豊根村△3.71%・南知多町△2.12%。",
+        "sourceUrl": "https://www.pref.aichi.jp/press-release/toukei202512240000077337.html"
+      }
+    ],
+    "sources": [
+      {
+        "label": "愛知県「県内人口の動き（2025年）」",
+        "url": "https://www.pref.aichi.jp/press-release/toukei202512240000077337.html"
       }
     ]
   }
