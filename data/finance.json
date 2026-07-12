@@ -1,0 +1,879 @@
+[
+  {
+    "id": "aichi-pref",
+    "name": "愛知県",
+    "level": "prefectural",
+    "govCode": "23000",
+    "years": [
+      {
+        "fiscalYear": 2026,
+        "era": "令和8年度",
+        "total": 3222441000,
+        "revenues": [
+          {
+            "label": "県税",
+            "amount": 1324300000,
+            "sharePct": 41.1
+          },
+          {
+            "label": "地方消費税清算金",
+            "amount": 439261000,
+            "sharePct": 13.6
+          },
+          {
+            "label": "繰入金",
+            "amount": 357790556,
+            "sharePct": 11.1
+          },
+          {
+            "label": "国庫支出金",
+            "amount": 253581895,
+            "sharePct": 7.9
+          },
+          {
+            "label": "県債",
+            "amount": 230426666,
+            "sharePct": 7.2
+          },
+          {
+            "label": "諸収入",
+            "amount": 223503146,
+            "sharePct": 6.9
+          },
+          {
+            "label": "地方譲与税",
+            "amount": 177263000,
+            "sharePct": 5.5
+          },
+          {
+            "label": "地方交付税",
+            "amount": 120000000,
+            "sharePct": 3.7
+          },
+          {
+            "label": "地方特例交付金",
+            "amount": 34400001,
+            "sharePct": 1.1
+          },
+          {
+            "label": "使用料及び手数料",
+            "amount": 33956782,
+            "sharePct": 1.1
+          },
+          {
+            "label": "分担金及び負担金",
+            "amount": 12999295,
+            "sharePct": 0.4
+          },
+          {
+            "label": "財産収入",
+            "amount": 6764528,
+            "sharePct": 0.2
+          },
+          {
+            "label": "利子割清算金",
+            "amount": 6634945,
+            "sharePct": 0.2
+          },
+          {
+            "label": "交通安全対策特別交付金",
+            "amount": 1300000,
+            "sharePct": 0.0
+          },
+          {
+            "label": "寄附金",
+            "amount": 259185,
+            "sharePct": 0.0
+          },
+          {
+            "label": "繰越金",
+            "amount": 1,
+            "sharePct": 0.0
+          }
+        ],
+        "expenditures": [
+          {
+            "label": "教育・スポーツ費",
+            "amount": 800920500,
+            "sharePct": 24.9
+          },
+          {
+            "label": "諸支出金",
+            "amount": 621818241,
+            "sharePct": 19.3
+          },
+          {
+            "label": "福祉医療費",
+            "amount": 551728310,
+            "sharePct": 17.1
+          },
+          {
+            "label": "公債費",
+            "amount": 376099577,
+            "sharePct": 11.7
+          },
+          {
+            "label": "経済労働費",
+            "amount": 236245026,
+            "sharePct": 7.3
+          },
+          {
+            "label": "建設費",
+            "amount": 221894968,
+            "sharePct": 6.9
+          },
+          {
+            "label": "警察費",
+            "amount": 192165572,
+            "sharePct": 6.0
+          },
+          {
+            "label": "総務企画費",
+            "amount": 115784988,
+            "sharePct": 3.6
+          },
+          {
+            "label": "農林水産費",
+            "amount": 79320120,
+            "sharePct": 2.5
+          },
+          {
+            "label": "県民環境費",
+            "amount": 20991589,
+            "sharePct": 0.6
+          },
+          {
+            "label": "議会費",
+            "amount": 3416829,
+            "sharePct": 0.1
+          },
+          {
+            "label": "災害復旧費",
+            "amount": 1755280,
+            "sharePct": 0.0
+          },
+          {
+            "label": "予備費",
+            "amount": 300000,
+            "sharePct": 0.0
+          }
+        ],
+        "taxes": [
+          {
+            "label": "法人事業税",
+            "amount": 394000000,
+            "sharePct": 29.8
+          },
+          {
+            "label": "個人県民税",
+            "amount": 367276000,
+            "sharePct": 27.7
+          },
+          {
+            "label": "地方消費税",
+            "amount": 316164000,
+            "sharePct": 23.9
+          },
+          {
+            "label": "自動車税",
+            "amount": 111523000,
+            "sharePct": 8.5
+          },
+          {
+            "label": "法人県民税",
+            "amount": 37400000,
+            "sharePct": 2.8
+          },
+          {
+            "label": "軽油引取税",
+            "amount": 30911000,
+            "sharePct": 2.4
+          },
+          {
+            "label": "不動産取得税",
+            "amount": 27861000,
+            "sharePct": 2.1
+          },
+          {
+            "label": "個人事業税",
+            "amount": 15486000,
+            "sharePct": 1.1
+          },
+          {
+            "label": "県たばこ税",
+            "amount": 8147001,
+            "sharePct": 0.6
+          },
+          {
+            "label": "県民税利子割",
+            "amount": 7023001,
+            "sharePct": 0.5
+          },
+          {
+            "label": "固定資産税",
+            "amount": 6818930,
+            "sharePct": 0.5
+          },
+          {
+            "label": "ゴルフ場利用税",
+            "amount": 1358001,
+            "sharePct": 0.1
+          },
+          {
+            "label": "その他（鉱区税・狩猟税・産業廃棄物税・旧税）",
+            "amount": 332067,
+            "sharePct": 0.0
+          }
+        ],
+        "notes": [
+          "金額は千円（一般会計・当初予算）。構成比は公式資料の記載値。",
+          "県税の税目内訳の「その他」は、鉱区税・狩猟税・産業廃棄物税・旧自動車税等の合算（公式資料の合計との差分で算出）。"
+        ],
+        "sources": [
+          {
+            "label": "愛知県「令和8年度当初予算の概要　第2 令和8年度予算の規模等」（公式PDF）",
+            "url": "https://www.pref.aichi.jp/uploaded/attachment/598171.pdf"
+          },
+          {
+            "label": "【知事会見】令和8年度当初予算（愛知県公式）",
+            "url": "https://www.pref.aichi.jp/press-release/r8-tousyo.html"
+          }
+        ]
+      },
+      {
+        "fiscalYear": 2025,
+        "era": "令和7年度",
+        "total": 2941301000,
+        "revenues": [
+          {
+            "label": "県税",
+            "amount": 1314000000,
+            "sharePct": 44.7
+          },
+          {
+            "label": "地方消費税清算金",
+            "amount": 397577000,
+            "sharePct": 13.5
+          },
+          {
+            "label": "繰入金",
+            "amount": 295020213,
+            "sharePct": 10.0
+          },
+          {
+            "label": "国庫支出金",
+            "amount": 238186893,
+            "sharePct": 8.1
+          },
+          {
+            "label": "諸収入",
+            "amount": 215181230,
+            "sharePct": 7.3
+          },
+          {
+            "label": "県債",
+            "amount": 213354666,
+            "sharePct": 7.3
+          },
+          {
+            "label": "地方譲与税",
+            "amount": 159447000,
+            "sharePct": 5.4
+          },
+          {
+            "label": "地方交付税",
+            "amount": 50000000,
+            "sharePct": 1.7
+          },
+          {
+            "label": "使用料及び手数料",
+            "amount": 34162563,
+            "sharePct": 1.2
+          },
+          {
+            "label": "分担金及び負担金",
+            "amount": 13506453,
+            "sharePct": 0.4
+          },
+          {
+            "label": "財産収入",
+            "amount": 4908154,
+            "sharePct": 0.2
+          },
+          {
+            "label": "地方特例交付金",
+            "amount": 4500001,
+            "sharePct": 0.2
+          },
+          {
+            "label": "交通安全対策特別交付金",
+            "amount": 1400000,
+            "sharePct": 0.0
+          },
+          {
+            "label": "寄附金",
+            "amount": 56826,
+            "sharePct": 0.0
+          },
+          {
+            "label": "繰越金",
+            "amount": 1,
+            "sharePct": 0.0
+          }
+        ],
+        "expenditures": [
+          {
+            "label": "教育・スポーツ費",
+            "amount": 619588669,
+            "sharePct": 21.1
+          },
+          {
+            "label": "諸支出金",
+            "amount": 578970555,
+            "sharePct": 19.7
+          },
+          {
+            "label": "福祉医療費",
+            "amount": 528290049,
+            "sharePct": 18.0
+          },
+          {
+            "label": "公債費",
+            "amount": 360491394,
+            "sharePct": 12.2
+          },
+          {
+            "label": "経済労働費",
+            "amount": 222994651,
+            "sharePct": 7.6
+          },
+          {
+            "label": "建設費",
+            "amount": 216714317,
+            "sharePct": 7.4
+          },
+          {
+            "label": "警察費",
+            "amount": 187511236,
+            "sharePct": 6.4
+          },
+          {
+            "label": "総務企画費",
+            "amount": 116343733,
+            "sharePct": 3.9
+          },
+          {
+            "label": "農林水産費",
+            "amount": 79727553,
+            "sharePct": 2.7
+          },
+          {
+            "label": "県民環境費",
+            "amount": 25726820,
+            "sharePct": 0.9
+          },
+          {
+            "label": "議会費",
+            "amount": 3353067,
+            "sharePct": 0.1
+          },
+          {
+            "label": "災害復旧費",
+            "amount": 1288956,
+            "sharePct": 0.0
+          },
+          {
+            "label": "予備費",
+            "amount": 300000,
+            "sharePct": 0.0
+          }
+        ],
+        "taxes": [
+          {
+            "label": "法人事業税",
+            "amount": 383800000,
+            "sharePct": 29.2
+          },
+          {
+            "label": "個人県民税",
+            "amount": 346016000,
+            "sharePct": 26.3
+          },
+          {
+            "label": "地方消費税",
+            "amount": 307431000,
+            "sharePct": 23.4
+          },
+          {
+            "label": "自動車税",
+            "amount": 112182000,
+            "sharePct": 8.6
+          },
+          {
+            "label": "軽油引取税",
+            "amount": 58064000,
+            "sharePct": 4.4
+          },
+          {
+            "label": "法人県民税",
+            "amount": 36700000,
+            "sharePct": 2.8
+          },
+          {
+            "label": "不動産取得税",
+            "amount": 27378000,
+            "sharePct": 2.1
+          },
+          {
+            "label": "個人事業税",
+            "amount": 15206000,
+            "sharePct": 1.2
+          },
+          {
+            "label": "県たばこ税",
+            "amount": 8127001,
+            "sharePct": 0.6
+          },
+          {
+            "label": "県民税利子割",
+            "amount": 1510001,
+            "sharePct": 0.1
+          },
+          {
+            "label": "ゴルフ場利用税",
+            "amount": 1322001,
+            "sharePct": 0.1
+          },
+          {
+            "label": "固定資産税",
+            "amount": 1141942,
+            "sharePct": 0.1
+          },
+          {
+            "label": "その他（鉱区税・狩猟税・産業廃棄物税・旧税）",
+            "amount": 15122055,
+            "sharePct": 1.2
+          }
+        ],
+        "notes": [
+          "金額は千円（一般会計・当初予算）。令和8年度当初予算の概要に記載された「令和7年度当初」の値。",
+          "県税の税目内訳の「その他」は、鉱区税・狩猟税・産業廃棄物税・旧自動車税等の合算（公式資料の合計との差分で算出）。"
+        ],
+        "sources": [
+          {
+            "label": "愛知県「令和8年度当初予算の概要　第2 令和8年度予算の規模等」（公式PDF）",
+            "url": "https://www.pref.aichi.jp/uploaded/attachment/598171.pdf"
+          },
+          {
+            "label": "【知事会見】令和8年度当初予算（愛知県公式）",
+            "url": "https://www.pref.aichi.jp/press-release/r8-tousyo.html"
+          }
+        ]
+      }
+    ],
+    "keyFacts": [
+      {
+        "label": "法人二税（法人事業税＋法人県民税）",
+        "value": "4,314億円＝県税の32.6%",
+        "note": "令和8年度当初。令和7年度当初は4,205億円（32.0%）。法人二税は企業の所得等に課税されるため、企業業績（景気）に応じて税収が変動する。",
+        "sourceUrl": "https://www.pref.aichi.jp/uploaded/attachment/598171.pdf"
+      },
+      {
+        "label": "基金の取崩し（財政調整基金＋減債基金）",
+        "value": "約2,612億円",
+        "note": "令和8年度当初の繰入金のうち、財政調整基金1,604億円＋減債基金1,008億円。令和7年度当初は約2,296億円（財政調整基金1,294億円＋減債基金1,002億円）。",
+        "sourceUrl": "https://www.pref.aichi.jp/uploaded/attachment/598171.pdf"
+      }
+    ],
+    "relatedDecisionIds": [
+      "aichi-2026-02-1"
+    ]
+  },
+  {
+    "id": "nagoya-city",
+    "name": "名古屋市",
+    "level": "municipal",
+    "govCode": "23100",
+    "years": [
+      {
+        "fiscalYear": 2026,
+        "era": "令和8年度",
+        "total": 1696086000,
+        "revenues": [
+          {
+            "label": "市税",
+            "amount": 690087526
+          },
+          {
+            "label": "国庫支出金",
+            "amount": 303879007
+          },
+          {
+            "label": "市債",
+            "amount": 216952000
+          },
+          {
+            "label": "県税交付金",
+            "amount": 107108000
+          },
+          {
+            "label": "繰入金",
+            "amount": 97771525
+          },
+          {
+            "label": "県支出金",
+            "amount": 97749617
+          },
+          {
+            "label": "諸収入",
+            "amount": 96022277
+          },
+          {
+            "label": "使用料及び手数料",
+            "amount": 40140236
+          },
+          {
+            "label": "寄附金",
+            "amount": 19322315
+          },
+          {
+            "label": "地方特例交付金",
+            "amount": 11141000
+          },
+          {
+            "label": "財産収入",
+            "amount": 9085396
+          },
+          {
+            "label": "地方譲与税",
+            "amount": 5524100
+          },
+          {
+            "label": "交通安全対策特別交付金",
+            "amount": 700000
+          },
+          {
+            "label": "地方交付税",
+            "amount": 600000
+          },
+          {
+            "label": "国有提供施設等所在市町村助成交付金",
+            "amount": 3000
+          },
+          {
+            "label": "繰越金",
+            "amount": 1
+          }
+        ],
+        "expenditures": [
+          {
+            "label": "健康福祉費",
+            "amount": 411086253
+          },
+          {
+            "label": "職員費",
+            "amount": 305765463
+          },
+          {
+            "label": "子ども青少年費",
+            "amount": 244148285
+          },
+          {
+            "label": "公債費",
+            "amount": 140086798
+          },
+          {
+            "label": "教育費",
+            "amount": 128782271
+          },
+          {
+            "label": "総務費",
+            "amount": 106733892
+          },
+          {
+            "label": "緑政土木費",
+            "amount": 78692484
+          },
+          {
+            "label": "経済費",
+            "amount": 60154800
+          },
+          {
+            "label": "諸支出金",
+            "amount": 54402814
+          },
+          {
+            "label": "住宅都市費",
+            "amount": 51140300
+          },
+          {
+            "label": "観光文化交流費",
+            "amount": 40785604
+          },
+          {
+            "label": "環境費",
+            "amount": 37495175
+          },
+          {
+            "label": "スポーツ市民費",
+            "amount": 24089517
+          },
+          {
+            "label": "消防費",
+            "amount": 10802628
+          },
+          {
+            "label": "議会費",
+            "amount": 1819716
+          },
+          {
+            "label": "予備費",
+            "amount": 100000
+          }
+        ],
+        "taxes": [
+          {
+            "label": "個人市民税",
+            "amount": 267058526
+          },
+          {
+            "label": "固定資産税",
+            "amount": 255761000
+          },
+          {
+            "label": "法人市民税",
+            "amount": 72900000
+          },
+          {
+            "label": "都市計画税",
+            "amount": 56275000
+          },
+          {
+            "label": "事業所税",
+            "amount": 17720000
+          },
+          {
+            "label": "市たばこ税",
+            "amount": 17045000
+          },
+          {
+            "label": "軽自動車税",
+            "amount": 3328000
+          }
+        ],
+        "notes": [
+          "金額は千円（一般会計・当初予算）。名古屋市会で附帯決議を付して修正可決された後の「予算の概要（修正後）」に基づく。",
+          "公式資料に構成比の記載がないため、ページ上の構成比は予算額から算出している。"
+        ],
+        "sources": [
+          {
+            "label": "名古屋市「令和8年度予算の概要（修正後）」（公式PDF）",
+            "url": "https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/046/336/gaiyousyuusei.pdf"
+          },
+          {
+            "label": "令和8年度予算の概要（修正後）掲載ページ（名古屋市公式）",
+            "url": "https://www.city.nagoya.jp/shisei/zaisei/1002655/1042582/1042583/1046227/1046325/1046336.html"
+          }
+        ]
+      },
+      {
+        "fiscalYear": 2025,
+        "era": "令和7年度",
+        "total": 1617187000,
+        "revenues": [
+          {
+            "label": "市税",
+            "amount": 667401000
+          },
+          {
+            "label": "国庫支出金",
+            "amount": 295084431
+          },
+          {
+            "label": "市債",
+            "amount": 216606000
+          },
+          {
+            "label": "県税交付金",
+            "amount": 103516000
+          },
+          {
+            "label": "諸収入",
+            "amount": 97873928
+          },
+          {
+            "label": "県支出金",
+            "amount": 86800515
+          },
+          {
+            "label": "繰入金",
+            "amount": 77995962
+          },
+          {
+            "label": "使用料及び手数料",
+            "amount": 38254519
+          },
+          {
+            "label": "寄附金",
+            "amount": 15655126
+          },
+          {
+            "label": "財産収入",
+            "amount": 6793418
+          },
+          {
+            "label": "地方譲与税",
+            "amount": 6378100
+          },
+          {
+            "label": "地方特例交付金",
+            "amount": 2922000
+          },
+          {
+            "label": "地方交付税",
+            "amount": 1200000
+          },
+          {
+            "label": "交通安全対策特別交付金",
+            "amount": 700000
+          },
+          {
+            "label": "国有提供施設等所在市町村助成交付金",
+            "amount": 6000
+          },
+          {
+            "label": "繰越金",
+            "amount": 1
+          }
+        ],
+        "expenditures": [
+          {
+            "label": "健康福祉費",
+            "amount": 392423739
+          },
+          {
+            "label": "職員費",
+            "amount": 292823822
+          },
+          {
+            "label": "子ども青少年費",
+            "amount": 231688441
+          },
+          {
+            "label": "公債費",
+            "amount": 138077167
+          },
+          {
+            "label": "教育費",
+            "amount": 103099577
+          },
+          {
+            "label": "緑政土木費",
+            "amount": 97426525
+          },
+          {
+            "label": "経済費",
+            "amount": 57382723
+          },
+          {
+            "label": "総務費",
+            "amount": 56320210
+          },
+          {
+            "label": "環境費",
+            "amount": 55507502
+          },
+          {
+            "label": "諸支出金",
+            "amount": 54525557
+          },
+          {
+            "label": "スポーツ市民費",
+            "amount": 50337066
+          },
+          {
+            "label": "観光文化交流費",
+            "amount": 34905011
+          },
+          {
+            "label": "住宅都市費",
+            "amount": 43285849
+          },
+          {
+            "label": "消防費",
+            "amount": 7446322
+          },
+          {
+            "label": "議会費",
+            "amount": 1837489
+          },
+          {
+            "label": "予備費",
+            "amount": 100000
+          }
+        ],
+        "taxes": [
+          {
+            "label": "個人市民税",
+            "amount": 252794000
+          },
+          {
+            "label": "固定資産税",
+            "amount": 249765000
+          },
+          {
+            "label": "法人市民税",
+            "amount": 72494000
+          },
+          {
+            "label": "都市計画税",
+            "amount": 54931000
+          },
+          {
+            "label": "事業所税",
+            "amount": 16990000
+          },
+          {
+            "label": "市たばこ税",
+            "amount": 16891000
+          },
+          {
+            "label": "軽自動車税",
+            "amount": 3536000
+          }
+        ],
+        "notes": [
+          "金額は千円（一般会計・当初予算）。令和8年度予算の概要（修正後）に記載された「令和7年度当初予算額」の値。",
+          "公式資料に構成比の記載がないため、ページ上の構成比は予算額から算出している。"
+        ],
+        "sources": [
+          {
+            "label": "名古屋市「令和8年度予算の概要（修正後）」（公式PDF）",
+            "url": "https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/046/336/gaiyousyuusei.pdf"
+          },
+          {
+            "label": "令和8年度予算の概要（修正後）掲載ページ（名古屋市公式）",
+            "url": "https://www.city.nagoya.jp/shisei/zaisei/1002655/1042582/1042583/1046227/1046325/1046336.html"
+          }
+        ]
+      }
+    ],
+    "keyFacts": [
+      {
+        "label": "個人市民税の減税による減収見込み",
+        "value": "令和8年度 約107億円",
+        "note": "10,744,000千円（公式資料の注記）。令和7年度当初は約102億円（10,238,000千円）。このほか国の経済対策における定額減税で令和7年度は60,000千円の減収見込み。",
+        "sourceUrl": "https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/046/336/gaiyousyuusei.pdf"
+      },
+      {
+        "label": "歳入に占める市税の割合",
+        "value": "約40.7%（6,901億円）",
+        "note": "令和8年度当初。歳入総額1兆6,961億円のうち市税6,901億円（割合は予算額から算出）。",
+        "sourceUrl": "https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/046/336/gaiyousyuusei.pdf"
+      }
+    ],
+    "relatedDecisionIds": [
+      "nagoya-2026-02-1"
+    ]
+  }
+]

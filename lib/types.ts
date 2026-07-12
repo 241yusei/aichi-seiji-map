@@ -175,6 +175,54 @@ export interface CouncilDecision {
   sourceUrl: string; // 公式の審議結果ページ（必須）
 }
 
+// --- 財政（予算の見える化） ---
+
+/** 財政データの内訳1行（歳入・歳出・税目）。金額は千円（公式資料の表記単位のまま保持）。 */
+export interface FinanceItem {
+  label: string; // 例: "県税" "教育・スポーツ費" "法人事業税"
+  amount: number; // 千円
+  /** 構成比％。公式資料に記載がある場合のみ転記する（記載がない資料では省略し、表示側で算出）。 */
+  sharePct?: number;
+}
+
+/** 財政データの出典（公式PDF・公式ページ）。 */
+export interface FinanceSource {
+  label: string;
+  url: string;
+}
+
+/** 数値で示す財政のポイント（法人二税依存度・基金取崩し・減税減収額など）。出典必須。 */
+export interface FinanceKeyFact {
+  label: string;
+  value: string;
+  note?: string; // 誤解を避ける注記（前年度比較・算出根拠など）
+  sourceUrl: string;
+}
+
+/** 年度ごとの一般会計当初予算。revenues/expenditures の合計は total と一致すること（validateで検査）。 */
+export interface FinanceYear {
+  fiscalYear: number; // 年度の開始年（西暦）。例: 2026 = 令和8年度
+  era: string; // 例: "令和8年度"
+  total: number; // 一般会計 当初予算総額（千円）
+  revenues: FinanceItem[]; // 歳入内訳（款別）
+  expenditures: FinanceItem[]; // 歳出内訳（款別・目的別）
+  taxes?: FinanceItem[]; // 税収内訳（県税・市税の税目別）
+  notes?: string[]; // 修正可決・減税減収額など、公式資料の注記に基づく補足
+  sources: FinanceSource[]; // 一次ソース（1件以上必須）
+}
+
+/** 自治体単位の財政データ（Phase1は一般会計・当初予算ベース）。 */
+export interface GovernmentFinance {
+  id: string; // 例: "aichi-pref" "nagoya-city"
+  name: string; // 例: "愛知県" "名古屋市"
+  level: "prefectural" | "municipal";
+  govCode: string; // 23000（県）または市町村コード
+  years: FinanceYear[]; // 新しい年度を先頭に
+  keyFacts?: FinanceKeyFact[];
+  relatedDecisionIds?: string[]; // 予算を議決した CouncilDecision.id（誰が賛成/反対したかへの接続）
+  relatedFactCardIds?: string[]; // 関連する事実カードID（FactCard.id）
+}
+
 /** 首長（知事・市町村長）。議員とは別レイヤー。一次ソース（公式サイト）必須。 */
 export interface Executive {
   id: string; // 例: "exec-23100"（govCode 由来）

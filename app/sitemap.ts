@@ -27,6 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/executives",
     "/issues",
     "/decisions",
+    "/finance",
     "/themes",
     "/facts",
     "/search",

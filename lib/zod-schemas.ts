@@ -175,6 +175,45 @@ export const councilDecisionSchema = z.object({
 });
 export const councilDecisionsSchema = z.array(councilDecisionSchema);
 
+// 財政（自治体単位・一般会計当初予算）。金額は千円。出典必須。
+const financeItemSchema = z.object({
+  label: z.string().min(1),
+  amount: z.number().int(),
+  sharePct: z.number().optional(),
+});
+
+const financeYearSchema = z.object({
+  fiscalYear: z.number().int(),
+  era: z.string().min(1),
+  total: z.number().int(),
+  revenues: z.array(financeItemSchema).min(1),
+  expenditures: z.array(financeItemSchema).min(1),
+  taxes: z.array(financeItemSchema).optional(),
+  notes: z.array(z.string()).optional(),
+  sources: z.array(z.object({ label: z.string().min(1), url: httpUrl })).min(1),
+});
+
+export const governmentFinanceSchema = z.object({
+  id: z.string().min(1),
+  name: z.string().min(1),
+  level: z.enum(["prefectural", "municipal"]),
+  govCode: z.string().min(1),
+  years: z.array(financeYearSchema).min(1),
+  keyFacts: z
+    .array(
+      z.object({
+        label: z.string().min(1),
+        value: z.string().min(1),
+        note: z.string().optional(),
+        sourceUrl: httpUrl,
+      }),
+    )
+    .optional(),
+  relatedDecisionIds: z.array(z.string()).optional(),
+  relatedFactCardIds: z.array(z.string()).optional(),
+});
+export const governmentFinancesSchema = z.array(governmentFinanceSchema);
+
 export const legislatorsSchema = z.array(legislatorSchema);
 export const speechRecordsSchema = z.array(speechRecordSchema);
 export const votesSchema = z.array(voteSchema);

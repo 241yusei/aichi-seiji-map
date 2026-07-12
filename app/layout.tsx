@@ -211,6 +211,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                   <Link href="/decisions" className="hover:text-accent-deep">
                     議会の議決
                   </Link>
+                  <Link href="/finance" className="hover:text-accent-deep">
+                    財政（予算）
+                  </Link>
                   <Link href="/elections" className="hover:text-accent-deep">
                     選挙カレンダー
                   </Link>

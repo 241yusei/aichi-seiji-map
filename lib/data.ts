@@ -12,6 +12,7 @@ import type {
   FactCard,
   Funding,
   HistoryData,
+  GovernmentFinance,
   Issue,
   IssueExplainer,
   Legislator,
@@ -25,6 +26,7 @@ import {
   factCardsSchema,
   fundingsSchema,
   historySchema,
+  governmentFinancesSchema,
   issueExplainersSchema,
   issuesSchema,
   legislatorProfilesSchema,
@@ -202,4 +204,13 @@ export function getHistory(): HistoryData {
   const path = join(DATA_DIR, "history.json");
   const raw = readFileSync(path, "utf-8");
   return historySchema.parse(JSON.parse(raw)) as HistoryData;
+}
+
+// --- 財政（自治体単位・一般会計当初予算・一次ソースつき） ---
+export function getFinances(): GovernmentFinance[] {
+  return readArray<GovernmentFinance>("finance.json", governmentFinancesSchema);
+}
+
+export function getFinance(id: string): GovernmentFinance | undefined {
+  return getFinances().find((f) => f.id === id);
 }

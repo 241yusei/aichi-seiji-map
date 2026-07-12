@@ -11,6 +11,7 @@ import {
   factCardsSchema,
   fundingsSchema,
   historySchema,
+  governmentFinancesSchema,
   issueExplainersSchema,
   issuesSchema,
   legislatorProfilesSchema,
@@ -23,6 +24,7 @@ import type {
   Executive,
   FactCard,
   Funding,
+  GovernmentFinance,
   Issue,
   IssueExplainer,
   Legislator,
@@ -81,6 +83,7 @@ const executives = load<Executive>("executives.json", executivesSchema);
 const profiles = load<LegislatorProfile>("profiles.national.json", legislatorProfilesSchema);
 const issueExplainers = load<IssueExplainer>("issue-explainers.json", issueExplainersSchema);
 const councilDecisions = load<CouncilDecision>("council-decisions.json", councilDecisionsSchema);
+const finances = load<GovernmentFinance>("finance.json", governmentFinancesSchema);
 
 console.log("\n相互参照を検査します…");
 
@@ -179,11 +182,35 @@ for (const p of profiles) {
   }
 }
 
+// 財政データ：ID重複・govCode・参照整合（議決/事実カード）・内訳合計の一致（転記ミス検出）
+const decisionIds = new Set(councilDecisions.map((d) => d.id));
+const factCardIds = new Set(factCards.map((f) => f.id));
+const seenFin = new Set<string>();
+for (const g of finances) {
+  if (seenFin.has(g.id)) fail(`財政データID重複: ${g.id}`);
+  seenFin.add(g.id);
+  if (!validGov.has(g.govCode)) fail(`財政データ ${g.id} の govCode が不明: ${g.govCode}`);
+  for (const did of g.relatedDecisionIds ?? []) {
+    if (!decisionIds.has(did)) fail(`財政データ ${g.id} の参照議決が不明: ${did}`);
+  }
+  for (const fid of g.relatedFactCardIds ?? []) {
+    if (!factCardIds.has(fid)) fail(`財政データ ${g.id} の参照事実カードが不明: ${fid}`);
+  }
+  for (const y of g.years) {
+    const revSum = y.revenues.reduce((s, i) => s + i.amount, 0);
+    const expSum = y.expenditures.reduce((s, i) => s + i.amount, 0);
+    if (revSum !== y.total)
+      fail(`財政データ ${g.id} ${y.era}: 歳入合計 ${revSum} が総額 ${y.total} と不一致`);
+    if (expSum !== y.total)
+      fail(`財政データ ${g.id} ${y.era}: 歳出合計 ${expSum} が総額 ${y.total} と不一致`);
+  }
+}
+
 console.log("");
 if (errorCount > 0) {
   console.error(`検証失敗: ${errorCount} 件のエラー`);
   process.exit(1);
 }
 console.log(
-  `検証成功: 議員 ${legislators.length} / 発言 ${speeches.length} / 採決 ${votes.length} / 資金 ${funding.length} / 争点 ${issues.length} / 事実カード ${factCards.length} / 首長 ${executives.length} / プロフィール ${profiles.length} / 議決 ${councilDecisions.length}`,
+  `検証成功: 議員 ${legislators.length} / 発言 ${speeches.length} / 採決 ${votes.length} / 資金 ${funding.length} / 争点 ${issues.length} / 事実カード ${factCards.length} / 首長 ${executives.length} / プロフィール ${profiles.length} / 議決 ${councilDecisions.length} / 財政 ${finances.length}`,
 );

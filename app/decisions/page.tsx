@@ -219,6 +219,20 @@ export default function DecisionsPage() {
         )}
       </section>
 
+      {/* 予算の中身への導線（財政ページ） */}
+      <section className="bg-calm p-5">
+        <h2 className="eyebrow text-accent-deep">議決された予算の中身を見る</h2>
+        <p className="measure mt-2 text-sm text-ink">
+          令和8年度の愛知県・名古屋市の一般会計予算（県3兆2,224億円・市1兆6,961億円）が、
+          何から集められ、何に使われるのか。歳入・歳出・税収の内訳を公式資料に基づいて可視化しています。
+        </p>
+        <p className="mt-3 text-sm">
+          <Link href="/finance/" className="link-ink">
+            財政：県と名古屋市の予算 →
+          </Link>
+        </p>
+      </section>
+
       {/* 会派別賛否・他会期は公式へ */}
       <section className="border-t border-line pt-6">
         <p className="eyebrow text-faint">会派別の賛否・他の会期（公式）</p>
