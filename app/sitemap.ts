@@ -37,6 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/elections/unified-2027",
     "/parties",
     "/for-education",
+    "/methodology",
     "/about",
     "/support",
     "/corrections",

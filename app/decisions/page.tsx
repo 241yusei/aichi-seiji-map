@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
-import { getCouncilDecisions } from "@/lib/data";
+import { getCouncilDecisions, getLegislator } from "@/lib/data";
 import Link from "next/link";
 import { SourceLink } from "@/components/SourceLink";
+import { getDivergences, MIN_FACTION_SIZE } from "@/lib/faction-divergence";
+import { formatDate } from "@/lib/format";
 import { LAST_UPDATED } from "@/lib/site-meta";
 import type { CouncilDecision } from "@/lib/types";
 
@@ -58,6 +60,7 @@ function ResultBadge({ result }: { result: string }) {
 
 export default function DecisionsPage() {
   const decisions = getCouncilDecisions();
+  const divergence = getDivergences();
 
   // 議会｜会期 でグループ化（新しい会期が上に来るよう、ひとまず登録順を尊重）。
   const groups = new Map<string, CouncilDecision[]>();
@@ -138,6 +141,83 @@ export default function DecisionsPage() {
           );
         })
       )}
+
+      {/* 会派内で判断が分かれた採決（国会・参院記名投票からの機械検出） */}
+      <section className="border-t border-line pt-6">
+        <h2 className="font-display border-b-[3px] border-ink pb-2 text-xl sm:text-2xl">
+          会派内で判断が分かれた採決
+          <span className="ml-2 text-sm font-normal text-muted">国会（参議院・記名投票）</span>
+        </h2>
+        <p className="measure mt-3 text-sm text-muted">
+          参議院の記名投票（押しボタン式）は個人ごとの賛否が公開されます。同じ採決で
+          <span className="font-bold text-ink">同会派（愛知選出）の多数と異なる賛否</span>
+          だった票を機械的に検出し、事実としてここに表示します。会派の正式な賛否指示は非公開のため、
+          同会派メンバーの多数を近似として用いています。良し悪しの評価ではありません（
+          <Link href="/methodology/" className="link-ink">
+            検出方法と限界の開示
+          </Link>
+          ）。
+        </p>
+
+        <div className="mt-4 border border-line bg-surface p-4">
+          <p className="eyebrow text-faint">現在の検出状況</p>
+          <ul className="mt-2 space-y-1 text-sm">
+            <li>
+              対象とした記名投票：<span className="tnum font-bold">{divergence.billsAnalyzed}</span> 件
+            </li>
+            <li>
+              {MIN_FACTION_SIZE}人以上の会派があり多数を算出できた採決：{" "}
+              <span className="tnum font-bold">{divergence.billsEligible}</span> 件
+            </li>
+            <li>
+              検出された「会派多数と異なる投票」：{" "}
+              <span className="tnum font-bold">{divergence.divergenceCount}</span> 件
+            </li>
+          </ul>
+          {divergence.divergenceCount === 0 && (
+            <p className="measure mt-2 text-xs text-muted">
+              現在のデータでは、多くの採決で各会派の愛知選出議員が {MIN_FACTION_SIZE}{" "}
+              人に満たず、会派多数と異なる投票は検出されていません。検出0件は「造反が無かった」
+              という断定ではなく、この範囲・この方法では検出されなかったという事実です。
+              データが増えると検出される場合があります。
+            </p>
+          )}
+        </div>
+
+        {divergence.records.length > 0 && (
+          <ul className="mt-4 divide-y divide-line border-y border-line">
+            {divergence.records.map((r) => {
+              const leg = getLegislator(r.legislatorId);
+              return (
+                <li key={`${r.legislatorId}|${r.date}|${r.billTitle}`} className="py-3 text-sm">
+                  <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                    <span className="tnum whitespace-nowrap text-xs text-faint">
+                      {formatDate(r.date)}
+                    </span>
+                    <Link href={`/legislators/${r.legislatorId}/`} className="link-ink font-bold">
+                      {leg?.name ?? r.legislatorId}
+                    </Link>
+                    <span className="text-xs text-faint">
+                      {r.faction}（同採決に投票した同会派 {r.factionSize} 人）
+                    </span>
+                  </div>
+                  <p className="mt-1">
+                    <SourceLink href={r.sourceUrl}>{r.billTitle}</SourceLink>
+                  </p>
+                  <p className="mt-1 text-xs text-muted">
+                    本人：
+                    <span className={`font-bold ${r.result === "yea" ? "text-yea" : "text-nay"}`}>
+                      {r.result === "yea" ? "○賛成" : "✕反対"}
+                    </span>
+                    ｜同会派（愛知選出）の多数：
+                    {r.factionMajority === "yea" ? "賛成" : "反対"}
+                  </p>
+                </li>
+              );
+            })}
+          </ul>
+        )}
+      </section>
 
       {/* 会派別賛否・他会期は公式へ */}
       <section className="border-t border-line pt-6">
