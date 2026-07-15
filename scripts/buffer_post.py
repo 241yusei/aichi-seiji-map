@@ -80,8 +80,9 @@ mutation Create($input: CreatePostInput!) {
 """
 
 
-def create_post_vars(channel_id: str, text: str, scheduled_iso: str) -> dict:
+def create_post_vars(channel_id: str, text: str, scheduled_iso: str, image_url: str | None = None) -> dict:
     # mode=customScheduled + dueAt で指定時刻に予約、schedulingType=automatic で自動公開。
+    assets = [{"image": {"url": image_url}}] if image_url else []
     return {
         "input": {
             "channelId": channel_id,
@@ -89,7 +90,7 @@ def create_post_vars(channel_id: str, text: str, scheduled_iso: str) -> dict:
             "schedulingType": "automatic",
             "mode": "customScheduled",
             "dueAt": scheduled_iso,
-            "assets": [],
+            "assets": assets,
             "saveToDraft": False,
         }
     }
@@ -156,11 +157,30 @@ def mode_channels() -> list[dict]:
 
 
 # ─── 投稿コンテンツの生成 ────────────────────────────────────
+# sns_strategy.md §1 準拠：
+#   X   = リンクなしで完結（出典は文言で明記、URLはプロフィールへ誘導）。リンク付きはリーチが下がる（Bier 2025-10）。
+#   Threads = リンク併記を継続（Mosseriが「不利にならない」と公認）。トピックタグは1個だけ。
+#   画像：事実カードはOGP画像（/facts/{id}/opengraph-image）を両プラットフォームに添付（Threads +60%説・Buffer分析）。
 def _fact_card_post(card: dict) -> dict:
+    source_label = (card.get("sources") or [{}])[0].get("label", "一次ソース")
+    base = f"{card['title']}\n{card.get('hook','')}"
     return {
         "category": "fact",
-        "text": f"{card['title']}\n{card.get('hook','')}\n#政治のトリセツ #愛知",
+        "text_x": f"{base}\n出典：{source_label}\n#政治のトリセツ",
+        "text_threads": f"{base}\n#政治のトリセツ",
         "url": f"{SITE}/facts/{card['id']}/",
+        "image_url": f"{SITE}/facts/{card['id']}/opengraph-image",
+    }
+
+
+def _pool_post(item: dict, category: str) -> dict:
+    base = item["text"]
+    return {
+        "category": category,
+        "text_x": f"{base}\nサイトはプロフィールのリンクから。#政治のトリセツ",
+        "text_threads": f"{base}\n#政治のトリセツ",
+        "url": item["url"],
+        "image_url": None,
     }
 
 
@@ -172,8 +192,8 @@ def build_today_posts(target: date) -> list[dict]:
 
     base = target.toordinal()
     fc = [_fact_card_post(facts[(base + k) % len(facts)]) for k in range(3)]
-    feature = dict(feat[base % len(feat)], category="feature")
-    backstory = dict(dev[base % len(dev)], category="backstory")
+    feature = _pool_post(feat[base % len(feat)], "feature")
+    backstory = _pool_post(dev[base % len(dev)], "backstory")
 
     # アルゴリズム的に有効なJSTの時間帯（通勤・昼・通勤・プライム・プライム）。
     slots = ["07:30", "12:15", "18:30", "21:00", "22:30"]
@@ -192,8 +212,10 @@ def mode_preview(target: date):
     log.info(f"=== {target} の予定 5本（プレビュー・未投稿）===")
     for i, p in enumerate(posts, 1):
         log.info(f"--- [{i}] {p['slot']} JST / {p['category']} ---")
-        log.info(p["text"])
-        log.info(f"  ↳ 出典/リンク: {p['url']}")
+        log.info(f"[X] {p['text_x']}")
+        log.info(f"[Threads] {p['text_threads']}\n  ↳ リンク: {p['url']}")
+        if p["image_url"]:
+            log.info(f"  ↳ 画像添付: {p['image_url']}")
 
 
 # ─── 選挙期ガード ────────────────────────────────────────────
@@ -246,9 +268,13 @@ def mode_queue(target: date, confirm: bool):
     results = []
     for p in posts:
         scheduled = _jst_iso(target, p["slot"])
-        body = f"{p['text']}\n\n{p['url']}"  # 本文に出典URLを併記（X/ThreadsがOGPカード表示）
         for ch in target_channels:
-            data = gql(CREATE_POST_MUTATION, create_post_vars(ch["id"], body, scheduled))
+            # X: リンクなしで完結（リンク付きはリーチが下がる）。Threads: リンク併記が公認されている。
+            if ch["service"] == "twitter":
+                body = p["text_x"]
+            else:
+                body = f"{p['text_threads']}\n\n{p['url']}"
+            data = gql(CREATE_POST_MUTATION, create_post_vars(ch["id"], body, scheduled, p["image_url"]))
             payload = (data.get("data") or {}).get("createPost") or {}
             ok = payload.get("__typename") == "PostActionSuccess"
             detail = payload.get("post", {}).get("id") if ok else (payload.get("message") or data.get("errors"))
