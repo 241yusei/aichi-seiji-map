@@ -80,19 +80,39 @@ mutation Create($input: CreatePostInput!) {
 """
 
 
-def create_post_vars(channel_id: str, text: str, scheduled_iso: str) -> dict:
+def create_post_vars(
+    channel_id: str,
+    text: str,
+    scheduled_iso: str,
+    service: str = "",
+    image_url: str | None = None,
+    reply_text: str | None = None,
+    topic: str | None = None,
+) -> dict:
     # mode=customScheduled + dueAt で指定時刻に予約、schedulingType=automatic で自動公開。
-    return {
-        "input": {
-            "channelId": channel_id,
-            "text": text,
-            "schedulingType": "automatic",
-            "mode": "customScheduled",
-            "dueAt": scheduled_iso,
-            "assets": [],
-            "saveToDraft": False,
-        }
+    assets = [{"image": {"url": image_url}}] if image_url else []
+    inp = {
+        "channelId": channel_id,
+        "text": text,
+        "schedulingType": "automatic",
+        "mode": "customScheduled",
+        "dueAt": scheduled_iso,
+        "assets": assets,
+        "saveToDraft": False,
     }
+    # metadata（サービス別）：
+    #   X   → thread に「自己リプ」を付ける。本体はリンクなしで最大リーチ、出典URLは自己リプで担保。
+    #         （Buffer schema 実測：TwitterPostMetadataInput.thread: [ThreadedPostInput!]、
+    #          ThreadedPostInput{text, assets:[AssetInput!]!}）
+    #   Threads → topic（単一トピックタグ）を付ける。リンクは本文併記（Mosseri公認）。
+    meta: dict = {}
+    if service == "twitter" and reply_text:
+        meta["twitter"] = {"thread": [{"text": reply_text, "assets": []}]}
+    if service == "threads" and topic:
+        meta["threads"] = {"topic": topic}
+    if meta:
+        inp["metadata"] = meta
+    return {"input": inp}
 
 
 # ─── GraphQL ヘルパ ──────────────────────────────────────────
@@ -156,11 +176,54 @@ def mode_channels() -> list[dict]:
 
 
 # ─── 投稿コンテンツの生成 ────────────────────────────────────
+# リーチ最大化仕様（sns_strategy.md §1・§1' 準拠。すべて一次情報で裏取り済みの原則のみ）：
+#   X   = 本体はリンクなしで完結（リンク付きはリーチが下がる＝Bier 2025-10）。
+#         出典URLは「自己リプ（thread）」で担保 → 本体の最大リーチとサイト到達(最重要KPI)を両立。
+#   Threads = リンクは本文併記（Mosseri公認で不利なし）＋単一トピックタグ。
+#   画像 = 事実カードのOGP画像（/facts/{id}/opengraph-image）を両媒体に添付（画像付きは強い）。
+#   会話 = Threadsは「自分の地域を調べる」中立CTAで返信・プロフィールクリックを誘発（返信は最重要シグナル）。
+#   タグ = 1個に統一（Xは #政治のトリセツ、Threadsは topic）。
+
+# Threads末尾の中立エンゲージCTA（返信・回遊を誘発。評価語・投票誘導は含めない）。
+# kokkaimap の拡散核＝「郵便番号で自分の代表」パーソナライズ導線に倣う。決定的にローテーション。
+THREADS_PROMPTS = [
+    "あなたの地域の代表は誰か、郵便番号で調べられます（プロフィールのリンクから）。",
+    "他の採決・発言も、同じように一次ソース付きで並べて確認できます。",
+    "気になる論点があれば、争点ページから国・県・市を横断で追えます。",
+]
+
+THREADS_TOPIC = "政治"  # Threadsの単一トピックタグ
+
+
+def _x_source_reply(label: str, url: str) -> str:
+    # X本体はリンクなし。全文と一次ソース（{label}）への入口は自己リプに置く。
+    return f"全文と一次ソース（{label}）はこちら：\n{url}"
+
+
 def _fact_card_post(card: dict) -> dict:
+    source_label = (card.get("sources") or [{}])[0].get("label", "一次ソース")
+    base = f"{card['title']}\n{card.get('hook','')}"
+    url = f"{SITE}/facts/{card['id']}/"
     return {
         "category": "fact",
-        "text": f"{card['title']}\n{card.get('hook','')}\n#政治のトリセツ #愛知",
-        "url": f"{SITE}/facts/{card['id']}/",
+        "text_x": f"{base}\n#政治のトリセツ",       # リンクなし本体
+        "x_reply": _x_source_reply(source_label, url),  # 出典URLは自己リプ
+        "text_threads": f"{base}",                  # タグは topic で付与
+        "url": url,
+        "image_url": f"{SITE}/facts/{card['id']}/opengraph-image",
+    }
+
+
+def _pool_post(item: dict, category: str) -> dict:
+    base = item["text"]
+    url = item["url"]
+    return {
+        "category": category,
+        "text_x": f"{base}\n#政治のトリセツ",       # リンクなし本体
+        "x_reply": f"詳しくはこちら：\n{url}",        # リンクは自己リプ
+        "text_threads": f"{base}",
+        "url": url,
+        "image_url": None,
     }
 
 
@@ -172,13 +235,18 @@ def build_today_posts(target: date) -> list[dict]:
 
     base = target.toordinal()
     fc = [_fact_card_post(facts[(base + k) % len(facts)]) for k in range(3)]
-    feature = dict(feat[base % len(feat)], category="feature")
-    backstory = dict(dev[base % len(dev)], category="backstory")
+    feature = _pool_post(feat[base % len(feat)], "feature")
+    backstory = _pool_post(dev[base % len(dev)], "backstory")
 
     # アルゴリズム的に有効なJSTの時間帯（通勤・昼・通勤・プライム・プライム）。
     slots = ["07:30", "12:15", "18:30", "21:00", "22:30"]
     ordered = [feature, fc[0], fc[1], backstory, fc[2]]
-    return [{**p, "slot": s} for s, p in zip(slots, ordered)]
+    posts = []
+    for i, (s, p) in enumerate(zip(slots, ordered)):
+        # Threads末尾に中立エンゲージCTAを決定的にローテーションで付ける。
+        prompt = THREADS_PROMPTS[(base + i) % len(THREADS_PROMPTS)]
+        posts.append({**p, "slot": s, "threads_prompt": prompt, "topic": THREADS_TOPIC})
+    return posts
 
 
 def _jst_iso(target: date, hhmm: str) -> str:
@@ -192,8 +260,12 @@ def mode_preview(target: date):
     log.info(f"=== {target} の予定 5本（プレビュー・未投稿）===")
     for i, p in enumerate(posts, 1):
         log.info(f"--- [{i}] {p['slot']} JST / {p['category']} ---")
-        log.info(p["text"])
-        log.info(f"  ↳ 出典/リンク: {p['url']}")
+        log.info(f"[X 本体・リンクなし] {p['text_x']}")
+        log.info(f"[X 自己リプ] {p['x_reply']}")
+        threads_body = f"{p['text_threads']}\n\n{p['url']}\n\n{p['threads_prompt']}"
+        log.info(f"[Threads / topic={p['topic']}] {threads_body}")
+        if p["image_url"]:
+            log.info(f"  ↳ 画像添付(両媒体): {p['image_url']}")
 
 
 # ─── 選挙期ガード ────────────────────────────────────────────
@@ -246,14 +318,35 @@ def mode_queue(target: date, confirm: bool):
     results = []
     for p in posts:
         scheduled = _jst_iso(target, p["slot"])
-        body = f"{p['text']}\n\n{p['url']}"  # 本文に出典URLを併記（X/ThreadsがOGPカード表示）
         for ch in target_channels:
-            data = gql(CREATE_POST_MUTATION, create_post_vars(ch["id"], body, scheduled))
+            svc = ch["service"]
+            # X: 本体リンクなし＋出典URLは自己リプ。Threads: 本文にリンク併記＋単一トピック＋中立CTA。
+            if svc == "twitter":
+                body = p["text_x"]
+                variables = create_post_vars(
+                    ch["id"], body, scheduled, service="twitter",
+                    image_url=p["image_url"], reply_text=p["x_reply"],
+                )
+            else:
+                body = f"{p['text_threads']}\n\n{p['url']}\n\n{p['threads_prompt']}"
+                variables = create_post_vars(
+                    ch["id"], body, scheduled, service="threads",
+                    image_url=p["image_url"], topic=p.get("topic"),
+                )
+            data = gql(CREATE_POST_MUTATION, variables)
             payload = (data.get("data") or {}).get("createPost") or {}
             ok = payload.get("__typename") == "PostActionSuccess"
+            # 自己修復フォールバック：metadata（自己リプ/トピック）が拒否されたら、
+            # metadataを外して本文のみで再試行し、投稿の欠落（＝リーチ損失）を防ぐ。
+            if not ok and "metadata" in variables["input"]:
+                log.warning(f"  ↳ metadata付き投稿が拒否されたためメタなしで再試行: {p['slot']} [{svc}]")
+                fb = create_post_vars(ch["id"], body, scheduled, image_url=p["image_url"])
+                data = gql(CREATE_POST_MUTATION, fb)
+                payload = (data.get("data") or {}).get("createPost") or {}
+                ok = payload.get("__typename") == "PostActionSuccess"
             detail = payload.get("post", {}).get("id") if ok else (payload.get("message") or data.get("errors"))
-            results.append({"slot": p["slot"], "service": ch["service"], "ok": ok, "detail": detail})
-            log.info(f"{'✅' if ok else '❌'} {p['slot']} JST [{ch['service']}] {p['category']} → {detail}")
+            results.append({"slot": p["slot"], "service": svc, "ok": ok, "detail": detail})
+            log.info(f"{'✅' if ok else '❌'} {p['slot']} JST [{svc}] {p['category']} → {detail}")
 
     STATE_FILE.write_text(
         json.dumps({"date": target.isoformat(), "results": results}, ensure_ascii=False, indent=2),
