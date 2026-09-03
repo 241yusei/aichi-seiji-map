@@ -23,9 +23,16 @@ function load(): ElectionWindow[] {
   }
 }
 
-/** 指定日（既定はビルド時点）が選挙期間内なら、その期間を返す。 */
+/** 日本時間(JST)の「今日」を YYYY-MM-DD で返す。
+ * toISOString() は UTC のため、JST 00:00〜09:00 のビルドでは前日と判定されてしまう。
+ * 告示日当日の朝にガードが外れるのを防ぐため、必ず JST で判定する。 */
+function todayJst(): string {
+  return new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10);
+}
+
+/** 指定日（既定はビルド時点のJST）が選挙期間内なら、その期間を返す。 */
 export function getActiveElectionWindow(nowIso?: string): ElectionWindow | null {
-  const now = nowIso ?? new Date().toISOString().slice(0, 10);
+  const now = nowIso ?? todayJst();
   return load().find((w) => w.from <= now && now <= w.until) ?? null;
 }
 

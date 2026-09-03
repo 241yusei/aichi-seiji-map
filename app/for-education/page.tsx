@@ -140,7 +140,7 @@ export default function ForEducationPage() {
       <Section title="引用のしかた">
         <p>レポート・教材で引用する場合は、次の形を推奨します。</p>
         <p className="border border-line bg-surface p-3 text-xs leading-relaxed text-ink">
-          政治のトリセツ あいち・なごや「（ページ名）」https://aichi-seiji-map.vercel.app/（閲覧日）
+          政治のトリセツ あいち・なごや「（ページ名）」https://seiji-torisetsu.pages.dev/（閲覧日）
           ※データ基準日：各ページ下部に記載
         </p>
         <ul className="list-disc space-y-1 pl-5">

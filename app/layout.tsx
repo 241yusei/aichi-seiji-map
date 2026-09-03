@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { IBM_Plex_Sans_JP, Shippori_Mincho_B1 } from "next/font/google";
-import { Analytics } from "@vercel/analytics/react";
 import { getActiveElectionWindow } from "@/lib/election-window";
 import { ElectionPeriodBanner } from "@/components/ElectionPeriodBanner";
 import { BottomNav } from "@/components/BottomNav";
 import {
   LAST_UPDATED,
+  SITE_URL,
   SITE_X,
   SITE_X_HANDLE,
   SITE_THREADS,
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   description:
     "政治をはじめて知る人のための、愛知・名古屋の政治の入口。国会(愛知選出)・愛知県議会・全54市町村の代表者の発言・採決・政治資金を、やさしい解説と一次ソースで。中立・非投票誘導。",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://aichi-seiji-map.vercel.app"),
+  metadataBase: new URL(SITE_URL),
   alternates: {
     canonical: "/",
     types: { "application/rss+xml": "/feed.xml" },
@@ -83,7 +83,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               "@type": "WebSite",
               name: "政治のトリセツ あいち・なごや",
               alternateName: "愛知政治マップ",
-              url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://aichi-seiji-map.vercel.app",
+              url: SITE_URL,
             }),
           }}
         />
@@ -292,8 +292,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </footer>
 
         <BottomNav />
-        {/* Vercel Web Analytics（Cookieレス・個人を追跡しない計測）。ダッシュボードで有効化が必要。 */}
-        <Analytics />
       </body>
     </html>
   );

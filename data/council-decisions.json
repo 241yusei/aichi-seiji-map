@@ -9,11 +9,26 @@
     "category": "予算",
     "result": "可決",
     "factions": [
-      { "name": "自民", "stance": "賛成" },
-      { "name": "民主", "stance": "賛成" },
-      { "name": "公明", "stance": "賛成" },
-      { "name": "減税", "stance": "賛成" },
-      { "name": "無所属", "stance": "賛成8人・反対1人" }
+      {
+        "name": "自民",
+        "stance": "賛成"
+      },
+      {
+        "name": "民主",
+        "stance": "賛成"
+      },
+      {
+        "name": "公明",
+        "stance": "賛成"
+      },
+      {
+        "name": "減税",
+        "stance": "賛成"
+      },
+      {
+        "name": "無所属",
+        "stance": "賛成8人・反対1人"
+      }
     ],
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/nittei-0802.html"
   },
@@ -27,11 +42,26 @@
     "category": "条例",
     "result": "可決",
     "factions": [
-      { "name": "自民", "stance": "賛成" },
-      { "name": "民主", "stance": "賛成" },
-      { "name": "公明", "stance": "賛成" },
-      { "name": "減税", "stance": "賛成" },
-      { "name": "無所属", "stance": "賛成8人・反対1人" }
+      {
+        "name": "自民",
+        "stance": "賛成"
+      },
+      {
+        "name": "民主",
+        "stance": "賛成"
+      },
+      {
+        "name": "公明",
+        "stance": "賛成"
+      },
+      {
+        "name": "減税",
+        "stance": "賛成"
+      },
+      {
+        "name": "無所属",
+        "stance": "賛成8人・反対1人"
+      }
     ],
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/nittei-0802.html"
   },
@@ -45,11 +75,26 @@
     "category": "条例",
     "result": "可決",
     "factions": [
-      { "name": "自民", "stance": "賛成" },
-      { "name": "民主", "stance": "賛成" },
-      { "name": "公明", "stance": "賛成" },
-      { "name": "減税", "stance": "賛成" },
-      { "name": "無所属", "stance": "賛成" }
+      {
+        "name": "自民",
+        "stance": "賛成"
+      },
+      {
+        "name": "民主",
+        "stance": "賛成"
+      },
+      {
+        "name": "公明",
+        "stance": "賛成"
+      },
+      {
+        "name": "減税",
+        "stance": "賛成"
+      },
+      {
+        "name": "無所属",
+        "stance": "賛成"
+      }
     ],
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/nittei-0802.html"
   },
@@ -63,11 +108,26 @@
     "category": "条例",
     "result": "可決",
     "factions": [
-      { "name": "自民", "stance": "賛成" },
-      { "name": "民主", "stance": "賛成" },
-      { "name": "公明", "stance": "賛成" },
-      { "name": "減税", "stance": "賛成" },
-      { "name": "無所属", "stance": "賛成" }
+      {
+        "name": "自民",
+        "stance": "賛成"
+      },
+      {
+        "name": "民主",
+        "stance": "賛成"
+      },
+      {
+        "name": "公明",
+        "stance": "賛成"
+      },
+      {
+        "name": "減税",
+        "stance": "賛成"
+      },
+      {
+        "name": "無所属",
+        "stance": "賛成"
+      }
     ],
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/nittei-0802.html"
   },
@@ -81,11 +141,26 @@
     "category": "条例",
     "result": "可決",
     "factions": [
-      { "name": "自民", "stance": "賛成" },
-      { "name": "民主", "stance": "賛成" },
-      { "name": "公明", "stance": "賛成" },
-      { "name": "減税", "stance": "賛成" },
-      { "name": "無所属", "stance": "賛成" }
+      {
+        "name": "自民",
+        "stance": "賛成"
+      },
+      {
+        "name": "民主",
+        "stance": "賛成"
+      },
+      {
+        "name": "公明",
+        "stance": "賛成"
+      },
+      {
+        "name": "減税",
+        "stance": "賛成"
+      },
+      {
+        "name": "無所属",
+        "stance": "賛成"
+      }
     ],
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/nittei-0802.html"
   },
@@ -143,5 +218,72 @@
     "category": "条例",
     "result": "可決",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/shingi/1030858/1030859/1046530.html"
+  },
+  {
+    "id": "nagoya-2026-06-129",
+    "level": "municipal",
+    "council": "名古屋市会",
+    "session": "令和8年6月定例会",
+    "billNumber": "第129号",
+    "billTitle": "令和8年度名古屋市一般会計補正予算（第2号）",
+    "category": "予算",
+    "result": "可決",
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/shingi/1030858/1030859/1050954.html"
+  },
+  {
+    "id": "nagoya-2026-06-136",
+    "level": "municipal",
+    "council": "名古屋市会",
+    "session": "令和8年6月定例会",
+    "billNumber": "第136号",
+    "billTitle": "名古屋市市税条例及び名古屋市市税減免条例の一部改正について",
+    "category": "条例",
+    "result": "可決",
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/shingi/1030858/1030859/1050954.html"
+  },
+  {
+    "id": "nagoya-2026-02-57",
+    "level": "municipal",
+    "council": "名古屋市会",
+    "session": "令和8年2月定例会",
+    "billNumber": "第57号",
+    "billTitle": "名古屋市宿泊税導入検討委員会条例の制定について",
+    "category": "条例",
+    "result": "可決",
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/shingi/1030858/1030859/1046530.html"
+  },
+  {
+    "id": "okazaki-2026-06-87",
+    "level": "municipal",
+    "council": "岡崎市議会",
+    "session": "令和8年6月定例会",
+    "billNumber": "議案87号",
+    "billTitle": "アジア・アジアパラ競技大会の開催に伴う病院の料金の特例に関する条例の制定について",
+    "category": "条例",
+    "result": "原案可決",
+    "note": "2026年のアジア・アジアパラ競技大会（愛知・名古屋開催）に伴う特例条例。",
+    "sourceUrl": "https://www.city.okazaki.lg.jp/_res/projects/default_project/_page_/001/009/835/0806giketsukekka.pdf"
+  },
+  {
+    "id": "okazaki-2026-06-89",
+    "level": "municipal",
+    "council": "岡崎市議会",
+    "session": "令和8年6月定例会",
+    "billNumber": "議案89号",
+    "billTitle": "令和8年度岡崎市一般会計補正予算（第2号）",
+    "category": "予算",
+    "result": "原案可決",
+    "sourceUrl": "https://www.city.okazaki.lg.jp/_res/projects/default_project/_page_/001/009/835/0806giketsukekka.pdf"
+  },
+  {
+    "id": "okazaki-2026-06-83",
+    "level": "municipal",
+    "council": "岡崎市議会",
+    "session": "令和8年6月定例会",
+    "billNumber": "議案83号",
+    "billTitle": "岡崎市子ども医療費助成条例の一部改正について",
+    "category": "条例",
+    "result": "原案可決",
+    "sourceUrl": "https://www.city.okazaki.lg.jp/_res/projects/default_project/_page_/001/009/835/0806giketsukekka.pdf"
   }
 ]

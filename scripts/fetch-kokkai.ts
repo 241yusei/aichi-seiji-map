@@ -4,7 +4,7 @@
 //
 // 前提: 先に `npm run seed:legislators` で legislators.aichi.json を作っておく。
 
-import { writeFileSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { getLegislators } from "../lib/data";
 import { fetchKokkaiSpeeches } from "../lib/sources/kokkai";
@@ -42,9 +42,27 @@ for (const l of nationals) {
 }
 
 const OUT = join(process.cwd(), "data", "speeches.national.json");
-writeFileSync(OUT, JSON.stringify(all, null, 2) + "\n", "utf-8");
 
-console.log(`\n合計 ${all.length} 件を ${OUT} に書き出しました`);
+// 既存データとマージする（上書きしない）。
+// 取得は「期間 × 議員ごと上限」で切るため、単純上書きだと範囲外・上限超過の
+// 収録済み発言が消える。発言IDは会議録APIで一意なので、IDで統合して取りこぼしを防ぐ。
+const merged = new Map<string, SpeechRecord>();
+if (existsSync(OUT)) {
+  try {
+    const prev = JSON.parse(readFileSync(OUT, "utf-8")) as SpeechRecord[];
+    for (const s of prev) merged.set(s.id, s);
+  } catch {
+    console.warn("既存の speeches.national.json を読めませんでした。新規取得分のみで書き出します。");
+  }
+}
+const beforeCount = merged.size;
+for (const s of all) merged.set(s.id, s); // 同一IDは最新取得で更新
+const out = [...merged.values()].sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
+writeFileSync(OUT, JSON.stringify(out, null, 2) + "\n", "utf-8");
+
+console.log(
+  `\n今回取得 ${all.length} 件 ／ 既存 ${beforeCount} 件 → 統合後 ${out.length} 件を ${OUT} に書き出しました`,
+);
 if (flagged.length > 0) {
   console.log(`\n⚠ 発言3件未満（ロスターの氏名・表記揺れを要確認）:`);
   for (const f of flagged) console.log(`   - ${f}`);

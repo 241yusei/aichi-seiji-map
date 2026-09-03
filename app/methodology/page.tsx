@@ -35,6 +35,16 @@ const DATA_SOURCES: { label: string; url: string; note: string }[] = [
     url: "https://www.theyworkforyou.com/voting-information/",
     note: "「会派の正式な指示は非公開のため所属議員の平均を会派の立場の近似とする」手法の出典。",
   },
+  {
+    label: "名古屋市会 議員名簿・常任/特別/議会運営委員会名簿・議長副議長",
+    url: "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    note: "議員の所属委員会・委員長等の役職の取得元（名古屋市会のみ。他市町村は未収録）。",
+  },
+  {
+    label: "名古屋市会・岡崎市議会 議案の審議経過・結果／議決結果",
+    url: "https://www.city.nagoya.jp/shikai/shingi/1030858/index.html",
+    note: "議会の議決（議案名・議決結果）の取得元。会派別の賛否内訳は公表されていないため未掲載。",
+  },
 ];
 
 function SectionHead({ n, title }: { n: string; title: string }) {

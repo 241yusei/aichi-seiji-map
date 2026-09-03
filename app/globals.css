@@ -13,7 +13,7 @@
   --color-surface: #fffdf8; /* カード等の面（温白・紙より一段明るく浮かせる） */
   --color-ink: #1f1a14; /* 本文・見出し（セピア寄りの墨）約15.5:1 */
   --color-muted: #5d564b; /* 二次テキスト（暖グレー・本文可）約6.5:1 */
-  --color-faint: #857c6d; /* 装飾・大きめラベル限定（本文には使わない） */
+  --color-faint: #726858; /* 二次ラベル・注記（対paper 4.91:1＝WCAG AA。小さい文字にも使えるよう調整） */
   --color-line: #e3dccd; /* 細罫（hairline） */
   --color-line-strong: #1f1a14; /* 太罫（FT的 section rule＝ink） */
   --color-subtle: #f0e8d9; /* hover・微塗り */
@@ -28,7 +28,7 @@
   /* 採決などのセマンティック（必ず記号＋ラベルと併用） */
   --color-yea: #2f6f4f;
   --color-nay: #a63a2b;
-  --color-abstain: #857c6d;
+  --color-abstain: #726858; /* faint と同値。欠席・記名なしの表示に使うため AA を満たす濃さにする */
 
   /* チャート用カテゴリカル（3層識別。LevelBadge併記で三重符号化を維持） */
   --color-chart-national: #3c4f5e; /* 国＝藍鼠 */
