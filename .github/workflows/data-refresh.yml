@@ -1,0 +1,110 @@
+name: データ更新（国会発言・週次・PR化）
+
+# 国会会議録APIから直近の発言を取得し、変化があればPRを作成する。
+# 自動マージはしない（中立性・出典の最終確認は人が行う）。
+# レート制御（直列・3秒間隔・UA明示・キャッシュ）は lib/sources/http.ts が担保するため、
+# ここでは通常のnpmスクリプトを1回呼ぶだけでよい。
+#
+# 過去の教訓（2026-09）: 手動実行に頼っていたため約2か月分のデータが欠落した。
+# このワークフローはその再発防止策。
+
+on:
+  schedule:
+    - cron: "0 21 * * 1" # 毎週月曜 21:00 UTC ＝ 日本時間 火曜 6:00
+  workflow_dispatch:
+    inputs:
+      from:
+        description: "取得開始日（YYYY-MM-DD）。省略時は直近90日。"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+
+      - name: 取得期間を決定
+        id: range
+        run: |
+          FROM="${{ github.event.inputs.from }}"
+          if [ -z "$FROM" ]; then
+            FROM=$(date -u -d '90 days ago' +%F)
+          fi
+          echo "from=$FROM" >> "$GITHUB_OUTPUT"
+          echo "until=$(date -u +%F)" >> "$GITHUB_OUTPUT"
+
+      - name: 取得前の件数を記録
+        id: before
+        run: echo "count=$(node -e "console.log(require('./data/speeches.national.json').length)")" >> "$GITHUB_OUTPUT"
+
+      - name: 国会発言を取得（直列・低頻度。KEEPを高めにして取りこぼしを防ぐ）
+        env:
+          KOKKAI_FROM: ${{ steps.range.outputs.from }}
+          KOKKAI_UNTIL: ${{ steps.range.outputs.until }}
+          KOKKAI_KEEP: "300"
+          KOKKAI_PAGES: "4"
+        run: npm run fetch:kokkai
+
+      - name: 差分の有無を確認
+        id: diff
+        run: |
+          if git diff --quiet -- data/speeches.national.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: データ基準日を更新（差分がある場合のみ）
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          TODAY=$(date -u -d '9 hours' +%F) # JST日付
+          sed -i "s/export const LAST_UPDATED = \".*\";/export const LAST_UPDATED = \"$TODAY\";/" lib/site-meta.ts
+
+      - name: 検証（型・Lint・相互参照）
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          npm run typecheck
+          npm run lint
+          npm run validate
+
+      - name: 変更点を要約
+        if: steps.diff.outputs.changed == 'true'
+        id: summary
+        run: |
+          AFTER=$(node -e "console.log(require('./data/speeches.national.json').length)")
+          LATEST=$(node -e "const d=require('./data/speeches.national.json'); console.log(d.reduce((m,s)=>s.date>m?s.date:m,''))")
+          {
+            echo "count_after=$AFTER"
+            echo "latest_date=$LATEST"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Pull Request を作成
+        if: steps.diff.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "データ更新: 国会発言（自動・週次）"
+          branch: auto/data-refresh-kokkai
+          delete-branch: true
+          title: "データ更新: 国会発言 ${{ steps.before.outputs.count }}→${{ steps.summary.outputs.count_after }}件（最新 ${{ steps.summary.outputs.latest_date }}）"
+          body: |
+            週次の自動取得（国会会議録API）による差分です。**自動マージされません**。
+
+            - 取得範囲: ${{ steps.range.outputs.from }} 〜 ${{ steps.range.outputs.until }}
+            - 件数: ${{ steps.before.outputs.count }} → ${{ steps.summary.outputs.count_after }}
+            - 収録最新日: ${{ steps.summary.outputs.latest_date }}
+            - typecheck / lint / validate 済み（build は未実行。マージ前に `npm run build` を確認してください）
+
+            レビュー観点:
+            - 発言0件・急減した議員がいないか（ロスターの氏名表記揺れの可能性）
+            - AI要約は未生成（`npm run summarize` は別途手動実行が必要）
+          labels: data-refresh

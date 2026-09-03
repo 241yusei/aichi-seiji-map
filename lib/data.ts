@@ -64,10 +64,17 @@ export function getLegislator(id: string): Legislator | undefined {
 }
 
 // 議員の補足プロフィール（当選回数・役職・委員会）。詳細ページでのみ使用。
+// ファイルが存在しない自治体は readArray が [] を返すので、ここに1行足すだけで拡張できる。
+const PROFILE_FILES = ["profiles.national.json", "profiles.nagoya.json"];
+
 export function getLegislatorProfile(id: string): LegislatorProfile | undefined {
-  return readArray<LegislatorProfile>("profiles.national.json", legislatorProfilesSchema).find(
-    (p) => p.id === id,
-  );
+  for (const file of PROFILE_FILES) {
+    const found = readArray<LegislatorProfile>(file, legislatorProfilesSchema).find(
+      (p) => p.id === id,
+    );
+    if (found) return found;
+  }
+  return undefined;
 }
 
 // --- 発言 ---

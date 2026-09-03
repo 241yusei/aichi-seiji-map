@@ -80,7 +80,10 @@ const funding = load<Funding>("funding.json", fundingsSchema);
 const issues = load<Issue>("issues.json", issuesSchema);
 const factCards = load<FactCard>("fact-cards.json", factCardsSchema);
 const executives = load<Executive>("executives.json", executivesSchema);
-const profiles = load<LegislatorProfile>("profiles.national.json", legislatorProfilesSchema);
+// profiles.national.json（国会）に加え、自治体ごとの補足プロフィールも同じスキーマで検証する。
+// ファイルが無い自治体は load が [] を返すので、増やすときはここに1行足すだけでよい。
+const PROFILE_FILES = ["profiles.national.json", "profiles.nagoya.json"];
+const profiles = PROFILE_FILES.flatMap((f) => load<LegislatorProfile>(f, legislatorProfilesSchema));
 const issueExplainers = load<IssueExplainer>("issue-explainers.json", issueExplainersSchema);
 const councilDecisions = load<CouncilDecision>("council-decisions.json", councilDecisionsSchema);
 const finances = load<GovernmentFinance>("finance.json", governmentFinancesSchema);
