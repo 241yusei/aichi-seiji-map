@@ -1,9 +1,10 @@
 import { getFactCards } from "@/lib/data";
+import { SITE_URL } from "@/lib/site-meta";
 
 // 静的エクスポートでも feed.xml を生成する（ビルド時に出力）。
 export const dynamic = "force-static";
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://aichi-seiji-map.vercel.app";
+const BASE = SITE_URL;
 
 function esc(s: string): string {
   return s

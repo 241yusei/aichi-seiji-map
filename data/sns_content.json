@@ -4,194 +4,194 @@
     {
       "id": "why-built",
       "text": "【開発の裏側】「政治のトリセツ」を作った理由。\n愛知・名古屋の議員が何を言い・どう投票し・どんな資金かを、出典つき・中立で横断して見られる場所が無かったからです。評価はせず、判断材料だけをまっすぐに。",
-      "url": "https://aichi-seiji-map.vercel.app/about"
+      "url": "https://seiji-torisetsu.pages.dev/about"
     },
     {
       "id": "primary-source",
       "text": "【開発の裏側】このサイトの背骨は「一次ソース主義」。\nすべての発言・採決・政治資金に出典URLを付け、出典のない断定はしません。AI要約にも必ず元発言へのリンクを併記しています。",
-      "url": "https://aichi-seiji-map.vercel.app/about"
+      "url": "https://seiji-torisetsu.pages.dev/about"
     },
     {
       "id": "all-54",
       "text": "【開発の裏側】愛知の54市町村、すべての議会の議員名簿を集めました。\n名古屋市以外の市町村は会派が地域色豊か。手作業の照合が大変でしたが、ここまで縦に束ねた中立DBは他にありません。",
-      "url": "https://aichi-seiji-map.vercel.app/municipalities/"
+      "url": "https://seiji-torisetsu.pages.dev/municipalities/"
     },
     {
       "id": "vote-recorded",
       "text": "【開発の裏側】採決を「記名投票」と「起立採決」で区別して表示しています。\n起立採決は個人の賛否が記録に残らないため、「データ整備中」と混同しないよう、非公開である旨を明示する設計にしました。",
-      "url": "https://aichi-seiji-map.vercel.app/decisions/"
+      "url": "https://seiji-torisetsu.pages.dev/decisions/"
     },
     {
       "id": "ai-summary-link",
       "text": "【開発の裏側】AI要約には必ず元発言リンクを併記しています。\n要約は補助。最終的な判断は原文に当たれるように——中立メディアとして「要約だけで断定させない」ことを徹底しました。",
-      "url": "https://aichi-seiji-map.vercel.app/about"
+      "url": "https://seiji-torisetsu.pages.dev/about"
     },
     {
       "id": "no-eval-words",
       "text": "【開発の裏側】中立をどう担保するか。\n答えは「評価語を使わない」こと。良い/悪い・優劣を書かず、数字と記録だけを並べます。会派の大小も『選挙結果の反映』と書き、優劣として描きません。",
-      "url": "https://aichi-seiji-map.vercel.app/about"
+      "url": "https://seiji-torisetsu.pages.dev/about"
     },
     {
       "id": "funding-pdf",
       "text": "【開発の裏側】いちばん手強かったのは政治資金。\n収支報告書は画像PDFが多く機械処理が難しいため、Phase1は「出典リンク＋主要項目」に絞り、数値には精度の注記を付けています。誠実さ優先です。",
-      "url": "https://aichi-seiji-map.vercel.app/about"
+      "url": "https://seiji-torisetsu.pages.dev/about"
     },
     {
       "id": "neutral-funding",
       "text": "【開発の裏側】運営は個人。だから財源も開示します。\n政党・政治家・政治団体からの寄付は受け取りません。支援は『サイト運営』への支援であり、掲載内容・順序・評価は支援で一切変わりません。",
-      "url": "https://aichi-seiji-map.vercel.app/support"
+      "url": "https://seiji-torisetsu.pages.dev/support"
     },
     {
       "id": "beginner-design",
       "text": "【開発の裏側】「政治、よくわからない」をなくしたい。\n衆院・参院・会派・二元代表制——専門語に最小の説明を添え、『やさしい/くわしい』を切り替えられる初心者ファースト設計にしました。",
-      "url": "https://aichi-seiji-map.vercel.app/learn/"
+      "url": "https://seiji-torisetsu.pages.dev/learn/"
     },
     {
       "id": "static-source",
       "text": "【開発の裏側】仕組みが止まっても価値が残る設計に。\n本体は静的なDB＋出典リンク集。運用が途絶えても『一次ソースへの地図』として生き続けるよう、最初からそう作っています。",
-      "url": "https://aichi-seiji-map.vercel.app/"
+      "url": "https://seiji-torisetsu.pages.dev/"
     },
     {
       "id": "election-period-guard",
       "text": "【開発の裏側】選挙期間中は表示を自動で抑制する仕組みがあります。\n告示〜投票日を登録すると、投票誘導と取られかねない表示を控える設計に。公職選挙法への配慮を、人の判断任せにせず仕組みで担保しています。",
-      "url": "https://aichi-seiji-map.vercel.app/about"
+      "url": "https://seiji-torisetsu.pages.dev/about"
     },
     {
       "id": "corrections-log",
       "text": "【開発の裏側】誤りは隠さず「訂正・更新ログ」に残します。\n日付・箇所・修正内容・出典をセットで公開。中立メディアにとって、誤りをどう扱うかも信頼の一部だと考えています。",
-      "url": "https://aichi-seiji-map.vercel.app/corrections"
+      "url": "https://seiji-torisetsu.pages.dev/corrections"
     },
     {
       "id": "no-diagnosis",
       "text": "【開発の裏側】あえて作らなかった機能：投票マッチング診断。\n「あなたに合う候補」を提示するアルゴリズムは、設計者の価値観が入り込みやすい。判断材料だけを渡し、結論はあなたに委ねる設計を選びました。",
-      "url": "https://aichi-seiji-map.vercel.app/about"
+      "url": "https://seiji-torisetsu.pages.dev/about"
     },
     {
       "id": "link-check",
       "text": "【開発の裏側】出典リンクは月次で自動チェックしています。\n公式サイトのリニューアルでリンク切れが起きるのはよくあること。放置しないよう、リンク切れを自動検知する仕組みを組み込みました。",
-      "url": "https://aichi-seiji-map.vercel.app/about"
+      "url": "https://seiji-torisetsu.pages.dev/about"
     },
     {
       "id": "robots-compliance",
       "text": "【開発の裏側】データ取得はrobots.txtと利用規約を守った範囲だけ。\n県議会・市議会のサイトは取得可否がまちまちで、取れない場合は無理に取らず「公式サイトへのリンク」に留めています。",
-      "url": "https://aichi-seiji-map.vercel.app/about"
+      "url": "https://seiji-torisetsu.pages.dev/about"
     },
     {
       "id": "zod-validation",
       "text": "【開発の裏側】全データはビルド前に型・整合性を自動検証しています。\n議員IDの参照切れや日付の不整合があればビルドが止まる仕組み。人手のチェックだけに頼らない設計です。",
-      "url": "https://aichi-seiji-map.vercel.app/about"
+      "url": "https://seiji-torisetsu.pages.dev/about"
     },
     {
       "id": "ogp-static",
       "text": "【開発の裏側】事実カードのシェア画像は、ビルド時に静的生成しています。\nサーバー不要の静的サイトでも、SNSでちゃんとカード表示される画像を1枚ずつ作る仕組みを組みました。",
-      "url": "https://aichi-seiji-map.vercel.app/facts/"
+      "url": "https://seiji-torisetsu.pages.dev/facts/"
     },
     {
       "id": "why-no-ads",
       "text": "【開発の裏側】広告は入れていません。\n広告主の意向が編集に影響する余地を最初から作らないため。運営は支援と個人負担で成り立たせています。",
-      "url": "https://aichi-seiji-map.vercel.app/support"
+      "url": "https://seiji-torisetsu.pages.dev/support"
     },
     {
       "id": "termend-not-vote",
       "text": "【開発の裏側】「任期満了日」と「投票日」は別物として扱っています。\n投票日は選管の告示で確定するもの。確定していない日付を断定して載せない——地味ですが誠実さの核です。",
-      "url": "https://aichi-seiji-map.vercel.app/elections/"
+      "url": "https://seiji-torisetsu.pages.dev/elections/"
     }
   ],
   "app_feature": [
     {
       "id": "zip",
       "text": "【使い方】郵便番号で「あなたの代表」がわかります。\n入力すると、国会(愛知選出)・県議会・市町村の代表者と、その記録への入口が一画面に。まずは自分の地域から。",
-      "url": "https://aichi-seiji-map.vercel.app/"
+      "url": "https://seiji-torisetsu.pages.dev/"
     },
     {
       "id": "legislators",
       "text": "【使い方】議員を「三層」で横断。\n国会(愛知選出)・愛知県議会・全54市町村の議員を、発言・採決・政治資金まで出典つきで引けます。",
-      "url": "https://aichi-seiji-map.vercel.app/legislators/"
+      "url": "https://seiji-torisetsu.pages.dev/legislators/"
     },
     {
       "id": "facts",
       "text": "【使い方】数字で一発でわかる「事実カード」。\n政治資金の桁・女性比率・採決の賛否など、愛知固有の事実を一次ソースつきで。シェアしやすい1枚にまとめています。",
-      "url": "https://aichi-seiji-map.vercel.app/facts/"
+      "url": "https://seiji-torisetsu.pages.dev/facts/"
     },
     {
       "id": "search",
       "text": "【新機能】横断検索が強くなりました。\n議員・発言・争点・事実カードに加え、主要ページ（くらべる/選挙カレンダー/政党・会派）も検索でヒットします。",
-      "url": "https://aichi-seiji-map.vercel.app/search/"
+      "url": "https://seiji-torisetsu.pages.dev/search/"
     },
     {
       "id": "compare",
       "text": "【新機能】議員を「くらべる」/compare。\n2人の議員を並べて、発言数・採決・政治資金を事実ベースで対比できます。優劣ではなく、違いを淡々と。",
-      "url": "https://aichi-seiji-map.vercel.app/compare/"
+      "url": "https://seiji-torisetsu.pages.dev/compare/"
     },
     {
       "id": "elections",
       "text": "【新機能】選挙カレンダー /elections。\n愛知県知事・県内市町村長の任期満了日から「次の選挙はいつごろか」を一覧に。各自治体公式の出典つきです。",
-      "url": "https://aichi-seiji-map.vercel.app/elections/"
+      "url": "https://seiji-torisetsu.pages.dev/elections/"
     },
     {
       "id": "parties",
       "text": "【新機能】政党・会派の勢力図 /parties。\n国会(愛知選出)・県議会・名古屋市会の会派構成を人数順に可視化。どの会派が大きいかを公式名簿の出典つきで。",
-      "url": "https://aichi-seiji-map.vercel.app/parties/"
+      "url": "https://seiji-torisetsu.pages.dev/parties/"
     },
     {
       "id": "municipalities",
       "text": "【使い方】市町村から探す /municipalities。\n愛知の54市町村それぞれの議員・首長・会議録への入口をまとめています。あなたの街のページが見つかります。",
-      "url": "https://aichi-seiji-map.vercel.app/municipalities/"
+      "url": "https://seiji-torisetsu.pages.dev/municipalities/"
     },
     {
       "id": "issues",
       "text": "【使い方】争点を「一言でいうと」から。\nリニア・名古屋城・EV転換など、愛知の争点を『これは国・県・市のどの話か』も含めて中立に整理。賛否は両論併記です。",
-      "url": "https://aichi-seiji-map.vercel.app/issues/"
+      "url": "https://seiji-torisetsu.pages.dev/issues/"
     },
     {
       "id": "learn",
       "text": "【使い方】基礎から学べる「まなぶ」＋用語集。\n二元代表制・県市の二重構造・市民税減税など、愛知でつまずきやすい仕組みを図解で。むずかしい言葉もやさしく解説します。",
-      "url": "https://aichi-seiji-map.vercel.app/learn/"
+      "url": "https://seiji-torisetsu.pages.dev/learn/"
     },
     {
       "id": "start",
       "text": "【使い方】どこから見ればいいか迷ったら /start。\n「地域の代表を知る」「争点を理解する」「そもそも選挙から」「投票の準備」——やりたいことを選ぶと、見る順番を案内します。",
-      "url": "https://aichi-seiji-map.vercel.app/start"
+      "url": "https://seiji-torisetsu.pages.dev/start"
     },
     {
       "id": "area",
       "text": "【使い方】地域から探す /area。\n郵便番号や名古屋市の区から、あなたの地域の衆院・参院・愛知県議会・名古屋市会の代表者と首長をまとめて確認できます。",
-      "url": "https://aichi-seiji-map.vercel.app/area"
+      "url": "https://seiji-torisetsu.pages.dev/area"
     },
     {
       "id": "executives",
       "text": "【使い方】首長一覧 /executives。\n愛知県知事と県内市町村長55人を、任期満了日（次の首長選の時期の目安）と公式の出典つきで一覧に。議会とあわせて「誰が地域を率いているか」が分かります。",
-      "url": "https://aichi-seiji-map.vercel.app/executives"
+      "url": "https://seiji-torisetsu.pages.dev/executives"
     },
     {
       "id": "decisions",
       "text": "【使い方】議会の議決 /decisions。\n名古屋市会・愛知県議会が会期ごとに何を可決・否決したか（主要議案）を、公式の審議結果に出典リンク付きで確認できます。",
-      "url": "https://aichi-seiji-map.vercel.app/decisions"
+      "url": "https://seiji-torisetsu.pages.dev/decisions"
     },
     {
       "id": "glossary",
       "text": "【使い方】用語集 /glossary。\n衆議院・記名投票・会派・二元代表制など、政治のことばを初心者向けにやさしく解説。読んでいて分からない言葉があったらここへ。",
-      "url": "https://aichi-seiji-map.vercel.app/glossary"
+      "url": "https://seiji-torisetsu.pages.dev/glossary"
     },
     {
       "id": "themes",
       "text": "【使い方】生活の言葉から探す /themes。\n物価・子育て・医療・働き方・防災・交通など、暮らしのテーマから愛知選出議員の国会発言（出典つき）を逆引きできます。",
-      "url": "https://aichi-seiji-map.vercel.app/themes"
+      "url": "https://seiji-torisetsu.pages.dev/themes"
     },
     {
       "id": "vote-guide",
       "text": "【使い方】はじめての投票ガイド /vote-guide。\n投票の流れと判断材料の集め方をやさしく。だれに入れるべきとは言いません。期日前投票や持ち物などの基本もまとめています。",
-      "url": "https://aichi-seiji-map.vercel.app/vote-guide"
+      "url": "https://seiji-torisetsu.pages.dev/vote-guide"
     },
     {
       "id": "governor-2027",
       "text": "【新ページ】「次の愛知県知事選はいつ？」に答えるページを作りました。\n現職の任期満了日（2027年2月14日）・投票日の決まり方・知事のしくみを、一次ソースつきで中立に。候補予想はしません、判断材料だけを。",
-      "url": "https://aichi-seiji-map.vercel.app/elections/aichi-governor-2027/"
+      "url": "https://seiji-torisetsu.pages.dev/elections/aichi-governor-2027/"
     },
     {
       "id": "unified-2027",
       "text": "【新ページ】統一地方選挙2027、愛知では何が選ばれる？\n県議会（現員97人）・名古屋市会など改選見込みのものと、日程が決まる仕組みを一次ソースつきで解説。いまのうちに現職の記録を下調べできます。",
-      "url": "https://aichi-seiji-map.vercel.app/elections/unified-2027/"
+      "url": "https://seiji-torisetsu.pages.dev/elections/unified-2027/"
     }
   ]
 }
