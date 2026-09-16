@@ -12,10 +12,10 @@ const FULL: Record<Level, string> = {
   municipal: "市町村議会",
 };
 
-// 政党色を避け、インクの枠線ラベル（mono chip）で層を区別する。
+// 議会の違いは文字で示し、色による優劣をつくらない。
 export function LevelBadge({ level, full = false }: { level: Level; full?: boolean }) {
   return (
-    <span className="inline-flex items-center border border-ink px-1.5 text-[0.7rem] font-bold leading-5 tracking-wide text-ink">
+    <span className="inline-flex items-center rounded-full bg-subtle px-2.5 py-1 text-xs font-medium leading-5 tracking-wide text-ink">
       {full ? FULL[level] : LABEL[level]}
     </span>
   );

@@ -1,209 +1,238 @@
 import Link from "next/link";
 import { ZipSearch } from "@/components/ZipSearch";
+import { CivicIllustration } from "@/components/CivicIllustration";
+import { TopicIcon } from "@/components/TopicIcon";
 import { getFactCards, getIssues, getLegislators, getSpeeches } from "@/lib/data";
 import { FactCardType } from "@/components/FactCardView";
 import { formatDate } from "@/lib/format";
+import { THEMES } from "@/lib/themes";
+import { LAST_UPDATED } from "@/lib/site-meta";
 
 const LAYERS = [
-  {
-    n: "01",
-    href: "/legislators?level=national",
-    label: "国会（愛知選出）",
-    body: "衆院（下院）愛知1〜16区・比例東海と、参院（上院）愛知県選挙区。国全体のルールを決める層。",
-  },
-  {
-    n: "02",
-    href: "/legislators?level=prefectural",
-    label: "愛知県議会",
-    body: "県政の代表者。発言は公式会議録への出典リンクで案内します。",
-  },
-  {
-    n: "03",
-    href: "/municipalities",
-    label: "市町村議会（全54市町村）",
-    body: "名古屋市会から町村まで、愛知の全自治体を地域別に。議会・議員・首長へ。",
-  },
+  { n: "01", href: "/legislators?level=national", label: "国会", sub: "国のルールをつくる", body: "法律や国の予算について。愛知選出の代表者の記録をたどります。" },
+  { n: "02", href: "/legislators?level=prefectural", label: "愛知県議会", sub: "県全体のことを考える", body: "県の医療や産業、防災について。県議会の代表者を調べます。" },
+  { n: "03", href: "/municipalities", label: "市町村議会", sub: "身近なまちのことを決める", body: "子育てやごみ、まちづくりについて。あなたの自治体から探せます。" },
 ];
 
 export default function HomePage() {
-  const legCount = getLegislators().length;
-  const speechCount = getSpeeches().length;
-  const issueCount = getIssues().length;
-  const facts = getFactCards();
-  const featured = facts[0];
-  const rest = facts.slice(1, 3);
   const stats = [
-    { v: legCount.toLocaleString(), l: "代表者（国・県・市町村）" },
-    { v: speechCount.toLocaleString(), l: "国会発言（出典つき）" },
-    { v: "54", l: "市町村を網羅" },
-    { v: issueCount.toString(), l: "争点を横串" },
+    { value: getLegislators().length.toLocaleString(), unit: "人", label: "掲載している議員" },
+    { value: getSpeeches().length.toLocaleString(), unit: "件", label: "出典つきの発言記録" },
+    { value: "54", unit: "市町村", label: "愛知の地域から探せる" },
+    { value: getIssues().length.toString(), unit: "テーマ", label: "地域の争点を読み解く" },
   ];
+  const facts = getFactCards().slice(0, 3);
 
   return (
-    <div>
-      {/* ヒーロー（紙面の一面：kicker→明朝見出し→スタンドファースト） */}
-      <section className="rule-thick pb-12 pt-6">
-        <p className="eyebrow text-accent-deep">政治のトリセツ あいち・なごや ／ 知ってから、選ぶ。</p>
-        <h1 className="font-display mt-6 text-[clamp(2.1rem,6vw,4.2rem)] leading-[1.25]">
-          あなたの暮らしを、
-          <br className="hidden sm:block" />
-          だれが決めている？
-        </h1>
-        <p className="standfirst mt-6 text-base sm:text-lg">
-          郵便番号を入れるだけ。あなたの街の代表者と、その人の“記録”が30秒で見つかります。
-          中立・一次ソースで、むずかしい言葉はふれれば意味が出ます。
-        </p>
-
-        <div className="zone-calm mt-7 max-w-xl p-5">
-          <p className="eyebrow text-accent-deep">はじめての人へ</p>
-          <p className="mt-1 mb-3 text-sm text-muted">
-            郵便番号を入れるだけ。まずはここから始めれば大丈夫です。
+    <div className="home-page">
+      <section
+        className="grid items-center gap-6 pb-8 pt-2 md:grid-cols-[1.35fr_1fr] md:gap-0 md:pb-12 md:pt-6"
+        aria-labelledby="home-title"
+      >
+        <div>
+          <p className="mb-6 flex items-center gap-2.5 text-xs font-medium tracking-[.08em] text-accent sm:text-sm">
+            <span className="h-2 w-2 rounded-full bg-signal" aria-hidden="true" />わたしと、あいちと、政治のこと。
           </p>
-          <ZipSearch />
+          <h1 id="home-title" className="font-display hero-title">
+            政治を、<br />
+            <span className="text-accent">もっと身近に。</span>
+          </h1>
+          <p className="mt-7 text-[15px] leading-loose text-muted sm:text-base">
+            いつもの暮らしと、政治はつながっている。<br />
+            あなたの街の代表者や、気になる話題を、<br className="hidden sm:block" />
+            やさしい言葉と、確かな記録で。
+          </p>
+          <div className="mt-7 flex flex-wrap gap-3">
+            <Link href="#find-area" className="home-link home-link-primary">
+              あなたの地域から探す <span aria-hidden="true">↗</span>
+            </Link>
+            <Link href="/start/" className="home-link home-link-secondary">
+              はじめての方へ <span aria-hidden="true">→</span>
+            </Link>
+          </div>
+          <p className="mt-5 text-xs text-faint">だれかを薦めるのではなく、知るための入口です。</p>
         </div>
+        <CivicIllustration />
+      </section>
 
-        <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
-          <span className="text-faint">はじめての方は</span>
-          <Link href="/start" className="link-ink font-bold">
-            どこから見る？（はじめに）
-          </Link>
-          <Link href="/learn" className="link-ink">
-            基礎からまなぶ
-          </Link>
+      <section
+        id="find-area"
+        className="grid scroll-mt-6 items-center gap-6 rounded-2xl bg-calm p-6 lg:grid-cols-[.85fr_1.15fr] lg:gap-12 lg:p-8"
+        aria-labelledby="find-area-title"
+      >
+        <div>
+          <p className="eyebrow text-accent">まずは、あなたの街から</p>
+          <h2 id="find-area-title" className="font-display mt-2 text-2xl sm:text-[28px]">わたしの代表者って、だれ？</h2>
+          <p className="mt-2 text-sm text-muted">郵便番号で、国・県・市の代表者をまとめて。</p>
+        </div>
+        <div>
+          <ZipSearch />
+          <p className="mt-3 text-xs text-muted">
+            郵便番号検索は名古屋市内に対応。
+            <Link href="/municipalities/" className="link-ink">愛知県の市町村一覧から探す →</Link>
+          </p>
         </div>
       </section>
 
-      {/* データストリップ（太罫＋明朝大数字＝紙面の統計欄） */}
-      <section className="rule-thick mt-10">
-        <p className="eyebrow pt-3 text-faint">収録データ（すべて一次ソースつき）</p>
-        <div className="grid grid-cols-2 gap-x-6 py-6 sm:grid-cols-4">
-          {stats.map((s) => (
-            <div key={s.l} className="border-l border-line pl-4 first:border-0 first:pl-0">
-              <div className="num-display text-4xl sm:text-5xl">{s.v}</div>
-              <div className="mt-2 text-xs text-muted">{s.l}</div>
-            </div>
+      <section className="home-section" aria-labelledby="themes-heading">
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p className="eyebrow mb-3 text-accent">暮らしから、ひもとく</p>
+            <h2 id="themes-heading" className="font-display section-heading">気になることから、でいい。</h2>
+          </div>
+          <Link href="/themes/" className="link-ink text-sm">
+            すべてのテーマ <span aria-hidden="true">↗</span>
+          </Link>
+        </div>
+        <p className="mt-4 text-sm text-muted">毎日の「これ、どうなっている？」から、議会の言葉へ。</p>
+        <div className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {THEMES.slice(0, 6).map((theme) => (
+            <Link
+              key={theme.id}
+              href={`/themes/${theme.id}/`}
+              className="home-card group flex items-center gap-4 bg-sand p-5 hover:bg-calm"
+            >
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white text-accent">
+                <TopicIcon name={theme.id} />
+              </span>
+              <div className="min-w-0 flex-1">
+                <h3 className="text-base font-medium">{theme.label}</h3>
+                <p className="mt-1 text-xs text-muted">{theme.blurb.split('など、')[0]}</p>
+              </div>
+              <span aria-hidden="true" className="text-muted">↗</span>
+            </Link>
           ))}
         </div>
       </section>
 
-      {/* 次の選挙（A層の最強ニーズ「いつ？」への直通） */}
-      <section className="rule-thick py-10">
-        <h2 className="eyebrow text-accent-deep">次の選挙はいつ？</h2>
-        <div className="mt-4 grid gap-px border border-line bg-line sm:grid-cols-3">
-          <Link
-            href="/elections/aichi-governor-2027/"
-            className="group bg-surface p-5 transition-colors hover:bg-subtle"
-          >
-            <p className="eyebrow text-faint">2027年2月 任期満了</p>
-            <h3 className="font-display mt-1 text-lg leading-snug">愛知県知事選挙2027</h3>
-            <p className="mt-2 text-sm text-muted">いつ・しくみ・現職の記録の調べ方。</p>
+      <section
+        className="home-section grid overflow-hidden rounded-2xl bg-citrus md:grid-cols-[1fr_auto]"
+        aria-labelledby="learn-heading"
+      >
+        <div className="p-7 sm:p-10">
+          <p className="eyebrow">知識ゼロから、少しずつ</p>
+          <h2 id="learn-heading" className="font-display mt-4 text-3xl sm:text-4xl">
+            「そもそも」から、<br className="sm:hidden" />
+            はじめよう。</h2>
+          <p className="mt-4 text-sm text-muted">
+            国会と県議会は、どう違う？ 選挙って、どんなしくみ？<br className="hidden sm:block" />
+            知っていることが増えると、ニュースの見え方も変わります。</p>
+          <Link href="/learn/" className="home-link home-link-secondary mt-6">
+            政治のきほんをまなぶ <span aria-hidden="true">↗</span>
           </Link>
-          <Link
-            href="/elections/unified-2027/"
-            className="group bg-surface p-5 transition-colors hover:bg-subtle"
-          >
-            <p className="eyebrow text-faint">2027年4月 見込み</p>
-            <h3 className="font-display mt-1 text-lg leading-snug">統一地方選挙2027</h3>
-            <p className="mt-2 text-sm text-muted">県議会・名古屋市会など、何が選ばれる？</p>
-          </Link>
-          <Link
-            href="/elections/"
-            className="group bg-surface p-5 transition-colors hover:bg-subtle"
-          >
-            <p className="eyebrow text-faint">あなたの街は？</p>
-            <h3 className="font-display mt-1 text-lg leading-snug">選挙カレンダー</h3>
-            <p className="mt-2 text-sm text-muted">54市町村の首長選の時期の目安を一覧で。</p>
-          </Link>
+        </div>
+        <div className="hidden items-center px-16 md:flex" aria-hidden="true">
+          <span className="font-display text-[140px] leading-none tracking-tighter text-ink/80">？</span>
         </div>
       </section>
 
-      {/* 注目の事実カード（0クリックで価値を見せる） */}
-      {featured && (
-        <section className="rule-thick py-10">
-          <div className="flex items-baseline justify-between gap-4">
-            <h2 className="eyebrow text-accent-deep">注目の事実カード｜記録から見えるギャップ</h2>
-            <Link href="/facts" className="link-ink text-sm">
-              一覧へ
-            </Link>
-          </div>
-          <Link
-            href={`/facts/${featured.id}/`}
-            className="group mt-4 block border border-ink bg-surface p-6 transition-colors hover:bg-subtle"
-          >
-            <div className="flex items-center gap-2">
-              <FactCardType type={featured.cardType} />
-              <span className="eyebrow bg-accent px-1.5 py-0.5 text-on-accent">新着</span>
-              <span className="tnum text-xs text-faint">{formatDate(featured.publishedAt)}</span>
-            </div>
-            <h3 className="font-display mt-3 text-2xl leading-snug sm:text-3xl">{featured.title}</h3>
-            <p className="measure mt-2 text-muted">{featured.hook}</p>
-            <span
-              aria-hidden
-              className="mt-4 inline-block text-faint transition-colors group-hover:text-accent"
+      <section className="home-section" aria-labelledby="layers-heading">
+        <p className="eyebrow mb-3 text-accent">国・県・市、それぞれの役割</p>
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <h2 id="layers-heading" className="font-display section-heading">つながる政治、3つの入口。</h2>
+          <Link href="/compare/" className="link-ink text-sm">議員の記録をくらべる ↗</Link>
+        </div>
+        <div className="mt-7 grid gap-4 md:grid-cols-3">
+          {LAYERS.map((layer) => (
+            <Link
+              key={layer.n}
+              href={layer.href}
+              className="home-card group flex flex-col bg-subtle p-6 sm:p-7"
             >
-              記録を見る →
-            </span>
-          </Link>
-          {rest.length > 0 && (
-            <div className="mt-4 grid gap-px border border-line bg-line sm:grid-cols-2">
-              {rest.map((card) => (
-                <Link
-                  key={card.id}
-                  href={`/facts/${card.id}/`}
-                  className="group flex flex-col bg-surface p-5 transition-colors hover:bg-subtle"
-                >
-                  <FactCardType type={card.cardType} />
-                  <h3 className="font-display mt-2 text-lg leading-snug">{card.title}</h3>
-                  <p className="mt-2 line-clamp-2 text-sm text-muted">{card.hook}</p>
-                </Link>
-              ))}
+              <div className="flex items-center justify-between">
+                <span className="num-display text-3xl text-accent">{layer.n}</span>
+                <span className="home-arrow" aria-hidden="true">↗</span>
+              </div>
+              <p className="mt-8 text-xs text-muted">{layer.sub}</p>
+              <h3 className="font-display mt-2 text-2xl">{layer.label}</h3>
+              <p className="mt-4 text-sm text-muted">{layer.body}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {facts.length > 0 && (
+        <section className="home-section" aria-labelledby="facts-heading">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <p className="eyebrow mb-3 text-accent">一次ソースから知る</p>
+              <h2 id="facts-heading" className="font-display section-heading">記録を読むと、見えてくる。</h2>
             </div>
-          )}
+            <Link href="/facts/" className="link-ink text-sm">事実カードをすべて見る ↗</Link>
+          </div>
+          <p className="mt-4 text-sm text-muted">公開日の新しい順に掲載。元の資料とあわせて確かめられます。</p>
+          <div className="mt-7 grid gap-4 md:grid-cols-3">
+            {facts.map((fact) => (
+              <Link
+                key={fact.id}
+                href={`/facts/${fact.id}/`}
+                className="home-card flex flex-col border border-line bg-surface p-6"
+              >
+                <div className="flex flex-wrap items-center gap-2">
+                  <FactCardType type={fact.cardType} />
+                  <span className="text-xs text-faint">{formatDate(fact.publishedAt)}</span>
+                </div>
+                <h3 className="font-display mt-5 text-xl leading-relaxed">{fact.title}</h3>
+                <p className="mt-3 line-clamp-3 text-sm text-muted">{fact.hook}</p>
+                <span className="mt-auto pt-6 text-sm text-accent">
+                  記録を読む <span aria-hidden="true">↗</span>
+                </span>
+              </Link>
+            ))}
+          </div>
         </section>
       )}
 
-      {/* 三層 */}
-      <section className="rule-thick py-10">
-        <h2 className="eyebrow text-faint">三層でたどる（国・県・市で役割がちがう）</h2>
-        <p className="measure mt-2 text-sm text-muted">
-          全国の話は国会、県全体は県議会、自分の街は市町村議会。
-          <Link href="/learn/kokkai-to-chiho" className="link-ink">
-            ちがいをまなぶ
+      <section className="home-section rounded-2xl bg-sand p-6 sm:p-8" aria-labelledby="elections-heading">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <h2 id="elections-heading" className="font-display text-2xl">次の選挙、いつだろう。</h2>
+          <Link href="/elections/" className="link-ink text-sm">選挙カレンダー ↗</Link>
+        </div>
+        <div className="mt-6 grid gap-4 sm:grid-cols-2">
+          <Link
+            href="/elections/aichi-governor-2027/"
+            className="home-card flex items-center justify-between gap-3 bg-white p-5"
+          >
+            <div>
+              <p className="text-xs text-faint">2027年2月 任期満了</p>
+              <h3 className="mt-1 text-base font-medium">愛知県知事選挙</h3>
+            </div>
+            <span aria-hidden="true">↗</span>
           </Link>
-        </p>
-        <div className="mt-4">
-          {LAYERS.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className="group grid grid-cols-[2.5rem_1fr_auto] items-baseline gap-4 border-t border-line py-6 transition-colors hover:bg-subtle"
-            >
-              <span className="num-display tnum text-faint">{l.n}</span>
-              <div>
-                <h3 className="font-display text-xl sm:text-2xl">{l.label}</h3>
-                <p className="mt-1 text-sm text-muted">{l.body}</p>
-              </div>
-              <span aria-hidden className="text-faint transition-colors group-hover:text-accent">
-                →
-              </span>
-            </Link>
-          ))}
+          <Link
+            href="/elections/unified-2027/"
+            className="home-card flex items-center justify-between gap-3 bg-white p-5"
+          >
+            <div>
+              <p className="text-xs text-faint">2027年4月 見込み</p>
+              <h3 className="mt-1 text-base font-medium">統一地方選挙</h3>
+            </div>
+            <span aria-hidden="true">↗</span>
+          </Link>
         </div>
       </section>
 
-      {/* 中立性（運営の声＝sand面で章替わりを分節） */}
-      <section className="rule-thick py-10">
-        <div className="card-soft bg-sand p-6">
-          <h2 className="eyebrow text-accent-deep">中立・非投票誘導が大原則</h2>
-          <p className="measure mt-3 text-muted">
-            本サイトは特定の政党・候補者への投票や不投票を呼びかけません。比較はすべて事実に基づき、
-            AI要約には必ず元発言へのリンクを併記します。
-            <Link href="/about" className="link-ink ml-1">
-              詳しくはこちら
-            </Link>
-            。
-          </p>
+      <section className="home-section" aria-labelledby="promise-heading">
+        <div className="text-center">
+          <p className="eyebrow text-accent">政治のトリセツの約束</p>
+          <h2 id="promise-heading" className="font-display section-heading mt-4">あなたが考える、その手がかりに。</h2>
+          <p className="mx-auto mt-5 max-w-2xl text-sm leading-loose text-muted">
+            特定の政党や候補者への投票・不投票を呼びかけません。<br className="hidden sm:block" />
+            議員は同じ書式で、発言は出典とともに。AIの要約からも、元の記録をたどれます。</p>
+          <Link href="/methodology/" className="link-ink mt-5 inline-block text-sm">データの集め方・見せ方を知る ↗</Link>
         </div>
+        <dl className="mt-10 grid grid-cols-2 gap-6 rounded-2xl bg-subtle p-6 sm:grid-cols-4 sm:p-8">
+          {stats.map((stat) => (
+            <div key={stat.label}>
+              <dt className="text-xs text-muted">{stat.label}</dt>
+              <dd className="mt-3 flex flex-wrap items-baseline gap-1.5">
+                <span className="num-display text-3xl sm:text-4xl">{stat.value}</span>
+                <span className="text-xs text-muted">{stat.unit}</span>
+              </dd>
+            </div>
+          ))}
+        </dl>
+        <p className="mt-3 text-right text-xs text-faint">収録データの基準日：{LAST_UPDATED} · 件数は活動の評価ではありません</p>
       </section>
     </div>
   );

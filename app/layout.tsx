@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { IBM_Plex_Sans_JP, Shippori_Mincho_B1 } from "next/font/google";
 import { getActiveElectionWindow } from "@/lib/election-window";
 import { ElectionPeriodBanner } from "@/components/ElectionPeriodBanner";
 import { BottomNav } from "@/components/BottomNav";
+import { SiteHeader } from "@/components/SiteHeader";
 import {
   LAST_UPDATED,
   SITE_URL,
@@ -14,23 +14,6 @@ import {
   SITE_INSTAGRAM,
 } from "@/lib/site-meta";
 import "./globals.css";
-
-// 見出し・特大数字＝明朝（紙面の「報道の声」。B1は画面表示向けに肉付けされた明朝）。
-const mincho = Shippori_Mincho_B1({
-  subsets: ["latin"],
-  weight: ["500", "700", "800"],
-  variable: "--font-mincho",
-  display: "swap",
-  preload: false,
-});
-// 本文・UI・チャート数字の主役（可読性最優先のサンセリフ）。
-const plexJP = IBM_Plex_Sans_JP({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-  variable: "--font-plex",
-  display: "swap",
-  preload: false,
-});
 
 export const metadata: Metadata = {
   title: {
@@ -53,26 +36,10 @@ export const metadata: Metadata = {
   },
 };
 
-// ヘッダーは主要7項目に絞る（残りはフッターから到達可）。モバイルの過密を避ける。
-// 「地域」はモバイルのボトムナビにはあるがデスクトップに無かったため追加
-// （郵便番号での自分の代表者検索は最も価値の伝わる導線のため）。
-const NAV = [
-  { href: "/start", label: "はじめに" },
-  { href: "/area", label: "地域" },
-  { href: "/learn", label: "まなぶ" },
-  { href: "/legislators", label: "議員" },
-  { href: "/issues", label: "争点" },
-  { href: "/facts", label: "事実カード" },
-  { href: "/municipalities", label: "市町村" },
-];
-
 export default function RootLayout({ children }: { children: ReactNode }) {
   const election = getActiveElectionWindow();
   return (
-    <html
-      lang="ja"
-      className={`${mincho.variable} ${plexJP.variable}`}
-    >
+    <html lang="ja">
       <body className="min-h-dvh">
         {/* サイト全体の構造化データ（検索結果でのサイト名表示用） */}
         <script
@@ -95,58 +62,15 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </a>
         {election && <ElectionPeriodBanner name={election.name} />}
 
-        <header className="border-b-[3px] border-ink bg-paper">
-          <div className="mx-auto flex max-w-6xl items-baseline justify-between gap-4 px-5 py-4">
-            <Link href="/" className="group inline-flex items-baseline gap-2">
-              <span className="font-display whitespace-nowrap text-xl tracking-tight sm:text-2xl">
-                政治のトリセツ
-              </span>
-              <span className="eyebrow hidden text-faint sm:inline">あいち・なごや</span>
-            </Link>
-            <div className="flex items-center gap-4">
-              {/* モバイルはボトムナビ5項目に一本化（極小タップ目標の折返しを避ける）。 */}
-              <nav className="hidden flex-wrap items-baseline gap-x-5 gap-y-1 text-sm text-muted sm:flex">
-                {NAV.map((n) => (
-                  <Link
-                    key={n.href}
-                    href={n.href}
-                    className="transition-colors hover:text-accent-deep"
-                  >
-                    {n.label}
-                  </Link>
-                ))}
-              </nav>
-              {/* 横断検索（議員・発言・争点・事実カード）への常設入口。 */}
-              <Link
-                href="/search"
-                aria-label="横断検索"
-                className="tap inline-flex items-center justify-center text-muted transition-colors hover:text-accent-deep"
-              >
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.8"
-                  strokeLinecap="round"
-                  aria-hidden="true"
-                >
-                  <circle cx="11" cy="11" r="7" />
-                  <path d="m20 20-3.8-3.8" />
-                </svg>
-              </Link>
-            </div>
-          </div>
-        </header>
+        <SiteHeader />
 
-        <main id="main" className="mx-auto max-w-6xl px-5 py-10 sm:py-14">
+        <main id="main" className="mx-auto max-w-[1200px] px-5 py-8 sm:px-8 sm:py-12">
           {children}
         </main>
 
-        <footer className="rule-thick mt-20 bg-paper pb-20 sm:pb-0">
-          <div className="mx-auto max-w-6xl px-5 py-10">
-            <p className="font-display text-lg tracking-tight">政治のトリセツ あいち・なごや</p>
+        <footer className="site-footer mt-24 rounded-t-[32px] bg-sand">
+          <div className="mx-auto max-w-[1200px] px-5 py-12 sm:px-8">
+            <p className="font-display text-2xl tracking-tight">政治のトリセツ あいち・なごや</p>
             <p className="eyebrow mt-1 text-faint">知ってから、選ぶ。— 愛知・名古屋の政治を一次ソースで</p>
             {/* 中立宣言（常設）。中立を「掲げる」だけでなく仕組みで示す。 */}
             <ul className="measure mt-3 space-y-1 text-sm text-muted">

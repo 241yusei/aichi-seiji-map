@@ -4,9 +4,8 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 
 import { useEffect, useMemo, useState } from "react";
-import Link from "next/link";
 import type { Legislator, Level } from "@/lib/types";
-import { Monogram } from "./Monogram";
+import { LegislatorCard } from "./LegislatorCard";
 
 const LEVELS: { key: Level | "all"; label: string }[] = [
   { key: "all", label: "すべて" },
@@ -16,9 +15,19 @@ const LEVELS: { key: Level | "all"; label: string }[] = [
 ];
 
 const CHUNK = 50;
+const normalizeSearch = (value: string) => value.normalize("NFKC").replace(/\s/g, "");
+
+// 所属や掲載データ量に左右されない、明示した一定の順序で表示する。
+function compareNames(a: Legislator, b: Legislator) {
+  return (
+    normalizeSearch(a.kana || a.name).localeCompare(normalizeSearch(b.kana || b.name), "ja") ||
+    a.name.localeCompare(b.name, "ja") ||
+    a.id.localeCompare(b.id, "en")
+  );
+}
 
 export function LegislatorFilter({ legislators }: { legislators: Legislator[] }) {
-  // 初期表示は「国会（愛知選出）」起点。1,244名フラットの壁を避け、まず意味の分かる32名を見せる。
+  // 初期表示は「国会（愛知選出）」起点。URLで指定された議会があればそちらを優先する。
   const [level, setLevel] = useState<Level | "all">("national");
   const [party, setParty] = useState("all");
   const [q, setQ] = useState("");
@@ -43,6 +52,12 @@ export function LegislatorFilter({ legislators }: { legislators: Legislator[] })
     setQ(v);
     setShown(CHUNK);
   }
+  function clearFilters() {
+    setLevel("all");
+    setParty("all");
+    setQ("");
+    setShown(CHUNK);
+  }
 
   const parties = useMemo(
     () =>
@@ -57,9 +72,9 @@ export function LegislatorFilter({ legislators }: { legislators: Legislator[] })
       legislators.filter((l) => {
         if (level !== "all" && l.level !== level) return false;
         if (party !== "all" && l.party !== party) return false;
-        if (q && !`${l.name}${l.kana}${l.district}`.includes(q)) return false;
+        if (q && !normalizeSearch(`${l.name}${l.kana}${l.district}`).includes(normalizeSearch(q))) return false;
         return true;
-      }),
+      }).sort(compareNames),
     [legislators, level, party, q],
   );
 
@@ -68,88 +83,87 @@ export function LegislatorFilter({ legislators }: { legislators: Legislator[] })
 
   return (
     <div>
-      {/* 絞り込みは sticky（深いスクロールからも戻れる）。 */}
-      <div className="sticky top-0 z-20 -mx-1 bg-paper px-1 pb-3 pt-2">
-        <div className="flex flex-wrap gap-2">
+      <div className="rounded-2xl bg-subtle/60 p-4 sm:p-6">
+        <fieldset>
+          <legend className="mb-3 text-sm font-medium text-ink">議会を選ぶ</legend>
+          <div className="flex flex-wrap gap-2">
           {LEVELS.map((lv) => (
             <button
               key={lv.key}
               type="button"
               onClick={() => applyLevel(lv.key)}
-              className={`border px-3 py-1.5 text-sm font-medium transition-colors ${
+              aria-pressed={level === lv.key}
+              className={`tap rounded-full border px-4 py-2 text-sm font-medium transition-colors ${
                 level === lv.key
                   ? "border-ink bg-ink text-paper"
-                  : "border-line bg-surface hover:border-ink"
+                  : "border-transparent bg-surface hover:border-ink"
               }`}
             >
               {lv.label}
             </button>
           ))}
-        </div>
+          </div>
+        </fieldset>
 
-        <div className="mt-3 flex flex-wrap gap-2">
-          <input
-            type="search"
-            value={q}
-            onChange={(e) => applyQuery(e.target.value)}
-            placeholder="氏名・地域で検索"
-            className="grow border border-line bg-surface px-3 py-2 text-sm focus:border-ink focus:outline-none focus:ring-2 focus:ring-accent"
-            aria-label="氏名・地域で検索"
-          />
-          <select
-            value={party}
-            onChange={(e) => applyParty(e.target.value)}
-            className="border border-line bg-surface px-3 py-2 text-sm focus:border-ink focus:outline-none"
-            aria-label="会派・政党で絞り込み"
-          >
-            <option value="all">会派・政党（すべて）</option>
-            {parties.map((p) => (
-              <option key={p} value={p}>
-                {p}
-              </option>
-            ))}
-          </select>
+        <div className="mt-5 grid gap-4 sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)]">
+          <label className="min-w-0 text-sm font-medium">
+            氏名・地域
+            <input
+              type="search"
+              value={q}
+              onChange={(e) => applyQuery(e.target.value)}
+              placeholder="例：氏名、愛知1区、名古屋市"
+              className="tap mt-2 block w-full min-w-0 rounded-2xl border border-line bg-surface px-4 py-3 text-base font-normal placeholder:text-faint focus:border-ink"
+            />
+          </label>
+          <label className="min-w-0 text-sm font-medium">
+            会派・政党
+            <select
+              value={party}
+              onChange={(e) => applyParty(e.target.value)}
+              className="tap mt-2 block w-full min-w-0 rounded-2xl border border-line bg-surface px-4 py-3 text-base font-normal focus:border-ink"
+            >
+              <option value="all">すべての会派・政党</option>
+              {parties.map((p) => (
+                <option key={p} value={p}>
+                  {p}
+                </option>
+              ))}
+            </select>
+          </label>
         </div>
+      </div>
 
-        <p className="eyebrow mt-3 text-faint" role="status" aria-live="polite">
-          <span className="tnum text-ink">{filtered.length.toLocaleString()}</span> 名
+      <div className="my-6 flex flex-wrap items-end justify-between gap-3">
+        <p className="text-sm text-muted" role="status" aria-live="polite" aria-atomic="true">
+          <span className="tnum mr-1 text-2xl font-medium text-ink">{filtered.length.toLocaleString()}</span>名の議員
+          <span className="ml-3 text-xs">{visible.length.toLocaleString()}名を表示中</span>
+        </p>
+        <p className="max-w-lg text-xs leading-relaxed text-faint">
+          五十音順（ふりがな未登録の場合は氏名順）。全員を同じ項目・デザインで掲載しています。
         </p>
       </div>
 
       {filtered.length === 0 ? (
-        <p className="mt-6 text-sm text-muted">該当する議員がいません。</p>
+        <div className="rounded-2xl border border-line p-8 text-center sm:p-12">
+          <p className="font-display text-xl">条件に合う議員が見つかりませんでした</p>
+          <p className="mt-3 text-sm text-muted">氏名や地域の一部で検索するか、絞り込み条件を変更してください。</p>
+          <button type="button" onClick={clearFilters} className="tap mt-6 rounded-xl bg-ink px-5 py-3 text-sm font-medium text-paper">
+            すべての条件を解除する
+          </button>
+        </div>
       ) : (
         <>
-          {/* 台帳＝罫線リスト行（データ層・角丸ゼロ）。1,244名のスケールが厚みとして見える。 */}
-          <div className="border-y border-line">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {visible.map((l) => (
-              <Link
-                key={l.id}
-                href={`/legislators/${l.id}/`}
-                className="group grid grid-cols-[auto_1fr_auto] items-center gap-3 border-b border-line py-2.5 transition-colors last:border-b-0 hover:bg-subtle"
-              >
-                <Monogram name={l.name} level={l.level} size="sm" />
-                <span className="min-w-0">
-                  <span className="flex flex-wrap items-baseline gap-x-2">
-                    <span className="font-display text-base leading-tight">{l.name}</span>
-                    {l.kana && <span className="text-xs text-faint">{l.kana}</span>}
-                  </span>
-                  <span className="block truncate text-xs text-muted">
-                    {l.district}
-                    {l.party ? `・${l.party}` : ""}
-                  </span>
-                </span>
-                <span aria-hidden className="pr-1 text-faint transition-colors group-hover:text-accent">
-                  →
-                </span>
-              </Link>
+              <LegislatorCard key={l.id} legislator={l} />
             ))}
           </div>
           {rest > 0 && (
             <button
               type="button"
               onClick={() => setShown((n) => n + CHUNK * 2)}
-              className="tap mt-4 w-full rounded-[10px] border border-ink py-2.5 text-sm font-bold transition-colors hover:bg-subtle"
+              className="tap mt-8 w-full rounded-2xl border border-line bg-surface px-4 py-4 text-sm font-medium transition-colors hover:border-ink hover:bg-subtle"
             >
               さらに表示（残り{rest.toLocaleString()}名）
             </button>

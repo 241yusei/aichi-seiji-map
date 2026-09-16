@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getSpeeches } from "@/lib/data";
 import { THEMES, matchThemeSpeeches } from "@/lib/themes";
-import { DataBar } from "@/components/DataBar";
 
 export const metadata: Metadata = {
   title: "テーマから探す（生活の言葉で）",
@@ -13,59 +12,58 @@ export const metadata: Metadata = {
 
 export default function ThemesPage() {
   const speeches = getSpeeches();
-  // 件数の多い順に並べた横棒ランキング（機械集計・評価ではない）。同数はテーマ順で安定ソート。
-  const rows = THEMES.map((t) => ({ t, count: matchThemeSpeeches(t, speeches).length })).sort(
-    (a, b) => b.count - a.count || a.t.label.localeCompare(b.t.label, "ja"),
-  );
-  const max = Math.max(...rows.map((r) => r.count), 1);
+  // 定義順を保ち、発言件数をテーマの表示順位や面積に反映しない。
+  const rows = THEMES.map((t) => ({ t, count: matchThemeSpeeches(t, speeches).length }));
 
   return (
     <div>
-      <header className="border-b-[3px] border-ink pb-6">
-        <p className="eyebrow text-faint">Themes</p>
-        <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">
-          テーマから探す
+      <header className="max-w-4xl pb-10 pt-4 sm:pb-14 sm:pt-8">
+        <p className="text-sm font-medium tracking-wider text-accent">くらしから、政治へ</p>
+        <h1 className="font-display mt-5 text-[clamp(2.3rem,6vw,4.5rem)] leading-[1.15]">
+          気になることから、<br />見てみよう。
         </h1>
-        <p className="measure mt-3 text-muted">
-          「物価」「子育て」など生活の言葉から、愛知選出議員の国会発言を逆引きします。
-          すべて会議録の一次ソース付き。タグ付けはキーワード一致による機械的なもので、評価はしません。
+        <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
+          物価、子育て、働き方。いつもの生活の言葉から、
+          愛知選出議員が国会で何を話しているかを探せます。
         </p>
       </header>
 
-      {/* テーマ別件数の横棒ランキング（既存 DataBar を再利用） */}
-      <div className="mt-4">
-        {rows.map(({ t, count }, i) => (
-          <Link
-            key={t.id}
-            href={`/themes/${t.id}/`}
-            className="group block border-t border-line py-4 transition-colors last:border-b hover:bg-subtle"
-          >
-            <div className="grid grid-cols-[2.5rem_1fr_auto] items-baseline gap-4">
-              <span className="num-display tnum text-faint">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <div className="min-w-0">
-                <DataBar
-                  label={t.label}
-                  value={count}
-                  max={max}
-                  valueLabel={`${count} 件`}
-                  color="var(--color-chart-national)"
-                />
-                <p className="measure mt-1 text-sm text-muted">{t.blurb}</p>
+      <section aria-labelledby="themes-heading">
+        <div className="mb-6 flex flex-wrap items-end justify-between gap-3">
+          <h2 id="themes-heading" className="text-xl font-medium sm:text-2xl">テーマから探す</h2>
+          <p className="text-sm text-muted">並び順は、重要度や支持の多さを示すものではありません。</p>
+        </div>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {rows.map(({ t, count }) => (
+            <Link
+              key={t.id}
+              href={`/themes/${t.id}/`}
+              className="group flex h-full flex-col rounded-2xl bg-subtle/60 p-6 transition-colors hover:bg-subtle focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent sm:p-7"
+            >
+              <div className="flex items-start justify-between gap-4">
+                <h3 className="text-xl font-medium leading-snug sm:text-2xl">{t.label}</h3>
+                <span aria-hidden="true" className="flex size-9 shrink-0 items-center justify-center rounded-full bg-paper text-accent transition-transform group-hover:translate-x-1">↗</span>
               </div>
-              <span aria-hidden className="text-faint transition-colors group-hover:text-accent">
-                →
-              </span>
-            </div>
-          </Link>
-        ))}
-      </div>
+              <p className="mb-7 mt-4 text-sm leading-relaxed text-muted">{t.blurb}</p>
+              <div className="mt-auto flex flex-wrap items-center justify-between gap-2 text-sm">
+                <span className="tnum text-muted">収録発言 {count.toLocaleString("ja-JP")} 件</span>
+                <span className="font-medium text-accent">発言を読む <span aria-hidden="true">→</span></span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
 
-      <p className="measure mt-8 text-xs text-faint">
-        件数はキーワード一致の機械集計です。テーマの重要度や優先順位を示すものではありません。
-        対象は本サイト収録の国会発言（愛知選出議員）。県・市町村議会の発言は、各争点ページから公式の会議録検索でご確認いただけます。
-      </p>
+      <aside className="mt-10 rounded-2xl border border-line p-6 sm:mt-12 sm:p-8" aria-labelledby="theme-method-heading">
+        <h2 id="theme-method-heading" className="text-base font-medium">件数の見方と、情報の確かめ方</h2>
+        <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted">
+          件数は、本サイトに収録した愛知選出議員の国会発言をキーワードで機械的に集計したものです。
+          テーマや議員の評価ではありません。発言には、原文を確認できる会議録のリンクを添えています。
+        </p>
+        <Link href="/issues/" className="mt-5 inline-flex min-h-11 items-center gap-2 text-sm font-medium text-accent hover:underline">
+          愛知の争点を、国・県・市の三層で見る <span aria-hidden="true">→</span>
+        </Link>
+      </aside>
     </div>
   );
 }

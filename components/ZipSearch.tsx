@@ -1,12 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useId, useState } from "react";
 import { useRouter } from "next/navigation";
 import { resolveZipToWard } from "@/lib/area";
 
 // トップ等の郵便番号入力。クライアントで区を解決し、その地域の固有URL（/area/[ward]）へ直接遷移する。
 // 失敗時はインラインエラー（支援技術へ role=alert で通知）。
 export function ZipSearch() {
+  const fieldId = useId();
   const [zip, setZip] = useState("");
   const [err, setErr] = useState("");
   const router = useRouter();
@@ -25,7 +26,9 @@ export function ZipSearch() {
   return (
     <div>
       <form onSubmit={onSubmit} className="flex flex-wrap gap-2">
+        <label htmlFor={fieldId} className="sr-only">名古屋市内の郵便番号</label>
         <input
+          id={fieldId}
           value={zip}
           onChange={(e) => setZip(e.target.value)}
           inputMode="numeric"
@@ -34,19 +37,19 @@ export function ZipSearch() {
           placeholder="郵便番号（例: 460-0008）"
           aria-label="郵便番号"
           aria-invalid={err ? true : undefined}
-          aria-describedby={err ? "zip-error" : undefined}
-          className="tnum grow rounded-[10px] border border-ink bg-surface px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+          aria-describedby={err ? `${fieldId}-error` : undefined}
+          className="tnum min-w-0 basis-48 grow rounded-2xl border border-line bg-surface px-4 py-3.5 text-base focus:outline-none focus:ring-2 focus:ring-accent"
         />
         <button
           type="submit"
-          className="tap rounded-[10px] bg-ink px-5 py-2.5 text-sm font-bold text-paper transition-colors hover:bg-accent"
+          className="tap grow rounded-2xl bg-accent px-5 py-3.5 text-sm font-medium text-white transition-colors hover:bg-accent-deep sm:grow-0"
         >
           地域の代表者を見る
         </button>
       </form>
       {err && (
         <p
-          id="zip-error"
+          id={`${fieldId}-error`}
           role="alert"
           className="mt-2 border-l-2 border-accent pl-3 text-xs text-muted"
         >
