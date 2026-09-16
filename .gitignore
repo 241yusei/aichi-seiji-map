@@ -25,6 +25,7 @@ next-env.d.ts
 # SNS自動投稿のローカル状態（コミットしない）
 /data/.sns_state.json
 /data/.buffer_state.json
+/data/.design_renewal_announcement_state.json
 /logs/
 
 # Python キャッシュ
