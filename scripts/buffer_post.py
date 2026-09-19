@@ -36,7 +36,29 @@ ELECTION_FILE = DATA_DIR / "election-windows.json"
 STATE_FILE = DATA_DIR / ".buffer_state.json"
 LOG_FILE = PROJECT_DIR / "logs" / "buffer_post.log"
 
-SITE = "https://aichi-seiji-map.vercel.app"
+SITE = "https://seiji-torisetsu.pages.dev"
+DESIGN_RENEWAL_IMAGE_URL = f"{SITE}/social/design-renewal-2026-09.png"
+DESIGN_RENEWAL_STATE_FILE = DATA_DIR / ".design_renewal_announcement_state.json"
+
+DESIGN_RENEWAL_X = """「政治のトリセツ あいち・なごや」のデザインを一新しました。
+
+地域の代表者、暮らしに近い争点、政治の基本へ。迷わずたどり着けるよう、見やすさと読みやすさを整えました。
+
+議員は同じ書式で、発言・データはこれまでどおり一次ソースへ。
+#政治のトリセツ"""
+
+DESIGN_RENEWAL_X_REPLY = f"""新しいサイトはこちら：
+{SITE}"""
+
+DESIGN_RENEWAL_THREADS = f"""「政治のトリセツ あいち・なごや」のデザインを一新しました。
+
+「自分の地域の代表者はだれ？」「この争点は国・県・市のどこで話されている？」という入口を、より迷わず使えるよう整えました。
+
+議員は同じ書式で掲載し、発言・採決・政治資金の情報は、これまでどおり元の資料へたどれます。
+
+{SITE}
+
+気になることから、開いてみてください。"""
 
 # ─── ログ設定 ────────────────────────────────────────────────
 LOG_FILE.parent.mkdir(exist_ok=True)
@@ -356,6 +378,70 @@ def mode_queue(target: date, confirm: bool):
     log.info(f"完了: {n_ok}/{len(results)} 件をキューに予約")
 
 
+def mode_design_renewal_announcement(confirm: bool):
+    """デザイン刷新の単発告知をX・Threadsに同時予約する。"""
+    if not confirm:
+        log.error("安全のため告知予約は --confirm 必須です。")
+        sys.exit(1)
+    target = date.today()
+    if in_election_period(target):
+        sys.exit(0)
+    if DESIGN_RENEWAL_STATE_FILE.exists():
+        try:
+            state = json.loads(DESIGN_RENEWAL_STATE_FILE.read_text(encoding="utf-8"))
+            if any(row.get("ok") for row in state.get("results", [])):
+                log.info("デザイン刷新の告知はすでに予約済みです。重複を避けるためスキップします。")
+                return
+        except Exception:
+            pass
+
+    matched = mode_channels()
+    if not matched:
+        log.error("有効な『政治のトリセツ』チャンネルが無いため投稿を中止します。")
+        sys.exit(1)
+    if BUFFER_CHANNEL_IDS:
+        matched = [channel for channel in matched if channel["id"] in BUFFER_CHANNEL_IDS]
+
+    jst = timezone(timedelta(hours=9))
+    scheduled = (datetime.now(jst).replace(second=0, microsecond=0) + timedelta(minutes=5)).isoformat()
+    results = []
+    for channel in matched:
+        service = channel["service"]
+        if service == "twitter":
+            variables = create_post_vars(
+                channel["id"],
+                DESIGN_RENEWAL_X,
+                scheduled,
+                service="twitter",
+                image_url=DESIGN_RENEWAL_IMAGE_URL,
+                reply_text=DESIGN_RENEWAL_X_REPLY,
+            )
+        elif service == "threads":
+            variables = create_post_vars(
+                channel["id"],
+                DESIGN_RENEWAL_THREADS,
+                scheduled,
+                service="threads",
+                image_url=DESIGN_RENEWAL_IMAGE_URL,
+                topic=THREADS_TOPIC,
+            )
+        else:
+            continue
+        data = gql(CREATE_POST_MUTATION, variables)
+        payload = (data.get("data") or {}).get("createPost") or {}
+        ok = payload.get("__typename") == "PostActionSuccess"
+        detail = payload.get("post", {}).get("id") if ok else (payload.get("message") or data.get("errors"))
+        results.append({"service": service, "ok": ok, "detail": detail})
+        log.info(f"{'✅' if ok else '❌'} デザイン刷新告知 [{service}] → {detail}")
+
+    DESIGN_RENEWAL_STATE_FILE.write_text(
+        json.dumps({"scheduled": scheduled, "results": results}, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    n_ok = sum(1 for row in results if row["ok"])
+    log.info(f"完了: {n_ok}/{len(results)} 件を {scheduled} に予約")
+
+
 # ─── スキーマ確認（デバッグ）─────────────────────────────────
 def mode_schema():
     q = "{ __schema { mutationType { fields { name } } queryType { fields { name } } } }"
@@ -365,7 +451,11 @@ def mode_schema():
 # ─── メイン ──────────────────────────────────────────────────
 def main():
     ap = argparse.ArgumentParser(description="政治のトリセツ Buffer 自動投稿")
-    ap.add_argument("--mode", choices=["schema", "channels", "preview", "queue"], required=True)
+    ap.add_argument(
+        "--mode",
+        choices=["schema", "channels", "preview", "queue", "design-renewal-announcement"],
+        required=True,
+    )
     ap.add_argument("--confirm", action="store_true", help="queue 実行に必須の安全フラグ")
     ap.add_argument("--date", help="対象日 YYYY-MM-DD（省略時は今日）")
     args = ap.parse_args()
@@ -380,6 +470,8 @@ def main():
         mode_preview(target)
     elif args.mode == "queue":
         mode_queue(target, args.confirm)
+    elif args.mode == "design-renewal-announcement":
+        mode_design_renewal_announcement(args.confirm)
 
 
 if __name__ == "__main__":

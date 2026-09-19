@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState, type ReactNode } from "react";
 
-// モバイル(<sm)の固定ボトムナビ。主要6導線（5導線＋検索）・単線アイコン＋和文ラベル・アクティブはaccent（深紫）・タップ48px。
+// デスクトップナビが隠れる幅では、主要6導線を固定表示する。
 // 写真/塗りアイコンは使わず currentColor の単線SVG（依存ゼロ・中立）。
 function Icon({ d }: { d: ReactNode }) {
   return (
@@ -56,24 +56,23 @@ export function BottomNav() {
 
   return (
     <nav
-      aria-label="メイン"
-      className="fixed inset-x-0 bottom-0 z-40 border-t border-line bg-surface sm:hidden"
+      aria-label="下部ナビゲーション"
+      className="fixed inset-x-0 bottom-0 z-40 border-t border-line/70 bg-paper/95 backdrop-blur-md lg:hidden"
       style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
     >
-      <ul className="grid grid-cols-6">
+      <ul className="mx-auto grid max-w-xl grid-cols-6 gap-0.5 px-1 py-2 sm:gap-2 sm:px-4">
         {ITEMS.map((it) => {
           const active = path === it.href || path.startsWith(`${it.href}/`);
           return (
             <li key={it.href} className="relative">
-              {active && <span aria-hidden className="absolute inset-x-3 top-0 h-0.5 bg-accent" />}
               <Link
                 href={`${it.href}/`}
                 aria-current={active ? "page" : undefined}
-                className={`tap flex flex-col items-center justify-center gap-1 py-2 text-[10px] leading-none ${
-                  active ? "font-bold text-accent-deep" : "text-muted"
+                className={`flex min-h-14 flex-col items-center justify-center gap-1.5 rounded-2xl py-2 text-[10px] leading-none transition-colors hover:bg-subtle sm:text-xs ${
+                  active ? "bg-subtle font-medium text-accent-deep" : "text-muted"
                 }`}
               >
-                <span className={`relative ${active ? "text-accent" : "text-faint"}`}>
+                <span className="relative">
                   {it.icon}
                   {it.href === "/learn" && readCount > 0 && (
                     <span

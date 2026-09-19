@@ -71,26 +71,26 @@ export function TurnoutChart({
             </text>
           ))}
           <path d={line(governor.points)} fill="none" stroke={govColor} strokeWidth={2} />
-          <path d={line(mayor.points)} fill="none" stroke={mayorColor} strokeWidth={2} />
+          <path d={line(mayor.points)} fill="none" stroke={mayorColor} strokeWidth={2} strokeDasharray="6 4" />
           {governor.points.map((p) => (
             <circle key={`g${p.date}`} cx={x(p.year)} cy={y(p.turnout)} r={2.4} fill={govColor} />
           ))}
           {mayor.points.map((p) => (
-            <circle key={`m${p.date}`} cx={x(p.year)} cy={y(p.turnout)} r={2.4} fill={mayorColor} />
+            <rect key={`m${p.date}`} x={x(p.year) - 2.4} y={y(p.turnout) - 2.4} width={4.8} height={4.8} fill={mayorColor} />
           ))}
         </svg>
       </div>
 
       <div className="mt-2 flex flex-wrap gap-x-5 gap-y-1 text-xs">
         <span className="inline-flex items-center gap-1.5">
-          <span aria-hidden className="inline-block h-2.5 w-4" style={{ backgroundColor: govColor }} />
+          <span aria-hidden className="inline-block w-6 border-t-2" style={{ borderColor: govColor }} />
           知事選（{governor.scope}）
         </span>
         <span className="inline-flex items-center gap-1.5">
           <span
             aria-hidden
-            className="inline-block h-2.5 w-4"
-            style={{ backgroundColor: mayorColor }}
+            className="inline-block w-6 border-t-2 border-dashed"
+            style={{ borderColor: mayorColor }}
           />
           市長選（{mayor.scope}）
         </span>
