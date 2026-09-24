@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { getActiveElectionWindow } from "@/lib/election-window";
+import { getActiveElectionWindows, getElectionWindows } from "@/lib/election-window";
 import { ElectionPeriodBanner } from "@/components/ElectionPeriodBanner";
 import { BottomNav } from "@/components/BottomNav";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -37,7 +37,9 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
-  const election = getActiveElectionWindow();
+  // 選挙期間の判定は閲覧時にブラウザでも行う（ビルド日だけで固定しない）。
+  const electionWindows = getElectionWindows();
+  const activeAtBuild = getActiveElectionWindows();
   return (
     <html lang="ja">
       <body className="min-h-dvh">
@@ -60,7 +62,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         >
           本文へスキップ
         </a>
-        {election && <ElectionPeriodBanner name={election.name} />}
+        <ElectionPeriodBanner windows={electionWindows} initial={activeAtBuild} />
 
         <SiteHeader />
 

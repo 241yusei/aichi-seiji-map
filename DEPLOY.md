@@ -46,13 +46,15 @@ npx wrangler pages deploy out --project-name=seiji-torisetsu
 - Build command: `npm run build` ／ Build output directory: `out`
 - 環境変数: `NEXT_PUBLIC_SITE_URL=https://seiji-torisetsu.pages.dev`
 
-### 定期再ビルド（**公選法配慮のため必須**）
-選挙期間中バナーと「データ基準日」は**ビルド時点で固定**される。告示日を過ぎても再ビルド
-しなければガードは表示されない。`.github/workflows/scheduled-rebuild.yml` が毎日 1 回
-Cloudflare のデプロイフックを叩いて再ビルドする。有効化には次の設定が要る:
+### 選挙期間の注意書き（再ビルド不要）
+選挙期間中の注意書き（`components/ElectionPeriodBanner.tsx`）は、`data/election-windows.json` の
+期間を**閲覧時にブラウザが日本時間で判定**して表示する。静的サイトでも再ビルドに依存しない
+（ビルド日が期間内なら、JSが動かない環境でも表示される）。新しい選挙は告示日より前に
+`data/election-windows.json` へ登録し、一度デプロイしておけばよい。
+SNS自動投稿（`scripts/buffer_post.py`）も同じファイルで期間中の投稿を止める。
 
-1. Pages プロジェクト → Settings → Builds & deployments → **Deploy hooks** で新規フックを作成
-2. 発行された URL を GitHub リポジトリの Secrets に `CLOUDFLARE_DEPLOY_HOOK` として登録
+> 旧方式（Cloudflare デプロイフックで毎日再ビルド）は、Pages が Git 未連携のため
+> フックを発行できず動作しなかったので 2026-09-25 に廃止した。
 
 ### 静的配信の設定
 `public/_headers` で、セキュリティヘッダ（nosniff / Referrer-Policy / X-Frame-Options /
