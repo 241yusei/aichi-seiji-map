@@ -39,6 +39,10 @@ export const GLOSSARY: GlossaryTerm[] = [
   { id: "senketsu", term: "専決処分", yomi: "せんけつしょぶん", short: "議会を開く時間がないときなどに、首長が議会の議決を経ずに決める手続き。あとから議会へ報告し承認を求める。", seeAlso: ["shucho", "gikai"] },
   { id: "gikai", term: "議会", yomi: "ぎかい", short: "住民が選んだ議員が、条例や予算を決める場。", seeAlso: ["shucho", "nigen"] },
   { id: "genzei", term: "市民税減税", yomi: "しみんぜいげんぜい", short: "名古屋市が全国で唯一続ける、市民税の恒久的な引き下げ。家計の負担減と行政サービスの財源がトレードオフになる。", seeAlso: ["yosan"] },
+  { id: "fukushuto", term: "副首都", yomi: "ふくしゅと", short: "大きな災害で東京の中枢機能が止まったとき、国の中枢の代わりを担い、ふだんは経済の中心にもなる道府県。2026年成立の法律にもとづき、道府県の申し出（議会の議決が必要）を受けて内閣総理大臣が指定する。", seeAlso: ["gikai"] },
+  { id: "hisenkyoken", term: "被選挙権", yomi: "ひせんきょけん", short: "選挙に立候補できる権利。衆議院議員・市区町村長・地方議会の議員は25歳以上、参議院議員・都道府県知事は30歳以上（公職選挙法10条）。", seeAlso: ["senkyoku", "shucho"] },
+  { id: "chokusetsu-seikyu", term: "直接請求", yomi: "ちょくせつせいきゅう", short: "住民が署名を集めて、議会を通さずに直接求める権利。条例をつくる・変える、事務の監査、議会の解散、首長や議員の解職（リコール）の4種類がある（地方自治法）。", seeAlso: ["gikai", "shucho"] },
+  { id: "yoto-yato", term: "与党・野党", yomi: "よとう・やとう", short: "国会で、内閣（政権）を支える政党が与党、支えない政党が野党。地方議会では、首長との関係で「与党的・野党的」と言うことはあるが、国ほどはっきり分かれていない。", seeAlso: ["kokkai", "kaiha"] },
 ];
 
 export function glossaryTerm(id: string): GlossaryTerm | undefined {

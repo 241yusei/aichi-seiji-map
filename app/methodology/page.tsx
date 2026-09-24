@@ -23,7 +23,7 @@ const DATA_SOURCES: { label: string; url: string; note: string }[] = [
   {
     label: "参議院 本会議投票結果",
     url: "https://www.sangiin.go.jp/japanese/touhyoulist/touhyoulist.html",
-    note: "参院の記名投票（押しボタン式）の個人別賛否。会派多数と異なる投票の検出に使います。",
+    note: "参院の記名投票（押しボタン式）の個人別賛否。第221回国会（2026年）は、案件を選ばずすべての投票を収録。会派多数と異なる投票の検出に使います。",
   },
   {
     label: "衆議院 議案・本会議の議決結果",

@@ -97,6 +97,8 @@ export interface IssueExplainer {
   youEffect?: string; // あなたに効くポイント（暮らし・財布への接続）
   whyImportant: string; // なぜ重要か
   now: string; // いま何が起きているか
+  /** now の内容が何日時点か（YYYY-MM-DD）。日付で変わる情報は必ず付ける。 */
+  nowAsOf?: string;
   /** 争点を裏付ける主要統計（中立を保つため必ず一次ソース付き）。数値のない定性テキストを補う。 */
   keyStats?: { label: string; value: string; sourceUrl: string; note?: string }[];
   stances: IssueStance[]; // 立場の併記（賛否を中立に）

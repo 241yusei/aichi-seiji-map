@@ -27,6 +27,51 @@ const RESULT_STYLE: Record<VoteResult, string> = {
   not_recorded: "text-abstain",
 };
 
+// 最初に見せる行数。残りは折りたたむ（参院議員は1会期で100件を超えるため）。
+const INITIAL_ROWS = 15;
+
+function VoteRows({ votes, divergentKeys }: { votes: Vote[]; divergentKeys?: Set<string> }) {
+  return (
+    <div className="overflow-x-auto border border-line bg-surface">
+      <table className="w-full text-sm">
+        <thead>
+          <tr className="border-b-[3px] border-ink text-left">
+            <th className="eyebrow px-3 py-2 text-faint">議案</th>
+            <th className="eyebrow px-3 py-2 text-faint">日付</th>
+            <th className="eyebrow px-3 py-2 text-faint">賛否</th>
+          </tr>
+        </thead>
+        <tbody>
+          {votes.map((v) => {
+            const diverged = divergentKeys?.has(billKeyOf(v)) ?? false;
+            return (
+              <tr
+                key={`${v.sourceUrl}|${v.billTitle}`}
+                className="border-b border-line transition-colors last:border-0 hover:bg-subtle"
+              >
+                <td className="px-3 py-2.5">
+                  <SourceLink href={v.sourceUrl}>{v.billTitle}</SourceLink>
+                  {diverged && (
+                    <span className="mt-1 block">
+                      <span className="inline-flex items-center border border-accent px-1.5 py-0.5 text-[0.65rem] font-bold text-accent-deep">
+                        会派多数と異なる投票
+                      </span>
+                    </span>
+                  )}
+                </td>
+                <td className="tnum whitespace-nowrap px-3 py-2.5 text-xs text-muted">{formatDate(v.date)}</td>
+                <td className={`whitespace-nowrap px-3 py-2.5 font-bold ${RESULT_STYLE[v.result]}`}>
+                  <span aria-hidden>{RESULT_SYMBOL[v.result]}</span> {RESULT_LABEL[v.result]}
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
 // 採決表。記名投票でない採決は「個人の賛否は非公開」と明示する（SPEC 受け入れ条件3）。
 // divergentKeys: 「会派多数と異なる投票」と機械検出された採決キー（billKeyOf）の集合。
 // 用語は「会派多数と異なる投票」に限定し、評価語（造反等）は使わない。
@@ -44,42 +89,17 @@ export function VoteTable({
   return (
     <div className="space-y-4">
       {votes.length > 0 && (
-        <div className="overflow-x-auto border border-line bg-surface">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b-[3px] border-ink text-left">
-                <th className="eyebrow px-3 py-2 text-faint">議案</th>
-                <th className="eyebrow px-3 py-2 text-faint">日付</th>
-                <th className="eyebrow px-3 py-2 text-faint">賛否</th>
-              </tr>
-            </thead>
-            <tbody>
-              {votes.map((v, i) => {
-                const diverged = divergentKeys?.has(billKeyOf(v)) ?? false;
-                return (
-                  <tr key={i} className="border-b border-line transition-colors last:border-0 hover:bg-subtle">
-                    <td className="px-3 py-2.5">
-                      <SourceLink href={v.sourceUrl}>{v.billTitle}</SourceLink>
-                      {diverged && (
-                        <span className="mt-1 block">
-                          <span className="inline-flex items-center border border-accent px-1.5 py-0.5 text-[0.65rem] font-bold text-accent-deep">
-                            会派多数と異なる投票
-                          </span>
-                        </span>
-                      )}
-                    </td>
-                    <td className="tnum whitespace-nowrap px-3 py-2.5 text-xs text-muted">
-                      {formatDate(v.date)}
-                    </td>
-                    <td className={`whitespace-nowrap px-3 py-2.5 font-bold ${RESULT_STYLE[v.result]}`}>
-                      <span aria-hidden>{RESULT_SYMBOL[v.result]}</span> {RESULT_LABEL[v.result]}
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
+        <VoteRows votes={votes.slice(0, INITIAL_ROWS)} divergentKeys={divergentKeys} />
+      )}
+      {votes.length > INITIAL_ROWS && (
+        <details className="group">
+          <summary className="cursor-pointer text-sm font-bold text-accent-deep">
+            残り{votes.length - INITIAL_ROWS}件の採決を表示
+          </summary>
+          <div className="mt-3">
+            <VoteRows votes={votes.slice(INITIAL_ROWS)} divergentKeys={divergentKeys} />
+          </div>
+        </details>
       )}
 
       {hasDivergence && (
@@ -104,7 +124,9 @@ export function VoteTable({
             ? "参議院では記名投票（押しボタン式）の場合に個人の賛否が公開されます。"
             : "衆議院の本会議の多くは起立採決で、個人の賛否は公表されません（記名投票の場合のみ公開）。"}
           <span className="font-bold text-ink">記名投票でない採決は「個人の賛否は非公開」</span>です。
-          個別の賛否データは順次整備し、公式の投票結果でも確認できます。
+          {house === "参議院"
+            ? "参院の押しボタン投票は、本サイトが案件を選ばず、収録した国会のすべての案件を掲載しています。"
+            : "個別の賛否データは順次整備し、公式の投票結果でも確認できます。"}
         </p>
         <p className="mt-2">
           <SourceLink href={source.url}>{source.label}</SourceLink>

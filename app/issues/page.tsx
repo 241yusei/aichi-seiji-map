@@ -5,7 +5,7 @@ import { getIssues, getIssueExplainer } from "@/lib/data";
 export const metadata: Metadata = {
   title: "争点（ローカルテーマ）",
   description:
-    "リニア・EV転換・セントレア・名古屋城・外国人労働者・アジア大会など、愛知のローカル争点を国・県・市の三層横串で見る。",
+    "副首都・防災・子育て・リニア・アジア大会・名古屋城など、愛知の15の争点を国・県・市の三層横串で見る。",
   alternates: { canonical: "/issues/" },
 };
 
