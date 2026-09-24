@@ -53,7 +53,7 @@ export default async function MunicipalityPage({
 
   return (
     <div className="space-y-10">
-      <header className="border-b-[3px] border-ink pb-6">
+      <header className="border-b border-line pb-6">
         <p className="eyebrow text-faint">
           {region ? `${region.name}地域` : "愛知県"} ／ Municipality
         </p>
@@ -101,7 +101,7 @@ export default async function MunicipalityPage({
 
       {/* 議員 */}
       <section>
-        <div className="flex items-baseline justify-between gap-4 border-b-[3px] border-ink pb-2">
+        <div className="flex items-baseline justify-between gap-4 border-b border-line pb-2">
           <h2 className="font-display text-2xl">{m.council}</h2>
           <span className="tnum text-sm text-muted">{members.length}名</span>
         </div>

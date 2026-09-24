@@ -47,8 +47,8 @@ export default function HistoryPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <header className="border-b-[3px] border-ink pb-6">
-        <p className="eyebrow text-faint">History</p>
+      <header className="border-b border-line pb-6">
+        <p className="text-sm font-medium tracking-wider text-accent">県政・市政の歴史</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">
           県政・市政の歴史
         </h1>
@@ -61,7 +61,7 @@ export default function HistoryPage() {
 
       {/* 歴代知事の系譜 */}
       <section>
-        <div className="flex items-baseline justify-between gap-4 border-b-[3px] border-ink pb-2">
+        <div className="flex items-baseline justify-between gap-4 border-b border-line pb-2">
           <h2 className="font-display text-2xl">歴代の愛知県知事（公選）</h2>
           <span className="tnum text-sm text-muted">{governors.length}人</span>
         </div>
@@ -90,7 +90,7 @@ export default function HistoryPage() {
 
       {/* 歴代名古屋市長の系譜 */}
       <section>
-        <div className="flex items-baseline justify-between gap-4 border-b-[3px] border-ink pb-2">
+        <div className="flex items-baseline justify-between gap-4 border-b border-line pb-2">
           <h2 className="font-display text-2xl">歴代の名古屋市長（公選）</h2>
           <span className="tnum text-sm text-muted">{mayors.length}人</span>
         </div>
@@ -125,7 +125,7 @@ export default function HistoryPage() {
 
       {/* 投票率の推移 */}
       <section>
-        <div className="flex items-baseline justify-between gap-4 border-b-[3px] border-ink pb-2">
+        <div className="flex items-baseline justify-between gap-4 border-b border-line pb-2">
           <h2 className="font-display text-2xl">投票率の推移（知事選・名古屋市長選）</h2>
         </div>
         <p className="measure mt-3 text-sm text-muted">
@@ -145,7 +145,7 @@ export default function HistoryPage() {
 
       {/* 画期イベント年表 */}
       <section>
-        <div className="flex items-baseline justify-between gap-4 border-b-[3px] border-ink pb-2">
+        <div className="flex items-baseline justify-between gap-4 border-b border-line pb-2">
           <h2 className="font-display text-2xl">県政・市政をめぐる主な出来事</h2>
           <span className="tnum text-sm text-muted">{sortedEvents.length}件</span>
         </div>

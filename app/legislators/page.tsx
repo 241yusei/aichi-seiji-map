@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getLegislators } from "@/lib/data";
+import type { LegislatorListItem } from "@/lib/types";
 import { LegislatorFilter } from "@/components/LegislatorFilter";
 import { ZipSearch } from "@/components/ZipSearch";
 
@@ -11,12 +12,15 @@ export const metadata: Metadata = {
 };
 
 export default function LegislatorsPage() {
-  const legislators = getLegislators().sort((a, b) => a.kana.localeCompare(b.kana, "ja"));
+  // クライアントの絞り込み用には、一覧表示に必要な項目だけを渡す（出典URL等は詳細ページで表示）。
+  const legislators: LegislatorListItem[] = getLegislators()
+    .sort((a, b) => a.kana.localeCompare(b.kana, "ja"))
+    .map(({ id, name, kana, level, party, district }) => ({ id, name, kana, level, party, district }));
 
   return (
     <div>
-      <header className="border-b-[3px] border-ink pb-6">
-        <p className="eyebrow text-faint">Legislators</p>
+      <header className="border-b border-line pb-6">
+        <p className="text-sm font-medium tracking-wider text-accent">議員を知る</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">議員一覧</h1>
         <p className="measure mt-3 text-muted">
           国会（愛知選出）・愛知県議会・愛知の全54市町村。層・会派・地域で絞り込めます。

@@ -114,7 +114,7 @@ function GovernmentSection({ gov }: { gov: GovernmentFinance }) {
 
   return (
     <section className="space-y-8">
-      <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b-[3px] border-ink pb-2">
+      <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b border-line pb-2">
         <h2 className="font-display text-2xl sm:text-3xl">{gov.name}の一般会計（当初予算）</h2>
         <span className="tnum text-sm text-muted">
           {latest.era} {formatOkuYen(latest.total)}
@@ -238,8 +238,8 @@ export default function FinancePage() {
 
   return (
     <div className="space-y-12">
-      <header className="border-b-[3px] border-ink pb-6">
-        <p className="eyebrow text-faint">Finance</p>
+      <header className="border-b border-line pb-6">
+        <p className="text-sm font-medium tracking-wider text-accent">お金の流れ</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">
           財政：県と名古屋市の予算
         </h1>

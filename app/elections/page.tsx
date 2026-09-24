@@ -34,8 +34,8 @@ export default function ElectionsPage() {
 
   return (
     <div className="space-y-10">
-      <header className="border-b-[3px] border-ink pb-6">
-        <p className="eyebrow text-faint">Elections</p>
+      <header className="border-b border-line pb-6">
+        <p className="text-sm font-medium tracking-wider text-accent">選挙の予定</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">
           選挙カレンダー
         </h1>
@@ -71,7 +71,7 @@ export default function ElectionsPage() {
       {/* 今後の首長選（年別） */}
       {[...byYear.entries()].map(([year, list]) => (
         <section key={year}>
-          <div className="flex items-baseline justify-between gap-4 border-b-[3px] border-ink pb-2">
+          <div className="flex items-baseline justify-between gap-4 border-b border-line pb-2">
             <h2 className="font-display text-2xl">{year}年</h2>
             <span className="tnum text-sm text-muted">{list.length}件</span>
           </div>

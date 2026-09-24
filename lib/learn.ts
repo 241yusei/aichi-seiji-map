@@ -30,6 +30,7 @@ export interface LearnChapter {
   bridges: { label: string; href: string }[];
   sources?: LearnSource[];
   quiz?: boolean; // 「県？市？」クイズを差し込む
+  panel?: "who-does-what" | "who-you-choose"; // 本文のあとに差し込む早見表・図
 }
 
 export const LEARN: LearnChapter[] = [
@@ -83,6 +84,7 @@ export const LEARN: LearnChapter[] = [
   },
   {
     slug: "senkyo",
+    panel: "who-you-choose",
     part: 1,
     partLabel: "第1部 政治の基礎",
     n: "1-2",
@@ -195,6 +197,7 @@ export const LEARN: LearnChapter[] = [
   // ───────────── 第2部 愛知・名古屋のしくみ ─────────────
   {
     slug: "ken-to-shi",
+    panel: "who-does-what",
     part: 2,
     partLabel: "第2部 愛知・名古屋のしくみ",
     n: "2-1",

@@ -76,8 +76,8 @@ export default function Unified2027Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <header className="border-b-[3px] border-ink pb-6">
-        <p className="eyebrow text-faint">Elections 2027</p>
+      <header className="border-b border-line pb-6">
+        <p className="text-sm font-medium tracking-wider text-accent">2027年の選挙</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">
           統一地方選挙2027、愛知では何が選ばれる？
         </h1>
@@ -111,7 +111,7 @@ export default function Unified2027Page() {
 
       {/* よくある質問（FAQ構造化データと同一内容） */}
       <section>
-        <div className="flex items-baseline justify-between gap-4 border-b-[3px] border-ink pb-2">
+        <div className="flex items-baseline justify-between gap-4 border-b border-line pb-2">
           <h2 className="font-display text-2xl">よくある質問</h2>
         </div>
         <div className="mt-2">
@@ -132,7 +132,7 @@ export default function Unified2027Page() {
 
       {/* 判断材料への導線 */}
       <section>
-        <div className="flex items-baseline justify-between gap-4 border-b-[3px] border-ink pb-2">
+        <div className="flex items-baseline justify-between gap-4 border-b border-line pb-2">
           <h2 className="font-display text-2xl">改選前にできる「下調べ」</h2>
         </div>
         <div className="mt-4 grid gap-px border border-line bg-line sm:grid-cols-3">

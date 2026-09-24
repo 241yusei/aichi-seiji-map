@@ -49,7 +49,7 @@ const DATA_SOURCES: { label: string; url: string; note: string }[] = [
 
 function SectionHead({ n, title }: { n: string; title: string }) {
   return (
-    <div className="flex items-baseline gap-3 border-b-[3px] border-ink pb-2">
+    <div className="flex items-baseline gap-3 border-b border-line pb-2">
       <span className="num-display tnum text-sm text-faint">{n}</span>
       <h2 className="font-display text-2xl">{title}</h2>
     </div>
@@ -83,8 +83,8 @@ export default function MethodologyPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <header className="border-b-[3px] border-ink pb-6">
-        <p className="eyebrow text-faint">Methodology</p>
+      <header className="border-b border-line pb-6">
+        <p className="text-sm font-medium tracking-wider text-accent">数え方の開示</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">集計方法</h1>
         <p className="measure mt-3 text-muted">
           本サイトの「発言の統計」と「会派多数と異なる投票」が、どのデータから・どう計算され・

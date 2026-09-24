@@ -21,6 +21,8 @@ import { FundingPanel } from "@/components/FundingPanel";
 import { coverageRange, speechStatsFor } from "@/lib/activity-stats";
 import { divergentBillKeysFor } from "@/lib/faction-divergence";
 import { minutesFor } from "@/lib/sources/linkout";
+import { nextElectionFor } from "@/lib/next-election";
+import { NAGOYA_WARDS } from "@/lib/area";
 import { municipalityByGov } from "@/lib/municipalities";
 import { LAST_UPDATED, SITE_URL } from "@/lib/site-meta";
 import { formatYen } from "@/lib/format";
@@ -47,7 +49,7 @@ export async function generateMetadata({
 // ナンバリング付きセクション見出し（エディトリアル）。
 function SectionHead({ n, title, meta }: { n: string; title: string; meta?: ReactNode }) {
   return (
-    <div className="flex items-baseline gap-3 border-b-[3px] border-ink pb-2">
+    <div className="flex items-baseline gap-3 border-b border-line pb-2">
       <span className="num-display tnum text-sm text-faint">{n}</span>
       <h2 className="font-display text-2xl">{title}</h2>
       {meta != null && <span className="tnum text-sm text-muted">{meta}</span>}
@@ -68,6 +70,9 @@ export default async function LegislatorDetailPage({
   const votes = getVotes(id);
   const funding = getFunding(id);
   const profile = getLegislatorProfile(id);
+  // 次の選挙の目安と、名古屋市の区選出なら「同じ区の国・県・市の代表者」への導線。
+  const nextElection = nextElectionFor(legislator);
+  const ward = NAGOYA_WARDS.find((w) => w.prefDistrict === legislator.district);
   // 発言の統計（国会議員のみ・ビルド時再集計）と会派多数と異なる投票（機械検出）。
   const speechStats = legislator.level === "national" ? speechStatsFor(speeches) : null;
   const speechCoverage = legislator.level === "national" ? coverageRange(getSpeeches()) : null;
@@ -144,7 +149,7 @@ export default async function LegislatorDetailPage({
       />
 
       {/* プロフィール */}
-      <header className="border-b-[3px] border-ink pb-6">
+      <header className="border-b border-line pb-6">
         <span className="inline-flex items-center border border-ink px-2 py-0.5 text-xs font-bold text-ink">
           {layerLabel}
         </span>
@@ -165,6 +170,27 @@ export default async function LegislatorDetailPage({
         <p className="mt-1 text-xs text-faint">
           情報の基準日：{LAST_UPDATED}（所属・役職は改選や異動で変わります）
         </p>
+        {nextElection && (
+          <div className="mt-5 max-w-2xl rounded-2xl bg-subtle p-4 text-sm">
+            <p>
+              <span className="font-medium text-ink">次の選挙：</span>
+              {nextElection.when}・{nextElection.what}
+            </p>
+            <p className="mt-1 text-xs leading-relaxed text-muted">
+              {nextElection.note}{" "}
+              <Link href={nextElection.href} className="link-ink">
+                くわしく
+              </Link>
+            </p>
+          </div>
+        )}
+        {ward && (
+          <p className="mt-3 text-sm">
+            <Link href={`/area/${ward.slug}/`} className="link-ink">
+              {ward.ward}の国・県・市の代表者をまとめて見る →
+            </Link>
+          </p>
+        )}
       </header>
 
       {/* 30秒サマリー（既存データから・中立。詳細は下の各セクション） */}
@@ -276,7 +302,12 @@ export default async function LegislatorDetailPage({
 
       {/* 01 発言 */}
       <section>
-        <SectionHead n="01" title="発言" meta={`${speeches.length}件`} />
+        {/* 県議・市議の発言は本文を転載しない方針のため「0件」ではなく「未収録」と表示（発言がないという誤解を避ける） */}
+        <SectionHead
+          n="01"
+          title="発言"
+          meta={speeches.length > 0 ? `${speeches.length}件` : legislator.level === "national" ? "0件" : "本サイト未収録"}
+        />
         <div className="mt-5">
           {speeches.length > 0 ? (
             <>

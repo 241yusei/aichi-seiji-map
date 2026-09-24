@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useId, useState } from "react";
 import { useRouter } from "next/navigation";
 import { resolveZipToWard } from "@/lib/area";
@@ -19,7 +20,7 @@ export function ZipSearch() {
       setErr("");
       router.push(`/area/${w.slug}/`);
     } else {
-      setErr("名古屋市内の郵便番号を入力してください（例: 460-0008）。市外は順次対応します。");
+      setErr("名古屋市内の郵便番号を入力してください（例: 460-0008）。");
     }
   }
 
@@ -38,7 +39,7 @@ export function ZipSearch() {
           aria-label="郵便番号"
           aria-invalid={err ? true : undefined}
           aria-describedby={err ? `${fieldId}-error` : undefined}
-          className="tnum min-w-0 basis-48 grow rounded-2xl border border-line bg-surface px-4 py-3.5 text-base focus:outline-none focus:ring-2 focus:ring-accent"
+          className="tnum min-w-0 basis-48 grow rounded-2xl border border-field bg-surface px-4 py-3.5 text-base focus:outline-none focus:ring-2 focus:ring-accent"
         />
         <button
           type="submit"
@@ -54,6 +55,9 @@ export function ZipSearch() {
           className="mt-2 border-l-2 border-accent pl-3 text-xs text-muted"
         >
           {err}
+          <Link href="/municipalities/" className="ml-1 text-accent underline underline-offset-4">
+            名古屋市以外の方は、市町村から探す →
+          </Link>
         </p>
       )}
     </div>

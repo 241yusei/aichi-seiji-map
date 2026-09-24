@@ -4,7 +4,7 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 
 import { useEffect, useMemo, useState } from "react";
-import type { Legislator, Level } from "@/lib/types";
+import type { LegislatorListItem, Level } from "@/lib/types";
 import { LegislatorCard } from "./LegislatorCard";
 
 const LEVELS: { key: Level | "all"; label: string }[] = [
@@ -18,7 +18,7 @@ const CHUNK = 50;
 const normalizeSearch = (value: string) => value.normalize("NFKC").replace(/\s/g, "");
 
 // 所属や掲載データ量に左右されない、明示した一定の順序で表示する。
-function compareNames(a: Legislator, b: Legislator) {
+function compareNames(a: LegislatorListItem, b: LegislatorListItem) {
   return (
     normalizeSearch(a.kana || a.name).localeCompare(normalizeSearch(b.kana || b.name), "ja") ||
     a.name.localeCompare(b.name, "ja") ||
@@ -26,7 +26,7 @@ function compareNames(a: Legislator, b: Legislator) {
   );
 }
 
-export function LegislatorFilter({ legislators }: { legislators: Legislator[] }) {
+export function LegislatorFilter({ legislators }: { legislators: LegislatorListItem[] }) {
   // 初期表示は「国会（愛知選出）」起点。URLで指定された議会があればそちらを優先する。
   const [level, setLevel] = useState<Level | "all">("national");
   const [party, setParty] = useState("all");

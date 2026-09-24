@@ -24,7 +24,7 @@ export default function IssuesPage() {
           国会・愛知県議会・市町村議会の発言や動きをたどります。
         </p>
         <Link href="/themes/" className="mt-5 inline-flex min-h-11 items-center gap-2 text-sm font-medium text-accent hover:underline">
-          「物価」「子育て」など、くらしのテーマから探す <span aria-hidden="true">→</span>
+          国会での発言を、「物価」「子育て」など くらしのテーマから探す <span aria-hidden="true">→</span>
         </Link>
       </header>
 
