@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getExecutives, getLegislators } from "@/lib/data";
+import { getCandidates, getExecutives, getLegislators } from "@/lib/data";
+import { CandidateList } from "@/components/CandidateList";
 import { SourceLink } from "@/components/SourceLink";
 import { formatDate } from "@/lib/format";
 import { LAST_UPDATED, SITE_URL } from "@/lib/site-meta";
@@ -152,6 +153,8 @@ export default function GovernorElection2027Page() {
           </SourceLink>
         </p>
       </section>
+
+      <CandidateList candidates={getCandidates("aichi-governor-2027")} electionName="愛知県知事選挙" />
 
       {/* よくある質問（FAQ構造化データと同一内容） */}
       <section>

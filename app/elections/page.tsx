@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import { ElectionCountdown } from "@/components/ElectionCountdown";
+import { getElectionWindows } from "@/lib/election-window";
+import { todayJst } from "@/lib/election-window-core";
 import Link from "next/link";
 import { getExecutives } from "@/lib/data";
 import { municipalityByGov } from "@/lib/municipalities";
@@ -44,6 +47,8 @@ export default function ElectionsPage() {
           任期満了日はあくまで目安で、実際の投票日は各自治体・選挙管理委員会が告示します。中立・投票誘導はしません。
         </p>
       </header>
+
+      <ElectionCountdown windows={getElectionWindows()} buildDate={todayJst()} />
 
       {/* 統一地方選・知事選の注記（既知の大きな節目） */}
       <section className="bg-calm p-5">

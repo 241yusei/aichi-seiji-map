@@ -298,3 +298,18 @@ export interface HistoryData {
   mayorTurnout: TurnoutSeries; // 名古屋市長選 投票率
   events: HistoryEvent[]; // 画期イベント年表
 }
+
+// --- 立候補者（告示後、選挙管理委員会の発表のみにもとづく） ---
+
+/** 立候補の届け出があった人。告示前の「出馬の動き」は載せない（届け出で確定した人だけ）。 */
+export interface Candidate {
+  electionId: string; // 例: "aichi-governor-2027"
+  name: string;
+  kana: string; // 五十音順の並べ替えに使う（必須）
+  age?: number; // 届出時の年齢（選管の発表どおり）
+  party: string; // 党派（届出どおり。無所属を含む）
+  status?: "現職" | "新人" | "元職"; // 現・新・元（選管の発表どおり）
+  occupation?: string; // 職業（選管の発表どおり）
+  filedAt: string; // 届出日（YYYY-MM-DD）
+  sourceUrl: string; // 選挙管理委員会の発表（必須）
+}

@@ -6,6 +6,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import {
+  candidatesSchema,
   councilDecisionsSchema,
   executivesSchema,
   factCardsSchema,
@@ -20,6 +21,7 @@ import {
   votesSchema,
 } from "../lib/zod-schemas";
 import type {
+  Candidate,
   CouncilDecision,
   Executive,
   FactCard,
@@ -87,6 +89,8 @@ const profiles = PROFILE_FILES.flatMap((f) => load<LegislatorProfile>(f, legisla
 const issueExplainers = load<IssueExplainer>("issue-explainers.json", issueExplainersSchema);
 const councilDecisions = load<CouncilDecision>("council-decisions.json", councilDecisionsSchema);
 const finances = load<GovernmentFinance>("finance.json", governmentFinancesSchema);
+
+const candidates = load<Candidate>("candidates.json", candidatesSchema);
 
 console.log("\n相互参照を検査します…");
 
@@ -206,6 +210,16 @@ for (const g of finances) {
       fail(`財政データ ${g.id} ${y.era}: 歳入合計 ${revSum} が総額 ${y.total} と不一致`);
     if (expSum !== y.total)
       fail(`財政データ ${g.id} ${y.era}: 歳出合計 ${expSum} が総額 ${y.total} と不一致`);
+  }
+}
+
+// 立候補者：選挙ごとに同名の重複がないこと（掲載は選管の発表のみ・出典URLは zod で必須）。
+{
+  const seenCand = new Set<string>();
+  for (const c of candidates) {
+    const k = `${c.electionId}|${c.name}`;
+    if (seenCand.has(k)) fail(`立候補者の重複: ${k}`);
+    seenCand.add(k);
   }
 }
 

@@ -276,3 +276,17 @@ export const historySchema = z.object({
   mayorTurnout: turnoutSeriesSchema,
   events: z.array(historyEventSchema),
 });
+
+// 立候補者（告示後・選挙管理委員会の発表のみ）。出典URLと読みがなは必須。
+export const candidateSchema = z.object({
+  electionId: z.string().min(1),
+  name: z.string().min(1),
+  kana: z.string().min(1),
+  age: z.number().int().min(18).max(120).optional(),
+  party: z.string().min(1),
+  status: z.enum(["現職", "新人", "元職"]).optional(),
+  occupation: z.string().optional(),
+  filedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  sourceUrl: httpUrl,
+});
+export const candidatesSchema = z.array(candidateSchema);

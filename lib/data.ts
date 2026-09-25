@@ -7,6 +7,7 @@
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import type {
+  Candidate,
   CouncilDecision,
   Executive,
   FactCard,
@@ -21,6 +22,7 @@ import type {
   Vote,
 } from "./types";
 import {
+  candidatesSchema,
   councilDecisionsSchema,
   executivesSchema,
   factCardsSchema,
@@ -220,4 +222,12 @@ export function getFinances(): GovernmentFinance[] {
 
 export function getFinance(id: string): GovernmentFinance | undefined {
   return getFinances().find((f) => f.id === id);
+}
+
+// --- 立候補者（告示後・選挙管理委員会の発表のみ） ---
+// 並び順は五十音順（読みがな）。選挙公報の順（くじ・届出順）とは異なることを画面で明示する。
+export function getCandidates(electionId: string): Candidate[] {
+  return readArray<Candidate>("candidates.json", candidatesSchema)
+    .filter((c) => c.electionId === electionId)
+    .sort((a, b) => a.kana.localeCompare(b.kana, "ja") || a.name.localeCompare(b.name, "ja"));
 }

@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import { ElectionCountdown } from "@/components/ElectionCountdown";
+import { getElectionWindows } from "@/lib/election-window";
+import { todayJst } from "@/lib/election-window-core";
 import Link from "next/link";
 import { SourceLink } from "@/components/SourceLink";
 import { UPCOMING_ELECTIONS } from "@/lib/upcoming-elections";
@@ -33,6 +36,8 @@ export default function VoteGuidePage() {
           決めるのはあなたです。
         </p>
       </header>
+
+      <ElectionCountdown windows={getElectionWindows()} buildDate={todayJst()} />
 
       {/* 次の選挙（予定）：日程の事実のみ。投票先には一切ふれない（公選法配慮）。 */}
       <section className="card-soft border border-line bg-surface p-5">

@@ -18,3 +18,15 @@ export function todayJst(now: number = Date.now()): string {
 export function findActiveWindows(windows: ElectionWindow[], dateIso: string): ElectionWindow[] {
   return windows.filter((w) => w.from <= dateIso && dateIso <= w.until);
 }
+
+/** from（YYYY-MM-DD）から to（YYYY-MM-DD）までの日数。to が過去なら負の値。 */
+export function daysBetween(fromIso: string, toIso: string): number {
+  const a = Date.parse(`${fromIso}T00:00:00Z`);
+  const b = Date.parse(`${toIso}T00:00:00Z`);
+  return Math.round((b - a) / (24 * 60 * 60 * 1000));
+}
+
+/** 投票日が今日以降の選挙を、投票日の近い順に返す。 */
+export function upcomingWindows(windows: ElectionWindow[], todayIso: string): ElectionWindow[] {
+  return windows.filter((w) => w.until >= todayIso).sort((a, b) => a.until.localeCompare(b.until));
+}
