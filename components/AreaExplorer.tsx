@@ -17,7 +17,7 @@ export function AreaExplorer() {
     if (w) {
       router.push(`/area/${w.slug}/`);
     } else {
-      setZipMsg("対応する区が見つかりませんでした。名古屋市内の郵便番号を入力するか、下の区一覧からお選びください。");
+      setZipMsg("対応する区が見つかりませんでした。名古屋市内の郵便番号を入力するか、下の区一覧からお選びください。名古屋市以外の方は、下の「愛知県の市町村から探す」をご利用ください。");
     }
   }
 
@@ -78,11 +78,15 @@ export function AreaExplorer() {
       </section>
 
       <p className="max-w-3xl text-sm leading-relaxed text-muted">
-        現在、この地域検索は名古屋市内に対応しています。
-        <Link href="/legislators/" className="ml-1 text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent">
-          議員一覧から、国会・愛知県議会などの議員を探す
+        この地域検索は名古屋市内に対応しています。名古屋市以外にお住まいの方は、
+        <Link href="/municipalities/" className="mx-1 text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent">
+          愛知県の市町村から探す
         </Link>
-        こともできます。
+        （54市町村の首長・議会）か、
+        <Link href="/legislators/" className="ml-1 text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent">
+          議員一覧
+        </Link>
+        をご利用ください。
       </p>
     </div>
   );

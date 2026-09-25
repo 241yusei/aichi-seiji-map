@@ -10,6 +10,7 @@
   --color-muted: #695852;
   --color-faint: #76635d;
   --color-line: #e7dcdb;
+  --color-field: #9f8a84; /* 入力欄の枠線（白地に対し3.26:1＝WCAG 1.4.11 の3:1以上） */
   --color-line-strong: #e7dcdb;
   --color-subtle: #fff5f2;
   --color-calm: #fdedea;
@@ -83,7 +84,7 @@
 #main :where(section, article, figure, aside).border { border-radius: 16px; }
 #main :where(a, div).border.bg-surface { border-radius: 16px; }
 #main :where(a, button).border { border-radius: 12px; }
-#main :where(input, select).border { border-color: var(--color-line); }
+#main :where(input, select, textarea).border { border-color: var(--color-field); }
 }
 .site-footer a { display: inline-flex; align-items: center; min-height: 36px; }
 .site-footer { padding-bottom: calc(96px + env(safe-area-inset-bottom)); }

@@ -21,8 +21,8 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 export default function ForEducationPage() {
   return (
     <div className="space-y-8">
-      <header className="border-b-[3px] border-ink pb-6">
-        <p className="eyebrow text-accent-deep">For Education</p>
+      <header className="border-b border-line pb-6">
+        <p className="text-sm font-medium tracking-wider text-accent">授業で使う</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">
           教育でつかう
         </h1>

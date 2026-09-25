@@ -38,7 +38,7 @@ function LayerSection({
   const max = rows[0]?.count ?? 1;
   return (
     <section>
-      <div className="flex items-baseline justify-between gap-4 border-b-[3px] border-ink pb-2">
+      <div className="flex items-baseline justify-between gap-4 border-b border-line pb-2">
         <h2 className="font-display text-2xl">{title}</h2>
         <span className="tnum text-sm text-muted">{total}人・{rows.length}会派</span>
       </div>
@@ -72,8 +72,8 @@ export default function PartiesPage() {
 
   return (
     <div className="space-y-10">
-      <header className="border-b-[3px] border-ink pb-6">
-        <p className="eyebrow text-faint">Parties</p>
+      <header className="border-b border-line pb-6">
+        <p className="text-sm font-medium tracking-wider text-accent">政党・会派</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">
           政党・会派の勢力図
         </h1>

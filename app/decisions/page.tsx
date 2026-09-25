@@ -73,8 +73,8 @@ export default function DecisionsPage() {
 
   return (
     <div className="space-y-8">
-      <header className="border-b-[3px] border-ink pb-6">
-        <p className="eyebrow text-faint">Council Decisions</p>
+      <header className="border-b border-line pb-6">
+        <p className="text-sm font-medium tracking-wider text-accent">議会が決めたこと</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">議会の議決</h1>
         <p className="measure mt-3 text-muted">
           名古屋市会・愛知県議会が会期ごとに何を可決・否決したか（主要議案）を、公式の審議結果に出典リンク付きでまとめます。
@@ -113,7 +113,7 @@ export default function DecisionsPage() {
           const [council, session] = key.split("｜");
           return (
             <section key={key}>
-              <h2 className="font-display border-b-[3px] border-ink pb-2 text-xl sm:text-2xl">
+              <h2 className="font-display border-b border-line pb-2 text-xl sm:text-2xl">
                 {council}
                 <span className="ml-2 text-sm font-normal text-muted">{session}</span>
               </h2>
@@ -144,7 +144,7 @@ export default function DecisionsPage() {
 
       {/* 会派内で判断が分かれた採決（国会・参院記名投票からの機械検出） */}
       <section className="border-t border-line pt-6">
-        <h2 className="font-display border-b-[3px] border-ink pb-2 text-xl sm:text-2xl">
+        <h2 className="font-display border-b border-line pb-2 text-xl sm:text-2xl">
           会派内で判断が分かれた採決
           <span className="ml-2 text-sm font-normal text-muted">国会（参議院・記名投票）</span>
         </h2>

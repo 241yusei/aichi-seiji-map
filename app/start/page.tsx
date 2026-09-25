@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { WhoDoesWhat } from "@/components/WhoDoesWhat";
+import { WhoYouChoose } from "@/components/WhoYouChoose";
 
 export const metadata: Metadata = {
   title: "はじめに｜どこから見ればいい？",
@@ -54,8 +56,8 @@ const LADDERS = [
 export default function StartPage() {
   return (
     <div className="space-y-10">
-      <header className="border-b-[3px] border-ink pb-6">
-        <p className="eyebrow text-accent-deep">はじめに ／ Start here</p>
+      <header className="border-b border-line pb-6">
+        <p className="text-sm font-medium tracking-wider text-accent">はじめに</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6.5vw,3.75rem)] leading-tight">
           政治、よくわからない人はここから。
         </h1>
@@ -92,6 +94,9 @@ export default function StartPage() {
           </section>
         ))}
       </div>
+
+      <WhoYouChoose />
+      <WhoDoesWhat />
 
       <p className="measure rule-thick pt-5 text-sm text-muted">
         言葉でつまずいたら

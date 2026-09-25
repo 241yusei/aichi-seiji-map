@@ -1,9 +1,9 @@
 import Link from "next/link";
-import type { Legislator } from "@/lib/types";
+import type { LegislatorListItem } from "@/lib/types";
 import { LevelBadge } from "./LevelBadge";
 import { Monogram } from "./Monogram";
 
-export function LegislatorCard({ legislator }: { legislator: Legislator }) {
+export function LegislatorCard({ legislator }: { legislator: LegislatorListItem }) {
   return (
     <Link
       href={`/legislators/${legislator.id}/`}

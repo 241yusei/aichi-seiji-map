@@ -22,7 +22,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 export default function VoteGuidePage() {
   return (
     <div className="space-y-8">
-      <header className="border-b-[3px] border-ink pb-6">
+      <header className="border-b border-line pb-6">
         <p className="eyebrow text-accent-deep">投票ガイド</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">
           はじめての投票

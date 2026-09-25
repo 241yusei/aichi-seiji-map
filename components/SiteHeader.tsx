@@ -4,11 +4,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRef } from "react";
 
-const NAV = [
+const NAV: { href: string; label: string; also?: string[] }[] = [
   { href: "/area", label: "地域から探す" },
   { href: "/legislators", label: "議員を知る" },
-  { href: "/issues", label: "暮らしの争点" },
+  { href: "/issues", label: "愛知の争点" },
   { href: "/learn", label: "まなぶ" },
+  { href: "/vote-guide", label: "選挙と投票", also: ["/elections"] },
 ];
 
 const MORE_NAV = [
@@ -22,7 +23,9 @@ const MORE_NAV = [
 export function SiteHeader() {
   const pathname = usePathname() ?? "";
   const menuRef = useRef<HTMLDetailsElement>(null);
-  const isActive = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
+  const matches = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
+  const isActive = (href: string) =>
+    matches(href) || (NAV.find((n) => n.href === href)?.also ?? []).some(matches);
 
   return (
     <header className="relative z-30 px-3 pt-4 sm:px-6 sm:pt-6">

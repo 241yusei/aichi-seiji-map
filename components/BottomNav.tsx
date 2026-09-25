@@ -24,7 +24,7 @@ function Icon({ d }: { d: ReactNode }) {
   );
 }
 
-const ITEMS: { href: string; label: string; icon: ReactNode }[] = [
+const ITEMS: { href: string; label: string; also?: string[]; icon: ReactNode }[] = [
   { href: "/start", label: "はじめに", icon: <Icon d={<><path d="M12 3v18" /><path d="M12 4h7l-2 3 2 3h-7" /></>} /> },
   { href: "/area", label: "地域", icon: <Icon d={<><path d="M12 21s7-5.5 7-11a7 7 0 0 0-14 0c0 5.5 7 11 7 11Z" /><circle cx="12" cy="10" r="2.5" /></>} /> },
   { href: "/legislators", label: "議員", icon: <Icon d={<><circle cx="9" cy="8" r="3" /><path d="M3.5 19a5.5 5.5 0 0 1 11 0" /><path d="M16 6.5a3 3 0 0 1 0 6" /><path d="M16.5 19a5.5 5.5 0 0 0-2.5-4.6" /></>} /> },
@@ -32,7 +32,7 @@ const ITEMS: { href: string; label: string; icon: ReactNode }[] = [
   { href: "/learn", label: "まなぶ", icon: <Icon d={<><path d="M3 5.5A2 2 0 0 1 5 4h6v15H5a2 2 0 0 0-2 1.5V5.5Z" /><path d="M21 5.5A2 2 0 0 0 19 4h-6v15h6a2 2 0 0 1 2 1.5V5.5Z" /></>} /> },
   // 6番目に追記（既存5導線の並び順・タップ位置は変更しない＝移動によるムスクルメモリ喪失を避ける）。
   // 320px幅でも 320/6≈53px とタップ領域48pxを確保できるため、既存タブの削除は不要と判断。
-  { href: "/search", label: "検索", icon: <Icon d={<><circle cx="10.5" cy="10.5" r="6.5" /><path d="m20 20-4.3-4.3" /></>} /> },
+  { href: "/vote-guide", label: "選挙", also: ["/elections"], icon: <Icon d={<><path d="M4 11h16v9H4z" /><path d="M9 11V4h6v7" /><path d="M8 15.5h8" /></>} /> },
 ];
 
 export function BottomNav() {
@@ -62,7 +62,8 @@ export function BottomNav() {
     >
       <ul className="mx-auto grid max-w-xl grid-cols-6 gap-0.5 px-1 py-2 sm:gap-2 sm:px-4">
         {ITEMS.map((it) => {
-          const active = path === it.href || path.startsWith(`${it.href}/`);
+          const hit = (h: string) => path === h || path.startsWith(`${h}/`);
+          const active = hit(it.href) || (it.also ?? []).some(hit);
           return (
             <li key={it.href} className="relative">
               <Link

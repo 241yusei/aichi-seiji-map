@@ -6,6 +6,8 @@ import { Blocks } from "@/components/LearnContent";
 import { DifficultyToggle } from "@/components/DifficultyToggle";
 import { Figure } from "@/components/Figure";
 import { KenshiQuiz } from "@/components/KenshiQuiz";
+import { WhoDoesWhat } from "@/components/WhoDoesWhat";
+import { WhoYouChoose } from "@/components/WhoYouChoose";
 import { ChapterRead } from "@/components/ChapterRead";
 import { SourceLink } from "@/components/SourceLink";
 
@@ -43,7 +45,7 @@ export default async function LearnChapterPage({
 
   return (
     <div className="space-y-8">
-      <header className="border-b-[3px] border-ink pb-6">
+      <header className="border-b border-line pb-6">
         <p className="eyebrow text-faint">
           {c.partLabel} ／ {c.n}
         </p>
@@ -56,6 +58,9 @@ export default async function LearnChapterPage({
       {c.figure && <Figure figure={c.figure} />}
 
       <DifficultyToggle easy={<Blocks blocks={c.easy} />} detail={<Blocks blocks={c.detail} />} />
+
+      {c.panel === "who-does-what" && <WhoDoesWhat />}
+      {c.panel === "who-you-choose" && <WhoYouChoose />}
 
       {c.quiz && (
         <div>

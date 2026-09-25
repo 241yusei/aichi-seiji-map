@@ -18,13 +18,18 @@ export default function ThemesPage() {
   return (
     <div>
       <header className="max-w-4xl pb-10 pt-4 sm:pb-14 sm:pt-8">
-        <p className="text-sm font-medium tracking-wider text-accent">くらしから、政治へ</p>
+        <p className="text-sm font-medium tracking-wider text-accent">くらしのテーマ × 国会での発言</p>
         <h1 className="font-display mt-5 text-[clamp(2.3rem,6vw,4.5rem)] leading-[1.15]">
           気になることから、<br />見てみよう。
         </h1>
         <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
           物価、子育て、働き方。いつもの生活の言葉から、
           愛知選出議員が国会で何を話しているかを探せます。
+        </p>
+        <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">
+          ここで探せるのは<strong className="font-medium text-ink">国会での発言</strong>です。
+          副首都・防災・子育てなど、愛知で議論になっていることを国・県・市で見くらべるなら
+          <Link href="/issues/" className="mx-1 link-ink">愛知の争点</Link>へ。
         </p>
       </header>
 

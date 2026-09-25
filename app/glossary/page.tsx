@@ -14,8 +14,8 @@ export default function GlossaryPage() {
 
   return (
     <div className="space-y-8">
-      <header className="border-b-[3px] border-ink pb-6">
-        <p className="eyebrow text-faint">Glossary</p>
+      <header className="border-b border-line pb-6">
+        <p className="text-sm font-medium tracking-wider text-accent">用語集</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">用語集</h1>
         <p className="measure mt-3 text-muted">
           政治のことばを、はじめての人向けにやさしく。本文中で

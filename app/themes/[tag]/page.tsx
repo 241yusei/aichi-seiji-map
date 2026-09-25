@@ -44,8 +44,8 @@ export default async function ThemeDetailPage({
         </Link>
       </p>
 
-      <header className="border-b-[3px] border-ink pb-6">
-        <p className="eyebrow text-faint">Theme</p>
+      <header className="border-b border-line pb-6">
+        <p className="text-sm font-medium tracking-wider text-accent">くらしのテーマ</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">
           {theme.label}
         </h1>

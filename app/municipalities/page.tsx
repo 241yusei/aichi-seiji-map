@@ -27,8 +27,8 @@ export default function MunicipalitiesPage() {
 
   return (
     <div className="space-y-10">
-      <header className="border-b-[3px] border-ink pb-6">
-        <p className="eyebrow text-faint">Municipalities</p>
+      <header className="border-b border-line pb-6">
+        <p className="text-sm font-medium tracking-wider text-accent">愛知の市町村</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">
           市町村から探す
         </h1>

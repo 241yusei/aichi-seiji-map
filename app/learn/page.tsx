@@ -16,8 +16,8 @@ export default function LearnPage() {
 
   return (
     <div className="space-y-10">
-      <header className="border-b-[3px] border-ink pb-6">
-        <p className="eyebrow text-faint">Learn</p>
+      <header className="border-b border-line pb-6">
+        <p className="text-sm font-medium tracking-wider text-accent">政治の基本</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">まなぶ</h1>
         <p className="measure mt-3 text-muted">
           政治をまったく知らなくても大丈夫。ゼロからすこしずつ、愛知・名古屋の政治がわかるように。

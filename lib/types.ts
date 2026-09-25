@@ -36,6 +36,9 @@ export interface Legislator {
   vendor?: Vendor; // 主たる取得元
 }
 
+/** 一覧・カード表示に必要な最小項目（クライアントへ送るデータ量を抑えるため）。 */
+export type LegislatorListItem = Pick<Legislator, "id" | "name" | "kana" | "level" | "party" | "district">;
+
 export interface Speech {
   legislatorId: string;
   date: string; // ISO 8601
