@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getExecutives } from "@/lib/data";
+import { getExecutives, getLegislators } from "@/lib/data";
 import { SourceLink } from "@/components/SourceLink";
 import { formatDate } from "@/lib/format";
 import { LAST_UPDATED, SITE_URL } from "@/lib/site-meta";
@@ -38,6 +38,12 @@ const FAQS = [
 
 export default function GovernorElection2027Page() {
   const governor = getExecutives().find((e) => e.level === "prefectural");
+  const prefCount = getLegislators().filter((l) => l.level === "prefectural").length;
+  // 投票日が入りうる期間：任期満了日の前30日以内（公職選挙法33条1項）。
+  const termEnd = governor?.termEnd ?? "2027-02-14";
+  const windowStart = new Date(Date.parse(`${termEnd}T00:00:00Z`) - 30 * 24 * 60 * 60 * 1000)
+    .toISOString()
+    .slice(0, 10);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -106,6 +112,47 @@ export default function GovernorElection2027Page() {
         </p>
       </section>
 
+      {/* 決まっていること／まだ決まっていないこと（2026年9月25日時点） */}
+      <section aria-labelledby="status-heading">
+        <div className="flex items-baseline justify-between gap-4 border-b-[3px] border-ink pb-2">
+          <h2 id="status-heading" className="font-display text-2xl">
+            決まっていること・まだ決まっていないこと
+          </h2>
+        </div>
+        <div className="mt-4 grid gap-4 sm:grid-cols-2">
+          <div className="border border-line bg-surface p-5">
+            <h3 className="font-bold text-ink">決まっていること</h3>
+            <ul className="mt-2 space-y-2 text-sm text-muted">
+              <li>
+                今の知事の任期が終わる日：<strong className="text-ink">{formatDate(termEnd)}</strong>
+              </li>
+              <li>
+                投票日が入る期間：<strong className="text-ink">{formatDate(windowStart)}〜{formatDate(termEnd)}</strong>
+                （任期が終わる日の前30日以内。公職選挙法33条）
+              </li>
+              <li>前回（2023年）は、任期が終わる9日前の2月5日が投票日でした。</li>
+            </ul>
+          </div>
+          <div className="border border-line bg-surface p-5">
+            <h3 className="font-bold text-ink">まだ決まっていないこと</h3>
+            <ul className="mt-2 space-y-2 text-sm text-muted">
+              <li>投票日と告示日（愛知県選挙管理委員会が決めて発表します）</li>
+              <li>
+                立候補する人（告示日の届け出で確定します。本サイトは、届け出前の人を候補者として扱いません）
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p className="chart-note mt-3">
+          2026年9月25日時点。出典：
+          <SourceLink href="https://laws.e-gov.go.jp/law/325AC1000000100">公職選挙法（e-Gov法令検索）</SourceLink>
+          {" ・ "}
+          <SourceLink href="https://www.pref.aichi.jp/soshiki/senkyo/0000087359.html">
+            愛知県選挙管理委員会（2023年2月5日執行の知事選）
+          </SourceLink>
+        </p>
+      </section>
+
       {/* よくある質問（FAQ構造化データと同一内容） */}
       <section>
         <div className="flex items-baseline justify-between gap-4 border-b-[3px] border-ink pb-2">
@@ -146,13 +193,19 @@ export default function GovernorElection2027Page() {
             className="group bg-surface p-5 transition-colors hover:bg-subtle"
           >
             <h3 className="font-display text-lg">県議会の顔ぶれ</h3>
-            <p className="mt-2 text-sm text-muted">知事とともに県政を担う97人の議員。</p>
+            <p className="mt-2 text-sm text-muted">知事とともに県政を担う議員（現員{prefCount}人・定数102）。</p>
           </Link>
           <Link href="/issues" className="group bg-surface p-5 transition-colors hover:bg-subtle">
             <h3 className="font-display text-lg">愛知の争点を知る</h3>
-            <p className="mt-2 text-sm text-muted">リニア・アジア大会など、賛否は両論併記で。</p>
+            <p className="mt-2 text-sm text-muted">副首都・防災・リニアなど、賛否は両論併記で。</p>
           </Link>
         </div>
+        <p className="chart-note mt-3">
+          県議会の定数の出典：
+          <SourceLink href="https://www.pref.aichi.jp/soshiki/senkyo/0000022887.html">
+            愛知県選挙管理委員会「選挙の区域と定数」（55選挙区・102名）
+          </SourceLink>
+        </p>
         <p className="measure mt-4 text-sm text-muted">
           「知事と議会はどうちがう？」は{" "}
           <Link href="/learn" className="link-ink">

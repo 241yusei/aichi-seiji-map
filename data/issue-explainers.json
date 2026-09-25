@@ -160,7 +160,7 @@
     "oneLine": "2026年に愛知・名古屋で開かれるアジア競技大会／アジアパラ競技大会。",
     "youEffect": "大会の費用は市の財源を使う。減税や他のサービスとのやりくりに影響する。",
     "whyImportant": "経済効果が期待される一方、関連予算がふくらみ、名古屋市の減税の財源を圧迫する面もある。",
-    "now": "アジア競技大会は2026年9月19日〜10月4日、アジアパラ競技大会は10月18日〜24日に開催される。準備は最終段階に入り、運営費と市の財源（減税）の両立が引き続き論点になっている。",
+    "now": "第20回アジア競技大会は2026年9月19日に名古屋市のパロマ瑞穂スタジアムで開幕し、10月4日まで開かれる。アジアパラ競技大会は10月18日〜24日。大会後は、経費の決算と、競技施設などを大会後にどう使い続けるか（レガシー）が論点になる。",
     "keyStats": [
       {
         "label": "大会の全体経費",
@@ -214,7 +214,8 @@
       },
       {
         "date": "2026年9月19日〜10月4日",
-        "event": "第20回アジア競技大会を開催（アジアパラ競技大会は2026年10月18日〜24日）"
+        "event": "第20回アジア競技大会が開幕（10月4日まで）。アジアパラ競技大会は10月18日〜24日",
+        "sourceUrl": "https://www.olympics.com/ja/news/asian-games-2026-aichi-nagoya-opening-ceremony-officially-begins"
       }
     ],
     "sources": [
@@ -225,8 +226,13 @@
       {
         "label": "全競技日程の決定・公表（組織委ニュース）",
         "url": "https://www.aichi-nagoya2026.org/news/detail/1087"
+      },
+      {
+        "label": "アジア競技大会 開幕（オリンピック公式 2026-09-19）",
+        "url": "https://www.olympics.com/ja/news/asian-games-2026-aichi-nagoya-opening-ceremony-officially-begins"
       }
-    ]
+    ],
+    "nowAsOf": "2026-09-25"
   },
   {
     "id": "ev-shift",
@@ -427,7 +433,7 @@
     "oneLine": "南海トラフ地震や豪雨に備える防災・減災（耐震化・避難・治水など）。",
     "youEffect": "耐震化や避難の備えは、いざという時のあなたと家族の安全に直結。",
     "whyImportant": "愛知は南海トラフ地震の想定震源域に近く、命と暮らしに直結するテーマ。",
-    "now": "住宅の耐震化、避難所の整備、堤防・治水、要配慮者の支援などが継続的な課題になっている。",
+    "now": "南海トラフ地震への備え（住宅の耐震化、避難所、堤防・治水、支援が必要な人の避難）が続く課題。あわせて2026年9月8日の大雨では、名古屋市で最も高い警戒レベルの「緊急安全確保」がピーク時に約117万人に出され、床上浸水279棟などの被害が出て、名古屋市全域に災害救助法が適用された。",
     "keyStats": [
       {
         "label": "南海トラフ地震の想定死者数（最悪ケース）",
@@ -445,6 +451,12 @@
         "value": "ほぼ半減",
         "sourceUrl": "https://www.pref.aichi.jp/soshiki/bosai/r8higaiyosoku.html",
         "note": "堤防・水門整備の効果"
+      },
+      {
+        "label": "2026年9月8日の大雨（名古屋市）",
+        "value": "緊急安全確保 約117万人・床上浸水279棟",
+        "sourceUrl": "https://www.city.nagoya.jp/bousaiportal/shien/1054060.html",
+        "note": "ピーク時（9月8日18時10分）に607,879世帯1,172,102人。最大避難者3,547人、軽傷35人（市の集計・9月24日更新）"
       }
     ],
     "stances": [
@@ -474,6 +486,14 @@
       {
         "label": "愛知県 東海・東南海・南海地震等被害予測調査結果",
         "url": "https://www.pref.aichi.jp/soshiki/bosai/2014higaiyosoku.html"
+      },
+      {
+        "label": "名古屋市：令和8年9月8日の大雨にかかる被害状況等",
+        "url": "https://www.city.nagoya.jp/bousaiportal/shien/1054060.html"
+      },
+      {
+        "label": "名古屋市：災害救助法の適用について（2026年9月）",
+        "url": "https://www.city.nagoya.jp/houdou/3003942/3003948/3005683.html"
       }
     ],
     "timeline": [
@@ -486,8 +506,14 @@
         "date": "2026年6月",
         "event": "愛知県地域防災計画（風水害・地震津波・原子力の各対策計画）が最終修正。",
         "sourceUrl": "https://www.pref.aichi.jp/soshiki/bosai/bosai-keikaku.html"
+      },
+      {
+        "date": "2026年9月8日",
+        "event": "大雨で名古屋市が「緊急安全確保」を発令（ピーク時 約117万人）。名古屋市全域に災害救助法が適用",
+        "sourceUrl": "https://www.city.nagoya.jp/houdou/3003942/3003948/3005683.html"
       }
-    ]
+    ],
+    "nowAsOf": "2026-09-25"
   },
   {
     "id": "kosodate",
@@ -960,6 +986,123 @@
       {
         "label": "愛知県「県内人口の動き（2025年）」",
         "url": "https://www.pref.aichi.jp/press-release/toukei202512240000077337.html"
+      }
+    ]
+  },
+  {
+    "id": "fukushuto",
+    "subject": "国・愛知県・名古屋市",
+    "oneLine": "東京が大きな災害で動かなくなったとき、国の中枢の代わりを担い、ふだんは経済の中心にもなる「副首都」。愛知県と名古屋市は、その指定をめざしている。",
+    "youEffect": "指定されれば、国の機関の拠点や交通・まちづくりへの投資が愛知に向かう可能性がある。一方で、どれだけの費用がかかり、誰が負担するのかは、まだ示されていない。",
+    "whyImportant": "災害への備えと東京一極集中の是正という国全体の課題に、愛知・名古屋がどう関わるかを決めるテーマ。県が国に指定を申し出る前には、愛知県議会の議決が必要と法律で決まっている。",
+    "now": "副首都法は2026年7月24日、参議院本会議で賛成123・反対121で成立した。愛知県と名古屋市は同じ日の夜に、知事・市長・県議会議長・市会議長の4人で指定に向けた準備を表明し、8月6日に県と市の協議会と、県内の全市町村との推進会議を開いた。指定の要件の細かい中身（政令）と国の基本方針は、まだ示されていない。",
+    "nowAsOf": "2026-09-25",
+    "keyStats": [
+      {
+        "label": "参議院での採決（2026年7月24日）",
+        "value": "賛成123・反対121",
+        "sourceUrl": "https://www.sangiin.go.jp/japanese/touhyoulist/221/221-0724-v006.htm",
+        "note": "押しボタン投票。議員ごとの賛否が公開されている"
+      },
+      {
+        "label": "愛知選出の参院議員8人の投票",
+        "value": "賛成2・反対6",
+        "sourceUrl": "https://www.sangiin.go.jp/japanese/touhyoulist/221/221-0724-v006.htm",
+        "note": "すべての会派が会派ごとにそろって投票した（会派の方針と一致）"
+      },
+      {
+        "label": "県が指定を申し出る前に必要なこと",
+        "value": "県議会の議決",
+        "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_gian.nsf/html/gian/honbun/houan/g22105027.htm",
+        "note": "法律第18条第2項。愛知の申し出は愛知県議会が判断する"
+      },
+      {
+        "label": "国が基本方針を定める期限",
+        "value": "法律の施行から1年以内",
+        "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_gian.nsf/html/gian/honbun/houan/g22105027.htm",
+        "note": "附則第2条。施行は公布から3か月以内に政令で決める日"
+      }
+    ],
+    "stances": [
+      {
+        "label": "指定をめざす立場（愛知県・名古屋市）",
+        "text": "東京圏と同時に被災しにくい立地、国の出先機関が集まる三の丸地区、人口（全国4位）と県内総生産（全国2位）の集積を強みに挙げ、指定で国内外での存在感を高めたいとしている。必要な行政体制は、特別区ではなく「県と名古屋市の連携協約」を念頭に置く。"
+      },
+      {
+        "label": "法律に賛成した会派の主な理由",
+        "text": "首都直下地震や富士山の噴火などで東京の中枢機能が止まった場合の備えになり、東京に集中した経済を分散させて地方の成長の拠点にもなる（参院本会議での自民・維新の賛成討論）。"
+      },
+      {
+        "label": "法律に反対した会派の主な理由",
+        "text": "指定の要件の多くが政令に任されていて客観性が見えない、南海トラフ地震が要件で考慮されていない、国の基本方針より先に指定できる、整備の費用と財源が示されていない。特別市など大都市制度の議論を先にすべきとの指摘もあった（立憲・国民・公明・参政などの反対討論）。"
+      },
+      {
+        "label": "見るべき主語",
+        "text": "法律・政令・指定は国（内閣総理大臣）、申し出と県議会の議決は県、県との連携協約は名古屋市。衆議院の採決は起立採決のため、衆院議員ごとの賛否は公表されていない。"
+      }
+    ],
+    "debate": {
+      "pro": "大災害時に国の機能を止めない備えと、東京一極集中の是正・地方の経済成長を、同時にめざせる。",
+      "con": "要件の細かい中身や費用・財源が決まらないまま進む。南海トラフ地震のリスクや、指定の公平性への疑問が国会で指摘された。",
+      "openQuestion": "政令と国の基本方針が示されたとき、愛知・名古屋が満たすべき条件と負担は何か。愛知県議会は申し出をどう判断するか。"
+    },
+    "timeline": [
+      {
+        "date": "2025年10月",
+        "event": "自民党と日本維新の会の連立政権合意に、副首都の構想が盛り込まれる",
+        "sourceUrl": "https://kokkai.ndl.go.jp/txt/122115254X03120260724/30"
+      },
+      {
+        "date": "2026年7月15日",
+        "event": "衆議院本会議で起立多数により修正して可決。審査した特別委員会の委員長は丹羽秀樹議員（愛知6区）",
+        "sourceUrl": "https://kokkai.ndl.go.jp/txt/122105254X03220260715/22"
+      },
+      {
+        "date": "2026年7月24日",
+        "event": "参議院本会議で成立（賛成123・反対121）",
+        "sourceUrl": "https://www.sangiin.go.jp/japanese/touhyoulist/221/221-0724-v006.htm"
+      },
+      {
+        "date": "2026年7月24日夜",
+        "event": "知事・名古屋市長・県議会議長・市会議長が、指定に向けた準備を表明",
+        "sourceUrl": "https://www.pref.aichi.jp/uploaded/attachment/628008.pdf"
+      },
+      {
+        "date": "2026年8月6日",
+        "event": "「愛知・名古屋副首都連携協議会」と、全市町村が参加する「愛知県副首都推進会議」を開催",
+        "sourceUrl": "https://www.pref.aichi.jp/soshiki/kikaku/hukusyutokaigi.html"
+      },
+      {
+        "date": "施行から1年以内",
+        "event": "国が基本方針を定める（法律の附則第2条）",
+        "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_gian.nsf/html/gian/honbun/houan/g22105027.htm"
+      },
+      {
+        "date": "2031年3月まで",
+        "event": "国が施策を集中的に進める期間（附則第3条）",
+        "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_gian.nsf/html/gian/honbun/houan/g22105027.htm"
+      }
+    ],
+    "sources": [
+      {
+        "label": "衆議院：副首都法（法律案本文）",
+        "url": "https://www.shugiin.go.jp/internet/itdb_gian.nsf/html/gian/honbun/houan/g22105027.htm"
+      },
+      {
+        "label": "参議院：本会議投票結果（2026年7月24日）",
+        "url": "https://www.sangiin.go.jp/japanese/touhyoulist/221/221-0724-v006.htm"
+      },
+      {
+        "label": "国会会議録：参院本会議 委員長報告・賛否の討論（2026年7月24日）",
+        "url": "https://kokkai.ndl.go.jp/txt/122115254X03120260724/26"
+      },
+      {
+        "label": "愛知県：副首都連携協議会・副首都推進会議",
+        "url": "https://www.pref.aichi.jp/soshiki/kikaku/hukusyutokaigi.html"
+      },
+      {
+        "label": "愛知県：副首都推進会議 議事概要（2026年8月6日）",
+        "url": "https://www.pref.aichi.jp/uploaded/attachment/628008.pdf"
       }
     ]
   }

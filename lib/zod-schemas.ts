@@ -132,6 +132,7 @@ export const issueExplainerSchema = z.object({
   youEffect: z.string().optional(),
   whyImportant: z.string().min(1),
   now: z.string().min(1),
+  nowAsOf: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
   keyStats: z
     .array(
       z.object({
