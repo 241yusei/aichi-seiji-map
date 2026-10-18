@@ -157,10 +157,10 @@
   {
     "id": "asian-games-2026",
     "subject": "県・市",
-    "oneLine": "2026年に愛知・名古屋で開かれるアジア競技大会／アジアパラ競技大会。",
+    "oneLine": "2026年の愛知・名古屋アジア競技大会／アジアパラ競技大会。",
     "youEffect": "大会の費用は市の財源を使う。減税や他のサービスとのやりくりに影響する。",
     "whyImportant": "経済効果が期待される一方、関連予算がふくらみ、名古屋市の減税の財源を圧迫する面もある。",
-    "now": "第20回アジア競技大会は2026年9月19日に名古屋市のパロマ瑞穂スタジアムで開幕し、10月4日まで開かれる。アジアパラ競技大会は10月18日〜24日。大会後は、経費の決算と、競技施設などを大会後にどう使い続けるか（レガシー）が論点になる。",
+    "now": "第20回アジア競技大会は2026年9月19日〜10月4日に開催され、10月4日に閉幕した。第5回アジアパラ競技大会の開催期間は10月18日〜24日。大会後は、経費の決算と、競技施設などを大会後にどう使い続けるか（レガシー）が論点になる。",
     "keyStats": [
       {
         "label": "大会の全体経費",
@@ -214,8 +214,13 @@
       },
       {
         "date": "2026年9月19日〜10月4日",
-        "event": "第20回アジア競技大会が開幕（10月4日まで）。アジアパラ競技大会は10月18日〜24日",
-        "sourceUrl": "https://www.olympics.com/ja/news/asian-games-2026-aichi-nagoya-opening-ceremony-officially-begins"
+        "event": "第20回アジア競技大会を開催。10月4日に閉幕",
+        "sourceUrl": "https://www.aichi-nagoya2026.org/ja/news-2118/"
+      },
+      {
+        "date": "2026年10月18日〜24日",
+        "event": "第5回アジアパラ競技大会の開催期間",
+        "sourceUrl": "https://www.mext.go.jp/sports/b_menu/sports/mcatetop08/list/1371890_00003.html"
       }
     ],
     "sources": [
@@ -228,11 +233,15 @@
         "url": "https://www.aichi-nagoya2026.org/news/detail/1087"
       },
       {
-        "label": "アジア競技大会 開幕（オリンピック公式 2026-09-19）",
-        "url": "https://www.olympics.com/ja/news/asian-games-2026-aichi-nagoya-opening-ceremony-officially-begins"
+        "label": "アジア競技大会 閉会（組織委員会 2026-10-07）",
+        "url": "https://www.aichi-nagoya2026.org/ja/news-2118/"
+      },
+      {
+        "label": "両大会の開催期間（スポーツ庁）",
+        "url": "https://www.mext.go.jp/sports/b_menu/sports/mcatetop08/list/1371890_00003.html"
       }
     ],
-    "nowAsOf": "2026-09-25"
+    "nowAsOf": "2026-10-18"
   },
   {
     "id": "ev-shift",
