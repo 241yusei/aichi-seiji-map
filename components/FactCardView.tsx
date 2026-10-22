@@ -25,10 +25,13 @@ export function FactCardView({ card }: { card: FactCard }) {
       <header className="border-b border-line pb-6">
         <div className="flex items-center gap-3">
           <FactCardType type={card.cardType} />
+          <span className="text-xs text-muted">公開</span>
           <time dateTime={card.publishedAt} className="eyebrow tnum text-faint">
             {formatDate(card.publishedAt)}
           </time>
         </div>
+        {card.updatedAt && <p className="mt-2 text-xs text-muted">更新：<time dateTime={card.updatedAt}>{formatDate(card.updatedAt)}</time></p>}
+        {card.asOf && <p className="mt-2 text-sm text-muted">数字の集計時点：<time dateTime={card.asOf}>{formatDate(card.asOf)}</time>{card.historical ? "・過去の収録状況（保存版）" : ""}</p>}
         <h1 className="font-display mt-3 text-[clamp(1.9rem,5.5vw,3.25rem)] leading-[1.08]">
           {card.title}
         </h1>

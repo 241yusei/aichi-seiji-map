@@ -247,7 +247,7 @@ export default function FinancePage() {
           愛知県と名古屋市の一般会計当初予算を、歳入・歳出・税収の内訳まで公式資料に基づいて示します。
           お金の集め方（歳入）と使い方（歳出）は、議会が議決して決まります。
         </p>
-        <p className="mt-2 text-xs text-faint">情報の基準日：{LAST_UPDATED}</p>
+        <p className="mt-2 text-xs text-faint">サイト更新日：{LAST_UPDATED}</p>
       </header>
 
       {/* 読み方の注意（中立・単位・算出方法の明示） */}

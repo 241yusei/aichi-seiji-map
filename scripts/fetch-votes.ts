@@ -42,6 +42,7 @@ const merged = new Map(existing.map((v) => [key(v), v]));
 const before = merged.size;
 let added = 0;
 let skippedMismatch = 0;
+let snapshotsAdded = 0;
 
 for (const session of SESSIONS) {
   const items = parseIndex(await getHtml(indexUrl(session), { namespace: NAMESPACE }), session);
@@ -50,7 +51,7 @@ for (const session of SESSIONS) {
     const result = parseResult(await getHtml(item.url, { namespace: NAMESPACE }));
     const yea = result.ballots.filter((b) => b.vote === "yea").length;
     const nay = result.ballots.length - yea;
-    if (yea !== result.yea || nay !== result.nay) {
+    if (yea !== result.yea || nay !== result.nay || result.total !== result.ballots.length || result.total !== result.yea + result.nay) {
       console.warn(`  ⚠ 合計が公式と不一致のため除外: ${item.date} ${item.billTitle}（解析 ${yea}/${nay}・公式 ${result.yea}/${result.nay}）`);
       skippedMismatch++;
       continue;
@@ -58,8 +59,17 @@ for (const session of SESSIONS) {
     for (const b of result.ballots) {
       const legislatorId = idByName.get(b.name);
       if (!legislatorId) continue;
-      const vote: Vote = { legislatorId, billTitle: item.billTitle, date: item.date, result: b.vote, sourceUrl: item.url };
-      if (!merged.has(key(vote))) {
+      const vote: Vote = { legislatorId, billTitle: item.billTitle, date: item.date, result: b.vote, sourceUrl: item.url, factionAtVote: b.faction };
+      const previous = merged.get(key(vote));
+      if (previous && (previous.result !== vote.result || previous.date !== vote.date ||
+        (previous.factionAtVote && previous.factionAtVote !== vote.factionAtVote))) {
+        throw new Error(`既存票と公式結果が不一致: ${legislatorId} ${item.url}`);
+      }
+      if (previous && !previous.factionAtVote && b.faction.trim()) {
+        merged.set(key(vote), { ...previous, factionAtVote: b.faction });
+        snapshotsAdded++;
+      }
+      if (!previous) {
         merged.set(key(vote), vote);
         added++;
       }
@@ -71,4 +81,4 @@ const out = [...merged.values()].sort((a, b) =>
   a.date === b.date ? a.legislatorId.localeCompare(b.legislatorId) : a.date < b.date ? 1 : -1,
 );
 writeFileSync(OUT, JSON.stringify(out, null, 2) + "\n", "utf-8");
-console.log(`\n既存 ${before} 件 ＋ 追加 ${added} 件 → ${out.length} 件（合計不一致で除外した案件: ${skippedMismatch}）`);
+console.log(`\n既存 ${before} 件 ＋ 追加 ${added} 件 → ${out.length} 件（採決当時の会派を補完 ${snapshotsAdded} 件・合計不一致で除外した案件: ${skippedMismatch}）`);

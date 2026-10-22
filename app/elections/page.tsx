@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "/elections/" },
 };
 
-// 任期満了日は「次の選挙の時期の目安」。基準日（今日相当）はビルド時の最終更新日とする。
-const TODAY = LAST_UPDATED;
+// 選挙の時期の目安はビルド時のJSTで分類する。名簿の照合日や投票日とは別。
+const TODAY = new Date().toLocaleDateString("sv-SE", { timeZone: "Asia/Tokyo" });
 
 export default function ElectionsPage() {
   const execs = getExecutives()
@@ -116,7 +116,7 @@ export default function ElectionsPage() {
 
       {past.length > 0 && (
         <section>
-          <h2 className="eyebrow text-faint">基準日時点で任期満了日を過ぎているもの（{past.length}）</h2>
+          <h2 className="eyebrow text-faint">ビルド時点で任期満了日を過ぎているもの（{past.length}）</h2>
           <p className="measure mt-2 text-sm text-muted">
             改選後はデータを順次更新します。最新は各自治体の公式サイトでご確認ください。
           </p>
@@ -124,7 +124,7 @@ export default function ElectionsPage() {
       )}
 
       <p className="measure border-t border-line pt-5 text-xs text-faint">
-        情報の基準日：{LAST_UPDATED}。任期満了日は各自治体公式サイト・愛知県選挙管理委員会の資料に基づきます（各行の「任期の出典」リンク）。
+        サイト更新日：{LAST_UPDATED}。任期満了日は各自治体公式サイト・愛知県選挙管理委員会の資料に基づきます（各行の「任期の出典」リンク）。
         任期満了日＝投票日ではありません。実際の投票日・立候補者は各選挙管理委員会の告示でご確認ください。特定の候補者・政党への投票は呼びかけません。
       </p>
 

@@ -11,7 +11,8 @@
 // すべてビルド時計算・純関数。結果は決定的（同じ入力で同じ出力）。
 
 import type { Legislator, Vote } from "./types";
-import { getAllVotes, getLegislators } from "./data";
+import { getAllVotes } from "./data";
+import { isSangiinVote } from "./data-coverage";
 
 /** この人数未満の会派は「多数」を算出しない（少数はノイズになるため）。 */
 export const MIN_FACTION_SIZE = 3;
@@ -36,22 +37,23 @@ export interface DivergenceResult {
   divergenceCount: number; // 検出された「会派多数と異なる投票」の件数
 }
 
-/** 採決の識別キー（同一議案・同一日を1採決とみなす）。 */
-export function billKeyOf(v: Pick<Vote, "date" | "billTitle">): string {
-  return `${v.date}|${v.billTitle}`;
+/** 採決の識別キー。公式出典が異なる同日同名案件を混同しない。 */
+export function billKeyOf(v: Pick<Vote, "date" | "billTitle" | "sourceUrl">): string {
+  return `${v.sourceUrl}|${v.date}|${v.billTitle}`;
 }
 
 /**
  * 会派多数と異なる投票を検出する。
  * @param votes 全採決（getAllVotes）
- * @param legislators 会派（party）を引くための議員一覧
+ * 現在の名簿partyは過去の投票に流用しない。第2引数は旧呼び出しとの互換用で参照しない。
  */
-export function detectDivergences(votes: Vote[], legislators: Legislator[]): DivergenceResult {
-  const partyOf = new Map(legislators.map((l) => [l.id, l.party ?? "(無所属)"]));
+export function detectDivergences(votes: Vote[], legislators?: Legislator[]): DivergenceResult {
+  void legislators; // 過去の会派は公式投票結果のsnapshotだけを使う。
 
   const bills = new Map<string, Vote[]>();
   for (const v of votes) {
-    const key = billKeyOf(v);
+    if (!isSangiinVote(v)) continue;
+    const key = v.sourceUrl; // 公式の投票結果1ページを1案件として識別する。
     const arr = bills.get(key) ?? [];
     arr.push(v);
     bills.set(key, arr);
@@ -63,7 +65,8 @@ export function detectDivergences(votes: Vote[], legislators: Legislator[]): Div
   for (const group of bills.values()) {
     const byFaction = new Map<string, Vote[]>();
     for (const v of group) {
-      const fac = partyOf.get(v.legislatorId) ?? "(無所属)";
+      const fac = v.factionAtVote?.trim();
+      if (!fac) continue; // 採決当時の会派を確認できない票は会派集計しない。
       const arr = byFaction.get(fac) ?? [];
       arr.push(v);
       byFaction.set(fac, arr);
@@ -75,11 +78,10 @@ export function detectDivergences(votes: Vote[], legislators: Legislator[]): Div
         (v): v is Vote & { result: DecidedResult } => v.result === "yea" || v.result === "nay",
       );
       if (decided.length < MIN_FACTION_SIZE) continue; // 閾値未満は多数を出さない
-      eligibleInBill = true;
-
       const yea = decided.filter((v) => v.result === "yea").length;
       const nay = decided.length - yea;
       if (yea === nay) continue; // 同数のときは「多数」を定めない
+      eligibleInBill = true;
 
       const majority: DecidedResult = yea > nay ? "yea" : "nay";
       for (const v of decided) {
@@ -120,7 +122,7 @@ export function detectDivergences(votes: Vote[], legislators: Legislator[]): Div
 let cache: DivergenceResult | null = null;
 
 export function getDivergences(): DivergenceResult {
-  if (!cache) cache = detectDivergences(getAllVotes(), getLegislators());
+  if (!cache) cache = detectDivergences(getAllVotes());
   return cache;
 }
 

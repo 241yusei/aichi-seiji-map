@@ -1,3 +1,4 @@
+import { VoteCoverage, DecisionCoverage } from "@/components/DataCoverage";
 import type { Metadata } from "next";
 import { getCouncilDecisions, getLegislator } from "@/lib/data";
 import Link from "next/link";
@@ -79,7 +80,9 @@ export default function DecisionsPage() {
         <p className="measure mt-3 text-muted">
           名古屋市会・愛知県議会が会期ごとに何を可決・否決したか（主要議案）を、公式の審議結果に出典リンク付きでまとめます。
         </p>
-        <p className="mt-2 text-xs text-faint">情報の基準日：{LAST_UPDATED}</p>
+        <p className="mt-2 text-xs text-faint">サイト更新日：{LAST_UPDATED}</p>
+        <DecisionCoverage />
+        <VoteCoverage />
       </header>
 
       {/* 読み方の注意（中立・粒度の明示） */}
@@ -151,8 +154,8 @@ export default function DecisionsPage() {
         <p className="measure mt-3 text-sm text-muted">
           参議院の記名投票（押しボタン式）は個人ごとの賛否が公開されます。同じ採決で
           <span className="font-bold text-ink">同会派（愛知選出）の多数と異なる賛否</span>
-          だった票を機械的に検出し、事実としてここに表示します。会派の正式な賛否指示は非公開のため、
-          同会派メンバーの多数を近似として用いています。良し悪しの評価ではありません（
+          だった票を機械的に検出し、事実としてここに表示します。採決当時の会派が未確認の票は集計に使いません。会派の正式な賛否指示は非公開のため、
+          公式投票結果に記載された採決当時の会派で集計し、同会派メンバーの多数を近似として用いています。現在の所属から過去の会派を推測しません。良し悪しの評価ではありません（
           <Link href="/methodology/" className="link-ink">
             検出方法と限界の開示
           </Link>

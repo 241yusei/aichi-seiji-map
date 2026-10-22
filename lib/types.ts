@@ -65,6 +65,8 @@ export interface Vote {
   date: string;
   /** 記名投票でなければ "not_recorded"（個人の賛否は非公開）。 */
   result: VoteResult;
+  /** 投票結果の公式ページに記載された採決当時の会派。現在の名簿から補完しない。 */
+  factionAtVote?: string;
   sourceUrl: string;
 }
 
@@ -147,6 +149,8 @@ export interface FactCard {
   relatedLegislatorIds?: string[]; // 関連する議員ID（Legislator.id）
   publishedAt: string; // 公開日（ISO 8601）
   updatedAt?: string; // 更新日（ISO 8601）
+  asOf?: string; // このカードの数字を集計した時点。公開・更新日とは別。
+  historical?: boolean; // 過去の収録状況を残す保存版
 }
 
 /** 議員の補足プロフィール（当選回数・役職・委員会）。出典つき。議員IDで結合する。 */
@@ -312,4 +316,52 @@ export interface Candidate {
   occupation?: string; // 職業（選管の発表どおり）
   filedAt: string; // 届出日（YYYY-MM-DD）
   sourceUrl: string; // 選挙管理委員会の発表（必須）
+}
+
+/** 国会発言APIの照会履歴。公開更新日や名簿の照合日とは別に保持する。 */
+export interface SpeechCollectionStatus {
+  sourceUrl: string;
+  lastSuccessfulCheck: string | null;
+  from: string;
+  until: string;
+  targetCount: number;
+  succeededCount: number;
+  failedIds: string[];
+}
+
+// --- 暮らしから読む、具体的な政策・計画の確認状況 ---
+
+/** 記述と根拠資料の対応。空配列は「今回未確認」など、確認範囲を説明する記述に限る。 */
+export interface LivingTopicStatement {
+  text: string;
+  sourceIds: string[];
+}
+
+export interface LivingTopicResponsibility extends LivingTopicStatement {
+  level: Level;
+  label: string;
+}
+
+export interface LivingTopicSource {
+  id: string;
+  label: string;
+  url: string;
+  publishedAt?: string;
+}
+
+/** テーマ全体を採点せず、特定の制度・計画について分かっていることを記録する。 */
+export interface LivingTopicBriefData {
+  issueId: string;
+  title: string;
+  summary: string;
+  caseTitle: string;
+  confirmedAt: string;
+  status: LivingTopicStatement;
+  decisions: LivingTopicStatement[];
+  affected: LivingTopicStatement[];
+  responsibilities: LivingTopicResponsibility[];
+  costs: LivingTopicStatement[];
+  unknowns: LivingTopicStatement[];
+  nextChecks: LivingTopicStatement[];
+  sources: LivingTopicSource[];
 }

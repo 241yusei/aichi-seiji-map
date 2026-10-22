@@ -59,7 +59,7 @@ export default async function ThemeDetailPage({
       {matched.length === 0 ? (
         <p className="tnum border-y border-line py-3 text-sm text-muted">
           このテーマの取得済み発言：<span className="font-bold text-ink">0件</span>
-          （関連発言が会議録に記録され次第、追加します）
+          （本サイトの収録範囲で一致した発言がない状態です。実際の発言の有無は公式会議録でご確認ください）
         </p>
       ) : (
         <section>
@@ -69,10 +69,8 @@ export default async function ThemeDetailPage({
           </p>
           <div className="mt-4">
             <SpeechList
-              speeches={matched.map((s) => ({
-                ...s,
-                body: `${legById.get(s.legislatorId) ?? ""}｜${s.body}`,
-              }))}
+              speeches={matched}
+              speakerNames={Object.fromEntries(matched.map((s) => [s.legislatorId, legById.get(s.legislatorId) ?? ""]))}
             />
           </div>
         </section>

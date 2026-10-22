@@ -23,7 +23,7 @@ export function FundingPanel({ funding }: { funding: Funding[] }) {
               {funding.map((f, i) => (
                 <tr key={i} className="border-b border-line transition-colors last:border-0 hover:bg-subtle">
                   <td className="tnum whitespace-nowrap px-3 py-2.5 text-ink">{f.year}年</td>
-                  <td className="px-3 py-2.5 text-ink">{f.teamName ?? "—"}</td>
+                  <td className="px-3 py-2.5 text-ink">{f.teamName ?? "団体名は未確認（出典で照合）"}</td>
                   <td className="tnum whitespace-nowrap px-3 py-2.5 text-ink">
                     {f.totalIncome != null ? formatYen(f.totalIncome) : "—"}
                   </td>
@@ -45,7 +45,7 @@ export function FundingPanel({ funding }: { funding: Funding[] }) {
       )}
       {funding.length > 0 && (
         <p className="mt-3 border-l-2 border-line bg-subtle px-3 py-2 text-xs text-faint">
-          ※ 金額は収支報告書PDF（出典）からの転記です。正確な数値は各行の出典PDFでご確認ください。本サイトは金額と出典のみを示し、価値判断はしていません。
+          ※ 本サイトが収録した団体の報告分で、議員本人の全資金ではありません。対象年と団体の種類が異なる数値を単純比較できません。金額は収支報告書PDF（出典）からの転記です。正確な数値は各行の出典PDFでご確認ください。本サイトは金額と出典のみを示し、価値判断はしていません。
         </p>
       )}
       <p className="mt-3 text-xs">

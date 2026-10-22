@@ -1,0 +1,334 @@
+[
+  {
+    "issueId": "kosodate",
+    "title": "保育園に通っていない子も、通える制度",
+    "summary": "名古屋市の「こども誰でも通園制度」を例に、対象・利用時間・手続き・費用を分けて確認します。",
+    "caseTitle": "名古屋市こども誰でも通園制度（乳児等通園支援事業）",
+    "confirmedAt": "2026-10-22",
+    "status": {
+      "text": "名古屋市が利用案内と2026年10月時点の実施施設一覧を公開しています。",
+      "sourceIds": [
+        "nagoya-guide"
+      ]
+    },
+    "decisions": [
+      {
+        "text": "国は2026年度から全国の自治体で行う新たな給付として制度化。名古屋市では、子ども1人につき月10時間まで利用できます。",
+        "sourceIds": [
+          "national-system",
+          "nagoya-guide"
+        ]
+      },
+      {
+        "text": "利用前に名古屋市へ申請し、初めて利用する施設で面談を受けます。面談・予約には「つうえんポータル」を使います。",
+        "sourceIds": [
+          "nagoya-guide"
+        ]
+      }
+    ],
+    "affected": [
+      {
+        "text": "利用日時点で生後6か月から3歳未満で、保育所等に通っていない子どもが対象。保護者が働いていることは条件ではありません。",
+        "sourceIds": [
+          "nagoya-guide"
+        ]
+      },
+      {
+        "text": "受入年齢・曜日・空き状況は施設ごとに異なります。名古屋市外の方は、お住まいの自治体の案内を確認します。",
+        "sourceIds": [
+          "nagoya-guide",
+          "aichi-guide"
+        ]
+      }
+    ],
+    "responsibilities": [
+      {
+        "level": "national",
+        "label": "こども家庭庁",
+        "text": "全国の制度と給付の枠組み・実施の手引を示します。",
+        "sourceIds": [
+          "national-system"
+        ]
+      },
+      {
+        "level": "prefectural",
+        "label": "愛知県",
+        "text": "県内向けに制度を案内。実施施設・利用方法の問い合わせ先を、居住する市区町村としています。",
+        "sourceIds": [
+          "aichi-guide"
+        ]
+      },
+      {
+        "level": "municipal",
+        "label": "名古屋市・実施施設",
+        "text": "市が利用申請を受け付け、施設が事前面談・予約・受入れを行います。",
+        "sourceIds": [
+          "nagoya-guide"
+        ]
+      }
+    ],
+    "costs": [
+      {
+        "text": "利用料は施設ごとの設定です。給食費・おやつ代などが別途必要な場合があり、減免の対象となる世帯もあります。",
+        "sourceIds": [
+          "nagoya-guide"
+        ]
+      },
+      {
+        "text": "制度の財源には子ども・子育て支援金が充てられます。名古屋市分の総事業費・財源内訳は、このブリーフでは未確認です。",
+        "sourceIds": [
+          "national-system"
+        ]
+      }
+    ],
+    "unknowns": [
+      {
+        "text": "希望する施設の最新の空き枠、実際の利用料・実費・減免後の負担額は未確認です。利用前に施設の案内で確認する必要があります。",
+        "sourceIds": []
+      }
+    ],
+    "nextChecks": [
+      {
+        "text": "次に確認するのは、実施施設一覧の更新と希望施設の受入条件です。次回一覧の公表日は、今回の確認資料では確認できていません。",
+        "sourceIds": [
+          "nagoya-guide"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "nagoya-guide",
+        "label": "名古屋市：保護者向けの制度・利用案内（2026年10月19日更新）",
+        "url": "https://www.city.nagoya.jp/kodomo/kosodate/1009115/1009125/1033528/1036127.html"
+      },
+      {
+        "id": "national-system",
+        "label": "こども家庭庁：こども誰でも通園制度の概要・実施の手引",
+        "url": "https://www.cfa.go.jp/policies/hoiku/daredemo-tsuen/"
+      },
+      {
+        "id": "aichi-guide",
+        "label": "愛知県：制度の対象と利用方法の問い合わせ先",
+        "url": "https://www.pref.aichi.jp/soshiki/kosodate/daredemo-tsuen.html"
+      }
+    ]
+  },
+  {
+    "issueId": "transit",
+    "title": "通院・通学の足を、誰が支える？",
+    "summary": "愛知県の地域公共交通計画を追い、計画に書かれた支援と、実際の運行・利用実績を分けて読みます。",
+    "caseTitle": "愛知県地域公共交通計画（2024〜2026年度）",
+    "confirmedAt": "2026-10-22",
+    "status": {
+      "text": "県が計画を策定済み。2024年度の取組状況と、2026年3月31日更新の改正資料を公開しています。",
+      "sourceIds": [
+        "aichi-plan",
+        "annual-report"
+      ]
+    },
+    "decisions": [
+      {
+        "text": "計画期間は2024〜2026年度。県の施策に、市町村間を結ぶ路線バスの運行経費補助や、鉄道の安全・バリアフリー化への支援などを位置付けています。",
+        "sourceIds": [
+          "aichi-plan"
+        ]
+      },
+      {
+        "text": "2024年度の実施内容と指標を年次報告として公表。計画の目標と、どこまで進んだかを別々に確認できる構成です。",
+        "sourceIds": [
+          "annual-report"
+        ]
+      }
+    ],
+    "affected": [
+      {
+        "text": "通院・通学・買い物などで公共交通を使う人や、県内の市町村をまたいで移動する人に関わります。身近な市町村内交通も計画の支援対象です。",
+        "sourceIds": [
+          "annual-report"
+        ]
+      }
+    ],
+    "responsibilities": [
+      {
+        "level": "national",
+        "label": "国土交通省",
+        "text": "自治体に向けて計画の作成・運用の手引を公表し、制度の考え方を示します。",
+        "sourceIds": [
+          "national-guidance"
+        ]
+      },
+      {
+        "level": "prefectural",
+        "label": "愛知県",
+        "text": "広域交通の維持・充実や、市町村の計画づくり・国の補助制度活用への助言などを担います。",
+        "sourceIds": [
+          "annual-report"
+        ]
+      },
+      {
+        "level": "municipal",
+        "label": "市町村・交通事業者",
+        "text": "地域の実情に応じた身近な移動の維持に関わります。県の計画は、国・市町村・交通事業者との連携を前提としています。",
+        "sourceIds": [
+          "annual-report"
+        ]
+      }
+    ],
+    "costs": [
+      {
+        "text": "県は路線バスへの運行経費補助を施策として掲げています。これは個別路線の運賃や全路線の存続を一律に決めるものではありません。",
+        "sourceIds": [
+          "aichi-plan"
+        ]
+      },
+      {
+        "text": "計画全体の総事業費、路線別の補助額、今後の利用者負担は、このブリーフでは未確認です。",
+        "sourceIds": []
+      }
+    ],
+    "unknowns": [
+      {
+        "text": "自分の利用路線が今後何本・どの運賃で運行されるかは、この計画だけでは確定できません。路線ごとの最新の運行案内は未確認です。",
+        "sourceIds": []
+      }
+    ],
+    "nextChecks": [
+      {
+        "text": "次は2025年度以降の実績、2026年度末の目標の達成状況、次期計画の内容を確認します。各資料の次回公表日は未確認です。",
+        "sourceIds": [
+          "aichi-plan"
+        ]
+      },
+      {
+        "text": "国は2026年10月16日の改正地域交通法施行に合わせた第5版の手引を公開しています。県の次期計画への具体的な反映は未確認です。",
+        "sourceIds": [
+          "national-guidance"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "aichi-plan",
+        "label": "愛知県：地域公共交通計画・改正資料（2026年3月31日更新）",
+        "url": "https://www.pref.aichi.jp/soshiki/kotsu/kotsukeikaku.html"
+      },
+      {
+        "id": "annual-report",
+        "label": "愛知県：2024年度の取組状況（2026年3月・PDF）",
+        "url": "https://www.pref.aichi.jp/uploaded/attachment/609194.pdf"
+      },
+      {
+        "id": "national-guidance",
+        "label": "国土交通省：地域公共交通計画等の作成と運用の手引き",
+        "url": "https://www.mlit.go.jp/sogoseisaku/transport/sosei_transport_tk_000058.html"
+      }
+    ]
+  },
+  {
+    "issueId": "bousai",
+    "title": "防災計画の更新で、何が変わった？",
+    "summary": "愛知県が2026年6月に修正した地域防災計画を、情報の伝達・行政の体制・費用に分けて確認します。",
+    "caseTitle": "愛知県地域防災計画の2026年6月修正",
+    "confirmedAt": "2026-10-22",
+    "status": {
+      "text": "県の公式案内では、最終修正日は2026年6月2日。修正要旨と各計画の本文を公開しています。",
+      "sourceIds": [
+        "aichi-disaster-plan"
+      ]
+    },
+    "decisions": [
+      {
+        "text": "新しい防災気象情報の運用開始に合わせ、情報の名称や伝達・対応を修正。県の災害対策本部・非常配備の基準も見直しています。",
+        "sourceIds": [
+          "revision-summary"
+        ]
+      },
+      {
+        "text": "災害時の道路啓開を国が代行できる仕組みを追記。対象は、道路啓開計画で設定された県・名古屋市管理の道路です。",
+        "sourceIds": [
+          "revision-summary"
+        ]
+      }
+    ],
+    "affected": [
+      {
+        "text": "災害時の情報を受け取る県民と、それを伝え対応する行政機関に関わります。計画には予防・応急対応・復旧復興の役割が定められています。",
+        "sourceIds": [
+          "aichi-disaster-plan"
+        ]
+      }
+    ],
+    "responsibilities": [
+      {
+        "level": "national",
+        "label": "国・中部地方整備局",
+        "text": "国の防災基本計画等が県計画の見直しに関係します。今回の修正には、中部地方整備局による道路啓開代行を含みます。",
+        "sourceIds": [
+          "aichi-disaster-plan",
+          "revision-summary"
+        ]
+      },
+      {
+        "level": "prefectural",
+        "label": "愛知県防災会議・県",
+        "text": "県防災会議が地域防災計画を作成・修正。県は災害対策本部や職員配備の基準を定めます。",
+        "sourceIds": [
+          "aichi-disaster-plan",
+          "revision-summary"
+        ]
+      },
+      {
+        "level": "municipal",
+        "label": "市町村",
+        "text": "市町村は避難情報を住民に伝える役割を持ちます。県計画は県・市町村などの関係機関の連携を定めています。",
+        "sourceIds": [
+          "aichi-disaster-plan",
+          "revision-summary"
+        ]
+      }
+    ],
+    "costs": [
+      {
+        "text": "修正に伴う総費用、個別の防災工事・設備整備の予算額は、今回の確認資料では未確認です。計画の修正と、個別事業の予算・完成状況は分けて確認します。",
+        "sourceIds": []
+      }
+    ],
+    "unknowns": [
+      {
+        "text": "各市町村の計画・避難所・情報伝達手順への具体的な反映状況は、このブリーフでは未確認です。",
+        "sourceIds": []
+      }
+    ],
+    "nextChecks": [
+      {
+        "text": "次は市町村側の計画更新と、関連する予算・実施内容を確認します。次回の県計画修正日や、各事業の完了日は未確認です。",
+        "sourceIds": [
+          "aichi-disaster-plan"
+        ]
+      },
+      {
+        "text": "名古屋市は地域ごとの危険や避難場所を確認できるハザードマップを案内しています。県計画の概要と、自分の地域の情報を合わせて確認できます。",
+        "sourceIds": [
+          "nagoya-hazard"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "aichi-disaster-plan",
+        "label": "愛知県：地域防災計画（最終修正2026年6月2日・案内2026年10月1日更新）",
+        "url": "https://www.pref.aichi.jp/soshiki/bosai/bosai-keikaku.html"
+      },
+      {
+        "id": "revision-summary",
+        "label": "愛知県：地域防災計画の修正の要旨（2026年6月・PDF）",
+        "url": "https://www.pref.aichi.jp/uploaded/attachment/618988.pdf"
+      },
+      {
+        "id": "nagoya-hazard",
+        "label": "名古屋市：各種ハザードマップ等の説明",
+        "url": "https://www.city.nagoya.jp/bousaiportal/hazardmap/1048758.html"
+      }
+    ]
+  }
+]

@@ -57,6 +57,7 @@ export const voteSchema = z.object({
   billTitle: z.string().min(1),
   date: isoDate,
   result: z.enum(["yea", "nay", "absent", "not_recorded"]),
+  factionAtVote: z.string().min(1).optional(),
   sourceUrl: httpUrl,
 });
 
@@ -93,6 +94,8 @@ export const factCardSchema = z.object({
   relatedLegislatorIds: z.array(z.string()).optional(),
   publishedAt: isoDate,
   updatedAt: isoDate.optional(),
+  asOf: isoDate.optional(),
+  historical: z.boolean().optional(),
 });
 
 // 議員の補足プロフィール（当選回数・役職・委員会）。出典必須。
@@ -290,3 +293,37 @@ export const candidateSchema = z.object({
   sourceUrl: httpUrl,
 });
 export const candidatesSchema = z.array(candidateSchema);
+
+export const speechCollectionStatusSchema = z.object({
+  sourceUrl: httpUrl,
+  lastSuccessfulCheck: z.iso.date().nullable(),
+  from: z.iso.date(),
+  until: z.iso.date(),
+  targetCount: z.number().int().positive(),
+  succeededCount: z.number().int().nonnegative(),
+  failedIds: z.array(z.string().min(1)),
+}).refine((s) => s.from <= s.until, "照会期間の順序が不正です")
+  .refine((s) => s.succeededCount + s.failedIds.length === s.targetCount, "照会成否の件数が一致しません")
+;
+
+const sourcedStatementSchema = z.object({ text: z.string().min(1), sourceIds: z.array(z.string().min(1)) });
+export const livingTopicSchema = z.object({
+  issueId: z.enum(["kosodate", "transit", "bousai"]),
+  title: z.string().min(1), summary: z.string().min(1), caseTitle: z.string().min(1),
+  confirmedAt: z.iso.date(),
+  status: sourcedStatementSchema.extend({ sourceIds: z.array(z.string().min(1)).min(1) }),
+  decisions: z.array(sourcedStatementSchema).min(1),
+  affected: z.array(sourcedStatementSchema).min(1),
+  responsibilities: z.array(sourcedStatementSchema.extend({ level: levelSchema, label: z.string().min(1) })).min(1),
+  costs: z.array(sourcedStatementSchema).min(1), unknowns: z.array(sourcedStatementSchema).min(1),
+  nextChecks: z.array(sourcedStatementSchema).min(1),
+  sources: z.array(z.object({ id: z.string().min(1), label: z.string().min(1), url: httpUrl, publishedAt: z.iso.date().optional() })).min(1),
+}).superRefine((topic, ctx) => {
+  const ids = new Set(topic.sources.map((s) => s.id));
+  if (ids.size !== topic.sources.length) ctx.addIssue({ code: "custom", message: "出典IDが重複しています" });
+  for (const item of [topic.status, ...topic.decisions, ...topic.affected, ...topic.responsibilities, ...topic.costs, ...topic.unknowns, ...topic.nextChecks]) {
+    if (!item.sourceIds.length && !/未確認/.test(item.text)) ctx.addIssue({ code: "custom", message: "出典のない記述は未確認であることを明示してください" });
+    for (const id of item.sourceIds) if (!ids.has(id)) ctx.addIssue({ code: "custom", message: `不明な出典ID: ${id}` });
+  }
+});
+export const livingTopicsSchema = z.array(livingTopicSchema).length(3).refine((topics) => new Set(topics.map((t) => t.issueId)).size === 3, "暮らしの3テーマに重複があります");

@@ -1,5 +1,7 @@
+import { LivingTopicCards } from "@/components/LivingTopicCards";
+import { SpeechCoverage } from "@/components/DataCoverage";
 import Link from "next/link";
-import { ZipSearch } from "@/components/ZipSearch";
+import { RegionPicker } from "@/components/RegionPicker";
 import { CivicIllustration } from "@/components/CivicIllustration";
 import { TopicIcon } from "@/components/TopicIcon";
 import { getFactCards, getIssues, getLegislators, getSpeeches } from "@/lib/data";
@@ -25,54 +27,29 @@ export default function HomePage() {
 
   return (
     <div className="home-page">
-      <section
-        className="grid items-center gap-6 pb-8 pt-2 md:grid-cols-[1.35fr_1fr] md:gap-0 md:pb-12 md:pt-6"
-        aria-labelledby="home-title"
-      >
+      <section className="grid items-center gap-5 pb-5 pt-1 md:grid-cols-[1.35fr_1fr] md:gap-8 md:pb-8 md:pt-4" aria-labelledby="home-title">
         <div>
-          <p className="mb-6 flex items-center gap-2.5 text-xs font-medium tracking-[.08em] text-accent sm:text-sm">
+          <p className="mb-3 flex items-center gap-2 text-xs font-medium tracking-[.06em] text-accent sm:text-sm">
             <span className="h-2 w-2 rounded-full bg-signal" aria-hidden="true" />わたしと、あいちと、政治のこと。
           </p>
-          <h1 id="home-title" className="font-display hero-title">
-            政治を、<br />
-            <span className="text-accent">もっと身近に。</span>
-          </h1>
-          <p className="mt-7 text-[15px] leading-loose text-muted sm:text-base">
-            いつもの暮らしと、政治はつながっている。<br />
-            あなたの街の代表者や、気になる話題を、<br className="hidden sm:block" />
-            やさしい言葉と、確かな記録で。
-          </p>
-          <div className="mt-7 flex flex-wrap gap-3">
-            <Link href="#find-area" className="home-link home-link-primary">
-              あなたの地域から探す <span aria-hidden="true">↗</span>
-            </Link>
-            <Link href="/start/" className="home-link home-link-secondary">
-              はじめての方へ <span aria-hidden="true">→</span>
-            </Link>
-          </div>
-          <p className="mt-5 text-xs text-faint">だれかを薦めるのではなく、知るための入口です。</p>
+          <h1 id="home-title" className="font-display text-[clamp(2rem,5.5vw,4.5rem)] leading-[1.18]">政治を、<br /><span className="text-accent">もっと身近に。</span></h1>
+          <p className="mt-3 text-sm leading-relaxed text-muted sm:text-base">地域の代表者と、暮らしの話題を。<br />一次資料とやさしい解説で確かめよう。</p>
+          <Link href="/start/" className="link-ink mt-2 inline-flex min-h-11 items-center text-sm">はじめての方へ →</Link>
         </div>
-        <CivicIllustration />
+        <div className="hidden max-w-sm justify-self-end md:block"><CivicIllustration /></div>
       </section>
 
-      <section
-        id="find-area"
-        className="grid scroll-mt-6 items-center gap-6 rounded-2xl bg-calm p-6 lg:grid-cols-[.85fr_1.15fr] lg:gap-12 lg:p-8"
-        aria-labelledby="find-area-title"
-      >
-        <div>
-          <p className="eyebrow text-accent">まずは、あなたの街から</p>
-          <h2 id="find-area-title" className="font-display mt-2 text-2xl sm:text-[28px]">わたしの代表者って、だれ？</h2>
-          <p className="mt-2 text-sm text-muted">郵便番号で、国・県・市の代表者をまとめて。</p>
-        </div>
-        <div>
-          <ZipSearch />
-          <p className="mt-3 text-xs text-muted">
-            郵便番号検索は名古屋市内に対応。
-            <Link href="/municipalities/" className="link-ink">愛知県の市町村一覧から探す →</Link>
-          </p>
+      <section id="find-area" className="scroll-mt-6 rounded-2xl bg-calm p-5 sm:p-7" aria-labelledby="find-area-title">
+        <div className="grid gap-4 lg:grid-cols-[.8fr_1.2fr] lg:gap-10">
+          <div>
+            <h2 id="find-area-title" className="font-display text-xl sm:text-2xl">まずは、あなたのまちから</h2>
+            <p className="mt-2 text-xs leading-relaxed text-muted sm:text-sm">名古屋市は国・県・市の代表者へ。<br className="hidden lg:block" />ほかの市町村は首長・議員一覧へ。</p>
+          </div>
+          <RegionPicker />
         </div>
       </section>
+
+      <LivingTopicCards />
 
       <section className="home-section" aria-labelledby="themes-heading">
         <div className="flex flex-wrap items-end justify-between gap-4">
@@ -232,7 +209,8 @@ export default function HomePage() {
             </div>
           ))}
         </dl>
-        <p className="mt-3 text-right text-xs text-faint">収録データの基準日：{LAST_UPDATED} · 件数は活動の評価ではありません</p>
+        <p className="mt-3 text-right text-xs text-faint">サイト更新日：{LAST_UPDATED} · 各資料の確認日とは異なります · 件数は活動の評価ではありません</p>
+        <SpeechCoverage />
       </section>
     </div>
   );

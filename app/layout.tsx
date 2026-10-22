@@ -207,7 +207,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               )}
             </p>
             <p className="mt-2 text-xs text-faint">
-              データ最終更新：{LAST_UPDATED}（手動更新のため、改選などで内容が変わることがあります）。
+              サイト更新日：{LAST_UPDATED}。各資料の確認日・収録期間は別に表示します。
               訂正・更新は{" "}
               <Link href="/corrections" className="link-ink">
                 訂正・更新ログ

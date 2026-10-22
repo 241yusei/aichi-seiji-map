@@ -10,8 +10,7 @@ import { LAST_UPDATED } from "@/lib/site-meta";
 export const dynamic = "force-static";
 
 const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://aichi-seiji.example.jp";
-// 全データはこの基準日を境にまとめて更新される（1ページ単位のタイムスタンプは持たない）ため、
-// lastModified はデータ基準日を一律で使う。捏造・推測にならない、実態に即した値。
+// lastModified はサイトの編集内容の更新日。各資料の確認日ではない。
 const LAST_MOD = new Date(LAST_UPDATED);
 
 // 静的サイトマップ。地域名・議員名での検索流入を意識して全ページを列挙する。

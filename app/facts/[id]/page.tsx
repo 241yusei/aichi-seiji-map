@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getFactCard, getFactCards, getIssues } from "@/lib/data";
+import { getFactCard, getFactCards, getIssues, getLegislator } from "@/lib/data";
 import { FactCardView } from "@/components/FactCardView";
 import { getRelatedIssuesForFactCard } from "@/lib/related";
 
@@ -46,10 +46,29 @@ export default async function FactDetailPage({
 
   // 手動キュレーション（relatedIssueIds）優先＋キーワードマッチで補完（最大3件・issues/[id] と対の実装）。
   const relatedIssues = getRelatedIssuesForFactCard(card, getIssues());
+  const relatedLegislators = (card.relatedLegislatorIds ?? []).flatMap((legislatorId) => {
+    const legislator = getLegislator(legislatorId);
+    return legislator ? [legislator] : [];
+  });
 
   return (
     <div className="space-y-10">
       <FactCardView card={card} />
+
+      {relatedLegislators.length > 0 && (
+        <section className="border-t border-line pt-5">
+          <h2 className="eyebrow text-faint">
+            {card.historical ? "現在の収録記録を確認" : "関連する議員の記録"}
+          </h2>
+          <div className="mt-2 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+            {relatedLegislators.map((legislator) => (
+              <Link key={legislator.id} href={`/legislators/${legislator.id}/`} className="link-ink">
+                {legislator.name}
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {relatedIssues.length > 0 && (
         <section className="border-t border-line pt-5">

@@ -7,7 +7,7 @@ import { SpeechCard } from "./SpeechCard";
 // 議員の発言一覧。初期は新しい順5件＋「さらに表示」で段階開示（長文ページのスキャン性確保）。
 const INITIAL = 5;
 
-export function SpeechList({ speeches }: { speeches: SpeechRecord[] }) {
+export function SpeechList({ speeches, speakerNames }: { speeches: SpeechRecord[]; speakerNames?: Record<string, string> }) {
   const [shown, setShown] = useState(INITIAL);
   const visible = speeches.slice(0, shown);
   const rest = speeches.length - shown;
@@ -16,7 +16,7 @@ export function SpeechList({ speeches }: { speeches: SpeechRecord[] }) {
     <div>
       <div className="space-y-3">
         {visible.map((s) => (
-          <SpeechCard key={s.id} speech={s} />
+          <SpeechCard key={s.id} speech={s} speakerName={speakerNames?.[s.legislatorId]} />
         ))}
       </div>
       {rest > 0 && (

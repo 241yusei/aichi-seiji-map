@@ -105,7 +105,7 @@ export default function Unified2027Page() {
           <SourceLink href="https://www.city.obu.aichi.jp/shisei/senkyo/senkyo_info/1004151/1004152.html">
             大府市選挙管理委員会「各種選挙の任期満了日」
           </SourceLink>
-          。現員数は本サイト収録の各議会公式名簿に基づく（基準日{LAST_UPDATED}）。
+          。現員数は本サイト収録の各議会公式名簿に基づく（サイト更新日{LAST_UPDATED}・名簿の照合日とは異なります）。
         </p>
       </section>
 
@@ -173,7 +173,7 @@ export default function Unified2027Page() {
       </section>
 
       <p className="measure border-t border-line pt-5 text-xs text-faint">
-        情報の基準日：{LAST_UPDATED}。改選の対象・期日は今後の特例法・各選挙管理委員会の告示で確定します。
+        サイト更新日：{LAST_UPDATED}。改選の対象・期日は今後の特例法・各選挙管理委員会の告示で確定します。
         本サイトは特定の政党・候補者への投票を呼びかけません。
       </p>
 

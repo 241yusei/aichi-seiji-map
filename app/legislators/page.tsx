@@ -1,3 +1,4 @@
+import { RosterCoverage } from "@/components/DataCoverage";
 import type { Metadata } from "next";
 import { getLegislators } from "@/lib/data";
 import type { LegislatorListItem } from "@/lib/types";
@@ -26,8 +27,9 @@ export default function LegislatorsPage() {
           国会（愛知選出）・愛知県議会・愛知の全54市町村。層・会派・地域で絞り込めます。
         </p>
         <p className="mt-2 text-xs text-faint">
-          愛知県議会は定数102に対し本サイト収録97名（基準日時点・欠員等）。名簿は各議会の公式ページに基づきます。
+          愛知県議会は定数102に対し本サイト収録97名（本サイト収録分・欠員等）。名簿は各議会の公式ページに基づきます。
         </p>
+        <RosterCoverage />
       </header>
 
       <div className="mt-6 border border-line bg-surface p-4">

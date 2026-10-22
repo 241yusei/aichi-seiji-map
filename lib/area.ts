@@ -29,12 +29,28 @@ export const NAGOYA_WARDS: NagoyaWard[] = [
   { ward: "中川区", slug: "nakagawa", prefDistrict: "名古屋市中川区", shugiin: "愛知5区", zip3: ["454"] },
 ];
 
-/** 郵便番号（7桁またはハイフン付き）の上3桁から名古屋市の区を引く。市外・対象外は null。 */
+export type PostalCodeResult =
+  | { status: "found"; ward: NagoyaWard }
+  | { status: "empty" | "length" | "format" | "outside" };
+
+/** 全角数字・一般的なハイフンを受け付け、7桁を確認してから区を案内する。
+ * 既存の上3桁対応表による案内であり、個々の郵便番号の実在確認は行わない。
+ */
+export function checkNagoyaPostalCode(value: string): PostalCodeResult {
+  const normalized = value.normalize("NFKC").trim().replace(/[‐‑‒–—―−ー]/g, "-");
+  if (!normalized) return { status: "empty" };
+  if (!/^[0-9-]+$/.test(normalized)) return { status: "format" };
+  const digits = normalized.replace(/-/g, "");
+  if (digits.length !== 7) return { status: "length" };
+  if (!/^(?:[0-9]{7}|[0-9]{3}-[0-9]{4})$/.test(normalized)) return { status: "format" };
+  const ward = NAGOYA_WARDS.find((w) => w.zip3.includes(digits.slice(0, 3)));
+  return ward ? { status: "found", ward } : { status: "outside" };
+}
+
+/** 郵便番号（7桁）から名古屋市の区を引く。形式不正・市外は null。 */
 export function resolveZipToWard(zip: string): NagoyaWard | null {
-  const digits = zip.replace(/[^0-9]/g, "");
-  if (digits.length < 3) return null;
-  const p3 = digits.slice(0, 3);
-  return NAGOYA_WARDS.find((w) => w.zip3.includes(p3)) ?? null;
+  const result = checkNagoyaPostalCode(zip);
+  return result.status === "found" ? result.ward : null;
 }
 
 /** URL slug から区を引く。 */
