@@ -8,7 +8,7 @@ export function LivingTopicCards() {
   return <section className="home-section" aria-labelledby="living-topics-heading">
     <p className="eyebrow text-accent">暮らしの3テーマ</p>
     <h2 id="living-topics-heading" className="font-display section-heading mt-3">何が決まり、次はどうなる？</h2>
-    <p className="mt-3 text-sm text-muted">子育て・公共交通・防災の具体的な制度や計画を、決まったことと未確認のことに分けて読みます。地域によって対象が異なります。</p>
+    <p className="mt-3 text-sm text-muted">子育て・公共交通・防災から、気になる話題をひとつ選んでください。決まったことと未確認のことを読み、最後に公式の一次資料で確かめられます。地域によって対象が異なります。</p>
     <div className="mt-5 grid gap-4 md:grid-cols-3">
       {topics.map((topic) => <Link key={topic.issueId} href={`/issues/${topic.issueId}/#living-topic`} className="home-card flex flex-col border border-line bg-surface p-5">
         <span className="eyebrow text-accent">{topic.title}</span>

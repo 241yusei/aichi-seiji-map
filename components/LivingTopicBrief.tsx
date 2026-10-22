@@ -1,3 +1,5 @@
+import { JourneyMilestone } from "./JourneyMilestone";
+import { JourneyGuide } from "./JourneyGuide";
 import type { LivingTopicBriefData, LivingTopicStatement } from "@/lib/types";
 import { formatDate } from "@/lib/format";
 import { SourceLink } from "./SourceLink";
@@ -16,6 +18,7 @@ function Statement({ item, topic }: { item: LivingTopicStatement; topic: LivingT
               <a
                 key={id}
                 href={`#living-source-${topic.issueId}-${id}`}
+                data-usage-event="source_reference_opened"
                 className="link-ink whitespace-nowrap"
                 aria-label={`出典${number}を確認`}
               >
@@ -47,11 +50,16 @@ export function LivingTopicBrief({ topic }: { topic: LivingTopicBriefData }) {
   return (
     <section id="living-topic" aria-labelledby={headingId} className="scroll-mt-24 overflow-hidden rounded-2xl border border-line bg-surface">
       <header className="border-b border-line bg-subtle p-5 sm:p-6">
+        <JourneyMilestone event="living_topic_viewed" />
         <p className="eyebrow text-accent-deep">暮らしから、決まったことを読む</p>
         <h2 id={headingId} className="font-display mt-2 text-2xl leading-snug sm:text-3xl">{topic.title}</h2>
         <p className="measure mt-3 text-sm leading-relaxed text-muted">{topic.summary}</p>
         <p className="mt-3 text-xs text-faint">確認日：<time dateTime={topic.confirmedAt}>{formatDate(topic.confirmedAt)}</time></p>
       </header>
+
+      <div className="border-b border-line p-4 sm:px-6">
+        <JourneyGuide stage="source" headingLevel="h3" />
+      </div>
 
       <div className="border-b border-line p-5 sm:px-6">
         <p className="eyebrow text-faint">今回追う制度・計画</p>
@@ -88,13 +96,13 @@ export function LivingTopicBrief({ topic }: { topic: LivingTopicBriefData }) {
         </ul>
       </section>
 
-      <footer className="border-t border-line p-5 sm:px-6">
-        <h3 className="text-sm font-bold text-ink">確認に使った一次資料</h3>
+      <footer id="living-sources" tabIndex={-1} aria-labelledby="living-sources-heading" className="scroll-mt-24 border-t border-line p-5 sm:px-6">
+        <h3 id="living-sources-heading" className="text-sm font-bold text-ink">確認に使った一次資料</h3>
         <ol className="mt-3 space-y-2 text-sm">
           {topic.sources.map((source, index) => (
-            <li key={source.id} id={`living-source-${topic.issueId}-${source.id}`} className="scroll-mt-24">
-              <span className="mr-2 text-xs text-faint">{index + 1}.</span>
-              <SourceLink href={source.url}>{source.label}</SourceLink>
+            <li key={source.id} id={`living-source-${topic.issueId}-${source.id}`} className="scroll-mt-24 flex items-baseline gap-2">
+              <span className="shrink-0 text-xs text-faint">{index + 1}.</span>
+              <SourceLink href={source.url} usageEvent="source_external_opened" className="link-ink min-h-11 min-w-0 flex-1 py-2.5">{source.label}</SourceLink>
             </li>
           ))}
         </ol>
