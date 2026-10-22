@@ -1,4 +1,3 @@
-import { RosterCoverage } from "@/components/DataCoverage";
 import type { Metadata } from "next";
 import { getExecutives } from "@/lib/data";
 import { SourceLink } from "@/components/SourceLink";
@@ -94,7 +93,7 @@ export default function ExecutivesPage() {
             caption={`計${executives.length}人（各自治体公式サイトより）`}
           />
         </div>
-        <RosterCoverage />
+        <p className="mt-2 text-xs text-muted">首長の名簿・所属・役職の個別照合日：未記録。議員名簿の確認状況とは異なります。最新は各自治体の公式出典でご確認ください。</p>
       </header>
 
       {governor.length > 0 && (

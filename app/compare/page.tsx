@@ -21,6 +21,7 @@ export default function ComparePage() {
           2人の議員を選ぶと、当選回数・主な役職・発言数・採決・政治資金を並べて見られます。
           優劣をつけるためではなく、事実を並べて確かめるための機能です。中立・投票誘導はしません。
         </p>
+        <p className="mt-3 text-xs leading-relaxed text-muted">役職・所属の確認日と出典は各議員ページで確認できます。当選回数・略歴は今回の名簿照合とは別の収録項目です。</p>
       </header>
 
       <CompareClient />

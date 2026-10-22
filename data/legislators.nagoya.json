@@ -8,7 +8,26 @@
     "district": "名古屋市中川区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-78fa75b4",
@@ -19,7 +38,26 @@
     "district": "名古屋市中川区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-43333e11",
@@ -30,7 +68,26 @@
     "district": "名古屋市西区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-c7270177",
@@ -41,7 +98,26 @@
     "district": "名古屋市千種区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-d45cdee8",
@@ -52,7 +128,26 @@
     "district": "名古屋市緑区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-6026c08e",
@@ -63,7 +158,26 @@
     "district": "名古屋市西区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-87c235ae",
@@ -74,7 +188,26 @@
     "district": "名古屋市東区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-b06c0c39",
@@ -85,7 +218,26 @@
     "district": "名古屋市中村区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-abd8c257",
@@ -96,7 +248,26 @@
     "district": "名古屋市名東区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-b15a35ea",
@@ -107,7 +278,26 @@
     "district": "名古屋市西区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-60cbf20d",
@@ -118,7 +308,26 @@
     "district": "名古屋市緑区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-488d7acd",
@@ -129,7 +338,26 @@
     "district": "名古屋市昭和区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-997a6de6",
@@ -140,7 +368,26 @@
     "district": "名古屋市中村区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-2707f126",
@@ -151,7 +398,26 @@
     "district": "名古屋市北区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-b14066e4",
@@ -162,7 +428,26 @@
     "district": "名古屋市緑区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-3ee2c190",
@@ -173,7 +458,26 @@
     "district": "名古屋市守山区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-ca0e6d8b",
@@ -184,7 +488,26 @@
     "district": "名古屋市昭和区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-38507f8c",
@@ -195,7 +518,26 @@
     "district": "名古屋市港区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-20a0f9f7",
@@ -206,7 +548,26 @@
     "district": "名古屋市千種区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-36d5a5c2",
@@ -217,7 +578,26 @@
     "district": "名古屋市守山区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-1b6c64d5",
@@ -228,7 +608,26 @@
     "district": "名古屋市中川区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-438c29df",
@@ -239,7 +638,26 @@
     "district": "名古屋市瑞穂区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-3dd90d4d",
@@ -250,7 +668,26 @@
     "district": "名古屋市名東区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-563f7f52",
@@ -261,7 +698,26 @@
     "district": "名古屋市東区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-ab837f9a",
@@ -272,7 +728,26 @@
     "district": "名古屋市中川区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-f2d6be72",
@@ -283,7 +758,26 @@
     "district": "名古屋市中村区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-28fd1456",
@@ -294,7 +788,26 @@
     "district": "名古屋市緑区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-dee010ba",
@@ -305,7 +818,26 @@
     "district": "名古屋市守山区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-f170e563",
@@ -316,7 +848,26 @@
     "district": "名古屋市南区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-0db3ac99",
@@ -327,7 +878,26 @@
     "district": "名古屋市東区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-6cd3ed6b",
@@ -338,7 +908,26 @@
     "district": "名古屋市西区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-d7aa7ccd",
@@ -349,7 +938,26 @@
     "district": "名古屋市港区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-09403fe6",
@@ -360,7 +968,26 @@
     "district": "名古屋市千種区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-513e5e4f",
@@ -371,7 +998,26 @@
     "district": "名古屋市天白区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-0783b9a8",
@@ -382,7 +1028,26 @@
     "district": "名古屋市天白区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-b11be3f6",
@@ -393,7 +1058,26 @@
     "district": "名古屋市天白区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-5621e7c2",
@@ -404,7 +1088,26 @@
     "district": "名古屋市千種区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-b9ca09aa",
@@ -415,7 +1118,26 @@
     "district": "名古屋市北区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-24cfeef5",
@@ -426,7 +1148,26 @@
     "district": "名古屋市中区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-81f10835",
@@ -437,7 +1178,26 @@
     "district": "名古屋市中川区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-4208195d",
@@ -448,7 +1208,26 @@
     "district": "名古屋市天白区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-f4222c2f",
@@ -459,7 +1238,26 @@
     "district": "名古屋市中区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-dede77b3",
@@ -470,7 +1268,26 @@
     "district": "名古屋市緑区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-bb0345bb",
@@ -481,7 +1298,26 @@
     "district": "名古屋市中川区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-918116c1",
@@ -492,7 +1328,26 @@
     "district": "名古屋市緑区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-07613be2",
@@ -503,7 +1358,26 @@
     "district": "名古屋市中区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-420e7cdb",
@@ -514,7 +1388,26 @@
     "district": "名古屋市名東区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-8f4121f3",
@@ -525,7 +1418,26 @@
     "district": "名古屋市天白区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-ae51c186",
@@ -536,7 +1448,26 @@
     "district": "名古屋市昭和区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-0d987f9f",
@@ -547,7 +1478,26 @@
     "district": "名古屋市名東区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-d1b6736f",
@@ -558,7 +1508,26 @@
     "district": "名古屋市守山区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-424cc219",
@@ -569,7 +1538,26 @@
     "district": "名古屋市南区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-9ee1d2cd",
@@ -580,7 +1568,26 @@
     "district": "名古屋市北区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-b134207e",
@@ -591,7 +1598,26 @@
     "district": "名古屋市熱田区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-5a7fa5ae",
@@ -602,7 +1628,26 @@
     "district": "名古屋市北区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-02200c6f",
@@ -613,7 +1658,26 @@
     "district": "名古屋市瑞穂区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-630b92ce",
@@ -624,7 +1688,26 @@
     "district": "名古屋市名東区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-eebabc19",
@@ -635,7 +1718,26 @@
     "district": "名古屋市南区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-a71877aa",
@@ -646,7 +1748,26 @@
     "district": "名古屋市瑞穂区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-b144456b",
@@ -657,7 +1778,26 @@
     "district": "名古屋市守山区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-efc5df75",
@@ -668,7 +1808,26 @@
     "district": "名古屋市緑区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-27f756ef",
@@ -679,7 +1838,26 @@
     "district": "名古屋市中村区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-26a4a8ff",
@@ -690,7 +1868,26 @@
     "district": "名古屋市熱田区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-0004f32a",
@@ -701,7 +1898,26 @@
     "district": "名古屋市千種区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-2c7d4ca4",
@@ -712,7 +1928,26 @@
     "district": "名古屋市南区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-00df6d77",
@@ -723,7 +1958,26 @@
     "district": "名古屋市港区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-f5db7f52",
@@ -734,7 +1988,26 @@
     "district": "名古屋市港区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-2516a766",
@@ -745,6 +2018,25 @@
     "district": "名古屋市北区",
     "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
     "govCode": "23100",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html"
+        ],
+        "note": "公式50音別名簿の氏名・ふりがな・選出区を照合。資料更新日は2026-05-22で、「○日現在」の資料基準日は明記されていない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+        ],
+        "note": "会派別名簿（2026-05-21更新）と50音別名簿（2026-05-22更新）を照合。partyは公式の会派名であり、政党所属を推測した値ではない。資料基準日の明記なし。"
+      }
+    }
   }
 ]

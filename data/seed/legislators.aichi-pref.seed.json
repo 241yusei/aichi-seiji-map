@@ -1,99 +1,2621 @@
 [
-  { "name": "手塚将之", "kana": "てづかまさゆき", "party": "あいち民主", "district": "名古屋市千種区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "東ゆうこ", "kana": "ひがしゆうこ", "party": "減税日本", "district": "名古屋市千種区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "政木りか", "kana": "まさきりか", "party": "自由民主党", "district": "名古屋市東区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-003.html" },
-  { "name": "松川浩明", "kana": "まつかわひろあき", "party": "自由民主党", "district": "名古屋市北区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "井上しんや", "kana": "いのうえしんや", "party": "減税日本", "district": "名古屋市北区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "田中泰彦", "kana": "たなかやすひこ", "party": "自由民主党", "district": "名古屋市西区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "しまぶくろ朝太郎", "kana": "しまぶくろあさたろう", "party": "減税日本", "district": "名古屋市西区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "寺西むつみ", "kana": "てらにしむつみ", "party": "自由民主党", "district": "名古屋市中村区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "鳴海やすひろ", "kana": "なるみやすひろ", "party": "あいち民主", "district": "名古屋市中村区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "ますだ裕二", "kana": "ますだゆうじ", "party": "自由民主党", "district": "名古屋市中区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "谷口知美", "kana": "たにぐちともみ", "party": "あいち民主", "district": "名古屋市昭和区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "成田修", "kana": "なりたおさむ", "party": "自由民主党", "district": "名古屋市昭和区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-012.html" },
-  { "name": "川嶋太郎", "kana": "かわしまたろう", "party": "自由民主党", "district": "名古屋市瑞穂区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "高木ひろし", "kana": "たかぎひろし", "party": "あいち民主", "district": "名古屋市瑞穂区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "かじ山義章", "kana": "かじやまよしあき", "party": "あいち民主", "district": "名古屋市熱田区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "村嶌嘉将", "kana": "むらしまよしまさ", "party": "あいち民主", "district": "名古屋市中川区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-016.html" },
-  { "name": "いなもと和仁", "kana": "いなもとかずひと", "party": "自由民主党", "district": "名古屋市中川区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "直江弘文", "kana": "なおえひろふみ", "party": "自由民主党", "district": "名古屋市港区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "安井伸治", "kana": "やすいしんじ", "party": "あいち民主", "district": "名古屋市港区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "江原史朗", "kana": "えはらふみろう", "party": "あいち民主", "district": "名古屋市南区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "森井元志", "kana": "もりいもとし", "party": "あいち民主", "district": "名古屋市守山区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "南部文宏", "kana": "なんぶふみひろ", "party": "自由民主党", "district": "名古屋市守山区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "松本まもる", "kana": "まつもとまもる", "party": "あいち民主", "district": "名古屋市緑区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "増田成美", "kana": "ますだなるみ", "party": "自由民主党", "district": "名古屋市緑区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "岡明彦", "kana": "おかあきひこ", "party": "公明党", "district": "名古屋市緑区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "富田昭雄", "kana": "とみたあきお", "party": "あいち民主", "district": "名古屋市名東区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "筒井タカヤ", "kana": "つついたかや", "party": "無所属（県政自民クラブ）", "district": "名古屋市名東区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "須崎かん", "kana": "すざきかん", "party": "自由民主党", "district": "名古屋市天白区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "古林千恵", "kana": "こばやしちえ", "party": "減税日本", "district": "名古屋市天白区", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "丹羽洋章", "kana": "にわひろあき", "party": "自由民主党", "district": "豊橋市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "大久保真一", "kana": "おおくぼしんいち", "party": "公明党", "district": "豊橋市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "中村竜彦", "kana": "なかむらたつひこ", "party": "自由民主党", "district": "豊橋市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "杉浦正和", "kana": "すぎうらまさかず", "party": "自由民主党", "district": "豊橋市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "下奥奈歩", "kana": "しもおくなほ", "party": "無所属（日本共産党）", "district": "豊橋市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "中根義高", "kana": "なかねよしたか", "party": "自由民主党", "district": "岡崎市及び額田郡", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "鈴木まさと", "kana": "すずきまさと", "party": "あいち民主", "district": "岡崎市及び額田郡", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "山口健", "kana": "やまぐちけん", "party": "あいち民主", "district": "岡崎市及び額田郡", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "園山康男", "kana": "そのやまやすお", "party": "無所属", "district": "岡崎市及び額田郡", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "新海正春", "kana": "しんかいまさはる", "party": "自由民主党", "district": "岡崎市及び額田郡", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-041.html" },
-  { "name": "高橋正子", "kana": "たかはしまさこ", "party": "あいち民主", "district": "一宮市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "木藤俊郎", "kana": "きとうとしろう", "party": "公明党", "district": "一宮市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "神戸健太郎", "kana": "かんべけんたろう", "party": "自由民主党", "district": "一宮市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "平松利英", "kana": "ひらまつとしひで", "party": "自由民主党", "district": "一宮市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "佐藤英俊", "kana": "さとうひでとし", "party": "自由民主党", "district": "一宮市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "島倉誠", "kana": "しまくらまこと", "party": "自由民主党", "district": "瀬戸市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "長江正成", "kana": "ながえまさなり", "party": "あいち民主", "district": "瀬戸市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "朝倉浩一", "kana": "あさくらこういち", "party": "あいち民主", "district": "半田市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "杉浦友昭", "kana": "すぎうらともあき", "party": "自由民主党", "district": "半田市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "神戸洋美", "kana": "かんべひろみ", "party": "自由民主党", "district": "春日井市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "伊藤貴治", "kana": "いとうたかはる", "party": "自由民主党", "district": "春日井市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "日比たけまさ", "kana": "ひびたけまさ", "party": "あいち民主", "district": "春日井市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "末永けい", "kana": "すえながけい", "party": "無所属", "district": "春日井市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "藤原ひろき", "kana": "ふじわらひろき", "party": "自由民主党", "district": "豊川市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "浦野隼次", "kana": "うらのはやじ", "party": "自由民主党", "district": "豊川市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "中野治美", "kana": "なかのはるみ", "party": "自由民主党", "district": "津島市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "杉浦哲也", "kana": "すぎうらてつや", "party": "自由民主党", "district": "碧南市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "細井真司", "kana": "ほそいしんじ", "party": "あいち民主", "district": "刈谷市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "神谷まさひろ", "kana": "かみやまさひろ", "party": "無所属", "district": "刈谷市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "阿部洋祐", "kana": "あべようすけ", "party": "あいち民主", "district": "豊田市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "桜井秀樹", "kana": "さくらいひでき", "party": "あいち民主", "district": "豊田市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "加藤貴志", "kana": "かとうたかし", "party": "公明党", "district": "豊田市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "神谷和利", "kana": "かみやかずとし", "party": "自由民主党", "district": "豊田市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "今井隆喜", "kana": "いまいたかき", "party": "自由民主党", "district": "安城市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "永田敦史", "kana": "ながたあつし", "party": "無所属", "district": "安城市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "山田たかお", "kana": "やまだたかお", "party": "自由民主党", "district": "西尾市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "藤原聖", "kana": "ふじわらさとし", "party": "あいち民主", "district": "西尾市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "喚田孝博", "kana": "よびたたかひろ", "party": "無所属", "district": "蒲郡市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-071.html" },
-  { "name": "中村貴文", "kana": "なかむらたかふみ", "party": "自由民主党", "district": "犬山市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "杉江繁樹", "kana": "すぎえしげき", "party": "自由民主党", "district": "常滑市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "村瀬正臣", "kana": "むらせまさおみ", "party": "自由民主党", "district": "江南市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "山下智也", "kana": "やましたともや", "party": "自由民主党", "district": "小牧市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "久保田浩文", "kana": "くぼたひろふみ", "party": "自由民主党", "district": "稲沢市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "鈴木純", "kana": "すずきじゅん", "party": "あいち民主", "district": "稲沢市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "峰野修", "kana": "みねのおさむ", "party": "自由民主党", "district": "新城市及び北設楽郡", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "神野博史", "kana": "じんのひろし", "party": "自由民主党", "district": "東海市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "島孝則", "kana": "しまたかのり", "party": "あいち民主", "district": "東海市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "日高章", "kana": "ひだかあきら", "party": "自由民主党", "district": "大府市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "宮島謙治", "kana": "みやじまけんじ", "party": "自由民主党", "district": "知多市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "柴田高伸", "kana": "しばたたかのぶ", "party": "無所属", "district": "知立市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "青山省三", "kana": "あおやましょうぞう", "party": "自由民主党", "district": "尾張旭市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "柳沢英希", "kana": "やなぎさわひでき", "party": "自由民主党", "district": "高浜市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "高桑敏直", "kana": "たかくわとしなお", "party": "自由民主党", "district": "岩倉市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "坂田憲治", "kana": "さかたけんじ", "party": "自由民主党", "district": "豊明市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "近藤裕人", "kana": "こんどうひろと", "party": "自由民主党", "district": "日進市及び愛知郡", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "福田喜夫", "kana": "ふくだよしお", "party": "あいち民主", "district": "日進市及び愛知郡", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "山本浩史", "kana": "やまもとひろし", "party": "自由民主党", "district": "田原市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "横井五六", "kana": "よこいごろく", "party": "自由民主党", "district": "愛西市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "阿部武史", "kana": "あべたけし", "party": "無所属", "district": "清須市、北名古屋市及び西春日井郡", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "水野富夫", "kana": "みずのとみお", "party": "自由民主党", "district": "清須市、北名古屋市及び西春日井郡", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "朝日将貴", "kana": "あさひまさき", "party": "自由民主党", "district": "弥富市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "林文夫", "kana": "はやしふみお", "party": "自由民主党", "district": "みよし市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "小木曽史人", "kana": "おぎそふみひと", "party": "あいち民主", "district": "あま市及び海部郡", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "石塚吾歩路", "kana": "いしづかあぽろ", "party": "自由民主党", "district": "あま市及び海部郡", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "石井芳樹", "kana": "いしいよしき", "party": "自由民主党", "district": "長久手市", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "鈴木喜博", "kana": "すずきよしひろ", "party": "自由民主党", "district": "丹羽郡", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "河合洋介", "kana": "かわいようすけ", "party": "あいち民主", "district": "知多郡第一", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" },
-  { "name": "横田たかし", "kana": "よこたたかし", "party": "自由民主党", "district": "知多郡第二", "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html" }
+  {
+    "name": "手塚将之",
+    "kana": "てづかまさゆき",
+    "party": "あいち民主",
+    "district": "名古屋市千種区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-1e588571",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "東ゆうこ",
+    "kana": "ひがしゆうこ",
+    "party": "減税日本",
+    "district": "名古屋市千種区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-53eb7b7a",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "政木りか",
+    "kana": "まさきりか",
+    "party": "自由民主党",
+    "district": "名古屋市東区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-003.html",
+    "id": "pref-cd65330e",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "松川浩明",
+    "kana": "まつかわこうめい",
+    "party": "自由民主党",
+    "district": "名古屋市北区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-03a3f9a3",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "井上しんや",
+    "kana": "いのうえしんや",
+    "party": "減税日本",
+    "district": "名古屋市北区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-2c749bb4",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "田中泰彦",
+    "kana": "たなかやすひこ",
+    "party": "自由民主党",
+    "district": "名古屋市西区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-5e298399",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "しまぶくろ朝太郎",
+    "kana": "しまぶくろちょうたろう",
+    "party": "減税日本",
+    "district": "名古屋市西区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-9283cb05",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "寺西むつみ",
+    "kana": "てらにしむつみ",
+    "party": "自由民主党",
+    "district": "名古屋市中村区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-29c2fd02",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "鳴海やすひろ",
+    "kana": "なるみやすひろ",
+    "party": "あいち民主",
+    "district": "名古屋市中村区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-21841325",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "ますだ裕二",
+    "kana": "ますだゆうじ",
+    "party": "自由民主党",
+    "district": "名古屋市中区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-71243978",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "谷口知美",
+    "kana": "たにぐちともみ",
+    "party": "あいち民主",
+    "district": "名古屋市昭和区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-e9453251",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "成田修",
+    "kana": "なりたおさむ",
+    "party": "自由民主党",
+    "district": "名古屋市昭和区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-012.html",
+    "id": "pref-fe2d865a",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "川嶋太郎",
+    "kana": "かわしまたろう",
+    "party": "自由民主党",
+    "district": "名古屋市瑞穂区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-4cc8279c",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "高木ひろし",
+    "kana": "たかぎひろし",
+    "party": "あいち民主",
+    "district": "名古屋市瑞穂区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-cc077239",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "かじ山義章",
+    "kana": "かじやまよしあき",
+    "party": "あいち民主",
+    "district": "名古屋市熱田区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-c67654ad",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "村嶌嘉将",
+    "kana": "むらしまよしまさ",
+    "party": "あいち民主",
+    "district": "名古屋市中川区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-016.html",
+    "id": "pref-db6e17ec",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "いなもと和仁",
+    "kana": "いなもとかずひと",
+    "party": "自由民主党",
+    "district": "名古屋市中川区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-8f655a79",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "直江弘文",
+    "kana": "なおえひろぶみ",
+    "party": "自由民主党",
+    "district": "名古屋市港区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-89933fdc",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "安井伸治",
+    "kana": "やすいしんじ",
+    "party": "あいち民主",
+    "district": "名古屋市港区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-b398e92d",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "江原史朗",
+    "kana": "えはらしろう",
+    "party": "あいち民主",
+    "district": "名古屋市南区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-a339dc3d",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "森井元志",
+    "kana": "もりいもとし",
+    "party": "あいち民主",
+    "district": "名古屋市守山区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-e1f30cf5",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "南部文宏",
+    "kana": "なんぶふみひろ",
+    "party": "自由民主党",
+    "district": "名古屋市守山区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-54163f85",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "松本まもる",
+    "kana": "まつもとまもる",
+    "party": "あいち民主",
+    "district": "名古屋市緑区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-9fea5ffb",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "増田成美",
+    "kana": "ますだなりみ",
+    "party": "自由民主党",
+    "district": "名古屋市緑区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-b40b8018",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "岡明彦",
+    "kana": "おかあきひこ",
+    "party": "公明党",
+    "district": "名古屋市緑区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-b88205c2",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "富田昭雄",
+    "kana": "とみたあきお",
+    "party": "あいち民主",
+    "district": "名古屋市名東区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-6e5489e1",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "筒井タカヤ",
+    "kana": "つついたかや",
+    "party": "無所属（県政自民クラブ）",
+    "district": "名古屋市名東区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-8a4e8033",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "須崎かん",
+    "kana": "すさきかん",
+    "party": "自由民主党",
+    "district": "名古屋市天白区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-15b81300",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "古林千恵",
+    "kana": "ふるばやしちえ",
+    "party": "減税日本",
+    "district": "名古屋市天白区",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-d15b470d",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "丹羽洋章",
+    "kana": "にわひろあき",
+    "party": "自由民主党",
+    "district": "豊橋市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-d0f38ecf",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "大久保真一",
+    "kana": "おおくぼしんいち",
+    "party": "公明党",
+    "district": "豊橋市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-d2697034",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "中村竜彦",
+    "kana": "なかむらたつひこ",
+    "party": "自由民主党",
+    "district": "豊橋市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-cbc04da8",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "杉浦正和",
+    "kana": "すぎうらまさかず",
+    "party": "自由民主党",
+    "district": "豊橋市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-b3d001c7",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "下奥奈歩",
+    "kana": "しもおくなほ",
+    "party": "無所属（日本共産党）",
+    "district": "豊橋市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-d6a1060e",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "中根義高",
+    "kana": "なかねよしたか",
+    "party": "自由民主党",
+    "district": "岡崎市及び額田郡",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-91e1c6e3",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "鈴木まさと",
+    "kana": "すずきまさと",
+    "party": "あいち民主",
+    "district": "岡崎市及び額田郡",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-27f3bf37",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "山口健",
+    "kana": "やまぐちたけし",
+    "party": "あいち民主",
+    "district": "岡崎市及び額田郡",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-efd72a32",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "園山康男",
+    "kana": "そのやまやすお",
+    "party": "無所属",
+    "district": "岡崎市及び額田郡",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-3d591772",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "新海正春",
+    "kana": "しんかいまさはる",
+    "party": "自由民主党",
+    "district": "岡崎市及び額田郡",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-041.html",
+    "id": "pref-975590bd",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "高橋正子",
+    "kana": "たかはしまさこ",
+    "party": "あいち民主",
+    "district": "一宮市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-23b2ee9a",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "木藤俊郎",
+    "kana": "きとうとしろう",
+    "party": "公明党",
+    "district": "一宮市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-9e4383ce",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "神戸健太郎",
+    "kana": "かんべけんたろう",
+    "party": "自由民主党",
+    "district": "一宮市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-7ea30161",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "平松利英",
+    "kana": "ひらまつとしひで",
+    "party": "自由民主党",
+    "district": "一宮市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-54fe308a",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "佐藤英俊",
+    "kana": "さとうひでとし",
+    "party": "自由民主党",
+    "district": "一宮市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-a2c6327d",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "島倉誠",
+    "kana": "しまくらまこと",
+    "party": "自由民主党",
+    "district": "瀬戸市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-161fbdaf",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "長江正成",
+    "kana": "ながえまさなり",
+    "party": "あいち民主",
+    "district": "瀬戸市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-7227d064",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "朝倉浩一",
+    "kana": "あさくらこういち",
+    "party": "あいち民主",
+    "district": "半田市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-83086c7c",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "杉浦友昭",
+    "kana": "すぎうらともあき",
+    "party": "自由民主党",
+    "district": "半田市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-59fc850f",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "神戸洋美",
+    "kana": "かんべひろみ",
+    "party": "自由民主党",
+    "district": "春日井市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-ad379a7b",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "伊藤貴治",
+    "kana": "いとうたかはる",
+    "party": "自由民主党",
+    "district": "春日井市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-7f64e6fd",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "日比たけまさ",
+    "kana": "ひびたけまさ",
+    "party": "あいち民主",
+    "district": "春日井市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-314ef336",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "末永けい",
+    "kana": "すえながけい",
+    "party": "無所属",
+    "district": "春日井市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-b727eaf2",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "藤原ひろき",
+    "kana": "ふじわらひろき",
+    "party": "自由民主党",
+    "district": "豊川市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-78fcb6fd",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "浦野隼次",
+    "kana": "うらのはやじ",
+    "party": "自由民主党",
+    "district": "豊川市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-2c025b12",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "中野治美",
+    "kana": "なかのはるみ",
+    "party": "自由民主党",
+    "district": "津島市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-3029d0c8",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "杉浦哲也",
+    "kana": "すぎうらてつや",
+    "party": "自由民主党",
+    "district": "碧南市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-317af105",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "細井真司",
+    "kana": "ほそいしんじ",
+    "party": "あいち民主",
+    "district": "刈谷市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-50e14a06",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "神谷まさひろ",
+    "kana": "かみやまさひろ",
+    "party": "無所属",
+    "district": "刈谷市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-0560b66a",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "阿部洋祐",
+    "kana": "あべようすけ",
+    "party": "あいち民主",
+    "district": "豊田市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-e989cb1b",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "桜井秀樹",
+    "kana": "さくらいひでき",
+    "party": "あいち民主",
+    "district": "豊田市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-89b104f3",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "加藤貴志",
+    "kana": "かとうたかし",
+    "party": "公明党",
+    "district": "豊田市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-c73270a1",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "神谷和利",
+    "kana": "かみやかずとし",
+    "party": "自由民主党",
+    "district": "豊田市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-b4459b1a",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "今井隆喜",
+    "kana": "いまいたかよし",
+    "party": "自由民主党",
+    "district": "安城市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-11238a10",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "永田敦史",
+    "kana": "ながたあつし",
+    "party": "無所属",
+    "district": "安城市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-246143a1",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "山田たかお",
+    "kana": "やまだたかお",
+    "party": "自由民主党",
+    "district": "西尾市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-d46b4c0d",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "藤原聖",
+    "kana": "ふじわらひじり",
+    "party": "あいち民主",
+    "district": "西尾市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-eaf06e53",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "喚田孝博",
+    "kana": "よびたたかひろ",
+    "party": "無所属",
+    "district": "蒲郡市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-071.html",
+    "id": "pref-73689158",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "中村貴文",
+    "kana": "なかむらきぶん",
+    "party": "自由民主党",
+    "district": "犬山市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-86c247eb",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "杉江繁樹",
+    "kana": "すぎえしげき",
+    "party": "自由民主党",
+    "district": "常滑市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-21b64371",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "村瀬正臣",
+    "kana": "むらせまさおみ",
+    "party": "自由民主党",
+    "district": "江南市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-8c14d177",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "山下智也",
+    "kana": "やましたともや",
+    "party": "自由民主党",
+    "district": "小牧市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-f08fa902",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "久保田浩文",
+    "kana": "くぼたひろふみ",
+    "party": "自由民主党",
+    "district": "稲沢市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-feae805c",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "鈴木純",
+    "kana": "すずきじゅん",
+    "party": "あいち民主",
+    "district": "稲沢市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-7dd2cf5f",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "峰野修",
+    "kana": "みねのおさむ",
+    "party": "自由民主党",
+    "district": "新城市及び北設楽郡",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-e431ed61",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "神野博史",
+    "kana": "じんのはくし",
+    "party": "自由民主党",
+    "district": "東海市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-8fdfec58",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "島孝則",
+    "kana": "しまたかのり",
+    "party": "あいち民主",
+    "district": "東海市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-a2180d20",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "日高章",
+    "kana": "ひだかあきら",
+    "party": "自由民主党",
+    "district": "大府市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-535aedf1",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "宮島謙治",
+    "kana": "みやじまけんじ",
+    "party": "自由民主党",
+    "district": "知多市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-d3bb396b",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "柴田高伸",
+    "kana": "しばたたかのぶ",
+    "party": "無所属",
+    "district": "知立市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-494ef2d0",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "青山省三",
+    "kana": "あおやましょうぞう",
+    "party": "自由民主党",
+    "district": "尾張旭市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-1d099da7",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "柳沢英希",
+    "kana": "やなぎさわひでき",
+    "party": "自由民主党",
+    "district": "高浜市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-2e1cb1bd",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "高桑敏直",
+    "kana": "たかくわとしなお",
+    "party": "自由民主党",
+    "district": "岩倉市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-60ea498b",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "坂田憲治",
+    "kana": "さかたけんじ",
+    "party": "自由民主党",
+    "district": "豊明市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-462bbd73",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "近藤裕人",
+    "kana": "こんどうひろひと",
+    "party": "自由民主党",
+    "district": "日進市及び愛知郡",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-a6d3eb75",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "福田喜夫",
+    "kana": "ふくたよしお",
+    "party": "あいち民主",
+    "district": "日進市及び愛知郡",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-b04612da",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "山本浩史",
+    "kana": "やまもとひろし",
+    "party": "自由民主党",
+    "district": "田原市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-70111df2",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "横井五六",
+    "kana": "よこいごろく",
+    "party": "自由民主党",
+    "district": "愛西市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-a16d6122",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "阿部武史",
+    "kana": "あべたけふみ",
+    "party": "無所属",
+    "district": "清須市、北名古屋市及び西春日井郡",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-9a2d9b72",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "水野富夫",
+    "kana": "みずのとみお",
+    "party": "自由民主党",
+    "district": "清須市、北名古屋市及び西春日井郡",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-565266c6",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "朝日将貴",
+    "kana": "あさひまさたか",
+    "party": "自由民主党",
+    "district": "弥富市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-2bcac04f",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "林文夫",
+    "kana": "はやしふみお",
+    "party": "自由民主党",
+    "district": "みよし市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-c888f7c6",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "小木曽史人",
+    "kana": "おぎそふみと",
+    "party": "あいち民主",
+    "district": "あま市及び海部郡",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-a7ecdbdf",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "石塚吾歩路",
+    "kana": "いしづかあぽろ",
+    "party": "自由民主党",
+    "district": "あま市及び海部郡",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-712dae2b",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "石井芳樹",
+    "kana": "いしいよしき",
+    "party": "自由民主党",
+    "district": "長久手市",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-a3c8b20b",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "鈴木喜博",
+    "kana": "すずきよしひろ",
+    "party": "自由民主党",
+    "district": "丹羽郡",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-7cdfdcc0",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "河合洋介",
+    "kana": "かわいようすけ",
+    "party": "あいち民主",
+    "district": "知多郡第一",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-b07c835d",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  },
+  {
+    "name": "横田たかし",
+    "kana": "よこたたかし",
+    "party": "自由民主党",
+    "district": "知多郡第二",
+    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+    "id": "pref-18230ac3",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
+  }
 ]

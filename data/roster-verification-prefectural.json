@@ -1,0 +1,253 @@
+{
+  "scope": "prefectural",
+  "checkedAt": "2026-10-23",
+  "sources": [
+    {
+      "url": "https://www.pref.aichi.jp/robots.txt",
+      "purpose": "自動収集前のrobots確認",
+      "accessNotes": "web閲覧ツールでは取得不能。明示したUser-Agent付きの単発アクセスもHTTP403。自動スクレイピングを停止し、403回避は実施せず、通常のwebツールで公式ページを一件ずつ個別閲覧した。"
+    },
+    {
+      "url": "https://www.pref.aichi.jp/site/userguide/menseki.html",
+      "purpose": "利用条件・著作権・リンク方針の確認",
+      "accessNotes": "2026年7月9日更新の案内を確認。文章・写真等の無断複製/転用に制限があり、法に認められる引用等を除外。原文・写真・画像・ページ全体は転載せず、氏名/選挙区/会派/役職/所属という事実と出典URLのみを記録。"
+    },
+    {
+      "url": "https://www.pref.aichi.jp/site/gikai/giin-shokai.html",
+      "purpose": "現員97人・欠員5人・会派別人数と委員会照合範囲の確認",
+      "accessNotes": "ページ更新日2026-09-01。本文に「○月○日現在」の明記なし。欠員は中川区・南区・豊川市・豊田市・小牧市に各1。"
+    },
+    {
+      "url": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+      "purpose": "97人全員の氏名・ふりがな・選挙区の照合",
+      "accessNotes": "ページ更新日2026-03-25。何日現在の名簿かは本文に明示なし。"
+    },
+    {
+      "url": "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html",
+      "purpose": "97人全員の所属会派・掲載会派役員の照合",
+      "accessNotes": "ページ更新日2026-06-11。会派を政党所属とは扱わない。何日現在かは本文に明示なし。"
+    },
+    {
+      "url": "https://www.pref.aichi.jp/site/gikai/aisatsu.html",
+      "purpose": "正副議長の照合",
+      "accessNotes": "2026-05-22選出の島倉誠議長・成田修副議長を確認。選出日は確認日・名簿基準日と混同しない。"
+    },
+    {
+      "url": "https://www.pref.aichi.jp/site/gikai/iinkai-somukikaku.html",
+      "purpose": "総務企画委員会の所属と委員長・副委員長の照合",
+      "accessNotes": "ページ更新日2026-07-17。掲載12人を照合。何日現在の名簿かは本文に明示なし。"
+    },
+    {
+      "url": "https://www.pref.aichi.jp/site/gikai/iinkai-kenminkankyo.html",
+      "purpose": "県民環境委員会の所属と委員長・副委員長の照合",
+      "accessNotes": "ページ更新日2026-07-17。掲載12人を照合。何日現在の名簿かは本文に明示なし。"
+    },
+    {
+      "url": "https://www.pref.aichi.jp/site/gikai/iinkai-fukushiiryo.html",
+      "purpose": "福祉医療委員会の所属と委員長・副委員長の照合",
+      "accessNotes": "ページ更新日2026-07-17。掲載12人を照合。何日現在の名簿かは本文に明示なし。"
+    },
+    {
+      "url": "https://www.pref.aichi.jp/site/gikai/iinkai-keizairodo.html",
+      "purpose": "経済労働委員会の所属と委員長・副委員長の照合",
+      "accessNotes": "ページ更新日2026-07-17。掲載12人を照合。何日現在の名簿かは本文に明示なし。"
+    },
+    {
+      "url": "https://www.pref.aichi.jp/site/gikai/iinkai-norinsuisan.html",
+      "purpose": "農林水産委員会の所属と委員長・副委員長の照合",
+      "accessNotes": "ページ更新日2026-07-17。掲載12人を照合。何日現在の名簿かは本文に明示なし。"
+    },
+    {
+      "url": "https://www.pref.aichi.jp/site/gikai/iinkai-kensetsu.html",
+      "purpose": "建設委員会の所属と委員長・副委員長の照合",
+      "accessNotes": "ページ更新日2026-07-17。掲載13人を照合。何日現在の名簿かは本文に明示なし。"
+    },
+    {
+      "url": "https://www.pref.aichi.jp/site/gikai/iinkai-kyoikusports.html",
+      "purpose": "教育・スポーツ委員会の所属と委員長・副委員長の照合",
+      "accessNotes": "ページ更新日2026-07-17。掲載12人を照合。何日現在の名簿かは本文に明示なし。"
+    },
+    {
+      "url": "https://www.pref.aichi.jp/site/gikai/iinkai-keisatsu.html",
+      "purpose": "警察委員会の所属と委員長・副委員長の照合",
+      "accessNotes": "ページ更新日2026-07-17。掲載12人を照合。何日現在の名簿かは本文に明示なし。"
+    },
+    {
+      "url": "https://www.pref.aichi.jp/site/gikai/iinkai-gikaiunei.html",
+      "purpose": "議会運営委員会の所属と委員長・副委員長の照合",
+      "accessNotes": "ページ更新日2026-07-17。掲載14人を照合。何日現在の名簿かは本文に明示なし。"
+    },
+    {
+      "url": "https://www.pref.aichi.jp/site/gikai/iinkai-digital.html",
+      "purpose": "デジタル化・地方創生調査特別委員会の所属と委員長・副委員長の照合",
+      "accessNotes": "ページ更新日2026-06-11。掲載14人を照合。何日現在の名簿かは本文に明示なし。"
+    },
+    {
+      "url": "https://www.pref.aichi.jp/site/gikai/iinkai-carbon.html",
+      "purpose": "カーボンニュートラル調査特別委員会の所属と委員長・副委員長の照合",
+      "accessNotes": "ページ更新日2026-06-11。掲載13人を照合。何日現在の名簿かは本文に明示なし。"
+    },
+    {
+      "url": "https://www.pref.aichi.jp/site/gikai/iinkai-anzenanshin.html",
+      "purpose": "安全・安心対策特別委員会の所属と委員長・副委員長の照合",
+      "accessNotes": "ページ更新日2026-06-11。掲載13人を照合。何日現在の名簿かは本文に明示なし。"
+    },
+    {
+      "url": "https://www.pref.aichi.jp/site/gikai/iinkai-kodomo.html",
+      "purpose": "子ども・子育て対策特別委員会の所属と委員長・副委員長の照合",
+      "accessNotes": "ページ更新日2026-06-11。掲載13人を照合。何日現在の名簿かは本文に明示なし。"
+    },
+    {
+      "url": "https://www.pref.aichi.jp/site/gikai/iinkai-asia.html",
+      "purpose": "アジア・アジアパラ競技大会推進特別委員会の所属と委員長・副委員長の照合",
+      "accessNotes": "ページ更新日2026-06-11。掲載13人を照合。何日現在の名簿かは本文に明示なし。"
+    },
+    {
+      "url": "https://www.pref.aichi.jp/site/gikai/iinkai-teisu.html",
+      "purpose": "議員定数等調査特別委員会の所属と委員長・副委員長の照合",
+      "accessNotes": "ページ更新日2026-06-11。掲載14人を照合。何日現在の名簿かは本文に明示なし。"
+    },
+    {
+      "url": "https://www.pref.aichi.jp/site/gikai/iinkai-ippan.html",
+      "purpose": "一般会計・特別会計決算特別委員会の所属と委員長・副委員長の照合",
+      "accessNotes": "ページ更新日2026-09-01。掲載13人を照合。何日現在の名簿かは本文に明示なし。"
+    },
+    {
+      "url": "https://www.pref.aichi.jp/site/gikai/iinkai-koei.html",
+      "purpose": "公営企業会計決算特別委員会の所属と委員長・副委員長の照合",
+      "accessNotes": "ページ更新日2026-09-01。掲載12人を照合。何日現在の名簿かは本文に明示なし。"
+    }
+  ],
+  "matchedIds": [
+    "pref-1e588571",
+    "pref-53eb7b7a",
+    "pref-cd65330e",
+    "pref-03a3f9a3",
+    "pref-2c749bb4",
+    "pref-5e298399",
+    "pref-9283cb05",
+    "pref-29c2fd02",
+    "pref-21841325",
+    "pref-71243978",
+    "pref-e9453251",
+    "pref-fe2d865a",
+    "pref-4cc8279c",
+    "pref-cc077239",
+    "pref-c67654ad",
+    "pref-db6e17ec",
+    "pref-8f655a79",
+    "pref-89933fdc",
+    "pref-b398e92d",
+    "pref-a339dc3d",
+    "pref-e1f30cf5",
+    "pref-54163f85",
+    "pref-9fea5ffb",
+    "pref-b40b8018",
+    "pref-b88205c2",
+    "pref-6e5489e1",
+    "pref-8a4e8033",
+    "pref-15b81300",
+    "pref-d15b470d",
+    "pref-d0f38ecf",
+    "pref-d2697034",
+    "pref-cbc04da8",
+    "pref-b3d001c7",
+    "pref-d6a1060e",
+    "pref-91e1c6e3",
+    "pref-27f3bf37",
+    "pref-efd72a32",
+    "pref-3d591772",
+    "pref-975590bd",
+    "pref-23b2ee9a",
+    "pref-9e4383ce",
+    "pref-7ea30161",
+    "pref-54fe308a",
+    "pref-a2c6327d",
+    "pref-161fbdaf",
+    "pref-7227d064",
+    "pref-83086c7c",
+    "pref-59fc850f",
+    "pref-ad379a7b",
+    "pref-7f64e6fd",
+    "pref-314ef336",
+    "pref-b727eaf2",
+    "pref-78fcb6fd",
+    "pref-2c025b12",
+    "pref-3029d0c8",
+    "pref-317af105",
+    "pref-50e14a06",
+    "pref-0560b66a",
+    "pref-e989cb1b",
+    "pref-89b104f3",
+    "pref-c73270a1",
+    "pref-b4459b1a",
+    "pref-11238a10",
+    "pref-246143a1",
+    "pref-d46b4c0d",
+    "pref-eaf06e53",
+    "pref-73689158",
+    "pref-86c247eb",
+    "pref-21b64371",
+    "pref-8c14d177",
+    "pref-f08fa902",
+    "pref-feae805c",
+    "pref-7dd2cf5f",
+    "pref-e431ed61",
+    "pref-8fdfec58",
+    "pref-a2180d20",
+    "pref-535aedf1",
+    "pref-d3bb396b",
+    "pref-494ef2d0",
+    "pref-1d099da7",
+    "pref-2e1cb1bd",
+    "pref-60ea498b",
+    "pref-462bbd73",
+    "pref-a6d3eb75",
+    "pref-b04612da",
+    "pref-70111df2",
+    "pref-a16d6122",
+    "pref-9a2d9b72",
+    "pref-565266c6",
+    "pref-2bcac04f",
+    "pref-c888f7c6",
+    "pref-a7ecdbdf",
+    "pref-712dae2b",
+    "pref-a3c8b20b",
+    "pref-7cdfdcc0",
+    "pref-b07c835d",
+    "pref-18230ac3"
+  ],
+  "changes": [
+    "pref-03a3f9a3 松川浩明: kanaをまつかわひろあきから公式表記まつかわこうめいへ修正。",
+    "pref-9283cb05 しまぶくろ朝太郎: kanaをしまぶくろあさたろうから公式表記しまぶくろちょうたろうへ修正。",
+    "pref-89933fdc 直江弘文: kanaをなおえひろふみから公式表記なおえひろぶみへ修正。",
+    "pref-a339dc3d 江原史朗: kanaをえはらふみろうから公式表記えはらしろうへ修正。",
+    "pref-b40b8018 増田成美: kanaをますだなるみから公式表記ますだなりみへ修正。",
+    "pref-15b81300 須崎かん: kanaをすざきかんから公式表記すさきかんへ修正。",
+    "pref-d15b470d 古林千恵: kanaをこばやしちえから公式表記ふるばやしちえへ修正。",
+    "pref-efd72a32 山口健: kanaをやまぐちけんから公式表記やまぐちたけしへ修正。",
+    "pref-11238a10 今井隆喜: kanaをいまいたかきから公式表記いまいたかよしへ修正。",
+    "pref-eaf06e53 藤原聖: kanaをふじわらさとしから公式表記ふじわらひじりへ修正。",
+    "pref-86c247eb 中村貴文: kanaをなかむらたかふみから公式表記なかむらきぶんへ修正。",
+    "pref-8fdfec58 神野博史: kanaをじんのひろしから公式表記じんのはくしへ修正。",
+    "pref-a6d3eb75 近藤裕人: kanaをこんどうひろとから公式表記こんどうひろひとへ修正。",
+    "pref-b04612da 福田喜夫: kanaをふくだよしおから公式表記ふくたよしおへ修正。",
+    "pref-9a2d9b72 阿部武史: kanaをあべたけしから公式表記あべたけふみへ修正。",
+    "pref-2bcac04f 朝日将貴: kanaをあさひまさきから公式表記あさひまさたかへ修正。",
+    "pref-a7ecdbdf 小木曽史人: kanaをおぎそふみひとから公式表記おぎそふみとへ修正。",
+    "既存97人のID・氏名・選挙区・会派・順序は保持。seedへ既存IDを追加し、ふりがな修正後の再生成でも参照IDを保持できる形にした。",
+    "現職・所属会派の項目別verificationを本データとseedへ追加。",
+    "profiles.prefectural.jsonを97人分新規作成。委員会所属は97人全員verified、掲載役職あり52人、指定一覧の役職掲載なし45人。"
+  ],
+  "unresolved": [
+    "robots.txtはHTTP403で確認不能。自動スクレイピングは実施していない。",
+    "公式一覧は閲覧時に公開されている情報で照合したが、「2026年10月23日現在」と明示された名簿ではない。sourceAsOfは推定せず未設定。",
+    "正副議長・正副委員長・公式会派役員以外の役職、当選回数、委員会活動実績は今回の照合対象外。役職の掲載なしを無役職とみなさない。"
+  ],
+  "notes": [
+    "県議会紹介・選挙区別一覧・会派別一覧で97人を突合。常任8委員会の所属者は合計97人、重複0・不明氏名0。",
+    "委員会の対象は常任8、議会運営1、特別8の計17。議会運営委員会の副委員長は今井隆喜・福田喜夫の2人を記録。",
+    "通常の公式ページ閲覧は一件ずつ実施。閲覧ツールの応答をセッション内で保持し、同じページの再照会を避けた。HTTP403の回避、会議録本文の取得、写真の保存・転載は実施していない。",
+    "会派人数は自由民主党54、あいち民主26、公明4、減税日本4、無所属9（県政自民クラブ1・日本共産党県議団1・その他7）。"
+  ]
+}

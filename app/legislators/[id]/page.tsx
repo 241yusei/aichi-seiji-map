@@ -1,5 +1,6 @@
+import { LegislatorVerification } from "@/components/LegislatorVerification";
 import { latestFundingRecords } from "@/lib/data-coverage";
-import { RosterCoverage, SpeechCoverage } from "@/components/DataCoverage";
+import { SpeechCoverage } from "@/components/DataCoverage";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -165,7 +166,7 @@ export default async function LegislatorDetailPage({
         <p className="mt-2 text-muted">
           {legislator.kana && <span className="text-faint">{legislator.kana}　</span>}
           {legislator.district}
-          {legislator.party ? <span className="text-faint"> ・ {legislator.party}</span> : null}
+          {legislator.party ? <span className="text-faint"> ・ {legislator.party}</span> : legislator.verification?.affiliation.status === "unconfirmed" ? <span className="text-faint"> ・ {legislator.level === "national" ? "所属政党は未確認" : "所属会派は未確認"}</span> : null}
         </p>
         <p className="mt-3 text-xs">
           <SourceLink href={legislator.sourceUrl}>公式プロフィール・出典</SourceLink>
@@ -196,7 +197,7 @@ export default async function LegislatorDetailPage({
         )}
       </header>
 
-      <RosterCoverage />
+      <LegislatorVerification legislator={legislator} profile={profile} />
       {legislator.level === "national" && <SpeechCoverage />}
 
       {/* 30秒サマリー（既存データから・中立。詳細は下の各セクション） */}
@@ -233,16 +234,17 @@ export default async function LegislatorDetailPage({
 
       {/* プロフィール（当選回数・役職・委員会）。出典つき・公開情報。 */}
       {profile &&
-        (profile.electionCount > 0 ||
+        ((profile.electionCount ?? 0) > 0 ||
           profile.positions.length > 0 ||
           profile.committees.length > 0 ||
           !!profile.summary ||
           !!profile.homepage ||
-          !!profile.x) && (
+          !!profile.x ||
+          !!profile.verification) && (
           <section className="border-l-2 border-line bg-subtle px-4 py-4">
             {profile.summary && <p className="measure mb-3 text-sm text-ink">{profile.summary}</p>}
             <div className="space-y-2 text-sm">
-              {profile.electionCount > 0 && (
+              {(profile.electionCount ?? 0) > 0 && (
                 <p>
                   <span className="eyebrow text-faint">当選</span>{" "}
                   <span className="num-display tnum text-lg">{profile.electionCount}</span> 回
@@ -250,7 +252,7 @@ export default async function LegislatorDetailPage({
               )}
               {profile.positions.length > 0 && (
                 <p className="measure">
-                  <span className="eyebrow text-faint">主な役職</span>{" "}
+                  <span className="eyebrow text-faint">主な役職（過去の役職は「元」と表示）</span>{" "}
                   {profile.positions.join("・")}
                 </p>
               )}
@@ -261,6 +263,7 @@ export default async function LegislatorDetailPage({
                 </p>
               )}
             </div>
+            {profile.verification && <p className="mt-3 text-xs leading-relaxed text-muted">役職・所属委員会の確認範囲は上の「確認状況」をご覧ください。当選回数・略歴は今回の照合対象に含めていません。</p>}
             <p className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs">
               <SourceLink href={profile.sourceUrl}>プロフィール出典</SourceLink>
               {profile.homepage && <SourceLink href={profile.homepage}>公式サイト</SourceLink>}

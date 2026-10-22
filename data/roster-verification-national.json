@@ -1,0 +1,524 @@
+{
+  "scope": "national",
+  "checkedAt": "2026-10-23",
+  "sources": [
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/2giin.htm",
+      "purpose": "現職氏名・選挙区・会派の公式名簿（参院は愛知選挙区）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/135.html",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0050.htm",
+      "purpose": "衆院委員名簿（財務金融委員会、2026-10-20現在）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/6giin.htm",
+      "purpose": "現職氏名・選挙区・会派の公式名簿（参院は愛知選挙区）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/371.html",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://new-kokumin.jp/member",
+      "purpose": "党公式の国会議員・支部長掲載による政党所属の照合"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0100.htm",
+      "purpose": "衆院委員名簿（国土交通委員会、2026-10-21現在）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0130.htm",
+      "purpose": "衆院委員名簿（国家基本政策委員会、2026-10-06現在）"
+    },
+    {
+      "url": "https://new-kokumin.jp/about/board-member",
+      "purpose": "党役員一覧（2026-10-01現在）の現役職"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/7giin.htm",
+      "purpose": "現職氏名・選挙区・会派の公式名簿（参院は愛知選挙区）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/395.html",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.jimin-aichi.or.jp/",
+      "purpose": "党公式の国会議員・支部長掲載による政党所属の照合"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0090.htm",
+      "purpose": "衆院委員名簿（経済産業委員会、2026-10-21現在）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5140.htm",
+      "purpose": "衆院委員名簿（消費者問題に関する特別委員会、2026-10-06現在）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5210.htm",
+      "purpose": "衆院委員名簿（東日本大震災復興及び原子力問題調査特別委員会、2026-10-06現在）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/151.html",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/1giin.htm",
+      "purpose": "現職氏名・選挙区・会派の公式名簿（参院は愛知選挙区）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/094.html",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0070.htm",
+      "purpose": "衆院委員名簿（厚生労働委員会、2026-10-21現在）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5021.htm",
+      "purpose": "衆院委員名簿（政治改革に関する特別委員会、2026-10-06現在）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5240.htm",
+      "purpose": "衆院委員名簿（地域活性化・こども政策・デジタル社会形成に関する特別委員会、2026-10-06現在）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/5giin.htm",
+      "purpose": "現職氏名・選挙区・会派の公式名簿（参院は愛知選挙区）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/318.html",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0060.htm",
+      "purpose": "衆院委員名簿（文部科学委員会、2026-10-06現在）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5060.htm",
+      "purpose": "衆院委員名簿（沖縄及び北方問題に関する特別委員会、2026-10-06現在）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/344.html",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/045.html",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/283.html",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/10giin.htm",
+      "purpose": "現職氏名・選挙区・会派の公式名簿（参院は愛知選挙区）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/455.html",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.kantei.go.jp/jp/105/meibo/seimukan.html",
+      "purpose": "第2次高市改造内閣の政府役職（2026-09-18名簿）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/4giin.htm",
+      "purpose": "現職氏名・選挙区・会派の公式名簿（参院は愛知選挙区）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/263.html",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/005.html",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.kantei.go.jp/jp/105/meibo/fukudaijin.html",
+      "purpose": "第2次高市改造内閣の政府役職（2026-09-18名簿）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/028.html",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0110.htm",
+      "purpose": "衆院委員名簿（環境委員会、2026-10-06現在）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/059.html",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0080.htm",
+      "purpose": "衆院委員名簿（農林水産委員会、2026-10-21現在）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/322.html",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/8giin.htm",
+      "purpose": "現職氏名・選挙区・会派の公式名簿（参院は愛知選挙区）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/432.html",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.sangiin.go.jp/japanese/giin/hireiku/hireiku.htm",
+      "purpose": "現職氏名・選挙区・会派の公式名簿（参院は愛知選挙区）"
+    },
+    {
+      "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7010046.htm",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7016020.htm",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.komei.or.jp/mb/member/detail/23020339/page:1/kokai:2/route:member_legislator",
+      "purpose": "政党所属と党役職（通常の公式ページ閲覧で照合）"
+    },
+    {
+      "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7010027.htm",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://cdp-japan.jp/member/1474",
+      "purpose": "政党所属と党役職（通常の公式ページ閲覧で照合）"
+    },
+    {
+      "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7016006.htm",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7013024.htm",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7019024.htm",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://cdp-japan.jp/member/1836",
+      "purpose": "政党所属と党役職（通常の公式ページ閲覧で照合）"
+    },
+    {
+      "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7025055.htm",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7025033.htm",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://sanseito-aichi.com/%E8%AD%B0%E5%93%A1%E3%83%9A%E3%83%BC%E3%82%B8/",
+      "purpose": "党公式の国会議員・支部長掲載による政党所属の照合"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/156.html",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0120.htm",
+      "purpose": "衆院委員名簿（安全保障委員会、2026-10-06現在）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0160.htm",
+      "purpose": "衆院委員名簿（議院運営委員会、2026-10-06現在）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0170.htm",
+      "purpose": "衆院委員名簿（懲罰委員会、2026-10-06現在）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5010.htm",
+      "purpose": "衆院委員名簿（災害対策特別委員会、2026-10-06現在）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_s9005.htm",
+      "purpose": "衆院委員名簿（憲法審査会、2026-10-06現在）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_s9010.htm",
+      "purpose": "衆院委員名簿（政治倫理審査会、2026-10-06現在）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/265.html",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0030.htm",
+      "purpose": "衆院委員名簿（法務委員会、2026-10-21現在）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/460.html",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/3giin.htm",
+      "purpose": "現職氏名・選挙区・会派の公式名簿（参院は愛知選挙区）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/214.html",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/359.html",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/198.html",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/223.html",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://o-ishin.jp/member/",
+      "purpose": "党公式の国会議員・支部長掲載による政党所属の照合"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/354.html",
+      "purpose": "個人の現職・選挙区・会派。参院は10/21現在の役職等一覧、略歴の日付と分離"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0140.htm",
+      "purpose": "衆院委員名簿（予算委員会、2026-10-09現在）"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/robots.txt",
+      "purpose": "取得条件",
+      "accessNotes": "直接照会404。禁止規則ファイルなし。直列3秒間隔、専用UA、URL別キャッシュ。"
+    },
+    {
+      "url": "https://www.sangiin.go.jp/robots.txt",
+      "purpose": "取得条件",
+      "accessNotes": "直接照会404。禁止規則ファイルなし。直列3秒間隔、専用UA、URL別キャッシュ。"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/link.html",
+      "purpose": "リンク・著作権",
+      "accessNotes": "出所明示の引用等を案内。画像と略歴本文は転載しない。リンクの連絡依頼は未実施、通知済みとは扱わない。"
+    },
+    {
+      "url": "https://www.sangiin.go.jp/jpn/footer/riyou.html",
+      "purpose": "参院利用案内",
+      "accessNotes": "現行HTMLの導線から確認。旧/japanese/riyouannaiは404。リンク連絡依頼あり、通知済みとは扱わない。"
+    },
+    {
+      "url": "https://www.sangiin.go.jp/jpn/footer/chosaku.html",
+      "purpose": "参院著作権",
+      "accessNotes": "法に認められる引用等の範囲・出所明示。写真・略歴本文を転載しない。"
+    },
+    {
+      "url": "https://www.jimin-aichi.or.jp/robots.txt",
+      "purpose": "党公式の取得条件",
+      "accessNotes": "/wp-admin/禁止、名簿掲載の公開トップは対象外。公開トップで氏名と国会議員/支部長の掲載を確認。"
+    },
+    {
+      "url": "https://www.jimin.jp/robots.txt",
+      "purpose": "党公式の取得条件",
+      "accessNotes": "専用の指定botではない。一般UAの公開パスAllow、禁止パスへは取得しない。"
+    },
+    {
+      "url": "https://www.jimin.jp/privacy/",
+      "purpose": "党サイトポリシー",
+      "accessNotes": "利用条件を確認。本文・写真は転載せず事実照合のみ。"
+    },
+    {
+      "url": "https://new-kokumin.jp/robots.txt",
+      "purpose": "党公式の取得条件",
+      "accessNotes": "/wp-admin/禁止。公開member/board-memberは対象外。"
+    },
+    {
+      "url": "https://new-kokumin.jp/privacy-policy",
+      "purpose": "党プライバシーポリシー",
+      "accessNotes": "利用条件導線を確認。氏名・現役職の事実を最小限記録、画像/本文の転載なし。"
+    },
+    {
+      "url": "https://sanseito-aichi.com/robots.txt",
+      "purpose": "党公式の取得条件",
+      "accessNotes": "/wp-admin/禁止。公開議員ページは対象外。"
+    },
+    {
+      "url": "https://o-ishin.jp/robots.txt",
+      "purpose": "党公式の取得条件",
+      "accessNotes": "直接照会404。サイトの利用条件を別途確認。"
+    },
+    {
+      "url": "https://o-ishin.jp/sitepolicy/",
+      "purpose": "党公式利用条件",
+      "accessNotes": "著作物の無断転載不可、法で認められる範囲を除き無断利用不可。写真/本文転載をせず所属事実の照合に限定。リンクは原則自由。"
+    },
+    {
+      "url": "https://genzeinippon.com/robots.txt",
+      "purpose": "地域政党の取得条件",
+      "accessNotes": "/wp-admin/禁止。公開トップは対象外。地域政党名と国政政党名を同一視しない。"
+    },
+    {
+      "url": "https://cdp-japan.jp/robots.txt",
+      "purpose": "党公式の取得条件",
+      "accessNotes": "直接照会503を2回確認し自動取得を停止。承認済みの通常web閲覧で個別議員ページと著作物ガイドラインを一件ずつ確認。"
+    },
+    {
+      "url": "https://cdp-japan.jp/about/copyright-guideline",
+      "purpose": "党著作物利用条件",
+      "accessNotes": "画像・動画・ロゴ等の二次利用条件を確認。これらは使用せず所属と役職の事実項目のみ照合。"
+    },
+    {
+      "url": "https://www.kantei.go.jp/robots.txt",
+      "purpose": "政府役職の取得条件",
+      "accessNotes": "直接照会404。直列3秒間隔・キャッシュで必要名簿のみ照会。"
+    },
+    {
+      "url": "https://www.kantei.go.jp/jp/terms.html",
+      "purpose": "官邸コピーライトポリシー",
+      "accessNotes": "PDL1.0、出典表示・加工主体明記。役職名の事実のみ記録。"
+    },
+    {
+      "url": "https://genzeinippon.com/",
+      "purpose": "地域政党の代表表記。国政政党所属の独立確認とは区別"
+    },
+    {
+      "url": "https://takashi-kawamura.com/",
+      "purpose": "本人公式プロフィールの補足確認",
+      "accessNotes": "通常web閲覧。市長時代の本文・画像が混在するため現国政所属の根拠としては使わない。"
+    },
+    {
+      "url": "https://shigetokukazuhiko.jp/",
+      "purpose": "本人公式への照会",
+      "accessNotes": "通常web閲覧で403。追加取得・回避を行わない。"
+    },
+    {
+      "url": "https://www.komei.or.jp/robots.txt",
+      "purpose": "党公式の取得条件",
+      "accessNotes": "直接照会503。自動取得は追加せず、承認済み通常web閲覧の個別議員ページのみ。"
+    },
+    {
+      "url": "https://takashi-kawamura.com/robots.txt",
+      "purpose": "本人公式の取得条件",
+      "accessNotes": "直接照会200。/wp-admin/禁止、公開トップは対象外。本人ページは通常web閲覧のみ、旧市長時代の記載を現国政所属の証拠にしない。"
+    },
+    {
+      "url": "https://shigetokukazuhiko.jp/robots.txt",
+      "purpose": "本人公式の取得条件",
+      "accessNotes": "robotsは200で/wp-admin/禁止。本人サイトトップの通常web閲覧が403のため、本文の追加取得や回避は行わない。"
+    }
+  ],
+  "matchedIds": [
+    "nat-bfcafee4",
+    "nat-a1b17fc6",
+    "nat-a34da432",
+    "nat-e7917464",
+    "nat-0f518982",
+    "nat-6fa6066e",
+    "nat-81cb6e51",
+    "nat-e993491d",
+    "nat-bac9a65b",
+    "nat-6ab3d9a1",
+    "nat-cedb39cc",
+    "nat-dd6216b1",
+    "nat-b9534cd2",
+    "nat-b4ef86ed",
+    "nat-4b065d48",
+    "nat-44385aca",
+    "nat-4dd7b521",
+    "nat-2b393eda",
+    "nat-40de2cf3",
+    "nat-301067c0",
+    "nat-b0189eb4",
+    "nat-5c52b577",
+    "nat-fe2d66ba",
+    "nat-942cc447",
+    "nat-f262cdfb",
+    "nat-5285f99b",
+    "nat-02bba622",
+    "nat-58226ce4",
+    "nat-4327864b",
+    "nat-8b419420",
+    "nat-17babd14",
+    "nat-078fe50d"
+  ],
+  "changes": [
+    "河村たかし 役職: 減税日本・ゆうこく連合 共同代表／元名古屋市長 → 減税日本代表",
+    "河村たかし 委員会: 未掲載 → 財務金融委員会",
+    "古川元久 役職: 元国家戦略担当大臣／元経済財政政策担当大臣／国民民主党 国会対策委員長 → 衆議院 国家基本政策委員会 理事／国民民主党 代表代行兼国会対策委員長／国民民主党 政治改革・行政改革推進本部長",
+    "古川元久 委員会: 国土交通委員会／災害対策特別委員会 → 国土交通委員会／国家基本政策委員会",
+    "水野良彦 委員会: 未掲載 → 経済産業委員会／消費者問題に関する特別委員会／東日本大震災復興及び原子力問題調査特別委員会",
+    "工藤彰三 役職: 元衆議院経済産業委員長／元内閣府副大臣／元国土交通大臣政務官 → 衆議院 国土交通委員会 理事",
+    "工藤彰三 委員会: 決算行政監視委員会／災害対策特別委員会／国土交通委員会／文部科学委員会 → 国土交通委員会",
+    "岡本康宏 委員会: 未掲載 → 厚生労働委員会／政治改革に関する特別委員会／地域活性化・こども政策・デジタル社会形成に関する特別委員会",
+    "丹羽秀樹 役職: 元文部科学副大臣兼内閣府副大臣／自由民主党愛知県連会長／衆議院地域活性化・こども政策・デジタル社会形成に関する特別委員長 → 衆議院 沖縄及び北方問題に関する特別委員会 委員長",
+    "丹羽秀樹 委員会: 地域活性化・こども政策・デジタル社会形成に関する特別委員会 → 文部科学委員会／沖縄及び北方問題に関する特別委員会",
+    "日野紗里亜 役職: 未掲載 → 衆議院 地域活性化・こども政策・デジタル社会形成に関する特別委員会 理事／国民民主党 政務調査会副会長／国民民主党 子ども・子育て・若者政策調査会長",
+    "日野紗里亜 委員会: 未掲載 → 厚生労働委員会／地域活性化・こども政策・デジタル社会形成に関する特別委員会",
+    "伊藤忠彦 役職: 元復興大臣／元環境副大臣兼内閣府副大臣／元衆議院法務委員長 → 照合資料に掲載なし",
+    "伊藤忠彦 委員会: 未掲載 → 国土交通委員会",
+    "長坂康正 役職: 厚生労働副大臣（2025年10月〜）／元経済産業副大臣兼内閣府副大臣／元衆議院国土交通委員長 → 衆議院 東日本大震災復興及び原子力問題調査特別委員会 理事",
+    "長坂康正 委員会: 未掲載 → 厚生労働委員会／東日本大震災復興及び原子力問題調査特別委員会",
+    "若山慎司 役職: 内閣府大臣政務官（第2次高市内閣） → 経済産業大臣政務官兼内閣府大臣政務官",
+    "若山慎司 委員会: 未掲載 → 経済産業委員会",
+    "丹野みどり 役職: 未掲載 → 衆議院 消費者問題に関する特別委員会 理事／国民民主党 国会対策副委員長",
+    "丹野みどり 委員会: 未掲載 → 経済産業委員会／消費者問題に関する特別委員会",
+    "青山周平 役職: 元文部科学副大臣／元自由民主党国会対策副委員長 → 文部科学副大臣",
+    "石井拓 役職: 自由民主党 経済産業部会長代理 → 環境大臣政務官",
+    "石井拓 委員会: 財務金融委員会／経済産業委員会／科学技術・イノベーション推進特別委員会 → 環境委員会",
+    "今枝宗一郎 役職: デジタル副大臣兼内閣府副大臣／元文部科学副大臣／元財務大臣政務官 → 衆議院 農林水産委員会 委員長",
+    "今枝宗一郎 委員会: 未掲載 → 農林水産委員会",
+    "根本幸典 役職: 農林水産副大臣／元国土交通大臣政務官兼内閣府大臣政務官 → 衆議院 財務金融委員会 委員長",
+    "根本幸典 委員会: 未掲載 → 財務金融委員会",
+    "山下史守朗 役職: 元小牧市長（4期）／元愛知県議会議員（2期） → 照合資料に掲載なし",
+    "山下史守朗 委員会: 未掲載 → 財務金融委員会／文部科学委員会／政治改革に関する特別委員会",
+    "藤川政人 役職: 参議院予算委員長／元財務副大臣／元総務大臣政務官 → 参議院 議院運営委員会委員長",
+    "藤川政人 委員会: 総務委員会／予算委員会 → 総務委員会／議院運営委員会",
+    "里見隆治 役職: 参議院外交防衛委員長／元経済産業大臣政務官／公明党愛知県本部代表 → 公明党 中央幹事／公明党 労働局長",
+    "里見隆治 委員会: 外交防衛委員会／行政監視委員会 → 厚生労働委員会／こども・子育て・若者活躍に関する特別委員会／国民生活・経済に関する調査会",
+    "斎藤嘉隆 役職: 立憲民主党 参議院国会対策委員長／元経済産業委員長／元環境委員長 → 参議院 文教科学委員会 理事／立憲民主党 国会対策委員長／立憲民主党 参議院国会対策委員長",
+    "伊藤孝恵 役職: 国民民主党 参議院国会対策委員長／国民民主党 選挙対策委員長代理 → 参議院 文教科学委員会 理事／国民民主党 参議院国会対策委員長／国民民主党 選挙対策委員長代理",
+    "伊藤孝恵 委員会: 文教科学委員会／予算委員会 → 文教科学委員会／国家基本政策委員会／情報監視審査会／政治倫理審査会",
+    "酒井庸行 役職: 元経済産業副大臣兼内閣府副大臣／元財政金融委員長／元内閣委員長 → 照合資料に掲載なし",
+    "酒井庸行 委員会: 国土交通委員会 → 国土交通委員会／予算委員会／災害対策及び東日本大震災復興特別委員会",
+    "田島麻衣子 役職: 未掲載 → 立憲民主党 会計監査／立憲民主党 幹事長代理／立憲民主党 外交部会長／立憲民主党 外交・安全保障調査会長／立憲民主党 国際局長／立憲民主党 国民運動局長／立憲民主党 沖縄協議会幹事",
+    "田島麻衣子 委員会: 外交防衛委員会／行政監視委員会／憲法審査会 → 外交防衛委員会／議院運営委員会／政治改革に関する特別委員会",
+    "水野孝一 役職: 未掲載 → 参議院 災害対策及び東日本大震災復興特別委員会 理事／参議院 国民生活・経済に関する調査会 理事／国民民主党 政務調査会副会長",
+    "水野孝一 委員会: 文教科学委員会／行政監視委員会／国民生活・経済に関する調査会 → 法務委員会／行政監視委員会／災害対策及び東日本大震災復興特別委員会／国民生活・経済に関する調査会",
+    "杉本純子 役職: 未掲載 → 参議院 行政監視委員会 理事",
+    "熊田裕通 役職: 元総務副大臣／元防衛大臣政務官／自由民主党国会対策副委員長 → 衆議院 議院運営委員会 理事／衆議院 政治倫理審査会 幹事",
+    "熊田裕通 委員会: 未掲載 → 安全保障委員会／国家基本政策委員会／議院運営委員会／懲罰委員会／災害対策特別委員会／憲法審査会／政治倫理審査会",
+    "辻秀樹 委員会: 未掲載 → 法務委員会／文部科学委員会／地域活性化・こども政策・デジタル社会形成に関する特別委員会",
+    "鈴木淳司 役職: 元総務大臣／元総務副大臣／元経済産業副大臣／自由民主党政務調査会長代理 → 衆議院 東日本大震災復興及び原子力問題調査特別委員会 理事",
+    "鈴木淳司 委員会: 未掲載 → 経済産業委員会／東日本大震災復興及び原子力問題調査特別委員会",
+    "藤澤忠盛 委員会: 未掲載 → 法務委員会／文部科学委員会／沖縄及び北方問題に関する特別委員会",
+    "重徳和彦 役職: 元立憲民主党政務調査会長／立憲民主党愛知県連代表／中道改革連合 国会対策委員長 → 中道改革連合 国会対策委員長",
+    "重徳和彦 委員会: 未掲載 → 財務金融委員会／政治改革に関する特別委員会",
+    "関健一郎 役職: 日本維新の会 農林水産部会長 → 衆議院 農林水産委員会 理事",
+    "関健一郎 委員会: 農林水産委員会 → 農林水産委員会／災害対策特別委員会",
+    "福田徹 役職: 高額療養費制度と社会保障を考える議員連盟 幹事長代行 → 国民民主党 政務調査会副会長",
+    "福田徹 委員会: 未掲載 → 安全保障委員会／予算委員会",
+    "現在の党所属を確定できない河村たかし・重徳和彦の2人は旧所属を現行のpartyフィールドから外し、確認理由に旧収録値を残した。所属未確認として表示・集計し、会派から政党を推測しない。"
+  ],
+  "unresolved": [
+    "河村たかし：旧収録値は確認理由に残し、現行の党所属としては表示・集計しない。地域政党「減税日本」と国政の「減税日本・ゆうこく連合」を同一視せず、国政の党所属は確認不十分。本人サイトには旧市長時代の記載が混在。",
+    "重徳和彦：旧収録値は確認理由に残し、現行の党所属としては表示・集計しない。公式衆院プロフィールの「中道」会派と国対委員長の記載は確認したが、現在の党所属を党・本人の現行名簿で独立確認できなかった（本人サイト403）。"
+  ],
+  "notes": [
+    "全32人の既存ID、会議録検索用の氏名、選挙区を維持。政党所属は30人の既存値を確認し、未確認2人の旧値は確認理由へ記録。全sourceUrlをWikipediaから本人の衆参公式プロフィールへ変更。",
+    "会派は党所属と別フィールド。衆院は9/28名簿の略称、参院は公式プロフィールの会派表記を保持。",
+    "国会32プロフィールに役職/委員会のverificationを付与。nationalファイルに混在していた県議4件は県プロフィールへ統合し、他市16件は未照合のまま保持。",
+    "当選回数、出身・学歴等の略歴、SNSは原則今回の確認対象外。summaryの旧現役職記述だけpositionsと矛盾しないよう修正。",
+    "青山周平は照合した衆院27委員名簿に掲載なし。委員不在・無役職とは断定しない。",
+    "副大臣・政務官は9/18官邸名簿を確認。長坂康正・今枝宗一郎・根本幸典・酒井庸行の旧政府役職を現在欄へ流用しない。",
+    "全件のverifiedは該当配列の掲載内容を確認した意味。全公職/党職の網羅や10/23までの異動不存在を保証しない。",
+    "取得内容はURLに対応するローカルキャッシュへ保持して再取得を抑制。原本HTMLはコミットしない。外部連絡・公開・発言収集は実行していない。",
+    "profiles.national.jsonに混在していた県議4人の既存略歴・当選回数を保持してprofiles.prefectural.jsonへ統合。対象外の他市16人は元のまま保持。"
+  ]
+}

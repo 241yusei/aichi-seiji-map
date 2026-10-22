@@ -23,12 +23,48 @@ export const vendorSchema = z.enum([
   "linkout",
 ]);
 
+export const verificationRecordSchema = z.object({
+  checkedAt: z.iso.date(),
+  status: z.enum(["verified", "not_listed", "unconfirmed"]),
+  sourceUrls: z.array(z.url().refine((url) => /^https?:\/\//.test(url), "http(s)の出典が必要です")).min(1),
+  sourceAsOf: z.iso.date().optional(),
+  note: z.string().min(1).optional(),
+}).strict().superRefine((record, ctx) => {
+  if (record.sourceAsOf && record.sourceAsOf > record.checkedAt) {
+    ctx.addIssue({ code: "custom", message: "資料の基準日が照合日より後です" });
+  }
+  if (record.status !== "verified" && !record.note) {
+    ctx.addIssue({ code: "custom", message: "掲載なし・未確認の理由を記録してください" });
+  }
+  if (new Set(record.sourceUrls).size !== record.sourceUrls.length) {
+    ctx.addIssue({ code: "custom", message: "確認根拠URLが重複しています" });
+  }
+  if (record.status === "verified" && record.sourceUrls.some((url) => {
+    try { return /(^|\.)wikipedia\.org$/.test(new URL(url).hostname); } catch { return false; }
+  })) {
+    ctx.addIssue({ code: "custom", message: "公式照合の根拠には一次資料を使用してください" });
+  }
+});
+
+export const rosterVerificationSchema = z.object({
+  membership: verificationRecordSchema,
+  affiliation: verificationRecordSchema,
+  faction: verificationRecordSchema.optional(),
+}).strict();
+
+export const profileVerificationSchema = z.object({
+  positions: verificationRecordSchema,
+  committees: verificationRecordSchema,
+}).strict();
+
 export const legislatorSchema = z.object({
   id: z.string().min(1),
   name: z.string().min(1),
   kana: z.string(),
   level: levelSchema,
   party: z.string().optional(),
+  faction: z.string().min(1).optional(),
+  verification: rosterVerificationSchema.optional(),
   district: z.string().min(1),
   photoUrl: httpUrl.optional(),
   sourceUrl: httpUrl,
@@ -101,7 +137,8 @@ export const factCardSchema = z.object({
 // 議員の補足プロフィール（当選回数・役職・委員会）。出典必須。
 export const legislatorProfileSchema = z.object({
   id: z.string().min(1),
-  electionCount: z.number().int().min(0),
+  electionCount: z.number().int().min(0).optional(),
+  verification: profileVerificationSchema.optional(),
   positions: z.array(z.string()),
   committees: z.array(z.string()),
   sourceUrl: httpUrl,
@@ -327,3 +364,28 @@ export const livingTopicSchema = z.object({
   }
 });
 export const livingTopicsSchema = z.array(livingTopicSchema).length(3).refine((topics) => new Set(topics.map((t) => t.issueId)).size === 3, "暮らしの3テーマに重複があります");
+
+
+export const rosterVerificationAuditSchema = z.object({
+  scope: z.enum(["national", "prefectural", "nagoya"]),
+  checkedAt: z.iso.date(),
+  sources: z.array(z.object({ url: httpUrl, purpose: z.string().min(1), accessNotes: z.string().optional() })).min(1),
+  matchedIds: z.array(z.string().min(1)).min(1),
+  changes: z.array(z.string()),
+  unresolved: z.array(z.string()),
+  notes: z.array(z.string()).optional(),
+}).refine((audit) => new Set(audit.matchedIds).size === audit.matchedIds.length, "照合済みIDが重複しています");
+
+export const speechImportAuditSchema = z.object({
+  pullRequestUrl: httpUrl,
+  sourceCommit: z.string().regex(/^[0-9a-f]{40}$/),
+  runUrl: httpUrl,
+  reviewedAt: z.iso.date(),
+  collectionCheckedAt: z.iso.date(),
+  beforeCount: z.number().int().nonnegative(),
+  afterCount: z.number().int().positive(),
+  speechIds: z.array(z.string().min(1)).min(1),
+  note: z.string().min(1),
+}).refine((audit) => audit.collectionCheckedAt <= audit.reviewedAt, "照会日と取込確認日の順序が不正です")
+  .refine((audit) => audit.afterCount - audit.beforeCount === audit.speechIds.length, "追加件数と取込記録が一致しません")
+  .refine((audit) => new Set(audit.speechIds).size === audit.speechIds.length, "取込発言IDが重複しています");

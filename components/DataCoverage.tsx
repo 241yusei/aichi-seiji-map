@@ -1,8 +1,11 @@
-import { getAllVotes, getCouncilDecisions, getSpeeches, getSpeechCollectionStatus } from "@/lib/data";
+import type { Legislator } from "@/lib/types";
+import { verifiedMembershipCount } from "@/lib/roster-verification";
+import { getAllVotes, getCouncilDecisions, getLegislators, getSpeeches, getSpeechCollectionStatus } from "@/lib/data";
 import { collectionLabel, isSangiinVote, recordedRange } from "@/lib/data-coverage";
 
-export function RosterCoverage() {
-  return <p className="mt-2 text-xs text-muted">名簿・所属・役職の個別照合日：未記録。サイト更新日とは異なります。最新は各項目の公式出典でご確認ください。</p>;
+export function RosterCoverage({ legislators = getLegislators() }: { legislators?: Legislator[] } = {}) {
+  const verified = verifiedMembershipCount(legislators);
+  return <p className="mt-2 text-xs leading-relaxed text-muted">現職・氏名・選挙区の公式照合：{verified}人／本サイト収録{legislators.length}人。所属・役職・委員会の確認状況、資料確認日と出典は各議員ページに表示します。未記録の項目を確認済みとして扱いません。</p>;
 }
 
 export function SpeechCoverage() {
