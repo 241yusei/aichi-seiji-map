@@ -24,9 +24,7 @@ export function IssueExplainerCard({ ex }: { ex: IssueExplainer }) {
         <div className="bg-surface p-5">
           <p className="eyebrow text-faint">いま何が起きているか</p>
           <p className="mt-1 text-sm text-muted">{ex.now}</p>
-          {ex.nowAsOf && (
-            <p className="mt-1 text-xs text-faint">（{formatDate(ex.nowAsOf)}時点）</p>
-          )}
+          <p className="mt-1 text-xs text-faint">{ex.nowAsOf ? `（${formatDate(ex.nowAsOf)}時点）` : "確認日：未記録。現在の状況は掲載の出典でご確認ください。"}</p>
         </div>
       </div>
       {ex.keyStats && ex.keyStats.length > 0 && (

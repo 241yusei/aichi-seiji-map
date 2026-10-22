@@ -8,7 +8,8 @@ import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { getLegislators } from "../lib/data";
 import { fetchKokkaiSpeeches } from "../lib/sources/kokkai";
-import type { DateRange, SpeechRecord } from "../lib/types";
+import { speechCollectionStatusSchema } from "../lib/zod-schemas";
+import type { DateRange, SpeechRecord, SpeechCollectionStatus } from "../lib/types";
 
 const FROM = process.env.KOKKAI_FROM ?? "2024-01-01";
 const UNTIL = process.env.KOKKAI_UNTIL ?? new Date().toISOString().slice(0, 10);
@@ -27,6 +28,7 @@ console.log(`国会発言を取得します（期間 ${FROM} 〜 ${UNTIL}、対�
 
 const all: SpeechRecord[] = [];
 const flagged: string[] = [];
+const failedIds: string[] = [];
 
 for (const l of nationals) {
   process.stdout.write(`  ${l.name}（${l.district}） … `);
@@ -38,6 +40,7 @@ for (const l of nationals) {
   } catch (e) {
     console.log(`失敗: ${(e as Error).message}`);
     flagged.push(`${l.name}（${l.district}）: 取得失敗`);
+    failedIds.push(l.id);
   }
 }
 
@@ -52,7 +55,7 @@ if (existsSync(OUT)) {
     const prev = JSON.parse(readFileSync(OUT, "utf-8")) as SpeechRecord[];
     for (const s of prev) merged.set(s.id, s);
   } catch {
-    console.warn("既存の speeches.national.json を読めませんでした。新規取得分のみで書き出します。");
+    throw new Error("既存発言を読み込めないため書き込みを中止しました。既存データを修復してください。");
   }
 }
 const beforeCount = merged.size;
@@ -66,4 +69,21 @@ console.log(
 if (flagged.length > 0) {
   console.log(`\n⚠ 発言3件未満（ロスターの氏名・表記揺れを要確認）:`);
   for (const f of flagged) console.log(`   - ${f}`);
+}
+
+// 追加0件・一部失敗も記録し、照会成功日を名簿の基準日に転用しない。
+const statusPath = join(process.cwd(), "data", "speech-collection-status.json");
+const previous: SpeechCollectionStatus | null = existsSync(statusPath)
+  ? speechCollectionStatusSchema.parse(JSON.parse(readFileSync(statusPath, "utf-8"))) : null;
+const checkedAt = new Date().toLocaleDateString("sv-SE", { timeZone: "Asia/Tokyo" });
+const status: SpeechCollectionStatus = {
+  sourceUrl: "https://kokkai.ndl.go.jp/api.html",
+  lastSuccessfulCheck: failedIds.length === 0 ? checkedAt : previous?.lastSuccessfulCheck ?? null,
+  from: FROM, until: UNTIL, targetCount: nationals.length,
+  succeededCount: nationals.length - failedIds.length, failedIds,
+};
+writeFileSync(statusPath, JSON.stringify(status, null, 2) + "\n", "utf-8");
+if (failedIds.length) {
+  console.error(`照会に失敗した議員が${failedIds.length}人います。全件成功日を進めず、確認を必要とする終了状態にします。`);
+  process.exitCode = 1;
 }

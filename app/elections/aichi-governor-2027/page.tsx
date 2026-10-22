@@ -223,7 +223,7 @@ export default function GovernorElection2027Page() {
       </section>
 
       <p className="measure border-t border-line pt-5 text-xs text-faint">
-        情報の基準日：{LAST_UPDATED}。任期満了日＝投票日ではありません。投票日・立候補者は愛知県選挙管理委員会の告示・発表でご確認ください。
+        サイト更新日：{LAST_UPDATED}。任期満了日＝投票日ではありません。投票日・立候補者は愛知県選挙管理委員会の告示・発表でご確認ください。
         本サイトは特定の政党・候補者への投票を呼びかけません。
       </p>
 

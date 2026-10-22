@@ -1,3 +1,5 @@
+import { latestFundingRecords } from "@/lib/data-coverage";
+import { RosterCoverage, SpeechCoverage } from "@/components/DataCoverage";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -69,6 +71,7 @@ export default async function LegislatorDetailPage({
   const speeches = getSpeechesByLegislator(id);
   const votes = getVotes(id);
   const funding = getFunding(id);
+  const latestFunding = latestFundingRecords(funding);
   const profile = getLegislatorProfile(id);
   // 次の選挙の目安と、名古屋市の区選出なら「同じ区の国・県・市の代表者」への導線。
   const nextElection = nextElectionFor(legislator);
@@ -168,7 +171,7 @@ export default async function LegislatorDetailPage({
           <SourceLink href={legislator.sourceUrl}>公式プロフィール・出典</SourceLink>
         </p>
         <p className="mt-1 text-xs text-faint">
-          情報の基準日：{LAST_UPDATED}（所属・役職は改選や異動で変わります）
+          サイト更新日：{LAST_UPDATED}（所属・役職の確認日ではありません）
         </p>
         {nextElection && (
           <div className="mt-5 max-w-2xl rounded-2xl bg-subtle p-4 text-sm">
@@ -193,6 +196,9 @@ export default async function LegislatorDetailPage({
         )}
       </header>
 
+      <RosterCoverage />
+      {legislator.level === "national" && <SpeechCoverage />}
+
       {/* 30秒サマリー（既存データから・中立。詳細は下の各セクション） */}
       {legislator.level === "national" && (
         <section className="card-soft border border-line bg-surface p-5">
@@ -207,7 +213,7 @@ export default async function LegislatorDetailPage({
             <li>
               <span className="font-bold">政治資金：</span>
               {funding.length > 0
-                ? `約${formatYen(funding.reduce((s, f) => s + (f.totalIncome ?? 0), 0))}規模（${funding.length}団体・${funding[0].year}年・出典つき）`
+                ? `約${formatYen(latestFunding.reduce((s, f) => s + (f.totalIncome ?? 0), 0))}規模（収録した${latestFunding.length}件・${latestFunding[0].year}年・全団体の合計ではありません）`
                 : "本サイトでは未収録"}
             </li>
             <li>
@@ -275,7 +281,7 @@ export default async function LegislatorDetailPage({
             <p className="mt-1 text-xs text-muted">国会会議録より（各発言に出典）</p>
           </div>
           <div className="bg-surface p-5">
-            <p className="eyebrow text-faint">やったこと（採決）</p>
+            <p className="eyebrow text-faint">記録された採決</p>
             <p className="num-display tnum mt-2 text-3xl">
               {votes.length}
               <span className="ml-1 text-base font-normal text-muted">件</span>
@@ -306,7 +312,7 @@ export default async function LegislatorDetailPage({
         <SectionHead
           n="01"
           title="発言"
-          meta={speeches.length > 0 ? `${speeches.length}件` : legislator.level === "national" ? "0件" : "本サイト未収録"}
+          meta={speeches.length > 0 ? `${speeches.length}件（収録分）` : "本サイト未収録"}
         />
         <div className="mt-5">
           {speeches.length > 0 ? (

@@ -13,6 +13,8 @@ import { CrossLayerView, type CrossLayerItem } from "@/components/CrossLayerView
 import { IssueExplainerCard } from "@/components/IssueExplainerCard";
 import { FactCardType } from "@/components/FactCardView";
 import { getRelatedFactCardsForIssue } from "@/lib/related";
+import { getLivingTopicByIssue } from "@/lib/living-topics";
+import { LivingTopicBrief } from "@/components/LivingTopicBrief";
 
 export function generateStaticParams() {
   return getIssues().map((i) => ({ id: i.id }));
@@ -43,6 +45,7 @@ export default async function IssueDetailPage({
   const issue = getIssue(id);
   if (!issue) notFound();
   const explainer = getIssueExplainer(id);
+  const livingTopic = getLivingTopicByIssue(id);
 
   const speeches = getSpeechesByIds(issue.relatedSpeechIds).sort((a, b) =>
     b.date.localeCompare(a.date),
@@ -71,6 +74,8 @@ export default async function IssueDetailPage({
         <p className="measure mt-3 text-muted">{issue.description}</p>
       </header>
 
+      {livingTopic && <LivingTopicBrief topic={livingTopic} />}
+
       {/* 01 解説（ガイド層）⇄ 02 記録（データ層）の振り子構造。往復リンクで“意味↔事実”を行き来できる。 */}
       <section id="explainer" className="scroll-mt-24">
         <div className="flex items-baseline justify-between gap-3 border-b border-line pb-2">
@@ -82,7 +87,11 @@ export default async function IssueDetailPage({
             記録を見る ↓
           </a>
         </div>
-        <div className="mt-5">{explainer && <IssueExplainerCard ex={explainer} />}</div>
+        <div className="mt-5">{explainer && (livingTopic ? <details className="rounded-2xl border border-line p-4">
+            <summary className="cursor-pointer text-sm font-medium">背景解説を読む（制度・計画の現況は上の確認日付き資料をご覧ください）</summary>
+            <p className="my-3 text-xs text-muted">以前の説明を背景資料として掲載しています。確認日が未記録の説明・数値を現在値として扱わないでください。</p>
+            <IssueExplainerCard ex={explainer} />
+          </details> : <IssueExplainerCard ex={explainer} />)}</div>
       </section>
 
       <section id="records" className="scroll-mt-24">

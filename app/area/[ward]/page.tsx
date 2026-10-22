@@ -1,3 +1,4 @@
+import { RosterCoverage } from "@/components/DataCoverage";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -126,8 +127,10 @@ export default async function WardDashboardPage({
         <p className="measure mt-3 text-muted">
           あなたの暮らしを決めている、国・県・市の代表者と首長です。氏名から発言・採決・政治資金（出典つき）に進めます。
         </p>
-        <p className="mt-2 text-xs text-faint">情報の基準日：{LAST_UPDATED}（改選・異動で変わります）</p>
+        <p className="mt-2 text-xs text-faint">サイト更新日：{LAST_UPDATED}（名簿の確認日ではありません）</p>
       </header>
+
+      <RosterCoverage />
 
       {/* 首長（決める人のトップ） */}
       {execs.length > 0 && (

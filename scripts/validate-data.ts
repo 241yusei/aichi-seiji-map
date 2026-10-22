@@ -19,6 +19,8 @@ import {
   legislatorsSchema,
   speechRecordsSchema,
   votesSchema,
+  livingTopicsSchema,
+  speechCollectionStatusSchema,
 } from "../lib/zod-schemas";
 import type {
   Candidate,
@@ -33,6 +35,7 @@ import type {
   LegislatorProfile,
   SpeechRecord,
   Vote,
+  LivingTopicBriefData,
 } from "../lib/types";
 import { MUNICIPALITIES } from "../lib/municipalities";
 
@@ -65,6 +68,10 @@ function load<T>(file: string, schema: { parse: (d: unknown) => unknown }): T[] 
   }
 }
 
+const statusPath = join(DATA_DIR, "speech-collection-status.json");
+try { speechCollectionStatusSchema.parse(JSON.parse(readFileSync(statusPath, "utf-8"))); }
+catch (e) { fail(`国会発言の照会履歴: ${(e as Error).message}`); }
+
 console.log("データ検証を開始します…\n");
 
 const legislatorFiles = [
@@ -80,6 +87,8 @@ const speeches = [
 const votes = load<Vote>("votes.json", votesSchema);
 const funding = load<Funding>("funding.json", fundingsSchema);
 const issues = load<Issue>("issues.json", issuesSchema);
+const livingTopics = load<LivingTopicBriefData>("living-topics.json", livingTopicsSchema);
+if (livingTopics.length !== 3) fail("暮らしの3テーマが揃っていません");
 const factCards = load<FactCard>("fact-cards.json", factCardsSchema);
 const executives = load<Executive>("executives.json", executivesSchema);
 // profiles.national.json（国会）に加え、自治体ごとの補足プロフィールも同じスキーマで検証する。
@@ -105,6 +114,9 @@ for (const l of legislators) {
 }
 // 発言IDの重複検出
 const seenSpeech = new Set<string>();
+for (const topic of livingTopics) {
+  if (!issues.some((i) => i.id === topic.issueId)) fail(`暮らしテーマの参照争点が不明: ${topic.issueId}`);
+}
 for (const s of speeches) {
   if (seenSpeech.has(s.id)) fail(`発言ID重複: ${s.id}`);
   seenSpeech.add(s.id);

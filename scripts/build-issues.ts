@@ -1,52 +1,34 @@
-// 争点シード（id・title・description・keywords）から、国会発言をキーワードで横断検索し、
-// 各争点に関連発言（relatedSpeechIds）を紐付けて data/issues.json を生成する。
-// 県・市は発言本文を持たない（linkout）ため、横串ビューでは会議録検索へのリンクで補う。
-
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
+// キーワード一致を編集確認用候補として data/raw に出力する。
+// 公開 data/issues.json は編集者が原文を確認して管理し、この処理では上書きしない。
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { speechRecordsSchema } from "../lib/zod-schemas";
-import type { Issue, SpeechRecord } from "../lib/types";
+import { z } from "zod";
+import { issuesSchema, speechRecordsSchema } from "../lib/zod-schemas";
+import { buildIssueCandidates } from "./_lib/issue-candidates";
 
 const DATA = join(process.cwd(), "data");
-const PER_ISSUE = 15;
-
-interface IssueSeed {
-  id: string;
-  title: string;
-  description: string;
-  keywords: string[];
-}
-
-const seed = JSON.parse(
-  readFileSync(join(DATA, "seed", "issues.seed.json"), "utf-8"),
-) as IssueSeed[];
-
-function loadSpeeches(): SpeechRecord[] {
-  return ["speeches.national.json", "speeches.municipal.json"].flatMap((f) => {
-    const p = join(DATA, f);
-    if (!existsSync(p)) return [];
-    const raw = readFileSync(p, "utf-8").trim();
-    if (!raw) return [];
-    return speechRecordsSchema.parse(JSON.parse(raw)) as SpeechRecord[];
-  });
-}
-
-const speeches = loadSpeeches();
-
-const issues: Issue[] = seed.map((s) => {
-  const matched = speeches
-    .filter((sp) => s.keywords.some((k) => sp.text.includes(k) || sp.body.includes(k)))
-    .sort((a, b) => b.date.localeCompare(a.date))
-    .slice(0, PER_ISSUE);
-  return {
-    id: s.id,
-    title: s.title,
-    description: s.description,
-    keywords: s.keywords,
-    relatedSpeechIds: matched.map((m) => m.id),
-  };
+const seedSchema = z.array(z.object({
+  id: z.string().min(1),
+  title: z.string().min(1),
+  description: z.string(),
+  keywords: z.array(z.string().min(1)),
+}));
+const seed = seedSchema.parse(JSON.parse(readFileSync(join(DATA, "seed", "issues.seed.json"), "utf-8")));
+const published = issuesSchema.parse(JSON.parse(readFileSync(join(DATA, "issues.json"), "utf-8")));
+const speeches = ["speeches.national.json", "speeches.municipal.json"].flatMap((file) => {
+  const path = join(DATA, file);
+  if (!existsSync(path)) return [];
+  return speechRecordsSchema.parse(JSON.parse(readFileSync(path, "utf-8")));
 });
-
-writeFileSync(join(DATA, "issues.json"), JSON.stringify(issues, null, 2) + "\n", "utf-8");
-console.log("✓ 争点を生成しました:");
-for (const i of issues) console.log(`   - ${i.title}: 関連発言 ${i.relatedSpeechIds.length} 件`);
+const report = {
+  status: "unreviewed",
+  notice: "編集確認用の機械抽出候補。一般語の一致を含み、公開の関連発言や件数には反映していません。",
+  issues: buildIssueCandidates(seed, published, speeches),
+};
+const outDir = join(DATA, "raw", "issue-candidates");
+mkdirSync(outDir, { recursive: true });
+writeFileSync(join(outDir, "latest.json"), JSON.stringify(report, null, 2) + "\n", "utf-8");
+console.log("✓ 未確認候補を data/raw/issue-candidates/latest.json に出力（公開 issues.json は変更なし）");
+for (const issue of report.issues) {
+  console.log(`   - ${issue.title}: 公開 ${issue.publishedSpeechIds.length} 件・未確認候補 ${issue.unmatchedReviewCount} 件（出力 ${issue.candidates.length} 件）`);
+}

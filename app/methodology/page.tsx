@@ -1,3 +1,4 @@
+import { VoteCoverage, SpeechCoverage } from "@/components/DataCoverage";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getSpeeches } from "@/lib/data";
@@ -90,7 +91,9 @@ export default function MethodologyPage() {
           本サイトの「発言の統計」と「会派多数と異なる投票」が、どのデータから・どう計算され・
           何を計算しないのかを開示します。数字はすべて事実の集計で、働きぶりや優劣の評価ではありません。
         </p>
-        <p className="mt-2 text-xs text-faint">情報の基準日：{LAST_UPDATED}</p>
+        <p className="mt-2 text-xs text-faint">サイト更新日：{LAST_UPDATED}</p>
+        <SpeechCoverage />
+        <VoteCoverage />
       </header>
 
       {/* 要点（先に結論） */}
@@ -99,7 +102,7 @@ export default function MethodologyPage() {
         <ul className="measure mt-2 space-y-1.5 text-sm text-muted">
           <li>発言の統計は、会議録の再集計です。「収録分」であり、活動のすべてではありません。</li>
           <li>
-            会派の正式な賛否指示は非公開のため、同じ採決の
+            採決当時の会派が未確認の票は集計に使いません。会派の正式な賛否指示は非公開のため、同じ採決の
             <span className="font-bold text-ink">同会派メンバーの多数</span>を会派の立場の近似とします。
           </li>
           <li>
@@ -165,7 +168,7 @@ export default function MethodologyPage() {
           <div className="border-l-2 border-accent bg-subtle px-4 py-3">
             <p className="eyebrow text-accent-deep">計算の手順</p>
             <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm text-muted">
-              <li>採決（議案×日付）ごとに、投票した議員を会派別にまとめる。</li>
+              <li>採決（議案×日付）ごとに、公式投票結果に記録された採決当時の会派でまとめる。現在の所属からは補完せず、会派未確認の票は多数の算出から除く。</li>
               <li>
                 賛成／反対を投じた同会派の人数が {MIN_FACTION_SIZE} 人以上のときだけ、
                 その会派の「多数」（賛成が多いか・反対が多いか）を求める。
@@ -227,7 +230,7 @@ export default function MethodologyPage() {
           <p>
             本サイトの参院記名投票は{" "}
             <span className="tnum font-bold">{div.billsAnalyzed}</span>{" "}
-            件・約3.5か月分と浅く、少数のデータを1つのスコアに圧縮すると、
+            件（収録期間は上記参照）に限られ、収録範囲の異なるデータを1つのスコアに圧縮すると、
             わずかな票の違いが過大な印象を与え、かえって誤解を招きます。
             そのため今回は、
             <span className="font-bold">（1）活動量の統計</span>と

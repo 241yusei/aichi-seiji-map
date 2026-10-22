@@ -20,6 +20,8 @@ import type {
   LegislatorProfile,
   SpeechRecord,
   Vote,
+  SpeechCollectionStatus,
+  LivingTopicBriefData,
 } from "./types";
 import {
   candidatesSchema,
@@ -35,6 +37,8 @@ import {
   legislatorsSchema,
   speechRecordsSchema,
   votesSchema,
+  speechCollectionStatusSchema,
+  livingTopicsSchema,
 } from "./zod-schemas";
 import { MUNICIPALITIES } from "./municipalities";
 
@@ -230,4 +234,13 @@ export function getCandidates(electionId: string): Candidate[] {
   return readArray<Candidate>("candidates.json", candidatesSchema)
     .filter((c) => c.electionId === electionId)
     .sort((a, b) => a.kana.localeCompare(b.kana, "ja") || a.name.localeCompare(b.name, "ja"));
+}
+
+export function getSpeechCollectionStatus(): SpeechCollectionStatus | null {
+  const path = join(DATA_DIR, "speech-collection-status.json");
+  return existsSync(path) ? speechCollectionStatusSchema.parse(JSON.parse(readFileSync(path, "utf-8"))) : null;
+}
+
+export function getLivingTopics(): LivingTopicBriefData[] {
+  return readArray<LivingTopicBriefData>("living-topics.json", livingTopicsSchema);
 }

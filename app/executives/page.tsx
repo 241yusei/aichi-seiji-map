@@ -1,3 +1,4 @@
+import { RosterCoverage } from "@/components/DataCoverage";
 import type { Metadata } from "next";
 import { getExecutives } from "@/lib/data";
 import { SourceLink } from "@/components/SourceLink";
@@ -93,6 +94,7 @@ export default function ExecutivesPage() {
             caption={`計${executives.length}人（各自治体公式サイトより）`}
           />
         </div>
+        <RosterCoverage />
       </header>
 
       {governor.length > 0 && (
@@ -136,7 +138,7 @@ export default function ExecutivesPage() {
       </section>
 
       <p className="measure border-t border-line pt-5 text-xs text-faint">
-        情報の基準日：{LAST_UPDATED}。氏名・肩書はすべて各自治体公式サイトの記載に基づきます（各行の「公式プロフィール」リンクが出典）。
+        サイト更新日：{LAST_UPDATED}。氏名・肩書はすべて各自治体公式サイトの記載に基づきます（各行の「公式プロフィール」リンクが出典）。
         改選などで交代した場合は順次更新します。誤りにお気づきの場合は出典とあわせてご指摘ください。
       </p>
     </div>

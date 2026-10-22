@@ -1,3 +1,4 @@
+import { LivingTopicCards } from "@/components/LivingTopicCards";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getIssues, getIssueExplainer } from "@/lib/data";
@@ -27,6 +28,7 @@ export default function IssuesPage() {
           国会での発言を、「物価」「子育て」など くらしのテーマから探す <span aria-hidden="true">→</span>
         </Link>
       </header>
+      <LivingTopicCards />
 
       <section aria-labelledby="issues-heading">
         <div className="mb-6 flex flex-wrap items-end justify-between gap-3">

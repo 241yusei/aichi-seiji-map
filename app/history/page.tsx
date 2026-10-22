@@ -179,7 +179,7 @@ export default function HistoryPage() {
       </section>
 
       <p className="measure border-t border-line pt-5 text-xs text-faint">
-        情報の基準日：{LAST_UPDATED}。歴代首長の在任・投票率・出来事は、いずれも掲載の出典に基づく事実の記録です。
+        サイト更新日：{LAST_UPDATED}。歴代首長の在任・投票率・出来事は、いずれも掲載の出典に基づく事実の記録です。
         在任の長短や投票率の高低に評価を加えるものではなく、特定の政党・候補者への投票も呼びかけません。
         誤りに気づかれた方は
         <Link href="/corrections" className="link-ink">

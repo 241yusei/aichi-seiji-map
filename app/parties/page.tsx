@@ -1,3 +1,4 @@
+import { RosterCoverage } from "@/components/DataCoverage";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getLegislators } from "@/lib/data";
@@ -81,6 +82,7 @@ export default function PartiesPage() {
           愛知の政治を三層（国会・県議会・名古屋市会）で見たときの会派構成です。人数の多い順に並べました。
           数字はすべて公式名簿に基づきます。どの会派がいい・悪いではなく、勢力の分布を事実として示します。
         </p>
+        <RosterCoverage />
       </header>
 
       <LayerSection
@@ -157,7 +159,7 @@ export default function PartiesPage() {
       </section>
 
       <p className="measure border-t border-line pt-5 text-xs text-faint">
-        情報の基準日：{LAST_UPDATED}。会派名は公式名簿の表記に基づきます（政党名と完全には一致しない地域会派を含む）。
+        サイト更新日：{LAST_UPDATED}。会派名は公式名簿の表記に基づきます（政党名と完全には一致しない地域会派を含む）。
         改選などで変わった場合は順次更新します。特定の政党・候補者への投票は呼びかけません。
       </p>
 

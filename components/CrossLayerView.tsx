@@ -38,7 +38,7 @@ export function CrossLayerView({
           // 0件時は空振りカードでなく台帳の1行に縮退（反復ノイズを避ける）。
           <p className="tnum border-y border-line py-3 text-sm text-muted">
             この争点の取得済み発言：<span className="font-bold text-ink">0件</span>
-            （関連発言が会議録に記録され次第、追加します）
+            （本サイトで関連を確認した発言は未収録です。実際の発言がないことを示すものではありません）
           </p>
         ) : (
           <>

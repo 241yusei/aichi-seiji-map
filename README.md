@@ -22,7 +22,7 @@ npm run dev            # http://localhost:3000
 | コマンド | 内容 |
 |---|---|
 | `npm run dev` / `build` / `start` | 開発 / 本番ビルド(→`out/`) / 起動 |
-| `npm run lint` / `typecheck` / `validate` | Lint / 型 / データ検証(スキーマ＋相互参照) |
+| `npm test` / `npm run lint` / `typecheck` / `validate` | fixture回帰 / Lint / 型 / データ検証(スキーマ＋相互参照) |
 | `npm run seed:legislators` | 愛知選出 国会議員ロスターの seed 検証 |
 | `npm run fetch:kokkai` | 国会会議録API → 発言 |
 | `npm run fetch:nagoya` | 名古屋市会 議員名簿＋公式会議録リンク（発言本文は要許諾のため未取得） |

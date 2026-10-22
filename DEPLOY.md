@@ -13,7 +13,7 @@
    npm run fetch:toyota                                  # 豊田市議会（Phase2）
    # AI要約（任意・要 ANTHROPIC_API_KEY）
    npm run summarize
-   npm run build:issues                                  # 争点の横串
+   npm run build:issues                                  # 未確認候補のみ生成（公開データは保持）
    ```
 3. 検証＋ビルド：
    ```bash
@@ -77,3 +77,13 @@ Permissions-Policy）と、`/_next/static/*` の長期キャッシュを指定�
 - 上記以外のデータ更新は手動バッチ（リアルタイム更新なし）。更新後に再ビルド→再デプロイ。
 - `data/raw/`・`.env` はコミットしない（`.gitignore` 済み）。
 - 県議会(dbsr)・各市会の本文は転載せず会議録検索へリンクする方針を維持すること（規約・robots遵守）。
+
+
+## データの確認日と編集確認（2026-10-22）
+
+- `lib/site-meta.ts` の `LAST_UPDATED` はサイトの編集内容の更新日。国会発言の取得だけで名簿・所属・役職の確認日を更新しない。
+- 国会発言の照会成否・対象期間は `data/speech-collection-status.json` に保存する。一部失敗の場合は全件成功日を進めず、非ゼロ終了する。収録発言の最古・最新日は収録範囲であり、全発言の網羅性を示さない。
+- `npm run build:issues` は `data/raw/issue-candidates/latest.json` に未確認候補を出す。公開する `data/issues.json` は変更しない。原文を確認した関連付けのみを手で追記し、`npm run validate` と回帰テストを通したPRで扱う。
+- 暮らしの3テーマは `data/living-topics.json`。具体案件・確認日・記述別の出典IDを保持する。未確認の費用や予定日は未確認と書き、推測で補わない。
+- 過去の事実カードは集計時点 `asOf` と保存版 `historical`、訂正日 `updatedAt` を分ける。
+- `npm test` は外部通信を差し替えた使い捨てfixtureのみ。収集API・本番・要約APIには接続しない。

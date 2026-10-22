@@ -141,7 +141,7 @@ export default function ForEducationPage() {
         <p>レポート・教材で引用する場合は、次の形を推奨します。</p>
         <p className="border border-line bg-surface p-3 text-xs leading-relaxed text-ink">
           政治のトリセツ あいち・なごや「（ページ名）」https://seiji-torisetsu.pages.dev/（閲覧日）
-          ※データ基準日：各ページ下部に記載
+          ※確認日・収録範囲：各ページの記載をご確認ください
         </p>
         <ul className="list-disc space-y-1 pl-5">
           <li>
@@ -170,7 +170,7 @@ export default function ForEducationPage() {
       </Section>
 
       <p className="measure border-t border-line pt-5 text-xs text-faint">
-        情報の基準日：{LAST_UPDATED}。本ページは教育目的での利用案内であり、特定の政党・候補者への
+        サイト更新日：{LAST_UPDATED}。本ページは教育目的での利用案内であり、特定の政党・候補者への
         投票を呼びかけるものではありません。
       </p>
 
