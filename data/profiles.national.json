@@ -3,326 +3,821 @@
     "id": "nat-bfcafee4",
     "electionCount": 7,
     "positions": [
-      "減税日本・ゆうこく連合 共同代表",
-      "元名古屋市長"
+      "減税日本代表"
     ],
-    "committees": [],
-    "sourceUrl": "https://ja.wikipedia.org/wiki/河村たかし",
+    "committees": [
+      "財務金融委員会"
+    ],
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/135.html",
     "summary": "名古屋市出身、一橋大卒。1993年衆院初当選。元名古屋市長で減税日本代表。",
     "homepage": "https://takashi-kawamura.com/",
-    "x": "https://x.com/kawamura758"
+    "x": "https://x.com/kawamura758",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://genzeinippon.com/",
+          "https://takashi-kawamura.com/"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。資料の異なる時点・役職区分は各出典で確認。 地域政党「減税日本」の代表を確認した記録であり、国政の「減税日本・ゆうこく連合」の党所属を確認したものではない。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0050.htm"
+        ],
+        "note": "衆院公式索引の常任17・特別7・審査会3の計27名簿を確認。資料ごとの記載時点：財務金融委員会 2026-10-20",
+        "sourceAsOf": "2026-10-20"
+      }
+    }
   },
   {
     "id": "nat-a1b17fc6",
     "electionCount": 11,
     "positions": [
-      "元国家戦略担当大臣",
-      "元経済財政政策担当大臣",
-      "国民民主党 国会対策委員長"
+      "衆議院 国家基本政策委員会 理事",
+      "国民民主党 代表代行兼国会対策委員長",
+      "国民民主党 政治改革・行政改革推進本部長"
     ],
     "committees": [
       "国土交通委員会",
-      "災害対策特別委員会"
+      "国家基本政策委員会"
     ],
-    "sourceUrl": "https://new-kokumin.jp/member/furukawa-motohisa",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/371.html",
     "summary": "名古屋市出身、東大卒・元大蔵省。1996年衆院初当選。国民民主党所属、元国家戦略担当相。",
     "homepage": "https://www.furukawa.cc/",
-    "x": "https://x.com/Fullgen"
+    "x": "https://x.com/Fullgen",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0130.htm",
+          "https://new-kokumin.jp/about/board-member"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。資料の異なる時点・役職区分は各出典で確認。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0100.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0130.htm"
+        ],
+        "note": "衆院公式索引の常任17・特別7・審査会3の計27名簿を確認。資料ごとの記載時点：国土交通委員会 2026-10-21、国家基本政策委員会 2026-10-06"
+      }
+    }
   },
   {
     "id": "nat-a34da432",
     "electionCount": 1,
     "positions": [],
-    "committees": [],
-    "sourceUrl": "https://www.jimin-aichi.or.jp/archives/member/407-2",
+    "committees": [
+      "経済産業委員会",
+      "消費者問題に関する特別委員会",
+      "東日本大震災復興及び原子力問題調査特別委員会"
+    ],
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/395.html",
     "summary": "名古屋市出身、東大法卒・元通産官僚。2024年公認、自民愛知3区支部長を経て衆院議員。",
-    "homepage": "https://mizuno.aichi.jp/"
+    "homepage": "https://mizuno.aichi.jp/",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "not_listed",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0090.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5140.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5210.htm"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。照合した委員名簿に委員長・理事等の掲載なし。役職が無いという断定ではない。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0090.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5140.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5210.htm"
+        ],
+        "note": "衆院公式索引の常任17・特別7・審査会3の計27名簿を確認。資料ごとの記載時点：経済産業委員会 2026-10-21、消費者問題に関する特別委員会 2026-10-06、東日本大震災復興及び原子力問題調査特別委員会 2026-10-06"
+      }
+    }
   },
   {
     "id": "nat-e7917464",
     "electionCount": 6,
     "positions": [
-      "元衆議院経済産業委員長",
-      "元内閣府副大臣",
-      "元国土交通大臣政務官"
+      "衆議院 国土交通委員会 理事"
     ],
     "committees": [
-      "決算行政監視委員会",
-      "災害対策特別委員会",
-      "国土交通委員会",
-      "文部科学委員会"
+      "国土交通委員会"
     ],
-    "sourceUrl": "https://www.jimin.jp/member/110466.html",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/151.html",
     "summary": "名古屋市熱田区出身。名古屋市会議員を経て2012年衆院初当選。自民所属、元国交政務官。",
-    "homepage": "https://www.kudoshozo.com/"
+    "homepage": "https://www.kudoshozo.com/",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0100.htm"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。資料の異なる時点・役職区分は各出典で確認。",
+        "sourceAsOf": "2026-10-21"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0100.htm"
+        ],
+        "note": "衆院公式索引の常任17・特別7・審査会3の計27名簿を確認。資料ごとの記載時点：国土交通委員会 2026-10-21",
+        "sourceAsOf": "2026-10-21"
+      }
+    }
   },
   {
     "id": "nat-0f518982",
     "electionCount": 1,
     "positions": [],
-    "committees": [],
-    "sourceUrl": "https://ja.wikipedia.org/wiki/岡本康宏",
+    "committees": [
+      "厚生労働委員会",
+      "政治改革に関する特別委員会",
+      "地域活性化・こども政策・デジタル社会形成に関する特別委員会"
+    ],
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/094.html",
     "summary": "名古屋市中川区出身、歯科医師。愛知学院大歯学部卒。2026年第51回衆院選で愛知5区初当選、自民所属。",
-    "homepage": "https://okamotoyasuhiro.com/"
+    "homepage": "https://okamotoyasuhiro.com/",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "not_listed",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0070.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5021.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5240.htm"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。照合した委員名簿に委員長・理事等の掲載なし。役職が無いという断定ではない。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0070.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5021.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5240.htm"
+        ],
+        "note": "衆院公式索引の常任17・特別7・審査会3の計27名簿を確認。資料ごとの記載時点：厚生労働委員会 2026-10-21、政治改革に関する特別委員会 2026-10-06、地域活性化・こども政策・デジタル社会形成に関する特別委員会 2026-10-06"
+      }
+    }
   },
   {
     "id": "nat-6fa6066e",
     "electionCount": 8,
     "positions": [
-      "元文部科学副大臣兼内閣府副大臣",
-      "自由民主党愛知県連会長",
-      "衆議院地域活性化・こども政策・デジタル社会形成に関する特別委員長"
+      "衆議院 沖縄及び北方問題に関する特別委員会 委員長"
     ],
     "committees": [
-      "地域活性化・こども政策・デジタル社会形成に関する特別委員会"
+      "文部科学委員会",
+      "沖縄及び北方問題に関する特別委員会"
     ],
-    "sourceUrl": "https://www.jimin.jp/member/102122.html",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/318.html",
     "summary": "自民党。1972年春日井市生まれ。2005年初当選、衆院当選8回。文部科学副大臣等を歴任、自民党愛知県連会長。",
     "homepage": "https://2wa.jp/",
-    "x": "https://x.com/niwajimusyo"
+    "x": "https://x.com/niwajimusyo",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5060.htm"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。資料の異なる時点・役職区分は各出典で確認。",
+        "sourceAsOf": "2026-10-06"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0060.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5060.htm"
+        ],
+        "note": "衆院公式索引の常任17・特別7・審査会3の計27名簿を確認。資料ごとの記載時点：文部科学委員会 2026-10-06、沖縄及び北方問題に関する特別委員会 2026-10-06",
+        "sourceAsOf": "2026-10-06"
+      }
+    }
   },
   {
     "id": "nat-81cb6e51",
     "electionCount": 2,
-    "positions": [],
-    "committees": [],
-    "sourceUrl": "https://ja.wikipedia.org/wiki/日野紗里亜",
+    "positions": [
+      "衆議院 地域活性化・こども政策・デジタル社会形成に関する特別委員会 理事",
+      "国民民主党 政務調査会副会長",
+      "国民民主党 子ども・子育て・若者政策調査会長"
+    ],
+    "committees": [
+      "厚生労働委員会",
+      "地域活性化・こども政策・デジタル社会形成に関する特別委員会"
+    ],
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/344.html",
     "summary": "国民民主党。1987年生まれ、名古屋市育ち。あいち多胎ネット元代表理事。2024年初当選、衆院2期目。",
     "homepage": "https://hinosaria.com/",
-    "x": "https://x.com/saria_hino"
+    "x": "https://x.com/saria_hino",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5240.htm",
+          "https://new-kokumin.jp/about/board-member"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。資料の異なる時点・役職区分は各出典で確認。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0070.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5240.htm"
+        ],
+        "note": "衆院公式索引の常任17・特別7・審査会3の計27名簿を確認。資料ごとの記載時点：厚生労働委員会 2026-10-21、地域活性化・こども政策・デジタル社会形成に関する特別委員会 2026-10-06"
+      }
+    }
   },
   {
     "id": "nat-e993491d",
     "electionCount": 7,
-    "positions": [
-      "元復興大臣",
-      "元環境副大臣兼内閣府副大臣",
-      "元衆議院法務委員長"
+    "positions": [],
+    "committees": [
+      "国土交通委員会"
     ],
-    "committees": [],
-    "sourceUrl": "https://www.jimin.jp/member/102124.html",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/045.html",
     "summary": "自民党。1964年名古屋市生まれ。電通・秘書を経て愛知県議2期。2005年衆院初当選、当選7回。元復興大臣。",
     "homepage": "https://tadahiko-itoh.com/",
-    "x": "https://x.com/tadahiko_itoh"
+    "x": "https://x.com/tadahiko_itoh",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "not_listed",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0100.htm"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。照合した委員名簿に委員長・理事等の掲載なし。役職が無いという断定ではない。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0100.htm"
+        ],
+        "note": "衆院公式索引の常任17・特別7・審査会3の計27名簿を確認。資料ごとの記載時点：国土交通委員会 2026-10-21",
+        "sourceAsOf": "2026-10-21"
+      }
+    }
   },
   {
     "id": "nat-bac9a65b",
     "electionCount": 6,
     "positions": [
-      "厚生労働副大臣（2025年10月〜）",
-      "元経済産業副大臣兼内閣府副大臣",
-      "元衆議院国土交通委員長"
+      "衆議院 東日本大震災復興及び原子力問題調査特別委員会 理事"
     ],
-    "committees": [],
-    "sourceUrl": "https://nagasakayasumasa.com/",
-    "summary": "自民党。1957年生まれ。海部俊樹秘書・愛知県議6期を経て2012年衆院初当選、6期目。厚生労働副大臣。",
-    "homepage": "https://nagasakayasumasa.com/"
+    "committees": [
+      "厚生労働委員会",
+      "東日本大震災復興及び原子力問題調査特別委員会"
+    ],
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/283.html",
+    "summary": "自民党。1957年生まれ。海部俊樹秘書・愛知県議6期を経て2012年衆院初当選、6期目。厚生労働副大臣などを歴任。",
+    "homepage": "https://nagasakayasumasa.com/",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5210.htm"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。資料の異なる時点・役職区分は各出典で確認。",
+        "sourceAsOf": "2026-10-06"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0070.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5210.htm"
+        ],
+        "note": "衆院公式索引の常任17・特別7・審査会3の計27名簿を確認。資料ごとの記載時点：厚生労働委員会 2026-10-21、東日本大震災復興及び原子力問題調査特別委員会 2026-10-06"
+      }
+    }
   },
   {
     "id": "nat-6ab3d9a1",
     "electionCount": 2,
     "positions": [
-      "内閣府大臣政務官（第2次高市内閣）"
+      "経済産業大臣政務官兼内閣府大臣政務官"
     ],
-    "committees": [],
-    "sourceUrl": "https://www.kantei.go.jp/jp/105/meibo/seimukan/wakayama_shinji.html",
-    "summary": "自民党。1973年岐阜県神戸町生まれ。江崎鐵磨秘書を経て2024年衆院初当選、2期目。内閣府大臣政務官。",
+    "committees": [
+      "経済産業委員会"
+    ],
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/455.html",
+    "summary": "自民党。1973年岐阜県神戸町生まれ。江崎鐵磨秘書を経て2024年衆院初当選、2期目。経済産業大臣政務官兼内閣府大臣政務官。",
     "homepage": "https://www.wakayama-shinji.com/",
-    "x": "https://x.com/wakayama_shinji"
+    "x": "https://x.com/wakayama_shinji",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.kantei.go.jp/jp/105/meibo/seimukan.html"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。資料の異なる時点・役職区分は各出典で確認。",
+        "sourceAsOf": "2026-09-18"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0090.htm"
+        ],
+        "note": "衆院公式索引の常任17・特別7・審査会3の計27名簿を確認。資料ごとの記載時点：経済産業委員会 2026-10-21",
+        "sourceAsOf": "2026-10-21"
+      }
+    }
   },
   {
     "id": "nat-cedb39cc",
     "electionCount": 2,
-    "positions": [],
-    "committees": [],
-    "sourceUrl": "https://ja.wikipedia.org/wiki/丹野みどり",
+    "positions": [
+      "衆議院 消費者問題に関する特別委員会 理事",
+      "国民民主党 国会対策副委員長"
+    ],
+    "committees": [
+      "経済産業委員会",
+      "消費者問題に関する特別委員会"
+    ],
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/263.html",
     "summary": "元CBCアナウンサー。名古屋大卒。国民民主党、愛知11区選出の衆院議員。",
     "homepage": "https://tannomidori.com/",
-    "x": "https://x.com/tannomidori"
+    "x": "https://x.com/tannomidori",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5140.htm",
+          "https://new-kokumin.jp/about/board-member"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。資料の異なる時点・役職区分は各出典で確認。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0090.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5140.htm"
+        ],
+        "note": "衆院公式索引の常任17・特別7・審査会3の計27名簿を確認。資料ごとの記載時点：経済産業委員会 2026-10-21、消費者問題に関する特別委員会 2026-10-06"
+      }
+    }
   },
   {
     "id": "nat-dd6216b1",
     "electionCount": 5,
     "positions": [
-      "元文部科学副大臣",
-      "元自由民主党国会対策副委員長"
+      "文部科学副大臣"
     ],
     "committees": [],
-    "sourceUrl": "https://www.jimin.jp/member/102126.html",
-    "summary": "岡崎市出身。自民党、愛知12区選出の衆院議員。元文部科学副大臣。",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/005.html",
+    "summary": "岡崎市出身。自民党、愛知12区選出の衆院議員。文部科学副大臣。",
     "homepage": "https://aoyama-shuhei.jp/",
-    "x": "https://x.com/ao_shu_office"
+    "x": "https://x.com/ao_shu_office",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.kantei.go.jp/jp/105/meibo/fukudaijin.html"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。資料の異なる時点・役職区分は各出典で確認。",
+        "sourceAsOf": "2026-09-18"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "not_listed",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/list.htm"
+        ],
+        "note": "衆院公式索引の常任17・特別7・審査会3の計27名簿を確認。照合した27名簿に掲載なし。委員を務めていないとの断定ではない。"
+      }
+    }
   },
   {
     "id": "nat-b9534cd2",
     "electionCount": 2,
     "positions": [
-      "自由民主党 経済産業部会長代理"
+      "環境大臣政務官"
     ],
     "committees": [
-      "財務金融委員会",
-      "経済産業委員会",
-      "科学技術・イノベーション推進特別委員会"
+      "環境委員会"
     ],
-    "sourceUrl": "https://www.jimin.jp/member/202146.html",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/028.html",
     "summary": "碧南市出身。立命館大卒。元碧南市議・愛知県議。自民党、愛知13区の衆院議員。",
     "homepage": "https://141taku.com/",
-    "x": "https://x.com/takuishii"
+    "x": "https://x.com/takuishii",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.kantei.go.jp/jp/105/meibo/seimukan.html"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。資料の異なる時点・役職区分は各出典で確認。",
+        "sourceAsOf": "2026-09-18"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0110.htm"
+        ],
+        "note": "衆院公式索引の常任17・特別7・審査会3の計27名簿を確認。資料ごとの記載時点：環境委員会 2026-10-06",
+        "sourceAsOf": "2026-10-06"
+      }
+    }
   },
   {
     "id": "nat-b4ef86ed",
     "electionCount": 6,
     "positions": [
-      "デジタル副大臣兼内閣府副大臣",
-      "元文部科学副大臣",
-      "元財務大臣政務官"
+      "衆議院 農林水産委員会 委員長"
     ],
-    "committees": [],
-    "sourceUrl": "https://ja.wikipedia.org/wiki/今枝宗一郎",
+    "committees": [
+      "農林水産委員会"
+    ],
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/059.html",
     "summary": "名古屋大医学部卒の医師。自民党、愛知14区選出の衆院議員。元文部科学副大臣。",
     "homepage": "https://www.imaeda-sou.com/",
-    "x": "https://x.com/imaeda_soichiro"
+    "x": "https://x.com/imaeda_soichiro",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0080.htm"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。資料の異なる時点・役職区分は各出典で確認。",
+        "sourceAsOf": "2026-10-21"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0080.htm"
+        ],
+        "note": "衆院公式索引の常任17・特別7・審査会3の計27名簿を確認。資料ごとの記載時点：農林水産委員会 2026-10-21",
+        "sourceAsOf": "2026-10-21"
+      }
+    }
   },
   {
     "id": "nat-4b065d48",
     "electionCount": 6,
     "positions": [
-      "農林水産副大臣",
-      "元国土交通大臣政務官兼内閣府大臣政務官"
+      "衆議院 財務金融委員会 委員長"
     ],
-    "committees": [],
-    "sourceUrl": "https://ja.wikipedia.org/wiki/根本幸典",
+    "committees": [
+      "財務金融委員会"
+    ],
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/322.html",
     "summary": "北海道砂川市生まれ、一橋大卒。元豊橋市議。自民党、愛知15区選出の衆院議員。",
     "homepage": "https://nemoto-yukinori.com/",
-    "x": "https://x.com/nemotoyukinori"
+    "x": "https://x.com/nemotoyukinori",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0050.htm"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。資料の異なる時点・役職区分は各出典で確認。",
+        "sourceAsOf": "2026-10-20"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0050.htm"
+        ],
+        "note": "衆院公式索引の常任17・特別7・審査会3の計27名簿を確認。資料ごとの記載時点：財務金融委員会 2026-10-20",
+        "sourceAsOf": "2026-10-20"
+      }
+    }
   },
   {
     "id": "nat-44385aca",
     "electionCount": 1,
-    "positions": [
-      "元小牧市長（4期）",
-      "元愛知県議会議員（2期）"
+    "positions": [],
+    "committees": [
+      "財務金融委員会",
+      "文部科学委員会",
+      "政治改革に関する特別委員会"
     ],
-    "committees": [],
-    "sourceUrl": "https://ja.wikipedia.org/wiki/山下史守朗",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/432.html",
     "summary": "自民党衆院議員（愛知16区、1期）。元小牧市長4期・元愛知県議2期。立命館大卒。",
-    "homepage": "https://shizuo-y.jp/"
+    "homepage": "https://shizuo-y.jp/",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "not_listed",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0050.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0060.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5021.htm"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。照合した委員名簿に委員長・理事等の掲載なし。役職が無いという断定ではない。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0050.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0060.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5021.htm"
+        ],
+        "note": "衆院公式索引の常任17・特別7・審査会3の計27名簿を確認。資料ごとの記載時点：財務金融委員会 2026-10-20、文部科学委員会 2026-10-06、政治改革に関する特別委員会 2026-10-06"
+      }
+    }
   },
   {
     "id": "nat-4dd7b521",
     "electionCount": 3,
     "positions": [
-      "参議院予算委員長",
-      "元財務副大臣",
-      "元総務大臣政務官"
+      "参議院 議院運営委員会委員長"
     ],
     "committees": [
       "総務委員会",
-      "予算委員会"
+      "議院運営委員会"
     ],
     "sourceUrl": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7010046.htm",
     "summary": "自民党参院議員（愛知、3期）。元愛知県議。扶桑町出身、南山大経営学部卒。",
     "homepage": "https://fujikawa-masahito.com/",
-    "x": "https://x.com/fujikawasangiin"
+    "x": "https://x.com/fujikawasangiin",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7010046.htm"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。資料の異なる時点・役職区分は各出典で確認。",
+        "sourceAsOf": "2026-10-21"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7010046.htm"
+        ],
+        "note": "参議院公式プロフィール「参議院における役職等一覧」（2026-10-21現在）の全掲載項目。2025-12-18現在の略歴欄から補っていない。",
+        "sourceAsOf": "2026-10-21"
+      }
+    }
   },
   {
     "id": "nat-2b393eda",
     "electionCount": 2,
     "positions": [
-      "参議院外交防衛委員長",
-      "元経済産業大臣政務官",
-      "公明党愛知県本部代表"
+      "公明党 中央幹事",
+      "公明党 労働局長"
     ],
     "committees": [
-      "外交防衛委員会",
-      "行政監視委員会"
+      "厚生労働委員会",
+      "こども・子育て・若者活躍に関する特別委員会",
+      "国民生活・経済に関する調査会"
     ],
     "sourceUrl": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7016020.htm",
     "summary": "公明党参院議員（愛知、2期）。元労働省官僚、東大経済学部卒。元経産政務官。",
     "homepage": "https://satomi-ryuji.com/",
-    "x": "https://x.com/satomi_ryuji"
+    "x": "https://x.com/satomi_ryuji",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7016020.htm",
+          "https://www.komei.or.jp/mb/member/detail/23020339/page:1/kokai:2/route:member_legislator"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。資料の異なる時点・役職区分は各出典で確認。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7016020.htm"
+        ],
+        "note": "参議院公式プロフィール「参議院における役職等一覧」（2026-10-21現在）の全掲載項目。2025-12-18現在の略歴欄から補っていない。",
+        "sourceAsOf": "2026-10-21"
+      }
+    }
   },
   {
     "id": "nat-40de2cf3",
     "electionCount": 3,
     "positions": [
-      "立憲民主党 参議院国会対策委員長",
-      "元経済産業委員長",
-      "元環境委員長"
+      "参議院 文教科学委員会 理事",
+      "立憲民主党 国会対策委員長",
+      "立憲民主党 参議院国会対策委員長"
     ],
     "committees": [
       "文教科学委員会",
       "国家基本政策委員会"
     ],
     "sourceUrl": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7010027.htm",
-    "summary": "立憲民主党参院議員（愛知、3期）。元小学校教員。愛知県連代表。",
+    "summary": "立憲民主党参院議員（愛知、3期）。元小学校教員。",
     "homepage": "https://saitoyoshitaka.com/",
-    "x": "https://x.com/saito_yoshitaka"
+    "x": "https://x.com/saito_yoshitaka",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7010027.htm",
+          "https://cdp-japan.jp/member/1474"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。資料の異なる時点・役職区分は各出典で確認。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7010027.htm"
+        ],
+        "note": "参議院公式プロフィール「参議院における役職等一覧」（2026-10-21現在）の全掲載項目。2025-12-18現在の略歴欄から補っていない。",
+        "sourceAsOf": "2026-10-21"
+      }
+    }
   },
   {
     "id": "nat-301067c0",
     "electionCount": 2,
     "positions": [
+      "参議院 文教科学委員会 理事",
       "国民民主党 参議院国会対策委員長",
       "国民民主党 選挙対策委員長代理"
     ],
     "committees": [
       "文教科学委員会",
-      "予算委員会"
+      "国家基本政策委員会",
+      "情報監視審査会",
+      "政治倫理審査会"
     ],
     "sourceUrl": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7016006.htm",
     "summary": "国民民主党参院議員（愛知、2期）。元テレビ局員・リクルート勤務。",
     "homepage": "https://itoutakae.info/",
-    "x": "https://x.com/itotakae0630"
+    "x": "https://x.com/itotakae0630",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7016006.htm",
+          "https://new-kokumin.jp/about/board-member"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。資料の異なる時点・役職区分は各出典で確認。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7016006.htm"
+        ],
+        "note": "参議院公式プロフィール「参議院における役職等一覧」（2026-10-21現在）の全掲載項目。2025-12-18現在の略歴欄から補っていない。",
+        "sourceAsOf": "2026-10-21"
+      }
+    }
   },
   {
     "id": "nat-b0189eb4",
     "electionCount": 3,
-    "positions": [
-      "元経済産業副大臣兼内閣府副大臣",
-      "元財政金融委員長",
-      "元内閣委員長"
-    ],
+    "positions": [],
     "committees": [
-      "国土交通委員会"
+      "国土交通委員会",
+      "予算委員会",
+      "災害対策及び東日本大震災復興特別委員会"
     ],
     "sourceUrl": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7013024.htm",
     "summary": "自民。愛知県刈谷市出身。刈谷市議・愛知県議を経て2013年参院初当選、現在3期目。",
     "homepage": "https://www.sakai-yasuyuki.com/",
-    "x": "https://x.com/YasuyukiSakai"
+    "x": "https://x.com/YasuyukiSakai",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "not_listed",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7013024.htm"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。照合した委員名簿に委員長・理事等の掲載なし。役職が無いという断定ではない。",
+        "sourceAsOf": "2026-10-21"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7013024.htm"
+        ],
+        "note": "参議院公式プロフィール「参議院における役職等一覧」（2026-10-21現在）の全掲載項目。2025-12-18現在の略歴欄から補っていない。",
+        "sourceAsOf": "2026-10-21"
+      }
+    }
   },
   {
     "id": "nat-5c52b577",
     "electionCount": 2,
-    "positions": [],
+    "positions": [
+      "立憲民主党 会計監査",
+      "立憲民主党 幹事長代理",
+      "立憲民主党 外交部会長",
+      "立憲民主党 外交・安全保障調査会長",
+      "立憲民主党 国際局長",
+      "立憲民主党 国民運動局長",
+      "立憲民主党 沖縄協議会幹事"
+    ],
     "committees": [
       "外交防衛委員会",
-      "行政監視委員会",
-      "憲法審査会"
+      "議院運営委員会",
+      "政治改革に関する特別委員会"
     ],
     "sourceUrl": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7019024.htm",
     "summary": "立憲。元国連世界食糧計画職員。2019年参院初当選、愛知選挙区、現在2期目。",
     "homepage": "https://www.maiko-tajima.com/",
-    "x": "https://x.com/maiko_tajima"
+    "x": "https://x.com/maiko_tajima",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7019024.htm",
+          "https://cdp-japan.jp/member/1836"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。資料の異なる時点・役職区分は各出典で確認。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7019024.htm"
+        ],
+        "note": "参議院公式プロフィール「参議院における役職等一覧」（2026-10-21現在）の全掲載項目。2025-12-18現在の略歴欄から補っていない。",
+        "sourceAsOf": "2026-10-21"
+      }
+    }
   },
   {
     "id": "nat-fe2d66ba",
     "electionCount": 1,
-    "positions": [],
+    "positions": [
+      "参議院 災害対策及び東日本大震災復興特別委員会 理事",
+      "参議院 国民生活・経済に関する調査会 理事",
+      "国民民主党 政務調査会副会長"
+    ],
     "committees": [
-      "文教科学委員会",
+      "法務委員会",
       "行政監視委員会",
+      "災害対策及び東日本大震災復興特別委員会",
       "国民生活・経済に関する調査会"
     ],
     "sourceUrl": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7025055.htm",
     "summary": "国民民主。にっぽんど真ん中祭り創設者。2025年参院初当選、愛知選挙区、1期目。",
     "homepage": "https://mizuno.ne.jp/",
-    "x": "https://x.com/mizuno_koichi"
+    "x": "https://x.com/mizuno_koichi",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7025055.htm",
+          "https://new-kokumin.jp/about/board-member"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。資料の異なる時点・役職区分は各出典で確認。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7025055.htm"
+        ],
+        "note": "参議院公式プロフィール「参議院における役職等一覧」（2026-10-21現在）の全掲載項目。2025-12-18現在の略歴欄から補っていない。",
+        "sourceAsOf": "2026-10-21"
+      }
+    }
   },
   {
     "id": "nat-942cc447",
     "electionCount": 1,
-    "positions": [],
+    "positions": [
+      "参議院 行政監視委員会 理事"
+    ],
     "committees": [
       "農林水産委員会",
       "行政監視委員会",
@@ -331,30 +826,110 @@
     ],
     "sourceUrl": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7025033.htm",
     "summary": "参政党。名古屋市出身。自営建設内装業を経て2025年参院初当選、愛知選挙区、1期目。",
-    "x": "https://x.com/junko_aichi3"
+    "x": "https://x.com/junko_aichi3",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7025033.htm"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。資料の異なる時点・役職区分は各出典で確認。",
+        "sourceAsOf": "2026-10-21"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7025033.htm"
+        ],
+        "note": "参議院公式プロフィール「参議院における役職等一覧」（2026-10-21現在）の全掲載項目。2025-12-18現在の略歴欄から補っていない。",
+        "sourceAsOf": "2026-10-21"
+      }
+    }
   },
   {
     "id": "nat-f262cdfb",
     "electionCount": 5,
     "positions": [
-      "元総務副大臣",
-      "元防衛大臣政務官",
-      "自由民主党国会対策副委員長"
+      "衆議院 議院運営委員会 理事",
+      "衆議院 政治倫理審査会 幹事"
     ],
-    "committees": [],
-    "sourceUrl": "https://ja.wikipedia.org/wiki/熊田裕通",
+    "committees": [
+      "安全保障委員会",
+      "国家基本政策委員会",
+      "議院運営委員会",
+      "懲罰委員会",
+      "災害対策特別委員会",
+      "憲法審査会",
+      "政治倫理審査会"
+    ],
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/156.html",
     "summary": "自民。名古屋市西区出身。愛知県議5期を経て2012年衆院初当選、現在5期目。",
     "homepage": "https://www.kumada-hiromichi.com/",
-    "x": "https://x.com/kumada_aichi1"
+    "x": "https://x.com/kumada_aichi1",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0160.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_s9010.htm"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。資料の異なる時点・役職区分は各出典で確認。",
+        "sourceAsOf": "2026-10-06"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0120.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0130.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0160.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0170.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5010.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_s9005.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_s9010.htm"
+        ],
+        "note": "衆院公式索引の常任17・特別7・審査会3の計27名簿を確認。資料ごとの記載時点：安全保障委員会 2026-10-06、国家基本政策委員会 2026-10-06、議院運営委員会 2026-10-06、懲罰委員会 2026-10-06、災害対策特別委員会 2026-10-06、憲法審査会 2026-10-06、政治倫理審査会 2026-10-06",
+        "sourceAsOf": "2026-10-06"
+      }
+    }
   },
   {
     "id": "nat-5285f99b",
     "electionCount": 1,
     "positions": [],
-    "committees": [],
-    "sourceUrl": "https://www.jimin.jp/member/212424.html",
+    "committees": [
+      "法務委員会",
+      "文部科学委員会",
+      "地域活性化・こども政策・デジタル社会形成に関する特別委員会"
+    ],
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/265.html",
     "summary": "元愛知県議3期。名古屋市出身、早大法卒。自民。衆院比例東海1期目",
-    "homepage": "https://tsuji.nagoya/"
+    "homepage": "https://tsuji.nagoya/",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "not_listed",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0030.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0060.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5240.htm"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。照合した委員名簿に委員長・理事等の掲載なし。役職が無いという断定ではない。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0030.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0060.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5240.htm"
+        ],
+        "note": "衆院公式索引の常任17・特別7・審査会3の計27名簿を確認。資料ごとの記載時点：法務委員会 2026-10-21、文部科学委員会 2026-10-06、地域活性化・こども政策・デジタル社会形成に関する特別委員会 2026-10-06"
+      }
+    }
   },
   {
     "id": "nat-02bba622",
@@ -363,114 +938,204 @@
     "committees": [
       "文部科学委員会"
     ],
-    "sourceUrl": "https://watanabe-airi.jp/",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/460.html",
     "summary": "千葉県出身、東邦大理学部卒。学習塾経営等を経て参政党。衆院比例東海1期目",
     "homepage": "https://watanabe-airi.jp/",
-    "x": "https://x.com/watanabe_airi_9"
+    "x": "https://x.com/watanabe_airi_9",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "not_listed",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0060.htm"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。照合した委員名簿に委員長・理事等の掲載なし。役職が無いという断定ではない。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0060.htm"
+        ],
+        "note": "衆院公式索引の常任17・特別7・審査会3の計27名簿を確認。資料ごとの記載時点：文部科学委員会 2026-10-06",
+        "sourceAsOf": "2026-10-06"
+      }
+    }
   },
   {
     "id": "nat-58226ce4",
     "electionCount": 7,
     "positions": [
-      "元総務大臣",
-      "元総務副大臣",
-      "元経済産業副大臣",
-      "自由民主党政務調査会長代理"
+      "衆議院 東日本大震災復興及び原子力問題調査特別委員会 理事"
     ],
-    "committees": [],
-    "sourceUrl": "https://ja.wikipedia.org/wiki/鈴木淳司",
+    "committees": [
+      "経済産業委員会",
+      "東日本大震災復興及び原子力問題調査特別委員会"
+    ],
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/214.html",
     "summary": "元瀬戸市議。早大法卒、松下政経塾。元総務相。自民。愛知7区で当選7回",
     "homepage": "https://suzukaze.net/",
-    "x": "https://x.com/jyunji_suzuki"
+    "x": "https://x.com/jyunji_suzuki",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5210.htm"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。資料の異なる時点・役職区分は各出典で確認。",
+        "sourceAsOf": "2026-10-06"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0090.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5210.htm"
+        ],
+        "note": "衆院公式索引の常任17・特別7・審査会3の計27名簿を確認。資料ごとの記載時点：経済産業委員会 2026-10-21、東日本大震災復興及び原子力問題調査特別委員会 2026-10-06"
+      }
+    }
   },
   {
     "id": "nat-4327864b",
     "electionCount": 1,
     "positions": [],
-    "committees": [],
-    "sourceUrl": "https://ja.wikipedia.org/wiki/藤澤忠盛",
+    "committees": [
+      "法務委員会",
+      "文部科学委員会",
+      "沖縄及び北方問題に関する特別委員会"
+    ],
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/359.html",
     "summary": "名古屋市出身、豊田高専卒・慶大院博士。昭和女子大准教授。自民。衆院比例東海1期目",
-    "homepage": "https://jimin-aichi11.net/"
+    "homepage": "https://jimin-aichi11.net/",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "not_listed",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0030.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0060.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5060.htm"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。照合した委員名簿に委員長・理事等の掲載なし。役職が無いという断定ではない。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0030.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0060.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5060.htm"
+        ],
+        "note": "衆院公式索引の常任17・特別7・審査会3の計27名簿を確認。資料ごとの記載時点：法務委員会 2026-10-21、文部科学委員会 2026-10-06、沖縄及び北方問題に関する特別委員会 2026-10-06"
+      }
+    }
   },
   {
     "id": "nat-8b419420",
     "electionCount": 6,
     "positions": [
-      "元立憲民主党政務調査会長",
-      "立憲民主党愛知県連代表",
       "中道改革連合 国会対策委員長"
     ],
-    "committees": [],
-    "sourceUrl": "https://ja.wikipedia.org/wiki/重徳和彦",
-    "summary": "豊田市出身、東大法卒。元自治省官僚。中道改革連合。愛知12区で当選6回",
+    "committees": [
+      "財務金融委員会",
+      "政治改革に関する特別委員会"
+    ],
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/198.html",
+    "summary": "豊田市出身、東大法卒。元自治省官僚。愛知12区で当選6回",
     "homepage": "https://shigetokukazuhiko.jp/",
-    "x": "https://x.com/shigetoku2"
+    "x": "https://x.com/shigetoku2",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/198.html"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。資料の異なる時点・役職区分は各出典で確認。",
+        "sourceAsOf": "2026-09-24"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0050.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5021.htm"
+        ],
+        "note": "衆院公式索引の常任17・特別7・審査会3の計27名簿を確認。資料ごとの記載時点：財務金融委員会 2026-10-20、政治改革に関する特別委員会 2026-10-06"
+      }
+    }
   },
   {
     "id": "nat-17babd14",
     "electionCount": 2,
     "positions": [
-      "日本維新の会 農林水産部会長"
+      "衆議院 農林水産委員会 理事"
     ],
     "committees": [
-      "農林水産委員会"
+      "農林水産委員会",
+      "災害対策特別委員会"
     ],
-    "sourceUrl": "https://ja.wikipedia.org/wiki/関健一郎",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/223.html",
     "summary": "元NHK記者。鎌倉市出身、豊橋市拠点。慶大法卒、衆院比例東海で当選を経験",
     "homepage": "https://seki-kenichiro.jp/",
-    "x": "https://x.com/sekikenichiro"
+    "x": "https://x.com/sekikenichiro",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0080.htm"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。資料の異なる時点・役職区分は各出典で確認。",
+        "sourceAsOf": "2026-10-21"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0080.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_t5010.htm"
+        ],
+        "note": "衆院公式索引の常任17・特別7・審査会3の計27名簿を確認。資料ごとの記載時点：農林水産委員会 2026-10-21、災害対策特別委員会 2026-10-06"
+      }
+    }
   },
   {
     "id": "nat-078fe50d",
     "electionCount": 2,
     "positions": [
-      "高額療養費制度と社会保障を考える議員連盟 幹事長代行"
+      "国民民主党 政務調査会副会長"
     ],
-    "committees": [],
-    "sourceUrl": "https://ja.wikipedia.org/wiki/福田徹",
+    "committees": [
+      "安全保障委員会",
+      "予算委員会"
+    ],
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/354.html",
     "summary": "救急医、国民民主党。岐阜県可児市出身、三重大医卒。愛知16区選出",
     "homepage": "https://toru-fukuta.com/",
-    "x": "https://x.com/Toru_Fukuta"
-  },
-  {
-    "id": "pref-60ea498b",
-    "electionCount": 0,
-    "positions": [
-      "自民党県議団 団長"
-    ],
-    "committees": [],
-    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html",
-    "summary": "愛知県議会で最大会派（自由民主党）を率いる団長。"
-  },
-  {
-    "id": "pref-6e5489e1",
-    "electionCount": 0,
-    "positions": [
-      "あいち民主 団長"
-    ],
-    "committees": [],
-    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html",
-    "summary": "愛知県議会の第二会派あいち民主の団長。"
-  },
-  {
-    "id": "pref-9e4383ce",
-    "electionCount": 0,
-    "positions": [
-      "公明党県議団 団長"
-    ],
-    "committees": [],
-    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html",
-    "summary": "公明党愛知県議員団の団長。"
-  },
-  {
-    "id": "pref-9283cb05",
-    "electionCount": 0,
-    "positions": [
-      "減税日本県議団 団長"
-    ],
-    "committees": [],
-    "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html",
-    "summary": "減税日本愛知県議員団の団長。"
+    "x": "https://x.com/Toru_Fukuta",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://new-kokumin.jp/about/board-member"
+        ],
+        "note": "確認できた主な議会・政府・党役職を掲載。過去の大臣・旧委員長・旧党役職を現在欄へ混ぜない。政府・党の全役職を網羅した一覧ではない。資料の異なる時点・役職区分は各出典で確認。",
+        "sourceAsOf": "2026-10-01"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0120.htm",
+          "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/iinkai/iin_j0140.htm"
+        ],
+        "note": "衆院公式索引の常任17・特別7・審査会3の計27名簿を確認。資料ごとの記載時点：安全保障委員会 2026-10-06、予算委員会 2026-10-09"
+      }
+    }
   },
   {
     "id": "toyota-fb3551cd",

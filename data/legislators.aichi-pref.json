@@ -8,7 +8,26 @@
     "district": "名古屋市千種区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-53eb7b7a",
@@ -19,7 +38,26 @@
     "district": "名古屋市千種区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-cd65330e",
@@ -30,18 +68,56 @@
     "district": "名古屋市東区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-003.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-03a3f9a3",
     "name": "松川浩明",
-    "kana": "まつかわひろあき",
+    "kana": "まつかわこうめい",
     "level": "prefectural",
     "party": "自由民主党",
     "district": "名古屋市北区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-2c749bb4",
@@ -52,7 +128,26 @@
     "district": "名古屋市北区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-5e298399",
@@ -63,18 +158,56 @@
     "district": "名古屋市西区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-9283cb05",
     "name": "しまぶくろ朝太郎",
-    "kana": "しまぶくろあさたろう",
+    "kana": "しまぶくろちょうたろう",
     "level": "prefectural",
     "party": "減税日本",
     "district": "名古屋市西区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-29c2fd02",
@@ -85,7 +218,26 @@
     "district": "名古屋市中村区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-21841325",
@@ -96,7 +248,26 @@
     "district": "名古屋市中村区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-71243978",
@@ -107,7 +278,26 @@
     "district": "名古屋市中区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-e9453251",
@@ -118,7 +308,26 @@
     "district": "名古屋市昭和区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-fe2d865a",
@@ -129,7 +338,26 @@
     "district": "名古屋市昭和区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-012.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-4cc8279c",
@@ -140,7 +368,26 @@
     "district": "名古屋市瑞穂区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-cc077239",
@@ -151,7 +398,26 @@
     "district": "名古屋市瑞穂区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-c67654ad",
@@ -162,7 +428,26 @@
     "district": "名古屋市熱田区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-db6e17ec",
@@ -173,7 +458,26 @@
     "district": "名古屋市中川区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-016.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-8f655a79",
@@ -184,18 +488,56 @@
     "district": "名古屋市中川区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-89933fdc",
     "name": "直江弘文",
-    "kana": "なおえひろふみ",
+    "kana": "なおえひろぶみ",
     "level": "prefectural",
     "party": "自由民主党",
     "district": "名古屋市港区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-b398e92d",
@@ -206,18 +548,56 @@
     "district": "名古屋市港区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-a339dc3d",
     "name": "江原史朗",
-    "kana": "えはらふみろう",
+    "kana": "えはらしろう",
     "level": "prefectural",
     "party": "あいち民主",
     "district": "名古屋市南区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-e1f30cf5",
@@ -228,7 +608,26 @@
     "district": "名古屋市守山区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-54163f85",
@@ -239,7 +638,26 @@
     "district": "名古屋市守山区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-9fea5ffb",
@@ -250,18 +668,56 @@
     "district": "名古屋市緑区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-b40b8018",
     "name": "増田成美",
-    "kana": "ますだなるみ",
+    "kana": "ますだなりみ",
     "level": "prefectural",
     "party": "自由民主党",
     "district": "名古屋市緑区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-b88205c2",
@@ -272,7 +728,26 @@
     "district": "名古屋市緑区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-6e5489e1",
@@ -283,7 +758,26 @@
     "district": "名古屋市名東区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-8a4e8033",
@@ -294,29 +788,86 @@
     "district": "名古屋市名東区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-15b81300",
     "name": "須崎かん",
-    "kana": "すざきかん",
+    "kana": "すさきかん",
     "level": "prefectural",
     "party": "自由民主党",
     "district": "名古屋市天白区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-d15b470d",
     "name": "古林千恵",
-    "kana": "こばやしちえ",
+    "kana": "ふるばやしちえ",
     "level": "prefectural",
     "party": "減税日本",
     "district": "名古屋市天白区",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-d0f38ecf",
@@ -327,7 +878,26 @@
     "district": "豊橋市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-d2697034",
@@ -338,7 +908,26 @@
     "district": "豊橋市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-cbc04da8",
@@ -349,7 +938,26 @@
     "district": "豊橋市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-b3d001c7",
@@ -360,7 +968,26 @@
     "district": "豊橋市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-d6a1060e",
@@ -371,7 +998,26 @@
     "district": "豊橋市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-91e1c6e3",
@@ -382,7 +1028,26 @@
     "district": "岡崎市及び額田郡",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-27f3bf37",
@@ -393,18 +1058,56 @@
     "district": "岡崎市及び額田郡",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-efd72a32",
     "name": "山口健",
-    "kana": "やまぐちけん",
+    "kana": "やまぐちたけし",
     "level": "prefectural",
     "party": "あいち民主",
     "district": "岡崎市及び額田郡",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-3d591772",
@@ -415,7 +1118,26 @@
     "district": "岡崎市及び額田郡",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-975590bd",
@@ -426,7 +1148,26 @@
     "district": "岡崎市及び額田郡",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-041.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-23b2ee9a",
@@ -437,7 +1178,26 @@
     "district": "一宮市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-9e4383ce",
@@ -448,7 +1208,26 @@
     "district": "一宮市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-7ea30161",
@@ -459,7 +1238,26 @@
     "district": "一宮市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-54fe308a",
@@ -470,7 +1268,26 @@
     "district": "一宮市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-a2c6327d",
@@ -481,7 +1298,26 @@
     "district": "一宮市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-161fbdaf",
@@ -492,7 +1328,26 @@
     "district": "瀬戸市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-7227d064",
@@ -503,7 +1358,26 @@
     "district": "瀬戸市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-83086c7c",
@@ -514,7 +1388,26 @@
     "district": "半田市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-59fc850f",
@@ -525,7 +1418,26 @@
     "district": "半田市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-ad379a7b",
@@ -536,7 +1448,26 @@
     "district": "春日井市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-7f64e6fd",
@@ -547,7 +1478,26 @@
     "district": "春日井市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-314ef336",
@@ -558,7 +1508,26 @@
     "district": "春日井市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-b727eaf2",
@@ -569,7 +1538,26 @@
     "district": "春日井市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-78fcb6fd",
@@ -580,7 +1568,26 @@
     "district": "豊川市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-2c025b12",
@@ -591,7 +1598,26 @@
     "district": "豊川市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-3029d0c8",
@@ -602,7 +1628,26 @@
     "district": "津島市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-317af105",
@@ -613,7 +1658,26 @@
     "district": "碧南市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-50e14a06",
@@ -624,7 +1688,26 @@
     "district": "刈谷市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-0560b66a",
@@ -635,7 +1718,26 @@
     "district": "刈谷市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-e989cb1b",
@@ -646,7 +1748,26 @@
     "district": "豊田市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-89b104f3",
@@ -657,7 +1778,26 @@
     "district": "豊田市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-c73270a1",
@@ -668,7 +1808,26 @@
     "district": "豊田市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-b4459b1a",
@@ -679,18 +1838,56 @@
     "district": "豊田市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-11238a10",
     "name": "今井隆喜",
-    "kana": "いまいたかき",
+    "kana": "いまいたかよし",
     "level": "prefectural",
     "party": "自由民主党",
     "district": "安城市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-246143a1",
@@ -701,7 +1898,26 @@
     "district": "安城市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-d46b4c0d",
@@ -712,18 +1928,56 @@
     "district": "西尾市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-eaf06e53",
     "name": "藤原聖",
-    "kana": "ふじわらさとし",
+    "kana": "ふじわらひじり",
     "level": "prefectural",
     "party": "あいち民主",
     "district": "西尾市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-73689158",
@@ -734,18 +1988,56 @@
     "district": "蒲郡市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-071.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-86c247eb",
     "name": "中村貴文",
-    "kana": "なかむらたかふみ",
+    "kana": "なかむらきぶん",
     "level": "prefectural",
     "party": "自由民主党",
     "district": "犬山市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-21b64371",
@@ -756,7 +2048,26 @@
     "district": "常滑市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-8c14d177",
@@ -767,7 +2078,26 @@
     "district": "江南市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-f08fa902",
@@ -778,7 +2108,26 @@
     "district": "小牧市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-feae805c",
@@ -789,7 +2138,26 @@
     "district": "稲沢市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-7dd2cf5f",
@@ -800,7 +2168,26 @@
     "district": "稲沢市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-e431ed61",
@@ -811,18 +2198,56 @@
     "district": "新城市及び北設楽郡",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-8fdfec58",
     "name": "神野博史",
-    "kana": "じんのひろし",
+    "kana": "じんのはくし",
     "level": "prefectural",
     "party": "自由民主党",
     "district": "東海市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-a2180d20",
@@ -833,7 +2258,26 @@
     "district": "東海市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-535aedf1",
@@ -844,7 +2288,26 @@
     "district": "大府市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-d3bb396b",
@@ -855,7 +2318,26 @@
     "district": "知多市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-494ef2d0",
@@ -866,7 +2348,26 @@
     "district": "知立市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-1d099da7",
@@ -877,7 +2378,26 @@
     "district": "尾張旭市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-2e1cb1bd",
@@ -888,7 +2408,26 @@
     "district": "高浜市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-60ea498b",
@@ -899,7 +2438,26 @@
     "district": "岩倉市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-462bbd73",
@@ -910,29 +2468,86 @@
     "district": "豊明市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-a6d3eb75",
     "name": "近藤裕人",
-    "kana": "こんどうひろと",
+    "kana": "こんどうひろひと",
     "level": "prefectural",
     "party": "自由民主党",
     "district": "日進市及び愛知郡",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-b04612da",
     "name": "福田喜夫",
-    "kana": "ふくだよしお",
+    "kana": "ふくたよしお",
     "level": "prefectural",
     "party": "あいち民主",
     "district": "日進市及び愛知郡",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-70111df2",
@@ -943,7 +2558,26 @@
     "district": "田原市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-a16d6122",
@@ -954,18 +2588,56 @@
     "district": "愛西市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-9a2d9b72",
     "name": "阿部武史",
-    "kana": "あべたけし",
+    "kana": "あべたけふみ",
     "level": "prefectural",
     "party": "無所属",
     "district": "清須市、北名古屋市及び西春日井郡",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-565266c6",
@@ -976,18 +2648,56 @@
     "district": "清須市、北名古屋市及び西春日井郡",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-2bcac04f",
     "name": "朝日将貴",
-    "kana": "あさひまさき",
+    "kana": "あさひまさたか",
     "level": "prefectural",
     "party": "自由民主党",
     "district": "弥富市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-c888f7c6",
@@ -998,18 +2708,56 @@
     "district": "みよし市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-a7ecdbdf",
     "name": "小木曽史人",
-    "kana": "おぎそふみひと",
+    "kana": "おぎそふみと",
     "level": "prefectural",
     "party": "あいち民主",
     "district": "あま市及び海部郡",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-712dae2b",
@@ -1020,7 +2768,26 @@
     "district": "あま市及び海部郡",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-a3c8b20b",
@@ -1031,7 +2798,26 @@
     "district": "長久手市",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-7cdfdcc0",
@@ -1042,7 +2828,26 @@
     "district": "丹羽郡",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-b07c835d",
@@ -1053,7 +2858,26 @@
     "district": "知多郡第一",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   },
   {
     "id": "pref-18230ac3",
@@ -1064,6 +2888,25 @@
     "district": "知多郡第二",
     "sourceUrl": "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
     "govCode": "23000",
-    "vendor": "linkout"
+    "vendor": "linkout",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-senkyoku.html",
+          "https://www.pref.aichi.jp/site/gikai/giin-shokai.html"
+        ],
+        "note": "選挙区別の氏名・ふりがな・選挙区を現員97人と照合。資料本文に「何日現在」の明示はないため、閲覧確認日と資料更新日を区別する。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.pref.aichi.jp/site/gikai/giin-kaiha.html"
+        ],
+        "note": "会派別一覧の全97人を照合。partyは県議会内の会派を示し、政党所属の照合結果ではない。無所属の県政自民クラブ・共産系内訳も公式一覧に基づく。"
+      }
+    }
   }
 ]

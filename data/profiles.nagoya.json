@@ -3,19 +3,47 @@
     "id": "city-0004f32a",
     "electionCount": 0,
     "positions": [
+      "名古屋民主市会議員団 幹事長",
       "議会運営委員会 副委員長"
     ],
     "committees": [
-      "特別市・大都市制度・広域連携促進特別委員会",
       "議会運営委員会",
-      "都市消防委員会"
+      "都市消防委員会",
+      "特別市・大都市制度・広域連携促進特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-00df6d77",
     "electionCount": 0,
     "positions": [
+      "公明党名古屋市会議員団 副幹事長",
       "都市消防委員会 委員長"
     ],
     "committees": [
@@ -23,30 +51,111 @@
       "都市消防委員会",
       "防災・エネルギー対策特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-02200c6f",
     "electionCount": 0,
     "positions": [
+      "名古屋民主市会議員団 副幹事長",
       "総務環境委員会 副委員長"
     ],
     "committees": [
       "安心・安全なまちづくり対策特別委員会",
-      "総務環境委員会",
-      "議会運営委員会"
+      "議会運営委員会",
+      "総務環境委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-07613be2",
     "electionCount": 0,
-    "positions": [],
-    "committees": [
-      "産業・歴史文化・観光戦略特別委員会",
-      "経済水道委員会"
+    "positions": [
+      "自由民主党名古屋市会議員団 女性活躍推進本部長"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "committees": [
+      "経済水道委員会",
+      "産業・歴史文化・観光戦略特別委員会"
+    ],
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-0783b9a8",
@@ -59,18 +168,72 @@
       "公社対策特別委員会",
       "財政福祉委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-09403fe6",
     "electionCount": 0,
-    "positions": [],
+    "positions": [
+      "自由民主党名古屋市会議員団 幹事"
+    ],
     "committees": [
-      "総務環境委員会",
       "議会運営委員会",
+      "総務環境委員会",
       "都市活力向上特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-0d987f9f",
@@ -82,48 +245,184 @@
       "都市活力向上特別委員会",
       "都市消防委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-0db3ac99",
     "electionCount": 0,
-    "positions": [],
+    "positions": [
+      "減税日本ナゴヤ 財務委員長"
+    ],
     "committees": [
       "安心・安全なまちづくり対策特別委員会",
       "総務環境委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-1b6c64d5",
     "electionCount": 0,
     "positions": [
+      "公明党名古屋市会議員団 顧問",
       "安心・安全なまちづくり対策特別委員会 委員長"
     ],
     "committees": [
-      "安心・安全なまちづくり対策特別委員会"
+      "安心・安全なまちづくり対策特別委員会",
+      "教育子ども委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-20a0f9f7",
     "electionCount": 0,
-    "positions": [],
-    "committees": [
-      "土木交通委員会",
-      "産業・歴史文化・観光戦略特別委員会"
+    "positions": [
+      "新生会 代表"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "committees": [
+      "産業・歴史文化・観光戦略特別委員会",
+      "土木交通委員会"
+    ],
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-24cfeef5",
     "electionCount": 0,
     "positions": [],
     "committees": [
-      "土木交通委員会",
-      "都市活力向上特別委員会"
+      "都市活力向上特別委員会",
+      "土木交通委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "not_listed",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "照合した正副議長・委員会・会派別名簿には役職名の掲載なし。役職がないという断定ではない。通常の委員・団員は役職に含めず、当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-2516a766",
@@ -135,7 +434,33 @@
       "公社対策特別委員会",
       "財政福祉委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-26a4a8ff",
@@ -147,53 +472,189 @@
       "公社対策特別委員会",
       "総務環境委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-2707f126",
     "electionCount": 0,
     "positions": [
+      "日本共産党名古屋市会議員団 幹事長兼政審委員長",
       "教育子ども委員会 副委員長"
     ],
     "committees": [
       "教育子ども委員会",
       "特別市・大都市制度・広域連携促進特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-27f756ef",
     "electionCount": 0,
-    "positions": [],
+    "positions": [
+      "自由民主党名古屋市会議員団 幹事"
+    ],
     "committees": [
-      "公社対策特別委員会",
       "議会運営委員会",
+      "公社対策特別委員会",
       "都市消防委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-28fd1456",
     "electionCount": 0,
     "positions": [
+      "公明党名古屋市会議員団 幹事長",
       "議会運営委員会 理事"
     ],
     "committees": [
-      "公社対策特別委員会",
       "議会運営委員会",
+      "公社対策特別委員会",
       "都市消防委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-2c7d4ca4",
     "electionCount": 0,
-    "positions": [],
-    "committees": [
-      "特別市・大都市制度・広域連携促進特別委員会",
-      "財政福祉委員会"
+    "positions": [
+      "自由民主党名古屋市会議員団 顧問"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "committees": [
+      "財政福祉委員会",
+      "特別市・大都市制度・広域連携促進特別委員会"
+    ],
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-36d5a5c2",
@@ -202,20 +663,74 @@
       "特別市・大都市制度・広域連携促進特別委員会 委員長"
     ],
     "committees": [
-      "特別市・大都市制度・広域連携促進特別委員会",
-      "財政福祉委員会"
+      "財政福祉委員会",
+      "特別市・大都市制度・広域連携促進特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-38507f8c",
     "electionCount": 0,
-    "positions": [],
+    "positions": [
+      "名古屋民主市会議員団 団長"
+    ],
     "committees": [
       "教育子ども委員会",
       "特別市・大都市制度・広域連携促進特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-3dd90d4d",
@@ -227,109 +742,382 @@
       "経済水道委員会",
       "防災・エネルギー対策特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-3ee2c190",
     "electionCount": 0,
-    "positions": [],
+    "positions": [
+      "名古屋民主市会議員団 副団長"
+    ],
     "committees": [
       "公社対策特別委員会",
       "土木交通委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-4208195d",
     "electionCount": 0,
     "positions": [
+      "公明党名古屋市会議員団 副財務委員長",
       "特別市・大都市制度・広域連携促進特別委員会 副委員長"
     ],
     "committees": [
-      "特別市・大都市制度・広域連携促進特別委員会",
-      "財政福祉委員会"
+      "財政福祉委員会",
+      "特別市・大都市制度・広域連携促進特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-420e7cdb",
     "electionCount": 0,
     "positions": [
+      "公明党名古屋市会議員団 広報委員長兼幹事",
       "土木交通委員会 副委員長"
     ],
     "committees": [
+      "議会運営委員会",
       "公社対策特別委員会",
-      "土木交通委員会",
-      "議会運営委員会"
+      "土木交通委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-424cc219",
     "electionCount": 0,
     "positions": [
+      "名古屋民主市会議員団 政審会長",
       "公社対策特別委員会 委員長"
     ],
     "committees": [
       "公社対策特別委員会",
       "総務環境委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-43333e11",
     "electionCount": 0,
     "positions": [
+      "自由民主党名古屋市会議員団 財務委員長",
       "経済水道委員会 委員長"
     ],
     "committees": [
-      "特別市・大都市制度・広域連携促進特別委員会",
-      "経済水道委員会"
+      "経済水道委員会",
+      "特別市・大都市制度・広域連携促進特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-438c29df",
     "electionCount": 0,
-    "positions": [],
+    "positions": [
+      "なごや陽向の会 代表"
+    ],
     "committees": [
       "安心・安全なまちづくり対策特別委員会",
       "教育子ども委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-488d7acd",
     "electionCount": 0,
-    "positions": [],
-    "committees": [
-      "土木交通委員会",
-      "都市活力向上特別委員会"
+    "positions": [
+      "減税日本ナゴヤ 副団長"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "committees": [
+      "都市活力向上特別委員会",
+      "土木交通委員会"
+    ],
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-513e5e4f",
     "electionCount": 0,
     "positions": [
+      "減税日本ナゴヤ 幹事",
       "財政福祉委員会 副委員長"
     ],
     "committees": [
-      "特別市・大都市制度・広域連携促進特別委員会",
       "議会運営委員会",
-      "財政福祉委員会"
+      "財政福祉委員会",
+      "特別市・大都市制度・広域連携促進特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-5621e7c2",
     "electionCount": 0,
-    "positions": [],
+    "positions": [
+      "公明党名古屋市会議員団 副団長"
+    ],
     "committees": [
       "経済水道委員会",
       "都市活力向上特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-563f7f52",
@@ -342,19 +1130,71 @@
       "産業・歴史文化・観光戦略特別委員会",
       "都市消防委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-5a7fa5ae",
     "electionCount": 0,
     "positions": [
-      "名古屋民主市会議員団 団長"
+      "名古屋民主市会議員団 副団長"
     ],
     "committees": [
       "財政福祉委員会",
       "防災・エネルギー対策特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-6026c08e",
@@ -364,43 +1204,151 @@
       "財政福祉委員会",
       "防災・エネルギー対策特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "not_listed",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "照合した正副議長・委員会・会派別名簿には役職名の掲載なし。役職がないという断定ではない。通常の委員・団員は役職に含めず、当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-60cbf20d",
     "electionCount": 0,
     "positions": [
+      "減税日本ナゴヤ 副政審会長",
       "防災・エネルギー対策特別委員会 副委員長"
     ],
     "committees": [
       "経済水道委員会",
       "防災・エネルギー対策特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-630b92ce",
     "electionCount": 0,
     "positions": [
+      "名古屋民主市会議員団 政審事務局長兼幹事",
       "教育子ども委員会 委員長",
       "特別市・大都市制度・広域連携促進特別委員会 副委員長"
     ],
     "committees": [
+      "議会運営委員会",
       "教育子ども委員会",
-      "特別市・大都市制度・広域連携促進特別委員会",
-      "議会運営委員会"
+      "特別市・大都市制度・広域連携促進特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-6cd3ed6b",
     "electionCount": 0,
-    "positions": [],
-    "committees": [
-      "産業・歴史文化・観光戦略特別委員会",
-      "財政福祉委員会"
+    "positions": [
+      "公明党名古屋市会議員団 副団長"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "committees": [
+      "財政福祉委員会",
+      "産業・歴史文化・観光戦略特別委員会"
+    ],
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-78fa75b4",
@@ -410,19 +1358,72 @@
       "公社対策特別委員会",
       "総務環境委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "not_listed",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "照合した正副議長・委員会・会派別名簿には役職名の掲載なし。役職がないという断定ではない。通常の委員・団員は役職に含めず、当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-81f10835",
     "electionCount": 0,
     "positions": [
+      "公明党名古屋市会議員団 副政調会長",
       "産業・歴史文化・観光戦略特別委員会 副委員長"
     ],
     "committees": [
       "教育子ども委員会",
       "産業・歴史文化・観光戦略特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-85cac700",
@@ -435,76 +1436,263 @@
       "財政福祉委員会",
       "都市活力向上特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-87c235ae",
     "electionCount": 0,
     "positions": [
+      "自由民主党名古屋市会議員団 副幹事長",
       "都市消防委員会 副委員長"
     ],
     "committees": [
-      "公社対策特別委員会",
       "議会運営委員会",
+      "公社対策特別委員会",
       "都市消防委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-8f4121f3",
     "electionCount": 0,
     "positions": [
+      "自由民主党名古屋市会議員団 副団長",
       "総務環境委員会 委員長"
     ],
     "committees": [
       "総務環境委員会",
       "都市活力向上特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-918116c1",
     "electionCount": 0,
     "positions": [],
     "committees": [
-      "土木交通委員会",
-      "安心・安全なまちづくり対策特別委員会"
+      "安心・安全なまちづくり対策特別委員会",
+      "土木交通委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "not_listed",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "照合した正副議長・委員会・会派別名簿には役職名の掲載なし。役職がないという断定ではない。通常の委員・団員は役職に含めず、当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-997a6de6",
     "electionCount": 0,
     "positions": [
+      "公明党名古屋市会議員団 財務委員長",
       "経済水道委員会 副委員長"
     ],
     "committees": [
       "経済水道委員会",
       "防災・エネルギー対策特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-9ee1d2cd",
     "electionCount": 0,
-    "positions": [],
-    "committees": [
-      "土木交通委員会",
-      "安心・安全なまちづくり対策特別委員会"
+    "positions": [
+      "公明党名古屋市会議員団 副団長"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "committees": [
+      "安心・安全なまちづくり対策特別委員会",
+      "土木交通委員会"
+    ],
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-a71877aa",
     "electionCount": 0,
     "positions": [
-      "自民党名古屋市会議員団 団長"
+      "自由民主党名古屋市会議員団 団長"
     ],
     "committees": [
-      "特別市・大都市制度・広域連携促進特別委員会",
-      "経済水道委員会"
+      "経済水道委員会",
+      "特別市・大都市制度・広域連携促進特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-ab837f9a",
@@ -514,42 +1702,149 @@
       "安心・安全なまちづくり対策特別委員会 副委員長"
     ],
     "committees": [
-      "土木交通委員会",
-      "安心・安全なまちづくり対策特別委員会"
+      "安心・安全なまちづくり対策特別委員会",
+      "土木交通委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-abd8c257",
     "electionCount": 0,
-    "positions": [],
+    "positions": [
+      "日本維新の会名古屋市会議員団 代表"
+    ],
     "committees": [
       "経済水道委員会",
       "都市活力向上特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-ae51c186",
     "electionCount": 0,
     "positions": [
+      "自由民主党名古屋市会議員団 副団長",
       "財政福祉委員会 委員長"
     ],
     "committees": [
       "財政福祉委員会",
       "防災・エネルギー対策特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-b06c0c39",
     "electionCount": 0,
     "positions": [],
     "committees": [
-      "産業・歴史文化・観光戦略特別委員会",
-      "経済水道委員会"
+      "経済水道委員会",
+      "産業・歴史文化・観光戦略特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "not_listed",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "照合した正副議長・委員会・会派別名簿には役職名の掲載なし。役職がないという断定ではない。通常の委員・団員は役職に含めず、当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-b11be3f6",
@@ -559,51 +1854,188 @@
       "安心・安全なまちづくり対策特別委員会",
       "都市消防委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "not_listed",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "照合した正副議長・委員会・会派別名簿には役職名の掲載なし。役職がないという断定ではない。通常の委員・団員は役職に含めず、当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-b134207e",
     "electionCount": 0,
     "positions": [
+      "自由民主党名古屋市会議員団 幹事長",
       "議会運営委員会 委員長"
     ],
     "committees": [
-      "教育子ども委員会",
       "議会運営委員会",
+      "教育子ども委員会",
       "防災・エネルギー対策特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-b14066e4",
     "electionCount": 0,
-    "positions": [],
+    "positions": [
+      "名古屋民主市会議員団 財務委員長兼幹事"
+    ],
     "committees": [
-      "教育子ども委員会",
       "議会運営委員会",
+      "教育子ども委員会",
       "都市活力向上特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-b144456b",
     "electionCount": 0,
-    "positions": [],
-    "committees": [
-      "土木交通委員会",
-      "産業・歴史文化・観光戦略特別委員会"
+    "positions": [
+      "自由民主党名古屋市会議員団 政調会長"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "committees": [
+      "産業・歴史文化・観光戦略特別委員会",
+      "土木交通委員会"
+    ],
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-b15a35ea",
     "electionCount": 0,
-    "positions": [],
+    "positions": [
+      "減税日本ナゴヤ 政審会長"
+    ],
     "committees": [
       "産業・歴史文化・観光戦略特別委員会",
       "総務環境委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-b9ca09aa",
@@ -612,35 +2044,118 @@
       "減税日本ナゴヤ 団長"
     ],
     "committees": [
-      "特別市・大都市制度・広域連携促進特別委員会",
-      "財政福祉委員会"
+      "財政福祉委員会",
+      "特別市・大都市制度・広域連携促進特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-bb0345bb",
     "electionCount": 0,
-    "positions": [],
+    "positions": [
+      "なごや創政会 代表"
+    ],
     "committees": [
       "安心・安全なまちづくり対策特別委員会",
       "都市消防委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-c7270177",
     "electionCount": 0,
-    "positions": [],
-    "committees": [
-      "土木交通委員会",
-      "産業・歴史文化・観光戦略特別委員会"
+    "positions": [
+      "自由民主党名古屋市会議員団 顧問"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "committees": [
+      "産業・歴史文化・観光戦略特別委員会",
+      "土木交通委員会"
+    ],
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-ca0e6d8b",
     "electionCount": 0,
     "positions": [
+      "名古屋民主市会議員団 広報委員長",
       "経済水道委員会 副委員長",
       "防災・エネルギー対策特別委員会 委員長"
     ],
@@ -648,100 +2163,342 @@
       "経済水道委員会",
       "防災・エネルギー対策特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-d1b6736f",
     "electionCount": 0,
     "positions": [],
     "committees": [
-      "産業・歴史文化・観光戦略特別委員会",
-      "経済水道委員会"
+      "経済水道委員会",
+      "産業・歴史文化・観光戦略特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "not_listed",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "照合した正副議長・委員会・会派別名簿には役職名の掲載なし。役職がないという断定ではない。通常の委員・団員は役職に含めず、当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-d45cdee8",
     "electionCount": 0,
     "positions": [
+      "自由民主党名古屋市会議員団 DX推進本部長兼幹事",
       "産業・歴史文化・観光戦略特別委員会 委員長"
     ],
     "committees": [
+      "議会運営委員会",
       "産業・歴史文化・観光戦略特別委員会",
-      "総務環境委員会",
-      "議会運営委員会"
+      "総務環境委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-d7aa7ccd",
     "electionCount": 0,
     "positions": [
+      "自由民主党名古屋市会議員団 副政調会長",
       "教育子ども委員会 副委員長"
     ],
     "committees": [
       "教育子ども委員会",
       "防災・エネルギー対策特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-dede77b3",
     "electionCount": 0,
     "positions": [
+      "減税日本ナゴヤ 広報委員長",
       "都市活力向上特別委員会 副委員長"
     ],
     "committees": [
       "教育子ども委員会",
       "都市活力向上特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-dee010ba",
     "electionCount": 0,
     "positions": [
-      "公明党名古屋市議団 団長",
+      "公明党名古屋市会議員団 団長",
       "総務環境委員会 副委員長"
     ],
     "committees": [
-      "特別市・大都市制度・広域連携促進特別委員会",
-      "総務環境委員会"
+      "総務環境委員会",
+      "特別市・大都市制度・広域連携促進特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-eebabc19",
     "electionCount": 0,
     "positions": [
+      "自由民主党名古屋市会議員団 広報委員長",
       "土木交通委員会 副委員長",
       "安心・安全なまちづくり対策特別委員会 副委員長"
     ],
     "committees": [
-      "土木交通委員会",
-      "安心・安全なまちづくり対策特別委員会"
+      "安心・安全なまちづくり対策特別委員会",
+      "土木交通委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-efc5df75",
     "electionCount": 0,
-    "positions": [],
+    "positions": [
+      "日本共産党名古屋市会議員団 財務委員長"
+    ],
     "committees": [
       "総務環境委員会",
       "防災・エネルギー対策特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-f170e563",
     "electionCount": 0,
-    "positions": [],
+    "positions": [
+      "公明党名古屋市会議員団 政調会長"
+    ],
     "committees": [
       "総務環境委員会",
       "都市活力向上特別委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-f2d6be72",
@@ -753,30 +2510,111 @@
       "都市活力向上特別委員会",
       "都市消防委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-f4222c2f",
     "electionCount": 0,
     "positions": [
+      "減税日本ナゴヤ 幹事長",
       "議会運営委員会 理事"
     ],
     "committees": [
-      "公社対策特別委員会",
       "議会運営委員会",
+      "公社対策特別委員会",
       "都市消防委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   },
   {
     "id": "city-f5db7f52",
     "electionCount": 0,
-    "positions": [],
+    "positions": [
+      "自由民主党名古屋市会議員団 幹事"
+    ],
     "committees": [
       "安心・安全なまちづくり対策特別委員会",
-      "教育子ども委員会",
-      "議会運営委員会"
+      "議会運営委員会",
+      "教育子ども委員会"
     ],
-    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html"
+    "sourceUrl": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+    "verification": {
+      "positions": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+          "https://www.city.nagoya.jp/shikai/about/1030633/index.html"
+        ],
+        "note": "議長・副議長、常任・特別・議会運営委員会の役職、正式会派の役職を照合。通常の委員・団員は役職に含めない。当選回数・略歴は未照合。"
+      },
+      "committees": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+          "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html"
+        ],
+        "note": "50音別名簿と常任・特別・議会運営委員会名簿を照合し、全所属を確認。各委員会名簿の更新日は2026-05-22で、資料基準日の明記なし。"
+      }
+    }
   }
 ]

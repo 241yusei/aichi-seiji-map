@@ -1,0 +1,17 @@
+{
+  "pullRequestUrl": "https://github.com/241yusei/aichi-seiji-map/pull/93",
+  "sourceCommit": "79f15c68325723b0ed1c7d7b1477a5a81c50a459",
+  "runUrl": "https://github.com/241yusei/aichi-seiji-map/actions/runs/39345163920",
+  "reviewedAt": "2026-10-23",
+  "collectionCheckedAt": "2026-10-20",
+  "beforeCount": 4006,
+  "afterCount": 4011,
+  "speechIds": [
+    "122214024X00220261008_001",
+    "122214024X00220261008_002",
+    "122214024X00220261008_003",
+    "122214024X00220261008_005",
+    "122214024X00220261008_006"
+  ],
+  "note": "32人全員の取得成功を実行ログで確認。既存4,006件は変更なし、追加5件は同一会議の藤川政人委員長発言。今回APIの再収集は実施せず、PRのデータと実行記録を照合して取り込んだ。"
+}

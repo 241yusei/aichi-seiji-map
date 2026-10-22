@@ -23,12 +23,44 @@ export interface SourceRef {
   retrievedAt?: string;
 }
 
+/** 公式資料を照合した日と、資料自体の基準日を分けて記録する。 */
+export interface VerificationRecord {
+  checkedAt: string;
+  status: "verified" | "not_listed" | "unconfirmed";
+  sourceUrls: string[];
+  sourceAsOf?: string;
+  note?: string;
+}
+
+export interface RosterVerification {
+  membership: VerificationRecord;
+  affiliation: VerificationRecord;
+  faction?: VerificationRecord;
+}
+
+export interface ProfileVerification {
+  positions: VerificationRecord;
+  committees: VerificationRecord;
+}
+
+export interface RosterVerificationAudit {
+  scope: "national" | "prefectural" | "nagoya";
+  checkedAt: string;
+  sources: { url: string; purpose: string; accessNotes?: string }[];
+  matchedIds: string[];
+  changes: string[];
+  unresolved: string[];
+  notes?: string[];
+}
+
 export interface Legislator {
   id: string;
   name: string;
   kana: string;
   level: Level;
-  party?: string; // 会派・所属政党
+  party?: string; // 国は所属政党、県・市は会派。議会会派と政党を推測で変換しない。
+  faction?: string; // 国会の会派（政党所属とは別）
+  verification?: RosterVerification;
   district: string; // 例: "愛知1区" "比例東海" "名古屋市中区"
   photoUrl?: string;
   sourceUrl: string; // 公式プロフィール等の一次ソース
@@ -156,7 +188,8 @@ export interface FactCard {
 /** 議員の補足プロフィール（当選回数・役職・委員会）。出典つき。議員IDで結合する。 */
 export interface LegislatorProfile {
   id: string; // Legislator.id
-  electionCount: number; // 当該院での当選回数（0=未確認）
+  electionCount?: number; // 当該院での当選回数（既存データの0と未指定は未確認）
+  verification?: ProfileVerification;
   positions: string[]; // 主な役職（大臣/副大臣/委員長/党役職など）
   committees: string[]; // 直近の所属委員会
   sourceUrl: string; // 公式プロフィール等の出典

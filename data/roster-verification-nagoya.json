@@ -1,0 +1,137 @@
+{
+  "scope": "nagoya",
+  "checkedAt": "2026-10-23",
+  "sources": [
+    {
+      "url": "https://www.city.nagoya.jp/robots.txt",
+      "purpose": "取得許可範囲の確認",
+      "accessNotes": "取得成功。User-agent:* のDisallowは/cgi-bin/と/cgi-mgr/のみ。今回の/shikai/about/を含まない。"
+    },
+    {
+      "url": "https://www.city.nagoya.jp/about/1017973.html",
+      "purpose": "コンテンツ再利用条件の確認",
+      "accessNotes": "2025-10-24更新。閲覧・利用は可能だが文章・画像等の複製再利用には条件あり。本タスクは現職・選出区・会派・役職・委員会という事実項目の照合に限定。記事本文・写真・会議録本文は転載しない。"
+    },
+    {
+      "url": "https://www.city.nagoya.jp/shikai/about/1030778/index.html",
+      "purpose": "公式議員名簿の入口と対象資料の特定",
+      "accessNotes": "名簿各ページへの公式リンクを確認。"
+    },
+    {
+      "url": "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html",
+      "purpose": "68人の現職・氏名・ふりがな・選出区、会派略称と委員会の照合",
+      "accessNotes": "2026-05-22更新。既存68人全員と一致。「○日現在」の資料基準日は明記なし。"
+    },
+    {
+      "url": "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+      "purpose": "正式会派名・会派構成68人・会派役職の照合",
+      "accessNotes": "2026-05-21更新。9会派の人数23/17/12/8/3/2/1/1/1、合計68人を確認。資料基準日の明記なし。"
+    },
+    {
+      "url": "https://www.city.nagoya.jp/shikai/about/1030778/1030796.html",
+      "purpose": "議会運営委員会15人の所属・委員長・副委員長・理事の照合",
+      "accessNotes": "2026-05-22更新。資料基準日の明記なし。"
+    },
+    {
+      "url": "https://www.city.nagoya.jp/shikai/about/1030778/1030797.html",
+      "purpose": "常任6委員会68人の所属・委員長・副委員長の照合",
+      "accessNotes": "2026-05-22更新。50音別名簿と全員の所属・役職が一致。木下優氏の教育子ども委員会を追加。資料基準日の明記なし。"
+    },
+    {
+      "url": "https://www.city.nagoya.jp/shikai/about/1030778/1030798.html",
+      "purpose": "特別6委員会68人の所属・委員長・副委員長の照合",
+      "accessNotes": "2026-05-22更新。50音別名簿と全員の所属・役職が一致。資料基準日の明記なし。"
+    },
+    {
+      "url": "https://www.city.nagoya.jp/shikai/about/1030633/index.html",
+      "purpose": "議長・小出昭司氏、副議長・森ともお氏の照合",
+      "accessNotes": "現在の正副議長として掲載。資料更新日・「○日現在」の基準日は明記なし。あいさつ本文は保存データに転載しない。"
+    }
+  ],
+  "matchedIds": [
+    "city-85cac700",
+    "city-78fa75b4",
+    "city-43333e11",
+    "city-c7270177",
+    "city-d45cdee8",
+    "city-6026c08e",
+    "city-87c235ae",
+    "city-b06c0c39",
+    "city-abd8c257",
+    "city-b15a35ea",
+    "city-60cbf20d",
+    "city-488d7acd",
+    "city-997a6de6",
+    "city-2707f126",
+    "city-b14066e4",
+    "city-3ee2c190",
+    "city-ca0e6d8b",
+    "city-38507f8c",
+    "city-20a0f9f7",
+    "city-36d5a5c2",
+    "city-1b6c64d5",
+    "city-438c29df",
+    "city-3dd90d4d",
+    "city-563f7f52",
+    "city-ab837f9a",
+    "city-f2d6be72",
+    "city-28fd1456",
+    "city-dee010ba",
+    "city-f170e563",
+    "city-0db3ac99",
+    "city-6cd3ed6b",
+    "city-d7aa7ccd",
+    "city-09403fe6",
+    "city-513e5e4f",
+    "city-0783b9a8",
+    "city-b11be3f6",
+    "city-5621e7c2",
+    "city-b9ca09aa",
+    "city-24cfeef5",
+    "city-81f10835",
+    "city-4208195d",
+    "city-f4222c2f",
+    "city-dede77b3",
+    "city-bb0345bb",
+    "city-918116c1",
+    "city-07613be2",
+    "city-420e7cdb",
+    "city-8f4121f3",
+    "city-ae51c186",
+    "city-0d987f9f",
+    "city-d1b6736f",
+    "city-424cc219",
+    "city-9ee1d2cd",
+    "city-b134207e",
+    "city-5a7fa5ae",
+    "city-02200c6f",
+    "city-630b92ce",
+    "city-eebabc19",
+    "city-a71877aa",
+    "city-b144456b",
+    "city-efc5df75",
+    "city-27f756ef",
+    "city-26a4a8ff",
+    "city-0004f32a",
+    "city-2c7d4ca4",
+    "city-00df6d77",
+    "city-f5db7f52",
+    "city-2516a766"
+  ],
+  "changes": [
+    "現職68人全員の氏名・ふりがな・選出区・会派を公式資料と照合し、membership/affiliationの項目別verificationを追加。既存IDを保持しseedにもIDを追加。",
+    "木下優氏の所属委員会に、公式常任委員会名簿で確認した教育子ども委員会を追加。",
+    "服部将也氏の誤った名古屋民主市会議員団 団長を、副団長へ修正。現団長・加藤一登氏を含め、公式会派別名簿の会派役職52人分を正式会派名で記録。",
+    "既存の自民党/公明党の略称を使った団長表記を正式会派名へ統一。議長・副議長表記は既存の名古屋市会議長/名古屋市会副議長を維持。",
+    "全68プロフィールの委員会所属151件を照合。positionsは掲載あり61人をverified、役職名掲載なし7人をnot_listedとし、committeesは68人をverifiedに設定。通常の委員・団員はpositionsへ加えない。"
+  ],
+  "unresolved": [
+    "当選回数と略歴は今回の確認対象外。全68プロフィールの既存electionCount:0は未照合値として維持し、当選0回を確認したものではない。",
+    "資料に「○日現在」の明示がないためsourceAsOfは付与していない。資料の更新日をcheckedAt（実際の閲覧・照合日2026-10-23）と混同しない。"
+  ],
+  "notes": [
+    "公式名簿の68人全員を照合。退職者・新任者・会派変更・選出区変更は確認されず、削除・ID変更は行っていない。",
+    "取得は識別User-Agent付き・直列・4秒間隔。取得済みHTMLは一時ローカルキャッシュを利用し、再取得と並列アクセスを避けた。robotsの禁止先/cgi-bin/連絡フォームや会議録システムにはアクセスしていない。",
+    "議員氏名の異体字セレクタと空白は照合時のみ正規化し、既存の表示名・IDは保持した。"
+  ]
+}

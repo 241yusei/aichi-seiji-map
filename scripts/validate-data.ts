@@ -21,6 +21,8 @@ import {
   votesSchema,
   livingTopicsSchema,
   speechCollectionStatusSchema,
+  rosterVerificationAuditSchema,
+  speechImportAuditSchema,
 } from "../lib/zod-schemas";
 import type {
   Candidate,
@@ -36,8 +38,11 @@ import type {
   SpeechRecord,
   Vote,
   LivingTopicBriefData,
+  RosterVerificationAudit,
 } from "../lib/types";
 import { MUNICIPALITIES } from "../lib/municipalities";
+
+import { rosterVerificationAuditErrors } from "../lib/roster-verification";
 
 const DATA_DIR = join(process.cwd(), "data");
 let errorCount = 0;
@@ -93,7 +98,7 @@ const factCards = load<FactCard>("fact-cards.json", factCardsSchema);
 const executives = load<Executive>("executives.json", executivesSchema);
 // profiles.national.json（国会）に加え、自治体ごとの補足プロフィールも同じスキーマで検証する。
 // ファイルが無い自治体は load が [] を返すので、増やすときはここに1行足すだけでよい。
-const PROFILE_FILES = ["profiles.national.json", "profiles.nagoya.json"];
+const PROFILE_FILES = ["profiles.national.json", "profiles.prefectural.json", "profiles.nagoya.json"];
 const profiles = PROFILE_FILES.flatMap((f) => load<LegislatorProfile>(f, legislatorProfilesSchema));
 const issueExplainers = load<IssueExplainer>("issue-explainers.json", issueExplainersSchema);
 const councilDecisions = load<CouncilDecision>("council-decisions.json", councilDecisionsSchema);
@@ -112,6 +117,19 @@ for (const l of legislators) {
   if (seen.has(l.id)) fail(`議員ID重複: ${l.id}`);
   seen.add(l.id);
 }
+// 確認範囲の取り違え・日付の不一致・名簿の照合漏れを検出する。
+const rosterAudits: RosterVerificationAudit[] = [];
+for (const scope of ["national", "prefectural", "nagoya"]) {
+  try {
+    rosterAudits.push(rosterVerificationAuditSchema.parse(JSON.parse(readFileSync(join(DATA_DIR, `roster-verification-${scope}.json`), "utf-8"))));
+  } catch (error) { fail(`名簿照合 ${scope}: ${(error as Error).message}`); }
+}
+for (const error of rosterVerificationAuditErrors(legislators, profiles, rosterAudits)) fail(error);
+try {
+  const audit = speechImportAuditSchema.parse(JSON.parse(readFileSync(join(DATA_DIR, "speech-import-pr93.json"), "utf-8")));
+  for (const id of audit.speechIds) if (!speechIds.has(id)) fail(`PR #93の取込発言がありません: ${id}`);
+} catch (error) { fail(`PR #93の取込記録: ${(error as Error).message}`); }
+
 // 発言IDの重複検出
 const seenSpeech = new Set<string>();
 for (const topic of livingTopics) {

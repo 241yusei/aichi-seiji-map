@@ -1,36 +1,1234 @@
 [
-  { "name": "河村たかし", "kana": "かわむらたかし", "house": "衆議院", "district": "愛知1区", "party": "減税日本・ゆうこく連合", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第1区" },
-  { "name": "古川元久", "kana": "ふるかわもとひさ", "house": "衆議院", "district": "愛知2区", "party": "国民民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第2区" },
-  { "name": "水野良彦", "kana": "みずのよしひこ", "house": "衆議院", "district": "愛知3区", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第3区" },
-  { "name": "工藤彰三", "kana": "くどうしょうぞう", "house": "衆議院", "district": "愛知4区", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第4区" },
-  { "name": "岡本康宏", "kana": "おかもとやすひろ", "house": "衆議院", "district": "愛知5区", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第5区" },
-  { "name": "丹羽秀樹", "kana": "にわひでき", "house": "衆議院", "district": "愛知6区", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第6区" },
-  { "name": "日野紗里亜", "kana": "ひのさりあ", "house": "衆議院", "district": "愛知7区", "party": "国民民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第7区" },
-  { "name": "伊藤忠彦", "kana": "いとうただひこ", "house": "衆議院", "district": "愛知8区", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第8区" },
-  { "name": "長坂康正", "kana": "ながさかやすまさ", "house": "衆議院", "district": "愛知9区", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第9区" },
-  { "name": "若山慎司", "kana": "わかやましんじ", "house": "衆議院", "district": "愛知10区", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第10区" },
-  { "name": "丹野みどり", "kana": "たんのみどり", "house": "衆議院", "district": "愛知11区", "party": "国民民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第11区" },
-  { "name": "青山周平", "kana": "あおやましゅうへい", "house": "衆議院", "district": "愛知12区", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第12区" },
-  { "name": "石井拓", "kana": "いしいたく", "house": "衆議院", "district": "愛知13区", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第13区" },
-  { "name": "今枝宗一郎", "kana": "いまえだそういちろう", "house": "衆議院", "district": "愛知14区", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第14区" },
-  { "name": "根本幸典", "kana": "ねもとゆきのり", "house": "衆議院", "district": "愛知15区", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第15区" },
-  { "name": "山下史守朗", "kana": "やましたしずお", "house": "衆議院", "district": "愛知16区", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第16区" },
-
-  { "name": "藤川政人", "kana": "ふじかわまさと", "house": "参議院", "district": "愛知県選挙区", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県選挙区" },
-  { "name": "里見隆治", "kana": "さとみりゅうじ", "house": "参議院", "district": "愛知県選挙区", "party": "公明党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県選挙区" },
-  { "name": "斎藤嘉隆", "kana": "さいとうよしたか", "house": "参議院", "district": "愛知県選挙区", "party": "立憲民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県選挙区" },
-  { "name": "伊藤孝恵", "kana": "いとうたかえ", "house": "参議院", "district": "愛知県選挙区", "party": "国民民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県選挙区" },
-  { "name": "酒井庸行", "kana": "さかいつねゆき", "house": "参議院", "district": "愛知県選挙区", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県選挙区" },
-  { "name": "田島麻衣子", "kana": "たじままいこ", "house": "参議院", "district": "愛知県選挙区", "party": "立憲民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県選挙区" },
-  { "name": "水野孝一", "kana": "みずのこういち", "house": "参議院", "district": "愛知県選挙区", "party": "国民民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県選挙区" },
-  { "name": "杉本純子", "kana": "すぎもとじゅんこ", "house": "参議院", "district": "愛知県選挙区", "party": "参政党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県選挙区" },
-
-  { "name": "熊田裕通", "kana": "くまだひろみち", "house": "衆議院", "district": "比例東海", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第1区" },
-  { "name": "辻秀樹", "kana": "つじひでき", "house": "衆議院", "district": "比例東海", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第2区" },
-  { "name": "渡辺藍理", "kana": "わたなべあいり", "house": "衆議院", "district": "比例東海", "party": "参政党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第5区" },
-  { "name": "鈴木淳司", "kana": "すずきじゅんじ", "house": "衆議院", "district": "比例東海", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第7区" },
-  { "name": "藤澤忠盛", "kana": "ふじさわただもり", "house": "衆議院", "district": "比例東海", "party": "自由民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第11区" },
-  { "name": "重徳和彦", "kana": "しげとくかずひこ", "house": "衆議院", "district": "比例東海", "party": "中道改革連合", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第12区" },
-  { "name": "関健一郎", "kana": "せきけんいちろう", "house": "衆議院", "district": "比例東海", "party": "日本維新の会", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第15区" },
-  { "name": "福田徹", "kana": "ふくたとおる", "house": "衆議院", "district": "比例東海", "party": "国民民主党", "sourceUrl": "https://ja.wikipedia.org/wiki/愛知県第16区" }
+  {
+    "name": "河村たかし",
+    "kana": "かわむらたかし",
+    "house": "衆議院",
+    "district": "愛知1区",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/135.html",
+    "id": "nat-bfcafee4",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/2giin.htm",
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/135.html"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/2giin.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。名簿掲載の略称をそのまま保持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "unconfirmed",
+        "sourceUrls": [
+          "https://genzeinippon.com/",
+          "https://takashi-kawamura.com/"
+        ],
+        "note": "地域政党「減税日本」と国政の「減税日本・ゆうこく連合」を同一視せず、国政の党所属は確認不十分。本人サイトには旧市長時代の記載が混在。 旧収録値「減税日本・ゆうこく連合」は現在の所属としては表示・集計しない。"
+      }
+    },
+    "faction": "無"
+  },
+  {
+    "name": "古川元久",
+    "kana": "ふるかわもとひさ",
+    "house": "衆議院",
+    "district": "愛知2区",
+    "party": "国民民主党",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/371.html",
+    "id": "nat-a1b17fc6",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/6giin.htm",
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/371.html"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/6giin.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。名簿掲載の略称をそのまま保持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://new-kokumin.jp/member"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。"
+      }
+    },
+    "faction": "国民"
+  },
+  {
+    "name": "水野良彦",
+    "kana": "みずのよしひこ",
+    "house": "衆議院",
+    "district": "愛知3区",
+    "party": "自由民主党",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/395.html",
+    "id": "nat-a34da432",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/7giin.htm",
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/395.html"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。議会の掲載表記は「水野よしひこ」。読み・選挙区・公式プロフィールで同定し、会議録検索名と既存IDを維持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/7giin.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。名簿掲載の略称をそのまま保持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.jimin-aichi.or.jp/"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。"
+      }
+    },
+    "faction": "自民"
+  },
+  {
+    "name": "工藤彰三",
+    "kana": "くどうしょうぞう",
+    "house": "衆議院",
+    "district": "愛知4区",
+    "party": "自由民主党",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/151.html",
+    "id": "nat-e7917464",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/2giin.htm",
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/151.html"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/2giin.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。名簿掲載の略称をそのまま保持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.jimin-aichi.or.jp/"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。"
+      }
+    },
+    "faction": "自民"
+  },
+  {
+    "name": "岡本康宏",
+    "kana": "おかもとやすひろ",
+    "house": "衆議院",
+    "district": "愛知5区",
+    "party": "自由民主党",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/094.html",
+    "id": "nat-0f518982",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/1giin.htm",
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/094.html"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/1giin.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。名簿掲載の略称をそのまま保持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.jimin-aichi.or.jp/"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。"
+      }
+    },
+    "faction": "自民"
+  },
+  {
+    "name": "丹羽秀樹",
+    "kana": "にわひでき",
+    "house": "衆議院",
+    "district": "愛知6区",
+    "party": "自由民主党",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/318.html",
+    "id": "nat-6fa6066e",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/5giin.htm",
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/318.html"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/5giin.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。名簿掲載の略称をそのまま保持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.jimin-aichi.or.jp/"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。"
+      }
+    },
+    "faction": "自民"
+  },
+  {
+    "name": "日野紗里亜",
+    "kana": "ひのさりあ",
+    "house": "衆議院",
+    "district": "愛知7区",
+    "party": "国民民主党",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/344.html",
+    "id": "nat-81cb6e51",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/6giin.htm",
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/344.html"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/6giin.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。名簿掲載の略称をそのまま保持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://new-kokumin.jp/member"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。"
+      }
+    },
+    "faction": "国民"
+  },
+  {
+    "name": "伊藤忠彦",
+    "kana": "いとうただひこ",
+    "house": "衆議院",
+    "district": "愛知8区",
+    "party": "自由民主党",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/045.html",
+    "id": "nat-e993491d",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/1giin.htm",
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/045.html"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/1giin.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。名簿掲載の略称をそのまま保持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.jimin-aichi.or.jp/"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。"
+      }
+    },
+    "faction": "自民"
+  },
+  {
+    "name": "長坂康正",
+    "kana": "ながさかやすまさ",
+    "house": "衆議院",
+    "district": "愛知9区",
+    "party": "自由民主党",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/283.html",
+    "id": "nat-bac9a65b",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/5giin.htm",
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/283.html"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/5giin.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。名簿掲載の略称をそのまま保持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.jimin-aichi.or.jp/"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。"
+      }
+    },
+    "faction": "自民"
+  },
+  {
+    "name": "若山慎司",
+    "kana": "わかやましんじ",
+    "house": "衆議院",
+    "district": "愛知10区",
+    "party": "自由民主党",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/455.html",
+    "id": "nat-6ab3d9a1",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/10giin.htm",
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/455.html"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/10giin.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。名簿掲載の略称をそのまま保持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.jimin-aichi.or.jp/"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。掲載名は「若山しんじ」。"
+      }
+    },
+    "faction": "自民"
+  },
+  {
+    "name": "丹野みどり",
+    "kana": "たんのみどり",
+    "house": "衆議院",
+    "district": "愛知11区",
+    "party": "国民民主党",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/263.html",
+    "id": "nat-cedb39cc",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/4giin.htm",
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/263.html"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/4giin.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。名簿掲載の略称をそのまま保持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://new-kokumin.jp/member"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。"
+      }
+    },
+    "faction": "国民"
+  },
+  {
+    "name": "青山周平",
+    "kana": "あおやましゅうへい",
+    "house": "衆議院",
+    "district": "愛知12区",
+    "party": "自由民主党",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/005.html",
+    "id": "nat-dd6216b1",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/1giin.htm",
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/005.html"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/1giin.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。名簿掲載の略称をそのまま保持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.jimin-aichi.or.jp/"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。"
+      }
+    },
+    "faction": "自民"
+  },
+  {
+    "name": "石井拓",
+    "kana": "いしいたく",
+    "house": "衆議院",
+    "district": "愛知13区",
+    "party": "自由民主党",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/028.html",
+    "id": "nat-b9534cd2",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/1giin.htm",
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/028.html"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/1giin.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。名簿掲載の略称をそのまま保持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.jimin-aichi.or.jp/"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。"
+      }
+    },
+    "faction": "自民"
+  },
+  {
+    "name": "今枝宗一郎",
+    "kana": "いまえだそういちろう",
+    "house": "衆議院",
+    "district": "愛知14区",
+    "party": "自由民主党",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/059.html",
+    "id": "nat-b4ef86ed",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/1giin.htm",
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/059.html"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/1giin.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。名簿掲載の略称をそのまま保持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.jimin-aichi.or.jp/"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。"
+      }
+    },
+    "faction": "自民"
+  },
+  {
+    "name": "根本幸典",
+    "kana": "ねもとゆきのり",
+    "house": "衆議院",
+    "district": "愛知15区",
+    "party": "自由民主党",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/322.html",
+    "id": "nat-4b065d48",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/5giin.htm",
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/322.html"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/5giin.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。名簿掲載の略称をそのまま保持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.jimin-aichi.or.jp/"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。"
+      }
+    },
+    "faction": "自民"
+  },
+  {
+    "name": "山下史守朗",
+    "kana": "やましたしずお",
+    "house": "衆議院",
+    "district": "愛知16区",
+    "party": "自由民主党",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/432.html",
+    "id": "nat-44385aca",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/8giin.htm",
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/432.html"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/8giin.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。名簿掲載の略称をそのまま保持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.jimin-aichi.or.jp/"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。"
+      }
+    },
+    "faction": "自民"
+  },
+  {
+    "name": "藤川政人",
+    "kana": "ふじかわまさと",
+    "house": "参議院",
+    "district": "愛知県選挙区",
+    "party": "自由民主党",
+    "sourceUrl": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7010046.htm",
+    "id": "nat-4dd7b521",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/giin/hireiku/hireiku.htm",
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7010046.htm"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7010046.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。略歴欄の過去所属からは推測しない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.jimin-aichi.or.jp/"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。"
+      }
+    },
+    "faction": "自由民主党・無所属の会"
+  },
+  {
+    "name": "里見隆治",
+    "kana": "さとみりゅうじ",
+    "house": "参議院",
+    "district": "愛知県選挙区",
+    "party": "公明党",
+    "sourceUrl": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7016020.htm",
+    "id": "nat-2b393eda",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/giin/hireiku/hireiku.htm",
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7016020.htm"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7016020.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。略歴欄の過去所属からは推測しない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.komei.or.jp/mb/member/detail/23020339/page:1/kokai:2/route:member_legislator"
+        ],
+        "note": "党公式の議員情報ページへの掲載と党役職で政党所属を照合。議会会派の略称から変換していない。資料の基準日は未記載。"
+      }
+    },
+    "faction": "公明党"
+  },
+  {
+    "name": "斎藤嘉隆",
+    "kana": "さいとうよしたか",
+    "house": "参議院",
+    "district": "愛知県選挙区",
+    "party": "立憲民主党",
+    "sourceUrl": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7010027.htm",
+    "id": "nat-40de2cf3",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/giin/hireiku/hireiku.htm",
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7010027.htm"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7010027.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。略歴欄の過去所属からは推測しない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://cdp-japan.jp/member/1474"
+        ],
+        "note": "党公式の議員情報ページへの掲載と党役職で政党所属を照合。議会会派の略称から変換していない。資料の基準日は未記載。"
+      }
+    },
+    "faction": "立憲民主・無所属"
+  },
+  {
+    "name": "伊藤孝恵",
+    "kana": "いとうたかえ",
+    "house": "参議院",
+    "district": "愛知県選挙区",
+    "party": "国民民主党",
+    "sourceUrl": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7016006.htm",
+    "id": "nat-301067c0",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/giin/hireiku/hireiku.htm",
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7016006.htm"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7016006.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。略歴欄の過去所属からは推測しない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://new-kokumin.jp/member"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。"
+      }
+    },
+    "faction": "国民民主党・新緑風会"
+  },
+  {
+    "name": "酒井庸行",
+    "kana": "さかいつねゆき",
+    "house": "参議院",
+    "district": "愛知県選挙区",
+    "party": "自由民主党",
+    "sourceUrl": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7013024.htm",
+    "id": "nat-b0189eb4",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/giin/hireiku/hireiku.htm",
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7013024.htm"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7013024.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。略歴欄の過去所属からは推測しない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.jimin-aichi.or.jp/"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。"
+      }
+    },
+    "faction": "自由民主党・無所属の会"
+  },
+  {
+    "name": "田島麻衣子",
+    "kana": "たじままいこ",
+    "house": "参議院",
+    "district": "愛知県選挙区",
+    "party": "立憲民主党",
+    "sourceUrl": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7019024.htm",
+    "id": "nat-5c52b577",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/giin/hireiku/hireiku.htm",
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7019024.htm"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7019024.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。略歴欄の過去所属からは推測しない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://cdp-japan.jp/member/1836"
+        ],
+        "note": "党公式の議員情報ページへの掲載と党役職で政党所属を照合。議会会派の略称から変換していない。資料の基準日は未記載。"
+      }
+    },
+    "faction": "立憲民主・無所属"
+  },
+  {
+    "name": "水野孝一",
+    "kana": "みずのこういち",
+    "house": "参議院",
+    "district": "愛知県選挙区",
+    "party": "国民民主党",
+    "sourceUrl": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7025055.htm",
+    "id": "nat-fe2d66ba",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/giin/hireiku/hireiku.htm",
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7025055.htm"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7025055.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。略歴欄の過去所属からは推測しない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://new-kokumin.jp/member"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。"
+      }
+    },
+    "faction": "国民民主党・新緑風会"
+  },
+  {
+    "name": "杉本純子",
+    "kana": "すぎもとじゅんこ",
+    "house": "参議院",
+    "district": "愛知県選挙区",
+    "party": "参政党",
+    "sourceUrl": "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7025033.htm",
+    "id": "nat-942cc447",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/giin/hireiku/hireiku.htm",
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7025033.htm"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.sangiin.go.jp/japanese/joho1/kousei/giin/profile/7025033.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。略歴欄の過去所属からは推測しない。"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://sanseito-aichi.com/%E8%AD%B0%E5%93%A1%E3%83%9A%E3%83%BC%E3%82%B8/"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。掲載名は「杉本じゅんこ」。"
+      }
+    },
+    "faction": "参政党"
+  },
+  {
+    "name": "熊田裕通",
+    "kana": "くまだひろみち",
+    "house": "衆議院",
+    "district": "比例東海",
+    "party": "自由民主党",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/156.html",
+    "id": "nat-f262cdfb",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/2giin.htm",
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/156.html"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/2giin.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。名簿掲載の略称をそのまま保持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.jimin-aichi.or.jp/"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。"
+      }
+    },
+    "faction": "自民"
+  },
+  {
+    "name": "辻秀樹",
+    "kana": "つじひでき",
+    "house": "衆議院",
+    "district": "比例東海",
+    "party": "自由民主党",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/265.html",
+    "id": "nat-5285f99b",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/4giin.htm",
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/265.html"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/4giin.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。名簿掲載の略称をそのまま保持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.jimin-aichi.or.jp/"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。"
+      }
+    },
+    "faction": "自民"
+  },
+  {
+    "name": "渡辺藍理",
+    "kana": "わたなべあいり",
+    "house": "衆議院",
+    "district": "比例東海",
+    "party": "参政党",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/460.html",
+    "id": "nat-02bba622",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/10giin.htm",
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/460.html"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/10giin.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。名簿掲載の略称をそのまま保持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://sanseito-aichi.com/%E8%AD%B0%E5%93%A1%E3%83%9A%E3%83%BC%E3%82%B8/"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。"
+      }
+    },
+    "faction": "参政"
+  },
+  {
+    "name": "鈴木淳司",
+    "kana": "すずきじゅんじ",
+    "house": "衆議院",
+    "district": "比例東海",
+    "party": "自由民主党",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/214.html",
+    "id": "nat-58226ce4",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/3giin.htm",
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/214.html"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/3giin.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。名簿掲載の略称をそのまま保持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.jimin-aichi.or.jp/"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。"
+      }
+    },
+    "faction": "自民"
+  },
+  {
+    "name": "藤澤忠盛",
+    "kana": "ふじさわただもり",
+    "house": "衆議院",
+    "district": "比例東海",
+    "party": "自由民主党",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/359.html",
+    "id": "nat-4327864b",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/6giin.htm",
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/359.html"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。議会の掲載表記は「藤沢忠盛」。読み・選挙区・公式プロフィールで同定し、会議録検索名と既存IDを維持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/6giin.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。名簿掲載の略称をそのまま保持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.jimin-aichi.or.jp/"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。"
+      }
+    },
+    "faction": "自民"
+  },
+  {
+    "name": "重徳和彦",
+    "kana": "しげとくかずひこ",
+    "house": "衆議院",
+    "district": "比例東海",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/198.html",
+    "id": "nat-8b419420",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/3giin.htm",
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/198.html"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/3giin.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。名簿掲載の略称をそのまま保持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "unconfirmed",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/198.html",
+          "https://shigetokukazuhiko.jp/"
+        ],
+        "note": "公式衆院プロフィールの「中道」会派と国対委員長の記載は確認したが、現在の党所属を党・本人の現行名簿で独立確認できなかった（本人サイト403）。 旧収録値「中道改革連合」は現在の所属としては表示・集計しない。"
+      }
+    },
+    "faction": "中道"
+  },
+  {
+    "name": "関健一郎",
+    "kana": "せきけんいちろう",
+    "house": "衆議院",
+    "district": "比例東海",
+    "party": "日本維新の会",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/223.html",
+    "id": "nat-17babd14",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/3giin.htm",
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/223.html"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/3giin.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。名簿掲載の略称をそのまま保持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://o-ishin.jp/member/"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。掲載名は「せき健一郎」。"
+      }
+    },
+    "faction": "維新"
+  },
+  {
+    "name": "福田徹",
+    "kana": "ふくたとおる",
+    "house": "衆議院",
+    "district": "比例東海",
+    "party": "国民民主党",
+    "sourceUrl": "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/354.html",
+    "id": "nat-078fe50d",
+    "verification": {
+      "membership": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/6giin.htm",
+          "https://www.shugiin.go.jp/internet/itdb_giinprof.nsf/html/profile/354.html"
+        ],
+        "note": "公式議員一覧と公式プロフィールで現職・選挙区を照合。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "faction": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/6giin.htm"
+        ],
+        "note": "議会公式の会派表記。政党所属とは別項目。名簿掲載の略称をそのまま保持。",
+        "sourceAsOf": "2026-09-28"
+      },
+      "affiliation": {
+        "checkedAt": "2026-10-23",
+        "status": "verified",
+        "sourceUrls": [
+          "https://new-kokumin.jp/member"
+        ],
+        "note": "党公式の所属議員・支部長紹介で照合。会派から政党へ推測変換していない。"
+      }
+    },
+    "faction": "国民"
+  }
 ]

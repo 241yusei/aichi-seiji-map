@@ -7,9 +7,13 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { z } from "zod";
 import type { Legislator } from "../lib/types";
+import { rosterVerificationSchema } from "../lib/zod-schemas";
 
 const seedSchema = z.array(
   z.object({
+    id: z.string().min(1).optional(),
+    verification: rosterVerificationSchema.optional(),
+    faction: z.string().min(1).optional(),
     name: z.string().min(1),
     kana: z.string(),
     house: z.enum(["衆議院", "参議院"]),
@@ -30,7 +34,9 @@ function idFor(name: string): string {
 const seed = seedSchema.parse(JSON.parse(readFileSync(SEED, "utf-8")));
 
 const legislators: Legislator[] = seed.map((s) => ({
-  id: idFor(s.name),
+  id: s.id ?? idFor(s.name),
+  verification: s.verification,
+  faction: s.faction,
   name: s.name,
   kana: s.kana,
   level: "national",

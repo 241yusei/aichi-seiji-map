@@ -6,9 +6,12 @@ import { createHash } from "node:crypto";
 import { readFileSync, writeFileSync } from "node:fs";
 import { z } from "zod";
 import type { Legislator, Level, Vendor } from "../../lib/types";
+import { rosterVerificationSchema } from "../../lib/zod-schemas";
 
 const rosterSchema = z.array(
   z.object({
+    id: z.string().min(1).optional(),
+    verification: rosterVerificationSchema.optional(),
     name: z.string().min(1),
     kana: z.string(),
     party: z.string().optional(),
@@ -30,7 +33,8 @@ export function buildRoster(opts: {
 
   const legislators: Legislator[] = seed.map((s) => ({
     // 同姓を選挙区で区別するため name+district をハッシュ
-    id: `${opts.idPrefix}-${createHash("sha1").update(s.name + s.district).digest("hex").slice(0, 8)}`,
+    id: s.id ?? `${opts.idPrefix}-${createHash("sha1").update(s.name + s.district).digest("hex").slice(0, 8)}`,
+    verification: s.verification,
     name: s.name,
     kana: s.kana,
     level: opts.level,

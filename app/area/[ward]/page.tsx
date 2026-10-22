@@ -130,7 +130,12 @@ export default async function WardDashboardPage({
         <p className="mt-2 text-xs text-faint">サイト更新日：{LAST_UPDATED}（名簿の確認日ではありません）</p>
       </header>
 
-      <RosterCoverage />
+      <RosterCoverage legislators={[
+        ...national.filter((l) => l.district === w.shugiin || l.district === "愛知県選挙区"),
+        ...pref.filter((l) => l.district === w.prefDistrict),
+        ...muni.filter((l) => l.district === w.prefDistrict),
+      ]} />
+      <p className="text-xs text-muted">首長の個別照合日は未記録です。上の照合人数には含めていません。</p>
 
       {/* 首長（決める人のトップ） */}
       {execs.length > 0 && (
