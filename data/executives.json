@@ -673,17 +673,16 @@
   },
   {
     "id": "exec-23424",
-    "name": "鈴木康友",
-    "kana": "すずきやすとも",
+    "name": "横井良隆",
+    "kana": "よこいよしたか",
     "title": "町長",
     "level": "municipal",
     "govCode": "23424",
     "area": "大治町",
     "homepage": "https://www.town.oharu.aichi.jp/",
     "sourceUrl": "https://www.town.oharu.aichi.jp/1916.htm",
-    "termStart": "2025-08-04",
-    "termEnd": "2029-08-03",
-    "termSourceUrl": "https://www.chunichi.co.jp/article/1106601"
+    "termEnd": "2030-09-12",
+    "termSourceUrl": "https://www.pref.aichi.jp/soshiki/shichoson/0000046285.html"
   },
   {
     "id": "exec-23425",

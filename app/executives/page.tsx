@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { getExecutives } from "@/lib/data";
 import { SourceLink } from "@/components/SourceLink";
 import { CompositionDots } from "@/components/CompositionDots";
@@ -93,7 +94,7 @@ export default function ExecutivesPage() {
             caption={`計${executives.length}人（各自治体公式サイトより）`}
           />
         </div>
-        <p className="mt-2 text-xs text-muted">首長の名簿・所属・役職の個別照合日：未記録。議員名簿の確認状況とは異なります。最新は各自治体の公式出典でご確認ください。</p>
+        <p className="mt-2 text-xs text-muted">首長名簿全体を一括で再照合したものではありません。個別の訂正と確認日は<Link href="/corrections/" className="link-ink">訂正・更新ログ</Link>に記載しています。最新は各自治体の公式出典でご確認ください。</p>
       </header>
 
       {governor.length > 0 && (
@@ -137,7 +138,7 @@ export default function ExecutivesPage() {
       </section>
 
       <p className="measure border-t border-line pt-5 text-xs text-faint">
-        サイト更新日：{LAST_UPDATED}。収録した氏名・肩書の出典は各行の「公式プロフィール」です。個別照合日は未記録で、現在の掲載内容との一致を確認済みとはしていません。
+        サイト更新日：{LAST_UPDATED}。収録した氏名・肩書の出典は各行の「公式プロフィール」です。個別の訂正を除き、現在の名簿全体との一致を今回確認済みとはしていません。
         改選などで交代した場合は順次更新します。誤りにお気づきの場合は出典とあわせてご指摘ください。
       </p>
     </div>
