@@ -40,7 +40,9 @@ export function ThemeSpeechCard({ speech, speakerName, theme }: {
 
       {speech.isExcerpt && <p className="mt-3 text-xs text-muted">収録本文自体も抜粋です。全文は公式会議録でご確認ください。</p>}
       <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm">
-        <SourceLink href={speech.sourceUrl} className="link-ink inline-flex min-h-11 items-center">全文・前後の発言を会議録で確認</SourceLink>
+        <SourceLink href={speech.sourceUrl} className="link-ink inline-flex min-h-11 flex-wrap items-center">
+          全文・前後の発言を会議録で確認<span className="text-xs text-muted">（国立国会図書館・別タブ）</span>
+        </SourceLink>
         <Link href={`/legislators/${speech.legislatorId}/`} className="link-ink inline-flex min-h-11 items-center">
           {speakerName ? `${speakerName}氏` : "この議員"}の発言・採決・政治資金 →
         </Link>

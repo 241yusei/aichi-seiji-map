@@ -137,7 +137,7 @@ export default function ExecutivesPage() {
       </section>
 
       <p className="measure border-t border-line pt-5 text-xs text-faint">
-        サイト更新日：{LAST_UPDATED}。氏名・肩書はすべて各自治体公式サイトの記載に基づきます（各行の「公式プロフィール」リンクが出典）。
+        サイト更新日：{LAST_UPDATED}。収録した氏名・肩書の出典は各行の「公式プロフィール」です。個別照合日は未記録で、現在の掲載内容との一致を確認済みとはしていません。
         改選などで交代した場合は順次更新します。誤りにお気づきの場合は出典とあわせてご指摘ください。
       </p>
     </div>
