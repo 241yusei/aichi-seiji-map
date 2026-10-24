@@ -5,6 +5,7 @@ import { getActiveElectionWindows, getElectionWindows } from "@/lib/election-win
 import { ElectionPeriodBanner } from "@/components/ElectionPeriodBanner";
 import { BottomNav } from "@/components/BottomNav";
 import { SiteHeader } from "@/components/SiteHeader";
+import { UsageMeasurement } from "@/components/UsageMeasurement";
 import {
   LAST_UPDATED,
   SITE_URL,
@@ -43,6 +44,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="ja">
       <body className="min-h-dvh">
+        <UsageMeasurement />
         {/* サイト全体の構造化データ（検索結果でのサイト名表示用） */}
         <script
           type="application/ld+json"
@@ -159,6 +161,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                   </Link>
                   <Link href="/search" className="hover:text-accent-deep">
                     検索
+                  </Link>
+                  <Link href="/usage" className="hover:text-accent-deep">
+                    利用状況の計測・停止
                   </Link>
                   <Link href="/support" className="hover:text-accent-deep">
                     支援・寄付

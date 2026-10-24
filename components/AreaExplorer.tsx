@@ -17,7 +17,7 @@ export function AreaExplorer() {
         </div>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
           {NAGOYA_WARDS.map((ward) => (
-            <Link key={ward.slug} href={`/area/${ward.slug}/`} className="group flex min-h-16 items-center justify-between gap-2 rounded-2xl border border-line bg-paper px-4 py-4 text-base font-medium transition-colors hover:border-accent hover:bg-subtle sm:px-6">
+            <Link key={ward.slug} href={`/area/${ward.slug}/`} data-usage-event="region_selected" className="group flex min-h-16 items-center justify-between gap-2 rounded-2xl border border-line bg-paper px-4 py-4 text-base font-medium transition-colors hover:border-accent hover:bg-subtle sm:px-6">
               {ward.ward}<span aria-hidden="true" className="text-accent">→</span>
             </Link>
           ))}

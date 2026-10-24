@@ -8,6 +8,8 @@ import { MUNICIPALITIES } from "@/lib/municipalities";
 import { REGIONS } from "@/lib/regions";
 import { forgetRegion, readSavedRegion, resolveRegionTarget, saveRegion, type RegionTarget } from "@/lib/region-preference";
 import { ZipSearch } from "./ZipSearch";
+import { JourneyMilestone } from "./JourneyMilestone";
+import { recordUsage } from "@/lib/usage-browser";
 
 const CITY_GROUPS = REGIONS.filter((r) => r.name !== "名古屋").map((region) => ({
   label: region.name,
@@ -54,6 +56,7 @@ export function RegionPicker() {
       return;
     }
     rememberRegion(target.value);
+    recordUsage("region_selected");
     router.push(target.href);
   }
 
@@ -73,9 +76,10 @@ export function RegionPicker() {
 
   return (
     <div id="region-picker" className="scroll-mt-6">
+      <JourneyMilestone event="region_step_viewed" />
       {saved && (
         <div className="mb-4 flex flex-wrap items-center justify-between gap-x-3 rounded-xl bg-white px-3 py-1.5 text-sm">
-          <Link href={saved.href} className="link-ink inline-flex min-h-11 items-center">保存した地域：{saved.label} →</Link>
+          <Link href={saved.href} onClick={() => recordUsage("region_selected")} className="link-ink inline-flex min-h-11 items-center">保存した地域：{saved.label} →</Link>
           <button type="button" onClick={clearSavedRegion} className="tap text-sm text-muted underline underline-offset-4">保存を解除</button>
         </div>
       )}
@@ -98,7 +102,7 @@ export function RegionPicker() {
         {error && <p id={`${id}-error`} role="alert" className="mt-2 text-sm text-accent-deep">{error}</p>}
       </form>
       <div className="mt-4 border-t border-line pt-4">
-        <ZipSearch onResolved={(ward) => rememberRegion(`ward:${ward.slug}`)} />
+        <ZipSearch onResolved={(ward) => { rememberRegion(`ward:${ward.slug}`); recordUsage("region_selected"); }} />
       </div>
       <label className="mt-3 flex min-h-11 cursor-pointer items-center gap-2.5 text-xs leading-relaxed text-muted">
         <input type="checkbox" checked={remember} onChange={(e) => setRemember(e.target.checked)} className="h-5 min-h-5 w-5 shrink-0 accent-accent" />

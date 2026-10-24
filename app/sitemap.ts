@@ -41,6 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/methodology",
     "/about",
     "/support",
+    "/usage",
     "/corrections",
   ].map(
     (p) => ({

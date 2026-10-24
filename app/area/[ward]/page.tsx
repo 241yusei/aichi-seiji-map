@@ -1,3 +1,4 @@
+import { JourneyGuide } from "@/components/JourneyGuide";
 import { RosterCoverage } from "@/components/DataCoverage";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -130,6 +131,8 @@ export default async function WardDashboardPage({
         <p className="mt-2 text-xs text-faint">サイト更新日：{LAST_UPDATED}（名簿の確認日ではありません）</p>
       </header>
 
+      <JourneyGuide stage="representative" />
+
       <RosterCoverage legislators={[
         ...national.filter((l) => l.district === w.shugiin || l.district === "愛知県選挙区"),
         ...pref.filter((l) => l.district === w.prefDistrict),
@@ -159,8 +162,8 @@ export default async function WardDashboardPage({
       )}
 
       {/* 三層の議員（事実の一行つき） */}
-      <section>
-        <h2 className="eyebrow text-accent-deep">あなたの議員（国・県・市）</h2>
+      <section id="representatives" tabIndex={-1} aria-labelledby="representatives-heading" className="scroll-mt-24">
+        <h2 id="representatives-heading" className="eyebrow text-accent-deep">あなたの議員（国・県・市）</h2>
         <div className="mt-3 grid gap-3 sm:grid-cols-2">
           <Group title="衆議院（小選挙区）" items={shugiin} />
           <Group title="参議院（愛知県選挙区）" items={sangiin} />

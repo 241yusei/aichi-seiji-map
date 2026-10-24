@@ -1,0 +1,347 @@
+{
+  "date": "2026-10-23",
+  "kind": "automated_local_static_build",
+  "branch": "codex/first-use-measurement",
+  "baseCommit": "701794bfd0708c31e9623f5042ddec3f9cb71834",
+  "testedState": "PR作成前のローカル作業ビルド",
+  "humanParticipants": 0,
+  "productionAnalyticsWrites": false,
+  "externalSourceConnections": false,
+  "isolation": "localhost only; usage API mocked; external navigation intercepted or replaced with disposable fixtures",
+  "fixtureTests": {
+    "passed": 63,
+    "failed": 0
+  },
+  "checks": {
+    "typecheck": "pass",
+    "lint": "pass",
+    "validate": "pass",
+    "buildPages": 1486,
+    "diffCheck": "pass",
+    "pagesFunctionsCompile": "pass",
+    "previewBinding": "none",
+    "productionEnabled": false
+  },
+  "journeys": [
+    {
+      "width": 320,
+      "fixedScenario": "nagoya",
+      "fixedTopic": "kosodate",
+      "events": [
+        "region_step_viewed",
+        "region_selected",
+        "representative_viewed",
+        "living_topic_viewed",
+        "source_reference_opened",
+        "source_external_opened"
+      ],
+      "payloadKeys": [
+        "version",
+        "event"
+      ],
+      "refererSent": false,
+      "cookieSent": false,
+      "reloadDuplicateEvents": false,
+      "documentOverflow": false,
+      "runtimeErrors": [],
+      "primarySourceRequest": "intercepted before external connection"
+    },
+    {
+      "width": 320,
+      "fixedScenario": "postal",
+      "fixedTopic": "transit",
+      "events": [
+        "region_step_viewed",
+        "region_selected",
+        "representative_viewed",
+        "living_topic_viewed",
+        "source_reference_opened",
+        "source_external_opened"
+      ],
+      "payloadKeys": [
+        "version",
+        "event"
+      ],
+      "refererSent": false,
+      "cookieSent": false,
+      "reloadDuplicateEvents": false,
+      "documentOverflow": false,
+      "runtimeErrors": [],
+      "primarySourceRequest": "intercepted before external connection"
+    },
+    {
+      "width": 320,
+      "fixedScenario": "toyota",
+      "fixedTopic": "bousai",
+      "events": [
+        "region_step_viewed",
+        "region_selected",
+        "representative_viewed",
+        "living_topic_viewed",
+        "source_reference_opened",
+        "source_external_opened"
+      ],
+      "payloadKeys": [
+        "version",
+        "event"
+      ],
+      "refererSent": false,
+      "cookieSent": false,
+      "reloadDuplicateEvents": false,
+      "documentOverflow": false,
+      "runtimeErrors": [],
+      "primarySourceRequest": "intercepted before external connection"
+    },
+    {
+      "width": 390,
+      "fixedScenario": "nagoya",
+      "fixedTopic": "kosodate",
+      "events": [
+        "region_step_viewed",
+        "region_selected",
+        "representative_viewed",
+        "living_topic_viewed",
+        "source_reference_opened",
+        "source_external_opened"
+      ],
+      "payloadKeys": [
+        "version",
+        "event"
+      ],
+      "refererSent": false,
+      "cookieSent": false,
+      "reloadDuplicateEvents": false,
+      "documentOverflow": false,
+      "runtimeErrors": [],
+      "primarySourceRequest": "intercepted before external connection"
+    },
+    {
+      "width": 390,
+      "fixedScenario": "postal",
+      "fixedTopic": "transit",
+      "events": [
+        "region_step_viewed",
+        "region_selected",
+        "representative_viewed",
+        "living_topic_viewed",
+        "source_reference_opened",
+        "source_external_opened"
+      ],
+      "payloadKeys": [
+        "version",
+        "event"
+      ],
+      "refererSent": false,
+      "cookieSent": false,
+      "reloadDuplicateEvents": false,
+      "documentOverflow": false,
+      "runtimeErrors": [],
+      "primarySourceRequest": "intercepted before external connection"
+    },
+    {
+      "width": 390,
+      "fixedScenario": "toyota",
+      "fixedTopic": "bousai",
+      "events": [
+        "region_step_viewed",
+        "region_selected",
+        "representative_viewed",
+        "living_topic_viewed",
+        "source_reference_opened",
+        "source_external_opened"
+      ],
+      "payloadKeys": [
+        "version",
+        "event"
+      ],
+      "refererSent": false,
+      "cookieSent": false,
+      "reloadDuplicateEvents": false,
+      "documentOverflow": false,
+      "runtimeErrors": [],
+      "primarySourceRequest": "intercepted before external connection"
+    },
+    {
+      "width": 1280,
+      "fixedScenario": "nagoya",
+      "fixedTopic": "kosodate",
+      "events": [
+        "region_step_viewed",
+        "region_selected",
+        "representative_viewed",
+        "living_topic_viewed",
+        "source_reference_opened",
+        "source_external_opened"
+      ],
+      "payloadKeys": [
+        "version",
+        "event"
+      ],
+      "refererSent": false,
+      "cookieSent": false,
+      "reloadDuplicateEvents": false,
+      "documentOverflow": false,
+      "runtimeErrors": [],
+      "primarySourceRequest": "intercepted before external connection"
+    },
+    {
+      "width": 1280,
+      "fixedScenario": "postal",
+      "fixedTopic": "transit",
+      "events": [
+        "region_step_viewed",
+        "region_selected",
+        "representative_viewed",
+        "living_topic_viewed",
+        "source_reference_opened",
+        "source_external_opened"
+      ],
+      "payloadKeys": [
+        "version",
+        "event"
+      ],
+      "refererSent": false,
+      "cookieSent": false,
+      "reloadDuplicateEvents": false,
+      "documentOverflow": false,
+      "runtimeErrors": [],
+      "primarySourceRequest": "intercepted before external connection"
+    },
+    {
+      "width": 1280,
+      "fixedScenario": "toyota",
+      "fixedTopic": "bousai",
+      "events": [
+        "region_step_viewed",
+        "region_selected",
+        "representative_viewed",
+        "living_topic_viewed",
+        "source_reference_opened",
+        "source_external_opened"
+      ],
+      "payloadKeys": [
+        "version",
+        "event"
+      ],
+      "refererSent": false,
+      "cookieSent": false,
+      "reloadDuplicateEvents": false,
+      "documentOverflow": false,
+      "runtimeErrors": [],
+      "primarySourceRequest": "intercepted before external connection"
+    }
+  ],
+  "measurementCases": [
+    {
+      "name": "未設定API",
+      "status": "pass",
+      "configRequests": 1,
+      "events": [],
+      "runtimeErrors": []
+    },
+    {
+      "name": "無効設定",
+      "status": "pass",
+      "configRequests": 1,
+      "events": [],
+      "runtimeErrors": []
+    },
+    {
+      "name": "端末停止済み",
+      "status": "pass",
+      "configRequests": 0,
+      "events": [],
+      "runtimeErrors": []
+    },
+    {
+      "name": "DNT",
+      "status": "pass",
+      "configRequests": 0,
+      "events": [],
+      "runtimeErrors": []
+    },
+    {
+      "name": "GPC",
+      "status": "pass",
+      "configRequests": 0,
+      "events": [],
+      "runtimeErrors": []
+    },
+    {
+      "name": "送信失敗でも導線完了・自動再送なし",
+      "status": "pass",
+      "configRequests": 1,
+      "events": [
+        "region_step_viewed",
+        "region_selected",
+        "representative_viewed",
+        "living_topic_viewed",
+        "source_reference_opened",
+        "source_external_opened"
+      ],
+      "runtimeErrors": []
+    },
+    {
+      "name": "テーマ直接流入は順次導線に混ぜない",
+      "status": "pass",
+      "configRequests": 1,
+      "events": [],
+      "runtimeErrors": []
+    },
+    {
+      "name": "画面から停止・再読込後も停止",
+      "status": "pass",
+      "configRequests": 1,
+      "events": [],
+      "runtimeErrors": []
+    },
+    {
+      "name": "config遅延中の速い操作を有効確認後だけ送信",
+      "status": "pass",
+      "configRequests": 1,
+      "events": [
+        "region_step_viewed",
+        "region_selected",
+        "representative_viewed"
+      ],
+      "runtimeErrors": []
+    }
+  ],
+  "wardGridAndPreferences": [
+    {
+      "width": 320,
+      "wardGridEvents": [
+        "region_step_viewed",
+        "region_selected"
+      ],
+      "usagePreference": "stop works",
+      "overflow": false,
+      "runtimeErrors": []
+    },
+    {
+      "width": 390,
+      "wardGridEvents": [
+        "region_step_viewed",
+        "region_selected"
+      ],
+      "usagePreference": "stop works",
+      "overflow": false,
+      "runtimeErrors": []
+    },
+    {
+      "width": 1280,
+      "wardGridEvents": [
+        "region_step_viewed",
+        "region_selected"
+      ],
+      "usagePreference": "stop works",
+      "overflow": false,
+      "runtimeErrors": []
+    }
+  ],
+  "notVerified": [
+    "実参加者の理解・迷い・初回成功率・所要時間",
+    "外部原本の正常表示・読了",
+    "本番Cloudflareでの実イベント受理・SQL集計・利用実績"
+  ]
+}

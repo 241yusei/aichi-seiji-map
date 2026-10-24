@@ -1,3 +1,5 @@
+import { JourneyMilestone } from "@/components/JourneyMilestone";
+import { JourneyGuide } from "@/components/JourneyGuide";
 import { LegislatorVerification } from "@/components/LegislatorVerification";
 import { latestFundingRecords } from "@/lib/data-coverage";
 import { SpeechCoverage } from "@/components/DataCoverage";
@@ -154,6 +156,7 @@ export default async function LegislatorDetailPage({
 
       {/* プロフィール */}
       <header className="border-b border-line pb-6">
+        <JourneyMilestone event="representative_viewed" />
         <span className="inline-flex items-center border border-ink px-2 py-0.5 text-xs font-bold text-ink">
           {layerLabel}
         </span>
@@ -196,6 +199,8 @@ export default async function LegislatorDetailPage({
           </p>
         )}
       </header>
+
+      <JourneyGuide stage="topic" />
 
       <LegislatorVerification legislator={legislator} profile={profile} />
       {legislator.level === "national" && <SpeechCoverage />}
