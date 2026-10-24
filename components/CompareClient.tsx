@@ -3,35 +3,30 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { formatYen } from "@/lib/format";
+import { loadCompareIndex, type CompareEntry } from "@/lib/compare-index";
 
-interface CmpEntry {
-  id: string;
-  t: string;
-  layer: string;
-  sub: string;
-  party: string;
-  sp: number;
-  vy: number;
-  vn: number;
-  vo: number;
-  fund: number | null;
-  fundYear: number | null;
-  ec: number;
-  pos: string[];
-  q: string;
-}
+type LoadState =
+  | { status: "loading" | "error" }
+  | { status: "ready"; entries: CompareEntry[] };
 
 export function CompareClient() {
-  const [index, setIndex] = useState<CmpEntry[] | null>(null);
+  const [load, setLoad] = useState<LoadState>({ status: "loading" });
+  const [attempt, setAttempt] = useState(0);
   const [aId, setAId] = useState<string | null>(null);
   const [bId, setBId] = useState<string | null>(null);
+  const index = load.status === "ready" ? load.entries : null;
 
   useEffect(() => {
-    fetch("/compare-index.json")
-      .then((r) => r.json())
-      .then((d: CmpEntry[]) => setIndex(d))
-      .catch(() => setIndex([]));
-  }, []);
+    const controller = new AbortController();
+    loadCompareIndex(controller.signal)
+      .then((entries) => {
+        if (!controller.signal.aborted) setLoad({ status: "ready", entries });
+      })
+      .catch(() => {
+        if (!controller.signal.aborted) setLoad({ status: "error" });
+      });
+    return () => controller.abort();
+  }, [attempt]);
 
   // 共有URL（?a=&b=）から初期化。SSR後のマウント時に一度だけURLを反映する。
   useEffect(() => {
@@ -52,7 +47,7 @@ export function CompareClient() {
   }, [aId, bId, index]);
 
   const byId = useMemo(() => {
-    const m = new Map<string, CmpEntry>();
+    const m = new Map<string, CompareEntry>();
     for (const e of index ?? []) m.set(e.id, e);
     return m;
   }, [index]);
@@ -60,15 +55,48 @@ export function CompareClient() {
   const a = aId ? byId.get(aId) : undefined;
   const b = bId ? byId.get(bId) : undefined;
 
+  if (load.status === "error") {
+    return (
+      <div className="border-l-2 border-accent bg-subtle p-4">
+        <p role="alert" className="text-sm text-ink">
+          比較データを読み込めませんでした。通信状況を確認して、もう一度お試しください。
+        </p>
+        <button
+          type="button"
+          onClick={() => {
+            // 共有URLから読み込んだA・Bの選択は、再試行中も保持する。
+            setLoad({ status: "loading" });
+            setAttempt((current) => current + 1);
+          }}
+          className="mt-3 min-h-11 border border-ink px-4 py-2 text-sm font-bold hover:bg-surface"
+        >
+          もう一度読み込む
+        </button>
+        <p className="mt-3 text-sm text-muted">
+          <Link href="/legislators/" className="link-ink">議員一覧から探す →</Link>
+        </p>
+      </div>
+    );
+  }
+
   if (index === null) {
-    return <p className="eyebrow text-faint">読み込み中…</p>;
+    return <p className="eyebrow text-faint" role="status">読み込み中…</p>;
+  }
+
+  if (index.length === 0) {
+    return (
+      <p role="status" className="measure text-sm text-muted">
+        比較できる議員データは0件です。
+        <Link href="/legislators/" className="link-ink">議員一覧からお探しください。</Link>
+      </p>
+    );
   }
 
   return (
     <div>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        <Slot label="A" entry={a} index={index} otherId={bId} onPick={setAId} />
-        <Slot label="B" entry={b} index={index} otherId={aId} onPick={setBId} />
+        <Slot label="A" selectedId={aId} entry={a} index={index} otherId={bId} onPick={setAId} />
+        <Slot label="B" selectedId={bId} entry={b} index={index} otherId={aId} onPick={setBId} />
       </div>
 
       {a && b ? (
@@ -85,14 +113,16 @@ export function CompareClient() {
 
 function Slot({
   label,
+  selectedId,
   entry,
   index,
   otherId,
   onPick,
 }: {
   label: string;
-  entry: CmpEntry | undefined;
-  index: CmpEntry[];
+  selectedId: string | null;
+  entry: CompareEntry | undefined;
+  index: CompareEntry[];
   otherId: string | null;
   onPick: (id: string | null) => void;
 }) {
@@ -131,6 +161,11 @@ function Slot({
   return (
     <div className="border border-line bg-surface p-4">
       <span className="eyebrow text-faint">{label}：議員を選ぶ</span>
+      {selectedId && (
+        <p role="status" className="mt-2 text-sm text-muted">
+          共有URLで指定された議員は、現在の収録データに見つかりません。別の議員を選んでください。
+        </p>
+      )}
       <input
         type="search"
         value={query}
@@ -162,7 +197,7 @@ function Slot({
   );
 }
 
-function ComparisonTable({ a, b }: { a: CmpEntry; b: CmpEntry }) {
+function ComparisonTable({ a, b }: { a: CompareEntry; b: CompareEntry }) {
   const rows: { label: string; a: React.ReactNode; b: React.ReactNode }[] = [
     { label: "層", a: a.layer, b: b.layer },
     { label: "選挙区・政党", a: a.sub, b: b.sub },
