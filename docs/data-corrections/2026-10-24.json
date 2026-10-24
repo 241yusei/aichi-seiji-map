@@ -1,0 +1,552 @@
+{
+  "checkedAt": "2026-10-24",
+  "baseCommit": "6f607b48e47d1a3e4b5e9d6d59a03571038c7b43",
+  "includedUiCommit": "dfdc1f76b51c5ac97b046c011d4fcb1b6a738d73",
+  "scope": "Current Oharu executive plus two broken statistical source families only. No broad collection or roster refresh.",
+  "sources": [
+    {
+      "url": "https://www.town.oharu.aichi.jp/1916.htm",
+      "supports": "Current tenth mayor name; no original source-as-of stated."
+    },
+    {
+      "url": "https://www.pref.aichi.jp/soshiki/shichoson/0000046285.html",
+      "sourceAsOf": "2026-09-13",
+      "pageUpdatedAt": "2026-10-07",
+      "supports": "Oharu name 横井良隆, reading よこいよしたか, term end 2030-09-12. Inauguration day not established; old 2025-08-04 removed rather than transferred to new officeholder."
+    },
+    {
+      "url": "https://www.pref.aichi.jp/uploaded/attachment/583128.pdf",
+      "pages": [
+        1,
+        4
+      ],
+      "targetPeriod": "2024 calendar year",
+      "publishedAt": null,
+      "supports": "Annual category cells in thousand person-visits and million yen. Category sums include reference business-purpose categories."
+    },
+    {
+      "url": "https://www.pref.aichi.jp/uploaded/attachment/540275.pdf",
+      "pages": [
+        4
+      ],
+      "targetPeriod": "2023 calendar year",
+      "supports": "Same annual category sum used to compute 110.6% ratio; this ratio is our calculation, not a directly observed source quote."
+    },
+    {
+      "url": "https://www.pref.aichi.jp/press-release/nouringyoucensussokuhou2025.html",
+      "sourceAsOf": "2025-02-01",
+      "publishedAt": "2025-12-01",
+      "status": "provisional",
+      "supports": "Agricultural core workers in individual management entities 28572 (-28.9% vs2020), agricultural management entities 19031 (-29.2%). Retained as explicitly historical provisional figures."
+    },
+    {
+      "url": "https://www.pref.aichi.jp/soshiki/toukei/nourincensus2025.html",
+      "sourceAsOf": "2025-02-01",
+      "publishedAt": "2026-07-31",
+      "status": "final",
+      "supports": "Final values differ: core workers 29843 (-25.7%), agricultural management entities19989 (-25.7%). Linked separately; not silently substituted into old provisional record."
+    }
+  ],
+  "tourismCalculation": {
+    "2024VisitorCategoryCellsThousandPersonVisits": [
+      1985,
+      55366,
+      4396,
+      34311,
+      1029,
+      82,
+      1447,
+      4,
+      3011,
+      192,
+      7269,
+      1634
+    ],
+    "2023VisitorCategoryCellsThousandPersonVisits": [
+      2269,
+      55747,
+      3883,
+      25335,
+      719,
+      164,
+      792,
+      34,
+      2610,
+      116,
+      7000,
+      1455
+    ],
+    "2024SpendingCategoryCellsMillionYen": [
+      39171,
+      191303,
+      132103,
+      212651,
+      83370,
+      948,
+      221640,
+      36,
+      57390,
+      960,
+      265640,
+      7856
+    ],
+    "visitor2024SumThousandPersonVisits": 110726,
+    "visitor2023SumThousandPersonVisits": 100124,
+    "spending2024SumMillionYen": 1213068,
+    "computedYearOnYearPercent": 110.6
+  },
+  "dataModelCheck": {
+    "executivesPurpose": "One current officeholder per govCode; used by current executive/municipality/election pages and search. Historical tenures are a separate data/history.json model.",
+    "executiveIdPreserved": "exec-23424",
+    "historyChanged": false,
+    "otherCurrentExecutiveRecordsChanged": false,
+    "executiveSeedOrFetcher": "No executive seed/fetch generator exists in this repository. Search-index is generated from executives.json in prebuild."
+  },
+  "changes": [
+    {
+      "file": "data/executives.json",
+      "id": "exec-23424",
+      "before": {
+        "id": "exec-23424",
+        "name": "鈴木康友",
+        "kana": "すずきやすとも",
+        "title": "町長",
+        "level": "municipal",
+        "govCode": "23424",
+        "area": "大治町",
+        "homepage": "https://www.town.oharu.aichi.jp/",
+        "sourceUrl": "https://www.town.oharu.aichi.jp/1916.htm",
+        "termStart": "2025-08-04",
+        "termEnd": "2029-08-03",
+        "termSourceUrl": "https://www.chunichi.co.jp/article/1106601"
+      },
+      "after": {
+        "id": "exec-23424",
+        "name": "横井良隆",
+        "kana": "よこいよしたか",
+        "title": "町長",
+        "level": "municipal",
+        "govCode": "23424",
+        "area": "大治町",
+        "homepage": "https://www.town.oharu.aichi.jp/",
+        "sourceUrl": "https://www.town.oharu.aichi.jp/1916.htm",
+        "termEnd": "2030-09-12",
+        "termSourceUrl": "https://www.pref.aichi.jp/soshiki/shichoson/0000046285.html"
+      }
+    },
+    {
+      "file": "data/fact-cards.json",
+      "id": "comparison-tourism-2026",
+      "before": {
+        "id": "comparison-tourism-2026",
+        "title": "ジブリパーク全5エリア完成、愛知の観光入込は年約1.1億人",
+        "hook": "観光は、愛知のもうひとつの主要産業。",
+        "cardType": "comparison",
+        "body": "ジブリパークは2022年の第1期開園から段階的に拡張し、2024年3月の「魔女の谷」で全5エリアが完成。愛知県の2024年の観光入込客数は約1億1,073万人（前年比110.6%）、観光消費額は約1兆2,131億円にのぼる。",
+        "caveat": "観光入込客数は統計上の延べ数で、複数回の訪問を含む。経済効果の評価ではなく、規模感を示す数字。",
+        "points": [
+          {
+            "label": "観光入込客数(2024)",
+            "value": "約1億1,073万人"
+          },
+          {
+            "label": "観光消費額(2024)",
+            "value": "約1兆2,131億円"
+          },
+          {
+            "label": "ジブリパーク",
+            "value": "全5エリア完成（2024年3月）"
+          }
+        ],
+        "sources": [
+          {
+            "label": "愛知県 2024年 観光入込客統計",
+            "url": "https://www.pref.aichi.jp/press-release/kankoirikomikyaku2024.html"
+          },
+          {
+            "label": "ジブリパーク｜愛知県公式観光サイト Aichi Now",
+            "url": "https://aichinow.pref.aichi.jp/spots/detail/3657/"
+          }
+        ],
+        "relatedIssueIds": [
+          "kanko"
+        ],
+        "publishedAt": "2026-06-19"
+      },
+      "after": {
+        "id": "comparison-tourism-2026",
+        "title": "ジブリパーク全5エリア完成、2024年の愛知の観光入込は約1.1億人回",
+        "hook": "観光は、愛知のもうひとつの主要産業。",
+        "cardType": "comparison",
+        "body": "ジブリパークは2022年の第1期開園から段階的に拡張し、2024年3月の「魔女の谷」で全5エリアが完成。県の2024年観光統計の各区分を合計すると、愛知県の観光入込客数は約1億1,073万人回（前年比110.6%）、観光消費額は約1兆2,131億円となる。",
+        "caveat": "2024暦年の推計値の区分合計（参考値のビジネス目的を含む）。1回の来訪を1人回とし、年間の重複のない人数ではない。前年比は県の2024年・2023年資料の同じ区分の合計値から算出。経済効果の評価ではない。",
+        "points": [
+          {
+            "label": "観光入込客数（2024・区分合計）",
+            "value": "約1億1,073万人回"
+          },
+          {
+            "label": "観光消費額（2024・区分合計）",
+            "value": "約1兆2,131億円"
+          },
+          {
+            "label": "ジブリパーク",
+            "value": "全5エリア完成（2024年3月）"
+          }
+        ],
+        "sources": [
+          {
+            "label": "愛知県 2024年 観光入込客統計（PDF・4ページの年間表）",
+            "url": "https://www.pref.aichi.jp/uploaded/attachment/583128.pdf"
+          },
+          {
+            "label": "愛知県 2023年 観光入込客統計（PDF・前年比の計算に使用）",
+            "url": "https://www.pref.aichi.jp/uploaded/attachment/540275.pdf"
+          },
+          {
+            "label": "ジブリパーク｜愛知県公式観光サイト Aichi Now",
+            "url": "https://aichinow.pref.aichi.jp/spots/detail/3657/"
+          }
+        ],
+        "relatedIssueIds": [
+          "kanko"
+        ],
+        "publishedAt": "2026-06-19",
+        "updatedAt": "2026-10-24"
+      }
+    },
+    {
+      "file": "data/issue-explainers.json",
+      "id": "agriculture",
+      "before": {
+        "id": "agriculture",
+        "subject": "県・国・市町村",
+        "oneLine": "全国でも上位の愛知の農業。花きは全国1位の一方、担い手は急速に減っている。",
+        "youEffect": "地元の野菜や花の生産、食の供給、農地のある風景の維持に関わる。",
+        "whyImportant": "製造業の印象が強い愛知だが、農業産出額は全国上位。担い手の減少は食料生産と地域に直結する。",
+        "now": "令和3年の農業産出額は2,922億円で全国第8位、うち花きは全国1位（542億円）。一方、基幹的農業従事者は2025年に28,572人で前回（2020年）比約29%減と、担い手の減少が続く（2026年6月時点で確認できる統計）。",
+        "keyStats": [
+          {
+            "label": "花きの産出額（令和6年）",
+            "value": "531億円",
+            "sourceUrl": "https://www.flower-kingdom.aichi.jp/about.html",
+            "note": "2位・千葉県の2.5倍以上、全国1位"
+          },
+          {
+            "label": "花き産出額 全国1位の連続年数",
+            "value": "63年連続",
+            "sourceUrl": "https://www.flower-kingdom.aichi.jp/about.html",
+            "note": "昭和37年から日本一"
+          },
+          {
+            "label": "花きの県内生産に占める東三河の割合",
+            "value": "約7割",
+            "sourceUrl": "https://www.flower-kingdom.aichi.jp/about.html"
+          }
+        ],
+        "stances": [
+          {
+            "label": "強みを伸ばす声",
+            "text": "花きや施設園芸の強みを生かし、ブランド化や輸出で産業として伸ばす。"
+          },
+          {
+            "label": "担い手を守る声",
+            "text": "急減する担い手の確保・法人化・新規就農支援を急ぐべき。"
+          },
+          {
+            "label": "見るべき主語",
+            "text": "産地振興は県・市町村、制度や統計は国。役割が分かれる。"
+          }
+        ],
+        "debate": {
+          "pro": "花き全国1位など強い品目があり、高付加価値化・輸出の余地が大きい。",
+          "con": "基幹的農業従事者の急減と高齢化で、生産基盤の維持が難しくなっている。",
+          "openQuestion": "担い手が減るなかで、産出額と農地をどう保つか。"
+        },
+        "timeline": [
+          {
+            "date": "1962年",
+            "event": "愛知県の花きの産出額が全国1位となる（以降、連続首位）。",
+            "sourceUrl": "https://www.flower-kingdom.aichi.jp/about.html"
+          },
+          {
+            "date": "2021年",
+            "event": "愛知県の農業産出額は2,922億円で全国第8位。花きは全国1位（542億円）。",
+            "sourceUrl": "https://www.pref.aichi.jp/soshiki/toukei/0000078213.html"
+          },
+          {
+            "date": "2025年（農林業センサス概数）",
+            "event": "基幹的農業従事者は28,572人（2020年比28.9%減）、農業経営体は19,031（同29.2%減）。",
+            "sourceUrl": "https://www.pref.aichi.jp/soshiki/toukei/nouringyoucensussokuhou2025.html"
+          }
+        ],
+        "sources": [
+          {
+            "label": "愛知県統計課「愛知県の農業産出額」",
+            "url": "https://www.pref.aichi.jp/soshiki/toukei/0000078213.html"
+          },
+          {
+            "label": "愛知県統計課「産出額が多い花き」",
+            "url": "https://www.pref.aichi.jp/soshiki/toukei/kaki.html"
+          },
+          {
+            "label": "愛知県統計課「2025年農林業センサス（概数値）」",
+            "url": "https://www.pref.aichi.jp/soshiki/toukei/nouringyoucensussokuhou2025.html"
+          }
+        ]
+      },
+      "after": {
+        "id": "agriculture",
+        "subject": "県・国・市町村",
+        "oneLine": "全国でも上位の愛知の農業。花きは全国1位の一方、担い手は急速に減っている。",
+        "youEffect": "地元の野菜や花の生産、食の供給、農地のある風景の維持に関わる。",
+        "whyImportant": "製造業の印象が強い愛知だが、農業産出額は全国上位。担い手の減少は食料生産と地域に直結する。",
+        "now": "令和3年の農業産出額は2,922億円で全国第8位、うち花きは全国1位（542億円）。一方、2025年2月1日現在の個人経営体の基幹的農業従事者は、2025年12月公表の概数で28,572人（2020年比28.9%減）とされた。これは過去の概数で、2026年7月に公表された確定値とは異なる。両資料へのリンクを下の出典に掲載。",
+        "keyStats": [
+          {
+            "label": "花きの産出額（令和6年）",
+            "value": "531億円",
+            "sourceUrl": "https://www.flower-kingdom.aichi.jp/about.html",
+            "note": "2位・千葉県の2.5倍以上、全国1位"
+          },
+          {
+            "label": "花き産出額 全国1位の連続年数",
+            "value": "63年連続",
+            "sourceUrl": "https://www.flower-kingdom.aichi.jp/about.html",
+            "note": "昭和37年から日本一"
+          },
+          {
+            "label": "花きの県内生産に占める東三河の割合",
+            "value": "約7割",
+            "sourceUrl": "https://www.flower-kingdom.aichi.jp/about.html"
+          }
+        ],
+        "stances": [
+          {
+            "label": "強みを伸ばす声",
+            "text": "花きや施設園芸の強みを生かし、ブランド化や輸出で産業として伸ばす。"
+          },
+          {
+            "label": "担い手を守る声",
+            "text": "急減する担い手の確保・法人化・新規就農支援を急ぐべき。"
+          },
+          {
+            "label": "見るべき主語",
+            "text": "産地振興は県・市町村、制度や統計は国。役割が分かれる。"
+          }
+        ],
+        "debate": {
+          "pro": "花き全国1位など強い品目があり、高付加価値化・輸出の余地が大きい。",
+          "con": "基幹的農業従事者の急減と高齢化で、生産基盤の維持が難しくなっている。",
+          "openQuestion": "担い手が減るなかで、産出額と農地をどう保つか。"
+        },
+        "timeline": [
+          {
+            "date": "1962年",
+            "event": "愛知県の花きの産出額が全国1位となる（以降、連続首位）。",
+            "sourceUrl": "https://www.flower-kingdom.aichi.jp/about.html"
+          },
+          {
+            "date": "2021年",
+            "event": "愛知県の農業産出額は2,922億円で全国第8位。花きは全国1位（542億円）。",
+            "sourceUrl": "https://www.pref.aichi.jp/soshiki/toukei/0000078213.html"
+          },
+          {
+            "date": "2025年12月公表（2025年2月1日現在・概数）",
+            "event": "個人経営体の基幹的農業従事者は28,572人（2020年比28.9%減）、農業経営体は19,031経営体（同29.2%減）。確定値ではなく、公表当時の概数。",
+            "sourceUrl": "https://www.pref.aichi.jp/press-release/nouringyoucensussokuhou2025.html"
+          }
+        ],
+        "sources": [
+          {
+            "label": "愛知県統計課「愛知県の農業産出額」",
+            "url": "https://www.pref.aichi.jp/soshiki/toukei/0000078213.html"
+          },
+          {
+            "label": "愛知県統計課「産出額が多い花き」",
+            "url": "https://www.pref.aichi.jp/soshiki/toukei/kaki.html"
+          },
+          {
+            "label": "愛知県「2025年農林業センサス（概数値）」（2025年12月1日公表・2025年2月1日現在）",
+            "url": "https://www.pref.aichi.jp/press-release/nouringyoucensussokuhou2025.html"
+          },
+          {
+            "label": "愛知県「2025年農林業センサス（確定値）」（2026年7月31日公表・掲載した概数とは区別）",
+            "url": "https://www.pref.aichi.jp/soshiki/toukei/nourincensus2025.html"
+          }
+        ]
+      }
+    },
+    {
+      "file": "data/issue-explainers.json",
+      "id": "kanko",
+      "before": {
+        "id": "kanko",
+        "subject": "県・市町村・国",
+        "oneLine": "ジブリパークやインバウンド（訪日客）を軸にした観光・集客。",
+        "youEffect": "観光の盛り上がりは、地域の仕事や賑わい、混雑にも関わる。",
+        "whyImportant": "観光は地域経済の波及効果が大きい一方、受け入れ環境の整備や混雑への対応も要る。",
+        "now": "ジブリパークの集客やインバウンド回復をどう地域全体へ広げるかが論点になっている。",
+        "keyStats": [
+          {
+            "label": "ジブリパーク5エリア開園後の経済波及効果（年間）",
+            "value": "約710億円",
+            "sourceUrl": "https://www.pref.aichi.jp/press-release/ghiblipark-hakyuukouka.html",
+            "note": "2020年試算の1.48倍（2026年3月17日公表）"
+          },
+          {
+            "label": "訪日客のうち県内宿泊の割合",
+            "value": "74.2%",
+            "sourceUrl": "https://www.pref.aichi.jp/press-release/ghiblipark-hakyuukouka.html"
+          },
+          {
+            "label": "ジブリパーク目的での来県割合",
+            "value": "8割超",
+            "sourceUrl": "https://www.pref.aichi.jp/press-release/ghiblipark-hakyuukouka.html",
+            "note": "国内客・訪日客とも"
+          }
+        ],
+        "stances": [
+          {
+            "label": "推進する声",
+            "text": "集客を地域経済の活力につなげるべき。"
+          },
+          {
+            "label": "慎重な声",
+            "text": "混雑・環境・住民生活との両立に配慮を。"
+          }
+        ],
+        "debate": {
+          "pro": "ジブリパークやインバウンドは、地域経済への波及が大きい。",
+          "con": "混雑・環境・住民生活との両立や、受け入れ整備の負担がある。",
+          "openQuestion": "集客の効果を、住民の暮らしと両立させながらどう広げるか。"
+        },
+        "sources": [
+          {
+            "label": "ジブリパーク｜愛知県公式観光サイト Aichi Now",
+            "url": "https://aichinow.pref.aichi.jp/spots/detail/3657/"
+          },
+          {
+            "label": "愛知県「2024年 愛知県観光入込客統計」",
+            "url": "https://www.pref.aichi.jp/press-release/kankoirikomikyaku2024.html"
+          },
+          {
+            "label": "愛知県「外国人宿泊者数」（出典:観光庁宿泊旅行統計調査）",
+            "url": "https://www.pref.aichi.jp/soshiki/toukei/shukuhakusha.html"
+          }
+        ],
+        "timeline": [
+          {
+            "date": "2022年11月",
+            "event": "ジブリパークが愛・地球博記念公園に第1期開園（大倉庫・青春の丘・どんどこ森）。",
+            "sourceUrl": "https://aichinow.pref.aichi.jp/spots/detail/3657/"
+          },
+          {
+            "date": "2023年11月",
+            "event": "第2期「もののけの里」が開園。",
+            "sourceUrl": "https://aichinow.pref.aichi.jp/spots/detail/3657/"
+          },
+          {
+            "date": "2024年3月",
+            "event": "「魔女の谷」が開園し、全5エリアが完成。",
+            "sourceUrl": "https://aichinow.pref.aichi.jp/spots/detail/3657/"
+          },
+          {
+            "date": "2024年",
+            "event": "愛知県の観光入込客数は約1億1,073万人（前年比110.6%）、観光消費額は約1兆2,131億円。",
+            "sourceUrl": "https://www.pref.aichi.jp/press-release/kankoirikomikyaku2024.html"
+          }
+        ]
+      },
+      "after": {
+        "id": "kanko",
+        "subject": "県・市町村・国",
+        "oneLine": "ジブリパークやインバウンド（訪日客）を軸にした観光・集客。",
+        "youEffect": "観光の盛り上がりは、地域の仕事や賑わい、混雑にも関わる。",
+        "whyImportant": "観光は地域経済の波及効果が大きい一方、受け入れ環境の整備や混雑への対応も要る。",
+        "now": "ジブリパークの集客やインバウンド回復をどう地域全体へ広げるかが論点になっている。",
+        "keyStats": [
+          {
+            "label": "ジブリパーク5エリア開園後の経済波及効果（年間）",
+            "value": "約710億円",
+            "sourceUrl": "https://www.pref.aichi.jp/press-release/ghiblipark-hakyuukouka.html",
+            "note": "2020年試算の1.48倍（2026年3月17日公表）"
+          },
+          {
+            "label": "訪日客のうち県内宿泊の割合",
+            "value": "74.2%",
+            "sourceUrl": "https://www.pref.aichi.jp/press-release/ghiblipark-hakyuukouka.html"
+          },
+          {
+            "label": "ジブリパーク目的での来県割合",
+            "value": "8割超",
+            "sourceUrl": "https://www.pref.aichi.jp/press-release/ghiblipark-hakyuukouka.html",
+            "note": "国内客・訪日客とも"
+          }
+        ],
+        "stances": [
+          {
+            "label": "推進する声",
+            "text": "集客を地域経済の活力につなげるべき。"
+          },
+          {
+            "label": "慎重な声",
+            "text": "混雑・環境・住民生活との両立に配慮を。"
+          }
+        ],
+        "debate": {
+          "pro": "ジブリパークやインバウンドは、地域経済への波及が大きい。",
+          "con": "混雑・環境・住民生活との両立や、受け入れ整備の負担がある。",
+          "openQuestion": "集客の効果を、住民の暮らしと両立させながらどう広げるか。"
+        },
+        "sources": [
+          {
+            "label": "ジブリパーク｜愛知県公式観光サイト Aichi Now",
+            "url": "https://aichinow.pref.aichi.jp/spots/detail/3657/"
+          },
+          {
+            "label": "愛知県「2024年 愛知県観光入込客統計」（PDF・4ページの年間表）",
+            "url": "https://www.pref.aichi.jp/uploaded/attachment/583128.pdf"
+          },
+          {
+            "label": "愛知県「2023年 愛知県観光入込客統計」（PDF・前年比の計算に使用）",
+            "url": "https://www.pref.aichi.jp/uploaded/attachment/540275.pdf"
+          },
+          {
+            "label": "愛知県「外国人宿泊者数」（出典:観光庁宿泊旅行統計調査）",
+            "url": "https://www.pref.aichi.jp/soshiki/toukei/shukuhakusha.html"
+          }
+        ],
+        "timeline": [
+          {
+            "date": "2022年11月",
+            "event": "ジブリパークが愛・地球博記念公園に第1期開園（大倉庫・青春の丘・どんどこ森）。",
+            "sourceUrl": "https://aichinow.pref.aichi.jp/spots/detail/3657/"
+          },
+          {
+            "date": "2023年11月",
+            "event": "第2期「もののけの里」が開園。",
+            "sourceUrl": "https://aichinow.pref.aichi.jp/spots/detail/3657/"
+          },
+          {
+            "date": "2024年3月",
+            "event": "「魔女の谷」が開園し、全5エリアが完成。",
+            "sourceUrl": "https://aichinow.pref.aichi.jp/spots/detail/3657/"
+          },
+          {
+            "date": "2024年",
+            "event": "県資料の各区分合計では、観光入込客数は約1億1,073万人回、観光消費額は約1兆2,131億円（参考値のビジネス目的を含む推計値）。前年比110.6%は2023年資料との同じ区分の合計値から計算。",
+            "sourceUrl": "https://www.pref.aichi.jp/uploaded/attachment/583128.pdf"
+          }
+        ]
+      }
+    }
+  ],
+  "limits": [
+    "No newly verified inauguration date for Yokoi.",
+    "No whole-roster or all-statistics verification.",
+    "Other agriculture and tourism claims outside these two source families were not refreshed.",
+    "Earlier Sangiin sample remains unverified.",
+    "Prefecture general automated scraping not performed; targeted official web views only."
+  ]
+}

@@ -4,6 +4,9 @@ import { notFound } from "next/navigation";
 import { getLegislators, getSpeeches } from "@/lib/data";
 import { THEMES, matchThemeSpeeches, themeById } from "@/lib/themes";
 import { SpeechList } from "@/components/SpeechList";
+import { SpeechCoverage } from "@/components/DataCoverage";
+import { ThemeEmptyState } from "@/components/ThemeEmptyState";
+import { recordedRange } from "@/lib/data-coverage";
 
 export function generateStaticParams() {
   return THEMES.map((t) => ({ tag: t.id }));
@@ -39,7 +42,7 @@ export default async function ThemeDetailPage({
   return (
     <div className="space-y-8">
       <p className="text-sm">
-        <Link href="/themes/" className="link-ink">
+        <Link href="/themes/" className="link-ink inline-flex min-h-11 items-center">
           ← テーマ一覧
         </Link>
       </p>
@@ -54,6 +57,8 @@ export default async function ThemeDetailPage({
         <p className="tnum mt-3 text-sm text-muted">
           キーワードに一致した収録発言：<span className="font-bold text-ink">{matched.length}件</span>
         </p>
+        {matched.length > 0 && <p className="tnum mt-1 text-xs text-muted">このテーマの一致発言の期間：{recordedRange(matched)}</p>}
+        <div className="mt-4"><SpeechCoverage /></div>
         <div className="measure mt-4 border-l-2 border-line pl-3 text-xs leading-relaxed text-muted">
           <p>本文中の語の一致で抽出しています。発言全体の主題がこのテーマとは限りません。</p>
           <p className="mt-1">対象語：{theme.keywords.join("・")}</p>
@@ -61,10 +66,7 @@ export default async function ThemeDetailPage({
       </header>
 
       {matched.length === 0 ? (
-        <p className="tnum border-y border-line py-3 text-sm text-muted">
-          このテーマの取得済み発言：<span className="font-bold text-ink">0件</span>
-          （本サイトの収録範囲で一致した発言がない状態です。実際の発言の有無は公式会議録でご確認ください）
-        </p>
+        <ThemeEmptyState />
       ) : (
         <section aria-labelledby="matched-speeches-heading">
           <h2 id="matched-speeches-heading" className="font-display text-2xl">一致した言葉と、発言の該当箇所</h2>

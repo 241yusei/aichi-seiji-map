@@ -45,7 +45,7 @@ export function FactCardView({ card }: { card: FactCard }) {
               {card.points.map((p, i) => (
                 <tr key={i} className="border-b border-line last:border-0">
                   <td className="px-4 py-3 text-muted">{p.label}</td>
-                  <td className="num-display tnum whitespace-nowrap px-4 py-3 text-right text-lg">
+                  <td className="num-display tnum px-4 py-3 text-right text-lg">
                     {p.value}
                   </td>
                 </tr>

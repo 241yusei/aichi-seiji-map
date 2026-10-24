@@ -7,6 +7,7 @@ import { regionOf } from "@/lib/regions";
 import { LegislatorCard } from "@/components/LegislatorCard";
 import { SourceLink } from "@/components/SourceLink";
 import { formatDate } from "@/lib/format";
+import { RosterCoverage } from "@/components/DataCoverage";
 
 export function generateStaticParams() {
   return MUNICIPALITIES.map((m) => ({ slug: m.slug }));
@@ -25,7 +26,7 @@ export async function generateMetadata({
   if (exec?.termEnd) {
     return {
       title: `${m.city}の議員一覧と${exec.title}｜次の${exec.title}選はいつ`,
-      description: `${m.city}の${exec.title}・${exec.name}の任期満了は${formatDate(exec.termEnd)}（次の${exec.title}選の時期の目安）。${m.council}の議員一覧と会議録への導線を、一次ソース付きで。`,
+      description: `${m.city}の${exec.title}・${exec.name}、任期満了${formatDate(exec.termEnd)}は本サイトの収録情報です。個別の訂正・確認日は訂正ログを参照し、現在の在職・任期は公式出典でご確認ください。${m.council}の議員一覧と会議録への導線を掲載。`,
       alternates: { canonical: `/municipalities/${slug}/` },
     };
   }
@@ -59,13 +60,14 @@ export default async function MunicipalityPage({
         </p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">{m.city}</h1>
         <p className="mt-2 text-muted">
-          {m.council}・議員 {members.length}名{exec ? `／${exec.title} ${exec.name}` : ""}
+          {m.council}・議員 {members.length}名{exec ? `／本サイト収録の${exec.title} ${exec.name}` : ""}
         </p>
       </header>
 
       {/* 首長 */}
       <section>
         <h2 className="eyebrow text-accent-deep">首長</h2>
+        <p className="mt-2 text-xs leading-relaxed text-muted">首長名簿全体を一括で再照合したものではありません。個別の訂正と確認日は<Link href="/corrections/" className="link-ink">訂正・更新ログ</Link>に記載しています。現在の在職・任期は公式出典でご確認ください。</p>
         {exec ? (
           <div className="mt-3 border-t border-line pt-3">
             <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
@@ -105,6 +107,7 @@ export default async function MunicipalityPage({
           <h2 className="font-display text-2xl">{m.council}</h2>
           <span className="tnum text-sm text-muted">{members.length}名</span>
         </div>
+        <RosterCoverage legislators={members} />
         {members.length > 0 ? (
           <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {members.map((l) => (

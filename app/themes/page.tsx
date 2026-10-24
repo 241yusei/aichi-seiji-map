@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getSpeeches } from "@/lib/data";
 import { THEMES, matchThemeSpeeches } from "@/lib/themes";
+import { SpeechCoverage } from "@/components/DataCoverage";
 
 export const metadata: Metadata = {
   title: "テーマから探す（生活の言葉で）",
@@ -31,6 +32,7 @@ export default function ThemesPage() {
           副首都・防災・子育てなど、愛知で議論になっていることを国・県・市で見くらべるなら
           <Link href="/issues/" className="mx-1 link-ink">愛知の争点</Link>へ。
         </p>
+        <div className="mt-5 max-w-3xl"><SpeechCoverage /></div>
       </header>
 
       <section aria-labelledby="themes-heading">
