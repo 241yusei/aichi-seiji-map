@@ -2,28 +2,32 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import { loadSearchIndex, type SearchEntry } from "@/lib/search-index";
 
-interface Entry {
-  t: string;
-  s: string;
-  u: string;
-  k: string;
-  q: string;
-}
+type LoadState =
+  | { status: "loading" | "error" }
+  | { status: "ready"; entries: SearchEntry[] };
 
 const KINDS = ["議員", "首長", "争点", "事実カード", "ページ"] as const;
 
 export function SearchClient() {
-  const [index, setIndex] = useState<Entry[] | null>(null);
+  const [load, setLoad] = useState<LoadState>({ status: "loading" });
+  const [attempt, setAttempt] = useState(0);
   const [query, setQuery] = useState("");
   const [kind, setKind] = useState<string>("");
+  const index = load.status === "ready" ? load.entries : null;
 
   useEffect(() => {
-    fetch("/search-index.json")
-      .then((r) => r.json())
-      .then((d: Entry[]) => setIndex(d))
-      .catch(() => setIndex([]));
-  }, []);
+    const controller = new AbortController();
+    loadSearchIndex(controller.signal)
+      .then((entries) => {
+        if (!controller.signal.aborted) setLoad({ status: "ready", entries });
+      })
+      .catch(() => {
+        if (!controller.signal.aborted) setLoad({ status: "error" });
+      });
+    return () => controller.abort();
+  }, [attempt]);
 
   const results = useMemo(() => {
     if (!index) return [];
@@ -56,12 +60,36 @@ export function SearchClient() {
       </div>
 
       <p className="eyebrow mt-4 text-faint" role="status" aria-live="polite">
-        {index === null
+        {load.status === "error"
+          ? ""
+          : index === null
           ? "読み込み中…"
           : query.trim() === "" && kind === ""
             ? `${index.length}件から検索`
             : `${results.length}件${results.length > shown.length ? `（上位${shown.length}件を表示）` : ""}`}
       </p>
+
+      {load.status === "error" && (
+        <div className="mt-4 border-l-2 border-accent bg-subtle p-4">
+          <p role="alert" className="text-sm text-ink">
+            検索データを読み込めませんでした。通信状況を確認して、もう一度お試しください。
+          </p>
+          <button
+            type="button"
+            onClick={() => {
+              setLoad({ status: "loading" });
+              setAttempt((current) => current + 1);
+            }}
+            className="mt-3 min-h-11 border border-ink px-4 py-2 text-sm font-bold hover:bg-surface"
+          >
+            もう一度読み込む
+          </button>
+          <p className="mt-3 text-sm text-muted">
+            一覧からも探せます：<Link href="/legislators/" className="link-ink">議員一覧</Link>
+            {" ／ "}<Link href="/municipalities/" className="link-ink">市町村一覧</Link>
+          </p>
+        </div>
+      )}
 
       <div className="mt-2">
         {shown.map((e, i) => (
@@ -100,7 +128,8 @@ function FilterChip({
     <button
       type="button"
       onClick={onClick}
-      className={`border px-3 py-1 text-sm transition-colors ${
+      aria-pressed={active}
+      className={`min-h-11 border px-3 py-2 text-sm transition-colors ${
         active ? "border-ink bg-ink text-paper" : "border-line text-muted hover:border-ink"
       }`}
     >
