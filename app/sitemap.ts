@@ -4,12 +4,12 @@ import { MUNICIPALITIES } from "@/lib/municipalities";
 import { NAGOYA_WARDS } from "@/lib/area";
 import { THEMES } from "@/lib/themes";
 import { getLearnChapters } from "@/lib/learn";
-import { LAST_UPDATED } from "@/lib/site-meta";
+import { LAST_UPDATED, SITE_URL } from "@/lib/site-meta";
 
 // 静的エクスポート（output: export）で sitemap.xml を生成するために必要。
 export const dynamic = "force-static";
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://aichi-seiji.example.jp";
+const BASE = SITE_URL;
 // lastModified はサイトの編集内容の更新日。各資料の確認日ではない。
 const LAST_MOD = new Date(LAST_UPDATED);
 

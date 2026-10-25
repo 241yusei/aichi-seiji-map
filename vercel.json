@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "^aichi-seiji-map\\.vercel\\.app$" }],
+      "destination": "https://seiji-torisetsu.pages.dev/:path*",
+      "permanent": true
+    }
+  ]
+}
