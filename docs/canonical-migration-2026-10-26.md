@@ -1,7 +1,8 @@
-# 旧Vercel URLからCloudflareへの正規URL統一（公開前）
+# 旧Vercel URLからCloudflareへの正規URL統一
 
 確認日：2026-10-26 JST（2026-10-25 22時台 UTC）。基準：`cf75381` / PR #100。
-この文書と設定は修正準備。GitHub push、マージ、再デプロイ、公開設定変更は未実施。
+下記の確認結果は公開前の調査記録。初回調査時点ではGitHub push、マージ、再デプロイ、
+公開設定変更は未実施。実際の適用状態は公開コミットとHTTP応答で確認する。
 
 ## 確認できたこと
 
@@ -39,6 +40,9 @@ Search Consoleでの個別確認なしに原因を断定しない。
 3. ルートの `vercel.json` に旧本番ホスト完全一致の308転送を用意。
    CloudflareでVercel設定は使用されない。プレビューや別aliasを無差別に転送しない。
    Vercel予約の `/.well-known` は通常の転送設定の対象外であり、設定変更しない。
+4. 同ファイルの `buildCommand` で本番の `NEXT_PUBLIC_SITE_URL` を明示する。
+   Vercelプロジェクトに残った旧URLの値に左右されず、生成HTML・サイトマップ・robotsを
+   Cloudflare URLへ揃える。既存Git連携による通常ビルドを使い、管理画面の認証は変更しない。
 
 ## 公開承認後の適用対象・手順
 
@@ -48,8 +52,9 @@ Search Consoleでの個別確認なしに原因を断定しない。
    公開HTTPで指定されるURLと環境変数の実設定は別物。Vercel環境変数の値は未読取。
 3. 本修正をレビューし、通常のGitHub手順で反映する。既存Git連携はVercelにもデプロイするため、
    push時点から公開処理が起動し得る点を扱う。Cloudflare本番も通常手順で再ビルド・配信する。
-4. Vercelで `NEXT_PUBLIC_SITE_URL` が旧URLなら、本人承認の範囲でCloudflare URLへ揃えて再ビルド。
-   設定変更前に対象環境・既存値を確認する。認証、Deployment Protection、費用、権限は変更しない。
+4. リポジトリ内の `buildCommand` でCloudflare URLを指定して通常再ビルドする。
+   Vercel管理画面の環境変数は今回読み書きせず、ビルド時の実効値を統一する。
+   認証、Deployment Protection、費用、権限は変更しない。
 5. 旧ホストのトップだけでなく下記をGETし、旧ホストが200を返さず308と正しいLocationを返すこと、
    転送先が200で自己canonicalを持つこと、ループやホームへの一括転送がないことを確認。
 
@@ -99,5 +104,7 @@ Search Consoleでの個別確認なしに原因を断定しない。
   — パスとクエリの引継ぎ、正確なホスト限定。
 - [Vercel: Configuration Redirects](https://vercel.com/docs/routing/redirects/configuration-redirects)
   — `permanent: true` は308、`has` のローカル検証制限。
+- [Vercel: ファイルによるProject Configuration](https://vercel.com/docs/project-configuration)
+  — リポジトリの `buildCommand` でビルドコマンドを指定する。
 - 実測記録（ローカル）：`/tmp/seiji-canonical-audit-20261026/http-audit.json`、
   同ディレクトリのHTTPヘッダ・本文、`content-comparison.json`、GitHubデプロイ記録。

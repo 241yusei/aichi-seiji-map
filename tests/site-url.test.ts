@@ -31,6 +31,7 @@ test("明示した別環境の正規URLは保持する", () => {
 
 test("恒久転送の設定は旧本番ホストだけを対象にし、パスを渡す", () => {
   const config = JSON.parse(readFileSync(new URL("../vercel.json", import.meta.url), "utf8"));
+  assert.equal(config.buildCommand, "NEXT_PUBLIC_SITE_URL=https://seiji-torisetsu.pages.dev npm run build");
   assert.equal(config.redirects.length, 1);
   const rule = config.redirects[0];
   assert.equal(rule.source, "/:path*");

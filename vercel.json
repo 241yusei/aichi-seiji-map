@@ -1,5 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "NEXT_PUBLIC_SITE_URL=https://seiji-torisetsu.pages.dev npm run build",
   "redirects": [
     {
       "source": "/:path*",

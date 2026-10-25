@@ -28,6 +28,8 @@
 旧本番ホストは `aichi-seiji-map.vercel.app`。`vercel.json` は、このホストだけを
 `https://seiji-torisetsu.pages.dev/:path*` へ308恒久転送する設定。パスを維持し、
 クエリはVercelの仕様で引き継ぐ。CloudflareとVercelのプレビュー用ホストは対象外。
+同ファイルの `buildCommand` で `NEXT_PUBLIC_SITE_URL` をCloudflare URLに明示し、
+Vercel側の既存環境変数が旧URLでも、生成される正規URLを新URLに統一する。
 設定ファイルのローカル検証だけでは公開済みとはしない。Vercelへの適用・再デプロイは
 本人の公開承認後に行い、実応答の `Location` と検索・比較URLの条件保持を確認する。
 確認結果、適用対象、巻戻しは [正規URL移行手順](docs/canonical-migration-2026-10-26.md) を参照。
