@@ -3,7 +3,7 @@
   "buildCommand": "NEXT_PUBLIC_SITE_URL=https://seiji-torisetsu.pages.dev npm run build",
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/:path(.*)",
       "has": [{ "type": "host", "value": "^aichi-seiji-map\\.vercel\\.app$" }],
       "destination": "https://seiji-torisetsu.pages.dev/:path*",
       "permanent": true
