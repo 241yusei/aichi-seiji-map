@@ -1,8 +1,8 @@
 {
   "sourceUrl": "https://kokkai.ndl.go.jp/api.html",
-  "lastSuccessfulCheck": "2026-10-20",
-  "from": "2026-07-22",
-  "until": "2026-10-20",
+  "lastSuccessfulCheck": "2026-10-27",
+  "from": "2026-07-29",
+  "until": "2026-10-27",
   "targetCount": 32,
   "succeededCount": 32,
   "failedIds": []
