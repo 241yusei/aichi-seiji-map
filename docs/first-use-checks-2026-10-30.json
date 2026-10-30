@@ -1,0 +1,394 @@
+{
+  "date": "2026-10-30",
+  "kind": "automated_local_static_build_revalidation",
+  "testedState": "PR97 with latest main merged locally before commit",
+  "humanParticipants": 0,
+  "humanUnderstandingMeasured": false,
+  "productionAnalyticsWrites": false,
+  "externalSourceConnections": false,
+  "isolation": "localhost static output; usage GET/POST route mocks before navigation; every external request aborted; no production host or dataset connected",
+  "journeys": [
+    {
+      "scenario": "A",
+      "width": 320,
+      "result": "pass",
+      "events": [
+        "region_step_viewed",
+        "region_selected",
+        "representative_viewed",
+        "living_topic_viewed",
+        "source_reference_opened",
+        "source_external_opened"
+      ],
+      "payloadKeys": [
+        "version",
+        "event"
+      ],
+      "refererSent": false,
+      "cookieSent": false,
+      "reloadDuplicateEvents": false,
+      "documentOverflow": false,
+      "runtimeErrorsCount": 0,
+      "primarySourceHrefMatchesLocalData": true,
+      "externalNavigationBlocked": true
+    },
+    {
+      "scenario": "B",
+      "width": 320,
+      "result": "pass",
+      "events": [
+        "region_step_viewed",
+        "region_selected",
+        "representative_viewed",
+        "living_topic_viewed",
+        "source_reference_opened",
+        "source_external_opened"
+      ],
+      "payloadKeys": [
+        "version",
+        "event"
+      ],
+      "refererSent": false,
+      "cookieSent": false,
+      "reloadDuplicateEvents": false,
+      "documentOverflow": false,
+      "runtimeErrorsCount": 0,
+      "primarySourceHrefMatchesLocalData": true,
+      "externalNavigationBlocked": true
+    },
+    {
+      "scenario": "C",
+      "width": 320,
+      "result": "pass",
+      "events": [
+        "region_step_viewed",
+        "region_selected",
+        "representative_viewed",
+        "living_topic_viewed",
+        "source_reference_opened",
+        "source_external_opened"
+      ],
+      "payloadKeys": [
+        "version",
+        "event"
+      ],
+      "refererSent": false,
+      "cookieSent": false,
+      "reloadDuplicateEvents": false,
+      "documentOverflow": false,
+      "runtimeErrorsCount": 0,
+      "primarySourceHrefMatchesLocalData": true,
+      "externalNavigationBlocked": true
+    },
+    {
+      "scenario": "A",
+      "width": 390,
+      "result": "pass",
+      "events": [
+        "region_step_viewed",
+        "region_selected",
+        "representative_viewed",
+        "living_topic_viewed",
+        "source_reference_opened",
+        "source_external_opened"
+      ],
+      "payloadKeys": [
+        "version",
+        "event"
+      ],
+      "refererSent": false,
+      "cookieSent": false,
+      "reloadDuplicateEvents": false,
+      "documentOverflow": false,
+      "runtimeErrorsCount": 0,
+      "primarySourceHrefMatchesLocalData": true,
+      "externalNavigationBlocked": true
+    },
+    {
+      "scenario": "B",
+      "width": 390,
+      "result": "pass",
+      "events": [
+        "region_step_viewed",
+        "region_selected",
+        "representative_viewed",
+        "living_topic_viewed",
+        "source_reference_opened",
+        "source_external_opened"
+      ],
+      "payloadKeys": [
+        "version",
+        "event"
+      ],
+      "refererSent": false,
+      "cookieSent": false,
+      "reloadDuplicateEvents": false,
+      "documentOverflow": false,
+      "runtimeErrorsCount": 0,
+      "primarySourceHrefMatchesLocalData": true,
+      "externalNavigationBlocked": true
+    },
+    {
+      "scenario": "C",
+      "width": 390,
+      "result": "pass",
+      "events": [
+        "region_step_viewed",
+        "region_selected",
+        "representative_viewed",
+        "living_topic_viewed",
+        "source_reference_opened",
+        "source_external_opened"
+      ],
+      "payloadKeys": [
+        "version",
+        "event"
+      ],
+      "refererSent": false,
+      "cookieSent": false,
+      "reloadDuplicateEvents": false,
+      "documentOverflow": false,
+      "runtimeErrorsCount": 0,
+      "primarySourceHrefMatchesLocalData": true,
+      "externalNavigationBlocked": true
+    },
+    {
+      "scenario": "A",
+      "width": 1440,
+      "result": "pass",
+      "events": [
+        "region_step_viewed",
+        "region_selected",
+        "representative_viewed",
+        "living_topic_viewed",
+        "source_reference_opened",
+        "source_external_opened"
+      ],
+      "payloadKeys": [
+        "version",
+        "event"
+      ],
+      "refererSent": false,
+      "cookieSent": false,
+      "reloadDuplicateEvents": false,
+      "documentOverflow": false,
+      "runtimeErrorsCount": 0,
+      "primarySourceHrefMatchesLocalData": true,
+      "externalNavigationBlocked": true
+    },
+    {
+      "scenario": "B",
+      "width": 1440,
+      "result": "pass",
+      "events": [
+        "region_step_viewed",
+        "region_selected",
+        "representative_viewed",
+        "living_topic_viewed",
+        "source_reference_opened",
+        "source_external_opened"
+      ],
+      "payloadKeys": [
+        "version",
+        "event"
+      ],
+      "refererSent": false,
+      "cookieSent": false,
+      "reloadDuplicateEvents": false,
+      "documentOverflow": false,
+      "runtimeErrorsCount": 0,
+      "primarySourceHrefMatchesLocalData": true,
+      "externalNavigationBlocked": true
+    },
+    {
+      "scenario": "C",
+      "width": 1440,
+      "result": "pass",
+      "events": [
+        "region_step_viewed",
+        "region_selected",
+        "representative_viewed",
+        "living_topic_viewed",
+        "source_reference_opened",
+        "source_external_opened"
+      ],
+      "payloadKeys": [
+        "version",
+        "event"
+      ],
+      "refererSent": false,
+      "cookieSent": false,
+      "reloadDuplicateEvents": false,
+      "documentOverflow": false,
+      "runtimeErrorsCount": 0,
+      "primarySourceHrefMatchesLocalData": true,
+      "externalNavigationBlocked": true
+    }
+  ],
+  "cases": [
+    {
+      "case": "disabled",
+      "result": "pass",
+      "navigationCompleted": true,
+      "eventAttempts": 0,
+      "events": [],
+      "payloadKeys": [],
+      "refererSent": false,
+      "cookieSent": false,
+      "mockAcceptedEvents": 0,
+      "productionWrites": false
+    },
+    {
+      "case": "config_http",
+      "result": "pass",
+      "navigationCompleted": true,
+      "eventAttempts": 0,
+      "events": [],
+      "payloadKeys": [],
+      "refererSent": false,
+      "cookieSent": false,
+      "mockAcceptedEvents": 0,
+      "productionWrites": false
+    },
+    {
+      "case": "config_network",
+      "result": "pass",
+      "navigationCompleted": true,
+      "eventAttempts": 0,
+      "events": [],
+      "payloadKeys": [],
+      "refererSent": false,
+      "cookieSent": false,
+      "mockAcceptedEvents": 0,
+      "productionWrites": false
+    },
+    {
+      "case": "optout",
+      "result": "pass",
+      "navigationCompleted": true,
+      "eventAttempts": 0,
+      "events": [],
+      "payloadKeys": [],
+      "refererSent": false,
+      "cookieSent": false,
+      "mockAcceptedEvents": 0,
+      "productionWrites": false
+    },
+    {
+      "case": "dnt",
+      "result": "pass",
+      "navigationCompleted": true,
+      "eventAttempts": 0,
+      "events": [],
+      "payloadKeys": [],
+      "refererSent": false,
+      "cookieSent": false,
+      "mockAcceptedEvents": 0,
+      "productionWrites": false
+    },
+    {
+      "case": "gpc",
+      "result": "pass",
+      "navigationCompleted": true,
+      "eventAttempts": 0,
+      "events": [],
+      "payloadKeys": [],
+      "refererSent": false,
+      "cookieSent": false,
+      "mockAcceptedEvents": 0,
+      "productionWrites": false
+    },
+    {
+      "case": "post_failure",
+      "result": "pass",
+      "navigationCompleted": true,
+      "eventAttempts": 6,
+      "events": [
+        "region_step_viewed",
+        "region_selected",
+        "representative_viewed",
+        "living_topic_viewed",
+        "source_reference_opened",
+        "source_external_opened"
+      ],
+      "payloadKeys": [
+        "version",
+        "event"
+      ],
+      "refererSent": false,
+      "cookieSent": false,
+      "mockAcceptedEvents": 0,
+      "productionWrites": false
+    },
+    {
+      "case": "screen_stop_reload",
+      "result": "pass",
+      "eventAttempts": 0,
+      "navigationCompleted": true,
+      "preferencePersists": true,
+      "journeyFlagsCleared": true
+    },
+    {
+      "case": "delayed_config_fast_selection",
+      "result": "pass",
+      "eventsBeforeEnabled": 0,
+      "events": [
+        "region_step_viewed",
+        "region_selected",
+        "representative_viewed",
+        "living_topic_viewed",
+        "source_reference_opened",
+        "source_external_opened"
+      ],
+      "payloadKeys": [
+        "version",
+        "event"
+      ],
+      "refererSent": false,
+      "cookieSent": false
+    },
+    {
+      "case": "direct_topic_entry",
+      "result": "pass",
+      "eventAttempts": 0,
+      "excludedFromSequentialJourney": true
+    },
+    {
+      "case": "external_without_reference",
+      "result": "pass",
+      "events": [
+        "region_step_viewed",
+        "region_selected",
+        "representative_viewed",
+        "living_topic_viewed",
+        "source_external_opened"
+      ],
+      "payloadKeys": [
+        "version",
+        "event"
+      ],
+      "refererSent": false,
+      "cookieSent": false,
+      "referenceIsOptional": true
+    }
+  ],
+  "failures": [],
+  "summary": {
+    "journeysPassed": 9,
+    "casesPassed": 11,
+    "failures": 0
+  },
+  "compiledReceiver": {
+    "runtime": "locally compiled Cloudflare Pages Worker with fake binding",
+    "apiPaths": [
+      "/api/usage",
+      "/api/usage/"
+    ],
+    "getCapability": true,
+    "postAcceptedStatus": 204,
+    "previewDisabled": true,
+    "fakeWrites": 2,
+    "realWrites": 0,
+    "externalNetworkBlocked": true
+  }
+}

@@ -1,3 +1,4 @@
+import { JourneyGuide } from "@/components/JourneyGuide";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { WhoDoesWhat } from "@/components/WhoDoesWhat";
@@ -14,9 +15,9 @@ const LADDERS = [
   {
     n: "01",
     title: "自分の地域の代表を知りたい",
-    desc: "まずは「自分の街の代表は誰か」から。郵便番号でたどれます。",
+    desc: "まずは「自分の街の代表は誰か」から。名古屋市は区・郵便番号、ほかは市町村を選んでたどれます。",
     steps: [
-      { label: "郵便番号で地域の代表を出す", href: "/area" },
+      { label: "市町村・区から地域の代表者を探す", href: "/area/#region-picker" },
       { label: "市町村のページで議会・首長を見る", href: "/municipalities" },
       { label: "気になる議員の発言・採決・資金を見る", href: "/legislators" },
     ],
@@ -66,6 +67,8 @@ export default function StartPage() {
           このサイトは「誰に入れるべき」とは言いません。事実と出典だけを示します。
         </p>
       </header>
+
+      <JourneyGuide stage="start" />
 
       <div className="grid gap-px border border-line bg-line md:grid-cols-2">
         {LADDERS.map((l) => (

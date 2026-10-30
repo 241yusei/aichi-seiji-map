@@ -1,3 +1,4 @@
+import { JourneyGuide } from "@/components/JourneyGuide";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -64,6 +65,8 @@ export default async function MunicipalityPage({
         </p>
       </header>
 
+      {members.length > 0 && <JourneyGuide stage="representative" />}
+
       {/* 首長 */}
       <section>
         <h2 className="eyebrow text-accent-deep">首長</h2>
@@ -102,9 +105,9 @@ export default async function MunicipalityPage({
       </section>
 
       {/* 議員 */}
-      <section>
+      <section id="representatives" tabIndex={-1} aria-labelledby="representatives-heading" className="scroll-mt-24">
         <div className="flex items-baseline justify-between gap-4 border-b border-line pb-2">
-          <h2 className="font-display text-2xl">{m.council}</h2>
+          <h2 id="representatives-heading" className="font-display text-2xl">{m.council}</h2>
           <span className="tnum text-sm text-muted">{members.length}名</span>
         </div>
         <RosterCoverage legislators={members} />

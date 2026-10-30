@@ -1,0 +1,25 @@
+# Pages Functions only. Static Next export remains in out/.
+name = "seiji-torisetsu"
+pages_build_output_dir = "./out"
+compatibility_date = "2026-10-23"
+send_metrics = false
+analytics_engine_datasets = []
+
+[vars]
+USAGE_ENABLED = "false"
+USAGE_SITE_ORIGIN = ""
+
+[env.production.vars]
+USAGE_ENABLED = "true"
+USAGE_SITE_ORIGIN = "https://seiji-torisetsu.pages.dev"
+
+[[env.production.analytics_engine_datasets]]
+binding = "USAGE_ANALYTICS"
+dataset = "seiji_usage"
+
+[env.preview]
+analytics_engine_datasets = []
+
+[env.preview.vars]
+USAGE_ENABLED = "false"
+USAGE_SITE_ORIGIN = ""

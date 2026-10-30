@@ -399,3 +399,19 @@ export interface LivingTopicBriefData {
   nextChecks: LivingTopicStatement[];
   sources: LivingTopicSource[];
 }
+
+
+/** 地域から一次資料までの到達件数。閲覧対象・端末・個人の識別子を持たない。 */
+export type UsageEventName =
+  | "region_step_viewed"
+  | "region_selected"
+  | "representative_viewed"
+  | "living_topic_viewed"
+  | "source_reference_opened"
+  | "source_external_opened";
+
+/** 計測APIが受理する全フィールド。任意の属性を追加しない。 */
+export interface UsagePayload {
+  version: 1;
+  event: UsageEventName;
+}

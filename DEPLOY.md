@@ -106,3 +106,63 @@ Permissions-Policy）と、`/_next/static/*` の長期キャッシュを指定�
 - 国会・県議会・名古屋市会ごとの調査記録 `data/roster-verification-*.json` を更新。取得条件、対象ID、修正点と未確認事項を残し、`npm run validate` で個別記録との整合を確認する。
 - `seed:legislators` と共通名簿生成処理は明示IDと確認記録を保持する。氏名訂正時にハッシュを再付番せず、既存の発言・採決・資金の参照を保つ。試験は使い捨てfixtureで行う。
 - `data/speech-import-pr93.json` はPR #93取込時点の履歴。将来の発言追加で件数が増えても、この履歴を現在件数へ書き換えない。今回の取得ログを根拠とする照会成功日は10月20日、資料の取込確認日は10月23日。
+
+## 利用段階の件数計測（2026-10-23実装・2026-10-30本番有効化）
+
+静的Next exportは維持し、`functions/api/usage.ts` をPages Functionsとして併設する。
+`public/_routes.json` はビルド時に `out/_routes.json` へコピーされ、`/api/usage` と末尾スラッシュ付きの同パスだけをFunctionsへ渡す。通常ページや静的アセットはFunctionsを起動しない。
+
+### 保存する内容と限界
+
+POSTは `application/json` の厳密な `{version:1,event:UsageEventName}` のみ、実体256bytes以下、クエリなし、設定したOriginとリクエスト先Originの一致を必須とする。受信処理はリクエスト・本文・例外をログ出力しない。
+Analytics Engineへ渡すのは固定index `journey-v1`、blob1の許可イベント名、double1の固定値1だけ。
+地域名・郵便番号・議員・政党・テーマ・URL・検索語・利用者ID・IP・UA・Refererは保存項目に含めない。
+これはアプリ独自の計測データの扱いであり、配信基盤がHTTP通信を処理することや既存のプラットフォームログを無効化することを意味しない。
+
+イベントは `region_step_viewed` / `region_selected` / `representative_viewed` / `living_topic_viewed` / `source_reference_opened` / `source_external_opened` の6種。
+ブラウザ内の段階状態から発生するイベント件数を比較する。利用者を追跡しないため、人数・ユニークユーザー・個人単位の遷移率・完全な閲覧数は測れない。中断、拒否、失敗、重複・偽装リクエストの影響を受ける概数として扱う。
+
+### 有効化と配信の境界
+
+2026-10-23のPR作成時はdataset作成、課金契約、本番設定変更、デプロイ、実イベント送信を行っていない。
+2026-10-30の本番反映依頼に合わせ、`wrangler.toml` の本番だけを `USAGE_ENABLED="true"` とした。開発・Previewは無効、Previewはbindingなし・Origin空を維持する。
+本番の `USAGE_ANALYTICS` bindingはdataset `seiji_usage` を指定するが、無効状態では書き込まない。datasetは最初の書込時に作成される。
+未設定・無効・bindingなしではPOSTを破棄して204、GETは `{enabled:false}` を返す。有効時も受信・保存の失敗で本体操作を止めない。
+GETは同じ配信Originからだけ有効状態を返し、応答はすべて `Cache-Control: no-store`。
+
+初回の**承認済みデプロイ時**に、以下を確認する。
+
+1. 既存Pagesプロジェクトの本番branch、build command/output、環境変数、binding、互換日付を照合する。Wrangler設定は指定項目のsource of truthとなるため、既存設定を無確認で上書きしない。既存のbuild設定や秘密情報をこのファイルへ転記しない。
+2. 本番Originが `https://seiji-torisetsu.pages.dev` のままか確認する。独自ドメインへ変更する場合は `env.production.vars.USAGE_SITE_ORIGIN` を正確なOrigin（末尾`/`なし）へ変更する。Previewは無効を維持する。
+3. 料金・無料枠と実アカウントのWorkers契約を再確認する。有効化が承認された場合のみ `env.production.vars.USAGE_ENABLED` を `"true"` へ変更してレビューする。設定ファイルで管理する変数はダッシュボード側での変更に依存しない。無効化も同値を `"false"` に戻した承認済み再デプロイで行う。
+4. 通常の検証・静的ビルド後、リポジトリのルートから既存の `wrangler pages deploy out --project-name=seiji-torisetsu` 手順でFunctionsとbinding設定を一緒に配信する。出力フォルダだけのダッシュボードへのドラッグ＆ドロップではFunctionsは配信できない。production branchとPreviewの区別を確認して実行する。
+
+2026-10-30の再確認：既存プロジェクトはproduction branch `main`、Git未連携、既存の環境変数・外部bindingなし、compatibility date `2026-09-03`、usage model `standard`。既存の秘密情報やbindingを上書きする変更はない。新しいFunctionsはPRの `2026-10-23` 互換日付で配信する。公式料金頁はAEを現在未課金・将来の料金表を予告中とし、保存期間は3か月のまま。契約一覧APIは現在の認証では403のため、実アカウントのFree/Paid区分は未確認。`standard` だけから無料契約と判断せず、今回の作業で有料プランへの変更・新規契約は行わない。Functionsは既存Workers契約の利用枠へ算入される。課金や契約変更を要求された場合はその変更を行わず、計測を無効として配信できる。
+
+公開後は本番 `/api/usage` のGETが `{enabled:true}`、固有デプロイURL・PreviewのGETが `{enabled:false}` であることを確認する。本番に試験イベントをPOSTしない。GETの有効応答は設定とbindingの存在確認であり、実イベントの保存成功や利用実績の証明ではない。実際の保存・集計は運用開始後の集計結果で別に確認する。
+
+### オフライン検証
+
+`npm test` の `tests/usage-server.test.ts` は使い捨てfake bindingだけを使う。許可イベント以外・余分キー・異Origin・クエリ・大きい本文を拒否し、保存値が固定index/イベント名/1だけであること、無効状態と保存失敗でも204であることを検証する。
+Cloudflare公式資料ではPagesのAnalytics Engine bindingはローカル利用不可。`wrangler pages dev out` だけで本番datasetへの保存成功を確認したことにはしない。`--remote`、実SQL API、実bindingへの試験書込はこのオフライン検証に含めない。
+
+### 集計・料金・保持期間
+
+確認日2026-10-30の公式資料では、FunctionsはWorkers Freeと合算100,000requests/日、AEはFreeの100,000writes/日・10,000read queries/日が含まれる。PaidのAEは月10,000,000writes・1,000,000read queriesが含まれる料金表。AE料金頁は現在未課金・今後課金開始予定と記載しており、実契約のFree/Paid区分や恒久無料を保証しない。AEの保存期間は3か月。
+本番有効化後の必要な集計は、Account Analytics Read権限のtokenを運用者の安全な環境だけで使い、`POST https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/analytics_engine/sql` に次のSQLを送る。tokenをクライアント・リポジトリ・公開環境変数へ置かない。
+
+```sql
+SELECT
+  formatDateTime(timestamp, '%Y-%m-%d', 'Asia/Tokyo') AS day,
+  blob1 AS event,
+  SUM(_sample_interval) AS event_count
+FROM seiji_usage
+WHERE timestamp >= NOW() - INTERVAL '30' DAY
+GROUP BY day, event
+ORDER BY day, event
+FORMAT JSON
+```
+
+AEにはサンプリングがあるため、件数は `COUNT()` ではなく `SUM(_sample_interval)` で集計する。長期比較が必要なら、個別イベントを持ち出さず日別イベント件数だけを保存する運用を別途判断する。この実装ではSQL実行・自動exportは行わない。
+
+根拠: [Pages binding](https://developers.cloudflare.com/pages/functions/bindings/)、[Functions routing](https://developers.cloudflare.com/pages/functions/routing/)、[Wrangler設定](https://developers.cloudflare.com/pages/functions/wrangler-configuration/)、[Functions料金](https://developers.cloudflare.com/pages/functions/pricing/)、[AE料金](https://developers.cloudflare.com/analytics/analytics-engine/pricing/)、[AE保持期間](https://developers.cloudflare.com/analytics/analytics-engine/limits/)、[AE SQL API](https://developers.cloudflare.com/analytics/analytics-engine/sql-api/)、[サンプリング](https://developers.cloudflare.com/analytics/analytics-engine/sampling/)。
