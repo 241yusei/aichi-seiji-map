@@ -32,7 +32,8 @@
     "build:map": "tsx scripts/build-aichi-map.ts",
     "build:search": "tsx scripts/build-search-index.ts",
     "build:compare": "tsx scripts/build-compare-index.ts",
-    "test": "node --import tsx --test tests/*.test.ts"
+    "test": "node --import tsx --test tests/*.test.ts",
+    "check:seo": "node --import tsx scripts/check-seo-export.mjs"
   },
   "dependencies": {
     "next": "^16.2.7",

@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-10-31",
+  "baseCommit": "3f1f7a4c4cb297c773cb64b0d20216877fa4ed84",
+  "scope": [
+    "収録範囲の説明",
+    "県議ページへのHTMLリンク",
+    "サイトマップ更新日"
+  ],
+  "isolation": "専用worktree。テストは使い捨てfixture、外部fetch/http/httpsを遮断。ビルドと静的出力検査はローカル収録データの読取のみ。本番への試験送信なし。",
+  "checks": {
+    "tests": {
+      "passed": 114,
+      "failed": 0
+    },
+    "lint": "passed",
+    "typecheck": "passed",
+    "validate": "passed as prebuild",
+    "build": {
+      "result": "passed",
+      "generatedRoutes": 1486
+    },
+    "seoExport": {
+      "sitemapUrls": 1431,
+      "canonicalChecked": 1431,
+      "htmlReachable": 1431,
+      "localDescriptionsChecked": 1212,
+      "lastmod": "omitted"
+    }
+  },
+  "beforeAfter": {
+    "htmlLinkUnreachable": {
+      "before": 67,
+      "after": 0
+    },
+    "prefecturalLinksInDirectory": 97
+  },
+  "unchangedData": "名簿・所属・役職・確認日・集計基準日・照会成功日のデータ差分なし。LAST_UPDATEDはサイト編集日として10月31日へ。",
+  "limits": [
+    "検索登録・順位・AI引用は未測定。この検証は配信前の静的成果物とローカル操作を対象とする。",
+    "lastmodはページ単位の実質変更日を保持できるまで省略する。"
+  ],
+  "commands": [
+    "npm test",
+    "npm run lint",
+    "npm run typecheck",
+    "npm run build",
+    "npm run check:seo",
+    "git diff --check"
+  ]
+}

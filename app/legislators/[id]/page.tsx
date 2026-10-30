@@ -44,9 +44,20 @@ export async function generateMetadata({
   const { id } = await params;
   const l = getLegislator(id);
   if (!l) return { title: "議員" };
+  const records = [
+    { label: "発言本文", recorded: getSpeechesByLegislator(id).length > 0 },
+    { label: "採決", recorded: getVotes(id).length > 0 },
+    { label: "政治資金（収録した団体分）", recorded: getFunding(id).length > 0 },
+  ];
+  const recorded = records.filter((r) => r.recorded).map((r) => r.label);
+  const missing = records.filter((r) => !r.recorded).map((r) => r.label);
+  const coverage = [
+    recorded.length ? `個人記録の収録：${recorded.join("・")}。` : "",
+    missing.length ? `${missing.join("・")}は本サイトでは未収録。` : "",
+  ].join("");
   return {
     title: `${l.name}（${l.district}）`,
-    description: `${l.name}（${l.district}${l.party ? `・${l.party}` : ""}）の発言・採決・政治資金を一次ソース付きで。`,
+    description: `${l.name}（${l.district}${l.party ? `・${l.party}` : ""}）の名簿情報と公式出典・会議録への案内。${coverage}`,
     alternates: { canonical: `/legislators/${id}/` },
   };
 }

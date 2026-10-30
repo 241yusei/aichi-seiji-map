@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { getLegislators } from "@/lib/data";
 import type { LegislatorListItem } from "@/lib/types";
 import { LegislatorFilter } from "@/components/LegislatorFilter";
+import { PrefecturalDirectory } from "@/components/PrefecturalDirectory";
 import { ZipSearch } from "@/components/ZipSearch";
 
 export const metadata: Metadata = {
@@ -36,6 +37,8 @@ export default function LegislatorsPage() {
         <p className="eyebrow mb-2 text-ink">郵便番号で、あなたの地域の代表者だけを見る</p>
         <ZipSearch />
       </div>
+
+      <PrefecturalDirectory legislators={legislators} />
 
       <div className="mt-6">
         {legislators.length === 0 ? (
