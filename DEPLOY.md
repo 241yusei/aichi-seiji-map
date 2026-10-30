@@ -166,3 +166,12 @@ FORMAT JSON
 AEにはサンプリングがあるため、件数は `COUNT()` ではなく `SUM(_sample_interval)` で集計する。長期比較が必要なら、個別イベントを持ち出さず日別イベント件数だけを保存する運用を別途判断する。この実装ではSQL実行・自動exportは行わない。
 
 根拠: [Pages binding](https://developers.cloudflare.com/pages/functions/bindings/)、[Functions routing](https://developers.cloudflare.com/pages/functions/routing/)、[Wrangler設定](https://developers.cloudflare.com/pages/functions/wrangler-configuration/)、[Functions料金](https://developers.cloudflare.com/pages/functions/pricing/)、[AE料金](https://developers.cloudflare.com/analytics/analytics-engine/pricing/)、[AE保持期間](https://developers.cloudflare.com/analytics/analytics-engine/limits/)、[AE SQL API](https://developers.cloudflare.com/analytics/analytics-engine/sql-api/)、[サンプリング](https://developers.cloudflare.com/analytics/analytics-engine/sampling/)。
+
+
+## 検索向けの説明・静的リンク・サイトマップ（2026-10-31）
+
+- 名簿の対象地域と、発言本文・採決・政治資金の個人記録の収録範囲を分ける。共通紹介・比較・地域案内でも全議員に同じ記録が揃うと説明しない。議員descriptionは収録データの有無から記述し、未収録を活動なしと扱わない。
+- `/legislators/` はクライアントの絞り込みに加え、県議を選挙区別に探せる通常リンクを静的HTMLへ出力する。折りたたみを閉じた初期状態でも氏名リンクを保持する。
+- サイトマップの `lastmod` は、ページ単位の実質的変更日を保持できるまで省略する。`LAST_UPDATED`（サイトの編集更新日）や資料確認日、ビルド時刻を全URLへ流用しない。確認日・集計基準日等のデータは編集日と独立して保持する。
+- `npm run build` 後に `npm run check:seo` を実行する。生成済み `out/` とローカル収録データを読み、正規URL・サイトマップ整合、ホーム起点のHTMLリンク到達性、地方議員descriptionの未収録表示を検査する。外部通信・ファイル書込は行わない。
+- この検査は検索エンジンの登録・順位・AI回答での引用を証明するものではない。Search Console等の観測と公開後の確認は別に行う。

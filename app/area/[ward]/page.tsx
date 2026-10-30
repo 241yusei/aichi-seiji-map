@@ -126,7 +126,8 @@ export default async function WardDashboardPage({
           名古屋市{w.ward}の代表者
         </h1>
         <p className="measure mt-3 text-muted">
-          あなたの暮らしを決めている、国・県・市の代表者と首長です。氏名から発言・採決・政治資金（出典つき）に進めます。
+          国・県・市の代表者と首長です。氏名から名簿情報と公式出典へ進めます。
+          発言本文・採決・政治資金の個人記録は国会議員の収録分が中心で、議会・資料ごとに掲載範囲が異なります。
         </p>
         <p className="mt-2 text-xs text-faint">サイト更新日：{LAST_UPDATED}（名簿の確認日ではありません）</p>
       </header>

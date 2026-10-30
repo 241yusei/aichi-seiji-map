@@ -82,21 +82,22 @@ export default function VoteGuidePage() {
         </p>
       </Section>
 
-      <Section title="③ 候補者・現職の「記録」を見る">
+      <Section title="③ 現職の収録記録と候補者の公式情報を確認する">
         <p>
           人物の印象ではなく、記録で見るのがおすすめです。
           <Link href="/legislators" className="link-ink">
-            議員の発言・採決・政治資金
+            議員の名簿と収録した記録
           </Link>
           、
           <Link href="/issues" className="link-ink">
-            争点ごとの立場
+            争点ごとの資料と動き
           </Link>
           、
           <Link href="/facts" className="link-ink">
             事実カード
           </Link>
-          を、すべて出典つきで確認できます。
+          を、出典とあわせて確認できます。発言本文・採決・政治資金の個人記録は国会議員の収録分が中心です。
+          未収録の項目は、活動や記録がないことを意味しません。候補者の情報は、選挙管理委員会の公表資料や本人の公式資料で確認してください。
         </p>
       </Section>
 
