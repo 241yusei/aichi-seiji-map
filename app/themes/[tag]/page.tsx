@@ -4,6 +4,9 @@ import { notFound } from "next/navigation";
 import { getLegislators, getSpeeches } from "@/lib/data";
 import { THEMES, matchThemeSpeeches, themeById } from "@/lib/themes";
 import { SpeechList } from "@/components/SpeechList";
+import { SpeechCoverage } from "@/components/DataCoverage";
+import { ThemeEmptyState } from "@/components/ThemeEmptyState";
+import { recordedRange } from "@/lib/data-coverage";
 
 export function generateStaticParams() {
   return THEMES.map((t) => ({ tag: t.id }));
@@ -18,7 +21,7 @@ export async function generateMetadata({
   const t = themeById(tag);
   if (!t) return { title: "テーマ" };
   return {
-    title: `${t.label}｜テーマから探す`,
+    title: `${t.label}の発言記録｜テーマから探す`,
     description: `${t.blurb} 愛知選出議員の国会発言を一次ソース付きで。`,
     alternates: { canonical: `/themes/${tag}/` },
   };
@@ -39,37 +42,42 @@ export default async function ThemeDetailPage({
   return (
     <div className="space-y-8">
       <p className="text-sm">
-        <Link href="/themes/" className="link-ink">
+        <Link href="/themes/" className="link-ink inline-flex min-h-11 items-center">
           ← テーマ一覧
         </Link>
       </p>
 
       <header className="border-b border-line pb-6">
-        <p className="text-sm font-medium tracking-wider text-accent">くらしのテーマ</p>
+        <p className="text-sm font-medium tracking-wider text-accent">暮らしのテーマから、議会の言葉を読む</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-tight">
-          {theme.label}
+          {theme.label}の発言記録
         </h1>
         <p className="measure mt-3 text-muted">{theme.blurb}</p>
+        <p className="measure mt-2 text-sm text-muted">どの議員が、いつ、どの会議で触れたかをたどれます。</p>
         <p className="tnum mt-3 text-sm text-muted">
-          取得済みの関連発言：<span className="font-bold text-ink">{matched.length}件</span>
-          （キーワード：{theme.keywords.join("・")}）
+          キーワードに一致した収録発言：<span className="font-bold text-ink">{matched.length}件</span>
         </p>
+        {matched.length > 0 && <p className="tnum mt-1 text-xs text-muted">このテーマの一致発言の期間：{recordedRange(matched)}</p>}
+        <div className="mt-4"><SpeechCoverage /></div>
+        <div className="measure mt-4 border-l-2 border-line pl-3 text-xs leading-relaxed text-muted">
+          <p>本文中の語の一致で抽出しています。発言全体の主題がこのテーマとは限りません。</p>
+          <p className="mt-1">対象語：{theme.keywords.join("・")}</p>
+        </div>
       </header>
 
       {matched.length === 0 ? (
-        <p className="tnum border-y border-line py-3 text-sm text-muted">
-          このテーマの取得済み発言：<span className="font-bold text-ink">0件</span>
-          （本サイトの収録範囲で一致した発言がない状態です。実際の発言の有無は公式会議録でご確認ください）
-        </p>
+        <ThemeEmptyState />
       ) : (
-        <section>
-          <p className="text-xs text-faint">
-            新しい順。発言者名から議員ページ（発言・採決・政治資金）へ進めます。
-            AI要約は自動生成の補助情報のため、判断の際は各発言の原文リンクをご確認ください。
+        <section aria-labelledby="matched-speeches-heading">
+          <h2 id="matched-speeches-heading" className="font-display text-2xl">一致した言葉と、発言の該当箇所</h2>
+          <p className="measure mt-3 text-sm text-muted">
+            新しい順に、発言者・会議・日付と、一致語の前後の原文を表示します。
+            文脈は公式会議録の全文から確認できます。AI要約がある場合は、原文とは別の補助情報として表示します。
           </p>
           <div className="mt-4">
             <SpeechList
               speeches={matched}
+              theme={{ label: theme.label, keywords: theme.keywords }}
               speakerNames={Object.fromEntries(matched.map((s) => [s.legislatorId, legById.get(s.legislatorId) ?? ""]))}
             />
           </div>

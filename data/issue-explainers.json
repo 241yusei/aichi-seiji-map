@@ -760,8 +760,12 @@
         "url": "https://aichinow.pref.aichi.jp/spots/detail/3657/"
       },
       {
-        "label": "愛知県「2024年 愛知県観光入込客統計」",
-        "url": "https://www.pref.aichi.jp/press-release/kankoirikomikyaku2024.html"
+      "label": "愛知県「2024年 愛知県観光入込客統計」（PDF・4ページの年間表）",
+      "url": "https://www.pref.aichi.jp/uploaded/attachment/583128.pdf"
+    },
+    {
+      "label": "愛知県「2023年 愛知県観光入込客統計」（PDF・前年比の計算に使用）",
+      "url": "https://www.pref.aichi.jp/uploaded/attachment/540275.pdf"
       },
       {
         "label": "愛知県「外国人宿泊者数」（出典:観光庁宿泊旅行統計調査）",
@@ -786,8 +790,8 @@
       },
       {
         "date": "2024年",
-        "event": "愛知県の観光入込客数は約1億1,073万人（前年比110.6%）、観光消費額は約1兆2,131億円。",
-        "sourceUrl": "https://www.pref.aichi.jp/press-release/kankoirikomikyaku2024.html"
+      "event": "県資料の各区分合計では、観光入込客数は約1億1,073万人回、観光消費額は約1兆2,131億円（参考値のビジネス目的を含む推計値）。前年比110.6%は2023年資料との同じ区分の合計値から計算。",
+      "sourceUrl": "https://www.pref.aichi.jp/uploaded/attachment/583128.pdf"
       }
     ]
   },
@@ -797,7 +801,7 @@
     "oneLine": "全国でも上位の愛知の農業。花きは全国1位の一方、担い手は急速に減っている。",
     "youEffect": "地元の野菜や花の生産、食の供給、農地のある風景の維持に関わる。",
     "whyImportant": "製造業の印象が強い愛知だが、農業産出額は全国上位。担い手の減少は食料生産と地域に直結する。",
-    "now": "令和3年の農業産出額は2,922億円で全国第8位、うち花きは全国1位（542億円）。一方、基幹的農業従事者は2025年に28,572人で前回（2020年）比約29%減と、担い手の減少が続く（2026年6月時点で確認できる統計）。",
+    "now": "令和3年の農業産出額は2,922億円で全国第8位、うち花きは全国1位（542億円）。一方、2025年2月1日現在の個人経営体の基幹的農業従事者は、2025年12月公表の概数で28,572人（2020年比28.9%減）とされた。これは過去の概数で、2026年7月に公表された確定値とは異なる。両資料へのリンクを下の出典に掲載。",
     "keyStats": [
       {
         "label": "花きの産出額（令和6年）",
@@ -848,9 +852,9 @@
         "sourceUrl": "https://www.pref.aichi.jp/soshiki/toukei/0000078213.html"
       },
       {
-        "date": "2025年（農林業センサス概数）",
-        "event": "基幹的農業従事者は28,572人（2020年比28.9%減）、農業経営体は19,031（同29.2%減）。",
-        "sourceUrl": "https://www.pref.aichi.jp/soshiki/toukei/nouringyoucensussokuhou2025.html"
+      "date": "2025年12月公表（2025年2月1日現在・概数）",
+      "event": "個人経営体の基幹的農業従事者は28,572人（2020年比28.9%減）、農業経営体は19,031経営体（同29.2%減）。確定値ではなく、公表当時の概数。",
+      "sourceUrl": "https://www.pref.aichi.jp/press-release/nouringyoucensussokuhou2025.html"
       }
     ],
     "sources": [
@@ -863,8 +867,12 @@
         "url": "https://www.pref.aichi.jp/soshiki/toukei/kaki.html"
       },
       {
-        "label": "愛知県統計課「2025年農林業センサス（概数値）」",
-        "url": "https://www.pref.aichi.jp/soshiki/toukei/nouringyoucensussokuhou2025.html"
+      "label": "愛知県「2025年農林業センサス（概数値）」（2025年12月1日公表・2025年2月1日現在）",
+      "url": "https://www.pref.aichi.jp/press-release/nouringyoucensussokuhou2025.html"
+    },
+    {
+      "label": "愛知県「2025年農林業センサス（確定値）」（2026年7月31日公表・掲載した概数とは区別）",
+      "url": "https://www.pref.aichi.jp/soshiki/toukei/nourincensus2025.html"
       }
     ]
   },

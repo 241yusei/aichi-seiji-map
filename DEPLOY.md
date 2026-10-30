@@ -25,6 +25,15 @@
 > 2026-09-03 に本番を Cloudflare Pages へ移行した。Vercel 側を残す場合は、
 > 重複インデックスを避けるため Cloudflare へのリダイレクトを設定すること。
 
+旧本番ホストは `aichi-seiji-map.vercel.app`。`vercel.json` は、このホストだけを
+`https://seiji-torisetsu.pages.dev/:path*` へ308恒久転送する設定。パスを維持し、
+クエリはVercelの仕様で引き継ぐ。CloudflareとVercelのプレビュー用ホストは対象外。
+同ファイルの `buildCommand` で `NEXT_PUBLIC_SITE_URL` をCloudflare URLに明示し、
+Vercel側の既存環境変数が旧URLでも、生成される正規URLを新URLに統一する。
+設定ファイルのローカル検証だけでは公開済みとはしない。Vercelへの適用・再デプロイは
+本人の公開承認後に行い、実応答の `Location` と検索・比較URLの条件保持を確認する。
+確認結果、適用対象、巻戻しは [正規URL移行手順](docs/canonical-migration-2026-10-26.md) を参照。
+
 - リポジトリを Vercel に接続（Framework Preset: Next.js）。
 - Environment Variables に `NEXT_PUBLIC_SITE_URL`（と要約を運用するなら `ANTHROPIC_API_KEY` をビルド前のデータ生成で使う場合のみ）。
 - Build Command: `npm run build` / Output: `out`（`output: export` のため自動。必要なら Output Directory を `out` に）。
@@ -98,7 +107,7 @@ Permissions-Policy）と、`/_next/static/*` の長期キャッシュを指定�
 - `seed:legislators` と共通名簿生成処理は明示IDと確認記録を保持する。氏名訂正時にハッシュを再付番せず、既存の発言・採決・資金の参照を保つ。試験は使い捨てfixtureで行う。
 - `data/speech-import-pr93.json` はPR #93取込時点の履歴。将来の発言追加で件数が増えても、この履歴を現在件数へ書き換えない。今回の取得ログを根拠とする照会成功日は10月20日、資料の取込確認日は10月23日。
 
-## 利用段階の匿名件数計測（2026-10-23・初期無効）
+## 利用段階の件数計測（2026-10-23実装・2026-10-30本番有効化）
 
 静的Next exportは維持し、`functions/api/usage.ts` をPages Functionsとして併設する。
 `public/_routes.json` はビルド時に `out/_routes.json` へコピーされ、`/api/usage` と末尾スラッシュ付きの同パスだけをFunctionsへ渡す。通常ページや静的アセットはFunctionsを起動しない。
@@ -115,8 +124,8 @@ Analytics Engineへ渡すのは固定index `journey-v1`、blob1の許可イベ�
 
 ### 有効化と配信の境界
 
-**このPRの作業ではdataset作成、課金契約、本番設定変更、デプロイ、実イベント送信を行っていない。**
-`wrangler.toml` は初期状態を本番・Previewとも `USAGE_ENABLED="false"` とする。Previewはbindingなし、Origin空で破棄する。
+2026-10-23のPR作成時はdataset作成、課金契約、本番設定変更、デプロイ、実イベント送信を行っていない。
+2026-10-30の本番反映依頼に合わせ、`wrangler.toml` の本番だけを `USAGE_ENABLED="true"` とした。開発・Previewは無効、Previewはbindingなし・Origin空を維持する。
 本番の `USAGE_ANALYTICS` bindingはdataset `seiji_usage` を指定するが、無効状態では書き込まない。datasetは最初の書込時に作成される。
 未設定・無効・bindingなしではPOSTを破棄して204、GETは `{enabled:false}` を返す。有効時も受信・保存の失敗で本体操作を止めない。
 GETは同じ配信Originからだけ有効状態を返し、応答はすべて `Cache-Control: no-store`。
@@ -128,6 +137,10 @@ GETは同じ配信Originからだけ有効状態を返し、応答はすべて `
 3. 料金・無料枠と実アカウントのWorkers契約を再確認する。有効化が承認された場合のみ `env.production.vars.USAGE_ENABLED` を `"true"` へ変更してレビューする。設定ファイルで管理する変数はダッシュボード側での変更に依存しない。無効化も同値を `"false"` に戻した承認済み再デプロイで行う。
 4. 通常の検証・静的ビルド後、リポジトリのルートから既存の `wrangler pages deploy out --project-name=seiji-torisetsu` 手順でFunctionsとbinding設定を一緒に配信する。出力フォルダだけのダッシュボードへのドラッグ＆ドロップではFunctionsは配信できない。production branchとPreviewの区別を確認して実行する。
 
+2026-10-30の再確認：既存プロジェクトはproduction branch `main`、Git未連携、既存の環境変数・外部bindingなし、compatibility date `2026-09-03`、usage model `standard`。既存の秘密情報やbindingを上書きする変更はない。新しいFunctionsはPRの `2026-10-23` 互換日付で配信する。公式料金頁はAEを現在未課金・将来の料金表を予告中とし、保存期間は3か月のまま。契約一覧APIは現在の認証では403のため、実アカウントのFree/Paid区分は未確認。`standard` だけから無料契約と判断せず、今回の作業で有料プランへの変更・新規契約は行わない。Functionsは既存Workers契約の利用枠へ算入される。課金や契約変更を要求された場合はその変更を行わず、計測を無効として配信できる。
+
+公開後は本番 `/api/usage` のGETが `{enabled:true}`、固有デプロイURL・PreviewのGETが `{enabled:false}` であることを確認する。本番に試験イベントをPOSTしない。GETの有効応答は設定とbindingの存在確認であり、実イベントの保存成功や利用実績の証明ではない。実際の保存・集計は運用開始後の集計結果で別に確認する。
+
 ### オフライン検証
 
 `npm test` の `tests/usage-server.test.ts` は使い捨てfake bindingだけを使う。許可イベント以外・余分キー・異Origin・クエリ・大きい本文を拒否し、保存値が固定index/イベント名/1だけであること、無効状態と保存失敗でも204であることを検証する。
@@ -135,7 +148,7 @@ Cloudflare公式資料ではPagesのAnalytics Engine bindingはローカル利�
 
 ### 集計・料金・保持期間
 
-確認日2026-10-23の公式資料では、FunctionsはWorkers Freeと合算100,000requests/日、AEは100,000writes/日・10,000read queries/日が無料枠。AE料金頁は現在未課金・今後課金開始予定と記載しており、恒久無料を保証しない。AEの保存期間は3か月。
+確認日2026-10-30の公式資料では、FunctionsはWorkers Freeと合算100,000requests/日、AEはFreeの100,000writes/日・10,000read queries/日が含まれる。PaidのAEは月10,000,000writes・1,000,000read queriesが含まれる料金表。AE料金頁は現在未課金・今後課金開始予定と記載しており、実契約のFree/Paid区分や恒久無料を保証しない。AEの保存期間は3か月。
 本番有効化後の必要な集計は、Account Analytics Read権限のtokenを運用者の安全な環境だけで使い、`POST https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/analytics_engine/sql` に次のSQLを送る。tokenをクライアント・リポジトリ・公開環境変数へ置かない。
 
 ```sql

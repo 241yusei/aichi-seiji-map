@@ -10,7 +10,7 @@ USAGE_ENABLED = "false"
 USAGE_SITE_ORIGIN = ""
 
 [env.production.vars]
-USAGE_ENABLED = "false"
+USAGE_ENABLED = "true"
 USAGE_SITE_ORIGIN = "https://seiji-torisetsu.pages.dev"
 
 [[env.production.analytics_engine_datasets]]

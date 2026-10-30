@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SourceLink } from "@/components/SourceLink";
 
 export const metadata: Metadata = {
   title: "訂正・更新ログ",
@@ -9,7 +10,30 @@ export const metadata: Metadata = {
 };
 
 // 更新・訂正の履歴（手動・追記型）。訂正は kind="訂正"、機能/データ追加は kind="更新"。
-const LOG: { date: string; kind: "更新" | "訂正"; text: string }[] = [
+const LOG: { date: string; kind: "更新" | "訂正"; text: string; sources?: { label: string; url: string }[] }[] = [
+  { date: "2026-10-30", kind: "更新", text: "初めて使う方向けに、地域の代表者一覧から氏名、暮らしの3テーマ、資料一覧・公式原本へ進む案内を追加。代表者の担当や賛否を示す関係ではないこと、ページ内の資料参照と公式サイトを開く操作を区別しました。利用状況は地域・議員・テーマ・URL・利用者IDを含めない6種類の段階名だけを対象とし、計測内容の説明と端末での停止設定をフッターから開けます。DNT/GPCを尊重し、計測失敗でもサイトの操作を妨げません。実参加者の理解や利用実績の測定結果を示す更新ではありません。" },
+  { date: "2026-10-30", kind: "訂正", text: "欠員カードの候補者不足という原因の断定を訂正。今回閲覧した公式資料では東郷町15/16人、大治町12/12人、美浜町12/12人、設楽町9/10人で、東郷・設楽は町長選立候補による自動失職と説明されています。美浜の旧定数14を現行12へ、大治の掲載現員11を今回確認した12へ改め、町ごとの資料基準日を併記しました。名古屋市会役職カードは公式名簿から6種類を再集計し、重複を除いた39人と延べ47件を確認。対象外の役職と数え方、基準日明記なしを追記しました。いずれも10月30日は資料確認日であり、その日現在の全名簿を再確認したという意味ではありません。", sources: [
+    { label: "東郷町 議員名簿・欠員理由", url: "https://www.town.aichi-togo.lg.jp/soshikikarasagasu/gikaijimukyoku/gyomuannai/2/4/2909.html" },
+    { label: "大治町 議会構成（2026年9月14日現在）", url: "https://www.town.oharu.aichi.jp/4101.htm" },
+    { label: "美浜町 議員定数条例", url: "https://www.town.aichi-mihama.lg.jp/section/reiki_int/reiki_honbun/i562RG00000012.html" },
+    { label: "設楽町 自動失職のお知らせ", url: "https://www.town.shitara.lg.jp/soshiki/9/7793.html" },
+    { label: "名古屋市会 50音別議員名簿", url: "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html" },
+    { label: "名古屋市会 会派別議員名簿", url: "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html" },
+  ] },
+  { date: "2026-10-30", kind: "訂正", text: "政治資金の比率カードは、報告団体の収支を議員個人の支出傾向として読める表現を訂正し、団体・報告年・収支項目をそろえる読み方へ差し替えました。旧比率・中央値は原本の収支表との再照合を完了できていないため取り下げ、再確認済みの数値として掲載しません。県の公表一覧で2024年分・2025年11月28日公表と団体別の掲載を確認しました。収録済み資金データ20件の全原本再照合を示す更新ではありません。教育ページには種類別の収録範囲と名古屋市のみの郵便番号対応を明記。選挙期間中の表示抑制が実装されているとの説明を既存の運用方針へ改め、教材の問いから原因の決めつけを除きました。", sources: [
+    { label: "愛知県選挙管理委員会 2024年分の政治資金収支報告書・公表案内", url: "https://www.pref.aichi.jp/soshiki/senkyo/071128.html" },
+  ] },
+  { date: "2026-10-24", kind: "訂正", text: "大治町の現在の首長データを、町公式のあいさつと県名簿（2026年9月13日現在）で照合。旧収録の氏名・読み方と任期満了日を横井良隆氏・2030年9月12日へ更新しました。新しい就任日は未確認のため旧値を引き継がず未記録とし、過去の議会記録や歴史データは変更していません。他の首長名簿全体を今回再照合したものではありません。", sources: [
+    { label: "大治町 町長のあいさつ", url: "https://www.town.oharu.aichi.jp/1916.htm" },
+    { label: "愛知県 市町村長等名簿（2026年9月13日現在）", url: "https://www.pref.aichi.jp/soshiki/shichoson/0000046285.html" },
+  ] },
+  { date: "2026-10-24", kind: "訂正", text: "観光統計と農林業センサスの出典URLを、掲載した年度・数値と一致する公式資料へ訂正。観光は2024暦年の推計値と人回の単位を明示し、前年比110.6%は2024年・2023年の同じ区分の合計値からの計算と注記しました。農業の既存数値は2025年12月公表の概数（2025年2月1日現在）として保持し、2026年7月公表の確定値と区別して両方の出典を掲載しました。資料確認日は10月24日で、全統計を最新値へ更新したことを示しません。", sources: [
+    { label: "愛知県 2024年観光入込客統計（PDF）", url: "https://www.pref.aichi.jp/uploaded/attachment/583128.pdf" },
+    { label: "愛知県 2023年観光入込客統計（PDF・比較計算）", url: "https://www.pref.aichi.jp/uploaded/attachment/540275.pdf" },
+    { label: "愛知県 2025年農林業センサス（概数値）", url: "https://www.pref.aichi.jp/press-release/nouringyoucensussokuhou2025.html" },
+    { label: "愛知県 2025年農林業センサス（確定値）", url: "https://www.pref.aichi.jp/soshiki/toukei/nourincensus2025.html" },
+  ] },
+  { date: "2026-10-24", kind: "更新", text: "検索候補・読み込み表示・再試行を整え、テーマの発言一覧を発言者・会議・日付・一致語・周辺原文に整理。テーマ内の発言期間、全体の収録期間、照会対象期間と照会成功日を区別し、0件時の公式検索・別テーマへの案内、公式資料が別タブで開く表示を追加しました。" },
   { date: "2026-10-23", kind: "更新", text: "国会（愛知選出）・愛知県議会・名古屋市会の名簿、所属、掲載した主な役職・所属委員会を公式資料と照合し、項目別の資料確認日・根拠URL・確認状況を追加。資料自体の基準日、資料に掲載がない項目、確認できない項目を区別しました。当選回数・略歴・首長・他市町村の再確認を示す更新ではありません。PR #93の発言5件を取り込み、国会発言は4,011件。全32人の取得成功を実行ログで確認した10月20日を照会成功日として記録しました。" },
   { date: "2026-10-23", kind: "訂正", text: "公式情報との照合に基づき国会の現役職・委員会を更新。県議会のふりがな17人を公式表記へ訂正。名古屋市会の服部将也氏の民主会派役職を団長から副団長へ訂正し、木下優氏の教育子ども委員会の掲載漏れを補完しました。既存の議員IDと過去の発言・採決参照は保持しています。" },
   { date: "2026-10-22", kind: "訂正", text: "サイト更新日と、名簿・所属の確認日、発言の照会日・収録期間を区別しました。新人4人の発言が0件としたカードは6月6日時点の未収録を示す保存版とし、公式会議録に発言がなかったという説明を訂正。政治資金は収録団体の種類・対象年を明示し、議員本人の全資金を単純比較する見出しを修正。参院の会派集計から衆院2案件を除外し、採決当時の公式会派だけを使うよう変更しました（参院120案件）。リニア開業延期・名古屋駅再開発について内容を確認した既存発言2件を争点に追加しました。" },
@@ -59,7 +83,10 @@ export default function CorrectionsPage() {
                 {l.kind}
               </span>
             </div>
-            <p className="measure text-sm text-muted">{l.text}</p>
+            <div>
+              <p className="measure text-sm text-muted">{l.text}</p>
+              {l.sources && <ul className="mt-2 text-xs">{l.sources.map((source) => <li key={source.url}><SourceLink href={source.url} className="link-ink inline-flex min-h-11 items-center">{source.label}</SourceLink></li>)}</ul>}
+            </div>
           </li>
         ))}
       </ol>

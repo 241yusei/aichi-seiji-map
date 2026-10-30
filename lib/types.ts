@@ -181,6 +181,7 @@ export interface FactCard {
   relatedLegislatorIds?: string[]; // 関連する議員ID（Legislator.id）
   publishedAt: string; // 公開日（ISO 8601）
   updatedAt?: string; // 更新日（ISO 8601）
+  checkedAt?: string; // このカードの根拠資料を実際に確認した日。資料基準日・更新日とは別。
   asOf?: string; // このカードの数字を集計した時点。公開・更新日とは別。
   historical?: boolean; // 過去の収録状況を残す保存版
 }

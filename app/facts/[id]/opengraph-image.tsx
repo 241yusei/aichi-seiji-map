@@ -39,6 +39,8 @@ function parseYeaNay(v: string): { yea: number; nay: number } | null {
 
 // 「約1億547万円」「約2,224万円」「54人」「11件」型 → 数値（バー比率用）
 function parseNumeric(v: string): number | null {
+  // 「現員／定数」のような2値を最初の数値だけの棒グラフに変換しない。
+  if (/[／/]/.test(v)) return null;
   const s = v.replace(/[,，約]/g, "");
   const oku = s.match(/([\d.]+)億(?:([\d.]+)万)?/);
   if (oku) return parseFloat(oku[1]) * 1e8 + (oku[2] ? parseFloat(oku[2]) * 1e4 : 0);
@@ -58,8 +60,10 @@ export default async function OgImage({ params }: { params: Promise<{ id: string
   const hook = card?.hook ?? "";
   const footer = "一次ソース付き・中立 ／ aichi-seiji-map";
 
-  // 上位3ポイントをバー付きで描画（数字が主役の1枚チャートにする）
-  const points = (card?.points ?? []).slice(0, 3);
+  // 現員／定数の対は棒にせず4行まで、単一の数値は従来どおり3行まで表示。
+  const allPoints = card?.points ?? [];
+  const pairedValues = allPoints.length > 0 && allPoints.every((p) => /[／/]/.test(p.value));
+  const points = allPoints.slice(0, pairedValues ? 4 : 3);
   const numerics = points.map((p) => parseNumeric(p.value));
   const maxNum = Math.max(1, ...numerics.filter((n): n is number => n !== null));
 
@@ -119,7 +123,7 @@ export default async function OgImage({ params }: { params: Promise<{ id: string
           fontFamily: "Noto Sans JP",
         }}
       >
-        <div style={{ display: "flex", fontSize: 24, color: C.accentDeep }}>{brand}</div>
+        <div style={{ display: "flex", flexShrink: 0, fontSize: 24, color: C.accentDeep }}>{brand}</div>
         <div
           style={{
             display: "flex",
@@ -140,6 +144,7 @@ export default async function OgImage({ params }: { params: Promise<{ id: string
           style={{
             display: "flex",
             justifyContent: "space-between",
+            flexShrink: 0,
             borderTop: `5px solid ${C.accent}`,
             paddingTop: 16,
             fontSize: 20,

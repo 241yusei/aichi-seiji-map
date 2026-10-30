@@ -1,4 +1,4 @@
-import type { Legislator } from "@/lib/types";
+import type { Legislator, SpeechCollectionStatus, SpeechRecord } from "@/lib/types";
 import { verifiedMembershipCount } from "@/lib/roster-verification";
 import { getAllVotes, getCouncilDecisions, getLegislators, getSpeeches, getSpeechCollectionStatus } from "@/lib/data";
 import { collectionLabel, isSangiinVote, recordedRange } from "@/lib/data-coverage";
@@ -8,12 +8,14 @@ export function RosterCoverage({ legislators = getLegislators() }: { legislators
   return <p className="mt-2 text-xs leading-relaxed text-muted">現職・氏名・選挙区の公式照合：{verified}人／本サイト収録{legislators.length}人。所属・役職・委員会の確認状況、資料確認日と出典は各議員ページに表示します。未記録の項目を確認済みとして扱いません。</p>;
 }
 
-export function SpeechCoverage() {
-  const speeches = getSpeeches();
-  const status = getSpeechCollectionStatus();
+export function SpeechCoverage({ speeches = getSpeeches(), status = getSpeechCollectionStatus() }: {
+  speeches?: Pick<SpeechRecord, "date">[];
+  status?: SpeechCollectionStatus | null;
+}) {
   return <div className="mt-2 space-y-1 text-xs text-muted">
     <p>国会発言の収録期間：{recordedRange(speeches) ?? "未収録"}。一部収録であり、全発言を示しません。</p>
     <p>{collectionLabel(status)}</p>
+    {status && <p>直近の照会対象期間：{status.from}〜{status.until}。照会成功日・照会対象期間は、発言の収録期間や全件の網羅を示すものではありません。</p>}
     {status && status.failedIds.length > 0 && <p>直近の照会：{status.targetCount}人中{status.succeededCount}人成功・{status.failedIds.length}人失敗。取得済みの記録を保持しています。</p>}
   </div>;
 }

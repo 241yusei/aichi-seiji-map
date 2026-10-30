@@ -5,6 +5,7 @@ import { UsagePreferences } from "@/components/UsagePreferences";
 export const metadata: Metadata = {
   title: "利用状況の計測と停止",
   description: "初めて使う人の導線を改善するための計測内容と、端末で停止する方法。",
+  alternates: { canonical: "/usage/" },
 };
 
 export default function UsagePage() {
