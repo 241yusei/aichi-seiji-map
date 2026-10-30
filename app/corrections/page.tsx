@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 // 更新・訂正の履歴（手動・追記型）。訂正は kind="訂正"、機能/データ追加は kind="更新"。
 const LOG: { date: string; kind: "更新" | "訂正"; text: string; sources?: { label: string; url: string }[] }[] = [
+  { date: "2026-10-30", kind: "訂正", text: "欠員カードの候補者不足という原因の断定を訂正。今回閲覧した公式資料では東郷町15/16人、大治町12/12人、美浜町12/12人、設楽町9/10人で、東郷・設楽は町長選立候補による自動失職と説明されています。美浜の旧定数14を現行12へ、大治の掲載現員11を今回確認した12へ改め、町ごとの資料基準日を併記しました。名古屋市会役職カードは公式名簿から6種類を再集計し、重複を除いた39人と延べ47件を確認。対象外の役職と数え方、基準日明記なしを追記しました。いずれも10月30日は資料確認日であり、その日現在の全名簿を再確認したという意味ではありません。", sources: [
+    { label: "東郷町 議員名簿・欠員理由", url: "https://www.town.aichi-togo.lg.jp/soshikikarasagasu/gikaijimukyoku/gyomuannai/2/4/2909.html" },
+    { label: "大治町 議会構成（2026年9月14日現在）", url: "https://www.town.oharu.aichi.jp/4101.htm" },
+    { label: "美浜町 議員定数条例", url: "https://www.town.aichi-mihama.lg.jp/section/reiki_int/reiki_honbun/i562RG00000012.html" },
+    { label: "設楽町 自動失職のお知らせ", url: "https://www.town.shitara.lg.jp/soshiki/9/7793.html" },
+    { label: "名古屋市会 50音別議員名簿", url: "https://www.city.nagoya.jp/shikai/about/1030778/1030800.html" },
+    { label: "名古屋市会 会派別議員名簿", url: "https://www.city.nagoya.jp/shikai/about/1030778/1030799.html" },
+  ] },
+  { date: "2026-10-30", kind: "訂正", text: "政治資金の比率カードは、報告団体の収支を議員個人の支出傾向として読める表現を訂正し、団体・報告年・収支項目をそろえる読み方へ差し替えました。旧比率・中央値は原本の収支表との再照合を完了できていないため取り下げ、再確認済みの数値として掲載しません。県の公表一覧で2024年分・2025年11月28日公表と団体別の掲載を確認しました。収録済み資金データ20件の全原本再照合を示す更新ではありません。教育ページには種類別の収録範囲と名古屋市のみの郵便番号対応を明記。選挙期間中の表示抑制が実装されているとの説明を既存の運用方針へ改め、教材の問いから原因の決めつけを除きました。", sources: [
+    { label: "愛知県選挙管理委員会 2024年分の政治資金収支報告書・公表案内", url: "https://www.pref.aichi.jp/soshiki/senkyo/071128.html" },
+  ] },
   { date: "2026-10-24", kind: "訂正", text: "大治町の現在の首長データを、町公式のあいさつと県名簿（2026年9月13日現在）で照合。旧収録の氏名・読み方と任期満了日を横井良隆氏・2030年9月12日へ更新しました。新しい就任日は未確認のため旧値を引き継がず未記録とし、過去の議会記録や歴史データは変更していません。他の首長名簿全体を今回再照合したものではありません。", sources: [
     { label: "大治町 町長のあいさつ", url: "https://www.town.oharu.aichi.jp/1916.htm" },
     { label: "愛知県 市町村長等名簿（2026年9月13日現在）", url: "https://www.pref.aichi.jp/soshiki/shichoson/0000046285.html" },

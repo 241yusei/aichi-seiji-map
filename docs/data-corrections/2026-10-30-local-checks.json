@@ -1,0 +1,121 @@
+{
+  "checkedAt": "2026-10-30",
+  "target": "localhost static export",
+  "viewports": [
+    320,
+    390,
+    1440
+  ],
+  "externalRequests": [],
+  "pageErrors": [],
+  "results": [
+    {
+      "path": "/facts/gap-teisu-ware-2026/",
+      "width": 320,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/facts/comparison-funding-expense-ratio-2026/",
+      "width": 320,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/facts/gap-nagoya-council-positions-2026/",
+      "width": 320,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/for-education/",
+      "width": 320,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/corrections/",
+      "width": 320,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/",
+      "width": 320,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/facts/gap-teisu-ware-2026/",
+      "width": 390,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/facts/comparison-funding-expense-ratio-2026/",
+      "width": 390,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/facts/gap-nagoya-council-positions-2026/",
+      "width": 390,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/for-education/",
+      "width": 390,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/corrections/",
+      "width": 390,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/facts/gap-teisu-ware-2026/",
+      "width": 1440,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/facts/comparison-funding-expense-ratio-2026/",
+      "width": 1440,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/facts/gap-nagoya-council-positions-2026/",
+      "width": 1440,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/for-education/",
+      "width": 1440,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/corrections/",
+      "width": 1440,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/",
+      "width": 1440,
+      "status": 200,
+      "overflow": false
+    }
+  ]
+}

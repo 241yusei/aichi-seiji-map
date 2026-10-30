@@ -130,6 +130,7 @@ export const factCardSchema = z.object({
   relatedLegislatorIds: z.array(z.string()).optional(),
   publishedAt: isoDate,
   updatedAt: isoDate.optional(),
+  checkedAt: z.iso.date().optional(),
   asOf: isoDate.optional(),
   historical: z.boolean().optional(),
 });
