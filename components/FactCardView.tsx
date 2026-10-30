@@ -31,6 +31,7 @@ export function FactCardView({ card }: { card: FactCard }) {
           </time>
         </div>
         {card.updatedAt && <p className="mt-2 text-xs text-muted">更新：<time dateTime={card.updatedAt}>{formatDate(card.updatedAt)}</time></p>}
+        {card.checkedAt && <p className="mt-2 text-xs text-muted">資料確認日：<time dateTime={card.checkedAt}>{formatDate(card.checkedAt)}</time>（資料の基準日とは異なります）</p>}
         {card.asOf && <p className="mt-2 text-sm text-muted">数字の集計時点：<time dateTime={card.asOf}>{formatDate(card.asOf)}</time>{card.historical ? "・過去の収録状況（保存版）" : ""}</p>}
         <h1 className="font-display mt-3 text-[clamp(1.9rem,5.5vw,3.25rem)] leading-[1.08]">
           {card.title}
