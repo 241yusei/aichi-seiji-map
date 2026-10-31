@@ -9,6 +9,7 @@ import type { LivingTopicBriefData } from "../lib/types";
 
 const fixture: LivingTopicBriefData = {
   issueId: "transit", title: "テスト用の話題", summary: "テスト用の説明", caseTitle: "使い捨ての計画", confirmedAt: "2026-10-22",
+  pageTitle: "架空地域の計画", region: {text: "架空地域", sourceIds: ["official"]}, period: {text: "2026年度", sourceIds: ["official"]},
   status: { text: "資料の公表を確認", sourceIds: ["official"] }, decisions: [], affected: [], responsibilities: [], costs: [], unknowns: [], nextChecks: [],
   sources: [{ id: "official", label: "テスト用の公式資料", url: "https://example.org/original?test=1&format=html" }],
 };

@@ -381,6 +381,9 @@ export interface LivingTopicSource {
   label: string;
   url: string;
   publishedAt?: string;
+  /** この資料を実際に読み直した日。解説全体の再確認とは別。 */
+  checkedAt?: string;
+  checkNote?: string;
 }
 
 /** テーマ全体を採点せず、特定の制度・計画について分かっていることを記録する。 */
@@ -389,6 +392,10 @@ export interface LivingTopicBriefData {
   title: string;
   summary: string;
   caseTitle: string;
+  /** 具体案件を表すページ見出し。検索向け説明でも同じ名称を使う。 */
+  pageTitle: string;
+  region: LivingTopicStatement;
+  period: LivingTopicStatement;
   confirmedAt: string;
   status: LivingTopicStatement;
   decisions: LivingTopicStatement[];

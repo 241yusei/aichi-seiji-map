@@ -3,7 +3,9 @@ import assert from "node:assert/strict";
 import { readFile, readdir } from "node:fs/promises";
 import { resolve, relative, dirname } from "node:path";
 import { load } from "cheerio";
-import { getLegislators } from "../lib/data.ts";
+import { getLivingTopics, getLegislators } from "../lib/data.ts";
+import { livingTopicMetadata } from "../lib/living-topic-meta.ts";
+import { NAGOYA_WARDS } from "../lib/area.ts";
 
 const root = resolve(import.meta.dirname, "..");
 const out = resolve(root, "out");
@@ -56,4 +58,35 @@ for (const l of roster) {
   assert.match($("meta[name=description]").attr("content"), /未収録/, l.id);
   local++;
 }
-console.log(JSON.stringify({ sitemapUrls: urls.length, canonicalChecked: pages.size, htmlReachable: reached.size, localDescriptionsChecked: local, lastmod: "omitted" }, null, 2));
+const topics = getLivingTopics();
+for (const topic of topics) {
+  const $ = pages.get(`/issues/${topic.issueId}/`);
+  assert.ok($, topic.issueId);
+  const expected = livingTopicMetadata(topic);
+  assert.equal($("h1").text(), expected.title);
+  assert.equal($("meta[name=description]").attr("content"), expected.description);
+  assert.equal($('meta[property="og:description"]').attr("content"), expected.description);
+  assert.ok($("#living-topic").text().includes(topic.region.text));
+  assert.ok($("#living-topic").text().includes(topic.period.text));
+  assert.ok($(`time[datetime="${topic.confirmedAt}"]`).length);
+  for (const source of topic.sources) {
+    const node = $(`#living-source-${topic.issueId}-${source.id}`);
+    assert.equal(node.find("a").attr("href"), source.url);
+    if (source.checkedAt) {
+      assert.ok(node.find(`time[datetime="${source.checkedAt}"]`).length);
+      assert.ok(node.text().includes(source.checkNote));
+    }
+  }
+}
+for (const ward of NAGOYA_WARDS) {
+  const $ = pages.get(`/area/${ward.slug}/`);
+  assert.ok($, ward.slug);
+  assert.ok($("h1").text().includes(`名古屋市${ward.ward}`));
+  assert.ok($("#area-roster-verification-heading").length);
+  assert.ok($("main").text().includes("資料確認日"));
+  assert.ok($("main").text().includes("公式出典"));
+  for (const topic of topics) {
+    assert.ok($("a[href]").toArray().some((a) => new URL($(a).attr("href"), base).pathname.replace(/\/$/, "") === `/issues/${topic.issueId}`));
+  }
+}
+console.log(JSON.stringify({ wardsChecked: NAGOYA_WARDS.length, livingTopicsChecked: topics.length, sitemapUrls: urls.length, canonicalChecked: pages.size, htmlReachable: reached.size, localDescriptionsChecked: local, lastmod: "omitted" }, null, 2));

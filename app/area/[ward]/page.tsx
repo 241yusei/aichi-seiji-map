@@ -1,5 +1,6 @@
 import { JourneyGuide } from "@/components/JourneyGuide";
-import { RosterCoverage } from "@/components/DataCoverage";
+import { AreaRosterVerification } from "@/components/AreaRosterVerification";
+import { LivingTopicCards } from "@/components/LivingTopicCards";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -33,8 +34,8 @@ export async function generateMetadata({
   const w = wardBySlug(ward);
   if (!w) return { title: "地域" };
   return {
-    title: `名古屋市${w.ward}の代表者`,
-    description: `名古屋市${w.ward}を代表する国会・愛知県議会・名古屋市会の議員と首長を、一次ソース付きでまとめて確認できます。`,
+    title: `名古屋市${w.ward}の国・県・市の議員・代表者`,
+    description: `名古屋市${w.ward}の衆院小選挙区（${w.shugiin}）・参院愛知県選挙区・愛知県議会・名古屋市会の議員と、知事・市長への入口。名簿の確認状況・資料確認日・公式出典を掲載。個人記録の収録範囲は議会・資料ごとに異なります。`,
     alternates: { canonical: `/area/${ward}/` },
   };
 }
@@ -104,6 +105,11 @@ export default async function WardDashboardPage({
   const sangiin = national.filter((l) => l.district === "愛知県選挙区").map(brief);
   const kengikai = pref.filter((l) => l.district === w.prefDistrict).map(brief);
   const shikai = muni.filter((l) => l.district === w.prefDistrict).map(brief);
+  const areaLegislators = [
+    ...national.filter((l) => l.district === w.shugiin || l.district === "愛知県選挙区"),
+    ...pref.filter((l) => l.district === w.prefDistrict),
+    ...muni.filter((l) => l.district === w.prefDistrict),
+  ];
 
   const governor = getExecutiveByGov("23000"); // 愛知県知事
   const mayor = getExecutiveByGov("23100"); // 名古屋市長
@@ -122,11 +128,12 @@ export default async function WardDashboardPage({
             ← 地域から探す
           </Link>
         </p>
-        <h1 className="font-display mt-3 text-[clamp(1.9rem,6vw,3.2rem)] leading-tight">
-          名古屋市{w.ward}の代表者
+        <h1 className="font-display mt-3 text-[clamp(1.9rem,6vw,3.2rem)] leading-tight text-balance">
+          名古屋市{w.ward}の国・県・市の議員
         </h1>
         <p className="measure mt-3 text-muted">
-          国・県・市の代表者と首長です。氏名から名簿情報と公式出典へ進めます。
+          衆議院は小選挙区（{w.shugiin}）、参議院は愛知県選挙区の掲載議員を案内します。
+          県議会・市会は名古屋市{w.ward}の名簿から確認できます。知事・市長の入口も掲載しています。
           発言本文・採決・政治資金の個人記録は国会議員の収録分が中心で、議会・資料ごとに掲載範囲が異なります。
         </p>
         <p className="mt-2 text-xs text-faint">サイト更新日：{LAST_UPDATED}（名簿の確認日ではありません）</p>
@@ -134,11 +141,7 @@ export default async function WardDashboardPage({
 
       <JourneyGuide stage="representative" />
 
-      <RosterCoverage legislators={[
-        ...national.filter((l) => l.district === w.shugiin || l.district === "愛知県選挙区"),
-        ...pref.filter((l) => l.district === w.prefDistrict),
-        ...muni.filter((l) => l.district === w.prefDistrict),
-      ]} />
+      <AreaRosterVerification legislators={areaLegislators} />
       <p className="text-xs text-muted">首長の個別照合日は未記録です。上の照合人数には含めていません。</p>
 
       {/* 首長（決める人のトップ） */}
@@ -180,6 +183,11 @@ export default async function WardDashboardPage({
           />
         </div>
       </section>
+
+      <div>
+        <p className="text-sm leading-relaxed text-muted">代表者の名簿とは別に、暮らしの制度・計画を調べる入口です。ここで紹介する制度・計画は、この区の議員の担当や賛否を示すものではありません。対象地域はテーマごとに異なります。</p>
+        <LivingTopicCards />
+      </div>
 
       {/* この地域に効く争点 */}
       {issues.length > 0 && (
@@ -250,7 +258,7 @@ export default async function WardDashboardPage({
 
       {/* 共有 */}
       <section className="border-t border-line pt-6">
-        <ShareButton title={`名古屋市${w.ward}の代表者｜政治のトリセツ あいち・なごや`} />
+        <ShareButton title={`名古屋市${w.ward}の国・県・市の議員・代表者｜政治のトリセツ あいち・なごや`} />
       </section>
     </div>
   );

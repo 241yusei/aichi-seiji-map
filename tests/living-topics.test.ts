@@ -6,6 +6,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { LivingTopicBrief } from "../components/LivingTopicBrief";
 import type { LivingTopicBriefData } from "../lib/types";
 import { livingTopicSchema, livingTopicsSchema } from "../lib/zod-schemas";
+import { livingTopicMetadata } from "../lib/living-topic-meta";
 
 function fixture(issueId = "kosodate"): LivingTopicBriefData {
   const sourced = (text: string) => ({ text, sourceIds: ["official"] });
@@ -14,6 +15,9 @@ function fixture(issueId = "kosodate"): LivingTopicBriefData {
     title: "暮らしの案件 <fixture>",
     summary: "確認した計画と、未確認の費用を分けて説明します。",
     caseTitle: "テスト用の具体的計画",
+    pageTitle: "架空地域の計画：対象と公式資料",
+    region: sourced("架空地域"),
+    period: sourced("2026年度の計画"),
     confirmedAt: "2026-10-22",
     status: sourced("計画の公表を確認しました。"),
     decisions: [sourced("計画期間が示されています。")],
@@ -86,4 +90,42 @@ test("記述の出典リンクと資料一覧のアンカーをテーマごと�
   assert.ok(html.includes('href="https://example.org/policy?year=2026&amp;edition=1"'));
   assert.ok(html.includes('aria-label="出典1を確認"'));
   assert.ok(!html.includes("出典0"));
+});
+
+test("対象地域・計画の版も必ず存在する資料に結び付ける", () => {
+  for (const key of ["region", "period"] as const) {
+    const noSource = fixture();
+    noSource[key].sourceIds = [];
+    assert.equal(livingTopicSchema.safeParse(noSource).success, false);
+    const wrongSource = fixture();
+    wrongSource[key].sourceIds = ["unknown"];
+    assert.equal(livingTopicSchema.safeParse(wrongSource).success, false);
+  }
+});
+
+test("検索説明と本文で地域・資料の時点・確認日を一致させ、現在日に置き換えない", () => {
+  const topic = fixture();
+  const metadata = livingTopicMetadata(topic);
+  assert.equal(metadata.title, topic.pageTitle);
+  const html = renderToStaticMarkup(createElement(LivingTopicBrief, { topic }));
+  for (const text of [topic.region.text, topic.period.text, topic.caseTitle]) {
+    assert.ok(metadata.description.includes(text));
+    assert.ok(html.includes(text));
+  }
+  assert.ok(metadata.description.includes("2026-10-22"));
+  assert.match(html, /datetime="2026-10-22"/i);
+  assert.ok(html.includes("リアルタイムで確認した日ではありません"));
+});
+
+test("資料1件の読み直しで、解説全体の確認日を進めない", () => {
+  const topic = fixture();
+  topic.sources[0].checkedAt = "2026-10-31";
+  assert.equal(livingTopicSchema.safeParse(topic).success, false);
+  topic.sources[0].checkNote = "案内本文のみ。関連資料の全文は未確認です。";
+  assert.equal(livingTopicSchema.safeParse(topic).success, true);
+  const html = renderToStaticMarkup(createElement(LivingTopicBrief, { topic }));
+  for (const day of ["2026-10-22", "2026-10-31"]) assert.ok(html.includes(`dateTime="${day}"`));
+  assert.ok(livingTopicMetadata(topic).description.includes("2026-10-22"));
+  assert.ok(html.includes(topic.sources[0].checkNote));
+  assert.ok(html.includes("解説全体の確認日とは別"));
 });

@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-10-31",
+  "baseCommit": "1ebcd920e0b11e77bc33bf32019458e150b5934e",
+  "scope": "地域入口・名古屋16区・暮らし3テーマのSEOと根拠表示",
+  "tests": {
+    "passed": 121,
+    "failed": 0
+  },
+  "typecheck": "passed",
+  "lint": "passed",
+  "validate": "passed as prebuild",
+  "build": {
+    "passed": true,
+    "generatedRoutes": 1486
+  },
+  "seoExport": {
+    "wardsChecked": 16,
+    "livingTopicsChecked": 3,
+    "sitemapUrls": 1431,
+    "canonicalChecked": 1431,
+    "htmlReachable": 1431,
+    "lastmod": "omitted"
+  },
+  "browser": {
+    "widths": [
+      320,
+      390,
+      1280
+    ],
+    "topicRoutes": 9,
+    "passed": true,
+    "externalAndPostAttempts": 0,
+    "humanParticipants": 0,
+    "evidence": "local-living-seo-ui-2026-10-31.json"
+  },
+  "dateRules": {
+    "explanationConfirmedAt": "2026-10-22 retained",
+    "individualSourceCheckedAt": "2026-10-31; reading scope noted per source",
+    "rosterVerification": "unchanged"
+  },
+  "sourceReview": "living-source-review-2026-10-31.json",
+  "limits": [
+    "公式PDFの図表・計画全文等の全件再照合は含まない。",
+    "検索順位・流入数・AI回答の引用数は未測定。本番配信は未実施。"
+  ],
+  "isolation": "ローカルfixtureと静的outを検証。ビルド時の外部fetch/http/httpsを遮断し、ブラウザはoptout設定のうえ同一origin GET/HEADのみ許可。"
+}
