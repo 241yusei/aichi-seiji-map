@@ -14,7 +14,8 @@ export function LivingTopicCards() {
         <span className="eyebrow text-accent">{topic.title}</span>
         <h3 className="font-display mt-2 text-xl">{topic.caseTitle}</h3>
         <p className="mt-3 text-sm text-muted">{topic.summary}</p>
-        <p className="mt-4 text-xs text-muted">確認日：<time dateTime={topic.confirmedAt}>{topic.confirmedAt}</time></p>
+        <p className="mt-3 text-xs leading-relaxed text-muted">対象地域：{topic.region.text}</p>
+        <p className="mt-4 text-xs text-muted">解説の確認日：<time dateTime={topic.confirmedAt}>{topic.confirmedAt}</time></p>
         <span className="mt-auto pt-4 text-sm text-accent">決まったこと・担当・次の確認事項へ →</span>
       </Link>)}
     </div>

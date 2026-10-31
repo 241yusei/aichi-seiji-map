@@ -348,6 +348,9 @@ const sourcedStatementSchema = z.object({ text: z.string().min(1), sourceIds: z.
 export const livingTopicSchema = z.object({
   issueId: z.enum(["kosodate", "transit", "bousai"]),
   title: z.string().min(1), summary: z.string().min(1), caseTitle: z.string().min(1),
+  pageTitle: z.string().min(1),
+  region: sourcedStatementSchema.extend({ sourceIds: z.array(z.string().min(1)).min(1) }),
+  period: sourcedStatementSchema.extend({ sourceIds: z.array(z.string().min(1)).min(1) }),
   confirmedAt: z.iso.date(),
   status: sourcedStatementSchema.extend({ sourceIds: z.array(z.string().min(1)).min(1) }),
   decisions: z.array(sourcedStatementSchema).min(1),
@@ -355,11 +358,14 @@ export const livingTopicSchema = z.object({
   responsibilities: z.array(sourcedStatementSchema.extend({ level: levelSchema, label: z.string().min(1) })).min(1),
   costs: z.array(sourcedStatementSchema).min(1), unknowns: z.array(sourcedStatementSchema).min(1),
   nextChecks: z.array(sourcedStatementSchema).min(1),
-  sources: z.array(z.object({ id: z.string().min(1), label: z.string().min(1), url: httpUrl, publishedAt: z.iso.date().optional() })).min(1),
+  sources: z.array(z.object({ id: z.string().min(1), label: z.string().min(1), url: httpUrl, publishedAt: z.iso.date().optional(), checkedAt: z.iso.date().optional(), checkNote: z.string().min(1).optional() })).min(1),
 }).superRefine((topic, ctx) => {
   const ids = new Set(topic.sources.map((s) => s.id));
   if (ids.size !== topic.sources.length) ctx.addIssue({ code: "custom", message: "出典IDが重複しています" });
-  for (const item of [topic.status, ...topic.decisions, ...topic.affected, ...topic.responsibilities, ...topic.costs, ...topic.unknowns, ...topic.nextChecks]) {
+  for (const source of topic.sources) {
+    if (source.checkedAt && !source.checkNote) ctx.addIssue({ code: "custom", message: "資料の再確認日には確認範囲を併記してください" });
+  }
+  for (const item of [topic.region, topic.period, topic.status, ...topic.decisions, ...topic.affected, ...topic.responsibilities, ...topic.costs, ...topic.unknowns, ...topic.nextChecks]) {
     if (!item.sourceIds.length && !/未確認/.test(item.text)) ctx.addIssue({ code: "custom", message: "出典のない記述は未確認であることを明示してください" });
     for (const id of item.sourceIds) if (!ids.has(id)) ctx.addIssue({ code: "custom", message: `不明な出典ID: ${id}` });
   }

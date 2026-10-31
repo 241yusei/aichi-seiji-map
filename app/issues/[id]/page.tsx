@@ -14,6 +14,7 @@ import { IssueExplainerCard } from "@/components/IssueExplainerCard";
 import { FactCardType } from "@/components/FactCardView";
 import { getRelatedFactCardsForIssue } from "@/lib/related";
 import { getLivingTopicByIssue } from "@/lib/living-topics";
+import { livingTopicMetadata } from "@/lib/living-topic-meta";
 import { LivingTopicBrief } from "@/components/LivingTopicBrief";
 
 export function generateStaticParams() {
@@ -27,10 +28,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { id } = await params;
   const issue = getIssue(id);
+  const topic = getLivingTopicByIssue(id);
   return issue
     ? {
-        title: issue.title,
-        description: issue.description,
+        ...(topic ? livingTopicMetadata(topic) : { title: issue.title, description: issue.description }),
         alternates: { canonical: `/issues/${id}/` },
       }
     : { title: "争点" };
@@ -69,9 +70,10 @@ export default async function IssueDetailPage({
       <header className="border-b border-line pb-6">
         <p className="text-sm font-medium tracking-wider text-accent">愛知の争点（国・県・市）</p>
         <h1 className="font-display mt-2 text-[clamp(2rem,6vw,3.5rem)] leading-[1.05]">
-          {issue.title}
+          {livingTopic?.pageTitle ?? issue.title}
         </h1>
-        <p className="measure mt-3 text-muted">{issue.description}</p>
+        <p className="measure mt-3 text-muted">{livingTopic?.summary ?? issue.description}</p>
+        {livingTopic && <p className="mt-3 text-xs text-muted">「{issue.title}」の具体的な制度・計画を読むページです。背景解説と関連記録は下に掲載しています。</p>}
       </header>
 
       {livingTopic && <LivingTopicBrief topic={livingTopic} />}

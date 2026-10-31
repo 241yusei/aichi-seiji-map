@@ -1,0 +1,193 @@
+{
+  "kind": "automated local static-output interaction verification",
+  "humanParticipants": 0,
+  "productionConnection": false,
+  "analyticsOptOutBeforeNavigation": true,
+  "allowedMethods": [
+    "GET",
+    "HEAD"
+  ],
+  "externalSourcesOpened": false,
+  "results": [
+    {
+      "width": 320,
+      "areaSelection": true,
+      "wardH1": true,
+      "rosterNativeOpenClose": true,
+      "rosterDatesKept": true,
+      "rosterSourceLinksPresent": true,
+      "threeCardsSameCondition": true,
+      "neutralityNotice": true,
+      "documentOverflow": false,
+      "pageErrors": 0,
+      "externalOrPostAttempts": 0,
+      "topics": [
+        {
+          "scenario": 1,
+          "h1Matches": true,
+          "caseHeadingMatches": true,
+          "scopeBeforeGuide": true,
+          "duplicateHeaderSourceShortcutAbsent": true,
+          "regionMatches": true,
+          "periodMatches": true,
+          "explanationDate": "2026-10-22",
+          "allSourceCheckDates": "2026-10-31",
+          "sourceHrefMatches": true,
+          "referenceAnchorWorks": true,
+          "sourceListAnchorWorks": true,
+          "sourceCheckNotesVisible": true
+        },
+        {
+          "scenario": 2,
+          "h1Matches": true,
+          "caseHeadingMatches": true,
+          "scopeBeforeGuide": true,
+          "duplicateHeaderSourceShortcutAbsent": true,
+          "regionMatches": true,
+          "periodMatches": true,
+          "explanationDate": "2026-10-22",
+          "allSourceCheckDates": "2026-10-31",
+          "sourceHrefMatches": true,
+          "referenceAnchorWorks": true,
+          "sourceListAnchorWorks": true,
+          "sourceCheckNotesVisible": true
+        },
+        {
+          "scenario": 3,
+          "h1Matches": true,
+          "caseHeadingMatches": true,
+          "scopeBeforeGuide": true,
+          "duplicateHeaderSourceShortcutAbsent": true,
+          "regionMatches": true,
+          "periodMatches": true,
+          "explanationDate": "2026-10-22",
+          "allSourceCheckDates": "2026-10-31",
+          "sourceHrefMatches": true,
+          "referenceAnchorWorks": true,
+          "sourceListAnchorWorks": true,
+          "sourceCheckNotesVisible": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "areaSelection": true,
+      "wardH1": true,
+      "rosterNativeOpenClose": true,
+      "rosterDatesKept": true,
+      "rosterSourceLinksPresent": true,
+      "threeCardsSameCondition": true,
+      "neutralityNotice": true,
+      "documentOverflow": false,
+      "pageErrors": 0,
+      "externalOrPostAttempts": 0,
+      "topics": [
+        {
+          "scenario": 1,
+          "h1Matches": true,
+          "caseHeadingMatches": true,
+          "scopeBeforeGuide": true,
+          "duplicateHeaderSourceShortcutAbsent": true,
+          "regionMatches": true,
+          "periodMatches": true,
+          "explanationDate": "2026-10-22",
+          "allSourceCheckDates": "2026-10-31",
+          "sourceHrefMatches": true,
+          "referenceAnchorWorks": true,
+          "sourceListAnchorWorks": true,
+          "sourceCheckNotesVisible": true
+        },
+        {
+          "scenario": 2,
+          "h1Matches": true,
+          "caseHeadingMatches": true,
+          "scopeBeforeGuide": true,
+          "duplicateHeaderSourceShortcutAbsent": true,
+          "regionMatches": true,
+          "periodMatches": true,
+          "explanationDate": "2026-10-22",
+          "allSourceCheckDates": "2026-10-31",
+          "sourceHrefMatches": true,
+          "referenceAnchorWorks": true,
+          "sourceListAnchorWorks": true,
+          "sourceCheckNotesVisible": true
+        },
+        {
+          "scenario": 3,
+          "h1Matches": true,
+          "caseHeadingMatches": true,
+          "scopeBeforeGuide": true,
+          "duplicateHeaderSourceShortcutAbsent": true,
+          "regionMatches": true,
+          "periodMatches": true,
+          "explanationDate": "2026-10-22",
+          "allSourceCheckDates": "2026-10-31",
+          "sourceHrefMatches": true,
+          "referenceAnchorWorks": true,
+          "sourceListAnchorWorks": true,
+          "sourceCheckNotesVisible": true
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "areaSelection": true,
+      "wardH1": true,
+      "rosterNativeOpenClose": true,
+      "rosterDatesKept": true,
+      "rosterSourceLinksPresent": true,
+      "threeCardsSameCondition": true,
+      "neutralityNotice": true,
+      "documentOverflow": false,
+      "pageErrors": 0,
+      "externalOrPostAttempts": 0,
+      "topics": [
+        {
+          "scenario": 1,
+          "h1Matches": true,
+          "caseHeadingMatches": true,
+          "scopeBeforeGuide": true,
+          "duplicateHeaderSourceShortcutAbsent": true,
+          "regionMatches": true,
+          "periodMatches": true,
+          "explanationDate": "2026-10-22",
+          "allSourceCheckDates": "2026-10-31",
+          "sourceHrefMatches": true,
+          "referenceAnchorWorks": true,
+          "sourceListAnchorWorks": true,
+          "sourceCheckNotesVisible": true
+        },
+        {
+          "scenario": 2,
+          "h1Matches": true,
+          "caseHeadingMatches": true,
+          "scopeBeforeGuide": true,
+          "duplicateHeaderSourceShortcutAbsent": true,
+          "regionMatches": true,
+          "periodMatches": true,
+          "explanationDate": "2026-10-22",
+          "allSourceCheckDates": "2026-10-31",
+          "sourceHrefMatches": true,
+          "referenceAnchorWorks": true,
+          "sourceListAnchorWorks": true,
+          "sourceCheckNotesVisible": true
+        },
+        {
+          "scenario": 3,
+          "h1Matches": true,
+          "caseHeadingMatches": true,
+          "scopeBeforeGuide": true,
+          "duplicateHeaderSourceShortcutAbsent": true,
+          "regionMatches": true,
+          "periodMatches": true,
+          "explanationDate": "2026-10-22",
+          "allSourceCheckDates": "2026-10-31",
+          "sourceHrefMatches": true,
+          "referenceAnchorWorks": true,
+          "sourceListAnchorWorks": true,
+          "sourceCheckNotesVisible": true
+        }
+      ]
+    }
+  ]
+}

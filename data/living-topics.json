@@ -98,20 +98,40 @@
     "sources": [
       {
         "id": "nagoya-guide",
-        "label": "名古屋市：保護者向けの制度・利用案内（2026年10月19日更新）",
-        "url": "https://www.city.nagoya.jp/kodomo/kosodate/1009115/1009125/1033528/1036127.html"
+        "label": "名古屋市：保護者向けの制度・利用案内（2026年10月26日更新）",
+        "url": "https://www.city.nagoya.jp/kodomo/kosodate/1009115/1009125/1033528/1036127.html",
+        "checkedAt": "2026-10-31",
+        "checkNote": "案内ページの本文を確認。リンク先資料の全文・実際の運用状況の再確認は含みません。"
       },
       {
         "id": "national-system",
         "label": "こども家庭庁：こども誰でも通園制度の概要・実施の手引",
-        "url": "https://www.cfa.go.jp/policies/hoiku/daredemo-tsuen/"
+        "url": "https://www.cfa.go.jp/policies/hoiku/daredemo-tsuen/",
+        "checkedAt": "2026-10-31",
+        "checkNote": "案内ページの本文を確認。リンク先資料の全文・実際の運用状況の再確認は含みません。"
       },
       {
         "id": "aichi-guide",
         "label": "愛知県：制度の対象と利用方法の問い合わせ先",
-        "url": "https://www.pref.aichi.jp/soshiki/kosodate/daredemo-tsuen.html"
+        "url": "https://www.pref.aichi.jp/soshiki/kosodate/daredemo-tsuen.html",
+        "checkedAt": "2026-10-31",
+        "checkNote": "案内ページの本文を確認。リンク先資料の全文・実際の運用状況の再確認は含みません。"
       }
-    ]
+    ],
+    "pageTitle": "名古屋市こども誰でも通園制度｜対象・申請・料金の確認先",
+    "region": {
+      "text": "名古屋市。市外の方は、お住まいの自治体の利用案内を確認します。",
+      "sourceIds": [
+        "nagoya-guide",
+        "aichi-guide"
+      ]
+    },
+    "period": {
+      "text": "2026年度の制度案内。実施施設一覧は2026年10月時点で、受入条件や料金は施設ごとに確認します。",
+      "sourceIds": [
+        "nagoya-guide"
+      ]
+    }
   },
   {
     "issueId": "transit",
@@ -210,19 +230,39 @@
       {
         "id": "aichi-plan",
         "label": "愛知県：地域公共交通計画・改正資料（2026年3月31日更新）",
-        "url": "https://www.pref.aichi.jp/soshiki/kotsu/kotsukeikaku.html"
+        "url": "https://www.pref.aichi.jp/soshiki/kotsu/kotsukeikaku.html",
+        "checkedAt": "2026-10-31",
+        "checkNote": "案内ページの本文を確認。リンク先資料の全文・実際の運用状況の再確認は含みません。"
       },
       {
         "id": "annual-report",
         "label": "愛知県：2024年度の取組状況（2026年3月・PDF）",
-        "url": "https://www.pref.aichi.jp/uploaded/attachment/609194.pdf"
+        "url": "https://www.pref.aichi.jp/uploaded/attachment/609194.pdf",
+        "checkedAt": "2026-10-31",
+        "checkNote": "PDFの抽出本文を確認。図表の全数値・計画全文の再照合は含みません。"
       },
       {
         "id": "national-guidance",
         "label": "国土交通省：地域公共交通計画等の作成と運用の手引き",
-        "url": "https://www.mlit.go.jp/sogoseisaku/transport/sosei_transport_tk_000058.html"
+        "url": "https://www.mlit.go.jp/sogoseisaku/transport/sosei_transport_tk_000058.html",
+        "checkedAt": "2026-10-31",
+        "checkNote": "案内ページの本文を確認。リンク先資料の全文・実際の運用状況の再確認は含みません。"
       }
-    ]
+    ],
+    "pageTitle": "愛知県地域公共交通計画｜2024〜2026年度の支援と運行の確認先",
+    "region": {
+      "text": "愛知県内。路線ごとの時刻・本数・運休は市町村や交通事業者の案内で確認します。",
+      "sourceIds": [
+        "aichi-plan"
+      ]
+    },
+    "period": {
+      "text": "計画期間は2024〜2026年度。掲載する取組状況は2024年度分で、現在の運行実績とは異なります。",
+      "sourceIds": [
+        "aichi-plan",
+        "annual-report"
+      ]
+    }
   },
   {
     "issueId": "bousai",
@@ -317,18 +357,38 @@
       {
         "id": "aichi-disaster-plan",
         "label": "愛知県：地域防災計画（最終修正2026年6月2日・案内2026年10月1日更新）",
-        "url": "https://www.pref.aichi.jp/soshiki/bosai/bosai-keikaku.html"
+        "url": "https://www.pref.aichi.jp/soshiki/bosai/bosai-keikaku.html",
+        "checkedAt": "2026-10-31",
+        "checkNote": "案内ページの本文を確認。リンク先資料の全文・実際の運用状況の再確認は含みません。"
       },
       {
         "id": "revision-summary",
         "label": "愛知県：地域防災計画の修正の要旨（2026年6月・PDF）",
-        "url": "https://www.pref.aichi.jp/uploaded/attachment/618988.pdf"
+        "url": "https://www.pref.aichi.jp/uploaded/attachment/618988.pdf",
+        "checkedAt": "2026-10-31",
+        "checkNote": "PDFの抽出本文を確認。図表の全数値・計画全文の再照合は含みません。"
       },
       {
         "id": "nagoya-hazard",
         "label": "名古屋市：各種ハザードマップ等の説明",
-        "url": "https://www.city.nagoya.jp/bousaiportal/hazardmap/1048758.html"
+        "url": "https://www.city.nagoya.jp/bousaiportal/hazardmap/1048758.html",
+        "checkedAt": "2026-10-31",
+        "checkNote": "案内ページの本文を確認。リンク先資料の全文・実際の運用状況の再確認は含みません。"
       }
-    ]
+    ],
+    "pageTitle": "愛知県地域防災計画｜2026年6月修正と地域の避難情報の確認先",
+    "region": {
+      "text": "愛知県。避難場所や地域の危険は、お住まいの市町村の公式情報を確認します。",
+      "sourceIds": [
+        "aichi-disaster-plan"
+      ]
+    },
+    "period": {
+      "text": "2026年6月修正版。案内ページの更新日と計画の修正日は別です。",
+      "sourceIds": [
+        "aichi-disaster-plan",
+        "revision-summary"
+      ]
+    }
   }
 ]

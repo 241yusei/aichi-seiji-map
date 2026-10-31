@@ -1,0 +1,121 @@
+{
+  "checkedAt": "2026-10-31",
+  "scope": "data/living-topics.json の既存9出典を公式サイトの通常web閲覧で直列照合。コード・公開データは変更せず。",
+  "accessNotes": [
+    "大量取得・スクレイピング・直接HTTPバッチ・アクセス制限の回避は実施していない。公式の既存URLを1ページずつ通常web閲覧し、同じ応答をセッション内で再利用。",
+    "今回の対象は少数の公式ページの閲覧であり、robotsや規約の自動取得許可を確認したという記録ではない。追加の自動収集・大量取得を行う場合には各サイトのrobots・規約を改めて確認する。",
+    "PDF2本は抽出本文を確認。交通PDFの画像取得はCache miss、防災PDFの画像取得は参照のみ返り、このレビューでは画像を十分に視認できていない。表の数値・図版・計画全文の全件再照合は行っていない。",
+    "新たな法令解釈、申請操作、施設の空き状況・利用料の照会、運行時刻・避難情報の収集はしていない。"
+  ],
+  "topics": [
+    {
+      "issueId": "kosodate",
+      "previousConfirmedAt": "2026-10-22",
+      "finding": "制度の名称・対象・利用時間・手続き・費用の既存記述と3HTML出典に明確な不一致は見つからない。nagoya-guideのページ更新日ラベルのみ訂正対象。",
+      "regionSuggestion": "名古屋市の利用案内（名古屋市外は居住市区町村へ確認）",
+      "periodSuggestion": "2026年度。実施施設一覧の公表基準は2026年10月時点。",
+      "sources": [
+        {
+          "id": "nagoya-guide",
+          "url": "https://www.city.nagoya.jp/kodomo/kosodate/1009115/1009125/1033528/1036127.html",
+          "checkedAt": "2026-10-31",
+          "status": "html_checked",
+          "pageUpdatedAt": "2026-10-26",
+          "confirmed": ["正式名称は乳児等通園支援事業", "利用時点で生後6か月から満3歳未満で保育所等に通っていない子ども、就労要件なし", "月10時間まで", "初回申請は名古屋市の市システム、初めての施設の事前面談と利用予約はつうえんポータル", "利用料は施設ごと、給食費・おやつ代等は別途の場合あり、減免あり", "2026年度実施施設一覧のリンクは2026年10月時点"],
+          "changeSuggested": "出典ラベルの2026年10月19日更新を2026年10月26日更新へ。ページ更新日をconfirmedAtや一覧基準日へ流用しない。",
+          "notChecked": ["施設一覧PDFの内容・各施設の実際の空き枠・料金", "申請フォームやログイン先の操作"]
+        },
+        {
+          "id": "national-system",
+          "url": "https://www.cfa.go.jp/policies/hoiku/daredemo-tsuen/",
+          "checkedAt": "2026-10-31",
+          "status": "html_checked",
+          "confirmed": ["2025年度の地域事業としての制度化と2026年度から新給付として全国自治体で実施する説明", "子ども・子育て支援金充当", "実施の手引への案内（2026年3月30日に掲載資料を更新）"],
+          "notChecked": ["手引PDF全文・法令の新たな解釈"]
+        },
+        {
+          "id": "aichi-guide",
+          "url": "https://www.pref.aichi.jp/soshiki/kosodate/daredemo-tsuen.html",
+          "checkedAt": "2026-10-31",
+          "status": "html_checked",
+          "pageUpdatedAt": "2026-02-05",
+          "confirmed": ["2026年4月から全市町村で実施との説明", "保育所等に通っていない0歳6か月から満3歳未満", "実施事業所・利用方法は居住する市区町村へ問い合わせる案内"]
+        }
+      ]
+    },
+    {
+      "issueId": "transit",
+      "previousConfirmedAt": "2026-10-22",
+      "finding": "既存の計画期間・対象範囲・県の施策・2024年度実績の公開・国手引第5版は一致。計画全文と実績表の全数値は未照合。",
+      "regionSuggestion": "愛知県内の公共交通（広域交通と市町村内交通の支援）",
+      "periodSuggestion": "計画は2024〜2026年度。掲載する実績は2024年度・2026年3月報告。",
+      "sources": [
+        {
+          "id": "aichi-plan",
+          "url": "https://www.pref.aichi.jp/soshiki/kotsu/kotsukeikaku.html",
+          "checkedAt": "2026-10-31",
+          "status": "html_checked",
+          "pageUpdatedAt": "2026-03-31",
+          "confirmed": ["計画期間2024年度から2026年度まで概ね3年", "国・県・市町村・事業者等の役割分担で県の施策を位置付け", "市町村間路線バスの運行経費補助、駅バリアフリー・地域鉄道安全設備支援", "2024年度取組状況を年次レポートとして公開", "2026年3月31日更新の新旧対照表・本冊へのリンク"],
+          "notChecked": ["本冊全文・全路線の運行や運賃・次期計画の決定状況"]
+        },
+        {
+          "id": "annual-report",
+          "url": "https://www.pref.aichi.jp/uploaded/attachment/609194.pdf",
+          "checkedAt": "2026-10-31",
+          "status": "pdf_text_checked_visual_incomplete",
+          "reportMonth": "2026-03",
+          "reportPeriod": "2024年度",
+          "confirmed": ["表紙は愛知県地域公共交通計画2024年度の取組状況・2026年3月", "PDF2ページ目の本文で国・市町村・事業者との連携、身近な市町村内交通の計画策定・国補助活用助言の支援", "PDF3ページ目以降は2024年度主な取組、PDF5ページ目以降は目標指標と実績の区別"],
+          "notChecked": ["図表の全数値・視覚レイアウト（画像取得Cache miss）"]
+        },
+        {
+          "id": "national-guidance",
+          "url": "https://www.mlit.go.jp/sogoseisaku/transport/sosei_transport_tk_000058.html",
+          "checkedAt": "2026-10-31",
+          "status": "html_checked",
+          "documentRevision": "2026年9月改訂・第5版",
+          "confirmed": ["地域公共交通計画等の作成と運用の手引き", "改正地域交通法の2026年10月16日施行に伴う第5版公表の説明", "計画作成/運用に取り組む自治体等向けの資料"],
+          "notChecked": ["手引全文、県の次期計画への具体的反映"]
+        }
+      ]
+    },
+    {
+      "issueId": "bousai",
+      "previousConfirmedAt": "2026-10-22",
+      "finding": "計画修正日と案内更新日、今回修正の要旨の既存記述は一致。計画全文・各市町村での反映状況は未照合。",
+      "regionSuggestion": "愛知県の計画。名古屋市ハザードマップへの案内は名古屋市内の情報。",
+      "periodSuggestion": "2026年6月修正版（計画の最終修正2026年6月2日）。案内ページ更新2026年10月1日とは別。",
+      "sources": [
+        {
+          "id": "aichi-disaster-plan",
+          "url": "https://www.pref.aichi.jp/soshiki/bosai/bosai-keikaku.html",
+          "checkedAt": "2026-10-31",
+          "status": "html_checked",
+          "pageUpdatedAt": "2026-10-01",
+          "planRevisedAt": "2026-06-02",
+          "confirmed": ["正式名称愛知県地域防災計画、県防災会議作成", "最終修正2026年6月2日", "予防・応急対策・復旧復興の各段階", "県・市町村・国の関係機関等の連携", "修正要旨と各計画本文のリンク"],
+          "notChecked": ["風水害/地震津波/原子力各計画全文、各事業の予算・完了日"]
+        },
+        {
+          "id": "revision-summary",
+          "url": "https://www.pref.aichi.jp/uploaded/attachment/618988.pdf",
+          "checkedAt": "2026-10-31",
+          "status": "pdf_text_checked_visual_incomplete",
+          "confirmed": ["PDF1ページ本文で2026年5月29日の防災気象情報運用開始に伴う名称・情報伝達等修正", "PDF2ページ本文で県災害対策本部/非常配備の基準見直し", "PDF2ページ本文で中部道路啓開計画に設定された県又は名古屋市管理道路の中部地方整備局による代行追記"],
+          "notChecked": ["図表の視覚的な全項目、計画本冊への全反映"]
+        },
+        {
+          "id": "nagoya-hazard",
+          "url": "https://www.city.nagoya.jp/bousaiportal/hazardmap/1048758.html",
+          "checkedAt": "2026-10-31",
+          "status": "html_checked",
+          "pageUpdatedAt": "2026-04-06",
+          "confirmed": ["各種ハザードマップ等の説明", "洪水の浸水範囲・浸水深・継続時間と避難場所等の案内"],
+          "notChecked": ["個人の住所の危険度・現在の避難情報・各地区地図の全内容"]
+        }
+      ]
+    }
+  ],
+  "recommendation": "sourceごとのcheckedAtを追加する場合は、本メモの確認範囲に限定し、PDFは視認不完全を別メモで示す。confirmedAtを3テーマ一律で2026-10-31へ進めない。子育ては既存記述を支える3HTMLを確認できたが、施設一覧や手引全文の検証を含むとの誤解は避ける。交通・防災は旧confirmedAtを維持し、今回のsource個別確認と計画全文の再確認を区別することを推奨。"
+}
